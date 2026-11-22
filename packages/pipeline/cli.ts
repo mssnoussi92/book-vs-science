@@ -120,6 +120,7 @@ switch (cmd) {
       model: flag("model") ?? "gemini-3.8-flash-tts", max: Number(flag("max") ?? 3),
       ledger: flag("ledger") ?? join(ROOT, "build", "voice-ledger.json"), out: flag("out") ?? join(ROOT, "build", "takes"), dry: has("dry"),
       cap: flag("cap") ? Number(flag("cap")) : undefined,
+      keys: list(flag("keys")), tag: flag("tag"),
     }));
   }
   case "timeline": {
@@ -145,11 +146,15 @@ switch (cmd) {
         const req = name.replace(/\.split\.json$/, "");
         const sp = JSON.parse(readFileSync(join(takeDir, name), "utf8"));
         if (!sp.ok) { console.error(`${name} : découpe refusée (${sp.why}) : à écouter avant d'aller plus loin`); process.exit(1); }
+        // A take said the texts of its day: a line whose text has changed since is not taken from it.
+        const said = new Map<string, string>();
+        if (files.includes(`${req}.json`)) for (const t of JSON.parse(readFileSync(join(takeDir, `${req}.json`), "utf8")).turns) for (const k of t.keys) said.set(k, t.text);
+        const current = (k: string) => !said.has(k) || said.get(k) === e.langs.get(code)?.texts[k];
         if (files.includes(`${req}.clips.json`)) {
           const cl = JSON.parse(readFileSync(join(takeDir, `${req}.clips.json`), "utf8"));
-          for (const l of cl.lines) for (const k of l.keys) takes.set(k, { take: l.file, start: 0, end: l.seconds, envelope: l.envelope });
+          for (const l of cl.lines) for (const k of l.keys) if (current(k)) takes.set(k, { take: l.file, start: 0, end: l.seconds, envelope: l.envelope });
         } else {
-          for (const l of sp.lines) for (const k of l.keys) takes.set(k, { take: sp.take, start: l.start, end: l.end, envelope: l.envelope });
+          for (const l of sp.lines) for (const k of l.keys) if (current(k)) takes.set(k, { take: sp.take, start: l.start, end: l.end, envelope: l.envelope });
         }
       }
     }
