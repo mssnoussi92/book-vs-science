@@ -71,6 +71,15 @@
       "request": "nour.hooks2",
       "voice": "nour=Leda",
       "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-22T21:29:58.855Z",
+      "day": "2026-11-22",
+      "episode": "feeling-bad-about-feeling-bad",
+      "lang": "ar-EG",
+      "request": "adasa.bridges",
+      "voice": "adasa=Iapetus",
+      "model": "gemini-3.8-flash-tts"
     }
   ]
 }
