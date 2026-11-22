@@ -21,5 +21,12 @@
     }
   },
   "voice": {},
-  "video": {}
+  "video": {
+    "ar-EG": {
+      "on": "2026-11-22",
+      "words": "Super je valide cette version (pilote-montage-h1.mp4 : narrateur aux charnières, étiquettes des prises, teintes, bruitages, 78 s ; narrateur Gemini, à remplacer par une voix humaine avant publication)",
+      "via": "conversation",
+      "hash": "0f7ce16d05fdd9471ef88c671ad9e1416c4cc19a8db102d8d39454c3f4f9cedf"
+    }
+  }
 }

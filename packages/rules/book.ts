@@ -6,11 +6,13 @@ import { words } from "../core/text.ts";
 /** Text between quotation marks of any kind (« », " ", “ ”, „ “, ‹ ›). */
 const QUOTED = /«([^»]*)»|"([^"]*)"|“([^”]*)”|„([^“”]*)[“”]|‹([^›]*)›/g;
 export const MAX_QUOTE_WORDS = 12;
+/** Above this, a warning: the owner's decision (2026-11-22, « s'il y a plus de 3 idées on les fera ») lifted the limit;
+ *  each episode keeps one idea of its own, reformulated, never a summary in series. */
 export const MAX_EPISODES_PER_BOOK = 3;
 
 export const book: Rule = {
   id: "book",
-  describe: "Livre au registre, idée attribuée à un passage repérable, citation ≤ 12 mots, au plus 3 épisodes par livre.",
+  describe: "Livre au registre, idée attribuée à un passage repérable, citation ≤ 12 mots ; plus de 3 épisodes par livre : un avertissement.",
   check(repo) {
     const out: Issue[] = [];
     const perBook = new Map<string, string[]>();
@@ -33,7 +35,7 @@ export const book: Rule = {
       if (basis.kind === "author-article" && !basis.url) out.push({ rule: "book", severity: "error", where: `content/books/${b.slug}.json#basis.${basis.id}`, message: "un texte publié par l'auteur se cite avec son URL" });
     }
     for (const [slug, eps] of perBook) if (eps.length > MAX_EPISODES_PER_BOOK) {
-      out.push({ rule: "book", severity: "error", where: `content/books/${slug}.json`, message: `${eps.length} épisodes sur ce livre (${MAX_EPISODES_PER_BOOK} au plus : pas de résumé en série)` });
+      out.push({ rule: "book", severity: "warn", where: `content/books/${slug}.json`, message: `${eps.length} épisodes sur ce livre : une idée distincte chacun, reformulée, jamais un résumé en série` });
     }
     return out;
   },

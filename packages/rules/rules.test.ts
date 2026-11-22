@@ -112,13 +112,15 @@ describe("book", () => {
   test("a quotation longer than 12 words", () => bites("book", AR, (j) => { j.texts["book.l1"] = "الكتاب بيقول « واحد اتنين تلاتة أربعة خمسة ستة سبعة تمانية تسعة عشرة حداشر اتناشر تلتاشر »"; }));
   test("a basis the book does not have", () => bites("book", EP, (j) => { j.book.basis = "ch9"; }));
   test("an author's article without its URL", () => bites("book", "content/books/example-book.json", (j) => { j.basis[0].kind = "author-article"; }));
-  test("a fourth episode on the same book", () => {
+  test("a fourth episode on the same book: a warning, not an error (the owner's decision, 2026-11-22)", () => {
     const root = copy();
     for (const n of [2, 3, 4]) {
       cpSync(join(root, "content/episodes/example"), join(root, `content/episodes/example${n}`), { recursive: true });
       edit(root, `content/episodes/example${n}/episode.json`, (j) => { j.id = `example${n}`; });
     }
-    assert.ok(errors(check(root)).some((i) => i.rule === "book" && i.message.includes("épisodes sur ce livre")));
+    const issues = check(root);
+    assert.ok(!errors(issues).some((i) => i.rule === "book" && i.message.includes("épisodes sur ce livre")));
+    assert.ok(issues.some((i) => i.rule === "book" && i.severity === "warn" && i.message.includes("épisodes sur ce livre")));
   });
 });
 

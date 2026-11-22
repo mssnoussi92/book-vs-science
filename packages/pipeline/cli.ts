@@ -63,8 +63,8 @@ switch (cmd) {
   case "approve": {
     const [id, what] = args;
     const words = flag("words");
-    if (!id || (what !== "sources" && what !== "script") || !words) {
-      console.error('usage: bvs approve <episode> sources|script [--lang ar-EG] --words "<ses mots>" [--via <url>]');
+    if (!id || (what !== "sources" && what !== "script" && what !== "video") || !words) {
+      console.error('usage: bvs approve <episode> sources|script|video [--lang ar-EG] [--file <mp4>] --words "<ses mots>" [--via <url>]');
       process.exit(2);
     }
     const repo = loadRepo(ROOT);
@@ -78,6 +78,15 @@ switch (cmd) {
       const hash = sourcesHash(e.episode, repo.sources, repo.verifications);
       current.sources = { on, words, via, hash };
       console.log(`sources de ${id} validées : ${short(hash)}`);
+    } else if (what === "video") {
+      // the video he watched: its file's sha256 (a render that changes anything is another video)
+      const file = flag("file");
+      if (!file || !existsSync(file)) { console.error("--file <la vidéo validée>"); process.exit(2); }
+      const { createHash } = await import("node:crypto");
+      const hash = createHash("sha256").update(readFileSync(file)).digest("hex");
+      const code = flag("lang") ?? e.episode.sourceLang;
+      current.video[code] = { on, words, via, hash };
+      console.log(`vidéo ${code} de ${id} validée : ${short(hash)}`);
     } else {
       const code = flag("lang") ?? e.episode.sourceLang;
       const lang = e.langs.get(code);
