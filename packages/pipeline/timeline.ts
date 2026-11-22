@@ -4,7 +4,7 @@
 import { words as wordsOf } from "../core/text.ts";
 import { readingChunks } from "../video/state.ts";
 import type { EpisodeEntry, Repo } from "../rules/types.ts";
-import type { Action, Beat, Timeline, TimedAction, TimedLine, VisemeName } from "../schema/index.ts";
+import type { Action, Beat, SfxEvent, Timeline, TimedAction, TimedLine, VisemeName } from "../schema/index.ts";
 
 const FPS = 30;
 const PAUSE = 0.2;            // seconds between two lines (the takes' own breaths are kept inside each line)
@@ -12,6 +12,7 @@ const SILENT_HOOK = 2.4;      // a hook without voice: the time to read its firs
 const BADGE_DELAY = 0.6;
 const SHARE = 2.2;
 const NUANCE_HOLD = 2.6;      // a nuance written only: the time to read its card
+const BREATH = 0.6;           // before a rewind: the first take sinks in (the owner's pilot review: too fast)
 
 /** Arabic letters → mouth shapes (Rhubarb's names), for the draft and the « text » engine. */
 const AR: Record<string, VisemeName> = {
@@ -104,10 +105,11 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
     const held: { a: TimedAction; how: "next" | "part" }[] = [];
     for (const b of beats) {
       if (b.kind === "line") {
-        speak(`${scope}.${b.id}`, part, b.speaker, b.emotion, { intensity: b.intensity, gesture: b.gesture, look: b.look, ...(b.voice === "inner" ? { inner: true } : {}) });
+        speak(`${scope}.${b.id}`, part, b.speaker, b.emotion, { intensity: b.intensity, gesture: b.gesture, look: b.look, ...(b.voice === "inner" ? { inner: true } : {}), ...(b.voice === "over" ? { over: true } : {}) });
         continue;
       }
       if (b.hooks && !b.hooks.includes(hook.id)) continue;        // an image only the versions with this hook have
+      if (b.fx?.id === "rewind") f += fr(BREATH);                   // a breath before the scene is played again
       if (b.at) {                                                   // anchored on a word: does not move the clock
         const l = lines.find((x) => x.key === `${scope}.${b.at!.line}`);
         const w = l?.words[Math.min(b.at.word, l.words.length - 1)];
@@ -198,9 +200,53 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
   const studyTo = nuance ? nuance.f0 : t0;
 
   for (const t of Object.values(mouths)) t.sort((a, b) => a.f - b.f);
+  // The takes of a replayed scene: from its first character beat (after the narrator's word) to the rewind, then from
+  // the rewind's end to the scene's end; each labelled while it plays.
+  const takes: NonNullable<Timeline["cards"]["takes"]> = [];
+  for (const p of parts.filter((x) => x.kind === "scene" && x.shape === "replay-twice")) {
+    const rewinds = actions.filter((a) => a.fx?.id === "rewind" && a.f0 >= p.f0 && a.f0 < p.f1);
+    const firstPlay = Math.min(...[...actions, ...lines.map((l) => ({ ...l, who: l.speaker }))]
+      .filter((x) => x.f0 >= p.f0 && x.f0 < p.f1 && !(("key" in x) && (x as TimedLine).over)).map((x) => x.f0));
+    const bounds = [Number.isFinite(firstPlay) ? firstPlay : p.f0, ...rewinds.flatMap((r) => [r.f0, r.f1]), p.f1];
+    for (let i = 0; i + 1 < bounds.length; i += 2) {
+      const n = i / 2 + 1;
+      takes.push({ f0: bounds[i]!, f1: bounds[i + 1]!, label: pack.labels.takes[n - 1] ?? String(n), n });
+    }
+  }
+
+  // Sound effects (packages/pipeline/sfx.ts draws them): what happens is heard, the parts are marked.
+  const sfx: SfxEvent[] = [];
+  const firstSeen = new Set<string>();
+  for (const a of actions) {
+    if (a.prop?.state === "rejected" && !firstSeen.has(`${a.who}:${a.prop.id}`)) { firstSeen.add(`${a.who}:${a.prop.id}`); sfx.push({ f: a.f0, kind: "ping" }); }
+    if (a.fx?.id === "rewind") sfx.push({ f: a.f0, kind: "rewind", frames: Math.max(1, a.f1 - a.f0) });
+    if (a.fx?.id === "spiral" && a.part !== "hook") sfx.push({ f: a.f0, kind: "swirl" });
+    if (a.fx?.id === "thought-bubble" || a.fx?.id === "two-way") sfx.push({ f: a.f0, kind: "pop" });
+  }
+  for (const l of lines) if (l.inner) sfx.push({ f: l.f0, kind: "pop" });
+  // Footsteps: a character who comes into a scene for a line (state.presence: ENTER frames before its first line of a take).
+  for (const p of parts.filter((x) => x.kind === "scene")) {
+    const scene = lines.filter((l) => l.f0 >= p.f0 && l.f0 < p.f1 && !l.over);
+    const lead = scene[0]?.speaker;
+    const segs = takes.filter((t) => t.f0 >= p.f0 && t.f1 <= p.f1);
+    for (const seg of segs.length ? segs : [{ f0: p.f0, f1: p.f1 }]) {
+      const seen = new Set<string>();
+      for (const l of scene.filter((x) => x.f0 >= seg.f0 && x.f0 < seg.f1 && x.speaker !== lead)) {
+        if (seen.has(l.speaker)) continue;
+        seen.add(l.speaker);
+        sfx.push({ f: Math.max(seg.f0, l.f0 - 24), kind: "steps", frames: 18 });
+      }
+    }
+  }
+  for (const p of parts.slice(1)) sfx.push({ f: p.f0, kind: "whoosh" });
+  sfx.push({ f: v0 + fr(BADGE_DELAY), kind: "ding" });
+  if (studyFrom > v0) sfx.push({ f: studyFrom, kind: "whoosh" });
+  if (nuance) sfx.push({ f: nuance.f0, kind: "whoosh" });
+  sfx.sort((a, b) => a.f - b.f);
+
   const timeline: Timeline = {
     episode: ep.id, lang: opts.lang, dir: pack.dir, fps: FPS, frames: f, draft: opts.draft, hook: hook.id, audio: null,
-    parts, lines, actions, mouths, mouthEngine: placed.length ? "hybrid" : "text",
+    parts, lines, actions, mouths, mouthEngine: placed.length ? "hybrid" : "text", sfx,
     cast: { narrator: ep.cast.narrator, characters: ep.cast.characters },
     cards: {
       firstFrame,
@@ -210,6 +256,7 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
       study: { f0: studyFrom, f1: studyTo, line: text("verdict.card"), ref, design: src?.design ?? "", ...(ep.verdict.applicability === "written" ? { applies: pack.applicabilityLine } : {}) },
       badge: { f: v0 + fr(BADGE_DELAY), badge: ep.verdict.badge, label: pack.labels.badge[ep.verdict.badge], certainty: pack.labels.certainty[ep.verdict.certainty] },
       ...(nuance ? { nuance } : {}),
+      ...(takes.length ? { takes } : {}),
       ...(orientation ? { orientation } : {}),
       ...(share ? { share } : {}),
     },

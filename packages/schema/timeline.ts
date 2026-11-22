@@ -22,6 +22,8 @@ export const TimedLine = z.strictObject({
   words: z.array(z.strictObject({ w: z.string(), f0: Frame, f1: Frame })),
   /** Said to oneself: subtitled as a thought. */
   inner: z.boolean().optional(),
+  /** The narrator over a scene (where it turns). */
+  over: z.boolean().optional(),
 });
 
 export const TimedAction = z.strictObject({
@@ -38,6 +40,9 @@ export const TimedAction = z.strictObject({
 
 const Card = z.strictObject({ f0: Frame, f1: Frame, text: z.string() });
 
+/** A sound effect, drawn in code (packages/pipeline/sfx.ts), never a sample: no licence to check. */
+export const Sfx = z.strictObject({ f: Frame, kind: z.enum(["ping", "rewind", "pop", "swirl", "steps", "whoosh", "ding"]), frames: z.number().int().positive().optional() });
+
 export const Timeline = z.strictObject({
   episode: Slug,
   lang: LangCode,
@@ -52,6 +57,7 @@ export const Timeline = z.strictObject({
   actions: z.array(TimedAction),
   mouths: z.record(FolderId, z.array(z.strictObject({ f: Frame, v: Viseme }))),
   mouthEngine: z.enum(["rhubarb", "text", "volume", "hybrid"]),
+  sfx: z.array(Sfx).default([]),
   cast: z.strictObject({ narrator: FolderId, characters: z.array(FolderId) }),
   cards: z.strictObject({
     firstFrame: Card,
@@ -61,6 +67,8 @@ export const Timeline = z.strictObject({
     study: z.strictObject({ f0: Frame, f1: Frame, line: z.string(), ref: z.string(), design: z.string(), applies: z.string().optional() }),
     badge: z.strictObject({ f: Frame, badge: Badge, label: z.string(), certainty: z.string() }),
     nuance: Card.optional(),
+    /** The takes of a replayed scene, labelled while they play (« المرة الأولى », « المرة التانية »). */
+    takes: z.array(z.strictObject({ f0: Frame, f1: Frame, label: z.string(), n: z.number().int().min(1) })).optional(),
     orientation: Card.optional(),
     share: Card.optional(),
   }),
@@ -71,3 +79,4 @@ export type Timeline = z.infer<typeof Timeline>;
 export type TimedLine = z.infer<typeof TimedLine>;
 export type TimedAction = z.infer<typeof TimedAction>;
 export type VisemeName = z.infer<typeof Viseme>;
+export type SfxEvent = z.infer<typeof Sfx>;
