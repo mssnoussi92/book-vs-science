@@ -27,6 +27,9 @@ on:
       max_requests:
         description: "Most requests this run may send (the run refuses to start above it)"
         default: "3"
+      daily_cap:
+        description: "Requests a day for this channel (3 while the key is shared with quran-themes-demo; more only on the owner's word for that day)"
+        default: "3"
       dry:
         description: "Print the request bodies, send nothing"
         type: boolean
@@ -76,9 +79,10 @@ jobs:
           ONLY: ${{ inputs.only }}
           VOICES: ${{ inputs.voices }}
           MAX: ${{ inputs.max_requests }}
+          CAP: ${{ inputs.daily_cap }}
           DRY: ${{ inputs.dry }}
         run: |
-          args=(voice take "$EPISODE" --lang "$LANG_CODE" --max "$MAX" --ledger state-branch/voice-ledger.json --out build/takes)
+          args=(voice take "$EPISODE" --lang "$LANG_CODE" --max "$MAX" --cap "${CAP:-3}" --ledger state-branch/voice-ledger.json --out build/takes)
           [ -n "$ONLY" ] && args+=(--only "$ONLY")
           [ -n "$VOICES" ] && args+=(--voice "$VOICES")
           [ "$DRY" = "true" ] && args+=(--dry)

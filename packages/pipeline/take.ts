@@ -21,6 +21,9 @@ export type TakeOptions = {
   ledger: string;
   out: string;
   dry: boolean;                          // print the bodies, send nothing, write nothing
+  /** The day's cap (3 while the key is shared). Above it only on the owner's word for that day (2026-11-22: « je
+   *  t'autorise cette fois-ci », no production on quran-themes-demo). */
+  cap?: number;
 };
 
 export async function takeVoice(repo: Repo, e: EpisodeEntry, o: TakeOptions): Promise<number> {
@@ -48,8 +51,9 @@ export async function takeVoice(repo: Repo, e: EpisodeEntry, o: TakeOptions): Pr
   // 3. the quota: counted before anything is sent
   const ledger = readLedger(o.ledger);
   const day = quotaDay(new Date());
-  const left = DAILY_CAP - usedOn(ledger, day);
-  console.log(`${plan.length} requête(s) à ${o.model} ; jour ${day} (Pacifique) : ${usedOn(ledger, day)} déjà, plafond ${DAILY_CAP}, limite de ce run ${o.max}`);
+  const cap = o.cap ?? DAILY_CAP;
+  const left = cap - usedOn(ledger, day);
+  console.log(`${plan.length} requête(s) à ${o.model} ; jour ${day} (Pacifique) : ${usedOn(ledger, day)} déjà, plafond ${cap}${cap !== DAILY_CAP ? ` (au lieu de ${DAILY_CAP}, sur la parole du propriétaire)` : ""}, limite de ce run ${o.max}`);
   if (plan.length > o.max || plan.length > left) {
     console.error(`refusé : ${plan.length} requête(s) demandée(s), ${Math.min(o.max, left)} permise(s) aujourd'hui`);
     return 2;
