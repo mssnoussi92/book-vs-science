@@ -1,7 +1,7 @@
 // A language folder (languages/<code>/language.json): what the rules and the tools need to know about it.
 // Adding a language is adding this folder; no schema, no rule changes.
 import { z } from "zod";
-import { LangCode } from "./common.ts";
+import { IsoDate, LangCode } from "./common.ts";
 
 export const LanguagePack = z.strictObject({
   $schema: z.string().optional(),
@@ -47,6 +47,13 @@ export const CharacterDef = z.strictObject({
   kind: z.enum(["biped", "mascot"]),
   fictional: z.literal(true),
   names: z.partialRecord(LangCode, z.string().min(1)),
+  /** The voice of the character per language, chosen by the owner by ear (a change of model is a re-casting). */
+  voices: z.partialRecord(LangCode, z.strictObject({
+    engine: z.literal("gemini"),
+    model: z.string().min(3),
+    voice: z.string().regex(/^[A-Z][a-z]+$/),
+    castOn: IsoDate.optional(),
+  })).default({}),
 }).meta({ id: "CharacterDef" });
 
 export type LanguagePack = z.infer<typeof LanguagePack>;

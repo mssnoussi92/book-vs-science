@@ -1,0 +1,129 @@
+name: voice
+
+# The voice of one episode (docs/conception.md §4.5): `bvs voice take` sends the requests of its plan to Gemini TTS
+# (one voice per request, the owner's choice of 2026-11-22), after checking the owner's two approvals, the voices and
+# the quota. Every request is written in the ledger (voice-ledger.json on the `state` branch) BEFORE it is sent, and
+# the ledger is pushed even when the run fails. The takes go to the pre-release `takes-YYYY-MM` (addressed by their
+# hash) and to an artifact.
+#
+# While the key is shared with quran-themes-demo (CLAUDE.md): 3 requests a day at most for this channel, and never on
+# a day quran-themes-demo makes its voice. The ledger cannot see the other repository: the session checks its
+# `voice-test` runs of the day before dispatching this workflow.
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode id (content/episodes/<id>)"
+        default: feeling-bad-about-feeling-bad
+      lang:
+        description: "Language of the take"
+        default: ar-EG
+      only:
+        description: "Requests to send, comma-separated (speaker ids, e.g. karim,nour); empty: the whole plan"
+        default: ""
+      voices:
+        description: "Casting: a candidate voice per speaker instead of the cast one, e.g. adasa=Charon,karim=Achird,nour=Leda"
+        default: ""
+      max_requests:
+        description: "Most requests this run may send (the run refuses to start above it)"
+        default: "3"
+      dry:
+        description: "Print the request bodies, send nothing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# A second run waits for the first: a cancelled run would lose takes that the quota already counted.
+concurrency:
+  group: voice
+  cancel-in-progress: false
+
+jobs:
+  take:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      # The ledger lives on `state` (created empty the first time).
+      - name: State branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin state >/dev/null; then
+            git fetch --depth 1 origin state
+            git worktree add state-branch FETCH_HEAD
+          else
+            git worktree add --detach state-branch
+            (cd state-branch && git checkout --orphan state && git rm -rq --cached . && find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +)
+          fi
+
+      - name: Takes
+        id: take
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          EPISODE: ${{ inputs.episode }}
+          LANG_CODE: ${{ inputs.lang }}
+          ONLY: ${{ inputs.only }}
+          VOICES: ${{ inputs.voices }}
+          MAX: ${{ inputs.max_requests }}
+          DRY: ${{ inputs.dry }}
+        run: |
+          args=(voice take "$EPISODE" --lang "$LANG_CODE" --max "$MAX" --ledger state-branch/voice-ledger.json --out build/takes)
+          [ -n "$ONLY" ] && args+=(--only "$ONLY")
+          [ -n "$VOICES" ] && args+=(--voice "$VOICES")
+          [ "$DRY" = "true" ] && args+=(--dry)
+          node packages/pipeline/cli.ts "${args[@]}"
+
+      # Pushed even when a request failed: what was sent counts.
+      - name: Ledger
+        if: always() && inputs.dry != true
+        run: |
+          cd state-branch
+          [ -f voice-ledger.json ] || exit 0
+          git add voice-ledger.json
+          git diff --cached --quiet && exit 0
+          git commit -qm "voice ledger: ${{ inputs.episode }} ${{ inputs.lang }}"
+          for i in 1 2 3 4; do
+            git push origin HEAD:state && exit 0
+            git fetch origin state && git rebase FETCH_HEAD || exit 1
+            sleep $((2 ** i))
+          done
+          exit 1
+
+      - uses: actions/upload-artifact@v7
+        if: always() && inputs.dry != true
+        with:
+          name: takes-${{ inputs.episode }}-${{ inputs.lang }}
+          path: build/takes
+          if-no-files-found: ignore
+
+      # The month's pre-release, every take named by its hash: a take is never asked for twice.
+      - name: Release
+        if: always() && inputs.dry != true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EPISODE: ${{ inputs.episode }}
+          LANG_CODE: ${{ inputs.lang }}
+        run: |
+          dir="build/takes/$EPISODE/$LANG_CODE"
+          [ -d "$dir" ] || exit 0
+          tag="takes-$(date -u +%Y-%m)"
+          gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --prerelease --title "$tag" --notes "Voice takes of $(date -u +%Y-%m), named <episode>.<lang>.<request>.<sha256 8>."
+          for wav in "$dir"/*.wav; do
+            [ -f "$wav" ] || continue
+            req=$(basename "$wav" .wav)
+            h=$(sha256sum "$wav" | cut -c1-8)
+            cp "$wav" "build/$EPISODE.$LANG_CODE.$req.$h.wav"
+            cp "$dir/$req.json" "build/$EPISODE.$LANG_CODE.$req.$h.json"
+            gh release upload "$tag" "build/$EPISODE.$LANG_CODE.$req.$h.wav" "build/$EPISODE.$LANG_CODE.$req.$h.json" --clobber
+          done
