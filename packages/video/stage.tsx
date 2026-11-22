@@ -6,7 +6,7 @@ import { look as nour } from "../../characters/nour/look.ts";
 import { EMOTIONS, VISEMES, blinkAt } from "../rig/face.ts";
 import { Phone } from "../rig/fx.tsx";
 import { Adasa, Rig, type Look } from "../rig/Rig.tsx";
-import { POSES, type Pose } from "../rig/skeleton.ts";
+import { POSES, walk, type Pose } from "../rig/skeleton.ts";
 import type { Timeline } from "../schema/timeline.ts";
 import { emotionAt, lineAt, mouthAt, poseAt, propAt } from "./state.ts";
 
@@ -17,9 +17,11 @@ export type ActorProps = {
   tl: Timeline; f: number; who: string;
   x: number; y: number; s: number; facing?: 1 | -1;
   base?: keyof typeof POSES; opacity?: number;
+  /** Walking: the phase of the step (the walk replaces the base pose). */
+  walking?: number;
 };
 
-export const Actor: React.FC<ActorProps> = ({ tl, f, who, x, y, s, facing = 1, base = "stand", opacity = 1 }) => {
+export const Actor: React.FC<ActorProps> = ({ tl, f, who, x, y, s, facing = 1, base = "stand", opacity = 1, walking }) => {
   const speaking = lineAt(tl, f)?.speaker === who;
   const mouth = VISEMES[speaking ? mouthAt(tl, who, f) : "X"];
   const emotion = emotionAt(tl, who, f);
@@ -34,7 +36,7 @@ export const Actor: React.FC<ActorProps> = ({ tl, f, who, x, y, s, facing = 1, b
   }
   const look = LOOKS[who];
   if (!look) return null;
-  const { pose, handsTo } = poseAt(tl, who, f, POSES[base] as Pose);
+  const { pose, handsTo } = poseAt(tl, who, f, walking === undefined ? (POSES[base] as Pose) : walk(walking));
   const breath = Math.sin(f / 22) * 1.5;
   const prop = propAt(tl, who, f);
   return (

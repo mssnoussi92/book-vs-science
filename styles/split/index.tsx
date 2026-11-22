@@ -7,7 +7,7 @@ import { INK } from "../../packages/rig/Rig.tsx";
 import type { PartProps, StyleModule } from "../../packages/video/contract.ts";
 import { FONT } from "../../packages/video/fonts.ts";
 import { Actor } from "../../packages/video/stage.tsx";
-import { effectsAt } from "../../packages/video/state.ts";
+import { effectsAt, presence } from "../../packages/video/state.ts";
 
 const TOP = { y: 250, h: 600, fill: "#e6eef6" };
 const BOTTOM = { y: 850, h: 640, fill: "#f6ead8" };
@@ -44,8 +44,9 @@ const Book: React.FC<PartProps> = ({ tl, f, w }) => {
       <clipPath id="bottom"><rect x={0} y={BOTTOM.y} width={w} height={BOTTOM.h} /></clipPath>
       <g clipPath="url(#bottom)">
         <rect x={0} y={GROUND} width={w} height={BOTTOM.y + BOTTOM.h - GROUND} fill="#dcc7a6" />
-        <Actor tl={tl} f={f} who="karim" x={400} y={GROUND - 150} s={0.92} />
-        <Actor tl={tl} f={f} who="nour" x={690} y={GROUND - 150} s={0.92} facing={-1} />
+        <Actor tl={tl} f={f} who="karim" x={400} y={GROUND - 150} s={0.92} facing={presence(tl, "nour", f) > 0.5 ? 1 : -1} />
+        {/* Nour comes in for her line (state.presence), as in the house style */}
+        {presence(tl, "nour", f) > 0 ? <Actor tl={tl} f={f} who="nour" x={1200 - 510 * presence(tl, "nour", f)} y={GROUND - 150} s={0.92} facing={-1} walking={presence(tl, "nour", f) < 1 ? f * 0.45 : undefined} /> : null}
         {fx.filter((e) => e.fx!.id === "spiral").map((e) => <Spiral key={e.id} x={e.who === "nour" ? 690 : 400} y={BOTTOM.y + 70} size={Number(e.fx!.params.size ?? 1)} f={f} />)}
         {fx.filter((e) => e.fx!.id === "cloud").map((e) => <RainCloud key={e.id} x={e.who === "nour" ? 840 : 230} y={BOTTOM.y + 90} f={f} s={0.8} />)}
         {fx.filter((e) => e.fx!.id === "thought-bubble").map((e) => <ThoughtBubble key={e.id} x={e.who === "nour" ? 560 : 560} y={BOTTOM.y + 110} k={e.k} image={String(e.fx!.params.image ?? "")} />)}
