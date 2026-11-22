@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/language.schema.json",
+  "code": "en",
+  "name": "English",
+  "dir": "ltr",
+  "wordsPerSecond": 2.5,
+  "limits": { "hookFrameWords": 6, "bookCardWords": 12, "lineChars": 160 },
+  "lexicons": {
+    "causal": ["causes", "leads to", "cures", "makes you", "results in", "will make"],
+    "generalizing": ["all women", "all men", "women always", "men always", "women are", "men are"],
+    "sensitive": {
+      "mental-health": ["depression", "anxiety", "sad", "emotions", "feeling bad"],
+      "gender": ["women", "men"],
+      "money": ["money", "salary", "invest"],
+      "relationships": ["marriage", "husband", "wife"]
+    },
+    "forbiddenAdvice": ["let it all out", "vent your anger", "stop your medication", "diagnose yourself"]
+  },
+  "applicabilityLine": "Most studies come from the US and Europe"
+}

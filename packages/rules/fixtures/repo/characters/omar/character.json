@@ -1,0 +1,9 @@
+{
+  "id": "omar",
+  "role": "character",
+  "kind": "biped",
+  "fictional": true,
+  "names": {
+    "ar-EG": "عمر"
+  }
+}

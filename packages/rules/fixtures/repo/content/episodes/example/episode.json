@@ -1,0 +1,197 @@
+{
+  "schema": 1,
+  "id": "example",
+  "sourceLang": "ar-EG",
+  "languages": [
+    "ar-EG"
+  ],
+  "cast": {
+    "narrator": "lens",
+    "characters": [
+      "hana",
+      "omar"
+    ]
+  },
+  "topic": {
+    "tags": [
+      "stress"
+    ],
+    "sensitive": [
+      "mental-health"
+    ]
+  },
+  "hooks": [
+    {
+      "id": "h1",
+      "type": "question",
+      "spokenBy": "narrator",
+      "firstFrame": "text-over-scene"
+    },
+    {
+      "id": "h2",
+      "type": "challenge",
+      "spokenBy": "none",
+      "firstFrame": "challenge"
+    },
+    {
+      "id": "h3",
+      "type": "cold-open",
+      "spokenBy": "hana",
+      "firstFrame": "close-up",
+      "emotion": "anxious"
+    },
+    {
+      "id": "h4",
+      "type": "book-promise",
+      "spokenBy": "narrator",
+      "firstFrame": "badge-tease"
+    },
+    {
+      "id": "h5",
+      "type": "pov",
+      "spokenBy": "none",
+      "firstFrame": "text-over-scene"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "setting": "office",
+      "shape": "replay-twice",
+      "outcome": "a-bit-better",
+      "beats": [
+        {
+          "kind": "line",
+          "id": "l1",
+          "speaker": "hana",
+          "emotion": "anxious"
+        },
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "omar",
+          "gesture": "shrug",
+          "seconds": 1
+        },
+        {
+          "kind": "line",
+          "id": "l2",
+          "speaker": "omar",
+          "emotion": "warm"
+        }
+      ]
+    }
+  ],
+  "book": {
+    "book": "example-book",
+    "basis": "ch1",
+    "claims": [
+      {
+        "id": "c1",
+        "statement": "Practicing habit X lowers stress",
+        "population": "adults",
+        "exposure": "habit X",
+        "comparison": "no habit X",
+        "outcome": "reported stress",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c2",
+        "statement": "Habit X makes you rich",
+        "population": "adults",
+        "exposure": "habit X",
+        "comparison": "no habit X",
+        "outcome": "income",
+        "causal": true,
+        "inScope": false
+      }
+    ],
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "lens",
+        "emotion": "curious"
+      }
+    ]
+  },
+  "verdict": {
+    "badge": "nuanced",
+    "certainty": "moderate",
+    "assessments": [
+      {
+        "claim": "c1",
+        "evidence": [
+          {
+            "source": "meta-2020",
+            "finding": "main",
+            "relation": "supports"
+          },
+          {
+            "source": "exp-2019",
+            "finding": "main",
+            "relation": "supports"
+          }
+        ],
+        "direction": "supports",
+        "certainty": "moderate"
+      }
+    ],
+    "nuance": "c1",
+    "onScreen": "meta-2020",
+    "searched": {
+      "on": "2026-11-22",
+      "queries": [
+        {
+          "base": "crossref",
+          "query": "habit X stress meta-analysis",
+          "results": 12
+        },
+        {
+          "base": "openalex",
+          "query": "habit X replication",
+          "results": 3
+        },
+        {
+          "base": "europepmc",
+          "query": "habit X culture moderator",
+          "results": 2
+        }
+      ],
+      "notFound": [
+        "no sample from the Middle East"
+      ]
+    },
+    "counterEvidence": {
+      "found": [],
+      "conclusion": "No study contradicting the effect was found; the effect is small."
+    },
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "lens",
+        "emotion": "neutral",
+        "claims": [
+          "c1"
+        ]
+      }
+    ]
+  },
+  "takeaway": {
+    "claims": [
+      "c1"
+    ],
+    "strength": "evidence",
+    "orientation": true,
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "lens",
+        "emotion": "warm"
+      }
+    ]
+  }
+}

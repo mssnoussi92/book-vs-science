@@ -43,6 +43,7 @@ export const Finding = z.strictObject({
 });
 
 export const Source = z.strictObject({
+  $schema: z.string().optional(),
   id: Slug,                                   // "ford-2018-acceptance"
   doi: Doi,
   /** Frozen before any query, from where the claim was found. */

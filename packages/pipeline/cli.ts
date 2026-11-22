@@ -1,0 +1,85 @@
+#!/usr/bin/env node
+// bvs: the command line of the pipeline. Every step is a command; every command is safe to run twice.
+//
+//   bvs check [--gate]                       rules on all the content; --gate also fails on what blocks the voice/render
+//   bvs status [<episode>]                   where each episode stands: gates, approvals and their short hashes
+//   bvs approve <episode> sources --words "…" [--via <url>]
+//   bvs approve <episode> script --lang ar-EG --words "…" [--via <url>]
+//                                            records the OWNER's approval, only after he gave it (CLAUDE.md)
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { join, resolve } from "node:path";
+import { short } from "../core/canonical.ts";
+import { scriptHash, sourcesHash } from "../core/fingerprint.ts";
+import { BY_EYE, loadRepo, runRules, type Issue } from "../rules/index.ts";
+import { Approvals } from "../schema/index.ts";
+
+const ROOT = resolve(import.meta.dirname, "..", "..");
+const [cmd = "help", ...args] = process.argv.slice(2);
+const flag = (name: string) => { const i = args.indexOf(`--${name}`); return i >= 0 ? args[i + 1] : undefined; };
+const has = (name: string) => args.includes(`--${name}`);
+
+function print(issues: Issue[]) {
+  const blocking = issues.filter((i) => i.severity === "error" && !i.gate);
+  const gates = issues.filter((i) => i.gate);
+  const warns = issues.filter((i) => i.severity === "warn");
+  const line = (i: Issue) => `  ${i.rule.padEnd(16)} ${i.where}\n${" ".repeat(19)}${i.message}`;
+  if (blocking.length) console.log(`Erreurs (${blocking.length})\n${blocking.map(line).join("\n")}\n`);
+  if (gates.length) console.log(`Bloque la voix et le rendu (${gates.length})\n${gates.map(line).join("\n")}\n`);
+  if (warns.length) console.log(`Avertissements (${warns.length})\n${warns.map(line).join("\n")}\n`);
+  console.log(`À vérifier à l'œil :\n${BY_EYE.map((b) => `  - ${b}`).join("\n")}`);
+  return { blocking, gates };
+}
+
+switch (cmd) {
+  case "check": {
+    const { blocking, gates } = print(runRules(loadRepo(ROOT)));
+    if (blocking.length || (has("gate") && gates.length)) process.exit(1);
+    break;
+  }
+  case "status": {
+    const repo = loadRepo(ROOT);
+    const issues = runRules(repo);
+    for (const e of repo.episodes.filter((x) => !args[0] || x.id === args[0])) {
+      const mine = issues.filter((i) => i.where.startsWith(e.dir));
+      console.log(`${e.id}  (${e.episode.verdict.badge}, ${e.episode.verdict.certainty})`);
+      console.log(`  sources : ${short(sourcesHash(e.episode, repo.sources, repo.verifications))}  ${e.approvals.sources ? `validées ${e.approvals.sources.on} (${short(e.approvals.sources.hash)})` : "à valider"}`);
+      for (const [code, lang] of e.langs) {
+        const a = e.approvals.script[code];
+        console.log(`  script ${code} : ${short(scriptHash(e.episode, lang))}  ${a ? `validé ${a.on} (${short(a.hash)})` : "à valider"}`);
+      }
+      console.log(`  erreurs ${mine.filter((i) => i.severity === "error" && !i.gate).length}, portes ${mine.filter((i) => i.gate).length}`);
+    }
+    break;
+  }
+  case "approve": {
+    const [id, what] = args;
+    const words = flag("words");
+    if (!id || (what !== "sources" && what !== "script") || !words) {
+      console.error('usage: bvs approve <episode> sources|script [--lang ar-EG] --words "<ses mots>" [--via <url>]');
+      process.exit(2);
+    }
+    const repo = loadRepo(ROOT);
+    const e = repo.episodes.find((x) => x.id === id);
+    if (!e) { console.error(`épisode inconnu : ${id}`); process.exit(2); }
+    const path = join(ROOT, e.dir, "approvals.json");
+    const current = Approvals.parse(existsSync(path) ? JSON.parse(readFileSync(path, "utf8")) : {});
+    const on = new Date().toISOString().slice(0, 10);
+    const via = flag("via") ?? "conversation";
+    if (what === "sources") {
+      const hash = sourcesHash(e.episode, repo.sources, repo.verifications);
+      current.sources = { on, words, via, hash };
+      console.log(`sources de ${id} validées : ${short(hash)}`);
+    } else {
+      const code = flag("lang") ?? e.episode.sourceLang;
+      const lang = e.langs.get(code);
+      if (!lang) { console.error(`pas de textes ${code}`); process.exit(2); }
+      const hash = scriptHash(e.episode, lang);
+      current.script[code] = { on, words, via, hash };
+      console.log(`script ${code} de ${id} validé : ${short(hash)}`);
+    }
+    writeFileSync(path, JSON.stringify({ $schema: "../../../schemas/approvals.schema.json", ...Approvals.parse(current) }, null, 2) + "\n");
+    break;
+  }
+  default:
+    console.log("bvs check [--gate] | status [<episode>] | approve <episode> sources|script …");
+}

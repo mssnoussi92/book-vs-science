@@ -4,3 +4,4 @@ export * from "./book.ts";
 export * from "./source.ts";
 export * from "./episode.ts";
 export * from "./lang.ts";
+export * from "./language.ts";

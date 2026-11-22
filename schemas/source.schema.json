@@ -5,6 +5,9 @@
     "Source": {
       "type": "object",
       "properties": {
+        "$schema": {
+          "type": "string"
+        },
         "id": {
           "type": "string",
           "pattern": "^[a-z][a-z0-9-]{1,59}$"

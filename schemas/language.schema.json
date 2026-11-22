@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/LanguagePack",
+  "$defs": {
+    "LanguagePack": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "dir": {
+          "type": "string",
+          "enum": [
+            "rtl",
+            "ltr"
+          ]
+        },
+        "wordsPerSecond": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 6
+        },
+        "limits": {
+          "type": "object",
+          "properties": {
+            "hookFrameWords": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "bookCardWords": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "lineChars": {
+              "type": "integer",
+              "minimum": 20,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "hookFrameWords",
+            "bookCardWords",
+            "lineChars"
+          ],
+          "additionalProperties": false
+        },
+        "lexicons": {
+          "type": "object",
+          "properties": {
+            "causal": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "generalizing": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "sensitive": {
+              "default": {},
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "enum": [
+                  "gender",
+                  "mental-health",
+                  "health",
+                  "money",
+                  "relationships",
+                  "parenting",
+                  "body"
+                ]
+              },
+              "additionalProperties": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "forbiddenAdvice": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "applicabilityLine": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "name",
+        "dir",
+        "wordsPerSecond",
+        "limits",
+        "lexicons",
+        "applicabilityLine"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

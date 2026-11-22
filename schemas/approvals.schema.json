@@ -5,6 +5,9 @@
     "Approvals": {
       "type": "object",
       "properties": {
+        "$schema": {
+          "type": "string"
+        },
         "sources": {
           "$ref": "#/$defs/Approval"
         },

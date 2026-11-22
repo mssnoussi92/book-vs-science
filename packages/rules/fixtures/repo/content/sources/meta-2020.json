@@ -1,0 +1,35 @@
+{
+  "id": "meta-2020",
+  "doi": "10.1000/example.meta",
+  "declared": {
+    "title": "Habit X and stress: a meta-analysis",
+    "firstAuthor": "Doe",
+    "year": 2020,
+    "foundIn": "fixture"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "n": 5000,
+  "k": 40,
+  "population": "adults in 12 countries",
+  "mena": false,
+  "findings": [
+    {
+      "id": "main",
+      "text": "Habit X goes with lower stress across studies",
+      "support": {
+        "sentence": "Across studies, habit X was associated with lower stress.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "r",
+        "value": -0.21
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "correlational studies"
+  ]
+}

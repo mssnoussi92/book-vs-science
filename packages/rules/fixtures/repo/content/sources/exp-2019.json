@@ -1,0 +1,34 @@
+{
+  "id": "exp-2019",
+  "doi": "10.1000/example.exp",
+  "declared": {
+    "title": "Practicing habit X: an experiment",
+    "firstAuthor": "Roe",
+    "year": 2019,
+    "foundIn": "fixture"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 120,
+  "population": "university students",
+  "mena": false,
+  "findings": [
+    {
+      "id": "main",
+      "text": "Practicing X for two weeks reduced reported stress compared with a control group",
+      "support": {
+        "sentence": "Practicing habit X reduced reported stress compared with the control group.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.3
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "one lab, students"
+  ]
+}

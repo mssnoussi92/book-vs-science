@@ -15,6 +15,7 @@ export const Approval = z.strictObject({
 
 /** content/episodes/<id>/approvals.json : kept apart so that no file hashes itself. */
 export const Approvals = z.strictObject({
+  $schema: z.string().optional(),
   sources: Approval.optional(),
   script: z.partialRecord(LangCode, Approval).default({}),
   voice: z.partialRecord(LangCode, Approval).default({}),

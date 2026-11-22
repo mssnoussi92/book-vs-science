@@ -1,0 +1,9 @@
+{
+  "id": "hana",
+  "role": "character",
+  "kind": "biped",
+  "fictional": true,
+  "names": {
+    "ar-EG": "هنا"
+  }
+}

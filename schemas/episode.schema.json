@@ -492,6 +492,9 @@
                     "type": "string",
                     "maxLength": 120
                   },
+                  "causal": {
+                    "type": "boolean"
+                  },
                   "inScope": {
                     "type": "boolean"
                   }
@@ -503,6 +506,7 @@
                   "exposure",
                   "comparison",
                   "outcome",
+                  "causal",
                   "inScope"
                 ],
                 "additionalProperties": false

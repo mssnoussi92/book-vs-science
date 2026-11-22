@@ -4,7 +4,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
-import { Approvals, Book, Episode, LangFile, Source, Verification } from "./index.ts";
+import { Approvals, Book, CharacterDef, Episode, LangFile, LanguagePack, Source, Verification } from "./index.ts";
 
 const OUT = join(import.meta.dirname, "..", "..", "schemas");
 const SCHEMAS: Record<string, [z.ZodType, "input" | "output"]> = {
@@ -14,6 +14,8 @@ const SCHEMAS: Record<string, [z.ZodType, "input" | "output"]> = {
   "book.schema.json": [Book, "input"],
   "approvals.schema.json": [Approvals, "input"],
   "verification.schema.json": [Verification, "output"],
+  "language.schema.json": [LanguagePack, "input"],
+  "character.schema.json": [CharacterDef, "input"],
 };
 
 const check = process.argv.includes("--check");

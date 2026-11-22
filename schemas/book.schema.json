@@ -5,6 +5,9 @@
     "Book": {
       "type": "object",
       "properties": {
+        "$schema": {
+          "type": "string"
+        },
         "slug": {
           "type": "string",
           "pattern": "^[a-z][a-z0-9-]{1,59}$"
@@ -32,6 +35,18 @@
         "author": {
           "type": "string",
           "minLength": 2
+        },
+        "authorWritten": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 2
+          }
         },
         "year": {
           "type": "integer",

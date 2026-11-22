@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/CharacterDef",
+  "$defs": {
+    "CharacterDef": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]{1,30}$"
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "character",
+            "narrator"
+          ]
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "biped",
+            "mascot"
+          ]
+        },
+        "fictional": {
+          "type": "boolean",
+          "const": true
+        },
+        "names": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "id",
+        "role",
+        "kind",
+        "fictional",
+        "names"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

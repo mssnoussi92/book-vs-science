@@ -90,6 +90,8 @@ export const BookClaim = z.strictObject({
   exposure: z.string().max(120),
   comparison: z.string().max(120),
   outcome: z.string().max(120),
+  /** The claim says that something causes or helps (not only « goes with »): it needs causal evidence (rules). */
+  causal: z.boolean(),
   /** Out of scope claims are named (so that nobody tests them silently) and never said as a finding. */
   inScope: z.boolean(),
 });

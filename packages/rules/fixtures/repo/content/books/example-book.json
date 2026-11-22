@@ -1,0 +1,16 @@
+{
+  "slug": "example-book",
+  "title": "The Example Habit",
+  "author": "Jane Example",
+  "authorWritten": {
+    "ar-EG": "جين إكزامبل"
+  },
+  "year": 2015,
+  "basis": [
+    {
+      "id": "ch1",
+      "kind": "book",
+      "locator": "ch. 1"
+    }
+  ]
+}
