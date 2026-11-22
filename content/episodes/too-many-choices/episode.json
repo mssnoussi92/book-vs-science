@@ -38,7 +38,8 @@
           "fx": {
             "id": "choices",
             "params": {
-              "count": 24
+              "count": 24,
+              "countdown": true
             }
           },
           "seconds": 2.4
@@ -1092,7 +1093,8 @@
         "hooks": [
           "h1"
         ],
-        "seconds": 1.4
+        "seconds": 2.0,
+        "holds": "part"
       }
     ]
   },

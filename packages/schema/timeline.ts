@@ -41,7 +41,7 @@ export const TimedAction = z.strictObject({
 const Card = z.strictObject({ f0: Frame, f1: Frame, text: z.string() });
 
 /** A sound effect, drawn in code (packages/pipeline/sfx.ts), never a sample: no licence to check. */
-export const Sfx = z.strictObject({ f: Frame, kind: z.enum(["ping", "rewind", "pop", "swirl", "steps", "whoosh", "ding"]), frames: z.number().int().positive().optional() });
+export const Sfx = z.strictObject({ f: Frame, kind: z.enum(["ping", "rewind", "pop", "swirl", "steps", "whoosh", "ding", "tick"]), frames: z.number().int().positive().optional() });
 
 export const Timeline = z.strictObject({
   episode: Slug,

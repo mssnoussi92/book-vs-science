@@ -1,6 +1,6 @@
 // Sound effects drawn in code (the owner's pilot review: no sound between the moments, hard to follow): a notification
 // for the refusal, a tape for the rewind, a pop for a thought, a swirl for the spiral, footsteps, a whoosh between the
-// parts and for the cards, a bell for the badge. No sample, so no licence to check; deterministic (seeded noise), so
+// parts and for the cards, a bell for the badge, a clock tick for a countdown. No sample, so no licence to check; deterministic (seeded noise), so
 // the same timeline always sounds the same. 24 kHz mono floats, mixed under the voice before the -16 LUFS levelling.
 import type { SfxEvent } from "../schema/timeline.ts";
 
@@ -51,6 +51,7 @@ export function render(e: SfxEvent): Float32Array {
   switch (e.kind) {
     case "ping": return concat(tone(880, 0.1, 0.06, 0.22), tone(1318, 0.18, 0.09, 0.22));
     case "pop": return tone(620, 0.08, 0.03, 0.18, 300);
+    case "tick": return concat(filtered(0.012, 0.6, () => 0.9, (t) => 1 - t, 17), tone(1760, 0.05, 0.012, 0.16));
     case "ding": {
       const a = tone(1046, 1.1, 0.35, 0.2), b = tone(2093, 1.1, 0.22, 0.08), c = tone(3136, 1.1, 0.12, 0.04);
       return a.map((v, i) => v + b[i]! + c[i]!);

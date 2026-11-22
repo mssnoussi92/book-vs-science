@@ -92,11 +92,13 @@ const Cast: React.FC<PartProps & { dim?: number; close?: boolean }> = ({ tl, f, 
   );
 };
 
-/** Effects drawn over the whole frame, not on a character: the choices (a grid of phones, all but one crossed out). */
+/** Effects drawn over the whole frame, not on a character: the choices (a grid of phones, all but one crossed out).
+ *  The grid plays in 1.4 s at most, then stays as it is while the action holds. */
 const FrameFx: React.FC<PartProps> = ({ tl, f }) => (
   <>{effectsAt(tl, f).filter((e) => e.fx!.id === "choices" && f < e.f1 + 10).map((e) => (
-    <Choices key={e.id} x={540} y={880} count={Number(e.fx!.params.count ?? 24)} k={(f - e.f0) / Math.max(1, e.f1 - e.f0)} f={f}
-      crossed={e.fx!.params.rest === "crossed"} o={interpolate(f, [e.f0, e.f0 + 6, e.f1, e.f1 + 10], [0, 1, 1, 0], CLAMP)} />
+    <Choices key={e.id} x={540} y={900} count={Number(e.fx!.params.count ?? 24)} k={Math.min(1, (f - e.f0) / Math.max(1, Math.min(e.f1 - e.f0, 1.4 * tl.fps)))} f={f}
+      crossed={e.fx!.params.rest === "crossed"} o={interpolate(f, [e.f0, e.f0 + 6, e.f1, e.f1 + 10], [0, 1, 1, 0], CLAMP)}
+      left={e.fx!.params.countdown ? (e.f1 - f) / tl.fps : undefined} />
   ))}</>
 );
 

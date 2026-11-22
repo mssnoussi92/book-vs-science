@@ -218,11 +218,12 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
   const sfx: SfxEvent[] = [];
   const firstSeen = new Set<string>();
   for (const a of actions) {
-    if (a.prop?.state === "rejected" && !firstSeen.has(`${a.who}:${a.prop.id}`)) { firstSeen.add(`${a.who}:${a.prop.id}`); sfx.push({ f: a.f0, kind: "ping" }); }
+    if ((a.prop?.state === "rejected" || a.prop?.state === "raise") && !firstSeen.has(`${a.who}:${a.prop.id}:${a.prop.state}`)) { firstSeen.add(`${a.who}:${a.prop.id}:${a.prop.state}`); sfx.push({ f: a.f0, kind: "ping" }); }
     if (a.fx?.id === "rewind") sfx.push({ f: a.f0, kind: "rewind", frames: Math.max(1, a.f1 - a.f0) });
     if (a.fx?.id === "spiral" && a.part !== "hook") sfx.push({ f: a.f0, kind: "swirl" });
     if (a.fx?.id === "thought-bubble" || a.fx?.id === "two-way") sfx.push({ f: a.f0, kind: "pop" });
     if (a.fx?.id === "choices") sfx.push({ f: a.f0, kind: "whoosh" });
+    if (a.fx?.id === "choices" && a.fx.params.countdown) for (let s = 3; s >= 1; s--) { const t = a.f1 - s * FPS; if (t >= a.f0) sfx.push({ f: t, kind: "tick" }); }
     if (a.prop?.state === "chosen" && !firstSeen.has(`${a.who}:chosen`)) { firstSeen.add(`${a.who}:chosen`); sfx.push({ f: a.f0, kind: "ding" }); }
   }
   for (const l of lines) if (l.inner) sfx.push({ f: l.f0, kind: "pop" });
