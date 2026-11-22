@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "bennedsen-2024-plateau",
+  "doi": "10.1016/j.econlet.2024.111730",
+  "declared": {
+    "title": "Income and emotional well-being: Evidence for well-being plateauing around $200,000 per year",
+    "firstAuthor": "Bennedsen",
+    "year": 2024,
+    "venue": "Economics Letters",
+    "foundIn": "Crossref search « income and emotional well-being a conflict resolved adversarial collaboration » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "population": "household income and emotional well-being; the data used are not named in the abstract (full text not read)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "plateau-200000",
+      "text": "With the threshold estimated from the data, emotional well-being stops rising only above about $200,000 a year",
+      "support": {
+        "sentence": "Using a data-driven approach to detect the placement of the threshold, we find a flat relationship between household income and emotional well-being above a threshold around $200,000 per year.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "needs-more-research",
+      "text": "The author concludes that the evidence is not yet enough for definite conclusions",
+      "support": {
+        "sentence": "We conclude that although the analysis of this paper provides some evidence for well-being plateauing around $200,000 per year, more research is needed before any definite conclusions about the relationship between emotional well-being and income can be drawn.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "a short letter; the author lists the assumptions it relies on",
+    "cross-sectional: an association, not an effect of money",
+    "data source and sample not checked (full text not read)"
+  ],
+  "acknowledged": []
+}

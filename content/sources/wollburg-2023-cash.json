@@ -1,0 +1,65 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "wollburg-2023-cash",
+  "doi": "10.1371/journal.pone.0281283",
+  "declared": {
+    "title": "Do cash transfers alleviate common mental disorders in low- and middle-income countries? A systematic review and meta-analysis",
+    "firstAuthor": "Wollburg",
+    "year": 2023,
+    "venue": "PLOS ONE",
+    "foundIn": "counter-evidence report reports/money-happiness/counter-evidence.md; OpenAlex search « do cash transfers alleviate common mental disorders low- and middle-income countries » (2026-11-22)"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "n": 26794,
+  "k": 17,
+  "population": "17 randomised trials, 26,794 adults or adolescents living in poverty in Sub-Saharan Africa, Latin America and South Asia",
+  "mena": false,
+  "findings": [
+    {
+      "id": "reduced-depression",
+      "text": "During the programmes, cash transfers lowered depression and anxiety a little",
+      "support": {
+        "sentence": "Meta-analysis showed that cash transfers significantly reduced depression and anxiety of recipients (dpooled = -0.10; 95%-CI: -0.15, -0.05; p<0.01).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": -0.1,
+        "ci": [
+          -0.15,
+          -0.05
+        ],
+        "correctedForBias": false
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "not-sustained",
+      "text": "Two to nine years after the programmes ended, the improvement may not last",
+      "support": {
+        "sentence": "However, improvements may not be sustained 2-9 years after program cessation (dpooled = -0.05; 95%-CI: -0.14, 0.04; ns).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": -0.05,
+        "ci": [
+          -0.14,
+          0.04
+        ],
+        "correctedForBias": false
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "people living in poverty: basic needs not met, the opposite of the book's population",
+    "depression and anxiety, not life satisfaction nor happiness",
+    "a temporary transfer that ends, not a lasting rise in income or wealth",
+    "no sample from the Middle East or North Africa (regions listed in the abstract)"
+  ],
+  "acknowledged": []
+}

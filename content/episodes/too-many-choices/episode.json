@@ -1,0 +1,1099 @@
+{
+  "$schema": "../../../schemas/episode.schema.json",
+  "schema": 1,
+  "id": "too-many-choices",
+  "sourceLang": "ar-EG",
+  "languages": [
+    "ar-EG",
+    "en"
+  ],
+  "cast": {
+    "narrator": "adasa",
+    "characters": [
+      "nour",
+      "karim"
+    ]
+  },
+  "topic": {
+    "tags": [
+      "choice",
+      "decisions",
+      "commitment"
+    ],
+    "sensitive": []
+  },
+  "hooks": [
+    {
+      "id": "h1",
+      "type": "challenge",
+      "spokenBy": "narrator",
+      "firstFrame": "challenge",
+      "emotion": "amused",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "adasa",
+          "fx": {
+            "id": "choices",
+            "params": {
+              "count": 24
+            }
+          },
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h2",
+      "type": "confession",
+      "spokenBy": "nour",
+      "firstFrame": "close-up",
+      "emotion": "ashamed",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "gesture": "shrug",
+          "prop": {
+            "id": "phone",
+            "state": "scrolling"
+          },
+          "emotion": "ashamed",
+          "look": "viewer",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "type": "question",
+      "spokenBy": "karim",
+      "firstFrame": "text-over-scene",
+      "emotion": "amused",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "gesture": "point",
+          "emotion": "amused",
+          "look": "viewer",
+          "seconds": 2.4
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "nour",
+          "prop": {
+            "id": "phone",
+            "state": "scrolling"
+          },
+          "fx": {
+            "id": "spiral",
+            "params": {
+              "size": 2
+            }
+          },
+          "emotion": "tired",
+          "look": "phone",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "type": "pov",
+      "spokenBy": "none",
+      "firstFrame": "text-over-scene",
+      "emotion": "tired",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "prop": {
+            "id": "phone",
+            "state": "scrolling"
+          },
+          "fx": {
+            "id": "spiral",
+            "params": {
+              "size": 3
+            }
+          },
+          "emotion": "tired",
+          "look": "phone",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "type": "book-promise",
+      "spokenBy": "narrator",
+      "firstFrame": "badge-tease",
+      "emotion": "curious",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "gesture": "head-shake",
+          "prop": {
+            "id": "phone",
+            "state": "scrolling"
+          },
+          "emotion": "neutral",
+          "look": "phone",
+          "seconds": 2.4
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "setting": "office",
+      "shape": "replay-twice",
+      "outcome": "a-bit-better",
+      "beats": [
+        {
+          "kind": "line",
+          "id": "n1",
+          "speaker": "adasa",
+          "emotion": "neutral",
+          "intensity": 0.4,
+          "delivery": "setting the scene, calm, a light smile on « من أسبوعين »",
+          "voice": "over"
+        },
+        {
+          "kind": "line",
+          "id": "l1",
+          "speaker": "nour",
+          "emotion": "curious",
+          "intensity": 0.5,
+          "delivery": "to herself, quick, comparing two phones on her screen",
+          "look": "phone",
+          "voice": "inner"
+        },
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "prop": {
+            "id": "phone",
+            "state": "scrolling"
+          },
+          "emotion": "curious",
+          "look": "phone",
+          "at": {
+            "line": "l1",
+            "word": 0
+          },
+          "seconds": 0.8
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "nour",
+          "fx": {
+            "id": "spiral",
+            "params": {
+              "size": 2
+            }
+          },
+          "holds": "next",
+          "emotion": "anxious",
+          "at": {
+            "line": "l1",
+            "word": 3
+          },
+          "seconds": 0.8
+        },
+        {
+          "kind": "line",
+          "id": "l2",
+          "speaker": "nour",
+          "emotion": "annoyed",
+          "intensity": 0.6,
+          "delivery": "to herself, lost, a little exasperated on « أختار إزاي »",
+          "gesture": "head-in-hands",
+          "look": "phone",
+          "voice": "inner"
+        },
+        {
+          "kind": "action",
+          "id": "a3",
+          "who": "nour",
+          "fx": {
+            "id": "spiral",
+            "params": {
+              "size": 3
+            }
+          },
+          "holds": "next",
+          "emotion": "tired",
+          "at": {
+            "line": "l2",
+            "word": 2
+          },
+          "seconds": 1.0
+        },
+        {
+          "kind": "line",
+          "id": "l3",
+          "speaker": "karim",
+          "emotion": "curious",
+          "intensity": 0.4,
+          "delivery": "light, friendly, passing by her desk",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l4",
+          "speaker": "nour",
+          "emotion": "ashamed",
+          "intensity": 0.5,
+          "delivery": "a sheepish laugh, putting it off again",
+          "gesture": "shrug",
+          "look": "other"
+        },
+        {
+          "kind": "action",
+          "id": "a4",
+          "who": "nour",
+          "prop": {
+            "id": "phone",
+            "state": "scrolling"
+          },
+          "fx": {
+            "id": "rewind",
+            "params": {}
+          },
+          "seconds": 2.2
+        },
+        {
+          "kind": "line",
+          "id": "n2",
+          "speaker": "adasa",
+          "emotion": "warm",
+          "intensity": 0.5,
+          "delivery": "announcing the replay, light, a small stress on « لأ »",
+          "voice": "over"
+        },
+        {
+          "kind": "line",
+          "id": "l5",
+          "speaker": "nour",
+          "emotion": "neutral",
+          "intensity": 0.5,
+          "delivery": "to herself, calm, deciding; a firm « لأ »",
+          "gesture": "head-shake",
+          "look": "phone",
+          "voice": "inner"
+        },
+        {
+          "kind": "action",
+          "id": "a5",
+          "who": "nour",
+          "prop": {
+            "id": "phone",
+            "state": "chosen"
+          },
+          "emotion": "neutral",
+          "look": "phone",
+          "at": {
+            "line": "l5",
+            "word": 3
+          },
+          "seconds": 0.8
+        },
+        {
+          "kind": "line",
+          "id": "l6",
+          "speaker": "karim",
+          "emotion": "curious",
+          "intensity": 0.4,
+          "delivery": "light, friendly, same as before",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l7",
+          "speaker": "nour",
+          "emotion": "happy",
+          "intensity": 0.3,
+          "delivery": "content, not thrilled; a small pause before « بس عاجبني »",
+          "look": "other"
+        }
+      ]
+    }
+  ],
+  "book": {
+    "book": "subtle-art",
+    "basis": "freedom-through-commitment",
+    "claims": [
+      {
+        "id": "c1",
+        "statement": "Beyond a certain number of options, more options make people less satisfied with the option they choose (more options help up to a point, then satisfaction falls).",
+        "population": "adults (consumers, students, online daters)",
+        "exposure": "more options beyond a certain number",
+        "comparison": "a moderate number of options",
+        "outcome": "satisfaction with the option chosen",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c2",
+        "statement": "Beyond a certain number of options, more options make people more likely to put off choosing or to choose nothing at all.",
+        "population": "adults (consumers, donors, borrowers)",
+        "exposure": "more options beyond a certain number",
+        "comparison": "a moderate number of options",
+        "outcome": "choosing at all (buying, deciding, committing)",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c3",
+        "statement": "Committing to a choice that cannot be undone makes people more satisfied with it than keeping the option to change their mind.",
+        "population": "adults",
+        "exposure": "a final, irreversible choice (closing the other options)",
+        "comparison": "a choice one can still reverse",
+        "outcome": "satisfaction with the choice",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c4",
+        "statement": "Having more freedom of choice in one's life makes people less happy overall.",
+        "population": "adults, societies",
+        "exposure": "more freedom of choice in life",
+        "comparison": "less freedom of choice",
+        "outcome": "happiness, well-being",
+        "causal": true,
+        "inScope": true
+      }
+    ],
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "curious",
+        "delivery": "plain, reporting what the book says; a beat before « الحل؟ »",
+        "gesture": "point",
+        "look": "card"
+      }
+    ]
+  },
+  "verdict": {
+    "badge": "nuanced",
+    "certainty": "low",
+    "assessments": [
+      {
+        "claim": "c1",
+        "direction": "mixed",
+        "certainty": "moderate",
+        "evidence": [
+          {
+            "source": "dangelo-2016-dating",
+            "finding": "large-pool",
+            "relation": "supports"
+          },
+          {
+            "source": "reutskaja-2009-satiate",
+            "finding": "inverted-u",
+            "relation": "supports"
+          },
+          {
+            "source": "scheibehenne-2010-overload",
+            "finding": "virtually-zero",
+            "relation": "contradicts"
+          },
+          {
+            "source": "szrek-2017-variety",
+            "finding": "process-not-outcome",
+            "relation": "contradicts"
+          },
+          {
+            "source": "chernev-2015-overload",
+            "finding": "overall-significant",
+            "relation": "nuances"
+          },
+          {
+            "source": "chernev-2015-overload",
+            "finding": "four-moderators",
+            "relation": "nuances"
+          },
+          {
+            "source": "mcshane-2018-multilevel",
+            "finding": "varies-by-measure",
+            "relation": "nuances"
+          },
+          {
+            "source": "scheibehenne-2010-overload",
+            "finding": "no-sufficient-condition",
+            "relation": "nuances"
+          },
+          {
+            "source": "reutskaja-2009-satiate",
+            "finding": "peak-moves",
+            "relation": "nuances"
+          },
+          {
+            "source": "reutskaja-2018-neural",
+            "finding": "right-amount",
+            "relation": "nuances"
+          },
+          {
+            "source": "yeung-2025-selfcare",
+            "finding": "more-is-better",
+            "relation": "nuances"
+          },
+          {
+            "source": "haynes-2009-boundaries",
+            "finding": "time-pressure",
+            "relation": "nuances"
+          },
+          {
+            "source": "scheibehenne-2009-moderators",
+            "finding": "only-justification",
+            "relation": "nuances"
+          },
+          {
+            "source": "reutskaja-2022-deprivation",
+            "finding": "deprivation-norm",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c2",
+        "direction": "mixed",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "bertrand-2010-advertising",
+            "finding": "fewer-examples",
+            "relation": "supports"
+          },
+          {
+            "source": "scheibehenne-2010-overload",
+            "finding": "virtually-zero",
+            "relation": "contradicts"
+          },
+          {
+            "source": "lindkvist-2022-donation",
+            "finding": "no-difference",
+            "relation": "contradicts"
+          },
+          {
+            "source": "chernev-2015-overload",
+            "finding": "overall-significant",
+            "relation": "nuances"
+          },
+          {
+            "source": "chernev-2015-overload",
+            "finding": "four-moderators",
+            "relation": "nuances"
+          },
+          {
+            "source": "mcshane-2018-multilevel",
+            "finding": "varies-by-measure",
+            "relation": "nuances"
+          },
+          {
+            "source": "yeung-2025-selfcare",
+            "finding": "more-is-better",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c3",
+        "direction": "mixed",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "gilbert-2002-revisions",
+            "finding": "liked-less",
+            "relation": "supports"
+          },
+          {
+            "source": "gilbert-2002-revisions",
+            "finding": "wanted-option",
+            "relation": "supports"
+          },
+          {
+            "source": "gu-2013-closure",
+            "finding": "closure-satisfaction",
+            "relation": "supports"
+          },
+          {
+            "source": "li-2022-reversibility",
+            "finding": "lower-satisfaction",
+            "relation": "supports"
+          },
+          {
+            "source": "dangelo-2016-dating",
+            "finding": "reversibility-no-effect",
+            "relation": "contradicts"
+          },
+          {
+            "source": "shiner-2015-maximizers",
+            "finding": "maximizers-reverse",
+            "relation": "nuances"
+          },
+          {
+            "source": "fasolo-2024-freedom",
+            "finding": "focus-chosen",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c4",
+        "direction": "contradicts",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "fischer-2011-autonomy",
+            "finding": "individualism",
+            "relation": "contradicts"
+          },
+          {
+            "source": "inglehart-2008-freedom",
+            "finding": "free-choice-happiness",
+            "relation": "contradicts"
+          },
+          {
+            "source": "reutskaja-2022-deprivation",
+            "finding": "deprivation-worse",
+            "relation": "contradicts"
+          },
+          {
+            "source": "zayed-2026-autonomy",
+            "finding": "autonomy-less-distress",
+            "relation": "contradicts"
+          },
+          {
+            "source": "markus-2010-choice",
+            "finding": "too-much",
+            "relation": "supports"
+          },
+          {
+            "source": "markus-2010-choice",
+            "finding": "culture",
+            "relation": "nuances"
+          },
+          {
+            "source": "fasolo-2024-freedom",
+            "finding": "freedom-cue",
+            "relation": "nuances"
+          }
+        ]
+      }
+    ],
+    "nuance": "c1",
+    "onScreen": "scheibehenne-2010-overload",
+    "searched": {
+      "on": "2026-11-22",
+      "queries": [
+        {
+          "base": "crossref",
+          "query": "choice overload meta-analysis",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "can there ever be too many options meta-analytic review choice overload",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "too many options meta-analytic review choice overload",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "\"choice overload\" AND (meta-analysis OR \"meta-analytic\")",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "choice overload replication preregistered",
+          "results": 20
+        },
+        {
+          "base": "openalex",
+          "query": "choice overload replication",
+          "results": 20
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"choice overload\" OR \"too-much-choice\" OR \"assortment size\") AND (replication OR replicate OR \"failed to replicate\" OR preregistered)",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "what moderates the too-much-choice effect",
+          "results": 8
+        },
+        {
+          "base": "crossref",
+          "query": "when choice is demotivating can one desire too much of a good thing",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "decisions and revisions affective forecasting of changeable outcomes",
+          "results": 8
+        },
+        {
+          "base": "openalex",
+          "query": "Gilbert Ebert changeable outcomes replication",
+          "results": 15
+        },
+        {
+          "base": "crossref",
+          "query": "decision reversibility satisfaction keeping options open detrimental consequences",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"reversible decision\" OR \"decision reversibility\" OR \"changeable outcomes\" OR \"reversible choice\") AND (satisfaction OR replication)",
+          "results": 12
+        },
+        {
+          "base": "crossref",
+          "query": "reversible irreversible decisions satisfaction replication Gilbert Ebert 2002",
+          "results": 15
+        },
+        {
+          "base": "openalex",
+          "query": "works citing 10.1037/0022-3514.82.4.503 (Decisions and revisions: The affective forecasting of change) matching « replication »",
+          "results": 50
+        },
+        {
+          "base": "openalex",
+          "query": "works citing 10.1037/0022-3514.79.6.995 (When choice is demotivating: Can one desire too much of a go) matching « replication »",
+          "results": 50
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"choice overload\" OR \"number of options\" OR \"too much choice\" OR \"paradox of choice\") AND (culture OR cultural OR \"cross-cultural\" OR moderator)",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "choice overload culture cross-cultural moderator number of options satisfaction",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "rethinking the value of choice cultural perspective intrinsic motivation",
+          "results": 6
+        },
+        {
+          "base": "crossref",
+          "query": "does choice mean freedom and well-being",
+          "results": 6
+        },
+        {
+          "base": "crossref",
+          "query": "development freedom and rising happiness global perspective",
+          "results": 6
+        },
+        {
+          "base": "openalex",
+          "query": "freedom of choice life satisfaction cross-national",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"choice overload\" OR \"number of options\" OR \"maximizing\" OR \"maximization\" OR \"decision reversibility\" OR \"freedom of choice\") AND (Egypt OR Egyptian OR Arab OR Arabic OR Saudi OR Jordan OR Lebanon OR \"Middle East\" OR Morocco OR Tunisia OR Emirates)",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "choice overload Arab consumers Saudi Egypt number of options",
+          "results": 15
+        },
+        {
+          "base": "openalex",
+          "query": "choice overload Arab Egypt Saudi consumers",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"choice overload\" OR \"paradox of choice\" OR \"too much choice\" OR \"maximizer\" OR \"maximizers\" OR \"maximization scale\") AND (Egypt OR Egyptian OR Arab OR Arabic OR Saudi OR Jordan OR Lebanon OR \"Middle East\")",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "maximization scale Arabic version maximizers satisficers",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "perceived freedom of choice happiness Arab countries World Values Survey",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "maximizing versus satisficing happiness is a matter of choice",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "choice overload reduces neural signatures of choice set value",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "choice overload Western East Asian cultural differences assortment",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"number of options\" OR \"choice set size\" OR \"assortment size\" OR \"choice overload\") AND (satisfaction OR regret OR deferral) AND (experiment OR randomized OR randomised)",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "reversible decisions satisfaction",
+          "results": 20
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"reversible\" OR \"irreversible\" OR \"change their minds\" OR \"keeping options open\") AND (\"decision\" OR \"choice\") AND (satisfaction OR \"liking\") AND (meta-analysis OR replication OR culture OR moderator)",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "filter=updates on the 12 DOIs of the verdict (retractions, corrections, expressions of concern)",
+          "results": 0
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q1: (\"choice overload\" OR \"too much choice\" OR \"too-much-choice\" OR \"assortment size\" OR \"number of options\") AND (\"meta-analysis\" OR \"meta-analytic\" OR \"systematic review\") AND PUB_YEAR:[2016 TO 2026]",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q2: choice overload meta-analysis, from-pub-date:2016-01-01",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q3: assortment size choice deferral meta-analysis, from-pub-date:2016-01-01",
+          "results": 20
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q4: (\"choice overload\" OR \"too much choice\" OR \"too-much-choice\" OR \"choice set size\" OR \"assortment size\" OR \"number of options\") AND (preregistered OR \"pre-registered\" OR \"registered report\" OR replication OR \"failed to replicate\" OR \"many labs\")",
+          "results": 30
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q5: replication when choice is demotivating Iyengar Lepper jam",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q6: registered report replication choice overload extensive limited array, from-pub-date:2012-01-01",
+          "results": 20
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q7: works citing Iyengar & Lepper 2000 since 2016 matching preregistered / registered report / failed to replicate / meta-analysis",
+          "results": 131
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q8: works citing Gilbert & Ebert 2002 matching preregistered / registered report / replication / failed",
+          "results": 77
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q9: (\"reversible decision\" OR \"reversible decisions\" OR \"decision reversibility\" OR \"irreversible decision\" OR \"irreversible decisions\" OR \"choice reversibility\" OR \"return policy\") AND (satisfaction OR regret OR liking OR happiness) AND PUB_YEAR:[2014 TO 2026]",
+          "results": 30
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q10: reversible decisions lower satisfaction irreversible choice experiment, from-pub-date:2014-01-01, type:journal-article",
+          "results": 25
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q11: (\"Gilbert and Ebert\" OR \"Gilbert & Ebert\" OR \"changeable outcomes\" OR \"reversible decisions\" OR \"decision reversibility\") AND (replicat* OR preregist* OR \"registered report\")",
+          "results": 19
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q12: decision reversibility replication registered report satisfaction",
+          "results": 15
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q13: Revisiting decisions and revisions affective forecasting changeable outcomes replication extension Gilbert Ebert, since 2016",
+          "results": 8
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q14: by title: choice closure (Gu 2013), keeping doors open (Shin 2004), tragic choices (Botti 2009)",
+          "results": 9
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q15a: maximization well-being meta-analysis maximizing satisficing life satisfaction",
+          "results": 10
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q15b: (maximizing OR maximization OR maximizers) AND (satisficing OR satisficers) AND (\"meta-analysis\" OR \"meta-analytic\")",
+          "results": 15
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q15c: maximizing satisficing meta-analysis well-being regret",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q16: choice overload cross-cultural",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q17: culture choice overload number of options East Asian Indian American satisfaction, type:journal-article",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q18: (\"freedom of choice\" OR \"freedom to make life choices\" OR \"perceived control\" OR \"autonomy\") AND (\"life satisfaction\" OR happiness OR \"subjective well-being\") AND (Arab OR \"Middle East\" OR MENA OR Egypt OR Egyptian OR Saudi OR Jordan OR Lebanon OR Tunisia OR Morocco OR Algeria OR Iraq OR \"Gulf\")",
+          "results": 30
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q19: by title: Fischer & Boer 2011 (63 societies), Chirkov 2003, Welzel & Inglehart 2010",
+          "results": 9
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q20: by title: inverted U (Reutskaja & Hogarth 2009, Shah & Wolford 2007, Reutskaja 2018), expectations (Diehl & Poynor 2010)",
+          "results": 12
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q21: by title: field studies (Bertrand 2010, Iyengar & Kamenica 2010, Sethi-Iyengar 2004), Patall 2008",
+          "results": 14
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q22: choice overload + Jordan / Saudi Arabia / Egypt / Iran / Turkey consumers / Pakistan",
+          "results": 48
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q23: FORRT replication database reversals social sciences; replications and reversals list of psychological effects that failed to replicate",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q24: choice overload multi-site multi-lab replication too many options, since 2016",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q25: (\"choice overload\" OR \"too many options\" OR \"too much choice\" OR \"number of options\" OR \"choice set size\") AND (culture OR cultural OR \"cross-cultural\" OR \"cross-national\" OR nations OR countries) AND (satisfaction OR deferral OR \"well-being\")",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q26: choice overload preregistered experiment, since 2018",
+          "results": 25
+        },
+        {
+          "base": "other",
+          "query": "counter-evidence S1: snowball from the bibliography of Yeung 2025 (full text) to « Choice deprivation, choice overload, and satisfaction with choices across six nations », found by title on Crossref",
+          "results": 1
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence: filter=updates on 15 key counter-evidence DOIs (retractions, corrections, expressions of concern)",
+          "results": 0
+        }
+      ],
+      "notFound": [
+        "no multi-lab replication of choice overload; one single-lab preregistered null (lindkvist-2022-donation); Ariga 2018 (10.1109/kst.2018.8426193) not read",
+        "no meta-analysis of choice overload since Chernev 2015 except the reanalysis by McShane & Böckenholt 2018",
+        "no direct replication of Iyengar & Lepper 2000 nor of Gilbert & Ebert 2002 among the citing works read; no meta-analysis of decision reversibility",
+        "no Egyptian or Arab sample on the number of options, choice deferral, reversibility or maximizing; Arab samples only on autonomy (zayed-2026-autonomy)",
+        "not read in full (closed): Chernev 2015 p. 348 (which corrected coefficient is the unmoderated mean), Hu 2026",
+        "not kept, no abstract or no result sentence: Bullens 2011 and 2013, Verme 2009, Abdur Rahman & Veenhoven 2017, Shah & Wolford 2007, Iyengar & Kamenica 2010",
+        "the book's own text of ch. 8 is not public: the idea is taken from the author's 2019 article that restates it"
+      ]
+    },
+    "counterEvidence": {
+      "found": [
+        {
+          "doi": "10.1016/j.jcps.2015.07.001",
+          "note": "Chernev corrigendum, not linked by Crossref: the mean-effect section holds b = .17 and .41 (p < .001) but also b = .04 (p > .4). Chernev is now read as an effect under conditions, not as a meta-analysis that contradicts Scheibehenne on the average"
+        },
+        {
+          "source": "mcshane-2018-multilevel",
+          "note": "reanalysis (Böckenholt co-author of Chernev): the effect varies by outcome measure, so c1 (satisfaction) and c2 (deferral) cannot rest on one pooled figure"
+        },
+        {
+          "source": "scheibehenne-2010-overload",
+          "note": "the card line pooled « satisfaction » alone: the mean covers satisfaction or the wish to choose; a mean near zero alone reads as ❌ under a ⚖️, so Chernev's condition is written under it"
+        },
+        {
+          "source": "reutskaja-2009-satiate",
+          "note": "inverted U, with reutskaja-2018-neural: c1 and c2 rewritten with Manson's own « beyond a certain point »; the monotone version was stronger than the book"
+        },
+        {
+          "source": "yeung-2025-selfcare",
+          "note": "randomized, Hong Kong, 652 adults: 4 or 16 self-care exercises beat 1 on practice and decision satisfaction; no loss up to 16"
+        },
+        {
+          "source": "lindkvist-2022-donation",
+          "note": "preregistered: donating did not change from 2 to 80 charities, whatever preference certainty: against c2 and against Chernev's preference-uncertainty moderator"
+        },
+        {
+          "source": "reutskaja-2022-deprivation",
+          "note": "six nations, 7,436 people: too little choice is the norm outside the US and weighs more on satisfaction than too much; by Iyengar and Schwartz themselves"
+        },
+        {
+          "source": "fischer-2011-autonomy",
+          "note": "meta-analysis, 63 countries, 420,599 people: more individualism goes with more well-being: c4 moves from mixed to contradicts (association, autonomy rather than number of options)"
+        },
+        {
+          "source": "zayed-2026-autonomy",
+          "note": "the only Arab sample found (328 Arabic-speaking adults): personal autonomy goes with less distress (cross-sectional); nothing Arab on the number of options, deferral or reversibility"
+        },
+        {
+          "source": "fasolo-2024-freedom",
+          "note": "field + preregistered (669): telling people they may choose as much as they wish raises satisfaction with what they chose: nuances c3 and c4"
+        },
+        {
+          "source": "gu-2013-closure",
+          "note": "support for c3 the draft had missed: acts of closure raise satisfaction with choices from large sets (4 studies, consumer choices, no replication)"
+        },
+        {
+          "source": "bertrand-2010-advertising",
+          "note": "support for c2 in a real decision (South Africa, randomized mailers): fewer example loans, more take-up; an advertisement, not a choice set"
+        },
+        {
+          "source": "iyengar-2000-demotivating",
+          "note": "the jam study enters content/contested.json (average near zero, failed tests, a preregistered null; no multi-lab replication) and is no longer counted as evidence: never shown as a fact"
+        },
+        {
+          "source": "li-2022-reversibility",
+          "note": "risk of bias found in the full text (manipulation check d reported as 0.98 for means implying about 10; dummy coding written both ways): kept, weighed less"
+        },
+        {
+          "doi": "10.1177/09567976251400333",
+          "note": "Hu, Moon & VanEpps 2026, six preregistered experiments (10,092 US adults) whose premise is that larger sets yield better-liked choices; full text not read: not used"
+        },
+        {
+          "doi": "10.1017/s1930297500003247",
+          "note": "Roets, Schwartz & Guan 2012: maximizers report less well-being only in choice-rich societies (US, Western Europe), not in China; the one limited support for c4, Schwartz co-author; not added"
+        },
+        {
+          "doi": "10.1001/jamanetworkopen.2025.42949",
+          "note": "Altinger 2025, 402 US physicians, randomized: more alternatives meant less status quo, not more deferral (1 vs 2-4 options); not added"
+        },
+        {
+          "doi": "10.1037/0022-3514.84.1.97",
+          "note": "Chirkov 2003 (incl. Turkey) and Welzel & Inglehart 2010 (about 80 societies): autonomy or agency goes with well-being; same direction as c4's contradiction, not added"
+        }
+      ],
+      "conclusion": "⚖️ low holds: no claim reaches a net moderate direction. Taken: c1/c2 rewritten with « beyond a certain point » and read as « near zero on average, present under conditions »; the jam study is contested and no longer evidence; c4 now contradicts (63-country meta-analysis, the only Arab sample); Gu 2013 added for c3, Li 2022 weighed less; card line widened, with its condition."
+    },
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "skeptical",
+        "delivery": "a small pause before the answer"
+      },
+      {
+        "kind": "line",
+        "id": "l2",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "calm, factual; « تقريبًا ما فرقتش » plain, no triumph",
+        "claims": [
+          "c1",
+          "c2"
+        ]
+      }
+    ],
+    "nuanceSpoken": true,
+    "applicability": "written"
+  },
+  "takeaway": {
+    "claims": [
+      "c1",
+      "c2"
+    ],
+    "strength": "low-risk-suggestion",
+    "orientation": false,
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "warm",
+        "delivery": "simple, a suggestion not an order; « والباقي لأ » in Nour's calm tone",
+        "look": "viewer"
+      },
+      {
+        "kind": "action",
+        "id": "a1",
+        "who": "nour",
+        "gesture": "head-shake",
+        "emotion": "neutral",
+        "at": {
+          "line": "l1",
+          "word": 8
+        },
+        "seconds": 1.0
+      },
+      {
+        "kind": "action",
+        "id": "a2",
+        "who": "adasa",
+        "fx": {
+          "id": "choices",
+          "params": {
+            "count": 24,
+            "rest": "crossed"
+          }
+        },
+        "at": {
+          "line": "l1",
+          "word": 8
+        },
+        "hooks": [
+          "h1"
+        ],
+        "seconds": 1.4
+      }
+    ]
+  },
+  "variation": {
+    "pin": {},
+    "avoid": []
+  }
+}

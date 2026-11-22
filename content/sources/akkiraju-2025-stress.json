@@ -1,0 +1,36 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "akkiraju-2025-stress",
+  "doi": "10.1038/s44271-025-00210-z",
+  "declared": {
+    "title": "Higher income is associated with greater life satisfaction, and more stress",
+    "firstAuthor": "Akkiraju",
+    "year": 2025,
+    "venue": "Communications Psychology",
+    "foundIn": "Europe PMC search « (income OR money) AND (\"emotional well-being\" OR \"experienced well-being\" OR \"life evaluation\") AND (satiation OR plateau OR threshold) » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "n": 2050000,
+  "population": "2.05 million US adults, Gallup Daily Poll 2008-2017",
+  "mena": false,
+  "findings": [
+    {
+      "id": "stress-63000",
+      "text": "Above about $63,000 of household income, people are more likely to report stress the day before",
+      "support": {
+        "sentence": "Drawing upon responses from 2.05 million U.S. adults from the Gallup Daily Poll from 2008 to 2017 we find that with household income above ~$63,000 respondents are more likely to experience stress.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "cross-sectional: an association, not an effect of money",
+    "stress is a yes/no question about the previous day, the measure family of Kahneman & Deaton 2010",
+    "the title's « greater life satisfaction » is not stated as a result sentence in the abstract: not used here",
+    "US only"
+  ],
+  "acknowledged": []
+}

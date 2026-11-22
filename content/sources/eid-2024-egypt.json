@@ -1,0 +1,42 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "eid-2024-egypt",
+  "doi": "10.1504/ijhd.2024.144453",
+  "declared": {
+    "title": "Happiness in Egypt",
+    "firstAuthor": "Eid",
+    "year": 2024,
+    "foundIn": "counter-evidence report reports/money-happiness/counter-evidence.md; OpenAlex search « Happiness in Egypt » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "population": "Egypt: survey data on average happiness and its trend (data sources not given in the abstract)",
+  "mena": true,
+  "findings": [
+    {
+      "id": "average-4-8",
+      "text": "Average happiness in Egypt is 4.8 out of 10, near the bottom of the world ranking",
+      "support": {
+        "sentence": "Average happiness in Egypt is 4.8 on scale 0-10, which is relatively close to the bottom part of the ranking of happiness in nations.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "judge-low-feel-well",
+      "text": "Egyptians judge their lives poorly but feel fairly well day to day",
+      "support": {
+        "sentence": "Although Egyptians are discontented with their lives cognitively, they feel pretty well affectively, a pattern which is also observed in other African nations.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "descriptive: nothing on income or on a threshold",
+    "data sources and years not given in the abstract (full text not read)"
+  ],
+  "acknowledged": []
+}

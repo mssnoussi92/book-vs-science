@@ -10,8 +10,8 @@
   },
   "design": "cross-sectional",
   "designSetBy": "reviewer",
-  "n": 73,
-  "population": "Illinois, USA: 22 major lottery winners, 22 controls and 29 paralyzed accident victims (study 1)",
+  "n": 44,
+  "population": "Illinois lottery: 22 major winners vs 22 controls from the same areas (study 1; 29 paralyzed accident victims also interviewed)",
   "mena": false,
   "findings": [
     {
@@ -28,7 +28,8 @@
   "limits": [
     "22 winners: far too small to detect a moderate difference",
     "one interview, no measure before the win: a comparison of groups, not a follow-up",
-    "the classic study behind « lottery winners are not happier », contradicted by larger, later lottery studies (Lindqvist 2020)"
+    "rescaled by Lindqvist 2020 (NBER w24667): 0.014 SD per $100,000, standard error 0.025: absence of evidence, not evidence of absence",
+    "the classic study behind « lottery winners are not happier », contradicted on life satisfaction by larger, later lottery studies (Lindqvist 2020)"
   ],
   "acknowledged": []
 }

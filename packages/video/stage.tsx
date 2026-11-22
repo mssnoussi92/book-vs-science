@@ -42,7 +42,7 @@ export const Actor: React.FC<ActorProps> = ({ tl, f, who, x, y, s, facing = 1, b
   return (
     <g opacity={opacity}>
       <Rig look={look} x={x} y={y + breath} s={s} facing={facing} pose={pose} face={EMOTIONS[emotion]} mouth={mouth} blink={blink}
-        handsTo={handsTo} heldF={prop?.id === "phone" && !handsTo ? <Phone state={prop.state} /> : undefined} />
+        handsTo={handsTo} heldF={prop?.id === "phone" && !handsTo ? <Phone state={prop.state} f={f} /> : undefined} />
     </g>
   );
 };

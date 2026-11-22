@@ -15,7 +15,7 @@
   "findings": [
     {
       "id": "satiation-30000",
-      "text": "In Europe, life satisfaction and happiness stop rising above about 30,000 euros of net household income a year",
+      "text": "In European countries whose average net income per adult-equivalent exceeds about 30,000 euros, average life satisfaction and happiness rise no further",
       "support": {
         "sentence": "At least for European countries, life satisfaction and happiness, two facets of SWB, show no further increase above 30,000 € net annual income (EDHI) both in 2013 and 2018.",
         "role": "result",
@@ -35,9 +35,11 @@
     }
   ],
   "limits": [
-    "an aggregate-level analysis (« at the aggregate level »): about averages, not about individuals",
+    "country averages (« aggregate level »): says nothing of a person earning more than 30,000 euros",
     "cross-sectional: an association, not an effect of money",
-    "Europe only; kink regressions are sensitive to the threshold chosen (Lien 2016)"
+    "with prices adjusted (PPP), satiation holds for happiness but « for LS, the picture is not so clear » (full text)",
+    "EU-SILC « happiness » is how much of the past four weeks one felt happy: a mood measure",
+    "Europe only; kink regressions are sensitive to the threshold chosen (Lien 2016); other aggregate data disagree (Fors Connolly 2026)"
   ],
   "acknowledged": []
 }

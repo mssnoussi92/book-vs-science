@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "rohrer-2024-quantile",
+  "doi": "10.1073/pnas.2313712121",
+  "declared": {
+    "title": "Inappropriate causal assumptions underlie Killingsworth, Kahneman, and Mellers’ conclusions",
+    "firstAuthor": "Rohrer",
+    "year": 2024,
+    "venue": "Proceedings of the National Academy of Sciences",
+    "foundIn": "counter-evidence report reports/money-happiness/counter-evidence.md; OpenAlex search « Inappropriate causal assumptions underlie Killingsworth Kahneman Mellers » (2026-11-22)"
+  },
+  "design": "narrative-review",
+  "designSetBy": "reviewer",
+  "population": "methodological letter on the quantile regressions of Killingsworth 2023 (no new data)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "not-a-group",
+      "text": "A quantile regression describes a percentile of a distribution, not a group of people such as « the least happy 15% »",
+      "support": {
+        "sentence": "What quantile regression does not do is simply estimate regressions in particular subgroups of people—such as the 15% least happy.",
+        "role": "conclusion",
+        "where": "fulltext",
+        "readBy": "dossier agent (money-happiness), PMC11572929 full text (BioC), paragraph 6"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "no-covariates",
+      "text": "With no covariates, the 2023 reanalysis cannot rule out confounding: its « increases » are associations",
+      "support": {
+        "sentence": "Given that KKM do not take into account any covariates, assuming the absence of confounding is not warranted.",
+        "role": "conclusion",
+        "where": "fulltext",
+        "readBy": "dossier agent (money-happiness), PMC11572929 full text (BioC), paragraph 4"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "a methodological letter: it says how to read the 2023 result, not whether money helps",
+    "the authors of the 2023 paper reply that they never claimed a precisely invariant group (Killingsworth 2024)"
+  ],
+  "acknowledged": []
+}

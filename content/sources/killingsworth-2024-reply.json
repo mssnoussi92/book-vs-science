@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "killingsworth-2024-reply",
+  "doi": "10.1073/pnas.2322160121",
+  "declared": {
+    "title": "Reply to Rohrer and Wenz and Arslan: The association between income and emotional well-being",
+    "firstAuthor": "Killingsworth",
+    "authors": [
+      "Killingsworth",
+      "Kahneman",
+      "Mellers"
+    ],
+    "year": 2024,
+    "venue": "Proceedings of the National Academy of Sciences",
+    "foundIn": "counter-evidence report reports/money-happiness/counter-evidence.md; OpenAlex search « Reply to Rohrer and Wenz and Arslan income emotional well-being » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "n": 33391,
+  "population": "reply letter on the reanalysis of Killingsworth 2021's data: employed US adults",
+  "mena": false,
+  "findings": [
+    {
+      "id": "all-quantiles-rise",
+      "text": "Except at the 15th percentile, happiness rises significantly with income at every level of happiness studied",
+      "support": {
+        "sentence": "1) With one exception, happiness rises significantly with Log(income) in all the quantile regressions shown in Fig. 1 .",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "dossier agent (money-happiness), PMC11572976 full text, point 1"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "fifteenth-percentile",
+      "text": "Only the 15th percentile of happiness rises below $100,000 and barely changes above it",
+      "support": {
+        "sentence": "2) The exception is the 15th percentile, which rises relatively steeply below $100K but barely changes above $100K, consistent with the flattening pattern.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "dossier agent (money-happiness), PMC11572976 full text, point 2"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "threshold-100k",
+      "text": "The authors place Kahneman & Deaton's threshold at $100,000 after inflation, not $75,000 (the midpoint of a $60-90K band)",
+      "support": {
+        "sentence": "Adjusting for inflation, the predicted threshold beyond which a flattened pattern should be detectable in Killingsworth’s data was $100K.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "dossier agent (money-happiness), PMC11572976 full text, paragraph 2"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "a reply letter: no new data, the same reanalysis as Killingsworth 2023",
+    "correlational, as the authors write; the threshold was set from Kahneman & Deaton, not estimated (Arslan 2024)",
+    "not independent of Killingsworth 2021 and 2023 (same data, same authors)"
+  ],
+  "acknowledged": []
+}

@@ -30,6 +30,17 @@
       "kind": "association"
     },
     {
+      "id": "no-satiation-120k",
+      "text": "Life evaluation shows no satiation with income, at least up to well over $120,000 a year",
+      "support": {
+        "sentence": "In contrast, the figure shows a fairly steady rise in life evaluation with log income over the entire range; the effects of income on individuals’ life evaluations show no satiation, at least to an amount well over $120,000.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "dossier agent (money-happiness), PNAS full text (reviewer's PMC copy), Results"
+      },
+      "kind": "association"
+    },
+    {
       "id": "emotion-plateau",
       "text": "Day-to-day emotional well-being rises with income too, but stops improving above about $75,000 a year",
       "support": {
@@ -53,8 +64,8 @@
   "limits": [
     "cross-sectional: an association between income and well-being, not an effect of money",
     "emotions measured by yes/no questions about yesterday: a ceiling effect, admitted by Kahneman himself in Killingsworth 2023",
-    "US only (2008-2009); nominal dollars, not adjusted for local cost of living",
-    "the $75,000 plateau was later revised: it holds only for the least happy people (Killingsworth, Kahneman & Mellers 2023)"
+    "US only (2008-2009); household income in bands, not adjusted for local cost of living",
+    "its $75,000 is about emotions; its authors later place that threshold at $100,000 and only for the least happy (Killingsworth 2023, 2024)"
   ],
   "acknowledged": []
 }

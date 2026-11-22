@@ -1,0 +1,33 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "oh-2025-trajectories",
+  "doi": "10.1037/pspp0000552",
+  "declared": {
+    "title": "Money matters for future well-being: A latent growth analysis and meta-analytic integration of associations between income, financial satisfaction, and 22 well-being variables across three data sets",
+    "firstAuthor": "Oh",
+    "year": 2025,
+    "foundIn": "counter-evidence report reports/money-happiness/counter-evidence.md; OpenAlex search « money matters for future well-being latent growth income financial satisfaction » (2026-11-22)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "population": "adults in three panels: Midlife in the US, Understanding America Study, Korean Longitudinal Study of Aging; 22 well-being measures",
+  "mena": false,
+  "findings": [
+    {
+      "id": "changes-unrelated",
+      "text": "Within the same people, a change in income went with no change in well-being, though a higher starting income went with better later trajectories",
+      "support": {
+        "sentence": "Conversely, starting income was unrelated to starting well-being, and changes in income were unrelated to changes in well-being, but starting income significantly predicted more positive trajectories of change in well-being with a medium effect size (d = .40).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "longitudinal associations: income changes are not random (no windfall, no experiment)",
+    "the same sentence also reports a medium positive link (d = .40) between starting income and later well-being",
+    "older and midlife samples in the US and South Korea"
+  ],
+  "acknowledged": []
+}

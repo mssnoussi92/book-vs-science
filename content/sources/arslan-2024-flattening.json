@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "arslan-2024-flattening",
+  "doi": "10.1073/pnas.2314207121",
+  "declared": {
+    "title": "The miseries that remain may yet be alleviated",
+    "firstAuthor": "Arslan",
+    "year": 2024,
+    "venue": "Proceedings of the National Academy of Sciences",
+    "foundIn": "counter-evidence report reports/money-happiness/counter-evidence.md; OpenAlex search « The miseries that remain may yet be alleviated » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "population": "independent reanalysis (letter) of Killingsworth 2021's aggregated data: employed US adults",
+  "mena": false,
+  "findings": [
+    {
+      "id": "linear-as-good",
+      "text": "Estimated freely, without an assumed threshold, a curve with a plateau fits no better than a straight line",
+      "support": {
+        "sentence": "When I do not build in an assumed threshold and instead freely estimate the shape of the income effect on quantiles, a nonlinear relationship is not clearly superior to a linear relationship in leave-one-out cross-validation ( 4 , 5 ).",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "dossier agent (money-happiness), PMC11572980 full text, paragraph 3"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "flattening-not-strong",
+      "text": "The evidence for a plateau is weak; if any, it would come only above $200,000, where data are sparse",
+      "support": {
+        "sentence": "If anything, the spline may flatten only after $200,000, where data are sparse ( Fig. 2 ).",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "dossier agent (money-happiness), PMC11572980 full text, paragraph 3"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "a letter reanalysing aggregated data (the raw data were not released)",
+    "the author writes that model differences are small relative to the uncertainty",
+    "cross-sectional data: says nothing causal"
+  ],
+  "acknowledged": []
+}

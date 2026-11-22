@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "diener-2010-wealth",
+  "doi": "10.1037/a0018066",
+  "declared": {
+    "title": "Wealth and happiness across the world: Material prosperity predicts life evaluation, whereas psychosocial prosperity predicts positive feeling",
+    "firstAuthor": "Diener",
+    "year": 2010,
+    "foundIn": "counter-evidence report reports/money-happiness/counter-evidence.md; OpenAlex search « wealth and happiness across the world material prosperity predicts life evaluation » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "population": "Gallup World Poll, representative samples of many countries (countries and sample size not given in the abstract)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "convex",
+      "text": "Well-being rises in a straight line with each doubling of income, so each extra dollar adds less",
+      "support": {
+        "sentence": "Across the globe, the association of log income with subjective well-being was linear but convex with raw income, indicating the declining marginal effects of income on subjective well-being.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "feelings-weaker",
+      "text": "Income predicts how people judge their life much better than how they feel day to day",
+      "support": {
+        "sentence": "Income was a moderately strong predictor of life evaluation but a much weaker predictor of positive and negative feelings.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "needs-partial",
+      "text": "Meeting basic needs explains only part of the link between income and life evaluation; standard of living and possessions explain more",
+      "support": {
+        "sentence": "Although the meeting of basic and psychological needs mediated the effects of income on life evaluation to some degree, the strongest mediation was provided by standard of living and ownership of conveniences.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "cross-sectional: associations, not effects of money (the « mediation » is statistical)",
+    "life evaluation is the Cantril ladder, which may itself prime thoughts of wealth (Nilsson 2024)",
+    "countries and sample not checked in the full text: MENA presence unknown"
+  ],
+  "acknowledged": []
+}

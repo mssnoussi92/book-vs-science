@@ -41,8 +41,10 @@
   ],
   "limits": [
     "cross-sectional: an association, not an effect of money",
-    "a short paper (AER Papers & Proceedings); Egypt's presence read on the country labels of figure 1 of the NBER version (w18992)",
-    "mostly life evaluation (ladder, satisfaction); day-to-day emotions are analysed less",
+    "Egypt (NBER w18992): a national mean (fig. 1), then life evaluation vs household income inside Egypt, 10th-90th income percentiles (fig. 2)",
+    "Egypt again in fig. 3: the slope above vs below $15,000 of household income, one of 98 countries; MENA neighbours there too",
+    "the thresholds tested between and within countries are basic-needs levels ($8,000 to $25,000); only a US poll (incomes up to $500,000) tests high incomes",
+    "evaluative measures only (ladder, satisfaction): says nothing about day-to-day emotions",
     "« log-linear » means each extra dollar still adds less: it contradicts a plateau, not diminishing returns"
   ],
   "acknowledged": []

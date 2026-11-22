@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "raschke-2018-lottery",
+  "doi": "10.1080/00036846.2018.1494813",
+  "declared": {
+    "title": "Unexpected windfalls, education, and mental health: evidence from lottery winners in Germany",
+    "firstAuthor": "Raschke",
+    "year": 2018,
+    "venue": "Applied Economics",
+    "foundIn": "counter-evidence report reports/money-happiness/counter-evidence.md; OpenAlex search « unexpected windfalls education and mental health lottery winners Germany » (2026-11-22)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "population": "German lottery winners observed before and after a large prize, panel data 2000-2011",
+  "mena": false,
+  "findings": [
+    {
+      "id": "no-impact-high-education",
+      "text": "A large windfall does not change the mental health of winners with high education or financial literacy",
+      "support": {
+        "sentence": "Unexpected windfalls have no impact on the mental health of individuals with high education or high financial literacy.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "low-education-worse",
+      "text": "Winners with low education or low financial literacy see their mental health decline right after the win",
+      "support": {
+        "sentence": "Mental health declines immediately after winning a large lottery prize for individuals with low education and low levels of financial literacy.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "happier-but",
+      "text": "Those same winners say they are happier, while their mental-health scores get worse",
+      "support": {
+        "sentence": "While these individuals report being happier after winning the lottery, evidence from commonly used SF-12 measures of mental health indicates that winners with low education experience increased role limitations due to emotional problems, are more anxious, and have less energy after their win.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "winners only, before vs after: the comparison group and the panel are not named in the abstract (full text not read)",
+    "follow-up up to two years",
+    "mental health (SF-12) more than happiness or life satisfaction"
+  ],
+  "acknowledged": []
+}

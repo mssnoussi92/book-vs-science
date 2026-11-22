@@ -101,3 +101,9 @@ export function presence(tl: Timeline, who: string, f: number): number {
   if (!mine) return 0;
   return Math.max(0, Math.min(1, (f - (mine.f0 - ENTER)) / WALK));
 }
+
+/** Who lives the problem: the first character to speak in a scene (not the narrator over it); the first of the cast
+ *  when no scene line exists yet. */
+export function leadOf(tl: Timeline): string {
+  return tl.lines.find((l) => l.part === "scene" && !l.over && l.speaker !== tl.cast.narrator)?.speaker ?? tl.cast.characters[0]!;
+}

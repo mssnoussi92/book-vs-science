@@ -10,7 +10,7 @@
   },
   "design": "longitudinal",
   "designSetBy": "reviewer",
-  "population": "British Household Panel Survey: Britons with medium lottery wins (1,000 to 120,000 pounds) vs non-winners and small winners",
+  "population": "British Household Panel Survey: 137 medium lottery winners (1,000 to 120,000 pounds) vs non-winners and small winners",
   "mena": false,
   "findings": [
     {
@@ -35,9 +35,11 @@
     }
   ],
   "limits": [
-    "playing the lottery is not random: only the size of a win among players is; one control group did not win at all",
+    "a quasi-experiment: playing is not random, only the size of a win among players; one control group did not win at all",
     "mental wellbeing (GHQ, psychological distress), not life satisfaction nor happiness",
-    "UK panel; number of winners not given in the abstract (full text not read)"
+    "137 winners (author's version): Lindqvist 2020 (NBER w24667) computes 5-6.5% power for its effect, so a significant result is likely overstated",
+    "Apouey & Clark 2015 extend this analysis on the same British panel: not independent evidence"
   ],
-  "acknowledged": []
+  "acknowledged": [],
+  "n": 137
 }

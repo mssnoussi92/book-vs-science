@@ -59,14 +59,49 @@ export const Rewind: React.FC<{ k: number; w: number; h: number; f: number }> = 
   );
 };
 
-/** A phone in a hand; state « rejected » shows a red cross on its screen. */
-export const Phone: React.FC<{ state?: string }> = ({ state }) => (
+/** A phone in a hand. « rejected »: a red cross on its screen; « scrolling »: a list running (`f` moves it);
+ *  « chosen »: a green tick, the choice made. */
+export const Phone: React.FC<{ state?: string; f?: number }> = ({ state, f = 0 }) => (
   <g transform="rotate(-14)">
     <rect x={-22} y={-40} width={44} height={78} rx={8} fill="#2a2d36" stroke={INK} strokeWidth={4} />
-    <rect x={-16} y={-32} width={32} height={58} rx={4} fill={state === "rejected" ? "#fbe3e0" : "#bfe3f2"} />
+    <rect x={-16} y={-32} width={32} height={58} rx={4} fill={state === "rejected" ? "#fbe3e0" : state === "chosen" ? "#e3f6e6" : "#bfe3f2"} />
     {state === "rejected" ? <path d="M -9 -12 L 9 6 M 9 -12 L -9 6" stroke="#d2453b" strokeWidth={5} strokeLinecap="round" /> : null}
+    {state === "chosen" ? <path d="M -9 -3 L -2 5 L 10 -10" stroke="#2e9e5b" strokeWidth={5} fill="none" strokeLinecap="round" strokeLinejoin="round" /> : null}
+    {state === "scrolling" ? (
+      <g>
+        <clipPath id="phone-screen"><rect x={-16} y={-32} width={32} height={58} rx={4} /></clipPath>
+        <g clipPath="url(#phone-screen)">
+          {Array.from({ length: 6 }, (_, i) => <rect key={i} x={-12} y={-30 + ((i * 14 - (f * 1.5) % 14) % 84)} width={24} height={9} rx={2} fill="#7aa9c4" />)}
+        </g>
+      </g>
+    ) : null}
   </g>
 );
+
+/** Too many choices: a grid of small phones popping in; with `crossed`, all but one get a red cross, one by one, and
+ *  the one kept is ticked green (« والباقي لأ »). k: progress 0..1. */
+export const Choices: React.FC<{ x: number; y: number; count: number; k: number; f: number; crossed?: boolean; o?: number }> = ({ x, y, count, k, crossed = false, o = 1 }) => {
+  const cols = 6, rows = Math.ceil(count / cols), gap = 96;
+  const keep = Math.floor(count / 2) + 2;
+  return (
+    <g transform={`translate(${x - ((cols - 1) * gap) / 2} ${y - ((rows - 1) * gap * 1.3) / 2})`} opacity={o}>
+      <rect x={-70} y={-90} width={(cols - 1) * gap + 140} height={(rows - 1) * gap * 1.3 + 180} rx={30} fill="#ffffff" stroke={INK} strokeWidth={6} opacity={0.92} />
+      {Array.from({ length: count }, (_, i) => {
+        const cx = (i % cols) * gap, cy = Math.floor(i / cols) * gap * 1.3;
+        const shown = Math.min(1, Math.max(0, k * (crossed ? 6 : 2.5) * count / count - i / count) * 4);
+        const out = crossed && i !== keep && k > 0.15 + (0.6 * ((i * 7) % count)) / count;
+        return (
+          <g key={i} transform={`translate(${cx} ${cy}) scale(${0.85 * Math.min(1, crossed ? 1 : shown)})`} opacity={crossed ? (out ? 0.35 : 1) : Math.min(1, shown)}>
+            <rect x={-22} y={-38} width={44} height={76} rx={8} fill="#2a2d36" stroke={INK} strokeWidth={4} />
+            <rect x={-16} y={-30} width={32} height={56} rx={4} fill={["#bfe3f2", "#f5d7a1", "#c9e7c4", "#e8c6e9"][i % 4]} />
+            {out ? <path d="M -20 -20 L 20 20 M 20 -20 L -20 20" stroke="#d2453b" strokeWidth={7} strokeLinecap="round" /> : null}
+            {crossed && i === keep && k > 0.8 ? <circle r={34} fill="none" stroke="#2e9e5b" strokeWidth={7} /> : null}
+          </g>
+        );
+      })}
+    </g>
+  );
+};
 
 /** The sadness itself: a rain cloud of constant size (accepting it does not make it smaller, review of the pilot:
  *  only the spiral, the feeling about the feeling, goes away). It bobs and rains. */

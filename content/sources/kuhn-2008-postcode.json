@@ -1,0 +1,35 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "kuhn-2008-postcode",
+  "doi": "10.3386/w14035",
+  "declared": {
+    "title": "The Own and Social Effects of an Unexpected Income Shock: Evidence from the Dutch Postcode Lottery",
+    "firstAuthor": "Kuhn",
+    "year": 2008,
+    "foundIn": "counter-evidence report reports/money-happiness/counter-evidence.md; OpenAlex search « own and social effects of an unexpected income shock Dutch postcode lottery » (2026-11-22)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 2011,
+  "population": "Dutch households in winning and nearby non-winning postcodes, surveyed 6 months after; prize about 8 months of income",
+  "mena": false,
+  "findings": [
+    {
+      "id": "not-happier-6-months",
+      "text": "Six months after winning (about eight months of income), households are not happier, and neighbours are not less happy",
+      "support": {
+        "sentence": "Six months after the fact, winning the lottery does not make households happier, nor do neighbors' winnings reduce happiness.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "dossier agent (money-happiness), NBER w14035 PDF, abstract page (the databases' copy has no spaces between sentences)"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "a working paper (NBER); the published version (AER 2011) has no happiness sentence in its abstract",
+    "a one-off windfall, measured once, six months later: says nothing about years",
+    "survey response rate 32.7% (2,011 observations)"
+  ],
+  "acknowledged": []
+}

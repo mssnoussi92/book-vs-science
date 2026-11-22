@@ -12,12 +12,12 @@
   "design": "cross-sectional",
   "designSetBy": "reviewer",
   "n": 1709734,
-  "population": "Gallup World Poll 2005-2016, representative samples of 164 countries; Middle East/North Africa region: 246,998 people (supplementary table 1)",
+  "population": "Gallup World Poll 2005-2016, 164 countries; MENA region 246,998 people, Egypt 20,924 of them (supplementary tables 1 and 3)",
   "mena": true,
   "findings": [
     {
       "id": "satiation-points",
-      "text": "Worldwide, a satiation point is found: about $95,000 a year for life evaluation, $60,000 to $75,000 for day-to-day emotions",
+      "text": "Worldwide, satiation at about $95,000 a year for life evaluation and $60,000-75,000 for emotions (household income per person-equivalent, PPP dollars)",
       "support": {
         "sentence": "Globally, we find that satiation occurs at $95,000 for life evaluation and $60,000 to $75,000 for emotional well-being.",
         "role": "result",
@@ -48,9 +48,12 @@
   ],
   "limits": [
     "cross-sectional: an association, not an effect of money",
-    "satiation points come from spline models; other analyses of the same poll find no satiation (Stevenson & Wolfers 2013)",
-    "very few respondents above the satiation points: the flat part rests on thin data",
-    "MENA region included in the sample (supplementary tables read by the dossier agent); no figure for Egypt alone"
+    "income is household income divided by the square root of its size, in PPP dollars: not comparable as such with Kahneman & Deaton's household $75,000",
+    "MENA (SI table 2): satiation at $115,000 for life evaluation, $110,000 positive affect, $125,000 negative affect; 1.14% of the region above $115,000",
+    "MENA: no decline beyond satiation (p = .51, SI table 2): the region is not one of the « turning point » regions",
+    "no estimate for Egypt alone: its 20,924 respondents are pooled in the MENA region",
+    "very few respondents above the satiation points (about 1% worldwide): the flat part rests on thin data",
+    "the article itself is paywalled: only the abstract and the supplementary information were read"
   ],
   "acknowledged": []
 }

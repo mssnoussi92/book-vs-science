@@ -39,12 +39,35 @@
         "where": "abstract"
       },
       "kind": "association"
+    },
+    {
+      "id": "least-happy-20",
+      "text": "In the authors' summary, the plateau exists but only in the least happy 20% of the distribution",
+      "support": {
+        "sentence": "We discovered in a joint reanalysis of the experience sampling data that the flattening pattern exists but is restricted to the least happy 20% of the population, and that complementary nonlinearities contribute to the overall linear-log relationship between happiness and income.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "dossier agent (money-happiness), PMC10013834, Significance statement"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "levels-off-100k",
+      "text": "At the 15th percentile of happiness, the rise levels off at about $100,000 a year",
+      "support": {
+        "sentence": "The happiness of the least happy 15% rises quickly in the lower range of income, leveling off abruptly at $100,000 to a near-zero, statistically nonsignificant slope in the higher range of incomes.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "dossier agent (money-happiness), PMC10013834, Results"
+      },
+      "kind": "association"
     }
   ],
   "limits": [
     "an adversarial collaboration between the two opposing authors: a strength, but a reanalysis of one existing dataset, not new data",
     "an association: income is not manipulated",
-    "the abstract gives neither the income of the plateau nor the share of « least happy » people: no such number may be quoted from this sheet",
+    "the plateau's numbers are in the paper, not the abstract: « least happy 20% » (Significance), 15th percentile levelling off at $100,000 (text)",
+    "a quantile of the conditional distribution, not a group of people (Rohrer & Wenz 2024); no clear flattening before $200,000 in Arslan's reanalysis (2024)",
     "employed US adults using a smartphone app: not representative"
   ],
   "acknowledged": []

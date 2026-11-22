@@ -7,7 +7,7 @@ import { INK } from "../../packages/rig/Rig.tsx";
 import type { PartProps, StyleModule } from "../../packages/video/contract.ts";
 import { FONT } from "../../packages/video/fonts.ts";
 import { Actor } from "../../packages/video/stage.tsx";
-import { effectsAt, presence } from "../../packages/video/state.ts";
+import { effectsAt, leadOf, presence } from "../../packages/video/state.ts";
 
 const TOP = { y: 250, h: 600, fill: "#e6eef6" };
 const BOTTOM = { y: 850, h: 640, fill: "#f6ead8" };
@@ -39,17 +39,21 @@ const Science: React.FC<PartProps> = ({ tl, f, part }) => {
 /** The book half: the scene in small, mimed. */
 const Book: React.FC<PartProps> = ({ tl, f, w }) => {
   const fx = effectsAt(tl, f);
+  const lead = leadOf(tl);
+  const other = tl.cast.characters.find((c) => c !== lead) ?? lead;
+  const k = presence(tl, other, f);
+  const X: Record<string, number> = { [lead]: 400, [other]: 1200 - 510 * k };
   return (
     <g>
       <clipPath id="bottom"><rect x={0} y={BOTTOM.y} width={w} height={BOTTOM.h} /></clipPath>
       <g clipPath="url(#bottom)">
         <rect x={0} y={GROUND} width={w} height={BOTTOM.y + BOTTOM.h - GROUND} fill="#dcc7a6" />
-        <Actor tl={tl} f={f} who="karim" x={400} y={GROUND - 150} s={0.92} facing={presence(tl, "nour", f) > 0.5 ? 1 : -1} />
-        {/* Nour comes in for her line (state.presence), as in the house style */}
-        {presence(tl, "nour", f) > 0 ? <Actor tl={tl} f={f} who="nour" x={1200 - 510 * presence(tl, "nour", f)} y={GROUND - 150} s={0.92} facing={-1} walking={presence(tl, "nour", f) < 1 ? f * 0.45 : undefined} /> : null}
-        {fx.filter((e) => e.fx!.id === "spiral").map((e) => <Spiral key={e.id} x={e.who === "nour" ? 690 : 400} y={BOTTOM.y + 70} size={Number(e.fx!.params.size ?? 1)} f={f} />)}
-        {fx.filter((e) => e.fx!.id === "cloud").map((e) => <RainCloud key={e.id} x={e.who === "nour" ? 840 : 230} y={BOTTOM.y + 90} f={f} s={0.8} />)}
-        {fx.filter((e) => e.fx!.id === "thought-bubble").map((e) => <ThoughtBubble key={e.id} x={e.who === "nour" ? 560 : 560} y={BOTTOM.y + 110} k={e.k} image={String(e.fx!.params.image ?? "")} />)}
+        <Actor tl={tl} f={f} who={lead} x={400} y={GROUND - 150} s={0.92} facing={k > 0.5 ? 1 : -1} />
+        {/* the other comes in for a line (state.presence), as in the house style */}
+        {k > 0 ? <Actor tl={tl} f={f} who={other} x={X[other]!} y={GROUND - 150} s={0.92} facing={-1} walking={k < 1 ? f * 0.45 : undefined} /> : null}
+        {fx.filter((e) => e.fx!.id === "spiral" && X[e.who] !== undefined).map((e) => <Spiral key={e.id} x={X[e.who]!} y={BOTTOM.y + 70} size={Number(e.fx!.params.size ?? 1)} f={f} />)}
+        {fx.filter((e) => e.fx!.id === "cloud" && X[e.who] !== undefined).map((e) => <RainCloud key={e.id} x={X[e.who]! - 170} y={BOTTOM.y + 90} f={f} s={0.8} />)}
+        {fx.filter((e) => e.fx!.id === "thought-bubble").map((e) => <ThoughtBubble key={e.id} x={560} y={BOTTOM.y + 110} k={e.k} image={String(e.fx!.params.image ?? "")} />)}
         {fx.filter((e) => e.fx!.id === "rewind").map((e) => <g key={e.id} transform={`translate(0 ${BOTTOM.y}) scale(1 ${BOTTOM.h / 1920})`}><Rewind k={e.k} w={w} h={1920} f={f} /></g>)}
       </g>
     </g>

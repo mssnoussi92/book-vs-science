@@ -1,0 +1,113 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "thomson-2022-income",
+  "doi": "10.1016/s2468-2667(22)00058-5",
+  "declared": {
+    "title": "How do income changes impact on mental health and wellbeing for working-age adults? A systematic review and meta-analysis",
+    "firstAuthor": "Thomson",
+    "year": 2022,
+    "venue": "The Lancet Public Health",
+    "foundIn": "counter-evidence report reports/money-happiness/counter-evidence.md; OpenAlex search « how do income changes impact on mental health and wellbeing working-age adults systematic review meta-analysis » (2026-11-22)"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "k": 86,
+  "population": "adults aged 16-64; 136 studies (12.5% RCTs), 86 meta-analysed; English-language studies, countries not listed in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "mh-out-of-poverty",
+      "text": "An income rise that lifts people out of poverty goes with better mental health",
+      "support": {
+        "sentence": "A binary income increase lifting individuals out of poverty was associated with 0·13 SD improvement in mental health measures (95% CI 0·07 to 0·20; n=42 128; 18 studies), considerably larger than other income increases (0·01 SD improvement, 0·002 to 0·019; n=216 509, 14 studies).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.13,
+        "ci": [
+          0.07,
+          0.2
+        ],
+        "correctedForBias": false
+      },
+      "kind": "association"
+    },
+    {
+      "id": "mh-other-increases",
+      "text": "Other income rises, not out of poverty, go with almost no change in mental health",
+      "support": {
+        "sentence": "A binary income increase lifting individuals out of poverty was associated with 0·13 SD improvement in mental health measures (95% CI 0·07 to 0·20; n=42 128; 18 studies), considerably larger than other income increases (0·01 SD improvement, 0·002 to 0·019; n=216 509, 14 studies).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.01,
+        "ci": [
+          0.002,
+          0.019
+        ],
+        "correctedForBias": false
+      },
+      "kind": "association"
+    },
+    {
+      "id": "wb-out-of-poverty",
+      "text": "Leaving poverty goes with the largest gain in wellbeing",
+      "support": {
+        "sentence": "For wellbeing, increases out of poverty were associated with 0·38 SD improvement (0·09 to 0·66; n=101 350, 8 studies) versus 0·16 for other income increases (0·07 to 0·25; n=62 619, 11 studies).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.38,
+        "ci": [
+          0.09,
+          0.66
+        ],
+        "correctedForBias": false
+      },
+      "kind": "association"
+    },
+    {
+      "id": "wb-other-increases",
+      "text": "Other income rises still go with better wellbeing, by a smaller amount",
+      "support": {
+        "sentence": "For wellbeing, increases out of poverty were associated with 0·38 SD improvement (0·09 to 0·66; n=101 350, 8 studies) versus 0·16 for other income increases (0·07 to 0·25; n=62 619, 11 studies).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.16,
+        "ci": [
+          0.07,
+          0.25
+        ],
+        "correctedForBias": false
+      },
+      "kind": "association"
+    },
+    {
+      "id": "grade-low",
+      "text": "The authors rate the certainty of this evidence low or very low (GRADE)",
+      "support": {
+        "sentence": "GRADE certainty was low or very low.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "the authors' own GRADE: low or very low certainty; risk of bias high (30.1% of studies critical, 47.1% serious or high)",
+    "heterogeneity high (I2 = 79-87%); effects larger in low- and middle-income settings and in higher risk-of-bias studies",
+    "mostly non-randomised studies (12.5% RCTs): pooled estimates are associations, not clean causal effects",
+    "« other income increases » is not « once basic needs are met »: an indirect test of the book's threshold",
+    "English-language studies only; countries not listed in the abstract (full text not read)"
+  ],
+  "acknowledged": []
+}

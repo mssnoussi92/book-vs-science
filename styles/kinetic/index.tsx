@@ -8,7 +8,7 @@ import { INK } from "../../packages/rig/Rig.tsx";
 import type { PartProps, StyleModule } from "../../packages/video/contract.ts";
 import { FONT } from "../../packages/video/fonts.ts";
 import { Actor } from "../../packages/video/stage.tsx";
-import { effectsAt, lineAt } from "../../packages/video/state.ts";
+import { effectsAt, leadOf, lineAt } from "../../packages/video/state.ts";
 
 const CLAMP = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const COLORS: Record<string, string> = { nour: "#2f8f8a", karim: "#e07a3a", adasa: "#3f4d8c" };
@@ -25,7 +25,7 @@ const Medallion: React.FC<PartProps & { who: string }> = ({ tl, f, who }) => {
       <g clipPath="url(#med)">
         {isNarrator
           ? <Actor tl={tl} f={f} who={who} x={540} y={MED.cy - 8} s={0.74} />
-          : <Actor tl={tl} f={f} who={who} x={532} y={MED.cy + 262} s={1.75} facing={who === "nour" ? -1 : 1} />}
+          : <Actor tl={tl} f={f} who={who} x={532} y={MED.cy + 262} s={1.75} facing={who === leadOf(tl) ? 1 : -1} />}
       </g>
     </g>
   );
@@ -63,7 +63,7 @@ const Words: React.FC<PartProps> = ({ tl, f }) => {
 };
 
 const Stage: React.FC<PartProps> = (p) => {
-  const who = lineAt(p.tl, p.f)?.speaker ?? (p.part.kind === "scene" || p.part.kind === "hook" ? "karim" : p.tl.cast.narrator);
+  const who = lineAt(p.tl, p.f)?.speaker ?? (p.part.kind === "scene" || p.part.kind === "hook" ? leadOf(p.tl) : p.tl.cast.narrator);
   const fx = effectsAt(p.tl, p.f);
   const top = MED.cy - MED.r - 60;
   return (
