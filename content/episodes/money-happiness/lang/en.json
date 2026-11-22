@@ -9,9 +9,9 @@
     "hook.h2": "Every raise makes me happy for a month… then I wait for the next one.",
     "hook.h3.frame": "Salary doubled… a better day?",
     "hook.h3": "If your salary doubled tomorrow… would your day be any better?",
-    "hook.h4.frame": "Raise just in… eyeing the next",
-    "hook.h5.frame": "Money matters… up to a number?",
-    "hook.h5": "A famous book says: money matters… up to a certain number. Right?",
+    "hook.h4.frame": "86 studies: money matters for whom?",
+    "hook.h5.frame": "Can't buy happiness… but satisfaction?",
+    "hook.h5": "They say money can't buy happiness… so what about satisfaction with your life?",
     "s1.n1": "This is Karim. He just got a raise.",
     "s1.l1": "Finally! I made the number.",
     "s1.l2": "Congrats! Happy?",
@@ -26,11 +26,12 @@
     "verdict.nuance": "And money is linked more to your life satisfaction… than to your daily mood.",
     "verdict.l1": "And science? Not exactly.",
     "verdict.l2": "The first part is probably right: the same raise goes with a bigger difference… for those who have less.",
-    "verdict.l3": "The ceiling? Unclear: some studies found it… others didn't, even among the rich.",
+    "verdict.l3": "The ceiling? Unclear: some studies found it… others didn't.",
     "takeaway.l1": "Try it like Karim: don't put off your joy until the next number. It may help.",
     "share": "Send this to someone waiting for the next number to be happy.",
     "s1.a5": "And your number… would you wait for the next?",
-    "verdict.l4": "In Egypt: those who see their income as higher are more satisfied."
+    "verdict.l4": "Even in America, where salaries are higher: studies found those who earn more are more satisfied.",
+    "hook.h4": "86 studies asked: who does money matter most for?"
   },
   "of": {
     "title": "339e4f1c",
@@ -40,9 +41,9 @@
     "hook.h2": "76abe747",
     "hook.h3.frame": "f3074e53",
     "hook.h3": "935da3b0",
-    "hook.h4.frame": "27a59276",
-    "hook.h5.frame": "86a117aa",
-    "hook.h5": "b8ace2ed",
+    "hook.h4.frame": "eb54c55d",
+    "hook.h5.frame": "013cee07",
+    "hook.h5": "42b8ae8a",
     "s1.n1": "3732ab0c",
     "s1.l1": "f764c797",
     "s1.l2": "36ed5f12",
@@ -57,10 +58,11 @@
     "verdict.nuance": "1a894f79",
     "verdict.l1": "804edf6a",
     "verdict.l2": "a58c9799",
-    "verdict.l3": "784c64cc",
+    "verdict.l3": "cd67b67e",
     "takeaway.l1": "98366e3b",
     "share": "65c5704c",
     "s1.a5": "bdafd7dc",
-    "verdict.l4": "0fd077c6"
+    "verdict.l4": "ad3e053e",
+    "hook.h4": "5a12c9a9"
   }
 }

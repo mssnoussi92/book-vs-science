@@ -19,13 +19,14 @@
 - *Nour : point, curious, regarde l'objectif*
 - *Karim : happy*
 
-**h4 · pov** (muet, première image text-over-scene) `2.0 s`
-- à l'écran : Raise just in… eyeing the next
-- *Karim : spiral 2, tired*
+**h4 · number** (Adasa, première image text-over-scene) `3.9 s`
+- à l'écran : 86 studies: money matters for whom?
+- dit : 86 studies asked: who does money matter most for?
+- *Karim : neutral*
 
-**h5 · book-promise** (Adasa, première image badge-tease) `5.0 s`
-- à l'écran : Money matters… up to a number?
-- dit : A famous book says: money matters… up to a certain number. Right?
+**h5 · paradox** (Adasa, première image close-up) `5.5 s`
+- à l'écran : Can't buy happiness… but satisfaction?
+- dit : They say money can't buy happiness… so what about satisfaction with your life?
 - *Karim : shrug, neutral*
 
 ## 2. Scène s1 · office · replay-twice · se termine a-bit-better
@@ -38,7 +39,7 @@
 - **Karim** *(tired, a half-smile that fades, his mind already on the next one)* : Well… when I get to the next number.  `3.5 s`
 - *Karim : spiral 2, anxious (sur le mot 2 de l3 · jusqu'à son effet suivant)*
 - *Karim : spiral 3, tired (sur le mot 5 de l3 · jusqu'à son effet suivant)*
-- *Karim : tired (1.5 s · seulement avec h1)*
+- *Karim : tired (1.2 s · seulement avec h1)*
   - à l'écran, sans voix : And your number… would you wait for the next?
 - *Karim : phone raise, rewind (2.2 s)*
 - **Adasa** *(warm, announcing the replay, light, a small stress on « مش هيستنى »)* : Let's replay it… this time he won't wait for the next number.  `5.0 s`
@@ -61,8 +62,8 @@
 
 - **Adasa** *(skeptical, a small pause before the answer)* : And science? Not exactly.  `1.9 s`
 - **Adasa** *(neutral, calm, factual; fair to the book on « غالبًا صح »)* : The first part is probably right: the same raise goes with a bigger difference… for those who have less.  `7.8 s`
-- **Adasa** *(neutral, calm, a beat after « مش واضح »; the same weight on both sides)* : The ceiling? Unclear: some studies found it… others didn't, even among the rich.  `5.5 s`
-- **Adasa** *(warm, closer, plain: about us)* : In Egypt: those who see their income as higher are more satisfied.  `5.0 s`
+- **Adasa** *(neutral, calm, a beat after « مش واضح »; the same weight on both sides)* : The ceiling? Unclear: some studies found it… others didn't.  `3.9 s`
+- **Adasa** *(neutral, a comparison for every Arab viewer, plain; a light stress on « أعلى »)* : Even in America, where salaries are higher: studies found those who earn more are more satisfied.  `6.7 s`
 
 ## 5. À retenir (suggestion à faible risque)
 
@@ -71,4 +72,4 @@
 
 ---
 Durée estimée : **71 s** (débit 2.5 mots/s, recalibré sur la première prise)
-Empreinte du script en : **38094b**
+Empreinte du script en : **2a7b58**

@@ -90,11 +90,13 @@
     },
     {
       "id": "h4",
-      "type": "pov",
-      "spokenBy": "none",
+      "type": "number",
+      "spokenBy": "narrator",
       "firstFrame": "text-over-scene",
-      "emotion": "tired",
-      "claims": [],
+      "emotion": "curious",
+      "claims": [
+        "c4"
+      ],
       "beats": [
         {
           "kind": "action",
@@ -104,13 +106,7 @@
             "id": "phone",
             "state": "raise"
           },
-          "fx": {
-            "id": "spiral",
-            "params": {
-              "size": 2
-            }
-          },
-          "emotion": "tired",
+          "emotion": "neutral",
           "look": "phone",
           "seconds": 2.4
         }
@@ -118,11 +114,13 @@
     },
     {
       "id": "h5",
-      "type": "book-promise",
+      "type": "paradox",
       "spokenBy": "narrator",
-      "firstFrame": "badge-tease",
+      "firstFrame": "close-up",
       "emotion": "curious",
-      "claims": [],
+      "claims": [
+        "c1"
+      ],
       "beats": [
         {
           "kind": "action",
@@ -261,7 +259,7 @@
           "who": "karim",
           "emotion": "tired",
           "look": "viewer",
-          "seconds": 1.5,
+          "seconds": 1.2,
           "hooks": [
             "h1"
           ],
@@ -1211,8 +1209,8 @@
         "kind": "line",
         "id": "l4",
         "speaker": "adasa",
-        "emotion": "warm",
-        "delivery": "closer, plain: about us",
+        "emotion": "neutral",
+        "delivery": "a comparison for every Arab viewer, plain; a light stress on « أعلى »",
         "claims": [
           "c1"
         ]

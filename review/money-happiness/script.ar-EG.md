@@ -19,13 +19,14 @@
 - *نور : point, curious, regarde l'objectif*
 - *كريم : happy*
 
-**h4 · pov** (muet, première image text-over-scene) `2.0 s`
-- à l'écran : لما تاخد العلاوة… وتفكر في الجاية
-- *كريم : spiral 2, tired*
+**h4 · number** (عدسة, première image text-over-scene) `4.1 s`
+- à l'écran : 86 دراسة: الفلوس بتفرق مع مين؟
+- dit : 86 دراسة سألت: الفلوس بتفرق أكتر مع مين؟
+- *كريم : neutral*
 
-**h5 · book-promise** (عدسة, première image badge-tease) `4.5 s`
-- à l'écran : الفلوس بتفرق… لحد رقم معيّن؟
-- dit : كتاب مشهور بيقول: الفلوس بتفرق… لحد رقم معيّن. صح؟
+**h5 · paradox** (عدسة, première image close-up) `4.5 s`
+- à l'écran : ما بتشتريش السعادة… طب الرضا؟
+- dit : بيقولوا الفلوس ما بتشتريش السعادة… طب والرضا عن حياتك؟
 - *كريم : shrug, neutral*
 
 ## 2. Scène s1 · office · replay-twice · se termine a-bit-better
@@ -38,7 +39,7 @@
 - **كريم** *(tired, a half-smile that fades, his mind already on the next one)* : يعني… لما أوصل للرقم الجاي.  `2.6 s`
 - *كريم : spiral 2, anxious (sur le mot 2 de l3 · jusqu'à son effet suivant)*
 - *كريم : spiral 3, tired (sur le mot 5 de l3 · jusqu'à son effet suivant)*
-- *كريم : tired (1.5 s · seulement avec h1)*
+- *كريم : tired (1.2 s · seulement avec h1)*
   - à l'écran, sans voix : ورقمك… هتستنى اللي بعده؟
 - *كريم : phone raise, rewind (2.2 s)*
 - **عدسة** *(warm, announcing the replay, light, a small stress on « مش هيستنى »)* : نعيدها… المرة دي مش هيستنى الرقم الجاي.  `3.6 s`
@@ -61,8 +62,8 @@
 
 - **عدسة** *(skeptical, a small pause before the answer)* : والعلم؟ مش بالظبط.  `1.7 s`
 - **عدسة** *(neutral, calm, factual; fair to the book on « غالبًا صح »)* : الجزء الأول غالبًا صح: نفس الزيادة مرتبطة بفرق أكبر… مع اللي معاه أقل.  `6.4 s`
-- **عدسة** *(neutral, calm, a beat after « مش واضح »; the same weight on both sides)* : والسقف؟ مش واضح: دراسات لقته… ودراسات لأ، حتى عند الأغنيا.  `5.0 s`
-- **عدسة** *(warm, closer, plain: about us)* : وفي مصر: اللي شايف دخله أعلى، راضي أكتر.  `4.1 s`
+- **عدسة** *(neutral, calm, a beat after « مش واضح »; the same weight on both sides)* : والسقف؟ مش واضح: دراسات لقته… ودراسات لأ.  `3.6 s`
+- **عدسة** *(neutral, a comparison for every Arab viewer, plain; a light stress on « أعلى »)* : حتى في أمريكا، والمرتبات أعلى: دراسات لقت اللي بيكسب أكتر، راضي أكتر.  `6.0 s`
 
 ## 5. À retenir (suggestion à faible risque)
 
@@ -71,4 +72,4 @@
 
 ---
 Durée estimée : **59 s** (débit 2.1 mots/s, recalibré sur la première prise)
-Empreinte du script ar-EG : **099a8d**
+Empreinte du script ar-EG : **36e44d**
