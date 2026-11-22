@@ -1,0 +1,1188 @@
+{
+  "$schema": "../../../schemas/episode.schema.json",
+  "schema": 1,
+  "id": "money-happiness",
+  "sourceLang": "ar-EG",
+  "languages": [
+    "ar-EG",
+    "en"
+  ],
+  "cast": {
+    "narrator": "adasa",
+    "characters": [
+      "karim",
+      "nour"
+    ]
+  },
+  "topic": {
+    "tags": [
+      "money",
+      "happiness",
+      "income"
+    ],
+    "sensitive": [
+      "money"
+    ]
+  },
+  "hooks": [
+    {
+      "id": "h1",
+      "type": "challenge",
+      "spokenBy": "narrator",
+      "firstFrame": "challenge",
+      "emotion": "amused",
+      "claims": [],
+      "beats": []
+    },
+    {
+      "id": "h2",
+      "type": "confession",
+      "spokenBy": "karim",
+      "firstFrame": "close-up",
+      "emotion": "amused",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "gesture": "shrug",
+          "prop": {
+            "id": "phone",
+            "state": "raise"
+          },
+          "emotion": "amused",
+          "look": "viewer",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "type": "question",
+      "spokenBy": "nour",
+      "firstFrame": "text-over-scene",
+      "emotion": "curious",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "gesture": "point",
+          "emotion": "curious",
+          "look": "viewer",
+          "seconds": 2.4
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "karim",
+          "prop": {
+            "id": "phone",
+            "state": "raise"
+          },
+          "emotion": "happy",
+          "look": "phone",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "type": "pov",
+      "spokenBy": "none",
+      "firstFrame": "text-over-scene",
+      "emotion": "tired",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "prop": {
+            "id": "phone",
+            "state": "raise"
+          },
+          "fx": {
+            "id": "spiral",
+            "params": {
+              "size": 2
+            }
+          },
+          "emotion": "tired",
+          "look": "phone",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "type": "book-promise",
+      "spokenBy": "narrator",
+      "firstFrame": "badge-tease",
+      "emotion": "curious",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "gesture": "shrug",
+          "prop": {
+            "id": "phone",
+            "state": "raise"
+          },
+          "emotion": "neutral",
+          "look": "phone",
+          "seconds": 2.4
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "setting": "office",
+      "shape": "replay-twice",
+      "outcome": "a-bit-better",
+      "beats": [
+        {
+          "kind": "line",
+          "id": "n1",
+          "speaker": "adasa",
+          "emotion": "neutral",
+          "intensity": 0.4,
+          "delivery": "setting the scene, calm, a light smile on « لسه واخد علاوة »",
+          "voice": "over"
+        },
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "prop": {
+            "id": "phone",
+            "state": "raise"
+          },
+          "emotion": "surprised",
+          "look": "phone",
+          "at": {
+            "line": "n1",
+            "word": 2
+          },
+          "holds": "part",
+          "seconds": 0.8
+        },
+        {
+          "kind": "line",
+          "id": "l1",
+          "speaker": "karim",
+          "emotion": "happy",
+          "intensity": 0.7,
+          "delivery": "to himself, delighted, reading the notification",
+          "gesture": "raise",
+          "look": "phone",
+          "voice": "inner"
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "karim",
+          "fx": {
+            "id": "spiral",
+            "params": {
+              "size": 2
+            }
+          },
+          "emotion": "anxious",
+          "at": {
+            "line": "l2",
+            "word": 0
+          },
+          "holds": "next",
+          "seconds": 0.8
+        },
+        {
+          "kind": "line",
+          "id": "l2",
+          "speaker": "nour",
+          "emotion": "happy",
+          "intensity": 0.5,
+          "delivery": "warm, friendly, passing by his desk",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l3",
+          "speaker": "karim",
+          "emotion": "tired",
+          "intensity": 0.5,
+          "delivery": "a half-smile that fades, his mind already on the next one",
+          "gesture": "shrug",
+          "look": "away"
+        },
+        {
+          "kind": "action",
+          "id": "a3",
+          "who": "karim",
+          "fx": {
+            "id": "spiral",
+            "params": {
+              "size": 3
+            }
+          },
+          "emotion": "tired",
+          "at": {
+            "line": "l3",
+            "word": 3
+          },
+          "holds": "next",
+          "seconds": 1.0
+        },
+        {
+          "kind": "action",
+          "id": "a4",
+          "who": "karim",
+          "fx": {
+            "id": "rewind",
+            "params": {}
+          },
+          "prop": {
+            "id": "phone",
+            "state": "raise"
+          },
+          "seconds": 2.2
+        },
+        {
+          "kind": "line",
+          "id": "n2",
+          "speaker": "adasa",
+          "emotion": "warm",
+          "intensity": 0.5,
+          "delivery": "announcing the replay, light, a small stress on « مش هيستنى »",
+          "voice": "over"
+        },
+        {
+          "kind": "line",
+          "id": "l4",
+          "speaker": "karim",
+          "emotion": "relieved",
+          "intensity": 0.5,
+          "delivery": "to himself, relieved, calm, doing the sum in his head",
+          "gesture": "hand-on-chest",
+          "look": "phone",
+          "voice": "inner"
+        },
+        {
+          "kind": "line",
+          "id": "l5",
+          "speaker": "nour",
+          "emotion": "happy",
+          "intensity": 0.5,
+          "delivery": "warm, friendly, same as before",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l6",
+          "speaker": "karim",
+          "emotion": "happy",
+          "intensity": 0.4,
+          "delivery": "content, not thrilled; a small pause before « بس فرقت »",
+          "look": "other"
+        }
+      ]
+    }
+  ],
+  "book": {
+    "book": "subtle-art",
+    "basis": "money-diminishing-returns",
+    "claims": [
+      {
+        "id": "c1",
+        "statement": "Life satisfaction rises with income only up to about $75,000 a year (or perhaps as high as $120,000), and no further.",
+        "population": "adults",
+        "exposure": "income above about $75,000 a year (or $120,000)",
+        "comparison": "income at about $75,000 (or $120,000)",
+        "outcome": "life satisfaction, life evaluation",
+        "causal": false,
+        "inScope": true
+      },
+      {
+        "id": "c2",
+        "statement": "Above about $75,000 a year (or perhaps $120,000), more income no longer goes with better day-to-day emotions.",
+        "population": "adults",
+        "exposure": "income above about $75,000 a year (or $120,000)",
+        "comparison": "income at about $75,000 (or $120,000)",
+        "outcome": "day-to-day emotional well-being (feelings, mood, stress)",
+        "causal": false,
+        "inScope": true
+      },
+      {
+        "id": "c3",
+        "statement": "Getting more money once basic needs are met (a lottery prize, a cash gift, a raise) does not make people lastingly happier or more satisfied.",
+        "population": "adults whose basic needs are met",
+        "exposure": "more money: a lottery prize, a cash gift, an income rise",
+        "comparison": "no extra money, or less",
+        "outcome": "life satisfaction, happiness, mental health, months to years later",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c4",
+        "statement": "Each extra dollar adds less well-being than the one before: going from $20,000 to $40,000 changes more than going from $120,000 to $140,000.",
+        "population": "adults",
+        "exposure": "the same extra amount of money",
+        "comparison": "received at a lower versus a higher income",
+        "outcome": "well-being",
+        "causal": true,
+        "inScope": true
+      }
+    ],
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "curious",
+        "delivery": "plain, reporting the book; a stress on « أقل », a beat before « لسقف »",
+        "gesture": "point",
+        "look": "card"
+      }
+    ]
+  },
+  "verdict": {
+    "badge": "nuanced",
+    "certainty": "low",
+    "assessments": [
+      {
+        "claim": "c1",
+        "direction": "mixed",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "kahneman-2010-income",
+            "finding": "no-satiation-120k",
+            "relation": "contradicts"
+          },
+          {
+            "source": "kahneman-2010-income",
+            "finding": "life-evaluation-rises",
+            "relation": "contradicts"
+          },
+          {
+            "source": "killingsworth-2021-experienced",
+            "finding": "linear-both",
+            "relation": "contradicts"
+          },
+          {
+            "source": "stevenson-2013-satiation",
+            "finding": "no-satiation",
+            "relation": "contradicts"
+          },
+          {
+            "source": "jebb-2018-satiation",
+            "finding": "satiation-points",
+            "relation": "supports"
+          },
+          {
+            "source": "jebb-2018-satiation",
+            "finding": "regions-vary",
+            "relation": "nuances"
+          },
+          {
+            "source": "rock-2025-europe",
+            "finding": "satiation-30000",
+            "relation": "nuances"
+          },
+          {
+            "source": "diener-2010-wealth",
+            "finding": "needs-partial",
+            "relation": "nuances"
+          },
+          {
+            "source": "nilsson-2024-cantril",
+            "finding": "ladder-wealth",
+            "relation": "nuances"
+          },
+          {
+            "source": "silver-2016-egypt",
+            "finding": "perceived-income",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c2",
+        "direction": "mixed",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "kahneman-2010-income",
+            "finding": "emotion-plateau",
+            "relation": "supports"
+          },
+          {
+            "source": "jebb-2018-satiation",
+            "finding": "satiation-points",
+            "relation": "supports"
+          },
+          {
+            "source": "akkiraju-2025-stress",
+            "finding": "stress-63000",
+            "relation": "supports"
+          },
+          {
+            "source": "killingsworth-2021-experienced",
+            "finding": "no-plateau",
+            "relation": "contradicts"
+          },
+          {
+            "source": "killingsworth-2023-conflict",
+            "finding": "happier-keep-rising",
+            "relation": "contradicts"
+          },
+          {
+            "source": "arslan-2024-flattening",
+            "finding": "linear-as-good",
+            "relation": "contradicts"
+          },
+          {
+            "source": "killingsworth-2023-conflict",
+            "finding": "levels-off-100k",
+            "relation": "nuances"
+          },
+          {
+            "source": "killingsworth-2023-conflict",
+            "finding": "least-happy-20",
+            "relation": "nuances"
+          },
+          {
+            "source": "rohrer-2024-quantile",
+            "finding": "not-a-group",
+            "relation": "nuances"
+          },
+          {
+            "source": "arslan-2024-flattening",
+            "finding": "flattening-not-strong",
+            "relation": "nuances"
+          },
+          {
+            "source": "bennedsen-2024-plateau",
+            "finding": "plateau-200000",
+            "relation": "nuances"
+          },
+          {
+            "source": "rock-2025-europe",
+            "finding": "satiation-30000",
+            "relation": "nuances"
+          },
+          {
+            "source": "diener-2010-wealth",
+            "finding": "feelings-weaker",
+            "relation": "nuances"
+          },
+          {
+            "source": "lindqvist-2020-lottery",
+            "finding": "happiness-smaller",
+            "relation": "nuances"
+          },
+          {
+            "source": "howell-2008-developing",
+            "finding": "wealth-and-satisfaction",
+            "relation": "nuances"
+          },
+          {
+            "source": "eid-2024-egypt",
+            "finding": "judge-low-feel-well",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c3",
+        "direction": "mixed",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "lindqvist-2020-lottery",
+            "finding": "life-satisfaction",
+            "relation": "contradicts"
+          },
+          {
+            "source": "dwyer-2022-cash",
+            "finding": "cash-raises",
+            "relation": "contradicts"
+          },
+          {
+            "source": "thomson-2022-income",
+            "finding": "wb-other-increases",
+            "relation": "contradicts"
+          },
+          {
+            "source": "gardner-2006-lottery",
+            "finding": "better-mental-health",
+            "relation": "contradicts"
+          },
+          {
+            "source": "thomson-2022-income",
+            "finding": "mh-other-increases",
+            "relation": "supports"
+          },
+          {
+            "source": "kuhn-2008-postcode",
+            "finding": "not-happier-6-months",
+            "relation": "supports"
+          },
+          {
+            "source": "oh-2025-trajectories",
+            "finding": "changes-unrelated",
+            "relation": "supports"
+          },
+          {
+            "source": "wollburg-2023-cash",
+            "finding": "not-sustained",
+            "relation": "supports"
+          },
+          {
+            "source": "raschke-2018-lottery",
+            "finding": "no-impact-high-education",
+            "relation": "supports"
+          },
+          {
+            "source": "brickman-1978-lottery",
+            "finding": "not-happier",
+            "relation": "supports"
+          },
+          {
+            "source": "lindqvist-2020-lottery",
+            "finding": "happiness-smaller",
+            "relation": "nuances"
+          },
+          {
+            "source": "raschke-2018-lottery",
+            "finding": "happier-but",
+            "relation": "nuances"
+          },
+          {
+            "source": "wollburg-2023-cash",
+            "finding": "reduced-depression",
+            "relation": "nuances"
+          },
+          {
+            "source": "thomson-2022-income",
+            "finding": "grade-low",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c4",
+        "direction": "supports",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "thomson-2022-income",
+            "finding": "wb-out-of-poverty",
+            "relation": "supports"
+          },
+          {
+            "source": "thomson-2022-income",
+            "finding": "mh-out-of-poverty",
+            "relation": "supports"
+          },
+          {
+            "source": "dwyer-2022-cash",
+            "finding": "three-times",
+            "relation": "supports"
+          },
+          {
+            "source": "diener-2010-wealth",
+            "finding": "convex",
+            "relation": "supports"
+          },
+          {
+            "source": "kahneman-2010-income",
+            "finding": "life-evaluation-rises",
+            "relation": "supports"
+          },
+          {
+            "source": "killingsworth-2021-experienced",
+            "finding": "linear-both",
+            "relation": "supports"
+          },
+          {
+            "source": "howell-2008-developing",
+            "finding": "strongest-poorest",
+            "relation": "nuances"
+          },
+          {
+            "source": "stevenson-2013-satiation",
+            "finding": "log-linear",
+            "relation": "nuances"
+          },
+          {
+            "source": "jebb-2018-satiation",
+            "finding": "regions-vary",
+            "relation": "nuances"
+          },
+          {
+            "source": "thomson-2022-income",
+            "finding": "grade-low",
+            "relation": "nuances"
+          }
+        ]
+      }
+    ],
+    "nuance": "c2",
+    "nuanceSpoken": true,
+    "applicability": "written",
+    "onScreen": "thomson-2022-income",
+    "searched": {
+      "on": "2026-11-22",
+      "queries": [
+        {
+          "base": "crossref",
+          "query": "high income improves evaluation of life but not emotional well-being",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "experienced well-being rises with income beyond 75000",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "income and emotional well-being a conflict resolved adversarial collaboration",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "income emotional well-being plateau threshold",
+          "results": 15
+        },
+        {
+          "base": "openalex",
+          "query": "long-run effects of lottery wealth on psychological well-being",
+          "results": 8
+        },
+        {
+          "base": "openalex",
+          "query": "happiness income satiation turning points around the world",
+          "results": 8
+        },
+        {
+          "base": "openalex",
+          "query": "subjective well-being and income is there any evidence of satiation",
+          "results": 8
+        },
+        {
+          "base": "openalex",
+          "query": "income health and well-being around the world Gallup World Poll",
+          "results": 8
+        },
+        {
+          "base": "openalex",
+          "query": "income subjective well-being meta-analysis",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "(income OR wealth OR \"economic status\") AND (\"subjective well-being\" OR \"life satisfaction\" OR happiness) AND (\"meta-analysis\" OR \"meta-analytic\")",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "income happiness satiation replication",
+          "results": 12
+        },
+        {
+          "base": "europepmc",
+          "query": "(lottery OR windfall OR \"cash transfer\") AND (happiness OR \"life satisfaction\" OR \"well-being\") AND (replication OR preregistered OR \"meta-analysis\")",
+          "results": 20
+        },
+        {
+          "base": "openalex",
+          "query": "lottery wins mental wellbeing longitudinal",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "lottery winners and accident victims is happiness relative",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "income happiness relationship culture moderator cross-national individualism",
+          "results": 12
+        },
+        {
+          "base": "europepmc",
+          "query": "(income OR wealth OR money) AND (happiness OR \"life satisfaction\" OR \"emotional well-being\") AND (culture OR cultural OR moderator OR \"cross-cultural\")",
+          "results": 20
+        },
+        {
+          "base": "europepmc",
+          "query": "(income OR wealth OR \"economic status\") AND (\"life satisfaction\" OR happiness OR \"subjective well-being\") AND (Egypt OR Egyptian OR Arab OR \"Middle East\" OR \"North Africa\" OR MENA)",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "income life satisfaction happiness Egypt",
+          "results": 15
+        },
+        {
+          "base": "openalex",
+          "query": "unhappy development dissatisfaction with life Arab Spring",
+          "results": 8
+        },
+        {
+          "base": "europepmc",
+          "query": "(income OR money) AND (\"emotional well-being\" OR \"experienced well-being\" OR \"life evaluation\") AND (satiation OR plateau OR threshold)",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "updates (retraction, withdrawal, correction, expression of concern) of the 12 DOIs, read by bvs sources verify --live",
+          "results": 0
+        },
+        {
+          "base": "openalex",
+          "query": "how do income changes impact on mental health and wellbeing working-age adults systematic review meta-analysis",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "wealth and happiness across the world material prosperity predicts life evaluation",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "money matters for future well-being latent growth income financial satisfaction",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "do cash transfers alleviate common mental disorders low- and middle-income countries",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "unexpected windfalls education and mental health lottery winners Germany",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "own and social effects of an unexpected income shock Dutch postcode lottery",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "Happiness in Egypt",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "The Cantril Ladder elicits thoughts about power and wealth",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "The miseries that remain may yet be alleviated",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "Inappropriate causal assumptions underlie Killingsworth Kahneman Mellers",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "Reply to Rohrer and Wenz and Arslan income emotional well-being",
+          "results": 3
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence: filter=updates on the 12 DOIs of the first verdict and 43 counter-evidence DOIs (retraction, correction, expression of concern)",
+          "results": 0
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence: commentCorrectionList of the 7 indexed DOIs (PNAS x4, Jebb, Howell, Tan)",
+          "results": 0
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence: « correction erratum » + title, for the 12 DOIs, Thomson 2022 and Diener 2010",
+          "results": 0
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q1: meta-analysis income subjective well-being socioeconomic status (since 2018)",
+          "results": 20
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q2: (income OR \"socioeconomic status\" OR wealth) AND (\"subjective well-being\" OR \"life satisfaction\" OR happiness) AND (\"meta-analysis\" OR \"meta-analytic\") AND PUB_YEAR:[2018 TO 2026]",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q3: income happiness satiation (2018-2026)",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q4: money happiness satiation evidence against plateau (since 2020)",
+          "results": 20
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q5: Tamberg income well-being basic needs; author A5062771822 works; exact preprint title; Crossref works v2/v3; Europe PMC AUTH:\"Tamberg L\"",
+          "results": 7
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q6: lottery prize happiness winners (2005-2026)",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q6: lottery winners happiness life satisfaction effect of lottery prizes",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q7: cash transfers subjective well-being mental health low- and middle-income countries systematic review meta-analysis (since 2018)",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q7: (\"cash transfer\" OR \"cash transfers\") AND (\"subjective well-being\" OR \"life satisfaction\" OR happiness OR \"psychological well-being\") AND (\"meta-analysis\" OR \"systematic review\")",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q8: how effective is (more) money randomizing unconditional cash transfer amounts",
+          "results": 8
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q8: long-term impact of unconditional cash transfers experimental evidence Kenya psychological well-being",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q8: guaranteed income health effects randomized unconditional income study stress mental health (since 2023)",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q9: happiness adaptation to income and to status in an individual panel",
+          "results": 6
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q9: adaptation to income increases life satisfaction panel hedonic",
+          "results": 15
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q10: The happiness-income paradox revisited",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q10: Easterlin paradox long-term economic growth happiness time series (since 2016)",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q11: Money and happiness rank of income not income affects life satisfaction",
+          "results": 4
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q11: Neighbors as negatives relative earnings and well-being",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q12: Bennedsen income emotional well-being; Killingsworth money happiness extended evidence; Akkiraju Rao income stress (2023-2026)",
+          "results": 21
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q12: Bennedsen income satiation emotional well-being reanalysis",
+          "results": 8
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q13: (income OR wealth OR money) AND (\"emotional well-being\" OR \"experienced well-being\" OR \"positive affect\" OR \"life evaluation\") AND (satiation OR plateau OR threshold OR \"turning point\" OR \"diminishing returns\") AND PUB_YEAR:[2019 TO 2026]",
+          "results": 25
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q14: citations of Killingsworth, Kahneman & Mellers 2023 (PMID 36857342)",
+          "results": 44
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q15: Arab Barometer life satisfaction income happiness",
+          "results": 15
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q15: Arab world happiness income life satisfaction MENA",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q16: (income OR wealth OR \"household income\" OR money) AND (\"life satisfaction\" OR happiness OR \"subjective well-being\") AND (Egypt OR Egyptian OR Arab OR \"Saudi Arabia\" OR Qatar OR Kuwait OR \"United Arab Emirates\" OR Jordan OR Lebanon OR Tunisia OR Morocco OR Algeria OR MENA) NOT (cancer OR HIV OR diabetes)",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q17: Egypt subjective well-being household income life satisfaction (2010-2026); Egypt happiness (title)",
+          "results": 40
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q17: Arab Barometer well-being economic satisfaction; Egypt Egyptians life satisfaction income World Values Survey Gallup happiness determinants",
+          "results": 22
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q18: meta-analysis income happiness life satisfaction (title, 2018-2026)",
+          "results": 20
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q18: windfall wealth shock well-being lottery (2018-2026)",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q19: TITLE:(income OR wealth OR money OR \"socioeconomic\") AND TITLE:(\"well-being\" OR wellbeing OR happiness OR \"life satisfaction\") AND TITLE:(\"meta-analysis\" OR \"meta-analytic\" OR \"systematic review\")",
+          "results": 34
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q20: (income OR money OR wealth) AND (happiness OR \"life satisfaction\" OR \"emotional well-being\" OR \"subjective well-being\") AND (replication OR preregistered OR \"pre-registered\" OR \"registered report\")",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q21: multi-lab replication Diener 2010 wealth and happiness across the world",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q21: title of Diener 2010; CREP replication Does money buy happiness Diener",
+          "results": 11
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q22: income happiness association culture moderator collectivism materialism countries (since 2015)",
+          "results": 15
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q23: lottery winnings life satisfaction mental health panel Germany windfall (since 2015)",
+          "results": 12
+        },
+        {
+          "base": "europepmc",
+          "query": "counter-evidence Q23: (lottery OR \"lottery winners\" OR \"lottery wins\") AND (\"life satisfaction\" OR happiness OR \"mental health\" OR \"well-being\")",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "counter-evidence Q24: long-term impact of unconditional cash transfers Kenya Haushofer Shapiro",
+          "results": 6
+        },
+        {
+          "base": "crossref",
+          "query": "counter-evidence Q24: Income shocks and adolescent mental health; Your gain is my pain negative psychological externalities of cash transfers",
+          "results": 8
+        },
+        {
+          "base": "other",
+          "query": "counter-evidence T1: markmanson.net/the-backwards-law, note 4 and its link (The Atlantic, 2012)",
+          "results": 1
+        }
+      ],
+      "notFound": [
+        "no meta-analysis or multi-lab replication of an individual plateau (life satisfaction or emotions): plateaus come from cross-sectional models (Jebb, Bennedsen) or country averages (Röck, Proto, Easterlin)",
+        "no independent replication on new data of Killingsworth, Kahneman & Mellers 2023: only two letters on the same data (Arslan, Rohrer & Wenz)",
+        "no published version of Tamberg 2024 (preprint), Miller 2024 (NBER) or Jaroszewicz 2022 (SSRN)",
+        "no Egyptian or Arab sample in a lottery, a cash transfer or a trial; no Egyptian study with measured income that tests a threshold",
+        "no estimate for Egypt alone in Jebb 2018: its 20,924 Egyptian respondents are pooled in the MENA region",
+        "Manson's chapter 4 not read (no copy of the book): only his 2018 article and its note 4 are checked"
+      ]
+    },
+    "counterEvidence": {
+      "found": [
+        {
+          "source": "thomson-2022-income",
+          "note": "meta-analysis, 86 studies: leaving poverty d = 0.38 (wellbeing) and 0.13 (mental health) vs 0.16 and 0.01 for other rises; GRADE low or very low: c3 mixed, c4 supported; on screen"
+        },
+        {
+          "source": "arslan-2024-flattening",
+          "note": "independent reanalysis of the same data: no clear flattening before $200,000; the « least happy » plateau is weak: that nuance is withdrawn"
+        },
+        {
+          "source": "rohrer-2024-quantile",
+          "note": "a percentile is not a group of people: nothing on screen may say « for the least happy people »; no covariates, so no causal reading"
+        },
+        {
+          "doi": "10.1073/pnas.2322160121",
+          "note": "Killingsworth, Kahneman & Mellers 2024 reply (refused by the verifier as a letter): K&D's $75,000 was the midpoint of a $60-90K band; threshold $100,000 after inflation; all quantiles but the 15th rise"
+        },
+        {
+          "source": "akkiraju-2025-stress",
+          "note": "2.05 million US adults: above ~$63,000, stress more likely: supports c2, so c2 cannot be « contradicts » under the grid"
+        },
+        {
+          "source": "bennedsen-2024-plateau",
+          "note": "emotional plateau near $200,000, hedged by its author: a plateau may exist, far above $75,000-120,000"
+        },
+        {
+          "source": "kuhn-2008-postcode",
+          "note": "random postcode lottery (about 8 months of income): not happier six months later: supports c3"
+        },
+        {
+          "source": "oh-2025-trajectories",
+          "note": "three panels (US, South Korea): changes in income unrelated to changes in well-being: supports c3"
+        },
+        {
+          "source": "wollburg-2023-cash",
+          "note": "17 RCTs, poor households: depression lower while cash is paid, not sustained 2-9 years after: supports « not lastingly », indirect"
+        },
+        {
+          "source": "raschke-2018-lottery",
+          "note": "German winners: no mental-health gain (high education), a loss (low education), yet they report being happier; at odds with Gardner 2006"
+        },
+        {
+          "source": "diener-2010-wealth",
+          "note": "income predicts life evaluation, much less feelings; basic needs mediate only partly: the nuance said, and against the « needs » explanation"
+        },
+        {
+          "source": "nilsson-2024-cantril",
+          "note": "the ladder question primes wealth: a risk of bias for the life-evaluation evidence of c1"
+        },
+        {
+          "source": "eid-2024-egypt",
+          "note": "Egypt: average happiness 4.8/10; Egyptians judge their lives poorly but feel fairly well day to day: the nuance holds for Egypt"
+        },
+        {
+          "doi": "10.21203/rs.3.rs-5355955/v1",
+          "note": "Tamberg et al. 2024, preprint (Research Square), no published version: once needs are met, income adds marginally to life evaluation; refused by the verifier; it controls for the needs income buys"
+        },
+        {
+          "doi": "10.1037/bul0000258",
+          "note": "Tan et al. 2020, meta-analysis of 357 studies: the income link is stronger in wealthier samples, against Howell 2008; refused by the verifier (false positive on « the objective »)"
+        },
+        {
+          "doi": "10.1371/journal.pone.0079358",
+          "note": "Proto & Rustichini 2013: country-level satisfaction flattens above ~$15,000 GDP per head, peaks near $30,000: aggregate, indirect for c1"
+        },
+        {
+          "doi": "10.1073/pnas.1015962107",
+          "note": "Easterlin et al. 2010: no long-term link between national growth and happiness, also in developing countries: aggregate, indirect"
+        },
+        {
+          "doi": "10.1038/s41598-026-59695-1",
+          "note": "Fors Connolly et al. 2026: across 33 European countries GDP goes with both emotions and satisfaction: against Röck 2025"
+        },
+        {
+          "doi": "10.1038/s41467-026-69729-x",
+          "note": "Quispe-Torreblanca et al. 2026, 109 countries: well-being follows income rank more than income, more so in materialistic countries"
+        },
+        {
+          "doi": "10.1002/hec.3035",
+          "note": "Apouey & Clark 2015: the same British panel as Gardner 2006, positive mental-health effect: not independent evidence"
+        },
+        {
+          "doi": "10.1111/roiw.12469",
+          "note": "Kim & Oswald 2021, Singapore: corrected for ticket spending, a windfall predicts more happiness: against c3 (cross-sectional)"
+        },
+        {
+          "doi": "10.3386/w32711",
+          "note": "Miller et al. 2024 (NBER, RCT, $1,000 a month for 3 years): short-lived gains in stress, no mental-health gain after year 1"
+        },
+        {
+          "doi": "10.1093/pnasnexus/pgad473",
+          "note": "a correction to Oishi 2022 not linked in Crossref: the verifier's corrections check reads only updated-by"
+        }
+      ],
+      "conclusion": "⚖️ holds, low; ❌ is not defensible. Taken: c1 tested on Manson's words ($75,000 or $120,000): mixed; c2 mixed (Akkiraju, Jebb vs Killingsworth, Arslan), its nuance replaced by « money weighs more on judging one's life than on the day's mood »; c3 mixed, low; c4 on Thomson, Dwyer, Diener, not Howell; Thomson on screen."
+    },
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "skeptical",
+        "delivery": "a small pause before the answer"
+      },
+      {
+        "kind": "line",
+        "id": "l2",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "calm, factual; fair to the book on « غالبًا صح »",
+        "claims": [
+          "c4"
+        ]
+      },
+      {
+        "kind": "line",
+        "id": "l3",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "calm, a beat after « مش واضح »; warm on « في مصر كمان »",
+        "claims": [
+          "c1"
+        ]
+      }
+    ]
+  },
+  "takeaway": {
+    "claims": [
+      "c2",
+      "c4"
+    ],
+    "strength": "low-risk-suggestion",
+    "orientation": false,
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "warm",
+        "delivery": "simple, a suggestion not an order; « الرقم الجاي » as Karim said it",
+        "look": "viewer"
+      },
+      {
+        "kind": "action",
+        "id": "a1",
+        "who": "karim",
+        "gesture": "hand-on-chest",
+        "emotion": "happy",
+        "at": {
+          "line": "l1",
+          "word": 5
+        },
+        "seconds": 1.0
+      }
+    ]
+  },
+  "variation": {
+    "pin": {},
+    "avoid": [
+      "luxury clichés (sports cars, gold, banknotes fanned or raining)",
+      "anything that makes fun of people with little money, or of a small salary"
+    ]
+  }
+}
