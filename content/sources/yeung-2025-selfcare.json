@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "yeung-2025-selfcare",
+  "doi": "10.2196/71165",
+  "declared": {
+    "title": "Effects of Choice Set Sizes and Moderations of Anxiety and State Emotions on Mental Health Self-Care Uptake, Engagement, and User Experience: Experimental Study",
+    "firstAuthor": "Yeung",
+    "authors": [
+      "Yeung",
+      "Leung",
+      "Lee",
+      "Cheung",
+      "Li",
+      "Mak"
+    ],
+    "year": 2025,
+    "venue": "JMIR Human Factors",
+    "foundIn": "rapport contre-preuve reports/too-many-choices/counter-evidence.md (2026-11-22), DOI trouvé par ses requêtes ; titre relevé sur Crossref par la session : contrôle d'identité plus faible ; déjà vue par la recherche Europe PMC « choice overload … culture OR moderator » du dossier"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 652,
+  "population": "652 adults recruited by university e-mail and social media (authors in Hong Kong), randomly offered 1, 4 or 16 self-care exercises",
+  "mena": false,
+  "findings": [
+    {
+      "id": "more-is-better",
+      "text": "Offering 4 or 16 self-care exercises rather than 1 made people more likely to practise one and more satisfied with their decision",
+      "support": {
+        "sentence": "Presenting multiple choices resulted in a higher likelihood of practice (odds ratio 3.12, 95% CI 2.08 to 4.67 and 3.83, 95% CI 2.55 to 5.76; P<.001) and better decision satisfaction (16-choice vs 1-choice: d=0.36, 95% CI 0.17 to 0.56, P<.001; 4-choice vs 1-choice: d=0.24, 95% CI 0.05 to 0.43, P=.03) compared with presenting with a single choice.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.36,
+        "ci": [
+          0.17,
+          0.56
+        ],
+        "correctedForBias": false
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "1, 4 or 16 options only: says nothing about very large sets",
+    "self-care exercises in an online study",
+    "effect stored is 16 vs 1 choice (decision satisfaction); the abstract gives no 16 vs 4 test",
+    "the abstract's moderation result (anxious people more satisfied with 16) is in a sentence too long to keep: not used"
+  ],
+  "acknowledged": []
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "reutskaja-2022-deprivation",
+  "doi": "10.1177/1069031x211073821",
+  "declared": {
+    "title": "Choice Deprivation, Choice Overload, and Satisfaction with Choices Across Six Nations",
+    "firstAuthor": "Reutskaja",
+    "authors": [
+      "Reutskaja",
+      "Cheek",
+      "Iyengar",
+      "Schwartz"
+    ],
+    "year": 2022,
+    "venue": "Journal of International Marketing",
+    "foundIn": "rapport contre-preuve reports/too-many-choices/counter-evidence.md (2026-11-22), DOI trouvé par ses requêtes ; titre relevé sur Crossref par la session : contrôle d'identité plus faible"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "n": 7436,
+  "population": "7,436 people in Brazil, China, India, Japan, Russia and the US, six domains of choice",
+  "mena": false,
+  "findings": [
+    {
+      "id": "deprivation-norm",
+      "text": "In most domains and most countries, people reported having less choice than they wanted; only in the US was having too much choice commonly reported",
+      "support": {
+        "sentence": "In most domains in most countries, choice deprivation was the norm-only in the United States was choice overload commonly reported.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "deprivation-worse",
+      "text": "Having too little choice went with lower satisfaction with one's choices more strongly than having too much",
+      "support": {
+        "sentence": "Deprivation was also more strongly related to decreased satisfaction with choices than was overload, suggesting that choice deprivation can be both more common and more consequential than overload.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "self-reported, one survey: no causal order",
+    "no Arab country among the six"
+  ],
+  "allegiance": "co-authors Iyengar and Schwartz started the « too much choice » idea: here a finding against its generality",
+  "acknowledged": []
+}

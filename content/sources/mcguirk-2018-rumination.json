@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "mcguirk-2018-rumination",
+  "doi": "10.1037/emo0000322",
+  "declared": {
+    "title": "Does a culture of happiness increase rumination over failure?",
+    "firstAuthor": "McGuirk",
+    "authors": [
+      "McGuirk",
+      "Kuppens",
+      "Kingston",
+      "Bastian"
+    ],
+    "year": 2018,
+    "venue": "Emotion",
+    "foundIn": "OpenAlex search « culture of happiness increase rumination over failure » (2026-11-22)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "two studies (an experiment, then a survey); sample sizes and country not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "rumination-after-failure",
+      "text": "Stressing how important happiness is made people ruminate more after a failure",
+      "support": {
+        "sentence": "In Study 1, we used an experimental design to show that emphasizing the importance of happiness increased rumination in response to failure.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "rumination after a failure, not happiness: another negative experience",
+    "the emphasis on happiness is set by the experimenters, not the person's own wish (how it was done: full text not read)",
+    "sample sizes not given in the abstract (full text not read); no replication found"
+  ],
+  "acknowledged": []
+}

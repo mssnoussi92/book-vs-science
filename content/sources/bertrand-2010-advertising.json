@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "bertrand-2010-advertising",
+  "doi": "10.1162/qjec.2010.125.1.263",
+  "declared": {
+    "title": "What's Advertising Content Worth? Evidence from a Consumer Credit Marketing Field Experiment",
+    "firstAuthor": "Bertrand",
+    "authors": [
+      "Bertrand",
+      "Karlan",
+      "Mullainathan",
+      "Shafir",
+      "Zinman"
+    ],
+    "year": 2010,
+    "venue": "Quarterly Journal of Economics",
+    "foundIn": "rapport contre-preuve reports/too-many-choices/counter-evidence.md (2026-11-22), DOI trouvé par ses requêtes ; titre relevé sur Crossref par la session : contrôle d'identité plus faible"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "clients of a South African consumer lender who received randomized direct-mail loan offers; sample size not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "fewer-examples",
+      "text": "Showing fewer example loans in a mail offer raised loan take-up about as much as a large cut in the interest rate",
+      "support": {
+        "sentence": "Showing fewer example loans, not suggesting a particular use for the loan, or including a photo of an attractive woman increases loan demand by about as much as a 25% reduction in the interest rate.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "example loans shown in an advertisement, not a choice among options one must pick from",
+    "taking a loan is not a good outcome in itself",
+    "South Africa: not a Middle East or North African sample"
+  ],
+  "acknowledged": []
+}

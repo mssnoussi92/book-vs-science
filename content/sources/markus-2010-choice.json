@@ -20,7 +20,7 @@
   "findings": [
     {
       "id": "culture",
-      "text": "Outside university-educated Westerners (non-Western cultures, working-class people), freedom and choice do not carry the same meaning or weight",
+      "text": "In non-Western cultures and among working-class Westerners, freedom and choice do not carry the meaning or weight they have for university-educated Westerners",
       "support": {
         "sentence": "However, this article reviews research that shows that in non-Western cultures and among working-class Westerners, freedom and choice do not have the meaning or importance they do for the university-educated people who have been the subjects of almost all research on this topic.",
         "role": "conclusion",

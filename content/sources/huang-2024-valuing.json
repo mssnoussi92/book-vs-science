@@ -26,10 +26,6 @@
         "role": "result",
         "where": "abstract"
       },
-      "effect": {
-        "metric": "r",
-        "value": 0.24
-      },
       "kind": "association"
     },
     {
@@ -44,10 +40,10 @@
     }
   ],
   "limits": [
-    "valuing happiness is one item (happiness as a guiding value, 1 to 7): milder than wanting more happiness at all costs",
-    "observational: changes within a person, never a manipulation",
-    "the Netherlands only; small effects",
-    "r = .24 (life satisfaction, between persons) read in the author's preregistered preprint (osf.io/3vksb), not the journal version"
+    "valuing happiness is one item (happiness as a guiding value, 1 to 7), near its ceiling: mean 6.1, SD 1.0 in 2019 (preprint, Table 1)",
+    "the emotional cost: valuing it more is followed by a little more negative affect too (published abstract); affect models exploratory (preprint)",
+    "observational: changes within a person, never a manipulation; small effects",
+    "the Netherlands only; 8,331 people over five waves, about 5,000 to 5,900 answers a year"
   ],
   "acknowledged": []
 }

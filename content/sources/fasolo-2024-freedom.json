@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "fasolo-2024-freedom",
+  "doi": "10.1037/xap0000481",
+  "declared": {
+    "title": "Choose as much as you wish: Freedom cues in the marketplace help consumers feel more satisfied with what they choose and improve customer experience",
+    "firstAuthor": "Fasolo",
+    "authors": [
+      "Fasolo",
+      "Misuraca",
+      "Reutskaja"
+    ],
+    "year": 2024,
+    "venue": "Journal of Experimental Psychology: Applied",
+    "foundIn": "rapport contre-preuve reports/too-many-choices/counter-evidence.md (2026-11-22), DOI trouvé par ses requêtes ; titre relevé sur Crossref par la session : contrôle d'identité plus faible"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 669,
+  "population": "sporting-goods shoppers (4-week field test) and 669 consumers of a panel and an online shop (preregistered); countries not in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "freedom-cue",
+      "text": "A message saying people can choose as much as they wish raised satisfaction with what they chose, compared with a similar message without that freedom",
+      "support": {
+        "sentence": "A large (N = 669) preregistered process-tracing experiment run with a consumer panel and a global e-commerce company shows that FCs at point-of-sale improve consumer satisfaction and customer experience compared to an equivalent message that does not make freedom to choose any amount salient.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "focus-chosen",
+      "text": "With that message, people focused more on what they chose than on what they left out",
+      "support": {
+        "sentence": "FCs lead to greater focus on what is chosen than on what is not chosen.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "a shop message about how much to take, not freedom in life nor an irreversible choice",
+    "co-author Reutskaja also signs reutskaja-2009-satiate, -2018-neural and -2022-deprivation",
+    "n given for the preregistered study only"
+  ],
+  "acknowledged": []
+}

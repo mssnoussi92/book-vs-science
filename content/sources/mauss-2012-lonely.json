@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "mauss-2012-lonely",
+  "doi": "10.1037/a0025299",
+  "declared": {
+    "title": "The pursuit of happiness can be lonely.",
+    "firstAuthor": "Mauss",
+    "authors": [
+      "Mauss",
+      "Savino",
+      "Anderson",
+      "Weisbuch",
+      "Tamir"
+    ],
+    "year": 2012,
+    "venue": "Emotion",
+    "foundIn": "Europe PMC search « \"valuing happiness\" » (2026-11-22)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "a 2-week diary study and a lab experiment; sample sizes and country not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "induced-loneliness",
+      "text": "People led to value happiness felt lonelier than controls, by their own report and by a hormone (progesterone)",
+      "support": {
+        "sentence": "Study 2 provides an experimental manipulation of valuing happiness and demonstrates that inducing people to value happiness leads to relatively greater loneliness, as measured by self-reports and a hormonal index (progesterone).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "daily-loneliness",
+      "text": "Over two weeks of diaries, the more people valued happiness, the lonelier they felt day to day",
+      "support": {
+        "sentence": "Study 1 suggests that the more people value happiness, the lonelier they feel on a daily basis (assessed over 2 weeks with diaries).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "loneliness, not happiness: another negative experience",
+    "sample sizes not given in the abstract (full text not read)",
+    "same lab as Mauss 2011; no replication found (2026-11-22)"
+  ],
+  "acknowledged": []
+}

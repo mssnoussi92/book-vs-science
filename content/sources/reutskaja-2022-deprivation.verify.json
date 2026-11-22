@@ -1,0 +1,77 @@
+{
+  "doi": "10.1177/1069031x211073821",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Choice Deprivation, Choice Overload, and Satisfaction with Choices Across Six Nations » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Reutskaja » matches; 4/4 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2022, found 2021, 2022"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from crossref"
+    },
+    {
+      "name": "support:deprivation-norm",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:deprivation-worse",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Choice Deprivation, Choice Overload, and Satisfaction with Choices Across Six Nations",
+    "firstAuthor": "Reutskaja",
+    "years": [
+      2021,
+      2022
+    ],
+    "type": "journal-article",
+    "venue": "Journal of International Marketing"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "crossref",
+  "abstractSha256": "0db14065402fdcd7b65f4637dd196209e7e86f6067ae8fbc9572ce8f90588cb2",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

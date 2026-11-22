@@ -15,12 +15,12 @@
   },
   "design": "experiment",
   "designSetBy": "reviewer",
-  "population": "one survey and three experiments; samples and countries not given in the abstract",
+  "population": "online workers (MTurk: 113, 319, 96) and undergraduates (117); country not stated (full text)",
   "mena": false,
   "findings": [
     {
       "id": "less-time",
-      "text": "Seeking happiness, measured or induced, made people feel they had less time",
+      "text": "Seeking happiness went with feeling short of time, and when it was induced (Studies 2 to 4) it made people feel they had less time",
       "support": {
         "sentence": "Four studies demonstrated that trait-level happiness seeking (Study 1) as well as direct manipulation of happiness seeking (Studies 2, 3, and 4) consistently reveal the same pattern: reduced feelings of time availability while pursuing happiness.",
         "role": "result",
@@ -40,9 +40,10 @@
     }
   ],
   "limits": [
-    "the drop in happiness rests on one study (Study 4)",
-    "sample sizes and countries not given in the abstract (abstract only)",
+    "the drop in happiness rests on one study (Study 4, 96 people)",
+    "Study 4's control is not neutral: listing what shows one is already happy (full text)",
     "brief inductions in the lab or online, effect measured right after"
   ],
-  "acknowledged": []
+  "acknowledged": [],
+  "n": 645
 }

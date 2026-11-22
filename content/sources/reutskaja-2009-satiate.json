@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "reutskaja-2009-satiate",
+  "doi": "10.1002/mar.20268",
+  "declared": {
+    "title": "Satisfaction in choice as a function of the number of alternatives: When “goods satiate”",
+    "firstAuthor": "Reutskaja",
+    "authors": [
+      "Reutskaja",
+      "Hogarth"
+    ],
+    "year": 2009,
+    "venue": "Psychology & Marketing",
+    "foundIn": "rapport contre-preuve reports/too-many-choices/counter-evidence.md (2026-11-22), DOI trouvé par ses requêtes ; titre relevé sur Crossref par la session : contrôle d'identité plus faible"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "participants choosing among sets of alternatives of different sizes (varying in colour or shape); sample and country not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "inverted-u",
+      "text": "In an experiment, satisfaction from choosing first rose then fell as the number of alternatives grew (an inverted U, as the authors proposed)",
+      "support": {
+        "sentence": "This proposition is verified experimentally.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "peak-moves",
+      "text": "Satisfaction peaked at a larger number of options when the options were easier to compare (differing in colour rather than in shape)",
+      "support": {
+        "sentence": "This prediction is also validated.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "each support sentence only says the proposition « is verified » or « validated »: no size, no sample in the abstract",
+    "published in the 2009 issue with two studies pooled by scheibehenne-2010-overload; possibly pooled too (not checked)",
+    "low-stakes laboratory choices"
+  ],
+  "acknowledged": []
+}

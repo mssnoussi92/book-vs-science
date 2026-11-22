@@ -32,7 +32,7 @@
     },
     {
       "id": "overall-significant",
-      "text": "Once these four conditions are taken into account, a larger assortment does lower satisfaction or the wish to choose overall, unlike the earlier meta-analysis",
+      "text": "Once the four factors are in the model, the overall effect of assortment size on choice overload is statistically significant; the abstract gives no size",
       "support": {
         "sentence": "Finally, we document that when moderating variables are taken into account the overall effect of assortment size on choice overload is significant-a finding counter to the data reported by prior meta-analytic research.",
         "role": "result",
@@ -44,8 +44,9 @@
   "limits": [
     "the four conditions are coded across studies, never manipulated together in one experiment",
     "consumer choices; samples' countries not given in the abstract",
-    "corrigendum 10.1016/j.jcps.2015.07.001 (not linked by Crossref) corrects the statistic of the mean effect to b = .41, t(39) = 5.3",
-    "a multilevel reanalysis of these data finds the effect varies strongly by measure (McShane & Böckenholt 2018, 10.1007/s11336-017-9571-z)"
+    "corrigendum 10.1016/j.jcps.2015.07.001, not linked by Crossref: the mean-effect section has b = .17 and .41 (p < .001) but also b = .04 (p > .4)",
+    "which corrected coefficient is the effect without moderators is not read (closed text): read as a conditional effect, not as an average",
+    "the effect varies strongly by outcome measure (mcshane-2018-multilevel, co-authored by Böckenholt)"
   ],
   "acknowledged": []
 }

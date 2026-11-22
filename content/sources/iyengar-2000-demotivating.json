@@ -42,7 +42,8 @@
   "limits": [
     "choices of little importance (jams, chocolates, a class essay), not life choices",
     "sample sizes and percentages not given in the abstract",
-    "one lab, US samples; the average effect across later experiments is close to zero (scheibehenne-2010-overload)"
+    "listed in content/contested.json: pooled in scheibehenne-2010-overload, whose mean is virtually zero; failed tests (scheibehenne-2009-moderators)"
   ],
+  "allegiance": "the study that started the choice-overload line; its first author co-signs later work on choice (reutskaja-2022-deprivation)",
   "acknowledged": []
 }

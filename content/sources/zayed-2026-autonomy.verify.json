@@ -1,0 +1,71 @@
+{
+  "doi": "10.1038/s41598-026-49279-4",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Self-efficacy, personal autonomy, life arrangements, and health priorities/preferences in psychological distress: a predictive, variance-based PLS-SEM structural model » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Zayed » matches; 3/3 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2026, found 2026"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:autonomy-less-distress",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "Self-efficacy, personal autonomy, life arrangements, and health priorities/preferences in psychological distress: a predictive, variance-based PLS-SEM structural model",
+    "firstAuthor": "Zayed",
+    "years": [
+      2026
+    ],
+    "type": "journal-article",
+    "venue": "Scientific Reports"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "189e25368f973aeb0b391cdaa3ca721961d6a43235d43bf6013428f4db6a72de",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

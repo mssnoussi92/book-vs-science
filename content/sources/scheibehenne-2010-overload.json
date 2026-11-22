@@ -23,7 +23,7 @@
   "findings": [
     {
       "id": "virtually-zero",
-      "text": "Across 50 experiments, more options did not, on average, lower satisfaction with the choice or the wish to choose; the effect varied a lot between studies",
+      "text": "Across 50 experiments, the mean effect of a larger set on choice overload (lower satisfaction or motivation to choose, pooled) was virtually zero, with large differences between studies",
       "support": {
         "sentence": "In a meta-analysis of 63 conditions from 50 published and unpublished experiments (N = 5,036), we found a mean effect size of virtually zero but considerable variance between studies.",
         "role": "result",
@@ -33,7 +33,7 @@
     },
     {
       "id": "no-sufficient-condition",
-      "text": "Some conditions seemed to make too many options harmful, but none was found that reliably produces the effect",
+      "text": "Some conditions seemed necessary for too many options to hurt, but none was found that reliably produces the effect",
       "support": {
         "sentence": "While further analyses indicated several potentially important preconditions for choice overload, no sufficient conditions could be identified.",
         "role": "result",
@@ -44,9 +44,9 @@
   ],
   "limits": [
     "mostly consumer choices in the lab and the field, not life choices",
-    "the mean effect is said in words (« virtually zero »), no number in the abstract",
+    "the mean effect is said in words (« virtually zero »), no number in the abstract; outcomes pooled",
     "its first author led failed tests of the effect (scheibehenne-2009-moderators): not independent of that line",
-    "a later meta-analysis that codes moderators finds an overall effect (chernev-2015-overload)"
+    "a later meta-analysis that codes moderators finds an effect under conditions (chernev-2015-overload)"
   ],
   "acknowledged": []
 }

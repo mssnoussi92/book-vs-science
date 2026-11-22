@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "fischer-2011-autonomy",
+  "doi": "10.1037/a0023663",
+  "declared": {
+    "title": "What is more important for national well-being: Money or autonomy? A meta-analysis of well-being, burnout, and anxiety across 63 societies",
+    "firstAuthor": "Fischer",
+    "authors": [
+      "Fischer",
+      "Boer"
+    ],
+    "year": 2011,
+    "venue": "Journal of Personality and Social Psychology",
+    "foundIn": "rapport contre-preuve reports/too-many-choices/counter-evidence.md (2026-11-22), DOI trouvé par ses requêtes ; titre relevé sur Crossref par la session : contrôle d'identité plus faible"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "n": 420599,
+  "population": "national samples from 63 countries (420,599 people), measures of ill-being, anxiety and stress; countries not listed in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "individualism",
+      "text": "Across 63 countries, more individualistic (autonomy-granting) societies had more well-being, more consistently than richer ones",
+      "support": {
+        "sentence": "Despite some emerging nonlinear trends and interactions between wealth and individualism, the overall pattern strongly suggests that greater individualism is consistently associated with more well-being.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "an association between countries, not people's own choices",
+    "individualism and autonomy, not the number of options",
+    "whether Arab countries are among the 63 is not given in the abstract"
+  ],
+  "acknowledged": []
+}

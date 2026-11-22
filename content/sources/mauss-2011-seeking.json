@@ -43,19 +43,20 @@
     },
     {
       "id": "disappointment",
-      "text": "That drop went through disappointment at one's own feelings",
+      "text": "That drop went, statistically, through disappointment at one's own feelings (a measured mediator, not a manipulated one)",
       "support": {
         "sentence": "This effect was mediated by participants' disappointment at their own feelings.",
         "role": "result",
         "where": "abstract"
       },
-      "kind": "causal"
+      "kind": "association"
     }
   ],
   "limits": [
     "women only, small samples: 59, then 69 split into four groups of about 17 (sizes read in the author manuscript, PMC3160511)",
     "Study 1 is cross-sectional, and its link holds only under low life stress",
     "the induction is one faux newspaper article, measured minutes later during a 2-minute film",
+    "Study 2 effects just under the threshold: interaction p = .02, indirect effect 95% CI −.83 to −.02 (author manuscript, not the printed version)",
     "no direct or multi-lab replication of Study 2 found (2026-11-22)",
     "the Valuing Happiness Scale used here mixes several things: only 1 of its 3 factors goes with lower well-being (Luhmann 2016)",
     "the lab that proposed the valuing-happiness paradox; 4 other sources of this dossier come from the same network (Mauss, Ford)"
@@ -64,7 +65,7 @@
     {
       "doi": "10.1037/a0024986",
       "type": "correction",
-      "changes": "the title: the author manuscript (PMC3160511) reads « make people happy? », PubMed marks the title [corrected]; the notice itself is unreadable (APA, 403)"
+      "changes": "probably the title: manuscript PMC3160511 « make people happy? », PubMed « unhappy? [corrected] », notice titled « unhappy »; notice text unread (APA 403)"
     }
   ]
 }

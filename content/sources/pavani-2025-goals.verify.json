@@ -1,0 +1,75 @@
+{
+  "doi": "10.1007/s10902-025-00878-4",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Wanting to be Happy Fosters Happiness by Promoting Savoring: A Daily Diary Study » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Pavani » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2025, found 2025"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "no abstract in Europe PMC, Crossref or OpenAlex"
+    },
+    {
+      "name": "support:between-people",
+      "result": "pass",
+      "detail": "full-text reading by writer agent, 2026-11-22: abstract of the author's PDF on HAL (hal-05462372); none in Crossref, Europe PMC, OpenAlex"
+    },
+    {
+      "name": "support:next-day",
+      "result": "pass",
+      "detail": "full-text reading by writer agent, 2026-11-22: abstract of the author's PDF on HAL (hal-05462372); none in Crossref, Europe PMC, OpenAlex"
+    }
+  ],
+  "found": {
+    "title": "Wanting to be Happy Fosters Happiness by Promoting Savoring: A Daily Diary Study",
+    "firstAuthor": "Pavani",
+    "years": [
+      2025
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Happiness Studies"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "none",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

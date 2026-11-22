@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "sahdra-2025-striving",
+  "doi": "10.1007/s10902-025-00933-0",
+  "declared": {
+    "title": "One Size Does Not Make All Happy: Idionomic Links Between Striving for Positive States and Happiness in Experience Sampling",
+    "firstAuthor": "Sahdra",
+    "year": 2025,
+    "foundIn": "OpenAlex: works citing Mauss 2011, published 2023 to 2026 (2026-11-22); reports/chasing-happiness/counter-evidence.md (card 10)"
+  },
+  "design": "experience-sampling",
+  "designSetBy": "reviewer",
+  "n": 167,
+  "population": "167 students of a public university in the western US, 76% women, 3 prompts a day for a week (2,251 surveys; full text)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "worry-dampens",
+      "text": "Moments of worry about one's happiness (« I worried about my positive emotions fading »: the EA items, full text) were followed by less happiness in the same person",
+      "support": {
+        "sentence": "Multilevel vector autoregressive models showed that EA consistently dampened happiness within-person, despite no between-person association.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "striving-two-groups",
+      "text": "Doing one's best to stay happy went with more happiness for one group; for the other it did nothing directly and lowered happiness only through worry",
+      "support": {
+        "sentence": "In contrast, PP was linked to higher happiness in one group, but in the other, it had no direct benefit and indirectly reduced happiness via its connection to EA.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "one week, students of one US university",
+    "« experiential attachment » is measured by worry items: it is the worry, not another form of wanting (full text)",
+    "the two groups are found by the analysis, not set in advance; nothing manipulated"
+  ],
+  "allegiance": "co-authors (Hayes, Levin, Krafft) develop acceptance and commitment therapy, where « experiential attachment » comes from",
+  "acknowledged": []
+}

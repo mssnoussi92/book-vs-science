@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "lindkvist-2022-donation",
+  "doi": "10.3389/fpsyg.2022.800528",
+  "declared": {
+    "title": "Set Size and Donation Behavior",
+    "firstAuthor": "Lindkvist",
+    "authors": [
+      "Lindkvist",
+      "Luke"
+    ],
+    "year": 2022,
+    "venue": "Frontiers in Psychology",
+    "foundIn": "rapport contre-preuve reports/too-many-choices/counter-evidence.md (2026-11-22), DOI trouvé par ses requêtes ; titre relevé sur Crossref par la session : contrôle d'identité plus faible ; déjà vue par les recherches Europe PMC du dossier"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 501,
+  "population": "501 participants of a preregistered online experiment choosing whether and where to donate, among 2 to 80 charities; country not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "no-difference",
+      "text": "Across 16 set sizes from 2 to 80 charities, the likelihood of donating did not meaningfully differ, whatever people's certainty about their preferences",
+      "support": {
+        "sentence": "The results indicate that there were no meaningful differences in donation likelihood between the 16 organization assortment sizes, neither for individuals with high preference certainty nor for individuals with uncertain preferences among charitable causes.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "one domain (donating money)",
+    "501 people spread over 16 set sizes: small groups, rules out only large effects",
+    "a single laboratory, not a multi-lab replication"
+  ],
+  "acknowledged": []
+}

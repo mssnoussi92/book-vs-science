@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "lyubomirsky-2011-will",
+  "doi": "10.1037/a0022575",
+  "declared": {
+    "title": "Becoming happier takes both a will and a proper way: An experimental longitudinal intervention to boost well-being.",
+    "firstAuthor": "Lyubomirsky",
+    "authors": [
+      "Lyubomirsky",
+      "Dickerhoof",
+      "Boehm",
+      "Sheldon"
+    ],
+    "year": 2011,
+    "venue": "Emotion",
+    "foundIn": "OpenAlex search « trying to be happier really can work experimental » (2026-11-22); reports/chasing-happiness/counter-evidence.md (card 2)"
+  },
+  "design": "rct",
+  "designSetBy": "reviewer",
+  "n": 355,
+  "population": "undergraduates of a US public university, ethnically diverse (N = 355; full text), 8 months",
+  "mena": false,
+  "findings": [
+    {
+      "id": "will-helps",
+      "text": "Students who joined knowing the study was about becoming happier, and those who kept up their effort, gained more from the happiness activities, not less",
+      "support": {
+        "sentence": "Our results indicate that initial self-selection makes a difference, but only in the two positive activity conditions, not the control, and that continued effort also makes a difference, but, again, only in the treatment conditions.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "endorse-and-commit",
+      "text": "Happiness activities work best when people know about them, endorse them and commit to them",
+      "support": {
+        "sentence": "We conclude that happiness interventions are more than just placebos, but that they are most successful when participants know about, endorse, and commit to the intervention.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "the will is not randomized: people chose a study announced as about happiness",
+    "small effects (« our rs spanned the low to mid .10s », full text)",
+    "undergraduates, one US university"
+  ],
+  "allegiance": "Lyubomirsky and Sheldon develop and promote the happiness activities they test",
+  "acknowledged": []
+}

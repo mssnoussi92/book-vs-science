@@ -15,7 +15,7 @@
   "design": "cross-sectional",
   "designSetBy": "reviewer",
   "n": 683,
-  "population": "adults, 75% women (N = 683); country not given in the abstract (a Belgian journal)",
+  "population": "adults of French-speaking Belgium, students, university staff and social networks, 75% women (N = 683; full text)",
   "mena": false,
   "findings": [
     {
@@ -30,7 +30,7 @@
     },
     {
       "id": "valuing-partly-worse",
-      "text": "Valuing happiness went partly the other way: with lower well-being on some measures",
+      "text": "Valuing happiness went, more weakly, the other way: with lower well-being and more depression (full text: same direction on all four measures, slight links)",
       "support": {
         "sentence": "Opposite results partly emerged for valuing happiness.",
         "role": "result",
@@ -42,7 +42,7 @@
   "limits": [
     "cross-sectional, one sample, 75% women",
     "replicates correlations, not an experiment",
-    "« partly »: the abstract does not say on which of the four measures valuing happiness went with worse scores"
+    "« partly » is about strength: the links of valuing happiness are slight (full text); the valuing scale is unreliable here (α = .65)"
   ],
   "acknowledged": []
 }

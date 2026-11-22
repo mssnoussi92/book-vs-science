@@ -1,0 +1,77 @@
+{
+  "doi": "10.1037/xap0000481",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Choose as much as you wish: Freedom cues in the marketplace help consumers feel more satisfied with what they choose and improve customer experience. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Fasolo » matches; 3/3 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2024, found 2023, 2024"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:freedom-cue",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:focus-chosen",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Choose as much as you wish: Freedom cues in the marketplace help consumers feel more satisfied with what they choose and improve customer experience.",
+    "firstAuthor": "Fasolo",
+    "years": [
+      2023,
+      2024
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Experimental Psychology: Applied"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "4ffd5582b6373fe90beb5162ceb34eb68da5dc9b770a05af87a184760f0a99c0",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

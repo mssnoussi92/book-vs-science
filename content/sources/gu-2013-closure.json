@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "gu-2013-closure",
+  "doi": "10.1086/670252",
+  "declared": {
+    "title": "Turning the Page: The Impact of Choice Closure on Satisfaction",
+    "firstAuthor": "Gu",
+    "authors": [
+      "Gu",
+      "Botti",
+      "Faro"
+    ],
+    "year": 2013,
+    "venue": "Journal of Consumer Research",
+    "foundIn": "rapport contre-preuve reports/too-many-choices/counter-evidence.md (2026-11-22), DOI trouvé par ses requêtes ; titre relevé sur Crossref par la session : contrôle d'identité plus faible"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "consumers in four studies; sample sizes and countries not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "closure-satisfaction",
+      "text": "Small acts of closure (such as covering the rejected options) stopped people from re-comparing and raised satisfaction with a choice made from a large set",
+      "support": {
+        "sentence": "Four studies show that performing acts of closure inhibits consumers' propensity to reconsider their decision process and to engage in unfavorable comparisons between the chosen and the forgone options, resulting in greater satisfaction with the outcome of choices made from large sets.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "closure is a symbolic act, not an irreversible decision nor a life commitment",
+    "consumer choices",
+    "four studies from one team; no replication found"
+  ],
+  "acknowledged": []
+}

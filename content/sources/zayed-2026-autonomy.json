@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "zayed-2026-autonomy",
+  "doi": "10.1038/s41598-026-49279-4",
+  "declared": {
+    "title": "Self-efficacy, personal autonomy, life arrangements, and health priorities/preferences in psychological distress: a predictive, variance-based PLS-SEM structural model",
+    "firstAuthor": "Zayed",
+    "authors": [
+      "Zayed",
+      "Alshammari",
+      "Suleiman"
+    ],
+    "year": 2026,
+    "venue": "Scientific Reports",
+    "foundIn": "rapport contre-preuve reports/too-many-choices/counter-evidence.md (2026-11-22), DOI trouvé par ses requêtes ; titre relevé sur Crossref par la session : contrôle d'identité plus faible"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "n": 328,
+  "population": "328 Arabic-speaking adults aged 18-65 (authors in Saudi Arabia and Egypt; country of the sample not given in the abstract)",
+  "mena": true,
+  "findings": [
+    {
+      "id": "autonomy-less-distress",
+      "text": "In an Arab sample, the link between self-efficacy and lower distress ran through a stronger sense of personal autonomy",
+      "support": {
+        "sentence": "Autonomy mediated self-efficacy's protective effect against distress (indirect β = -0.17, p < .001), while health priorities unexpectedly increased distress (β = 0.35, p < .001).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "cross-sectional structural model: no causal order",
+    "personal autonomy, not freedom of choice nor number of options",
+    "country of the sample not stated in the abstract"
+  ],
+  "acknowledged": []
+}

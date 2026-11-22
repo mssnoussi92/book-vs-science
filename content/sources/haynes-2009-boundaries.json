@@ -19,7 +19,7 @@
   "findings": [
     {
       "id": "less-satisfied",
-      "text": "Choosing among 10 prizes rather than 3 left people less satisfied with their decision, but not more regretful",
+      "text": "Choosing among 10 prizes rather than 3 left people less satisfied with their decision; the abstract reports no such difference for regret",
       "support": {
         "sentence": "The larger set of alternatives led to less satisfaction, but not less regret, with people's decisions.",
         "role": "result",
@@ -41,7 +41,7 @@
   "limits": [
     "a prize draw: a choice of little importance",
     "sample size not given in the abstract",
-    "one study, one author, 3 vs 10 options only"
+    "one study, one author, 3 vs 10 options only; pooled in scheibehenne-2010-overload (blind review, full text)"
   ],
   "acknowledged": []
 }

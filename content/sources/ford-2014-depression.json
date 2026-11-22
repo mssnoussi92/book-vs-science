@@ -18,7 +18,7 @@
   },
   "design": "cross-sectional",
   "designSetBy": "reviewer",
-  "population": "two US samples: community adults with remitted major depression; remitted patients vs healthy controls",
+  "population": "US adults: 98 in remission from recurrent major depression (Denver); 31 remitted patients vs 30 healthy controls (full text)",
   "mena": false,
   "findings": [
     {
@@ -44,9 +44,10 @@
   ],
   "limits": [
     "correlational: depression may raise the value placed on happiness as much as the reverse",
-    "people with a past depression, not the general public; sample sizes not given in the abstract",
+    "people with a past depression, not the general public (98, then 31 + 30)",
     "the abstract's context sentence says valuing happiness « leads to » lower well-being: this study does not test a cause",
     "same network of authors as Mauss 2011, Ford 2015 and Zerwas 2024: not independent evidence"
   ],
-  "acknowledged": []
+  "acknowledged": [],
+  "n": 159
 }

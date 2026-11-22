@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "takai-2023-japan",
+  "doi": "10.1007/s12144-022-04131-6",
+  "declared": {
+    "title": "Do people who highly value happiness tend to ruminate?",
+    "firstAuthor": "Takai",
+    "authors": [
+      "Takai",
+      "Hasegawa",
+      "Shigematsu",
+      "Yamamoto"
+    ],
+    "year": 2023,
+    "venue": "Curr Psychol",
+    "foundIn": "Europe PMC search « \"valuing happiness\" » (2026-11-22)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "n": 679,
+  "population": "Japanese university students: 350 (cross-sectional), 329 followed 4 weeks",
+  "mena": false,
+  "findings": [
+    {
+      "id": "rumination",
+      "text": "In Japan too, students who valued happiness more ruminated more, at the same time and four weeks later",
+      "support": {
+        "sentence": "Consistent with our hypothesis, valuing happiness was concurrently and longitudinally associated with increased rumination after controlling for depressive symptoms.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "interdependence-once",
+      "text": "Once out of two studies, the link was stronger, not weaker, among the most interdependent students",
+      "support": {
+        "sentence": "Furthermore, Study 1, but not Study 2, indicated that the association between valuing happiness and rumination was stronger among students with highly interdependent self-construal than those with less interdependent self-construal.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "rumination, not happiness or well-being",
+    "four weeks only; students",
+    "same Valuing Happiness Scale (worry items included)"
+  ],
+  "acknowledged": []
+}

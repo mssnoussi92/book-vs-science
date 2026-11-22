@@ -30,7 +30,7 @@
     },
     {
       "id": "wanted-option",
-      "text": "Being able to change one's mind blocked the processes that usually make people like what they chose, yet most participants wanted that option",
+      "text": "Being able to change one's mind weakened the processes that usually make people like what they chose, yet most participants wanted that option",
       "support": {
         "sentence": "Although the opportunity to change their minds impaired the postdecisional processes that normally promote satisfaction (Study 2a), most participants wanted to have that opportunity (Study 2b).",
         "role": "result",
@@ -41,7 +41,7 @@
   ],
   "limits": [
     "small laboratory studies on a choice of little importance (a photo print)",
-    "no direct replication found among 59 citing works matching « replication » (OpenAlex, 2026-11-22)",
+    "no direct replication found (OpenAlex citing works and Europe PMC, 2026-11-22; same in the counter-evidence report)",
     "US students"
   ],
   "acknowledged": []

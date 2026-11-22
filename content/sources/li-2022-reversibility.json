@@ -19,7 +19,7 @@
   "design": "experiment",
   "designSetBy": "reviewer",
   "n": 130,
-  "population": "130 participants randomly assigned to a reversible or a final personnel decision (authors in China)",
+  "population": "130 graduate students in human resource management, Shanghai, randomly assigned to a reversible or a final hiring decision (full text)",
   "mena": false,
   "findings": [
     {
@@ -34,9 +34,11 @@
     }
   ],
   "limits": [
-    "a hypothetical personnel decision",
-    "130 participants, one study",
-    "country known only from the authors' affiliations"
+    "risk of bias: manipulation check t(128) = 61.26 reported with d = 0.98, while its means and SDs (7.97 ± 0.75 vs 1.32 ± 0.47) imply d near 10",
+    "risk of bias: the dummy coding of reversibility is written both ways (methods and table: reversible = 0; results: 1 = reversible)",
+    "very large effects for this paradigm, 130 students, one study: weighed less than the other experiments",
+    "a hypothetical hiring decision, not a life commitment",
+    "full text read by the writing session (PMC9384371); same reading in the blind review"
   ],
   "acknowledged": []
 }

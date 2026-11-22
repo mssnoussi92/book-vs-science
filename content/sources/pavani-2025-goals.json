@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "pavani-2025-goals",
+  "doi": "10.1007/s10902-025-00878-4",
+  "declared": {
+    "title": "Wanting to be Happy Fosters Happiness by Promoting Savoring: A Daily Diary Study",
+    "firstAuthor": "Pavani",
+    "year": 2025,
+    "venue": "Journal of Happiness Studies",
+    "foundIn": "reports/chasing-happiness/counter-evidence.md (card 8); Crossref search « happiness goals savoring intense happiness daily diary Pavani » (2026-11-22)"
+  },
+  "design": "experience-sampling",
+  "designSetBy": "reviewer",
+  "n": 100,
+  "population": "100 French women aged 19 to 45, mostly highly educated, 31 evenings of diary (author's PDF)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "between-people",
+      "text": "Women who wanted more to be happy had more often intense happiness, partly because they savored good moments more",
+      "support": {
+        "sentence": "First, as expected, at the between-individual level, individuals with higher happiness goals were more likely to experience intense happiness, partly because they engaged more in savoring.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "writer agent, 2026-11-22: abstract of the author's PDF on HAL (hal-05462372); none in Crossref, Europe PMC, OpenAlex"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "next-day",
+      "text": "On evenings when a woman wanted more than usual to be happy the next day, she was more likely to have intense happiness that day, partly through savoring",
+      "support": {
+        "sentence": "Second, as expected, at the within-individual level, when an individual displayed higher happiness goals for tomorrow than usual, the individual was more likely to experience intense happiness during the next day than usual, partly due to stronger engagement in savoring.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "writer agent, 2026-11-22: abstract of the author's PDF on HAL (hal-05462372); none in Crossref, Europe PMC, OpenAlex"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "women only, one country, mostly highly educated",
+    "association over days, never a manipulation",
+    "happiness of the day rated by one item each evening"
+  ],
+  "acknowledged": []
+}

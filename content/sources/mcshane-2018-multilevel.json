@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "mcshane-2018-multilevel",
+  "doi": "10.1007/s11336-017-9571-z",
+  "declared": {
+    "title": "Multilevel Multivariate Meta-analysis with Application to Choice Overload",
+    "firstAuthor": "McShane",
+    "authors": [
+      "McShane",
+      "Böckenholt"
+    ],
+    "year": 2018,
+    "venue": "Psychometrika",
+    "foundIn": "rapport contre-preuve reports/too-many-choices/counter-evidence.md (2026-11-22), DOI trouvé par ses requêtes ; titre relevé sur Crossref par la session : contrôle d'identité plus faible ; déjà vue par la recherche Crossref « choice overload meta-analysis » du dossier"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "population": "the data of earlier choice-overload studies, reanalysed with a multilevel multivariate model; countries not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "varies-by-measure",
+      "text": "Choice overload varies strongly with the outcome measured (six measures, from satisfaction to deferral) and with four moderators, which may interact",
+      "support": {
+        "sentence": "In particular, it shows that choice overload varies substantially as a function of the six dependent measures and four moderators examined in the domain and that there are potentially interesting and theoretically important interactions among them.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "a methods paper: no effect size per measure in the abstract",
+    "a reanalysis of the same studies, not new data",
+    "Böckenholt co-authored chernev-2015-overload: not an independent reading"
+  ],
+  "acknowledged": []
+}

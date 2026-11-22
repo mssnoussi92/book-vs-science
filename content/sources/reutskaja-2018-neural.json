@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "reutskaja-2018-neural",
+  "doi": "10.1038/s41562-018-0440-2",
+  "declared": {
+    "title": "Choice overload reduces neural signatures of choice set value in dorsal striatum and anterior cingulate cortex",
+    "firstAuthor": "Reutskaja",
+    "authors": [
+      "Reutskaja",
+      "Lindner",
+      "Nagel",
+      "Andersen",
+      "Camerer"
+    ],
+    "year": 2018,
+    "venue": "Nature Human Behaviour",
+    "foundIn": "rapport contre-preuve reports/too-many-choices/counter-evidence.md (2026-11-22), DOI trouvé par ses requêtes ; titre relevé sur Crossref par la session : contrôle d'identité plus faible ; déjà repérée par la recherche Crossref « choice overload reduces neural signatures of choice set value » du dossier"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "participants in an fMRI scanner choosing from, or browsing, sets of 6, 12 or 24 items; sample size and country not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "right-amount",
+      "text": "Brain value signals were highest for 12-item sets, judged « the right amount »; 6 items felt too few and 24 too many",
+      "support": {
+        "sentence": "Activity was highest for 12-item sets, which were perceived as having 'the right amount' of options and was lower for 6-item and 24-item sets, which were perceived as 'too small' and 'too large', respectively.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "brain activity and judged set size, not satisfaction with the item chosen",
+    "small brain-imaging sample (size not in the abstract)",
+    "same first author as reutskaja-2009-satiate and reutskaja-2022-deprivation"
+  ],
+  "acknowledged": []
+}

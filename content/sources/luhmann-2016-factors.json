@@ -18,7 +18,7 @@
   "design": "cross-sectional",
   "designSetBy": "reviewer",
   "n": 938,
-  "population": "six independent samples pooled (N = 938); countries not given in the abstract",
+  "population": "six samples pooled (N = 938): four US online samples (MTurk), one German, one of US students (full text)",
   "mena": false,
   "findings": [
     {
@@ -33,7 +33,7 @@
     },
     {
       "id": "not-necessarily-bad",
-      "text": "Valuing happiness is not necessarily bad for well-being",
+      "text": "Valuing happiness may not necessarily be bad for well-being",
       "support": {
         "sentence": "These findings indicate that valuing happiness may not necessarily be bad for one's well-being, and call for a better definition, theoretical foundation, and operationalization of this construct.",
         "role": "conclusion",
@@ -44,7 +44,8 @@
   ],
   "limits": [
     "correlational",
-    "the abstract does not name which of the three factors goes with lower well-being",
+    "the factor that goes with lower well-being is two worry items (« If I don't feel happy, maybe there is something wrong with me »; full text)",
+    "two-item factors, not validated dimensions (the authors' warning, full text)",
     "about a measuring tool: it weakens the studies that used the scale, it does not test the idea directly"
   ],
   "acknowledged": []

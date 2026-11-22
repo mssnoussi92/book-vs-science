@@ -1,0 +1,71 @@
+{
+  "doi": "10.1162/qjec.2010.125.1.263",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « What's Advertising Content Worth? Evidence from a Consumer Credit Marketing Field Experiment<sup>*</sup> » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Bertrand » matches; 5/5 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2010, found 2010"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:fewer-examples",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "What's Advertising Content Worth? Evidence from a Consumer Credit Marketing Field Experiment<sup>*</sup>",
+    "firstAuthor": "Bertrand",
+    "years": [
+      2010
+    ],
+    "type": "journal-article",
+    "venue": "Quarterly Journal of Economics"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "38a80cbb3b68ef84d5ac68e8a12c0effda539db6e4ddcd2afecb563b555755d4",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

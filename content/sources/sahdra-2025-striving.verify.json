@@ -1,0 +1,76 @@
+{
+  "doi": "10.1007/s10902-025-00933-0",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « One Size Does Not Make All Happy: Idionomic Links Between Striving for Positive States and Happiness in Experience Sampling » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Sahdra » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2025, found 2025"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from crossref"
+    },
+    {
+      "name": "support:worry-dampens",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:striving-two-groups",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "One Size Does Not Make All Happy: Idionomic Links Between Striving for Positive States and Happiness in Experience Sampling",
+    "firstAuthor": "Sahdra",
+    "years": [
+      2025
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Happiness Studies"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "crossref",
+  "abstractSha256": "847de5a60990299f3a9ef6ee10ea3899f36a07d23cd94677d81e58832fd1e06a",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}
