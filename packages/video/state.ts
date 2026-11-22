@@ -6,6 +6,11 @@ import { POSES, mix, type Pose } from "../rig/skeleton.ts";
 import type { Timeline, TimedAction, TimedLine, VisemeName } from "../schema/timeline.ts";
 
 export const lineAt = (tl: Timeline, f: number): TimedLine | undefined => tl.lines.find((l) => f >= l.f0 && f < l.f1);
+
+/** A line a card already shows word for word (the nuance, the orientation line, when they are said): its subtitles
+ *  would put the same sentence twice on screen (« one text at a time », owner's pilot review). */
+export const onCard = (tl: Timeline, l: TimedLine, f: number): boolean =>
+  [tl.cards.nuance, tl.cards.orientation].some((c) => !!c && f >= c.f0 && f < c.f1 && c.text === l.text);
 export const partAt = (tl: Timeline, f: number) => tl.parts.find((p) => f >= p.f0 && f < p.f1) ?? tl.parts.at(-1)!;
 
 export function mouthAt(tl: Timeline, who: string, f: number): VisemeName {

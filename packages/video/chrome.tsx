@@ -6,7 +6,7 @@ import { Easing, interpolate, useCurrentFrame } from "remotion";
 import type { Timeline } from "../schema/timeline.ts";
 import { FONT } from "./fonts.ts";
 import { ZONES, type Aspect, type Box } from "./layout.ts";
-import { lineAt, readingChunks } from "./state.ts";
+import { lineAt, onCard, readingChunks } from "./state.ts";
 
 export type ChromeTheme = { ink: string; paper: string; accent: string; card: string; cardInk: string };
 export const DEFAULT_THEME: ChromeTheme = { ink: "#17181d", paper: "#f6f3ec", accent: "#e0a83a", card: "#fffaf0", cardInk: "#17181d" };
@@ -218,7 +218,7 @@ export const Subtitles: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTh
   const f = useCurrentFrame();
   const l = lineAt(tl, f);
   const z = ZONES[aspect].subtitles;
-  if (!l || !l.words.length || f < tl.cards.firstFrame.f1) return null;
+  if (!l || !l.words.length || f < tl.cards.firstFrame.f1 || onCard(tl, l, f)) return null;
   let idx = l.words.findIndex((w) => f >= w.f0 && f < w.f1);
   if (idx < 0) idx = f < l.words[0]!.f0 ? 0 : l.words.length - 1;
   const [a, b] = readingChunks(l.words).find(([s, e]) => idx >= s && idx < e) ?? [0, l.words.length];

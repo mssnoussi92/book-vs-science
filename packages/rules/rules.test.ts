@@ -66,6 +66,7 @@ describe("structure", () => {
   test("hooks: an action kept for every hook", () => bites("hooks", EP, (j) => { j.verdict.beats.push(act({ hooks: j.hooks.map((h: { id: string }) => h.id) })); }));
   test("hooks: a caption on a hook's action", () => bites("hooks", EP, (j) => { j.hooks[1].beats = [act({ caption: true })]; }));
   test("folders: an action anchored on a line of another part", () => bites("folders", EP, (j) => { j.verdict.beats.push(act({ at: { line: "zz", word: 0 } })); }));
+  test("folders: an action anchored on a line that comes after it", () => bites("folders", EP, (j) => { j.scenes[0].beats.splice(1, 0, act({ who: j.scenes[0].beats[0].speaker, at: { line: "l2", word: 0 } })); }));
   test("folders: holds a part with nothing to hold", () => bites("folders", EP, (j) => { j.verdict.beats.push({ kind: "action", id: "a9", who: "omar", seconds: 1, gesture: "breathe", holds: "part" }); }));
   test("custom-scene: two custom scenes", () => bites("custom-scene", EP, (j) => {
     j.scenes[0].custom = "spiral";
@@ -93,6 +94,7 @@ describe("texts", () => {
     assert.equal(warned(root).length, 0);
   });
   test("lengths: a study card too long for its box", () => bites("lengths", AR, (j) => { j.texts["verdict.card"] = "تحليل لـ 40 دراسة عن العادة دي والتوتر في الشغل وفي البيت عند الكبار والصغار"; }));
+  test("lengths: a first frame of few but long words, on three lines", () => bites("lengths", AR, (j) => { j.texts["hook.h2.frame"] = "«الفلوس ما بتشتريش السعادة»… والرضا؟"; }));
   test("lengths: a first frame too long to read in a second", () => bites("lengths", AR, (j) => { j.texts["hook.h2.frame"] = "جرب ده تلات ثواني بس وانت قاعد مكانك"; }));
   test("no-author-name: the author named in a line", () => bites("no-author-name", AR, (j) => { j.texts["book.l1"] = "جين إكزامبل بتقول إن العادة دي بتقلل التوتر."; }));
   test("numbers: a figure that no cited source holds", () => bites("numbers", AR, (j) => { j.texts["verdict.card"] = "تحليل لـ 57 دراسة"; }));

@@ -6,6 +6,7 @@
   "wordsPerSecond": 2.5,
   "limits": {
     "hookFrameWords": 6,
+    "hookFrameChars": 42,
     "bookCardWords": 12,
     "studyCardWords": 12,
     "lineChars": 160

@@ -12,6 +12,7 @@ export const LanguagePack = z.strictObject({
   wordsPerSecond: z.number().min(0.5).max(6),
   limits: z.strictObject({
     hookFrameWords: z.number().int().min(1),   // words on the first frame of a hook
+    hookFrameChars: z.number().int().min(1).default(34),   // its characters: two lines in the first frame's box (ar-EG: 36 came out on three lines, money-happiness challenge)
     bookCardWords: z.number().int().min(1),
     studyCardWords: z.number().int().min(1).default(12),   // the study card's words: its box is 280 px high (the challenge of too-many-choices: 15 words overflowed and cut the applicability line)
     lineChars: z.number().int().min(20),

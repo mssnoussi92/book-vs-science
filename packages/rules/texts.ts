@@ -56,17 +56,18 @@ export const textChars: Rule = {
 
 export const lengths: Rule = {
   id: "lengths",
-  describe: "Première image d'un hook ≤ N mots, carte du livre et carte de l'étude ≤ N mots, réplique ≤ N caractères (langue).",
+  describe: "Première image d'un hook ≤ N mots et N caractères, carte du livre et carte de l'étude ≤ N mots, réplique ≤ N caractères (langue).",
   check(repo) {
     const out: Issue[] = [];
     for (const { dir, episode: ep, langs } of repo.episodes) {
       for (const [code, lang] of langs) {
         const pack = repo.languages.get(code);
         if (!pack) continue;
-        const { hookFrameWords, bookCardWords, studyCardWords, lineChars } = pack.limits;
+        const { hookFrameWords, hookFrameChars, bookCardWords, studyCardWords, lineChars } = pack.limits;
         for (const h of ep.hooks) {
           const t = lang.texts[`hook.${h.id}.frame`];
           if (t && words(t).length > hookFrameWords) out.push({ rule: "lengths", severity: "error", where: langWhere(dir, code, `hook.${h.id}.frame`), message: `${words(t).length} mots sur la première image (${hookFrameWords} au plus : lue en une seconde, son coupé)` });
+          else if (t && t.normalize("NFC").length > hookFrameChars) out.push({ rule: "lengths", severity: "error", where: langWhere(dir, code, `hook.${h.id}.frame`), message: `${t.normalize("NFC").length} caractères sur la première image (${hookFrameChars} au plus : au-delà, elle passe sur trois lignes)` });
         }
         const card = lang.texts["book.card"];
         if (card && words(card).length > bookCardWords) out.push({ rule: "lengths", severity: "error", where: langWhere(dir, code, "book.card"), message: `${words(card).length} mots sur la carte du livre (${bookCardWords} au plus)` });

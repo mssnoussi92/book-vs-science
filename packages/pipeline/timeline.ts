@@ -198,7 +198,13 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
   const onScreenFor = new Set(ep.verdict.assessments.filter((a) => a.evidence.some((x) => x.source === ep.verdict.onScreen && x.relation !== "contradicts")).map((a) => a.claim));
   const restsOn = ep.verdict.beats.find((b) => b.kind === "line" && b.claims.some((c) => onScreenFor.has(c)));
   const studyFrom = (restsOn && lines.find((l) => l.key === `verdict.${restsOn.id}`)?.f0) ?? v0 + fr(1.0);
-  const studyTo = nuance ? nuance.f0 : t0;
+  // It leaves at the first later line that rests only on claims it does not support: its reference would sign another
+  // study's figure (money-happiness: Thomson's card under « في مصر » and the ceiling, which it does not test).
+  const vLines = ep.verdict.beats.flatMap((b) => (b.kind === "line" ? [b] : []));
+  const from = restsOn ? vLines.findIndex((b) => b.id === restsOn.id) : -1;
+  const off = from >= 0 ? vLines.slice(from + 1).find((b) => b.claims.length > 0 && !b.claims.some((c) => onScreenFor.has(c))) : undefined;
+  const offAt = off ? lines.find((l) => l.key === `verdict.${off.id}`)?.f0 : undefined;
+  const studyTo = offAt ?? (nuance ? nuance.f0 : t0);
 
   for (const t of Object.values(mouths)) t.sort((a, b) => a.f - b.f);
   // The takes of a replayed scene: from its first character beat (after the narrator's word) to the rewind, then from

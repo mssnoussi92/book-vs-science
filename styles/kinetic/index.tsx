@@ -8,7 +8,7 @@ import { INK } from "../../packages/rig/Rig.tsx";
 import type { PartProps, StyleModule } from "../../packages/video/contract.ts";
 import { FONT } from "../../packages/video/fonts.ts";
 import { Actor } from "../../packages/video/stage.tsx";
-import { effectsAt, leadOf, lineAt } from "../../packages/video/state.ts";
+import { effectsAt, leadOf, lineAt, onCard } from "../../packages/video/state.ts";
 
 const CLAMP = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const COLORS: Record<string, string> = { nour: "#2f8f8a", karim: "#e07a3a", adasa: "#3f4d8c" };
@@ -35,7 +35,7 @@ const Medallion: React.FC<PartProps & { who: string }> = ({ tl, f, who }) => {
  *  only, moved with position: relative: an inline-block would break the order of an English title inside Arabic. */
 const Words: React.FC<PartProps> = ({ tl, f }) => {
   const l = lineAt(tl, f);
-  if (!l || f < tl.cards.firstFrame.f1) return null;     // the first frame's card is the only text while it is up
+  if (!l || f < tl.cards.firstFrame.f1 || onCard(tl, l, f)) return null;     // one text at a time: the first frame's card, a card that says the line
   const chunk = 8;
   const idx = Math.max(0, l.words.findIndex((w) => f >= w.f0 && f < w.f1));
   const start = l.words.length > chunk ? Math.floor(idx / chunk) * chunk : 0;

@@ -28,8 +28,12 @@ export const folders: Rule = {
         if (p.beat.kind === "action" && !cast.has(p.beat.who)) err(`${p.scope}.${p.beat.id}`, `${p.beat.who} n'est pas de la distribution`);
         if (p.beat.kind === "action" && p.beat.at) {
           const at = p.beat.at;
-          const same = beats(ep).some((q) => q.scope === p.scope && q.beat.kind === "line" && q.beat.id === at.line);
-          if (!same) err(`${p.scope}.${p.beat.id}.at`, `« ${at.line} » n'est pas une réplique de ${p.scope}`);
+          const all = beats(ep);
+          const line = all.findIndex((q) => q.scope === p.scope && q.beat.kind === "line" && q.beat.id === at.line);
+          if (line < 0) err(`${p.scope}.${p.beat.id}.at`, `« ${at.line} » n'est pas une réplique de ${p.scope}`);
+          // An action anchored on a line not played yet would start, with no error, at the clock of the moment (the
+          // challenge of money-happiness): the line must come before it.
+          else if (line > all.findIndex((q) => q.beat === p.beat)) err(`${p.scope}.${p.beat.id}.at`, `« ${at.line} » vient après cette action : la placer après sa réplique`);
         }
         if (p.beat.kind === "action" && p.beat.holds !== "beat" && !p.beat.fx && !p.beat.prop) {
           err(`${p.scope}.${p.beat.id}.holds`, `« holds: ${p.beat.holds} » garde un effet ou un objet : cette action n'en a pas`);
