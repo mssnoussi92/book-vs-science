@@ -82,6 +82,14 @@ export function readingChunks(words: readonly { w: string }[]): [number, number]
 export const ENTER = 24, WALK = 18;
 export function presence(tl: Timeline, who: string, f: number): number {
   const part = partAt(tl, f);
+  if (part.kind === "hook") {
+    // A hook with its own actions shows only who acts or speaks in it (Karim's confession to the camera is his alone);
+    // a hook without any keeps everybody in the background.
+    const inHook = (x: { f0: number }) => x.f0 >= part.f0 && x.f0 < part.f1;
+    const acts = tl.actions.filter((a) => a.part === "hook" && inHook(a));
+    if (!acts.length) return 1;
+    return acts.some((a) => a.who === who) || tl.lines.some((l) => l.part === "hook" && inHook(l) && l.speaker === who) ? 1 : 0;
+  }
   if (part.kind !== "scene") return 1;
   const lines = tl.lines.filter((l) => l.part === "scene" && l.f0 >= part.f0 && l.f0 < part.f1);
   if (!lines.length || lines[0]!.speaker === who) return 1;

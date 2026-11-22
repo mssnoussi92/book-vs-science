@@ -54,3 +54,15 @@ test("at the limit, a clause ending with the next word stays whole", () => {
   const cuts = readingChunks(words).map(([a, b]) => words.slice(a, b).map((x) => x.w).join(" "));
   assert.deepEqual(cuts, ["لو الإحساس ده مكمّل أسابيع ومأثّر على حياتك،", "كلّم أخصائي نفسي."]);
 });
+
+test("presence in a hook: with its own actions, only who acts or speaks in it", () => {
+  const tl = {
+    parts: [{ kind: "hook", scope: "hook", f0: 0, f1: 60 }, { kind: "scene", scope: "s1", f0: 60, f1: 300 }],
+    lines: [{ key: "hook.h3", part: "hook", speaker: "karim", emotion: "ashamed", intensity: 0.5, f0: 0, f1: 50, text: "x", words: [] }],
+    actions: [{ id: "a1", part: "hook", scope: "hook.h3", who: "karim", fx: { id: "cloud", params: {} }, f0: 0, f1: 60 }],
+  } as unknown as Timeline;
+  assert.equal(presence(tl, "karim", 10), 1);
+  assert.equal(presence(tl, "nour", 10), 0);
+  const bare = { ...tl, actions: [] } as unknown as Timeline;
+  assert.equal(presence(bare, "nour", 10), 1);     // a hook without actions: everybody in the background
+});
