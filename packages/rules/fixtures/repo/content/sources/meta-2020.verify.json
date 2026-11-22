@@ -1,0 +1,70 @@
+{
+  "doi": "10.1000/example.meta",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "ok"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "ok"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "ok"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "ok"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "ok"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "ok"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "ok"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "ok"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "ok"
+    },
+    {
+      "name": "support:main",
+      "result": "pass",
+      "detail": "ok"
+    }
+  ],
+  "found": {
+    "title": "Habit X and stress: a meta-analysis",
+    "firstAuthor": "Doe",
+    "years": [
+      2020
+    ],
+    "type": "journal-article"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

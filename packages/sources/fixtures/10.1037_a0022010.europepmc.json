@@ -1,0 +1,186 @@
+{
+ "version": "6.9",
+ "hitCount": 1,
+ "request": {
+  "queryString": "DOI:\"10.1037/a0022010\"",
+  "resultType": "core",
+  "cursorMark": "*",
+  "pageSize": 25,
+  "sort": "",
+  "synonym": false
+ },
+ "resultList": {
+  "result": [
+   {
+    "id": "21517168",
+    "source": "MED",
+    "pmid": "21517168",
+    "pmcid": "PMC3160511",
+    "fullTextIdList": {
+     "fullTextId": [
+      "PMC3160511"
+     ]
+    },
+    "doi": "10.1037/a0022010",
+    "title": "Can seeking happiness make people unhappy? [corrected] Paradoxical effects of valuing happiness.",
+    "authorString": "Mauss IB, Tamir M, Anderson CL, Savino NS.",
+    "authorList": {
+     "author": [
+      {
+       "fullName": "Mauss IB",
+       "lastName": "Mauss",
+       "firstName": "Iris B",
+       "initials": "IB",
+       "authorAffiliationDetailsList": {
+        "authorAffiliation": [
+         {
+          "affiliation": "Department of Psychology, University of Denver, Denver, CO 80208, USA. imauss@psy.du.edu"
+         }
+        ]
+       }
+      },
+      {
+       "fullName": "Tamir M",
+       "lastName": "Tamir",
+       "firstName": "Maya",
+       "initials": "M"
+      },
+      {
+       "fullName": "Anderson CL",
+       "lastName": "Anderson",
+       "firstName": "Craig L",
+       "initials": "CL"
+      },
+      {
+       "fullName": "Savino NS",
+       "lastName": "Savino",
+       "firstName": "Nicole S",
+       "initials": "NS"
+      }
+     ]
+    },
+    "dataLinksTagsList": {
+     "dataLinkstag": [
+      "altmetrics"
+     ]
+    },
+    "journalInfo": {
+     "issue": "4",
+     "volume": "11",
+     "journalIssueId": 1858430,
+     "dateOfPublication": "2011 Aug",
+     "monthOfPublication": 8,
+     "yearOfPublication": 2011,
+     "journal": {
+      "medlineAbbreviation": "Emotion",
+      "title": "Emotion (Washington, D.C.)",
+      "essn": "1931-1516",
+      "issn": "1528-3542",
+      "nlmid": "101125678",
+      "isoabbreviation": "Emotion"
+     },
+     "printPublicationDate": "2011-08-01"
+    },
+    "pubYear": "2011",
+    "pageInfo": "807-815",
+    "affiliation": "Department of Psychology, University of Denver, Denver, CO 80208, USA. imauss@psy.du.edu",
+    "publicationStatus": "ppublish",
+    "language": "eng",
+    "pubModel": "Print",
+    "pubTypeList": {
+     "pubType": [
+      "research-article",
+      "Journal Article",
+      "Research Support, N.I.H., Extramural"
+     ]
+    },
+    "grantsList": {
+     "grant": [
+      {
+       "agency": "National Institute on Aging",
+       "grantId": "1R21AG031967",
+       "orderIn": 0
+      },
+      {
+       "agency": "NIA NIH HHS",
+       "acronym": "AG",
+       "grantId": "1R21AG031967",
+       "orderIn": 0
+      },
+      {
+       "agency": "NIA NIH HHS",
+       "acronym": "AG",
+       "grantId": "R21 AG031967",
+       "orderIn": 0
+      }
+     ]
+    },
+    "fullTextUrlList": {
+     "fullTextUrl": [
+      {
+       "availability": "Subscription required",
+       "availabilityCode": "S",
+       "documentStyle": "doi",
+       "site": "DOI",
+       "url": "https://doi.org/10.1037/a0022010"
+      },
+      {
+       "availability": "Free",
+       "availabilityCode": "F",
+       "documentStyle": "html",
+       "site": "Europe_PMC",
+       "url": "https://europepmc.org/articles/PMC3160511"
+      },
+      {
+       "availability": "Free",
+       "availabilityCode": "F",
+       "documentStyle": "pdf",
+       "site": "Europe_PMC",
+       "url": "https://europepmc.org/articles/PMC3160511?pdf=render"
+      },
+      {
+       "availability": "Free",
+       "availabilityCode": "F",
+       "documentStyle": "doi",
+       "site": "DOI",
+       "url": "https://doi.org/10.1037/a0022010"
+      }
+     ]
+    },
+    "commentCorrectionList": {
+     "commentCorrection": [
+      {
+       "source": "MED",
+       "type": "Erratum in",
+       "orderIn": 1
+      }
+     ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "citedByCount": 104,
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "hasLabsLinks": "Y",
+    "hasData": "N",
+    "authMan": "Y",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "Y",
+    "manuscriptId": "NIHMS311483",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCompletion": "2012-01-13",
+    "dateOfCreation": "2011-04-27",
+    "dateOfRevision": "2025-05-29",
+    "firstPublicationDate": "2011-08-01",
+    "firstIndexDate": "2011-04-27",
+    "fullTextReceivedDate": "2025-02-05",
+    "hasEvaluations": "N"
+   }
+  ]
+ }
+}

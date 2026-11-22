@@ -1,0 +1,894 @@
+{
+ "id": "https://openalex.org/W3091035502",
+ "doi": "https://doi.org/10.1016/j.jcbs.2020.09.009",
+ "title": "The empirical status of acceptance and commitment therapy: A review of meta-analyses",
+ "display_name": "The empirical status of acceptance and commitment therapy: A review of meta-analyses",
+ "alternate_titles": [],
+ "publication_year": 2020,
+ "publication_date": "2020-09-29",
+ "ids": {
+  "openalex": "https://openalex.org/W3091035502",
+  "doi": "https://doi.org/10.1016/j.jcbs.2020.09.009",
+  "mag": "3091035502"
+ },
+ "language": "en",
+ "primary_location": {
+  "id": "doi:10.1016/j.jcbs.2020.09.009",
+  "doi": "https://doi.org/10.1016/j.jcbs.2020.09.009",
+  "is_oa": true,
+  "landing_page_url": "https://doi.org/10.1016/j.jcbs.2020.09.009",
+  "pdf_url": "https://www.sciencedirect.com/science/article/am/pii/S2212144720301940?via%3Dihub",
+  "source": {
+   "id": "https://openalex.org/S2764949934",
+   "display_name": "Journal of Contextual Behavioral Science",
+   "issn_l": "2212-1447",
+   "issn": [
+    "2212-1447",
+    "2212-1455"
+   ],
+   "is_oa": false,
+   "is_in_doaj": false,
+   "is_core": true,
+   "listed_in": [
+    "cwts-core",
+    "dongbi-d",
+    "jufo-1",
+    "ki-jl-1",
+    "norway-1",
+    "poland-70",
+    "russia-white-list-1",
+    "vabb-shw"
+   ],
+   "host_organization": "https://openalex.org/P4310320990",
+   "host_organization_name": "Elsevier BV",
+   "host_organization_lineage": [
+    "https://openalex.org/P4310320990"
+   ],
+   "host_organization_lineage_names": [
+    "Elsevier BV"
+   ],
+   "type": "journal"
+  },
+  "license": "cc-by-nc-nd",
+  "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+  "version": "publishedVersion",
+  "is_accepted": true,
+  "is_published": true,
+  "raw_source_name": "Journal of Contextual Behavioral Science",
+  "raw_type": "journal-article"
+ },
+ "parent_works": [],
+ "lineage": [
+  "https://openalex.org/W3091035502"
+ ],
+ "child_works_count": 0,
+ "type": "article",
+ "is_traditional": true,
+ "indexed_in": [
+  "crossref",
+  "datacite"
+ ],
+ "open_access": {
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "oa_url": "https://www.sciencedirect.com/science/article/am/pii/S2212144720301940?via%3Dihub",
+  "any_repository_has_fulltext": true
+ },
+ "authorships": [
+  {
+   "author_position": "first",
+   "author": {
+    "id": "https://openalex.org/A5021314131",
+    "display_name": "Andrew Thomas Gloster",
+    "orcid": "https://orcid.org/0000-0002-3751-0878",
+    "observed_orcids": [
+     "https://orcid.org/0000-0002-3751-0878"
+    ]
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I1850255",
+     "display_name": "University of Basel",
+     "ror": "https://ror.org/02s6k3f65",
+     "country_code": "CH",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I1850255"
+     ]
+    }
+   ],
+   "countries": [
+    "CH"
+   ],
+   "is_corresponding": true,
+   "contributor_roles": [],
+   "raw_author_name": "Andrew T. Gloster",
+   "raw_affiliation_strings": [
+    "University of Basel, Division of Clinical Psychology and Intervention Science, Switzerland"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "University of Basel, Division of Clinical Psychology and Intervention Science, Switzerland",
+     "institution_ids": [
+      "https://openalex.org/I1850255"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": "https://openalex.org/A5087995903",
+    "display_name": "Noemi Walder",
+    "orcid": "https://orcid.org/0000-0001-5736-5404",
+    "observed_orcids": [
+     "https://orcid.org/0000-0001-5736-5404"
+    ]
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I1850255",
+     "display_name": "University of Basel",
+     "ror": "https://ror.org/02s6k3f65",
+     "country_code": "CH",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I1850255"
+     ]
+    }
+   ],
+   "countries": [
+    "CH"
+   ],
+   "is_corresponding": false,
+   "contributor_roles": [],
+   "raw_author_name": "Noemi Walder",
+   "raw_affiliation_strings": [
+    "University of Basel, Division of Clinical Psychology and Intervention Science, Switzerland"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "University of Basel, Division of Clinical Psychology and Intervention Science, Switzerland",
+     "institution_ids": [
+      "https://openalex.org/I1850255"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": "https://openalex.org/A5026594006",
+    "display_name": "Michael E. Levin",
+    "orcid": "https://orcid.org/0000-0001-5562-2366",
+    "observed_orcids": [
+     "https://orcid.org/0000-0001-5562-2366"
+    ]
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I121980950",
+     "display_name": "Utah State University",
+     "ror": "https://ror.org/00h6set76",
+     "country_code": "US",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I121980950"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "contributor_roles": [],
+   "raw_author_name": "Michael E. Levin",
+   "raw_affiliation_strings": [
+    "Utah State University, U.S.A"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "Utah State University, U.S.A",
+     "institution_ids": [
+      "https://openalex.org/I121980950"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": "https://openalex.org/A5071692743",
+    "display_name": "Michael P. Twohig",
+    "orcid": "https://orcid.org/0000-0003-2936-5962",
+    "observed_orcids": [
+     "https://orcid.org/0000-0003-2936-5962"
+    ]
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I121980950",
+     "display_name": "Utah State University",
+     "ror": "https://ror.org/00h6set76",
+     "country_code": "US",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I121980950"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "contributor_roles": [],
+   "raw_author_name": "Michael P. Twohig",
+   "raw_affiliation_strings": [
+    "Utah State University, U.S.A"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "Utah State University, U.S.A",
+     "institution_ids": [
+      "https://openalex.org/I121980950"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "last",
+   "author": {
+    "id": "https://openalex.org/A5039020196",
+    "display_name": "Maria Karekla",
+    "orcid": "https://orcid.org/0000-0001-7021-7908",
+    "observed_orcids": [
+     "https://orcid.org/0000-0001-7021-7908"
+    ]
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I34771391",
+     "display_name": "University of Cyprus",
+     "ror": "https://ror.org/02qjrjx09",
+     "country_code": "CY",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I34771391"
+     ]
+    }
+   ],
+   "countries": [
+    "CY"
+   ],
+   "is_corresponding": false,
+   "contributor_roles": [],
+   "raw_author_name": "Maria Karekla",
+   "raw_affiliation_strings": [
+    "University of Cyprus, Cyprus"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "University of Cyprus, Cyprus",
+     "institution_ids": [
+      "https://openalex.org/I34771391"
+     ]
+    }
+   ]
+  }
+ ],
+ "institutions": [],
+ "countries_distinct_count": 3,
+ "institutions_distinct_count": 3,
+ "corresponding_author_ids": [
+  "https://openalex.org/A5021314131"
+ ],
+ "corresponding_institution_ids": [
+  "https://openalex.org/I1850255"
+ ],
+ "apc_list": {
+  "value": 2000,
+  "currency": "USD",
+  "value_usd": 2000
+ },
+ "apc_paid": {
+  "value": 2000,
+  "currency": "USD",
+  "value_usd": 2000
+ },
+ "fwci": 25.5811,
+ "has_fulltext": true,
+ "cited_by_count": 861,
+ "reviewed_by_count": 0,
+ "citation_normalized_percentile": {
+  "value": 0.99506189,
+  "is_in_top_1_percent": true,
+  "is_in_top_10_percent": true
+ },
+ "cited_by_percentile_year": {
+  "min": 87,
+  "max": 100
+ },
+ "biblio": {
+  "volume": "18",
+  "issue": null,
+  "first_page": "181",
+  "last_page": "192"
+ },
+ "is_retracted": false,
+ "is_pulled": false,
+ "is_paratext": false,
+ "is_xpac": false,
+ "primary_topic": {
+  "id": "https://openalex.org/T10708",
+  "display_name": "Mindfulness and Compassion Interventions",
+  "score": 0.9994999766349792,
+  "subfield": {
+   "id": "https://openalex.org/subfields/3203",
+   "display_name": "Clinical Psychology"
+  },
+  "field": {
+   "id": "https://openalex.org/fields/32",
+   "display_name": "Psychology"
+  },
+  "domain": {
+   "id": "https://openalex.org/domains/2",
+   "display_name": "Social Sciences"
+  }
+ },
+ "topics": [
+  {
+   "id": "https://openalex.org/T10708",
+   "display_name": "Mindfulness and Compassion Interventions",
+   "score": 0.9994999766349792,
+   "subfield": {
+    "id": "https://openalex.org/subfields/3203",
+    "display_name": "Clinical Psychology"
+   },
+   "field": {
+    "id": "https://openalex.org/fields/32",
+    "display_name": "Psychology"
+   },
+   "domain": {
+    "id": "https://openalex.org/domains/2",
+    "display_name": "Social Sciences"
+   }
+  },
+  {
+   "id": "https://openalex.org/T10214",
+   "display_name": "Psychotherapy Techniques and Applications",
+   "score": 0.00009999999747378752,
+   "subfield": {
+    "id": "https://openalex.org/subfields/3203",
+    "display_name": "Clinical Psychology"
+   },
+   "field": {
+    "id": "https://openalex.org/fields/32",
+    "display_name": "Psychology"
+   },
+   "domain": {
+    "id": "https://openalex.org/domains/2",
+    "display_name": "Social Sciences"
+   }
+  },
+  {
+   "id": "https://openalex.org/T10853",
+   "display_name": "Anxiety, Depression, Psychometrics, Treatment, Cognitive Processes",
+   "score": 0.00009999999747378752,
+   "subfield": {
+    "id": "https://openalex.org/subfields/3205",
+    "display_name": "Experimental and Cognitive Psychology"
+   },
+   "field": {
+    "id": "https://openalex.org/fields/32",
+    "display_name": "Psychology"
+   },
+   "domain": {
+    "id": "https://openalex.org/domains/2",
+    "display_name": "Social Sciences"
+   }
+  }
+ ],
+ "keywords": [
+  {
+   "id": "https://openalex.org/keywords/acceptance-and-commitment-therapy",
+   "display_name": "acceptance and commitment therapy",
+   "score": 0.9279999732971191
+  },
+  {
+   "id": "https://openalex.org/keywords/treatment-efficacy",
+   "display_name": "treatment efficacy",
+   "score": 0.7929999828338623
+  },
+  {
+   "id": "https://openalex.org/keywords/meta-analysis",
+   "display_name": "meta-analysis",
+   "score": 0.6420000195503235
+  },
+  {
+   "id": "https://openalex.org/keywords/anxiety",
+   "display_name": "anxiety",
+   "score": 0.6269999742507935
+  },
+  {
+   "id": "https://openalex.org/keywords/depression",
+   "display_name": "depression",
+   "score": 1
+  },
+  {
+   "id": "https://openalex.org/keywords/substance-use",
+   "display_name": "substance use",
+   "score": 0.8050000071525574
+  },
+  {
+   "id": "https://openalex.org/keywords/pain",
+   "display_name": "pain",
+   "score": 0.8980000019073486
+  },
+  {
+   "id": "https://openalex.org/keywords/cognitive-behavioral-therapy-comparison",
+   "display_name": "cognitive behavioral therapy comparison",
+   "score": 0.7649999856948853
+  }
+ ],
+ "concepts": [
+  {
+   "id": "https://openalex.org/C55759595",
+   "wikidata": "https://www.wikidata.org/wiki/Q424533",
+   "display_name": "Acceptance and commitment therapy",
+   "level": 3,
+   "score": 0.9561773538589478
+  },
+  {
+   "id": "https://openalex.org/C95190672",
+   "wikidata": "https://www.wikidata.org/wiki/Q815382",
+   "display_name": "Meta-analysis",
+   "level": 2,
+   "score": 0.8020268678665161
+  },
+  {
+   "id": "https://openalex.org/C15744967",
+   "wikidata": "https://www.wikidata.org/wiki/Q9418",
+   "display_name": "Psychology",
+   "level": 0,
+   "score": 0.7452439069747925
+  },
+  {
+   "id": "https://openalex.org/C70410870",
+   "wikidata": "https://www.wikidata.org/wiki/Q199906",
+   "display_name": "Clinical psychology",
+   "level": 1,
+   "score": 0.6351216435432434
+  },
+  {
+   "id": "https://openalex.org/C558461103",
+   "wikidata": "https://www.wikidata.org/wiki/Q154430",
+   "display_name": "Anxiety",
+   "level": 2,
+   "score": 0.629092812538147
+  },
+  {
+   "id": "https://openalex.org/C27081682",
+   "wikidata": "https://www.wikidata.org/wiki/Q269829",
+   "display_name": "Placebo",
+   "level": 3,
+   "score": 0.5924075841903687
+  },
+  {
+   "id": "https://openalex.org/C168563851",
+   "wikidata": "https://www.wikidata.org/wiki/Q1436668",
+   "display_name": "Randomized controlled trial",
+   "level": 2,
+   "score": 0.5687928795814514
+  },
+  {
+   "id": "https://openalex.org/C2780665704",
+   "wikidata": "https://www.wikidata.org/wiki/Q959298",
+   "display_name": "Intervention (counseling)",
+   "level": 2,
+   "score": 0.5312179327011108
+  },
+  {
+   "id": "https://openalex.org/C542102704",
+   "wikidata": "https://www.wikidata.org/wiki/Q183257",
+   "display_name": "Psychotherapist",
+   "level": 1,
+   "score": 0.5264780521392822
+  },
+  {
+   "id": "https://openalex.org/C2776867660",
+   "wikidata": "https://www.wikidata.org/wiki/Q1814941",
+   "display_name": "Depression (economics)",
+   "level": 2,
+   "score": 0.41621026396751404
+  },
+  {
+   "id": "https://openalex.org/C118552586",
+   "wikidata": "https://www.wikidata.org/wiki/Q7867",
+   "display_name": "Psychiatry",
+   "level": 1,
+   "score": 0.28619202971458435
+  },
+  {
+   "id": "https://openalex.org/C204787440",
+   "wikidata": "https://www.wikidata.org/wiki/Q188504",
+   "display_name": "Alternative medicine",
+   "level": 2,
+   "score": 0.17709481716156006
+  },
+  {
+   "id": "https://openalex.org/C71924100",
+   "wikidata": "https://www.wikidata.org/wiki/Q11190",
+   "display_name": "Medicine",
+   "level": 0,
+   "score": 0.14822962880134583
+  },
+  {
+   "id": "https://openalex.org/C126322002",
+   "wikidata": "https://www.wikidata.org/wiki/Q11180",
+   "display_name": "Internal medicine",
+   "level": 1,
+   "score": 0.09687811136245728
+  },
+  {
+   "id": "https://openalex.org/C139719470",
+   "wikidata": "https://www.wikidata.org/wiki/Q39680",
+   "display_name": "Macroeconomics",
+   "level": 1,
+   "score": 0
+  },
+  {
+   "id": "https://openalex.org/C162324750",
+   "wikidata": "https://www.wikidata.org/wiki/Q8134",
+   "display_name": "Economics",
+   "level": 0,
+   "score": 0
+  },
+  {
+   "id": "https://openalex.org/C142724271",
+   "wikidata": "https://www.wikidata.org/wiki/Q7208",
+   "display_name": "Pathology",
+   "level": 1,
+   "score": 0
+  }
+ ],
+ "mesh": [],
+ "locations_count": 4,
+ "locations": [
+  {
+   "id": "doi:10.1016/j.jcbs.2020.09.009",
+   "doi": "https://doi.org/10.1016/j.jcbs.2020.09.009",
+   "is_oa": true,
+   "landing_page_url": "https://doi.org/10.1016/j.jcbs.2020.09.009",
+   "pdf_url": "https://www.sciencedirect.com/science/article/am/pii/S2212144720301940?via%3Dihub",
+   "source": {
+    "id": "https://openalex.org/S2764949934",
+    "display_name": "Journal of Contextual Behavioral Science",
+    "issn_l": "2212-1447",
+    "issn": [
+     "2212-1447",
+     "2212-1455"
+    ],
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": true,
+    "listed_in": [
+     "cwts-core",
+     "dongbi-d",
+     "jufo-1",
+     "ki-jl-1",
+     "norway-1",
+     "poland-70",
+     "russia-white-list-1",
+     "vabb-shw"
+    ],
+    "host_organization": "https://openalex.org/P4310320990",
+    "host_organization_name": "Elsevier BV",
+    "host_organization_lineage": [
+     "https://openalex.org/P4310320990"
+    ],
+    "host_organization_lineage_names": [
+     "Elsevier BV"
+    ],
+    "type": "journal"
+   },
+   "license": "cc-by-nc-nd",
+   "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+   "version": "publishedVersion",
+   "is_accepted": true,
+   "is_published": true,
+   "raw_source_name": "Journal of Contextual Behavioral Science",
+   "raw_type": "journal-article"
+  },
+  {
+   "id": "pmh:oai:edoc.unibas.ch:80055",
+   "doi": null,
+   "is_oa": false,
+   "landing_page_url": "https://edoc.unibas.ch/80055/1/20210204143347_601bf7bb83825.pdf",
+   "pdf_url": "https://edoc.unibas.ch/80055/1/20210204143347_601bf7bb83825.pdf",
+   "source": {
+    "id": "https://openalex.org/S4306401836",
+    "display_name": "edoc (University of Basel)",
+    "issn_l": null,
+    "issn": null,
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": false,
+    "listed_in": [],
+    "host_organization": "https://openalex.org/I1850255",
+    "host_organization_name": "University of Basel",
+    "host_organization_lineage": [
+     "https://openalex.org/I1850255"
+    ],
+    "host_organization_lineage_names": [],
+    "type": "repository"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "acceptedVersion",
+   "is_accepted": true,
+   "is_published": false,
+   "raw_source_name": "",
+   "raw_type": "Article"
+  },
+  {
+   "id": "pmh:oai:digitalcommons.usu.edu:psych_facpub-2834",
+   "doi": null,
+   "is_oa": false,
+   "landing_page_url": "https://digitalcommons.usu.edu/psych_facpub/1832",
+   "pdf_url": null,
+   "source": {
+    "id": "https://openalex.org/S4377196327",
+    "display_name": "Digital Commons - USU (Utah State University)",
+    "issn_l": null,
+    "issn": null,
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": false,
+    "listed_in": [],
+    "host_organization": "https://openalex.org/I121980950",
+    "host_organization_name": "Utah State University",
+    "host_organization_lineage": [
+     "https://openalex.org/I121980950"
+    ],
+    "host_organization_lineage_names": [],
+    "type": "repository"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "submittedVersion",
+   "is_accepted": false,
+   "is_published": false,
+   "raw_source_name": "Psychology Faculty Publications",
+   "raw_type": "text"
+  },
+  {
+   "id": "doi:10.5451/unibas-ep80055",
+   "doi": "https://doi.org/10.5451/unibas-ep80055",
+   "is_oa": true,
+   "landing_page_url": "https://doi.org/10.5451/unibas-ep80055",
+   "pdf_url": null,
+   "source": {
+    "id": "https://openalex.org/S4306401836",
+    "display_name": "edoc (University of Basel)",
+    "issn_l": null,
+    "issn": null,
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": false,
+    "listed_in": [],
+    "host_organization": "https://openalex.org/I1850255",
+    "host_organization_name": "University of Basel",
+    "host_organization_lineage": [
+     "https://openalex.org/I1850255"
+    ],
+    "host_organization_lineage_names": [],
+    "type": "repository"
+   },
+   "license": null,
+   "license_id": null,
+   "version": null,
+   "is_accepted": false,
+   "is_published": false,
+   "raw_source_name": null,
+   "raw_type": "article-journal"
+  }
+ ],
+ "best_oa_location": {
+  "id": "doi:10.1016/j.jcbs.2020.09.009",
+  "doi": "https://doi.org/10.1016/j.jcbs.2020.09.009",
+  "is_oa": true,
+  "landing_page_url": "https://doi.org/10.1016/j.jcbs.2020.09.009",
+  "pdf_url": "https://www.sciencedirect.com/science/article/am/pii/S2212144720301940?via%3Dihub",
+  "source": {
+   "id": "https://openalex.org/S2764949934",
+   "display_name": "Journal of Contextual Behavioral Science",
+   "issn_l": "2212-1447",
+   "issn": [
+    "2212-1447",
+    "2212-1455"
+   ],
+   "is_oa": false,
+   "is_in_doaj": false,
+   "is_core": true,
+   "listed_in": [
+    "cwts-core",
+    "dongbi-d",
+    "jufo-1",
+    "ki-jl-1",
+    "norway-1",
+    "poland-70",
+    "russia-white-list-1",
+    "vabb-shw"
+   ],
+   "host_organization": "https://openalex.org/P4310320990",
+   "host_organization_name": "Elsevier BV",
+   "host_organization_lineage": [
+    "https://openalex.org/P4310320990"
+   ],
+   "host_organization_lineage_names": [
+    "Elsevier BV"
+   ],
+   "type": "journal"
+  },
+  "license": "cc-by-nc-nd",
+  "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+  "version": "publishedVersion",
+  "is_accepted": true,
+  "is_published": true,
+  "raw_source_name": "Journal of Contextual Behavioral Science",
+  "raw_type": "journal-article"
+ },
+ "sustainable_development_goals": [
+  {
+   "id": "https://metadata.un.org/sdg/3",
+   "display_name": "Good health and well-being",
+   "score": 0.98580002784729
+  }
+ ],
+ "study_designs": [],
+ "awards": [
+  {
+   "id": "https://openalex.org/G1188111349",
+   "display_name": null,
+   "funder_award_id": "PP00P1_163716/",
+   "funder_id": "https://openalex.org/F4320320924",
+   "funder_display_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung"
+  },
+  {
+   "id": "https://openalex.org/G1976060145",
+   "display_name": "Promoting Mental Health and Prosocial Behaviors: Harnessing New Technologies for Therapy and Training in Real-Life Environments",
+   "funder_award_id": "190082",
+   "funder_id": "https://openalex.org/F4320320924",
+   "funder_display_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung"
+  },
+  {
+   "id": "https://openalex.org/G3118489123",
+   "display_name": null,
+   "funder_award_id": "PP00P1_ 163716/1",
+   "funder_id": "https://openalex.org/F4320320924",
+   "funder_display_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung"
+  }
+ ],
+ "funders": [
+  {
+   "id": "https://openalex.org/F4320306076",
+   "display_name": "National Science Foundation",
+   "ror": "https://ror.org/021nxhr62"
+  },
+  {
+   "id": "https://openalex.org/F4320320924",
+   "display_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung",
+   "ror": "https://ror.org/00yjd3n13"
+  }
+ ],
+ "has_content": {
+  "pdf": true,
+  "grobid_xml": true
+ },
+ "content_urls": {
+  "pdf": "https://content.openalex.org/works/W3091035502.pdf",
+  "grobid_xml": "https://content.openalex.org/works/W3091035502.grobid-xml"
+ },
+ "referenced_works_count": 45,
+ "referenced_works": [
+  "https://openalex.org/W578092267",
+  "https://openalex.org/W1520147444",
+  "https://openalex.org/W1521196439",
+  "https://openalex.org/W1570679759",
+  "https://openalex.org/W1853962844",
+  "https://openalex.org/W1992807513",
+  "https://openalex.org/W1996214199",
+  "https://openalex.org/W2008729960",
+  "https://openalex.org/W2018783775",
+  "https://openalex.org/W2020843029",
+  "https://openalex.org/W2075053306",
+  "https://openalex.org/W2084407811",
+  "https://openalex.org/W2092186644",
+  "https://openalex.org/W2103983061",
+  "https://openalex.org/W2104639541",
+  "https://openalex.org/W2107031757",
+  "https://openalex.org/W2109705747",
+  "https://openalex.org/W2124990439",
+  "https://openalex.org/W2128870189",
+  "https://openalex.org/W2133963272",
+  "https://openalex.org/W2143185273",
+  "https://openalex.org/W2152511771",
+  "https://openalex.org/W2167178760",
+  "https://openalex.org/W2194064755",
+  "https://openalex.org/W2254182258",
+  "https://openalex.org/W2264461642",
+  "https://openalex.org/W2330905520",
+  "https://openalex.org/W2414306903",
+  "https://openalex.org/W2497771230",
+  "https://openalex.org/W2510153541",
+  "https://openalex.org/W2511511558",
+  "https://openalex.org/W2553712807",
+  "https://openalex.org/W2581027301",
+  "https://openalex.org/W2743540273",
+  "https://openalex.org/W2743636546",
+  "https://openalex.org/W2756578555",
+  "https://openalex.org/W2767091923",
+  "https://openalex.org/W2810417052",
+  "https://openalex.org/W2889733757",
+  "https://openalex.org/W2897259731",
+  "https://openalex.org/W2951788635",
+  "https://openalex.org/W2965983154",
+  "https://openalex.org/W4242145216",
+  "https://openalex.org/W4300870773",
+  "https://openalex.org/W6655342060"
+ ],
+ "related_works": [
+  "https://openalex.org/W2092186644",
+  "https://openalex.org/W2124990439",
+  "https://openalex.org/W1853962844",
+  "https://openalex.org/W2109705747",
+  "https://openalex.org/W4393037714",
+  "https://openalex.org/W6887764320",
+  "https://openalex.org/W1975358573",
+  "https://openalex.org/W7171308124",
+  "https://openalex.org/W2725508837",
+  "https://openalex.org/W2103983061"
+ ],
+ "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W3091035502",
+ "counts_by_year": [
+  {
+   "year": 2026,
+   "cited_by_count": 175
+  },
+  {
+   "year": 2025,
+   "cited_by_count": 218
+  },
+  {
+   "year": 2024,
+   "cited_by_count": 151
+  },
+  {
+   "year": 2023,
+   "cited_by_count": 150
+  },
+  {
+   "year": 2022,
+   "cited_by_count": 100
+  },
+  {
+   "year": 2021,
+   "cited_by_count": 64
+  },
+  {
+   "year": 2020,
+   "cited_by_count": 2
+  },
+  {
+   "year": 2015,
+   "cited_by_count": 1
+  }
+ ],
+ "updated_date": "2026-11-21T10:27:49.728292",
+ "created_date": "2020-10-08T00:00:00"
+}

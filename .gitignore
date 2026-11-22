@@ -1,0 +1,27 @@
+# Generated: timelines, audio cuts, renders, caches (takes and renders live in releases, addressed by hash)
+build/
+out/
+.cache/
+node_modules/
+.remotion/
+public/ep/
+
+# Python
+__pycache__/
+*.pyc
+.venv*/
+.pytest_cache/
+
+# Media made locally
+*.wav
+*.mp3
+*.flac
+*.mp4
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Working copies of sub-agents (git worktrees)
+.claude/worktrees/

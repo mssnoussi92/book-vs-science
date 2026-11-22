@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/Book",
+  "$defs": {
+    "Book": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]{1,59}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 2
+        },
+        "titles": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 2
+          }
+        },
+        "shortTitle": {
+          "type": "string",
+          "maxLength": 40
+        },
+        "author": {
+          "type": "string",
+          "minLength": 2
+        },
+        "authorWritten": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 2
+          }
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1800,
+          "maximum": 2100
+        },
+        "isbn": {
+          "type": "string",
+          "pattern": "^[0-9X-]{10,17}$"
+        },
+        "basis": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{1,59}$"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "book",
+                  "author-article",
+                  "publisher-summary"
+                ]
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 2,
+                "maxLength": 120
+              }
+            },
+            "required": [
+              "id",
+              "kind",
+              "locator"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "slug",
+        "title",
+        "author",
+        "year",
+        "basis"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

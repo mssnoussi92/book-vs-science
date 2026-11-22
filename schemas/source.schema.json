@@ -1,0 +1,267 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/Source",
+  "$defs": {
+    "Source": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]{1,59}$"
+        },
+        "doi": {
+          "type": "string",
+          "pattern": "^10\\.[0-9]{4,9}\\/\\S+$"
+        },
+        "declared": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 5
+            },
+            "firstAuthor": {
+              "type": "string",
+              "minLength": 2
+            },
+            "authors": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "year": {
+              "type": "integer",
+              "minimum": 1900,
+              "maximum": 2100
+            },
+            "venue": {
+              "type": "string"
+            },
+            "foundIn": {
+              "type": "string",
+              "minLength": 3
+            }
+          },
+          "required": [
+            "title",
+            "firstAuthor",
+            "year",
+            "foundIn"
+          ],
+          "additionalProperties": false
+        },
+        "design": {
+          "type": "string",
+          "enum": [
+            "umbrella-review",
+            "multisite-replication",
+            "meta-analysis",
+            "systematic-review",
+            "rct",
+            "experiment",
+            "longitudinal",
+            "cross-sectional",
+            "experience-sampling",
+            "narrative-review",
+            "preprint"
+          ]
+        },
+        "designSetBy": {
+          "type": "string",
+          "const": "reviewer"
+        },
+        "n": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "k": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "population": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 160
+        },
+        "mena": {
+          "type": "boolean"
+        },
+        "findings": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{1,59}$"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 10,
+                "maxLength": 300
+              },
+              "support": {
+                "type": "object",
+                "properties": {
+                  "sentence": {
+                    "type": "string",
+                    "minLength": 10,
+                    "maxLength": 420
+                  },
+                  "role": {
+                    "type": "string",
+                    "enum": [
+                      "result",
+                      "conclusion"
+                    ]
+                  },
+                  "where": {
+                    "type": "string",
+                    "enum": [
+                      "abstract",
+                      "fulltext"
+                    ]
+                  },
+                  "readBy": {
+                    "type": "string",
+                    "maxLength": 120
+                  }
+                },
+                "required": [
+                  "sentence",
+                  "role",
+                  "where"
+                ],
+                "additionalProperties": false
+              },
+              "effect": {
+                "type": "object",
+                "properties": {
+                  "metric": {
+                    "type": "string",
+                    "enum": [
+                      "d",
+                      "g",
+                      "r",
+                      "OR",
+                      "RR",
+                      "beta",
+                      "percent",
+                      "days"
+                    ]
+                  },
+                  "value": {
+                    "type": "number"
+                  },
+                  "ci": {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ],
+                    "items": false,
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  "correctedForBias": {
+                    "default": false,
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "metric",
+                  "value"
+                ],
+                "additionalProperties": false
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "association",
+                  "causal",
+                  "intervention"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "text",
+              "support",
+              "kind"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "limits": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 200
+          }
+        },
+        "allegiance": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "acknowledged": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "doi": {
+                "type": "string",
+                "pattern": "^10\\.[0-9]{4,9}\\/\\S+$"
+              },
+              "type": {
+                "type": "string",
+                "minLength": 3,
+                "maxLength": 40
+              },
+              "changes": {
+                "type": "string",
+                "minLength": 5,
+                "maxLength": 200
+              }
+            },
+            "required": [
+              "doi",
+              "type",
+              "changes"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "abstractSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "id",
+        "doi",
+        "declared",
+        "design",
+        "designSetBy",
+        "population",
+        "mena",
+        "findings",
+        "limits"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

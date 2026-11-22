@@ -1,0 +1,9 @@
+Copyright (c) 2026 mssnoussi92. All rights reserved.
+
+The files marked with this licence in REUSE.toml (the characters and their drawings, the episode scripts and
+their texts in every language, the voice takes, the rendered videos, covers and thumbnails, the channel's name
+and logo) may be read in this repository but may not be copied, modified, redistributed, re-rendered or used
+to make videos, commercially or not, without the written permission of the copyright holder.
+
+Short excerpts of third-party works quoted in these files (a sentence of a scientific abstract, a book title)
+remain their owners'.

@@ -1,0 +1,227 @@
+{
+ "version": "6.9",
+ "hitCount": 1,
+ "request": {
+  "queryString": "DOI:\"10.1016/j.jbtep.2012.03.004\"",
+  "resultType": "core",
+  "cursorMark": "*",
+  "pageSize": 25,
+  "sort": "",
+  "synonym": false
+ },
+ "resultList": {
+  "result": [
+   {
+    "id": "22561050",
+    "source": "MED",
+    "pmid": "22561050",
+    "doi": "10.1016/j.jbtep.2012.03.004",
+    "title": "How effective are acceptance strategies? A meta-analytic review of experimental results.",
+    "authorString": "Kohl A, Rief W, Glombiewski JA.",
+    "authorList": {
+     "author": [
+      {
+       "fullName": "Kohl A",
+       "lastName": "Kohl",
+       "firstName": "Annika",
+       "initials": "A",
+       "authorAffiliationDetailsList": {
+        "authorAffiliation": [
+         {
+          "affiliation": "Department of Clinical Psychology and Psychotherapy, Philipps-University of Marburg, Gutenbergstr. 18, D-35032 Marburg, Germany. annika.kohl@staff.uni-marburg.de"
+         }
+        ]
+       }
+      },
+      {
+       "fullName": "Rief W",
+       "lastName": "Rief",
+       "firstName": "Winfried",
+       "initials": "W",
+       "authorId": {
+        "type": "ORCID",
+        "value": "0000-0002-7019-2250"
+       }
+      },
+      {
+       "fullName": "Glombiewski JA",
+       "lastName": "Glombiewski",
+       "firstName": "Julia Anna",
+       "initials": "JA"
+      }
+     ]
+    },
+    "authorIdList": {
+     "authorId": [
+      {
+       "type": "ORCID",
+       "value": "0000-0002-7019-2250"
+      }
+     ]
+    },
+    "dataLinksTagsList": {
+     "dataLinkstag": [
+      "altmetrics"
+     ]
+    },
+    "journalInfo": {
+     "issue": "4",
+     "volume": "43",
+     "journalIssueId": 1947272,
+     "dateOfPublication": "2012 Dec",
+     "monthOfPublication": 12,
+     "yearOfPublication": 2012,
+     "journal": {
+      "medlineAbbreviation": "J Behav Ther Exp Psychiatry",
+      "title": "Journal of behavior therapy and experimental psychiatry",
+      "essn": "1873-7943",
+      "issn": "0005-7916",
+      "nlmid": "0245075",
+      "isoabbreviation": "J Behav Ther Exp Psychiatry"
+     },
+     "printPublicationDate": "2012-12-01"
+    },
+    "pubYear": "2012",
+    "pageInfo": "988-1001",
+    "affiliation": "Department of Clinical Psychology and Psychotherapy, Philipps-University of Marburg, Gutenbergstr. 18, D-35032 Marburg, Germany. annika.kohl@staff.uni-marburg.de",
+    "publicationStatus": "ppublish",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+     "pubType": [
+      "Meta-Analysis",
+      "Journal Article"
+     ]
+    },
+    "meshHeadingList": {
+     "meshHeading": [
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Humans"
+      },
+      {
+       "majorTopic_YN": "Y",
+       "descriptorName": "Behavior"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Depression",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "N",
+          "abbreviation": "PX",
+          "qualifierName": "psychology"
+         },
+         {
+          "majorTopic_YN": "N",
+          "abbreviation": "TH",
+          "qualifierName": "therapy"
+         }
+        ]
+       }
+      },
+      {
+       "majorTopic_YN": "Y",
+       "descriptorName": "Emotions"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Anxiety",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "N",
+          "abbreviation": "PX",
+          "qualifierName": "psychology"
+         },
+         {
+          "majorTopic_YN": "N",
+          "abbreviation": "TH",
+          "qualifierName": "therapy"
+         }
+        ]
+       }
+      },
+      {
+       "majorTopic_YN": "Y",
+       "descriptorName": "Behavior Therapy"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Adult"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Female"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Male"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Chronic Pain",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "N",
+          "abbreviation": "PX",
+          "qualifierName": "psychology"
+         },
+         {
+          "majorTopic_YN": "N",
+          "abbreviation": "TH",
+          "qualifierName": "therapy"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "subsetList": {
+     "subset": [
+      {
+       "code": "IM",
+       "name": "Index Medicus"
+      }
+     ]
+    },
+    "fullTextUrlList": {
+     "fullTextUrl": [
+      {
+       "availability": "Subscription required",
+       "availabilityCode": "S",
+       "documentStyle": "doi",
+       "site": "DOI",
+       "url": "https://doi.org/10.1016/j.jbtep.2012.03.004"
+      }
+     ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "citedByCount": 70,
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "hasLabsLinks": "Y",
+    "hasData": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCompletion": "2012-11-26",
+    "dateOfCreation": "2012-05-08",
+    "dateOfRevision": "2022-04-10",
+    "electronicPublicationDate": "2012-04-11",
+    "firstPublicationDate": "2012-04-11",
+    "firstIndexDate": "2012-05-12",
+    "hasEvaluations": "N"
+   }
+  ]
+ }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "lens",
+  "role": "narrator",
+  "kind": "mascot",
+  "fictional": true,
+  "names": {
+    "ar-EG": "عدسة"
+  }
+}

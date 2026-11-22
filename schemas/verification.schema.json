@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/Verification",
+  "$defs": {
+    "Verification": {
+      "type": "object",
+      "properties": {
+        "doi": {
+          "type": "string",
+          "pattern": "^10\\.[0-9]{4,9}\\/\\S+$"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "pass",
+            "review",
+            "fail"
+          ]
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "result": {
+                "type": "string",
+                "enum": [
+                  "pass",
+                  "review",
+                  "fail"
+                ]
+              },
+              "detail": {
+                "type": "string",
+                "maxLength": 400
+              }
+            },
+            "required": [
+              "name",
+              "result",
+              "detail"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "found": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "firstAuthor": {
+              "type": "string"
+            },
+            "years": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              }
+            },
+            "type": {
+              "type": "string"
+            },
+            "venue": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "firstAuthor",
+            "years",
+            "type"
+          ],
+          "additionalProperties": false
+        },
+        "notices": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "doi": {
+                "type": "string",
+                "pattern": "^10\\.[0-9]{4,9}\\/\\S+$"
+              }
+            },
+            "required": [
+              "type",
+              "doi"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "retracted": {
+          "type": "boolean"
+        },
+        "abstractFrom": {
+          "type": "string",
+          "enum": [
+            "europepmc",
+            "crossref",
+            "openalex",
+            "none"
+          ]
+        },
+        "abstractSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "checkedOn": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+        },
+        "tool": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "doi",
+        "status",
+        "checks",
+        "found",
+        "notices",
+        "retracted",
+        "abstractFrom",
+        "checkedOn",
+        "tool"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

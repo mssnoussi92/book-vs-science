@@ -1,0 +1,1494 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/Episode",
+  "$defs": {
+    "Episode": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "schema": {
+          "type": "number",
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]{1,59}$"
+        },
+        "sourceLang": {
+          "type": "string",
+          "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+        },
+        "languages": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$"
+          }
+        },
+        "cast": {
+          "type": "object",
+          "properties": {
+            "narrator": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{1,30}$"
+            },
+            "characters": {
+              "minItems": 1,
+              "maxItems": 2,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{1,30}$"
+              }
+            }
+          },
+          "required": [
+            "narrator",
+            "characters"
+          ],
+          "additionalProperties": false
+        },
+        "topic": {
+          "type": "object",
+          "properties": {
+            "tags": {
+              "maxItems": 6,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{1,59}$"
+              }
+            },
+            "sensitive": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "gender",
+                  "mental-health",
+                  "health",
+                  "money",
+                  "relationships",
+                  "parenting",
+                  "body"
+                ]
+              }
+            }
+          },
+          "required": [
+            "tags"
+          ],
+          "additionalProperties": false
+        },
+        "hooks": {
+          "minItems": 5,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]{0,11}$"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "question",
+                  "challenge",
+                  "number",
+                  "cold-open",
+                  "book-promise",
+                  "pov",
+                  "paradox",
+                  "confession"
+                ]
+              },
+              "spokenBy": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "narrator"
+                  },
+                  {
+                    "type": "string",
+                    "const": "none"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                  }
+                ]
+              },
+              "firstFrame": {
+                "type": "string",
+                "enum": [
+                  "close-up",
+                  "text-over-scene",
+                  "badge-tease",
+                  "challenge",
+                  "split"
+                ]
+              },
+              "emotion": {
+                "default": "neutral",
+                "type": "string",
+                "enum": [
+                  "neutral",
+                  "happy",
+                  "sad",
+                  "anxious",
+                  "annoyed",
+                  "angry",
+                  "ashamed",
+                  "surprised",
+                  "relieved",
+                  "amused",
+                  "tired",
+                  "curious",
+                  "skeptical",
+                  "warm"
+                ]
+              },
+              "claims": {
+                "default": [],
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]{0,11}$"
+                }
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "spokenBy",
+              "firstFrame"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "scenes": {
+          "minItems": 1,
+          "maxItems": 3,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]{0,11}$"
+              },
+              "setting": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{1,30}$"
+              },
+              "shape": {
+                "type": "string",
+                "enum": [
+                  "single",
+                  "replay-twice",
+                  "three-moments",
+                  "argument",
+                  "before-after",
+                  "inner-voice"
+                ]
+              },
+              "outcome": {
+                "type": "string",
+                "enum": [
+                  "better",
+                  "a-bit-better",
+                  "unresolved",
+                  "worse"
+                ]
+              },
+              "beats": {
+                "minItems": 2,
+                "maxItems": 16,
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "kind": {
+                          "type": "string",
+                          "const": "line"
+                        },
+                        "id": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9]{0,11}$"
+                        },
+                        "speaker": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                        },
+                        "emotion": {
+                          "type": "string",
+                          "enum": [
+                            "neutral",
+                            "happy",
+                            "sad",
+                            "anxious",
+                            "annoyed",
+                            "angry",
+                            "ashamed",
+                            "surprised",
+                            "relieved",
+                            "amused",
+                            "tired",
+                            "curious",
+                            "skeptical",
+                            "warm"
+                          ]
+                        },
+                        "intensity": {
+                          "default": 0.5,
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 1
+                        },
+                        "delivery": {
+                          "type": "string",
+                          "maxLength": 80
+                        },
+                        "gesture": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                        },
+                        "look": {
+                          "type": "string",
+                          "enum": [
+                            "other",
+                            "viewer",
+                            "down",
+                            "away",
+                            "phone",
+                            "card"
+                          ]
+                        },
+                        "claims": {
+                          "default": [],
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "pattern": "^[a-z][a-z0-9]{0,11}$"
+                          }
+                        },
+                        "cut": {
+                          "default": "all",
+                          "type": "string",
+                          "enum": [
+                            "all",
+                            "long"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "id",
+                        "speaker",
+                        "emotion"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "kind": {
+                          "type": "string",
+                          "const": "action"
+                        },
+                        "id": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9]{0,11}$"
+                        },
+                        "who": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                        },
+                        "gesture": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                        },
+                        "prop": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                            },
+                            "state": {
+                              "type": "string",
+                              "maxLength": 24
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "state"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "fx": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                            },
+                            "params": {
+                              "default": {},
+                              "type": "object",
+                              "propertyNames": {
+                                "type": "string"
+                              },
+                              "additionalProperties": {
+                                "type": [
+                                  "string",
+                                  "number",
+                                  "boolean"
+                                ]
+                              }
+                            }
+                          },
+                          "required": [
+                            "id"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "emotion": {
+                          "type": "string",
+                          "enum": [
+                            "neutral",
+                            "happy",
+                            "sad",
+                            "anxious",
+                            "annoyed",
+                            "angry",
+                            "ashamed",
+                            "surprised",
+                            "relieved",
+                            "amused",
+                            "tired",
+                            "curious",
+                            "skeptical",
+                            "warm"
+                          ]
+                        },
+                        "look": {
+                          "type": "string",
+                          "enum": [
+                            "other",
+                            "viewer",
+                            "down",
+                            "away",
+                            "phone",
+                            "card"
+                          ]
+                        },
+                        "seconds": {
+                          "type": "number",
+                          "minimum": 0.3,
+                          "maximum": 4
+                        },
+                        "at": {
+                          "type": "object",
+                          "properties": {
+                            "line": {
+                              "type": "string",
+                              "pattern": "^[a-z][a-z0-9]{0,11}$"
+                            },
+                            "word": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            }
+                          },
+                          "required": [
+                            "line",
+                            "word"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "cut": {
+                          "default": "all",
+                          "type": "string",
+                          "enum": [
+                            "all",
+                            "long"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "id",
+                        "who",
+                        "seconds"
+                      ],
+                      "additionalProperties": false
+                    }
+                  ]
+                }
+              },
+              "custom": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{1,30}$"
+              }
+            },
+            "required": [
+              "id",
+              "setting",
+              "shape",
+              "outcome",
+              "beats"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "book": {
+          "type": "object",
+          "properties": {
+            "book": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{1,59}$"
+            },
+            "basis": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{1,59}$"
+            },
+            "claims": {
+              "minItems": 1,
+              "maxItems": 4,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9]{0,11}$"
+                  },
+                  "statement": {
+                    "type": "string",
+                    "minLength": 10,
+                    "maxLength": 240
+                  },
+                  "population": {
+                    "type": "string",
+                    "maxLength": 120
+                  },
+                  "exposure": {
+                    "type": "string",
+                    "maxLength": 120
+                  },
+                  "comparison": {
+                    "type": "string",
+                    "maxLength": 120
+                  },
+                  "outcome": {
+                    "type": "string",
+                    "maxLength": 120
+                  },
+                  "causal": {
+                    "type": "boolean"
+                  },
+                  "inScope": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "id",
+                  "statement",
+                  "population",
+                  "exposure",
+                  "comparison",
+                  "outcome",
+                  "causal",
+                  "inScope"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "beats": {
+              "minItems": 1,
+              "maxItems": 8,
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "type": "string",
+                        "const": "line"
+                      },
+                      "id": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]{0,11}$"
+                      },
+                      "speaker": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                      },
+                      "emotion": {
+                        "type": "string",
+                        "enum": [
+                          "neutral",
+                          "happy",
+                          "sad",
+                          "anxious",
+                          "annoyed",
+                          "angry",
+                          "ashamed",
+                          "surprised",
+                          "relieved",
+                          "amused",
+                          "tired",
+                          "curious",
+                          "skeptical",
+                          "warm"
+                        ]
+                      },
+                      "intensity": {
+                        "default": 0.5,
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                      },
+                      "delivery": {
+                        "type": "string",
+                        "maxLength": 80
+                      },
+                      "gesture": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                      },
+                      "look": {
+                        "type": "string",
+                        "enum": [
+                          "other",
+                          "viewer",
+                          "down",
+                          "away",
+                          "phone",
+                          "card"
+                        ]
+                      },
+                      "claims": {
+                        "default": [],
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9]{0,11}$"
+                        }
+                      },
+                      "cut": {
+                        "default": "all",
+                        "type": "string",
+                        "enum": [
+                          "all",
+                          "long"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "id",
+                      "speaker",
+                      "emotion"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "type": "string",
+                        "const": "action"
+                      },
+                      "id": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]{0,11}$"
+                      },
+                      "who": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                      },
+                      "gesture": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                      },
+                      "prop": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                          },
+                          "state": {
+                            "type": "string",
+                            "maxLength": 24
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "state"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "fx": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                          },
+                          "params": {
+                            "default": {},
+                            "type": "object",
+                            "propertyNames": {
+                              "type": "string"
+                            },
+                            "additionalProperties": {
+                              "type": [
+                                "string",
+                                "number",
+                                "boolean"
+                              ]
+                            }
+                          }
+                        },
+                        "required": [
+                          "id"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "emotion": {
+                        "type": "string",
+                        "enum": [
+                          "neutral",
+                          "happy",
+                          "sad",
+                          "anxious",
+                          "annoyed",
+                          "angry",
+                          "ashamed",
+                          "surprised",
+                          "relieved",
+                          "amused",
+                          "tired",
+                          "curious",
+                          "skeptical",
+                          "warm"
+                        ]
+                      },
+                      "look": {
+                        "type": "string",
+                        "enum": [
+                          "other",
+                          "viewer",
+                          "down",
+                          "away",
+                          "phone",
+                          "card"
+                        ]
+                      },
+                      "seconds": {
+                        "type": "number",
+                        "minimum": 0.3,
+                        "maximum": 4
+                      },
+                      "at": {
+                        "type": "object",
+                        "properties": {
+                          "line": {
+                            "type": "string",
+                            "pattern": "^[a-z][a-z0-9]{0,11}$"
+                          },
+                          "word": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 9007199254740991
+                          }
+                        },
+                        "required": [
+                          "line",
+                          "word"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "cut": {
+                        "default": "all",
+                        "type": "string",
+                        "enum": [
+                          "all",
+                          "long"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "id",
+                      "who",
+                      "seconds"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          },
+          "required": [
+            "book",
+            "basis",
+            "claims",
+            "beats"
+          ],
+          "additionalProperties": false
+        },
+        "verdict": {
+          "type": "object",
+          "properties": {
+            "badge": {
+              "type": "string",
+              "enum": [
+                "confirmed",
+                "nuanced",
+                "contradicted",
+                "unknown"
+              ]
+            },
+            "certainty": {
+              "type": "string",
+              "enum": [
+                "high",
+                "moderate",
+                "low",
+                "very-low"
+              ]
+            },
+            "assessments": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "claim": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9]{0,11}$"
+                  },
+                  "evidence": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "source": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9-]{1,59}$"
+                        },
+                        "finding": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9-]{1,59}$"
+                        },
+                        "relation": {
+                          "type": "string",
+                          "enum": [
+                            "supports",
+                            "nuances",
+                            "contradicts"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "source",
+                        "finding",
+                        "relation"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "direction": {
+                    "type": "string",
+                    "enum": [
+                      "supports",
+                      "mixed",
+                      "contradicts",
+                      "insufficient"
+                    ]
+                  },
+                  "certainty": {
+                    "type": "string",
+                    "enum": [
+                      "high",
+                      "moderate",
+                      "low",
+                      "very-low"
+                    ]
+                  }
+                },
+                "required": [
+                  "claim",
+                  "evidence",
+                  "direction",
+                  "certainty"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "nuance": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9]{0,11}$"
+            },
+            "onScreen": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{1,59}$"
+            },
+            "searched": {
+              "type": "object",
+              "properties": {
+                "on": {
+                  "type": "string",
+                  "format": "date",
+                  "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+                },
+                "queries": {
+                  "minItems": 3,
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "base": {
+                        "type": "string",
+                        "enum": [
+                          "crossref",
+                          "openalex",
+                          "europepmc",
+                          "pubmed",
+                          "other"
+                        ]
+                      },
+                      "query": {
+                        "type": "string",
+                        "minLength": 3
+                      },
+                      "results": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      }
+                    },
+                    "required": [
+                      "base",
+                      "query",
+                      "results"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "notFound": {
+                  "default": [],
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "on",
+                "queries"
+              ],
+              "additionalProperties": false
+            },
+            "counterEvidence": {
+              "type": "object",
+              "properties": {
+                "found": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{1,59}$"
+                      },
+                      "doi": {
+                        "type": "string"
+                      },
+                      "note": {
+                        "type": "string",
+                        "maxLength": 300
+                      }
+                    },
+                    "required": [
+                      "note"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "conclusion": {
+                  "type": "string",
+                  "minLength": 10,
+                  "maxLength": 400
+                }
+              },
+              "required": [
+                "found",
+                "conclusion"
+              ],
+              "additionalProperties": false
+            },
+            "beats": {
+              "minItems": 1,
+              "maxItems": 8,
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "type": "string",
+                        "const": "line"
+                      },
+                      "id": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]{0,11}$"
+                      },
+                      "speaker": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                      },
+                      "emotion": {
+                        "type": "string",
+                        "enum": [
+                          "neutral",
+                          "happy",
+                          "sad",
+                          "anxious",
+                          "annoyed",
+                          "angry",
+                          "ashamed",
+                          "surprised",
+                          "relieved",
+                          "amused",
+                          "tired",
+                          "curious",
+                          "skeptical",
+                          "warm"
+                        ]
+                      },
+                      "intensity": {
+                        "default": 0.5,
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                      },
+                      "delivery": {
+                        "type": "string",
+                        "maxLength": 80
+                      },
+                      "gesture": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                      },
+                      "look": {
+                        "type": "string",
+                        "enum": [
+                          "other",
+                          "viewer",
+                          "down",
+                          "away",
+                          "phone",
+                          "card"
+                        ]
+                      },
+                      "claims": {
+                        "default": [],
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9]{0,11}$"
+                        }
+                      },
+                      "cut": {
+                        "default": "all",
+                        "type": "string",
+                        "enum": [
+                          "all",
+                          "long"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "id",
+                      "speaker",
+                      "emotion"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "type": "string",
+                        "const": "action"
+                      },
+                      "id": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]{0,11}$"
+                      },
+                      "who": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                      },
+                      "gesture": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                      },
+                      "prop": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                          },
+                          "state": {
+                            "type": "string",
+                            "maxLength": 24
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "state"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "fx": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                          },
+                          "params": {
+                            "default": {},
+                            "type": "object",
+                            "propertyNames": {
+                              "type": "string"
+                            },
+                            "additionalProperties": {
+                              "type": [
+                                "string",
+                                "number",
+                                "boolean"
+                              ]
+                            }
+                          }
+                        },
+                        "required": [
+                          "id"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "emotion": {
+                        "type": "string",
+                        "enum": [
+                          "neutral",
+                          "happy",
+                          "sad",
+                          "anxious",
+                          "annoyed",
+                          "angry",
+                          "ashamed",
+                          "surprised",
+                          "relieved",
+                          "amused",
+                          "tired",
+                          "curious",
+                          "skeptical",
+                          "warm"
+                        ]
+                      },
+                      "look": {
+                        "type": "string",
+                        "enum": [
+                          "other",
+                          "viewer",
+                          "down",
+                          "away",
+                          "phone",
+                          "card"
+                        ]
+                      },
+                      "seconds": {
+                        "type": "number",
+                        "minimum": 0.3,
+                        "maximum": 4
+                      },
+                      "at": {
+                        "type": "object",
+                        "properties": {
+                          "line": {
+                            "type": "string",
+                            "pattern": "^[a-z][a-z0-9]{0,11}$"
+                          },
+                          "word": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 9007199254740991
+                          }
+                        },
+                        "required": [
+                          "line",
+                          "word"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "cut": {
+                        "default": "all",
+                        "type": "string",
+                        "enum": [
+                          "all",
+                          "long"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "id",
+                      "who",
+                      "seconds"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          },
+          "required": [
+            "badge",
+            "certainty",
+            "assessments",
+            "onScreen",
+            "searched",
+            "counterEvidence",
+            "beats"
+          ],
+          "additionalProperties": false
+        },
+        "takeaway": {
+          "type": "object",
+          "properties": {
+            "claims": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]{0,11}$"
+              }
+            },
+            "strength": {
+              "type": "string",
+              "enum": [
+                "evidence",
+                "low-risk-suggestion"
+              ]
+            },
+            "orientation": {
+              "type": "boolean"
+            },
+            "beats": {
+              "minItems": 1,
+              "maxItems": 6,
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "type": "string",
+                        "const": "line"
+                      },
+                      "id": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]{0,11}$"
+                      },
+                      "speaker": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                      },
+                      "emotion": {
+                        "type": "string",
+                        "enum": [
+                          "neutral",
+                          "happy",
+                          "sad",
+                          "anxious",
+                          "annoyed",
+                          "angry",
+                          "ashamed",
+                          "surprised",
+                          "relieved",
+                          "amused",
+                          "tired",
+                          "curious",
+                          "skeptical",
+                          "warm"
+                        ]
+                      },
+                      "intensity": {
+                        "default": 0.5,
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                      },
+                      "delivery": {
+                        "type": "string",
+                        "maxLength": 80
+                      },
+                      "gesture": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                      },
+                      "look": {
+                        "type": "string",
+                        "enum": [
+                          "other",
+                          "viewer",
+                          "down",
+                          "away",
+                          "phone",
+                          "card"
+                        ]
+                      },
+                      "claims": {
+                        "default": [],
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9]{0,11}$"
+                        }
+                      },
+                      "cut": {
+                        "default": "all",
+                        "type": "string",
+                        "enum": [
+                          "all",
+                          "long"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "id",
+                      "speaker",
+                      "emotion"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "type": "string",
+                        "const": "action"
+                      },
+                      "id": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]{0,11}$"
+                      },
+                      "who": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                      },
+                      "gesture": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                      },
+                      "prop": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                          },
+                          "state": {
+                            "type": "string",
+                            "maxLength": 24
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "state"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "fx": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                          },
+                          "params": {
+                            "default": {},
+                            "type": "object",
+                            "propertyNames": {
+                              "type": "string"
+                            },
+                            "additionalProperties": {
+                              "type": [
+                                "string",
+                                "number",
+                                "boolean"
+                              ]
+                            }
+                          }
+                        },
+                        "required": [
+                          "id"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "emotion": {
+                        "type": "string",
+                        "enum": [
+                          "neutral",
+                          "happy",
+                          "sad",
+                          "anxious",
+                          "annoyed",
+                          "angry",
+                          "ashamed",
+                          "surprised",
+                          "relieved",
+                          "amused",
+                          "tired",
+                          "curious",
+                          "skeptical",
+                          "warm"
+                        ]
+                      },
+                      "look": {
+                        "type": "string",
+                        "enum": [
+                          "other",
+                          "viewer",
+                          "down",
+                          "away",
+                          "phone",
+                          "card"
+                        ]
+                      },
+                      "seconds": {
+                        "type": "number",
+                        "minimum": 0.3,
+                        "maximum": 4
+                      },
+                      "at": {
+                        "type": "object",
+                        "properties": {
+                          "line": {
+                            "type": "string",
+                            "pattern": "^[a-z][a-z0-9]{0,11}$"
+                          },
+                          "word": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 9007199254740991
+                          }
+                        },
+                        "required": [
+                          "line",
+                          "word"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "cut": {
+                        "default": "all",
+                        "type": "string",
+                        "enum": [
+                          "all",
+                          "long"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "id",
+                      "who",
+                      "seconds"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          },
+          "required": [
+            "claims",
+            "strength",
+            "orientation",
+            "beats"
+          ],
+          "additionalProperties": false
+        },
+        "variation": {
+          "default": {
+            "pin": {},
+            "avoid": []
+          },
+          "type": "object",
+          "properties": {
+            "pin": {
+              "default": {},
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "enum": [
+                  "style",
+                  "palette",
+                  "camera",
+                  "outfits",
+                  "light"
+                ]
+              },
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            "avoid": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema",
+        "id",
+        "sourceLang",
+        "languages",
+        "cast",
+        "topic",
+        "hooks",
+        "scenes",
+        "book",
+        "verdict",
+        "takeaway"
+      ],
+      "additionalProperties": false,
+      "title": "One episode: structure only, no text"
+    }
+  }
+}

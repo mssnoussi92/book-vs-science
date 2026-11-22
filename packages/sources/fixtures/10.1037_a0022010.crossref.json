@@ -1,0 +1,234 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     10,
+     19
+    ]
+   ],
+   "date-time": "2026-10-19T04:48:06Z",
+   "timestamp": 1792385286098,
+   "version": "4.4.0"
+  },
+  "reference-count": 0,
+  "publisher": "American Psychological Association (APA)",
+  "issue": "4",
+  "funder": [
+   {
+    "DOI": "10.13039/100000049",
+    "name": "National Institute on Aging",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "1R21AG031967"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "1R21AG031967"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/100000049",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   }
+  ],
+  "content-domain": {
+   "domain": [],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [
+   "Emotion"
+  ],
+  "DOI": "10.1037/a0022010",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2011,
+     4,
+     25
+    ]
+   ],
+   "date-time": "2011-04-25T15:57:36Z",
+   "timestamp": 1303747056000
+  },
+  "page": "807-815",
+  "update-policy": "https://doi.org/10.1037/a0022010",
+  "source": "Crossref",
+  "is-referenced-by-count": 284,
+  "title": [
+   "Can seeking happiness make people unhappy? Paradoxical effects of valuing happiness."
+  ],
+  "prefix": "10.1037",
+  "volume": "11",
+  "author": [
+   {
+    "given": "Iris B.",
+    "family": "Mauss",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Maya",
+    "family": "Tamir",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Craig L.",
+    "family": "Anderson",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Nicole S.",
+    "family": "Savino",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "15",
+  "published-online": {
+   "date-parts": [
+    [
+     2011,
+     8
+    ]
+   ]
+  },
+  "updated-by": [
+   {
+    "DOI": "10.1037/a0024986",
+    "type": "correction",
+    "label": "Correction",
+    "source": "publisher",
+    "updated": {
+     "date-parts": [
+      [
+       2011,
+       8,
+       22
+      ]
+     ],
+     "date-time": "2011-08-22T00:00:00Z",
+     "timestamp": 1313971200000
+    }
+   }
+  ],
+  "container-title": [
+   "Emotion"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "https://psycnet.apa.org/journals/emo/11/4/807.pdf",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2026,
+     7,
+     16
+    ]
+   ],
+   "date-time": "2026-07-16T13:13:29Z",
+   "timestamp": 1784207609000
+  },
+  "score": 1,
+  "resource": {
+   "primary": {
+    "URL": "https://doi.apa.org/doi/10.1037/a0022010"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2011,
+     8
+    ]
+   ]
+  },
+  "references-count": 0,
+  "journal-issue": {
+   "issue": "4",
+   "published-online": {
+    "date-parts": [
+     [
+      2011,
+      8
+     ]
+    ]
+   }
+  },
+  "alternative-id": [
+   "2011-08397-001",
+   "21517168"
+  ],
+  "URL": "https://doi.org/10.1037/a0022010",
+  "relation": {},
+  "ISSN": [
+   "1931-1516",
+   "1528-3542"
+  ],
+  "issn-type": [
+   {
+    "value": "1931-1516",
+    "type": "electronic"
+   },
+   {
+    "value": "1528-3542",
+    "type": "print"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2011,
+     8
+    ]
+   ]
+  }
+ }
+}

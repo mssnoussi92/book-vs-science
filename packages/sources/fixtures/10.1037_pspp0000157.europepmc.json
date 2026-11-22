@@ -1,0 +1,313 @@
+{
+ "version": "6.9",
+ "hitCount": 1,
+ "request": {
+  "queryString": "DOI:\"10.1037/pspp0000157\"",
+  "resultType": "core",
+  "cursorMark": "*",
+  "pageSize": 25,
+  "sort": "",
+  "synonym": false
+ },
+ "resultList": {
+  "result": [
+   {
+    "id": "28703602",
+    "source": "MED",
+    "pmid": "28703602",
+    "pmcid": "PMC5767148",
+    "fullTextIdList": {
+     "fullTextId": [
+      "PMC5767148"
+     ]
+    },
+    "doi": "10.1037/pspp0000157",
+    "title": "The psychological health benefits of accepting negative emotions and thoughts: Laboratory, diary, and longitudinal evidence.",
+    "authorString": "Ford BQ, Lam P, John OP, Mauss IB.",
+    "authorList": {
+     "author": [
+      {
+       "fullName": "Ford BQ",
+       "lastName": "Ford",
+       "firstName": "Brett Q",
+       "initials": "BQ",
+       "authorId": {
+        "type": "ORCID",
+        "value": "0000-0002-7943-4447"
+       },
+       "authorAffiliationDetailsList": {
+        "authorAffiliation": [
+         {
+          "affiliation": "Department of Psychology, University of Toronto."
+         }
+        ]
+       }
+      },
+      {
+       "fullName": "Lam P",
+       "lastName": "Lam",
+       "firstName": "Phoebe",
+       "initials": "P",
+       "authorAffiliationDetailsList": {
+        "authorAffiliation": [
+         {
+          "affiliation": "Department of Psychology, University of California, Berkeley."
+         }
+        ]
+       }
+      },
+      {
+       "fullName": "John OP",
+       "lastName": "John",
+       "firstName": "Oliver P",
+       "initials": "OP",
+       "authorAffiliationDetailsList": {
+        "authorAffiliation": [
+         {
+          "affiliation": "Department of Psychology, University of California, Berkeley."
+         }
+        ]
+       }
+      },
+      {
+       "fullName": "Mauss IB",
+       "lastName": "Mauss",
+       "firstName": "Iris B",
+       "initials": "IB",
+       "authorAffiliationDetailsList": {
+        "authorAffiliation": [
+         {
+          "affiliation": "Department of Psychology, University of California, Berkeley."
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "authorIdList": {
+     "authorId": [
+      {
+       "type": "ORCID",
+       "value": "0000-0002-7943-4447"
+      }
+     ]
+    },
+    "dataLinksTagsList": {
+     "dataLinkstag": [
+      "altmetrics",
+      "supporting_data"
+     ]
+    },
+    "journalInfo": {
+     "issue": "6",
+     "volume": "115",
+     "journalIssueId": 2761162,
+     "dateOfPublication": "2018 Dec",
+     "monthOfPublication": 12,
+     "yearOfPublication": 2018,
+     "journal": {
+      "medlineAbbreviation": "J Pers Soc Psychol",
+      "title": "Journal of personality and social psychology",
+      "essn": "1939-1315",
+      "issn": "0022-3514",
+      "nlmid": "0014171",
+      "isoabbreviation": "J Pers Soc Psychol"
+     },
+     "printPublicationDate": "2018-12-01"
+    },
+    "pubYear": "2018",
+    "pageInfo": "1075-1092",
+    "affiliation": "Department of Psychology, University of Toronto.",
+    "publicationStatus": "ppublish",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+     "pubType": [
+      "research-article",
+      "Journal Article"
+     ]
+    },
+    "grantsList": {
+     "grant": [
+      {
+       "agency": "NIA NIH HHS",
+       "acronym": "AG",
+       "grantId": "R21 AG031967",
+       "orderIn": 0
+      },
+      {
+       "agency": "National Institutes of Health",
+       "grantId": "AG031967; AG043592",
+       "orderIn": 0
+      },
+      {
+       "agency": "NIA NIH HHS",
+       "acronym": "AG",
+       "grantId": "R01 AG043592",
+       "orderIn": 0
+      },
+      {
+       "agency": "National Institutes of Health",
+       "orderIn": 0
+      }
+     ]
+    },
+    "meshHeadingList": {
+     "meshHeading": [
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Humans"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Longitudinal Studies"
+      },
+      {
+       "majorTopic_YN": "Y",
+       "descriptorName": "Adaptation, Psychological"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Stress, Psychological",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "Y",
+          "abbreviation": "PX",
+          "qualifierName": "psychology"
+         }
+        ]
+       }
+      },
+      {
+       "majorTopic_YN": "Y",
+       "descriptorName": "Personal Satisfaction"
+      },
+      {
+       "majorTopic_YN": "Y",
+       "descriptorName": "Emotions"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Mental Health",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "Y",
+          "abbreviation": "SN",
+          "qualifierName": "statistics & numerical data"
+         }
+        ]
+       }
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Awareness"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Adult"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Middle Aged"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Female"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Male"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Young Adult"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Mindfulness"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Diaries as Topic"
+      }
+     ]
+    },
+    "subsetList": {
+     "subset": [
+      {
+       "code": "IM",
+       "name": "Index Medicus"
+      }
+     ]
+    },
+    "fullTextUrlList": {
+     "fullTextUrl": [
+      {
+       "availability": "Open access",
+       "availabilityCode": "OA",
+       "documentStyle": "doi",
+       "site": "Unpaywall",
+       "url": "https://doi.org/10.1037/pspp0000157"
+      },
+      {
+       "availability": "Subscription required",
+       "availabilityCode": "S",
+       "documentStyle": "doi",
+       "site": "DOI",
+       "url": "https://doi.org/10.1037/pspp0000157"
+      },
+      {
+       "availability": "Free",
+       "availabilityCode": "F",
+       "documentStyle": "html",
+       "site": "Europe_PMC",
+       "url": "https://europepmc.org/articles/PMC5767148"
+      },
+      {
+       "availability": "Free",
+       "availabilityCode": "F",
+       "documentStyle": "pdf",
+       "site": "Europe_PMC",
+       "url": "https://europepmc.org/articles/PMC5767148?pdf=render"
+      },
+      {
+       "availability": "Free",
+       "availabilityCode": "F",
+       "documentStyle": "doi",
+       "site": "DOI",
+       "url": "https://doi.org/10.1037/pspp0000157"
+      }
+     ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "citedByCount": 124,
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "hasLabsLinks": "Y",
+    "hasData": "Y",
+    "authMan": "Y",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "Y",
+    "manuscriptId": "NIHMS886830",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCompletion": "2019-02-25",
+    "dateOfCreation": "2017-07-14",
+    "dateOfRevision": "2019-12-10",
+    "electronicPublicationDate": "2017-07-13",
+    "firstPublicationDate": "2017-07-13",
+    "firstIndexDate": "2017-07-13",
+    "fullTextReceivedDate": "2025-02-05",
+    "embargoDate": "2019-12-01",
+    "hasEvaluations": "N"
+   }
+  ]
+ }
+}

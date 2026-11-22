@@ -1,0 +1,902 @@
+{
+ "id": "https://openalex.org/W2112377889",
+ "doi": "https://doi.org/10.1016/j.brat.2010.05.004",
+ "title": "A randomised worksite comparison of acceptance and commitment therapy and stress inoculation training",
+ "display_name": "A randomised worksite comparison of acceptance and commitment therapy and stress inoculation training",
+ "alternate_titles": [],
+ "publication_year": 2010,
+ "publication_date": "2010-05-11",
+ "ids": {
+  "openalex": "https://openalex.org/W2112377889",
+  "doi": "https://doi.org/10.1016/j.brat.2010.05.004",
+  "mag": "2112377889",
+  "pmid": "https://pubmed.ncbi.nlm.nih.gov/20627269"
+ },
+ "language": "en",
+ "primary_location": {
+  "id": "doi:10.1016/j.brat.2010.05.004",
+  "doi": "https://doi.org/10.1016/j.brat.2010.05.004",
+  "is_oa": false,
+  "landing_page_url": "https://doi.org/10.1016/j.brat.2010.05.004",
+  "pdf_url": null,
+  "source": {
+   "id": "https://openalex.org/S186589312",
+   "display_name": "Behaviour Research and Therapy",
+   "issn_l": "0005-7967",
+   "issn": [
+    "0005-7967",
+    "1873-622X"
+   ],
+   "is_oa": false,
+   "is_in_doaj": false,
+   "is_core": true,
+   "listed_in": [
+    "cwts-core",
+    "dongbi-b",
+    "erih-plus",
+    "jufo-3",
+    "ki-jl-2",
+    "medline",
+    "norway-2",
+    "poland-140",
+    "russia-white-list-1",
+    "vabb-shw"
+   ],
+   "host_organization": "https://openalex.org/P4310320990",
+   "host_organization_name": "Elsevier BV",
+   "host_organization_lineage": [
+    "https://openalex.org/P4310320990"
+   ],
+   "host_organization_lineage_names": [
+    "Elsevier BV"
+   ],
+   "type": "journal"
+  },
+  "license": null,
+  "license_id": null,
+  "version": "publishedVersion",
+  "is_accepted": true,
+  "is_published": true,
+  "raw_source_name": "Behaviour Research and Therapy",
+  "raw_type": "journal-article"
+ },
+ "parent_works": [],
+ "lineage": [
+  "https://openalex.org/W2112377889"
+ ],
+ "child_works_count": 0,
+ "type": "article",
+ "is_traditional": true,
+ "indexed_in": [
+  "crossref",
+  "pubmed"
+ ],
+ "open_access": {
+  "is_oa": true,
+  "oa_status": "green",
+  "oa_url": "https://openaccess.city.ac.uk/id/eprint/6318/1/Flaxman%20and%20Bond%20%282010%29%20BRAT%20.pdf",
+  "any_repository_has_fulltext": true
+ },
+ "authorships": [
+  {
+   "author_position": "first",
+   "author": {
+    "id": "https://openalex.org/A5010987461",
+    "display_name": "Paul E. Flaxman",
+    "orcid": "https://orcid.org/0000-0002-6417-2499",
+    "observed_orcids": [
+     "https://orcid.org/0000-0002-6417-2499"
+    ]
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I180825142",
+     "display_name": "City, University of London",
+     "ror": "https://ror.org/04489at23",
+     "country_code": "GB",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I124357947",
+      "https://openalex.org/I180825142",
+      "https://openalex.org/I4401726869"
+     ]
+    },
+    {
+     "id": "https://openalex.org/I4401726869",
+     "display_name": "City St George's, University of London",
+     "ror": "https://ror.org/047ybhc09",
+     "country_code": "GB",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I124357947",
+      "https://openalex.org/I4401726869"
+     ]
+    }
+   ],
+   "countries": [
+    "GB"
+   ],
+   "is_corresponding": true,
+   "contributor_roles": [],
+   "raw_author_name": "Paul E. Flaxman",
+   "raw_affiliation_strings": [
+    "Psychology Department, City University, Northampton Square, London EC1V 0HB, United Kingdom. paul.flaxman.1@city.ac.uk",
+    "Psychology Department, City University, Northampton Square, London EC1V 0HB, United Kingdom"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "Psychology Department, City University, Northampton Square, London EC1V 0HB, United Kingdom. paul.flaxman.1@city.ac.uk",
+     "institution_ids": [
+      "https://openalex.org/I180825142",
+      "https://openalex.org/I4401726869"
+     ]
+    },
+    {
+     "raw_affiliation_string": "Psychology Department, City University, Northampton Square, London EC1V 0HB, United Kingdom",
+     "institution_ids": [
+      "https://openalex.org/I180825142",
+      "https://openalex.org/I4401726869"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "last",
+   "author": {
+    "id": "https://openalex.org/A5083146978",
+    "display_name": "Frank W. Bond",
+    "orcid": "https://orcid.org/0000-0003-2099-3938",
+    "observed_orcids": [
+     "https://orcid.org/0000-0003-2099-3938"
+    ]
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I55521800",
+     "display_name": "Goldsmiths University of London",
+     "ror": "https://ror.org/01khx4a30",
+     "country_code": "GB",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I124357947",
+      "https://openalex.org/I55521800"
+     ]
+    }
+   ],
+   "countries": [
+    "GB"
+   ],
+   "is_corresponding": false,
+   "contributor_roles": [],
+   "raw_author_name": "Frank W. Bond",
+   "raw_affiliation_strings": [
+    "Psychology Department, Goldsmiths College, University of London, New Cross, London SE14 6NW, United Kingdom"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "Psychology Department, Goldsmiths College, University of London, New Cross, London SE14 6NW, United Kingdom",
+     "institution_ids": [
+      "https://openalex.org/I55521800"
+     ]
+    }
+   ]
+  }
+ ],
+ "institutions": [],
+ "countries_distinct_count": 1,
+ "institutions_distinct_count": 3,
+ "corresponding_author_ids": [
+  "https://openalex.org/A5010987461"
+ ],
+ "corresponding_institution_ids": [
+  "https://openalex.org/I180825142",
+  "https://openalex.org/I4401726869"
+ ],
+ "apc_list": {
+  "value": 3580,
+  "currency": "USD",
+  "value_usd": 3580
+ },
+ "apc_paid": null,
+ "fwci": 15.2665,
+ "has_fulltext": true,
+ "cited_by_count": 269,
+ "reviewed_by_count": 0,
+ "citation_normalized_percentile": {
+  "value": 0.99300567,
+  "is_in_top_1_percent": true,
+  "is_in_top_10_percent": true
+ },
+ "cited_by_percentile_year": {
+  "min": 99,
+  "max": 100
+ },
+ "biblio": {
+  "volume": "48",
+  "issue": "8",
+  "first_page": "816",
+  "last_page": "820"
+ },
+ "is_retracted": false,
+ "is_pulled": false,
+ "is_paratext": false,
+ "is_xpac": false,
+ "primary_topic": {
+  "id": "https://openalex.org/T10708",
+  "display_name": "Mindfulness and Compassion Interventions",
+  "score": 0.9994999766349792,
+  "subfield": {
+   "id": "https://openalex.org/subfields/3203",
+   "display_name": "Clinical Psychology"
+  },
+  "field": {
+   "id": "https://openalex.org/fields/32",
+   "display_name": "Psychology"
+  },
+  "domain": {
+   "id": "https://openalex.org/domains/2",
+   "display_name": "Social Sciences"
+  }
+ },
+ "topics": [
+  {
+   "id": "https://openalex.org/T10708",
+   "display_name": "Mindfulness and Compassion Interventions",
+   "score": 0.9994999766349792,
+   "subfield": {
+    "id": "https://openalex.org/subfields/3203",
+    "display_name": "Clinical Psychology"
+   },
+   "field": {
+    "id": "https://openalex.org/fields/32",
+    "display_name": "Psychology"
+   },
+   "domain": {
+    "id": "https://openalex.org/domains/2",
+    "display_name": "Social Sciences"
+   }
+  },
+  {
+   "id": "https://openalex.org/T10853",
+   "display_name": "Anxiety, Depression, Psychometrics, Treatment, Cognitive Processes",
+   "score": 0.00009999999747378752,
+   "subfield": {
+    "id": "https://openalex.org/subfields/3205",
+    "display_name": "Experimental and Cognitive Psychology"
+   },
+   "field": {
+    "id": "https://openalex.org/fields/32",
+    "display_name": "Psychology"
+   },
+   "domain": {
+    "id": "https://openalex.org/domains/2",
+    "display_name": "Social Sciences"
+   }
+  },
+  {
+   "id": "https://openalex.org/T11519",
+   "display_name": "Digital Mental Health Interventions",
+   "score": 0.00009999999747378752,
+   "subfield": {
+    "id": "https://openalex.org/subfields/3202",
+    "display_name": "Applied Psychology"
+   },
+   "field": {
+    "id": "https://openalex.org/fields/32",
+    "display_name": "Psychology"
+   },
+   "domain": {
+    "id": "https://openalex.org/domains/2",
+    "display_name": "Social Sciences"
+   }
+  }
+ ],
+ "keywords": [
+  {
+   "id": "https://openalex.org/keywords/acceptance-and-commitment-therapy",
+   "display_name": "acceptance and commitment therapy",
+   "score": 1
+  },
+  {
+   "id": "https://openalex.org/keywords/stress-inoculation-training",
+   "display_name": "stress inoculation training",
+   "score": 1
+  },
+  {
+   "id": "https://openalex.org/keywords/psychological-distress",
+   "display_name": "psychological distress",
+   "score": 0.703000009059906
+  },
+  {
+   "id": "https://openalex.org/keywords/workplace-mental-health",
+   "display_name": "workplace mental health",
+   "score": 0.6079999804496765
+  },
+  {
+   "id": "https://openalex.org/keywords/workplace-interventions",
+   "display_name": "workplace interventions",
+   "score": 0.7919999957084656
+  },
+  {
+   "id": "https://openalex.org/keywords/psychological-flexibility",
+   "display_name": "psychological flexibility",
+   "score": 0.968999981880188
+  },
+  {
+   "id": "https://openalex.org/keywords/dysfunctional-cognitions",
+   "display_name": "dysfunctional cognitions",
+   "score": 0.9570000171661377
+  },
+  {
+   "id": "https://openalex.org/keywords/mediation-analysis",
+   "display_name": "mediation analysis",
+   "score": 0.7319999933242798
+  },
+  {
+   "id": "https://openalex.org/keywords/group-training",
+   "display_name": "group training",
+   "score": 0.328000009059906
+  }
+ ],
+ "concepts": [
+  {
+   "id": "https://openalex.org/C27502469",
+   "wikidata": "https://www.wikidata.org/wiki/Q906343",
+   "display_name": "Dysfunctional family",
+   "level": 2,
+   "score": 0.7856453657150269
+  },
+  {
+   "id": "https://openalex.org/C55759595",
+   "wikidata": "https://www.wikidata.org/wiki/Q424533",
+   "display_name": "Acceptance and commitment therapy",
+   "level": 3,
+   "score": 0.7757536172866821
+  },
+  {
+   "id": "https://openalex.org/C179420905",
+   "wikidata": "https://www.wikidata.org/wiki/Q223871",
+   "display_name": "Mediation",
+   "level": 2,
+   "score": 0.709728479385376
+  },
+  {
+   "id": "https://openalex.org/C27415008",
+   "wikidata": "https://www.wikidata.org/wiki/Q7256382",
+   "display_name": "Psychological intervention",
+   "level": 2,
+   "score": 0.6417528390884399
+  },
+  {
+   "id": "https://openalex.org/C15744967",
+   "wikidata": "https://www.wikidata.org/wiki/Q9418",
+   "display_name": "Psychology",
+   "level": 0,
+   "score": 0.6355631351470947
+  },
+  {
+   "id": "https://openalex.org/C139265228",
+   "wikidata": "https://www.wikidata.org/wiki/Q5283089",
+   "display_name": "Distress",
+   "level": 2,
+   "score": 0.6315068602561951
+  },
+  {
+   "id": "https://openalex.org/C169900460",
+   "wikidata": "https://www.wikidata.org/wiki/Q2200417",
+   "display_name": "Cognition",
+   "level": 2,
+   "score": 0.5727302432060242
+  },
+  {
+   "id": "https://openalex.org/C70410870",
+   "wikidata": "https://www.wikidata.org/wiki/Q199906",
+   "display_name": "Clinical psychology",
+   "level": 1,
+   "score": 0.5232088565826416
+  },
+  {
+   "id": "https://openalex.org/C6564018",
+   "wikidata": "https://www.wikidata.org/wiki/Q849826",
+   "display_name": "Cognitive restructuring",
+   "level": 3,
+   "score": 0.47482237219810486
+  },
+  {
+   "id": "https://openalex.org/C66102695",
+   "wikidata": "https://www.wikidata.org/wiki/Q5141208",
+   "display_name": "Cognitive flexibility",
+   "level": 3,
+   "score": 0.4741196930408478
+  },
+  {
+   "id": "https://openalex.org/C3020031316",
+   "wikidata": "https://www.wikidata.org/wiki/Q6817452",
+   "display_name": "Psychological distress",
+   "level": 3,
+   "score": 0.4647483229637146
+  },
+  {
+   "id": "https://openalex.org/C2779477915",
+   "wikidata": "https://www.wikidata.org/wiki/Q13693745",
+   "display_name": "Cognitive therapy",
+   "level": 3,
+   "score": 0.4563170373439789
+  },
+  {
+   "id": "https://openalex.org/C2780665704",
+   "wikidata": "https://www.wikidata.org/wiki/Q959298",
+   "display_name": "Intervention (counseling)",
+   "level": 2,
+   "score": 0.45547911524772644
+  },
+  {
+   "id": "https://openalex.org/C2780598303",
+   "wikidata": "https://www.wikidata.org/wiki/Q65921492",
+   "display_name": "Flexibility (engineering)",
+   "level": 2,
+   "score": 0.45299482345581055
+  },
+  {
+   "id": "https://openalex.org/C134362201",
+   "wikidata": "https://www.wikidata.org/wiki/Q317309",
+   "display_name": "Mental health",
+   "level": 2,
+   "score": 0.4254637360572815
+  },
+  {
+   "id": "https://openalex.org/C2909088125",
+   "wikidata": "https://www.wikidata.org/wiki/Q183257",
+   "display_name": "Psychological therapy",
+   "level": 3,
+   "score": 0.4239058494567871
+  },
+  {
+   "id": "https://openalex.org/C542102704",
+   "wikidata": "https://www.wikidata.org/wiki/Q183257",
+   "display_name": "Psychotherapist",
+   "level": 1,
+   "score": 0.24418097734451294
+  },
+  {
+   "id": "https://openalex.org/C118552586",
+   "wikidata": "https://www.wikidata.org/wiki/Q7867",
+   "display_name": "Psychiatry",
+   "level": 1,
+   "score": 0.18349742889404297
+  },
+  {
+   "id": "https://openalex.org/C558461103",
+   "wikidata": "https://www.wikidata.org/wiki/Q154430",
+   "display_name": "Anxiety",
+   "level": 2,
+   "score": 0.15512767434120178
+  },
+  {
+   "id": "https://openalex.org/C199539241",
+   "wikidata": "https://www.wikidata.org/wiki/Q7748",
+   "display_name": "Law",
+   "level": 1,
+   "score": 0
+  },
+  {
+   "id": "https://openalex.org/C105795698",
+   "wikidata": "https://www.wikidata.org/wiki/Q12483",
+   "display_name": "Statistics",
+   "level": 1,
+   "score": 0
+  },
+  {
+   "id": "https://openalex.org/C33923547",
+   "wikidata": "https://www.wikidata.org/wiki/Q395",
+   "display_name": "Mathematics",
+   "level": 0,
+   "score": 0
+  },
+  {
+   "id": "https://openalex.org/C17744445",
+   "wikidata": "https://www.wikidata.org/wiki/Q36442",
+   "display_name": "Political science",
+   "level": 0,
+   "score": 0
+  }
+ ],
+ "mesh": [
+  {
+   "descriptor_ui": "D000223",
+   "descriptor_name": "Adaptation, Psychological",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D000328",
+   "descriptor_name": "Adult",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D003071",
+   "descriptor_name": "Cognition",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D005260",
+   "descriptor_name": "Female",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D006113",
+   "descriptor_name": "United Kingdom",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D006801",
+   "descriptor_name": "Humans",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D008297",
+   "descriptor_name": "Male",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D008603",
+   "descriptor_name": "Mental Health",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D008875",
+   "descriptor_name": "Middle Aged",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D009111",
+   "descriptor_name": "Local Government",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": true
+  },
+  {
+   "descriptor_ui": "D011613",
+   "descriptor_name": "Psychotherapy",
+   "qualifier_ui": "Q000379",
+   "qualifier_name": "methods",
+   "is_major_topic": true
+  },
+  {
+   "descriptor_ui": "D011615",
+   "descriptor_name": "Psychotherapy, Group",
+   "qualifier_ui": "Q000379",
+   "qualifier_name": "methods",
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D013315",
+   "descriptor_name": "Stress, Psychological",
+   "qualifier_ui": "Q000628",
+   "qualifier_name": "therapy",
+   "is_major_topic": true
+  },
+  {
+   "descriptor_ui": "D017132",
+   "descriptor_name": "Workplace",
+   "qualifier_ui": "Q000523",
+   "qualifier_name": "psychology",
+   "is_major_topic": true
+  }
+ ],
+ "locations_count": 3,
+ "locations": [
+  {
+   "id": "doi:10.1016/j.brat.2010.05.004",
+   "doi": "https://doi.org/10.1016/j.brat.2010.05.004",
+   "is_oa": false,
+   "landing_page_url": "https://doi.org/10.1016/j.brat.2010.05.004",
+   "pdf_url": null,
+   "source": {
+    "id": "https://openalex.org/S186589312",
+    "display_name": "Behaviour Research and Therapy",
+    "issn_l": "0005-7967",
+    "issn": [
+     "0005-7967",
+     "1873-622X"
+    ],
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": true,
+    "listed_in": [
+     "cwts-core",
+     "dongbi-b",
+     "erih-plus",
+     "jufo-3",
+     "ki-jl-2",
+     "medline",
+     "norway-2",
+     "poland-140",
+     "russia-white-list-1",
+     "vabb-shw"
+    ],
+    "host_organization": "https://openalex.org/P4310320990",
+    "host_organization_name": "Elsevier BV",
+    "host_organization_lineage": [
+     "https://openalex.org/P4310320990"
+    ],
+    "host_organization_lineage_names": [
+     "Elsevier BV"
+    ],
+    "type": "journal"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "publishedVersion",
+   "is_accepted": true,
+   "is_published": true,
+   "raw_source_name": "Behaviour Research and Therapy",
+   "raw_type": "journal-article"
+  },
+  {
+   "id": "pmid:20627269",
+   "doi": null,
+   "is_oa": false,
+   "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/20627269",
+   "pdf_url": null,
+   "source": {
+    "id": "https://openalex.org/S4306525036",
+    "display_name": "PubMed",
+    "issn_l": null,
+    "issn": null,
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": false,
+    "listed_in": [],
+    "host_organization": "https://openalex.org/I1299303238",
+    "host_organization_name": "National Institutes of Health",
+    "host_organization_lineage": [
+     "https://openalex.org/I1299303238"
+    ],
+    "host_organization_lineage_names": [],
+    "type": "repository"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "publishedVersion",
+   "is_accepted": true,
+   "is_published": true,
+   "raw_source_name": "Behaviour research and therapy",
+   "raw_type": "Journal Article"
+  },
+  {
+   "id": "pmh:oai:openaccess.city.ac.uk:6318",
+   "doi": null,
+   "is_oa": true,
+   "landing_page_url": "https://openaccess.city.ac.uk/id/eprint/6318/",
+   "pdf_url": "https://openaccess.city.ac.uk/id/eprint/6318/1/Flaxman%20and%20Bond%20%282010%29%20BRAT%20.pdf",
+   "source": {
+    "id": "https://openalex.org/S4306401940",
+    "display_name": "City Research Online (City University London)",
+    "issn_l": null,
+    "issn": null,
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": false,
+    "listed_in": [],
+    "host_organization": "https://openalex.org/I180825142",
+    "host_organization_name": "City, University of London",
+    "host_organization_lineage": [
+     "https://openalex.org/I180825142"
+    ],
+    "host_organization_lineage_names": [],
+    "type": "repository"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "submittedVersion",
+   "is_accepted": false,
+   "is_published": false,
+   "raw_source_name": null,
+   "raw_type": "Article"
+  }
+ ],
+ "best_oa_location": {
+  "id": "pmh:oai:openaccess.city.ac.uk:6318",
+  "doi": null,
+  "is_oa": true,
+  "landing_page_url": "https://openaccess.city.ac.uk/id/eprint/6318/",
+  "pdf_url": "https://openaccess.city.ac.uk/id/eprint/6318/1/Flaxman%20and%20Bond%20%282010%29%20BRAT%20.pdf",
+  "source": {
+   "id": "https://openalex.org/S4306401940",
+   "display_name": "City Research Online (City University London)",
+   "issn_l": null,
+   "issn": null,
+   "is_oa": false,
+   "is_in_doaj": false,
+   "is_core": false,
+   "listed_in": [],
+   "host_organization": "https://openalex.org/I180825142",
+   "host_organization_name": "City, University of London",
+   "host_organization_lineage": [
+    "https://openalex.org/I180825142"
+   ],
+   "host_organization_lineage_names": [],
+   "type": "repository"
+  },
+  "license": null,
+  "license_id": null,
+  "version": "submittedVersion",
+  "is_accepted": false,
+  "is_published": false,
+  "raw_source_name": null,
+  "raw_type": "Article"
+ },
+ "sustainable_development_goals": [
+  {
+   "score": 0.9537000060081482,
+   "display_name": "Good health and well-being",
+   "id": "https://metadata.un.org/sdg/3"
+  }
+ ],
+ "study_designs": [
+  {
+   "display_name": "Randomized Controlled Trial",
+   "id": "https://openalex.org/study-designs/randomized-controlled-trial"
+  },
+  {
+   "display_name": "Clinical Trial",
+   "id": "https://openalex.org/study-designs/clinical-trial"
+  }
+ ],
+ "awards": [],
+ "funders": [],
+ "has_content": {
+  "pdf": true,
+  "grobid_xml": true
+ },
+ "content_urls": {
+  "pdf": "https://content.openalex.org/works/W2112377889.pdf",
+  "grobid_xml": "https://content.openalex.org/works/W2112377889.grobid-xml"
+ },
+ "referenced_works_count": 46,
+ "referenced_works": [
+  "https://openalex.org/W10253445",
+  "https://openalex.org/W42232187",
+  "https://openalex.org/W73806441",
+  "https://openalex.org/W393398276",
+  "https://openalex.org/W579720650",
+  "https://openalex.org/W1501277110",
+  "https://openalex.org/W1504045516",
+  "https://openalex.org/W1514273299",
+  "https://openalex.org/W1577073426",
+  "https://openalex.org/W1579600432",
+  "https://openalex.org/W1596333373",
+  "https://openalex.org/W1723026158",
+  "https://openalex.org/W1865492099",
+  "https://openalex.org/W1948512420",
+  "https://openalex.org/W1964325032",
+  "https://openalex.org/W1975305620",
+  "https://openalex.org/W1983633606",
+  "https://openalex.org/W2009348399",
+  "https://openalex.org/W2011916323",
+  "https://openalex.org/W2029693860",
+  "https://openalex.org/W2038702827",
+  "https://openalex.org/W2074624808",
+  "https://openalex.org/W2075707347",
+  "https://openalex.org/W2080148351",
+  "https://openalex.org/W2081650867",
+  "https://openalex.org/W2090211322",
+  "https://openalex.org/W2090653135",
+  "https://openalex.org/W2091415950",
+  "https://openalex.org/W2094093745",
+  "https://openalex.org/W2111459052",
+  "https://openalex.org/W2118940666",
+  "https://openalex.org/W2119601516",
+  "https://openalex.org/W2125492058",
+  "https://openalex.org/W2133929889",
+  "https://openalex.org/W2133963272",
+  "https://openalex.org/W2135395110",
+  "https://openalex.org/W2135496634",
+  "https://openalex.org/W2135616080",
+  "https://openalex.org/W2137832075",
+  "https://openalex.org/W2141079135",
+  "https://openalex.org/W2174988172",
+  "https://openalex.org/W3018515057",
+  "https://openalex.org/W4292865308",
+  "https://openalex.org/W4297974400",
+  "https://openalex.org/W6601702617",
+  "https://openalex.org/W6634654894"
+ ],
+ "related_works": [
+  "https://openalex.org/W2419625319",
+  "https://openalex.org/W184919077",
+  "https://openalex.org/W2095980672",
+  "https://openalex.org/W4295221035",
+  "https://openalex.org/W2135395110",
+  "https://openalex.org/W3161517022",
+  "https://openalex.org/W2970512789",
+  "https://openalex.org/W2750837828",
+  "https://openalex.org/W2013593998",
+  "https://openalex.org/W4392709977"
+ ],
+ "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W2112377889",
+ "counts_by_year": [
+  {
+   "year": 2026,
+   "cited_by_count": 13
+  },
+  {
+   "year": 2025,
+   "cited_by_count": 14
+  },
+  {
+   "year": 2024,
+   "cited_by_count": 16
+  },
+  {
+   "year": 2023,
+   "cited_by_count": 15
+  },
+  {
+   "year": 2022,
+   "cited_by_count": 21
+  },
+  {
+   "year": 2021,
+   "cited_by_count": 17
+  },
+  {
+   "year": 2020,
+   "cited_by_count": 22
+  },
+  {
+   "year": 2019,
+   "cited_by_count": 17
+  },
+  {
+   "year": 2018,
+   "cited_by_count": 16
+  },
+  {
+   "year": 2017,
+   "cited_by_count": 15
+  },
+  {
+   "year": 2016,
+   "cited_by_count": 16
+  },
+  {
+   "year": 2015,
+   "cited_by_count": 20
+  },
+  {
+   "year": 2014,
+   "cited_by_count": 12
+  },
+  {
+   "year": 2013,
+   "cited_by_count": 22
+  },
+  {
+   "year": 2012,
+   "cited_by_count": 20
+  }
+ ],
+ "updated_date": "2026-11-21T10:27:49.728292",
+ "created_date": "2016-06-24T00:00:00"
+}

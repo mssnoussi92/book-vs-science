@@ -1,0 +1,44 @@
+name: validate
+
+# On a pull request and on main (a push to a branch with a pull request ran everything twice in the owner's other
+# repositories). What blocks the voice and the render (a source not yet verified, an approval not yet given) does not
+# fail this check: `bvs check --gate` is run by the voice and render workflows.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: TypeScript
+        run: npm run typecheck
+
+      - name: JSON Schemas still match zod
+        run: npm run schemas -- --check
+
+      # Each rule must still refuse what it was written to refuse (a copy of a valid fixture, one thing broken).
+      - name: Tests
+        run: npm test
+
+      - name: Rules on the content
+        run: npm run -s bvs -- check

@@ -1,0 +1,201 @@
+{
+ "version": "6.9",
+ "hitCount": 1,
+ "request": {
+  "queryString": "DOI:\"10.1016/j.cpr.2009.11.004\"",
+  "resultType": "core",
+  "cursorMark": "*",
+  "pageSize": 25,
+  "sort": "",
+  "synonym": false
+ },
+ "resultList": {
+  "result": [
+   {
+    "id": "20015584",
+    "source": "MED",
+    "pmid": "20015584",
+    "doi": "10.1016/j.cpr.2009.11.004",
+    "title": "Emotion-regulation strategies across psychopathology: A meta-analytic review.",
+    "authorString": "Aldao A, Nolen-Hoeksema S, Schweizer S.",
+    "authorList": {
+     "author": [
+      {
+       "fullName": "Aldao A",
+       "lastName": "Aldao",
+       "firstName": "Amelia",
+       "initials": "A",
+       "authorAffiliationDetailsList": {
+        "authorAffiliation": [
+         {
+          "affiliation": "Department of Psychology, Yale University, 2 Hillhouse Ave, New Haven, CT 06520, USA. amelia.aldao@yale.edu"
+         }
+        ]
+       }
+      },
+      {
+       "fullName": "Nolen-Hoeksema S",
+       "lastName": "Nolen-Hoeksema",
+       "firstName": "Susan",
+       "initials": "S"
+      },
+      {
+       "fullName": "Schweizer S",
+       "lastName": "Schweizer",
+       "firstName": "Susanne",
+       "initials": "S",
+       "authorId": {
+        "type": "ORCID",
+        "value": "0000-0001-6153-8291"
+       }
+      }
+     ]
+    },
+    "authorIdList": {
+     "authorId": [
+      {
+       "type": "ORCID",
+       "value": "0000-0001-6153-8291"
+      }
+     ]
+    },
+    "dataLinksTagsList": {
+     "dataLinkstag": [
+      "altmetrics",
+      "wikipedia"
+     ]
+    },
+    "journalInfo": {
+     "issue": "2",
+     "volume": "30",
+     "journalIssueId": 1695614,
+     "dateOfPublication": "2010 Mar",
+     "monthOfPublication": 3,
+     "yearOfPublication": 2010,
+     "journal": {
+      "medlineAbbreviation": "Clin Psychol Rev",
+      "title": "Clinical psychology review",
+      "essn": "1873-7811",
+      "issn": "0272-7358",
+      "nlmid": "8111117",
+      "isoabbreviation": "Clin Psychol Rev"
+     },
+     "printPublicationDate": "2010-03-01"
+    },
+    "pubYear": "2010",
+    "pageInfo": "217-237",
+    "affiliation": "Department of Psychology, Yale University, 2 Hillhouse Ave, New Haven, CT 06520, USA. amelia.aldao@yale.edu",
+    "publicationStatus": "ppublish",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+     "pubType": [
+      "Meta-Analysis",
+      "Journal Article"
+     ]
+    },
+    "meshHeadingList": {
+     "meshHeading": [
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Humans"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Adaptation, Psychological",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "Y",
+          "abbreviation": "PH",
+          "qualifierName": "physiology"
+         }
+        ]
+       }
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Emotions",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "Y",
+          "abbreviation": "PH",
+          "qualifierName": "physiology"
+         }
+        ]
+       }
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Self Concept"
+      },
+      {
+       "majorTopic_YN": "Y",
+       "descriptorName": "Internal-External Control"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Mental Disorders",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "Y",
+          "abbreviation": "PX",
+          "qualifierName": "psychology"
+         }
+        ]
+       }
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Personality Assessment"
+      }
+     ]
+    },
+    "subsetList": {
+     "subset": [
+      {
+       "code": "IM",
+       "name": "Index Medicus"
+      }
+     ]
+    },
+    "fullTextUrlList": {
+     "fullTextUrl": [
+      {
+       "availability": "Subscription required",
+       "availabilityCode": "S",
+       "documentStyle": "doi",
+       "site": "DOI",
+       "url": "https://doi.org/10.1016/j.cpr.2009.11.004"
+      }
+     ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "citedByCount": 3219,
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "hasLabsLinks": "Y",
+    "hasData": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCompletion": "2010-04-19",
+    "dateOfCreation": "2009-12-18",
+    "dateOfRevision": "2024-12-19",
+    "electronicPublicationDate": "2009-11-20",
+    "firstPublicationDate": "2009-11-20",
+    "firstIndexDate": "2010-04-20",
+    "hasEvaluations": "N"
+   }
+  ]
+ }
+}
