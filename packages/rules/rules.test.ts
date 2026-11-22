@@ -161,9 +161,14 @@ describe("evidence and verdict", () => {
     edit(root, EP, (j) => { j.hooks[0].claims = ["c1"]; j.verdict.assessments[0].direction = "mixed"; });
     assert.deepEqual(errors(check(root)).filter((i) => i.rule === "claims-said"), []);
   });
-  test("claims-said: a question on a low-certainty claim is still refused", () => bites("claims-said", EP, (j) => {
-    j.hooks[0].claims = ["c1"]; j.verdict.assessments[0].direction = "mixed"; j.verdict.assessments[0].certainty = "low";
+  test("claims-said: a question on a very-low-certainty claim is still refused", () => bites("claims-said", EP, (j) => {
+    j.hooks[0].claims = ["c1"]; j.verdict.assessments[0].direction = "mixed"; j.verdict.assessments[0].certainty = "very-low";
   }, { also: ["verdict"] }));
+  test("claims-said: a question on a low-certainty claim passes (money-happiness: every claim is low)", () => {
+    const root = copy();
+    edit(root, EP, (j) => { j.hooks[0].claims = ["c1"]; j.verdict.assessments[0].direction = "mixed"; j.verdict.assessments[0].certainty = "low"; j.verdict.certainty = "low"; });
+    assert.deepEqual(errors(check(root)).filter((i) => i.rule === "claims-said"), []);
+  });
   test("claims-said: a line that states an out-of-scope claim", () => bites("claims-said", EP, (j) => { j.verdict.beats[0].claims = ["c2"]; }));
   test("outcome: a scene that ends in a cure on a ⚖️", () => bites("outcome", EP, (j) => { j.scenes[0].outcome = "better"; }));
   test("takeaway: 'evidence' without any causal finding on the action", () => bites("takeaway", EP, (j) => {

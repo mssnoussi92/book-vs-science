@@ -150,9 +150,11 @@ export const claimsSaid: Rule = {
         }
       };
       // docs/verdict.md §5: « sinon il devient une question ». A hook whose every text (said and first frame, in every
-      // language) ends in a question asks, it does not assert: it may rest on a mixed claim of at least moderate certainty.
+      // language) ends in a question asks, it does not assert: it may rest on a claim the verdict assessed (not
+      // « insufficient ») of at least low certainty; a very low one is still refused, even asked (the owner's choice,
+      // 2026-11-22, on money-happiness where every claim is low).
       const asks = (id: string) => [...langs.values()].every((l) => [`hook.${id}`, `hook.${id}.frame`].every((k) => !l.texts[k] || /[؟?]\s*$/u.test(l.texts[k]!.trim())));
-      const fair = (c: string) => { const a = assessed.get(c); return !!a && a.direction === "mixed" && CERTAINTY_RANK[a.certainty] >= CERTAINTY_RANK.moderate; };
+      const fair = (c: string) => { const a = assessed.get(c); return !!a && a.direction !== "insufficient" && CERTAINTY_RANK[a.certainty] >= CERTAINTY_RANK.low; };
       for (const h of ep.hooks) check(`hooks.${h.id}`, asks(h.id) ? h.claims.filter((c) => !fair(c)) : h.claims, true);
       for (const p of beats(ep)) if (p.beat.kind === "line") check(`${p.scope}.${p.beat.id}`, p.beat.claims, false);
     }

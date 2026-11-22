@@ -58,7 +58,10 @@ La certitude du verdict ne dépasse pas la plus basse des affirmations du champ.
 ## 5. Ce que l'épisode a le droit de dire
 
 - **Hook ≤ verdict** : un hook ne s'appuie que sur une affirmation de certitude au moins modérée et de direction nette ;
-  sinon il devient une question.
+  sinon il devient une question. Un hook posé en question (chaque texte, dit et première image, finit par « ؟ ») peut
+  s'appuyer sur une affirmation évaluée (pas « insuffisante ») de certitude au moins **basse** ; « très basse » reste
+  refusée, même en question (décision du propriétaire, 2026-11-22, sur « argent » où toutes les affirmations sont
+  basses). Une question qui présuppose sa réponse se refuse à l'œil.
 - **Dénouement ≤ verdict** : ✅ « mieux » ; ⚖️ « un peu mieux » ou non résolu ; ❓ non résolu ; ❌ non résolu ou pire.
 - **« À retenir » rattaché à une preuve** : `evidence` seulement si une preuve causale porte sur cette action-là ; sinon
   « ممكن يساعد / جرّب », suggestion à faible risque. Jamais : arrêter un traitement, « vider son sac » comme remède

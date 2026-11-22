@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/approvals.schema.json",
+  "sources": {
+    "on": "2026-11-22",
+    "words": "Je valide e97635, 51a5e3, 8350bd (Recommandé) : sources et script de « trop de choix » tels que dans le brouillon (h1 « في 3 ثواني » avec compte à rebours, Nour et la batterie, Karim « شهر » en h3)",
+    "via": "conversation",
+    "hash": "e97635badec08d1960ac182cd1c811faa709d2212fef947a4d4581ce391a267a"
+  },
+  "script": {
+    "ar-EG": {
+      "on": "2026-11-22",
+      "words": "Je valide e97635, 51a5e3, 8350bd (Recommandé) : sources et script de « trop de choix » tels que dans le brouillon (h1 « في 3 ثواني » avec compte à rebours, Nour et la batterie, Karim « شهر » en h3)",
+      "via": "conversation",
+      "hash": "51a5e35fc6f907747d353086969d1acf17ffaa2e6fbae56010e6dbe075a213af"
+    },
+    "en": {
+      "on": "2026-11-22",
+      "words": "Je valide e97635, 51a5e3, 8350bd (Recommandé) : sources et script de « trop de choix » tels que dans le brouillon (h1 « في 3 ثواني » avec compte à rebours, Nour et la batterie, Karim « شهر » en h3)",
+      "via": "conversation",
+      "hash": "8350bd28175d12c533ccd44e19ef55bc2b46cd23bbc6df5388a44c4f8afee26d"
+    }
+  },
+  "voice": {},
+  "video": {}
+}
