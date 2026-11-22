@@ -1,0 +1,76 @@
+{
+  "doi": "10.1073/pnas.2313712121",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Inappropriate causal assumptions underlie Killingsworth, Kahneman, and Mellers’ conclusions » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Rohrer » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2024, found 2024"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:not-a-group",
+      "result": "pass",
+      "detail": "full-text reading by dossier agent (money-happiness), PMC11572929 full text (BioC), paragraph 6"
+    },
+    {
+      "name": "support:no-covariates",
+      "result": "pass",
+      "detail": "full-text reading by dossier agent (money-happiness), PMC11572929 full text (BioC), paragraph 4"
+    }
+  ],
+  "found": {
+    "title": "Inappropriate causal assumptions underlie Killingsworth, Kahneman, and Mellers’ conclusions",
+    "firstAuthor": "Rohrer",
+    "years": [
+      2024
+    ],
+    "type": "journal-article",
+    "venue": "Proceedings of the National Academy of Sciences"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "9e9f17b9f2cec1bc708ba677cb8c610b5584b59f43019f5c90bd1ab750c847e4",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

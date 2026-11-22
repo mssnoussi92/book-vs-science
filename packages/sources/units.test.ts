@@ -88,6 +88,10 @@ test("role hints: context / aim / method cues come first and are not read as res
   assert.deepEqual(roleHints("Research suggests that valuing happiness backfires."), ["context"]);
   assert.ok(roleHints("The aim of this study was to test it.").includes("aim"));
   assert.ok(roleHints("This study examined whether it worked.").includes("aim"));
+  // « objective » as an adjective is not an aim (Tan 2020, a false refusal found on the money dossier)
+  const tan = roleHints("In moderation analyses, the objective SES-SWB associations strengthened with age.");
+  assert.ok(!tan.includes("aim") && tan.includes("result"));
+  assert.ok(roleHints("The objective of the study was to compare them.").includes("aim"));
   assert.ok(roleHints("Participants were 120 students.").includes("method"));
   assert.ok(roleHints("We found that it was associated with less stress (r = .31).").includes("result"));
   assert.ok(roleHints("These findings suggest that acceptance helps.").includes("conclusion"));

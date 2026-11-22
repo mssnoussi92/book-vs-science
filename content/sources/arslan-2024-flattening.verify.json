@@ -1,0 +1,76 @@
+{
+  "doi": "10.1073/pnas.2314207121",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « The miseries that remain may yet be alleviated » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Arslan » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2024, found 2024"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:linear-as-good",
+      "result": "pass",
+      "detail": "full-text reading by dossier agent (money-happiness), PMC11572980 full text, paragraph 3"
+    },
+    {
+      "name": "support:flattening-not-strong",
+      "result": "pass",
+      "detail": "full-text reading by dossier agent (money-happiness), PMC11572980 full text, paragraph 3"
+    }
+  ],
+  "found": {
+    "title": "The miseries that remain may yet be alleviated",
+    "firstAuthor": "Arslan",
+    "years": [
+      2024
+    ],
+    "type": "journal-article",
+    "venue": "Proceedings of the National Academy of Sciences"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "92b2320a04a8ebb82cdf7ceefa924417d6c3b8fb43983a1ff50a61337a577d64",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

@@ -1,0 +1,72 @@
+{
+  "doi": "10.3386/w14035",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « The Own and Social Effects of an Unexpected Income Shock: Evidence from the Dutch Postcode Lottery » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Kuhn » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2008, found 2008, 2010"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « report »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:not-happier-6-months",
+      "result": "pass",
+      "detail": "full-text reading by dossier agent (money-happiness), NBER w14035 PDF, abstract page (the databases' copy has no spaces between sentences)"
+    }
+  ],
+  "found": {
+    "title": "The Own and Social Effects of an Unexpected Income Shock: Evidence from the Dutch Postcode Lottery",
+    "firstAuthor": "Kuhn",
+    "years": [
+      2008,
+      2010
+    ],
+    "type": "report",
+    "venue": "National Bureau of Economic Research"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "ebacf5da84c2f2f67bea1435f928e245d85475b1463d074d2d846a0222b7e158",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

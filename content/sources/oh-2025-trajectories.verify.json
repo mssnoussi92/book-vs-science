@@ -1,0 +1,71 @@
+{
+  "doi": "10.1037/pspp0000552",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Money matters for future well-being: A latent growth analysis and meta-analytic integration of associations between income, financial satisfaction, and 22 well-being variables across three data sets. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Oh » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2025, found 2025"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:changes-unrelated",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "Money matters for future well-being: A latent growth analysis and meta-analytic integration of associations between income, financial satisfaction, and 22 well-being variables across three data sets.",
+    "firstAuthor": "Oh",
+    "years": [
+      2025
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Personality and Social Psychology"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "f01dd339666755b58733a99e7750aad876c1c74acf1b78b8bd3c279b0c0b982e",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

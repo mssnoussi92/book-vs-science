@@ -1,0 +1,76 @@
+{
+  "doi": "10.1016/j.econlet.2024.111730",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Income and emotional well-being: Evidence for well-being plateauing around $200,000 per year » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Bennedsen » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2024, found 2024"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:plateau-200000",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:needs-more-research",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: conclusion"
+    }
+  ],
+  "found": {
+    "title": "Income and emotional well-being: Evidence for well-being plateauing around $200,000 per year",
+    "firstAuthor": "Bennedsen",
+    "years": [
+      2024
+    ],
+    "type": "journal-article",
+    "venue": "Economics Letters"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "8a823a742e470167d1ba28fc9afa0374f4f8c377802ccbadbf4edbc54ee1ddd5",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

@@ -1,0 +1,82 @@
+{
+  "doi": "10.1080/00036846.2018.1494813",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Unexpected windfalls, education, and mental health: evidence from lottery winners in Germany » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Raschke » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2018, found 2018, 2019"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:no-impact-high-education",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:low-education-worse",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:happier-but",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Unexpected windfalls, education, and mental health: evidence from lottery winners in Germany",
+    "firstAuthor": "Raschke",
+    "years": [
+      2018,
+      2019
+    ],
+    "type": "journal-article",
+    "venue": "Applied Economics"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "e7414d78c076cab915871ac5b8835ab243adeceda9c6c170ebc707276d658836",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

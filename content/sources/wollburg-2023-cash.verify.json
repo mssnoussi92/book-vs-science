@@ -1,0 +1,76 @@
+{
+  "doi": "10.1371/journal.pone.0281283",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Do cash transfers alleviate common mental disorders in low- and middle-income countries? A systematic review and meta-analysis » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Wollburg » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2023, found 2023"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:reduced-depression",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:not-sustained",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "Do cash transfers alleviate common mental disorders in low- and middle-income countries? A systematic review and meta-analysis",
+    "firstAuthor": "Wollburg",
+    "years": [
+      2023
+    ],
+    "type": "journal-article",
+    "venue": "PLOS ONE"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "8397a51c8098937031244b0fd784fb80d909d626a44081cb7ea9b121eeee8e65",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

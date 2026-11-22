@@ -1,0 +1,77 @@
+{
+  "doi": "10.1504/ijhd.2024.144453",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Happiness in Egypt » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Sameer » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2024, found 2024, 2025"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:average-4-8",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:judge-low-feel-well",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Happiness in Egypt",
+    "firstAuthor": "Sameer",
+    "years": [
+      2024,
+      2025
+    ],
+    "type": "journal-article",
+    "venue": "International Journal of Happiness and Development"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "4ce35ea127a7ba6de02372d11a0ff0609e1f6d71e100d13be39810150748393a",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

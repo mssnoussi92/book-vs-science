@@ -10,7 +10,8 @@ const NON_RESULT: [Role, RegExp][] = [
   ["context", /\b(?:research|evidence|the literature|theory) (?:suggests?|indicates?|holds?|shows?)\b/gi],
   ["context", /\bit has been (?:argued|suggested|proposed|claimed|reported)\b/gi],
   ["aim", /\bwe hypothesi[sz]ed\b/gi],
-  ["aim", /\bthe (?:present |current |main )?(?:aim|goal|purpose|objective)\b/gi],
+  // « the objective of… / was… » is an aim; « the objective SES » (objective as an adjective) is not (Tan 2020)
+  ["aim", /\bthe (?:present |current |main )?(?:aim|goal|purpose|objective)s? (?:of|was|were|is|are|here)\b/gi],
   ["aim", /\bthis (?:study|research|article|paper|meta-analysis|review) (?:examined|investigated|tested|explored|aimed|sought)\b/gi],
   ["aim", /\bwe (?:examined|investigated|tested|explored) whether\b/gi],
   ["method", /\bparticipants were\b/gi],
@@ -22,6 +23,7 @@ const RESULT: [Role, RegExp][] = [
   ["result", /\bwe found\b/i],
   ["result", /\bwas associated\b|\bwere associated\b/i],
   ["result", /\bpredicted\b/i],
+  ["result", /\b(?:strengthened|weakened|increased|decreased|declined|rose)\b/i],
   ["result", /\bdid not differ\b/i],
   ["result", /\bno (?:significant |reliable )?differences?\b/i],
   ["result", /\b[pP]\s*[<=>]\s*\.?\d|\b[dgr]\s*=\s*[-−]?\.?\d|\bOR\s*=\s*\d|\b\d+(?:\.\d+)?\s?%|\b95\s?% ?CI\b/],
