@@ -9,15 +9,15 @@
   "script": {
     "ar-EG": {
       "on": "2026-11-22",
-      "words": "Je valide ar-EG 34e847 et en 2b69d5 (Recommandé)",
+      "words": "Je valide ar-EG 30285f et en 2ff76a (Recommandé)",
       "via": "conversation",
-      "hash": "34e847c65dc41d5f354d5b7af00302f35568313b32830f3653251a7fa44ed713"
+      "hash": "30285f976d7c492135fcc2d04b70044a5a24bbe27b7f3f39387dcf67e484ef84"
     },
     "en": {
       "on": "2026-11-22",
-      "words": "Je valide ar-EG 34e847 et en 2b69d5 (Recommandé)",
+      "words": "Je valide ar-EG 30285f et en 2ff76a (Recommandé)",
       "via": "conversation",
-      "hash": "2b69d53445d7c7cfccb7081502c48a2c6e3f9aadcbf0670bbd750221dfa4564e"
+      "hash": "2ff76aebc8fa99da1c6618b20375a068b1eed011ec587a43d9ea88211eccfbc0"
     }
   },
   "voice": {},

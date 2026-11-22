@@ -133,6 +133,9 @@ export const Verdict = z.strictObject({
   nuance: NodeId.optional(),
   /** false: the nuance is written on its card only, held without voice (when the minute is full). */
   nuanceSpoken: z.boolean().default(true),
+  /** Without a sample from the Middle East or North Africa, the language's applicability line is said by a line of
+   *  the verdict ("said"), or written under the study card ("written", the owner's choice on the pilot). */
+  applicability: z.enum(["said", "written"]).default("said"),
   onScreen: Slug,                                   // the source of the study card
   /** The search protocol, written down (what was searched, where, when, and what was not found). */
   searched: z.strictObject({

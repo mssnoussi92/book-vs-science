@@ -199,7 +199,7 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
       firstFrame,
       ...(book ? { tease: { f0: h0, f1: b0, title: bookTitle } } : {}),
       book: { f0: b0, f1: v0, idea: text("book.card"), title: bookTitle, author: book?.authorWritten[opts.lang] ?? book?.author ?? "" },
-      study: { f0: studyFrom, f1: studyTo, line: text("verdict.card"), ref, design: src?.design ?? "" },
+      study: { f0: studyFrom, f1: studyTo, line: text("verdict.card"), ref, design: src?.design ?? "", ...(ep.verdict.applicability === "written" ? { applies: pack.applicabilityLine } : {}) },
       badge: { f: v0 + fr(BADGE_DELAY), badge: ep.verdict.badge, label: pack.labels.badge[ep.verdict.badge], certainty: pack.labels.certainty[ep.verdict.certainty] },
       ...(nuance ? { nuance } : {}),
       ...(orientation ? { orientation } : {}),

@@ -239,6 +239,7 @@ export const applicability: Rule = {
     for (const { dir, episode: ep, langs } of repo.episodes) {
       const cited = ep.verdict.assessments.flatMap((a) => a.evidence.map((e) => repo.sources.get(e.source))).filter((s) => s !== undefined);
       if (cited.length === 0 || cited.some((s) => s.mena)) continue;
+      if (ep.verdict.applicability === "written") continue;     // the shell writes the pack's line under the study card
       for (const [code, lang] of langs) {
         const pack = repo.languages.get(code);
         if (!pack) continue;

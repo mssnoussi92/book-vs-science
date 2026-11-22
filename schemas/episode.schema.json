@@ -1066,6 +1066,14 @@
               "default": true,
               "type": "boolean"
             },
+            "applicability": {
+              "default": "said",
+              "type": "string",
+              "enum": [
+                "said",
+                "written"
+              ]
+            },
             "onScreen": {
               "type": "string",
               "pattern": "^[a-z][a-z0-9-]{1,59}$"
