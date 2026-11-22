@@ -24,7 +24,7 @@ export const POSES: Record<string, Pose> = {
   hunch: { torso: 26, head: -34, armF: [36, 86], armB: [30, 90], legF: [88, -88], legB: [84, -84] },
   raise: { torso: 2, head: 14, armF: [20, 40], armB: [16, 44], legF: [88, -88], legB: [84, -84] },
   shrug: { torso: 0, head: 8, armF: [22, 98], armB: [8, 104], legF: [6, -4], legB: [-6, -2] },
-  "head-in-hands": { torso: 22, head: -26, armF: [118, 116], armB: [110, 120], legF: [6, -4], legB: [-6, -2] },
+  "head-in-hands": { torso: 12, head: -18, armF: [118, 116], armB: [110, 120], legF: [6, -4], legB: [-6, -2] },
   "head-in-hands-seated": { torso: 34, head: -30, armF: [120, 120], armB: [112, 124], legF: [88, -88], legB: [84, -84] },
   "hand-on-chest": { torso: 0, head: -4, armF: [40, 118], armB: [-8, 6], legF: [6, -4], legB: [-6, -2] },
   point: { torso: 4, head: 4, armF: [100, 4], armB: [-8, 6], legF: [6, -4], legB: [-6, -2] },

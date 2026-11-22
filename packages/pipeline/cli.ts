@@ -122,20 +122,50 @@ switch (cmd) {
     }));
   }
   case "timeline": {
-    // bvs timeline <episode> [--lang ar-EG] [--hook h1] --draft : estimated durations, no voice (a watermarked draft)
+    // bvs timeline <episode> [--lang ar-EG] [--hook h1] [--style cartoon] (--draft | --takes build/takes)
+    // --draft: estimated durations, no voice. --takes: the lines measured in the takes (py/bvs_audio/split.py), and
+    // the episode's voice track assembled from them at -16 LUFS. Watermarked until the owner validates the voice.
     const repo = loadRepo(ROOT);
     const e = repo.episodes.find((x) => x.id === args[0]);
     if (!e) { console.error(`épisode inconnu : ${args[0] ?? "(aucun)"}`); process.exit(2); }
-    if (!has("draft")) { console.error("sans prise de voix, seul --draft est possible pour l'instant"); process.exit(2); }
-    const { buildTimeline } = await import("./timeline.ts");
+    const takesDir = flag("takes");
+    if (!has("draft") && !takesDir) { console.error("--draft (sans voix) ou --takes <dossier des prises>"); process.exit(2); }
+    const { build } = await import("./timeline.ts");
     const { Timeline } = await import("../schema/index.ts");
+    const { mkdirSync, readdirSync } = await import("node:fs");
     const code = flag("lang") ?? e.episode.sourceLang;
-    const tl = Timeline.parse(buildTimeline(repo, e, { lang: code, hook: flag("hook"), style: flag("style") ?? "cartoon", draft: true }));
-    const { mkdirSync } = await import("node:fs");
+    let takes: Map<string, { take: string; start: number; end: number; envelope: number[] }> | undefined;
+    const takeDir = takesDir ? join(resolve(takesDir), e.id, code) : "";
+    if (takesDir) {
+      takes = new Map();
+      // The tightened clips (py/bvs_audio/clips.py) when there are, else the pieces of the take as split.
+      const files = readdirSync(takeDir);
+      for (const name of files.filter((n) => n.endsWith(".split.json"))) {
+        const req = name.replace(/\.split\.json$/, "");
+        const sp = JSON.parse(readFileSync(join(takeDir, name), "utf8"));
+        if (!sp.ok) { console.error(`${name} : découpe refusée (${sp.why}) : à écouter avant d'aller plus loin`); process.exit(1); }
+        if (files.includes(`${req}.clips.json`)) {
+          const cl = JSON.parse(readFileSync(join(takeDir, `${req}.clips.json`), "utf8"));
+          for (const l of cl.lines) for (const k of l.keys) takes.set(k, { take: l.file, start: 0, end: l.seconds, envelope: l.envelope });
+        } else {
+          for (const l of sp.lines) for (const k of l.keys) takes.set(k, { take: sp.take, start: l.start, end: l.end, envelope: l.envelope });
+        }
+      }
+    }
+    const approvals = existsSync(join(ROOT, e.dir, "approvals.json")) ? Approvals.parse(JSON.parse(readFileSync(join(ROOT, e.dir, "approvals.json"), "utf8"))) : undefined;
+    const draft = has("draft") || !approvals?.voice[code];
+    const { timeline, placed } = build(repo, e, { lang: code, hook: flag("hook"), style: flag("style") ?? "cartoon", draft, takes });
     const dir = join(ROOT, "assets/ep", e.id, code);
     mkdirSync(dir, { recursive: true });
+    if (takes) {
+      const missing = timeline.lines.filter((l) => !takes!.has(l.key)).map((l) => l.key);
+      if (missing.length) { console.error(`répliques sans prise : ${missing.join(", ")}`); process.exit(1); }
+      const { assemble } = await import("./audio.ts");
+      timeline.audio = assemble(takeDir, placed, timeline.frames, join(dir, `voice-${timeline.hook}.wav`));
+    }
+    const tl = Timeline.parse(timeline);
     writeFileSync(join(dir, `timeline-${tl.hook}.json`), JSON.stringify(tl) + "\n");
-    console.log(`assets/ep/${e.id}/${code}/timeline-${tl.hook}.json : ${(tl.frames / tl.fps).toFixed(1)} s, hook ${tl.hook}, ${tl.lines.length} répliques (brouillon)`);
+    console.log(`assets/ep/${e.id}/${code}/timeline-${tl.hook}.json : ${(tl.frames / tl.fps).toFixed(1)} s, hook ${tl.hook}, ${tl.lines.length} répliques${tl.audio ? `, voix ${tl.audio}` : ""}${tl.draft ? " (brouillon)" : ""}`);
     break;
   }
   case "sources": {

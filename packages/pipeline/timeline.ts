@@ -6,7 +6,7 @@ import type { EpisodeEntry, Repo } from "../rules/types.ts";
 import type { Action, Beat, Timeline, TimedAction, TimedLine, VisemeName } from "../schema/index.ts";
 
 const FPS = 30;
-const PAUSE = 0.3;            // seconds between two lines
+const PAUSE = 0.2;            // seconds between two lines (the takes' own breaths are kept inside each line)
 const SILENT_HOOK = 2.4;      // a hook without voice: the time to read its first frame
 const BADGE_DELAY = 0.6;
 const SHARE = 2.2;
@@ -28,9 +28,22 @@ export function lettersToVisemes(word: string): VisemeName[] {
   return out.length ? out : ["C"];
 }
 
-export type TimelineOptions = { lang: string; hook?: string; style: string; draft: true };
+/** A line as measured in a take (py/bvs_audio/split.py): where it is in its take, its loudness at 30 frames a second. */
+export type Measured = { take: string; start: number; end: number; envelope: number[] };
+
+/** draft: watermarked (no take yet, or the voice not yet validated by the owner). takes: the measured lines, by text
+ *  key; a line without one keeps its estimate (and the timeline says so: audio null). */
+export type TimelineOptions = { lang: string; hook?: string; style: string; draft: boolean; takes?: Map<string, Measured> };
+
+/** Mouths in a measured line: closed where the voice is quiet, whatever the letters say. */
+const QUIET = 0.12;
 
 export function buildTimeline(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): Timeline {
+  return build(repo, e, opts).timeline;
+}
+
+/** The timeline and, for each measured line, where its piece of take goes in the episode's audio track. */
+export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { timeline: Timeline; placed: { key: string; f0: number; m: Measured }[] } {
   const ep = e.episode;
   const lang = e.langs.get(opts.lang);
   const pack = repo.languages.get(opts.lang);
@@ -45,22 +58,34 @@ export function buildTimeline(repo: Repo, e: EpisodeEntry, opts: TimelineOptions
   const parts: Timeline["parts"] = [];
   const mouths: Record<string, { f: number; v: VisemeName }[]> = {};
 
+  /** Where each measured line sits in the episode (the audio track is assembled from these). */
+  const placed: { key: string; f0: number; m: Measured }[] = [];
+
   const speak = (key: string, part: TimedLine["part"], speaker: string, emotion: TimedLine["emotion"], extra: Partial<TimedLine> = {}) => {
     const t = text(key);
     const ws = wordsOf(t);
-    const len = Math.max(fr(secs(t)), 12);
+    const m = opts.takes?.get(key);
+    const len = m ? Math.max(fr(m.end - m.start), 6) : Math.max(fr(secs(t)), 12);
     const f0 = f;
-    const per = len / Math.max(ws.length, 1);
-    const words = ws.map((w, i) => ({ w, f0: Math.round(f0 + i * per), f1: Math.round(f0 + (i + 1) * per) }));
+    // Words spread by their letters over the line (Whisper's word times replace this once the alignment is in).
+    const weight = ws.map((w) => Math.max(1, [...w].filter((c) => /\p{L}/u.test(c)).length));
+    const total = weight.reduce((a, b) => a + b, 0) || 1;
+    let acc = 0;
+    const words = ws.map((w, i) => {
+      const a = Math.round(f0 + (acc / total) * len); acc += weight[i]!;
+      return { w, f0: a, f1: Math.round(f0 + (acc / total) * len) };
+    });
     const track = (mouths[speaker] ??= []);
+    const quiet = (at: number) => !!m && (m.envelope[at - f0] ?? 0) < QUIET;
     for (const wd of words) {
       const vs = lettersToVisemes(wd.w);
       const step = Math.max(2, Math.floor((wd.f1 - wd.f0) / vs.length));
-      vs.forEach((v, i) => { const at = wd.f0 + i * step; if (at < wd.f1) track.push({ f: at, v }); });
+      vs.forEach((v, i) => { const at = wd.f0 + i * step; if (at < wd.f1) track.push({ f: at, v: quiet(at) ? "X" : v }); });
       track.push({ f: Math.max(wd.f1 - 1, wd.f0 + 1), v: "X" });
     }
     track.push({ f: f0 + len, v: "X" });
     lines.push({ key, part, speaker, emotion, intensity: 0.5, f0, f1: f0 + len, text: t, words, ...extra });
+    if (m) placed.push({ key, f0, m });
     f = f0 + len + fr(PAUSE);
   };
 
@@ -163,9 +188,9 @@ export function buildTimeline(repo: Repo, e: EpisodeEntry, opts: TimelineOptions
   const studyTo = nuance ? nuance.f0 : t0;
 
   for (const t of Object.values(mouths)) t.sort((a, b) => a.f - b.f);
-  return {
-    episode: ep.id, lang: opts.lang, dir: pack.dir, fps: FPS, frames: f, draft: true, hook: hook.id, audio: null,
-    parts, lines, actions, mouths, mouthEngine: "text",
+  const timeline: Timeline = {
+    episode: ep.id, lang: opts.lang, dir: pack.dir, fps: FPS, frames: f, draft: opts.draft, hook: hook.id, audio: null,
+    parts, lines, actions, mouths, mouthEngine: placed.length ? "hybrid" : "text",
     cast: { narrator: ep.cast.narrator, characters: ep.cast.characters },
     cards: {
       firstFrame,
@@ -179,4 +204,5 @@ export function buildTimeline(repo: Repo, e: EpisodeEntry, opts: TimelineOptions
     },
     variation: { style: opts.style, palette: 0, camera: "push", light: "day" },
   };
+  return { timeline, placed };
 }

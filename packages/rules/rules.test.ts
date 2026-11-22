@@ -73,6 +73,7 @@ describe("texts", () => {
   test("lang-complete: a missing text", () => bites("lang-complete", AR, (j) => { delete j.texts["s1.l2"]; }));
   test("text-chars: Arabic-Indic digits (123, never ١٢٣)", () => bites("text-chars", AR, (j) => { j.texts["verdict.card"] = "تحليل لـ ٤٠ دراسة"; }));
   test("text-chars: an invisible mark typed by a phone", () => bites("text-chars", AR, (j) => { j.texts["s1.l1"] += "‏"; }));
+  test("duration: a version longer than 90 s at the measured rate", () => bites("duration", "languages/ar-EG/language.json", (j) => { j.wordsPerSecond = 0.5; }));
   test("lengths: a first frame too long to read in a second", () => bites("lengths", AR, (j) => { j.texts["hook.h2.frame"] = "جرب ده تلات ثواني بس وانت قاعد مكانك"; }));
   test("no-author-name: the author named in a line", () => bites("no-author-name", AR, (j) => { j.texts["book.l1"] = "جين إكزامبل بتقول إن العادة دي بتقلل التوتر."; }));
   test("numbers: a figure that no cited source holds", () => bites("numbers", AR, (j) => { j.texts["verdict.card"] = "تحليل لـ 57 دراسة"; }));

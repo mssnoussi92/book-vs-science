@@ -31,6 +31,15 @@ Ce qui reste fragile, dit franchement. Premier jet (2026-11-22, conception) ; co
 - **Rhubarb Lip Sync** est mal adapté à l'arabe (mesuré sur deux prises égyptiennes : « aa » 3 % des images, lèvres
   arrondies jusqu'à 20 %) ; d'autres moteurs sont comparés à l'aveugle.
 - La lisibilité d'une bouche dessinée sur un téléphone n'est vérifiée que sur planche.
+- **Bouches du pilote** : moteur « hybride » (formes tirées des lettres, réparties sur la durée réelle de chaque
+  réplique, bouche fermée là où la voix se tait) ; ni Rhubarb ni moteur au volume pur n'ont encore été comparés à
+  l'aveugle, et les mots des sous-titres sont répartis selon leurs lettres, pas sur les temps de Whisper.
+- **Durée** : le pilote, écrit pour 58-60 s au débit estimé (2,6 mots/s), dure 67-69 s avec sa voix (2,1 mots/s mesurés,
+  après des pauses ramenées à 0,35 s et une voix 1,1 fois plus rapide) ; le script validé n'a pas été raccourci (une
+  réplique changée périme sa validation). Le débit de l'égyptien est recalé et la règle `duration` avertit avant la voix.
+- **Découpe des prises** : une prise se coupe aux silences ; quand une pause voulue par le script dure presque autant
+  qu'une coupe (pilote : 0,84 s contre 0,92 s), Whisper (small) vérifie que chaque morceau est bien sa réplique ; une
+  réplique très courte se reconnaît mal (« بطّل زعل بقى! » à 0,48).
 
 ## Coût et dépendances
 
