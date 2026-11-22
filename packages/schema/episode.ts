@@ -26,8 +26,10 @@ export const Line = z.strictObject({
   look: Look.optional(),
   /** A line that states a finding names the claims (verdict assessments) it rests on. */
   claims: z.array(NodeId).default([]),
-  /** "inner": the character speaks to himself (subtitled as a thought, said under the breath). */
-  voice: z.enum(["spoken", "inner"]).default("spoken"),
+  /** "inner": the character speaks to himself (subtitled as a thought, said under the breath). "over": the narrator
+   *  over a scene, only where the scene turns (before its first take, at a rewind): the owner's pilot review, the scene
+   *  was hard to follow with no voice to set it and to announce the second take. */
+  voice: z.enum(["spoken", "inner", "over"]).default("spoken"),
   cut: Cut,
 });
 

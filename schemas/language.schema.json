@@ -164,6 +164,17 @@
             },
             "draft": {
               "type": "string"
+            },
+            "takes": {
+              "default": [
+                "1",
+                "2"
+              ],
+              "minItems": 2,
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             }
           },
           "required": [

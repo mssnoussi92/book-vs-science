@@ -72,6 +72,10 @@
     },
     "bookSays": "The book says",
     "scienceSays": "Science says",
-    "draft": "DRAFT"
+    "draft": "DRAFT",
+    "takes": [
+      "First time",
+      "Second time"
+    ]
   }
 }

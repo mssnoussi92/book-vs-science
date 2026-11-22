@@ -25,7 +25,11 @@ export const duration: Rule = {
           const s = tl.frames / tl.fps;
           if (s > longest.s) longest = { s, hook: h.id };
         }
-        if (longest.s > LIMIT) out.push({ rule: "duration", severity: "error", where: where(e.dir, "hooks"), message: `${code} : ${longest.s.toFixed(0)} s avec ${longest.hook} (${LIMIT} s au plus)` });
+        // An error only for a language that is voiced (every speaker of the cast has a voice in it): a translation
+        // nobody records yet is only warned about (the English of the pilot, at an estimated rate).
+        const speakers = [e.episode.cast.narrator, ...e.episode.cast.characters];
+        const voiced = speakers.every((s) => repo.characters.get(s)?.voices[code]);
+        if (longest.s > LIMIT) out.push({ rule: "duration", severity: voiced ? "error" : "warn", where: where(e.dir, "hooks"), message: `${code} : ${longest.s.toFixed(0)} s avec ${longest.hook} (${LIMIT} s au plus)${voiced ? "" : " — langue sans voix pour l'instant"}` });
         else if (longest.s > TARGET) out.push({ rule: "duration", severity: "warn", where: where(e.dir, "hooks"), message: `${code} : ${longest.s.toFixed(0)} s estimées avec ${longest.hook} (${TARGET} s visées) : raccourcir avant la voix` });
       }
     }

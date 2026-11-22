@@ -5,5 +5,12 @@
   "fictional": true,
   "names": {
     "ar-EG": "هنا"
+  },
+  "voices": {
+    "ar-EG": {
+      "engine": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Leda"
+    }
   }
 }

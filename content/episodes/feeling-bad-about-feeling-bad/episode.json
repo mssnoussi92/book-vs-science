@@ -173,6 +173,15 @@
       "outcome": "a-bit-better",
       "beats": [
         {
+          "kind": "line",
+          "id": "n1",
+          "speaker": "adasa",
+          "emotion": "neutral",
+          "intensity": 0.4,
+          "delivery": "setting the scene, calm, a little suspense on « والرد لسه واصل »",
+          "voice": "over"
+        },
+        {
           "kind": "action",
           "id": "a1",
           "who": "karim",
@@ -280,8 +289,17 @@
             "id": "phone",
             "state": "rejected"
           },
-          "caption": true,
+          "caption": false,
           "seconds": 2.2
+        },
+        {
+          "kind": "line",
+          "id": "n2",
+          "speaker": "adasa",
+          "emotion": "warm",
+          "intensity": 0.5,
+          "delivery": "announcing the replay, light, a small stress on « مش هيلوم نفسه »",
+          "voice": "over"
         },
         {
           "kind": "line",

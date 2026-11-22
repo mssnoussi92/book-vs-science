@@ -33,6 +33,7 @@
 
 ## 2. Scène s1 · office · replay-twice · se termine a-bit-better
 
+- **Adasa** *(neutral, setting the scene, calm, a little suspense on « والرد لسه واصل »)* : This is Karim. He sent a proposal at work… and the answer just came in.  `6.3 s`
 - *Karim : phone rejected, cloud, sad (0.8 s · jusqu'à la fin de la partie)*
 - **Karim** *(sad, to himself, deflated, reading the message on his phone)* : The manager turned down the proposal…  `2.6 s`
 - **Karim** *(annoyed, to himself, scolding himself under his breath)* : You're upset over something this small?  `2.6 s`
@@ -42,7 +43,7 @@
 - **Nour** *(curious, light, friendly, passing by his desk)* : Karim? What's wrong?  `1.4 s`
 - **Karim** *(ashamed, too fast, a forced smile, hiding it)* : Nothing… I'm fine.  `1.4 s`
 - *Karim : phone rejected, rewind (2.2 s)*
-  - à l'écran, sans voix : The book says: accept it, no blame… one more time?
+- **Adasa** *(warm, announcing the replay, light, a small stress on « مش هيلوم نفسه »)* : Let's play it again… but this time Karim won't blame himself.  `4.7 s`
 - **Karim** *(sad, to himself, slow, honest, no drama; a small breath before « تعبت فيه »)* : Yeah, I'm upset… and that's normal. I worked hard on it.  `4.7 s`
 - *Karim : breathe, sad (1 s)*
 - **Nour** *(curious, light, friendly, same as before)* : Karim? What's wrong?  `1.4 s`
@@ -73,5 +74,5 @@
 - *orientation* : If this feeling lasts for weeks and affects your life, talk to a psychologist.
 
 ---
-Durée estimée : **80 s** (débit 2.5 mots/s, recalibré sur la première prise)
-Empreinte du script en : **5f06d5**
+Durée estimée : **91 s** (débit 2.5 mots/s, recalibré sur la première prise)
+Empreinte du script en : **318da2**
