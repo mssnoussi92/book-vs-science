@@ -197,7 +197,8 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
     cast: { narrator: ep.cast.narrator, characters: ep.cast.characters },
     cards: {
       firstFrame,
-      ...(book ? { tease: { f0: h0, f1: b0, title: bookTitle } } : {}),
+      // the pill waits for the first frame's text to go: one text at a time at the top
+      ...(book ? { tease: { f0: firstFrame.f1, f1: b0, title: bookTitle } } : {}),
       book: { f0: b0, f1: v0, idea: text("book.card"), title: bookTitle, author: book?.authorWritten[opts.lang] ?? book?.author ?? "" },
       study: { f0: studyFrom, f1: studyTo, line: text("verdict.card"), ref, design: src?.design ?? "", ...(ep.verdict.applicability === "written" ? { applies: pack.applicabilityLine } : {}) },
       badge: { f: v0 + fr(BADGE_DELAY), badge: ep.verdict.badge, label: pack.labels.badge[ep.verdict.badge], certainty: pack.labels.certainty[ep.verdict.certainty] },

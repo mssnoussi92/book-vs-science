@@ -116,10 +116,14 @@ export const FirstFrame: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeT
   if (f >= c.f1) return null;
   const z = ZONES[aspect].firstFrame;
   const o = interpolate(f, [c.f1 - 8, c.f1], [1, 0], CLAMP);
+  // Alone at the top (the book pill waits for it to go), lines balanced, each on its own accent band with a shadow:
+  // read at a glance over any set (the owner's pilot review: the h5 text ran into the pill and the window).
   return (
     <foreignObject x={z.x} y={z.y} width={z.w} height={z.h} opacity={o}>
-      <div dir={tl.dir} style={{ fontFamily: FONT, fontSize: 70, fontWeight: 900, color: theme.ink, textAlign: "center", lineHeight: 1.15, WebkitTextStroke: `0px`, textShadow: `0 0 18px ${theme.paper}, 0 0 8px ${theme.paper}` }}>
-        <span style={{ background: theme.accent, padding: "4px 22px", borderRadius: 18, boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}>{c.text}</span>
+      <div dir={tl.dir} style={{ display: "flex", justifyContent: "center", alignItems: "flex-start", height: "100%" }}>
+        <div style={{ fontFamily: FONT, fontSize: 72, fontWeight: 900, color: theme.ink, textAlign: "center", lineHeight: 1.42, textWrap: "balance", maxWidth: z.w }}>
+          <span style={{ background: theme.accent, padding: "2px 24px", borderRadius: 18, boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone", boxShadow: "0 6px 0 rgba(23,24,29,0.85)" }}>{c.text}</span>
+        </div>
       </div>
     </foreignObject>
   );
