@@ -35,7 +35,7 @@ const Medallion: React.FC<PartProps & { who: string }> = ({ tl, f, who }) => {
  *  only, moved with position: relative: an inline-block would break the order of an English title inside Arabic. */
 const Words: React.FC<PartProps> = ({ tl, f }) => {
   const l = lineAt(tl, f);
-  if (!l) return null;
+  if (!l || f < tl.cards.firstFrame.f1) return null;     // the first frame's card is the only text while it is up
   const chunk = 8;
   const idx = Math.max(0, l.words.findIndex((w) => f >= w.f0 && f < w.f1));
   const start = l.words.length > chunk ? Math.floor(idx / chunk) * chunk : 0;
