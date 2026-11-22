@@ -30,19 +30,19 @@
 ## 2. Scène s1 · office · replay-twice · se termine a-bit-better
 
 - *Karim : phone rejected, cloud, sad (0.8 s · jusqu'à la fin de la partie)*
-- **Karim** *(sad, quietly, deflated, reading his phone)* : The proposal got rejected.  `1.9 s`
-- **Karim** *(annoyed, to himself, scolding himself under his breath)* : Upset over something this small?  `2.3 s`
+- **Karim** *(sad, to himself, deflated, reading the message on his phone)* : The manager turned down the proposal…  `2.6 s`
+- **Karim** *(annoyed, to himself, scolding himself under his breath)* : You're upset over something this small?  `2.6 s`
 - *Karim : spiral 2, anxious (0.8 s · jusqu'à son effet suivant)*
 - **Karim** *(angry, to himself, through his teeth, forcing it away)* : Stop being upset already!  `1.9 s`
 - *Karim : head-in-hands, spiral 3, ashamed (1 s · jusqu'à son effet suivant)*
-- **Nour** *(curious, light, friendly, passing by his desk)* : What's wrong?  `1.1 s`
-- **Karim** *(ashamed, too fast, hiding it)* : Nothing.  `0.7 s`
+- **Nour** *(curious, light, friendly, passing by his desk)* : Karim? What's wrong?  `1.4 s`
+- **Karim** *(ashamed, too fast, a forced smile, hiding it)* : Nothing… I'm fine.  `1.4 s`
 - *Karim : phone rejected, rewind (2.2 s)*
   - à l'écran, sans voix : The book says: accept it, no blame… one more time?
-- **Karim** *(sad, to himself, slow, honest, no drama)* : Yeah, I'm upset… and that's normal.  `2.6 s`
+- **Karim** *(sad, to himself, slow, honest, no drama; a small breath before « تعبت فيه »)* : Yeah, I'm upset… and that's normal. I worked hard on it.  `4.7 s`
 - *Karim : breathe, sad (1 s)*
-- **Nour** *(curious, light, friendly, same as before)* : What's wrong?  `1.1 s`
-- **Karim** *(sad, a little sad but steady, already planning)* : A bit upset. I'll fix the proposal and send it again.  `4.7 s`
+- **Nour** *(curious, light, friendly, same as before)* : Karim? What's wrong?  `1.4 s`
+- **Karim** *(sad, a little sad but steady, open with her, already planning)* : A bit upset… the manager turned down the proposal. I'll fix it and send it again.  `6.7 s`
 
 ## 3. Ce que dit le livre
 
@@ -61,7 +61,6 @@
 - **Adasa** *(neutral, calm, a hint of a smile on the last words)* : And « stop being upset »? It probably doesn't lower the feeling, and the thought you push away tends to come back more, later.  `9.1 s`
 - *Karim : thought-bubble white-bear (sur le mot 11 de l3 · seulement avec h1)*
 - *Karim : thought-bubble phone-rejected (sur le mot 11 de l3 · seulement avec h2, h3, h4, h5)*
-- **Adasa** *(neutral, honest, matter-of-fact)* : And most studies come from the US and Europe, not from Egypt.  `5.0 s`
 
 ## 5. À retenir (suggestion à faible risque)
 
@@ -70,5 +69,5 @@
 - *orientation* : If this feeling lasts for weeks and affects your life, talk to a psychologist.
 
 ---
-Durée estimée : **79 s** (débit 2.5 mots/s, recalibré sur la première prise)
-Empreinte du script en : **2b69d5**
+Durée estimée : **80 s** (débit 2.5 mots/s, recalibré sur la première prise)
+Empreinte du script en : **2ff76a**

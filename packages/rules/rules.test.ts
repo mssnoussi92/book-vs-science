@@ -90,6 +90,12 @@ describe("texts", () => {
   });
   test("generalizations: the narrator generalizes about a group", () => bites("generalizations", AR, (j) => { j.texts["book.l1"] = "الكتاب بيقول إن الستات كلهم متوترين."; }));
   test("applicability: no Arab sample, and nobody says it", () => bites("applicability", AR, (j) => { j.texts["verdict.nuance"] = "الأثر صغير."; }));
+  test("applicability: written under the study card, no line needs to say it", () => {
+    const root = copy();
+    edit(root, AR, (j) => { j.texts["verdict.nuance"] = "الأثر صغير."; });
+    edit(root, EP, (j) => { j.verdict.applicability = "written"; });
+    assert.deepEqual(errors(check(root)).filter((i) => i.rule === "applicability"), []);
+  });
 });
 
 describe("book", () => {

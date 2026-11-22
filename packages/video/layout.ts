@@ -14,7 +14,7 @@ export const ZONES: Record<Aspect, { firstFrame: Box; tease: Box; badge: Box; st
     firstFrame: { x: 110, y: 322, w: 800, h: 190 },
     tease: { x: 290, y: 256, w: 500, h: 56 },
     badge: { x: 340, y: 270, w: 400, h: 330 },
-    study: { x: 120, y: 620, w: 780, h: 230 },
+    study: { x: 120, y: 620, w: 780, h: 280 },
     book: { x: 120, y: 280, w: 780, h: 330 },
     subtitles: { x: 140, y: 1250, w: 760, h: 220 },
     card: { x: 120, y: 640, w: 780, h: 300 },

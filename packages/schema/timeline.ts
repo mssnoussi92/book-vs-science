@@ -58,7 +58,7 @@ export const Timeline = z.strictObject({
     /** From the first image to the book card: the book and a hidden badge, so that a verdict is promised. */
     tease: z.strictObject({ f0: Frame, f1: Frame, title: z.string() }).optional(),
     book: z.strictObject({ f0: Frame, f1: Frame, idea: z.string(), title: z.string(), author: z.string() }),
-    study: z.strictObject({ f0: Frame, f1: Frame, line: z.string(), ref: z.string(), design: z.string() }),
+    study: z.strictObject({ f0: Frame, f1: Frame, line: z.string(), ref: z.string(), design: z.string(), applies: z.string().optional() }),
     badge: z.strictObject({ f: Frame, badge: Badge, label: z.string(), certainty: z.string() }),
     nuance: Card.optional(),
     orientation: Card.optional(),

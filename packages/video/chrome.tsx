@@ -76,6 +76,7 @@ export const StudyCard: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTh
         <div style={{ fontFamily: FONT, color: theme.cardInk, textAlign: "center", lineHeight: 1.25 }}>
           <div dir={tl.dir} style={{ fontSize: 44, fontWeight: 800 }}>{s.line}</div>
           <div style={{ fontSize: 28, fontWeight: 600, marginTop: 14, opacity: 0.8 }}><bdi dir="ltr">{s.ref}</bdi></div>
+          {s.applies ? <div dir={tl.dir} style={{ fontSize: 32, fontWeight: 800, marginTop: 12, color: theme.accent }}>{s.applies}</div> : null}
         </div>
       </foreignObject>
     </Panel>

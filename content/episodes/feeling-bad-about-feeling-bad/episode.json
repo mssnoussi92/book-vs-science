@@ -167,8 +167,9 @@
           "speaker": "karim",
           "emotion": "sad",
           "intensity": 0.5,
-          "delivery": "quietly, deflated, reading his phone",
-          "look": "phone"
+          "delivery": "to himself, deflated, reading the message on his phone",
+          "look": "phone",
+          "voice": "inner"
         },
         {
           "kind": "line",
@@ -236,7 +237,7 @@
           "speaker": "karim",
           "emotion": "ashamed",
           "intensity": 0.5,
-          "delivery": "too fast, hiding it",
+          "delivery": "too fast, a forced smile, hiding it",
           "look": "away"
         },
         {
@@ -260,7 +261,7 @@
           "speaker": "karim",
           "emotion": "sad",
           "intensity": 0.4,
-          "delivery": "to himself, slow, honest, no drama",
+          "delivery": "to himself, slow, honest, no drama; a small breath before « تعبت فيه »",
           "gesture": "hand-on-chest",
           "look": "down",
           "voice": "inner"
@@ -288,7 +289,7 @@
           "speaker": "karim",
           "emotion": "sad",
           "intensity": 0.3,
-          "delivery": "a little sad but steady, already planning",
+          "delivery": "a little sad but steady, open with her, already planning",
           "look": "other"
         }
       ]
@@ -739,17 +740,10 @@
           "h5"
         ],
         "seconds": 1.2
-      },
-      {
-        "kind": "line",
-        "id": "l4",
-        "speaker": "adasa",
-        "emotion": "neutral",
-        "delivery": "honest, matter-of-fact",
-        "look": "viewer"
       }
     ],
-    "nuanceSpoken": false
+    "nuanceSpoken": false,
+    "applicability": "written"
   },
   "takeaway": {
     "claims": [
