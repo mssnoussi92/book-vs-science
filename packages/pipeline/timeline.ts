@@ -187,9 +187,10 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
     speak("takeaway.orientation", "takeaway", ep.cast.narrator, "warm");
     orientation = { f0: o0, f1: f, text: text("takeaway.orientation") };
   }
+  // what holds in the takeaway ends where the share card begins: one card at a time (owner's pilot review)
+  holdTo(tHeld, f);
   let share: Timeline["cards"]["share"];
   if (lang.texts["share"]) { share = { f0: f, f1: f + fr(SHARE), text: text("share") }; f += fr(SHARE); }
-  holdTo(tHeld, f);
   parts.push({ kind: "takeaway", scope: "takeaway", f0: t0, f1: f });
 
   // The study card comes with the first line that rests on it (never on a claim it does not support), until the
