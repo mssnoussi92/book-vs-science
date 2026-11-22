@@ -30,7 +30,9 @@ export const duration: Rule = {
         const speakers = [e.episode.cast.narrator, ...e.episode.cast.characters];
         const voiced = speakers.every((s) => repo.characters.get(s)?.voices[code]);
         if (longest.s > LIMIT) out.push({ rule: "duration", severity: voiced ? "error" : "warn", where: where(e.dir, "hooks"), message: `${code} : ${longest.s.toFixed(0)} s avec ${longest.hook} (${LIMIT} s au plus)${voiced ? "" : " — langue sans voix pour l'instant"}` });
-        else if (longest.s > TARGET) out.push({ rule: "duration", severity: "warn", where: where(e.dir, "hooks"), message: `${code} : ${longest.s.toFixed(0)} s estimées avec ${longest.hook} (${TARGET} s visées) : raccourcir avant la voix` });
+        // A version the owner already validated as a video kept its length by his choice (the pilot, 78 s): no more
+        // « shorten before the voice ».
+        else if (longest.s > TARGET && !e.approvals.video?.[code]) out.push({ rule: "duration", severity: "warn", where: where(e.dir, "hooks"), message: `${code} : ${longest.s.toFixed(0)} s estimées avec ${longest.hook} (${TARGET} s visées) : raccourcir avant la voix` });
       }
     }
     return out;

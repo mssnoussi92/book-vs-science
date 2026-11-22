@@ -84,6 +84,14 @@ describe("texts", () => {
     edit(root, "characters/omar/character.json", (j) => { delete j.voices; });
     assert.deepEqual(errors(check(root)).filter((i) => i.rule === "duration"), []);
   });
+  test("duration: a version longer than the minute is warned about, until the owner validates its video", () => {
+    const root = copy();
+    edit(root, "languages/ar-EG/language.json", (j) => { j.wordsPerSecond = 0.8; });
+    const warned = (r: string) => check(r).filter((i) => i.rule === "duration" && i.severity === "warn" && i.message.startsWith("ar-EG"));
+    assert.equal(warned(root).length, 1);
+    writeFileSync(join(root, "content/episodes/example/approvals.json"), JSON.stringify({ video: { "ar-EG": { on: "2026-11-22", words: "je valide cette version", via: "conversation", hash: "0".repeat(64) } } }));
+    assert.equal(warned(root).length, 0);
+  });
   test("lengths: a first frame too long to read in a second", () => bites("lengths", AR, (j) => { j.texts["hook.h2.frame"] = "جرب ده تلات ثواني بس وانت قاعد مكانك"; }));
   test("no-author-name: the author named in a line", () => bites("no-author-name", AR, (j) => { j.texts["book.l1"] = "جين إكزامبل بتقول إن العادة دي بتقلل التوتر."; }));
   test("numbers: a figure that no cited source holds", () => bites("numbers", AR, (j) => { j.texts["verdict.card"] = "تحليل لـ 57 دراسة"; }));
