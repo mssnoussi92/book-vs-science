@@ -71,10 +71,10 @@ texte de publication) : elle attend son « je valide » par une question à choi
 | Sujet | Choix |
 |---|---|
 | Langue | arabe égyptien ; textes par langue (`lang/<code>.json`), anglais et français prévus |
-| Pilote | « se sentir mal de se sentir mal » (Manson), ⚖️ sur deux affirmations : se juger d'être mal aggrave ; accepter vaut mieux que lutter (pas mieux que d'autres bonnes stratégies) |
+| Pilote | « se sentir mal de se sentir mal » (Manson), ⚖️ sur deux affirmations : se juger d'être mal aggrave ; accepter vaut mieux que lutter (pas mieux que d'autres bonnes stratégies) ; **sources (387a76) et script (ar-EG 34e847, en 2b69d5) validés le 2026-11-22**, après la relecture du contradicteur : nuance écrite « تقبل الإحساس… مش الموقف », Wang 2020 à l'écran (`reports/feeling-bad-about-feeling-bad/challenge.md`) |
 | Narrateur | la loupe « عدسة » ; **voix Gemini au pilote, voix humaine avant la première publication** (règle YouTube « AI personas » sur la santé et le bien-être) |
 | Personnages | Nour et Karim, amis et collègues (ni couple, ni frère et sœur), rig SVG tiré des bonshommes `Stick` de quran-themes-demo ; **apparence des trois validée sur planche le 2026-11-22** (`npx remotion still Sheet-<qui>`), **Nour cheveux attachés** (son choix, pas le hijab) |
-| Voix | Gemini 3.8 Flash TTS, 2 requêtes par épisode (Nour + Karim, puis le narrateur), modèle épinglé, grand livre du quota ; **clé provisoire partagée avec quran-themes-demo** (3 requêtes par jour au plus), clé propre à la chaîne plus tard |
+| Voix | Gemini 3.8 Flash TTS, **une voix par requête** (une requête par personnage et une pour le narrateur, soit 3 au pilote ; son choix du 2026-11-22 : depuis le 5-6 novembre, Gemini mélange les deux voix d'une requête à deux locuteurs, forum Google sans correctif ; `bvs voice plan`, mode `dialogue` gardé pour quand ce sera réparé), une réplique dite deux fois avec les mêmes mots demandée une fois, modèle épinglé, grand livre du quota ; **clé provisoire partagée avec quran-themes-demo** (3 requêtes par jour au plus), clé propre à la chaîne plus tard |
 | Styles | 3 au pilote (cartoon, typographie animée, écran partagé) ; en production **un style maison** choisi après le pilote, les autres en essais mesurés |
 | Badge | ✅ « صح » · ⚖️ « مش بالظبط » · ❌ « غلط » · ❓ « الأدلة مش كفاية » |
 | YouTube | **vidéos longues + shorts**, chaque short relié à sa vidéo longue (« vidéo associée », à la main dans Studio : absent de l'API) ; forme de la vidéo longue décidée après le pilote |
