@@ -92,11 +92,25 @@ def main() -> None:
     p.add_argument("wav", type=Path)
     p.add_argument("--json", type=Path, help="the take's description (default: next to the wav)")
     p.add_argument("--out", type=Path, help="default: <wav without .wav>.split.json")
+    p.add_argument("--bounds", help="lines placed by hand, « start-end » in seconds, comma-separated, one per turn: when the "
+                   "gaps mislead the split (whispered lines, breaths left between turns); checked by check_split.py after")
     a = p.parse_args()
     take = json.loads((a.json or a.wav.with_suffix(".json")).read_text(encoding="utf-8"))
     turns = take["turns"]
     x, rate = read(a.wav)
-    result = split(x, rate, len(turns))
+    if a.bounds:
+        pairs = [tuple(float(v) for v in b.split("-")) for b in a.bounds.split(",")]
+        if len(pairs) != len(turns):
+            raise SystemExit(f"{len(pairs)} bounds for {len(turns)} lines")
+        auto = split(x, rate, len(turns))
+        step = rate / FPS
+        env_all = np.sqrt(np.convolve(x ** 2, np.ones(int(step)) / int(step), mode="same"))
+        peak = float(np.percentile(env_all, 99)) or 1.0
+        lines = [{"start": s0, "end": e0, "envelope": [round(min(1.0, float(env_all[int(s0 * rate + k * step)]) / peak), 3) for k in range(int((e0 - s0) * FPS))]} for s0, e0 in pairs]
+        # Never « ok » by hand: the transcript check (check_split.py) has to accept it.
+        result = {"ok": False, "why": "lines placed by hand (--bounds): to be checked by check_split.py", "manual": True, "threshold_db": auto["threshold_db"], "lines": lines}
+    else:
+        result = split(x, rate, len(turns))
     if result.get("lines"):
         for t, line in zip(turns, result["lines"]):
             line["keys"] = t["keys"]
