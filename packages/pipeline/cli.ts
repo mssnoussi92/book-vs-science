@@ -6,6 +6,8 @@
 //   bvs approve <episode> sources --words "…" [--via <url>]
 //   bvs approve <episode> script --lang ar-EG --words "…" [--via <url>]
 //   bvs review <episode>                     writes review/<id>/sources.md and script.<lang>.md (the owner's pages)
+//   bvs timeline <episode> --draft [--lang ar-EG] [--hook h1]
+//                                            the timeline the styles draw (draft: estimated durations, no voice)
 //   bvs sources verify [<episode>|--all] [--live] [--write]
 //                                            checks each cited DOI (Crossref, OpenAlex, Europe PMC); --write saves .verify.json
 //                                            records the OWNER's approval, only after he gave it (CLAUDE.md)
@@ -89,6 +91,23 @@ switch (cmd) {
     if (!e) { console.error(`épisode inconnu : ${args[0] ?? "(aucun)"}`); process.exit(2); }
     const { writeReview } = await import("./review.ts");
     for (const p of writeReview(repo, e)) console.log(p.slice(ROOT.length + 1));
+    break;
+  }
+  case "timeline": {
+    // bvs timeline <episode> [--lang ar-EG] [--hook h1] --draft : estimated durations, no voice (a watermarked draft)
+    const repo = loadRepo(ROOT);
+    const e = repo.episodes.find((x) => x.id === args[0]);
+    if (!e) { console.error(`épisode inconnu : ${args[0] ?? "(aucun)"}`); process.exit(2); }
+    if (!has("draft")) { console.error("sans prise de voix, seul --draft est possible pour l'instant"); process.exit(2); }
+    const { buildTimeline } = await import("./timeline.ts");
+    const { Timeline } = await import("../schema/index.ts");
+    const code = flag("lang") ?? e.episode.sourceLang;
+    const tl = Timeline.parse(buildTimeline(repo, e, { lang: code, hook: flag("hook"), style: flag("style") ?? "cartoon", draft: true }));
+    const { mkdirSync } = await import("node:fs");
+    const dir = join(ROOT, "assets/ep", e.id, code);
+    mkdirSync(dir, { recursive: true });
+    writeFileSync(join(dir, "timeline.json"), JSON.stringify(tl) + "\n");
+    console.log(`assets/ep/${e.id}/${code}/timeline.json : ${(tl.frames / tl.fps).toFixed(1)} s, hook ${tl.hook}, ${tl.lines.length} répliques (brouillon)`);
     break;
   }
   case "sources": {

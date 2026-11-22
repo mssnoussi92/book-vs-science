@@ -29,6 +29,14 @@ export const LanguagePack = z.strictObject({
   }),
   /** The sentence said or written when no study has a sample from the Middle East or North Africa. */
   applicabilityLine: z.string(),
+  /** Words the shell writes on screen in this language: the badge, the certainty, the study designs. */
+  labels: z.strictObject({
+    badge: z.strictObject({ confirmed: z.string(), nuanced: z.string(), contradicted: z.string(), unknown: z.string() }),
+    certainty: z.strictObject({ high: z.string(), moderate: z.string(), low: z.string(), "very-low": z.string() }),
+    bookSays: z.string(),
+    scienceSays: z.string(),
+    draft: z.string(),
+  }),
 }).meta({ id: "LanguagePack" });
 
 /** characters/<id>/character.json : every character is invented; there is no field to base one on a real person. */
