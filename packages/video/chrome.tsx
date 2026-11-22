@@ -6,7 +6,7 @@ import { Easing, interpolate, useCurrentFrame } from "remotion";
 import type { Timeline } from "../schema/timeline.ts";
 import { FONT } from "./fonts.ts";
 import { ZONES, type Aspect, type Box } from "./layout.ts";
-import { lineAt } from "./state.ts";
+import { lineAt, readingChunks } from "./state.ts";
 
 export type ChromeTheme = { ink: string; paper: string; accent: string; card: string; cardInk: string };
 export const DEFAULT_THEME: ChromeTheme = { ink: "#17181d", paper: "#f6f3ec", accent: "#e0a83a", card: "#fffaf0", cardInk: "#17181d" };
@@ -159,7 +159,7 @@ const TextCard: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme; car
       </g>
       <foreignObject x={z.x + 30} y={z.y + 100} width={z.w - 60} height={z.h - 110}>
         {/* A short card (a nuance in four words) is read at a glance: larger. */}
-        <div dir={tl.dir} style={{ fontFamily: FONT, fontSize: card.text.length <= 32 ? 58 : 40, fontWeight: 800, color: theme.cardInk, textAlign: "center", lineHeight: 1.3 }}>{card.text}</div>
+        <div dir={tl.dir} style={{ fontFamily: FONT, fontSize: card.text.length <= 32 ? 58 : 40, fontWeight: 800, color: theme.cardInk, textAlign: "center", lineHeight: 1.3, textWrap: "balance" }}>{card.text}</div>
       </foreignObject>
     </Panel>
   );
@@ -173,37 +173,52 @@ export const Caption: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeThem
   const c = tl.actions.find((a) => a.caption && f >= a.f0 && f < a.f1);
   if (!c) return null;
   const z = ZONES[aspect].subtitles;
+  // The same plate as the subtitles (a highlight under each line hid the bowl of a final « ل », pilot review), with the
+  // accent as its edge: a text shown, not said.
   return (
     <foreignObject x={z.x} y={z.y} width={z.w} height={z.h} opacity={fade(f, c.f0, c.f1, 4)}>
-      <div dir={tl.dir} style={{ fontFamily: FONT, fontSize: 48, fontWeight: 900, color: theme.ink, textAlign: "center", lineHeight: 1.35 }}>
-        <span style={{ background: theme.accent, padding: "2px 18px", borderRadius: 14, boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}>{c.caption}</span>
+      <div dir={tl.dir} style={{ display: "flex", justifyContent: "center", alignItems: "flex-start", height: "100%" }}>
+        <div style={{ display: "inline-block", maxWidth: z.w, padding: "10px 26px 12px", borderRadius: 24, background: "rgba(20,22,30,0.84)", border: `4px solid ${theme.accent}`, color: "#ffffff", fontFamily: FONT, fontSize: 50, fontWeight: 800, textAlign: "center", lineHeight: 1.4, textWrap: "balance" }}>{c.caption}</div>
       </div>
     </foreignObject>
   );
 };
 
-/** The current line, the word being said in the accent colour. Whole words in normal flow (never inline-block): an
- *  English title inside an Arabic line keeps its order (review T2). */
+/** Who speaks, by a colour under the subtitle (the narrator's blue, Karim's orange, Nour's teal). */
+const SPEAKER: Record<string, string> = { adasa: "#5b6bd0", karim: "#e07a3a", nour: "#2f9c95" };
+
+/** The current line on a plate, cut for reading, the word being said in the accent colour. Whole words in normal flow
+ *  (never inline-block): an English title inside an Arabic line keeps its order (review T2). A thought (said to
+ *  oneself) is on a pale plate with a dashed edge and the dots of a thought bubble: never read as said aloud. */
 export const Subtitles: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme }> = ({ tl, aspect, theme }) => {
   const f = useCurrentFrame();
   const l = lineAt(tl, f);
   const z = ZONES[aspect].subtitles;
-  if (!l) return null;
-  const chunk = 9;
-  const idx = Math.max(0, l.words.findIndex((w) => f >= w.f0 && f < w.f1));
-  const start = l.words.length > chunk ? Math.floor(idx / chunk) * chunk : 0;
-  const shown = l.words.slice(start, start + chunk);
+  if (!l || !l.words.length) return null;
+  let idx = l.words.findIndex((w) => f >= w.f0 && f < w.f1);
+  if (idx < 0) idx = f < l.words[0]!.f0 ? 0 : l.words.length - 1;
+  const [a, b] = readingChunks(l.words).find(([s, e]) => idx >= s && idx < e) ?? [0, l.words.length];
+  const shown = l.words.slice(a, b);
+  const inner = !!l.inner;
+  const plate: React.CSSProperties = inner
+    ? { background: "rgba(255,255,255,0.94)", color: "#2b3152", border: "4px dashed #7a86c9" }
+    : { background: "rgba(20,22,30,0.80)", color: "#ffffff", borderBottom: `6px solid ${SPEAKER[l.speaker] ?? theme.accent}` };
   return (
     <foreignObject x={z.x} y={z.y} width={z.w} height={z.h}>
-      {/* Said to oneself: paler words, and the dots of a thought before them. */}
-      <div dir={tl.dir} style={{ fontFamily: FONT, fontSize: 50, fontWeight: 800, color: l.inner ? "#d6dbff" : "#ffffff", textAlign: "center", lineHeight: 1.3, WebkitTextStroke: `9px ${theme.ink}`, paintOrder: "stroke fill" }}>
-        {l.inner ? <span style={{ WebkitTextStroke: "0px", color: theme.ink, opacity: 0.8 }}>{"∘ ° "}</span> : null}
-        {shown.map((w, i) => (
-          <span key={i}>
-            <span style={{ color: start + i === idx ? theme.accent : l.inner ? "#d6dbff" : "#ffffff" }}>{w.w}</span>
-            {i < shown.length - 1 ? " " : ""}
-          </span>
-        ))}
+      <div dir={tl.dir} style={{ display: "flex", justifyContent: "center", alignItems: "flex-start", height: "100%" }}>
+        <div style={{ ...plate, display: "inline-block", maxWidth: z.w, padding: "10px 26px 12px", borderRadius: 24, fontFamily: FONT, fontSize: 54, fontWeight: 800, textAlign: "center", lineHeight: 1.35, textWrap: "balance" }}>
+          {inner ? (
+            <svg width={46} height={34} viewBox="0 0 46 34" style={{ verticalAlign: "middle", marginInlineEnd: 12 }}>
+              <circle cx={8} cy={26} r={5} fill="#7a86c9" /><circle cx={20} cy={17} r={7} fill="#7a86c9" /><circle cx={36} cy={10} r={9} fill="#7a86c9" />
+            </svg>
+          ) : null}
+          {shown.map((w, i) => (
+            <span key={i}>
+              <span style={{ color: a + i === idx ? (inner ? "#c0711e" : theme.accent) : undefined }}>{w.w}</span>
+              {i < shown.length - 1 ? " " : ""}
+            </span>
+          ))}
+        </div>
       </div>
     </foreignObject>
   );

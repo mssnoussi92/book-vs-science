@@ -4,5 +4,16 @@
   "role": "character",
   "kind": "biped",
   "fictional": true,
-  "names": { "ar-EG": "كريم", "en": "Karim" }
+  "names": {
+    "ar-EG": "كريم",
+    "en": "Karim"
+  },
+  "voices": {
+    "ar-EG": {
+      "engine": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Achird",
+      "castOn": "2026-11-22"
+    }
+  }
 }

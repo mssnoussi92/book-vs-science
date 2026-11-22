@@ -52,3 +52,44 @@ export function propAt(tl: Timeline, who: string, f: number) {
 
 /** Who is on stage in a part: the characters in scenes and the hook, the narrator in the book, verdict, takeaway. */
 export const speakingNow = (tl: Timeline, f: number) => lineAt(tl, f)?.speaker;
+
+/** A line cut for reading: after a sentence or clause end (. ، ؟ ! … : ؛), at most MAX_WORDS a screen, a lone last
+ *  word kept with the screen before it. The words keep their punctuation (the owner's pilot review: « اقبله » without
+ *  its full stop read as a fragment). */
+const MAX_WORDS = 7;
+export function readingChunks(words: readonly { w: string }[]): [number, number][] {
+  const out: [number, number][] = [];
+  const ends = (w: string) => /[.!?؟،,…:؛]»?$/u.test(w);   // a closing quote alone is not an end: « بطّل زعل» دي؟ »
+  let start = 0;
+  for (let i = 0; i < words.length; i++) {
+    const n = i - start + 1;
+    // At the limit, a clause that ends with the next word is kept whole (8 words, not « …على » then « حياتك، »).
+    const nextEnds = i + 1 < words.length && ends(words[i + 1]!.w) && n === MAX_WORDS;
+    if ((ends(words[i]!.w) && n >= 2) || (n >= MAX_WORDS && !nextEnds)) { out.push([start, i + 1]); start = i + 1; }
+  }
+  if (start < words.length) {
+    const last = out.at(-1);
+    if (last && words.length - start === 1 && last[1] - last[0] <= MAX_WORDS) last[1] = words.length;
+    else out.push([start, words.length]);
+  }
+  return out;
+}
+
+/** Who is on stage in a scene (the owner's pilot review: Karim's thoughts read as said to Nour, who was there from the
+ *  first image). The one who speaks first is there all along; another character comes in a little before their first
+ *  line of a take (the takes of a replayed scene are cut by its rewind) and stays to the end of that take. Outside the
+ *  scenes, everybody is. 0 = away, 1 = in place; in between, walking in. */
+export const ENTER = 24, WALK = 18;
+export function presence(tl: Timeline, who: string, f: number): number {
+  const part = partAt(tl, f);
+  if (part.kind !== "scene") return 1;
+  const lines = tl.lines.filter((l) => l.part === "scene" && l.f0 >= part.f0 && l.f0 < part.f1);
+  if (!lines.length || lines[0]!.speaker === who) return 1;
+  const cuts = tl.actions.filter((a) => a.fx?.id === "rewind" && a.f0 >= part.f0 && a.f0 < part.f1).map((a) => a.f0);
+  const bounds = [part.f0, ...cuts, part.f1];
+  const i = bounds.findIndex((b, j) => f >= b && f < (bounds[j + 1] ?? Infinity));
+  const [s, e] = [bounds[i]!, bounds[i + 1]!];
+  const mine = lines.find((l) => l.speaker === who && l.f0 >= s && l.f0 < e);
+  if (!mine) return 0;
+  return Math.max(0, Math.min(1, (f - (mine.f0 - ENTER)) / WALK));
+}

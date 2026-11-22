@@ -63,7 +63,8 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
 
   const speak = (key: string, part: TimedLine["part"], speaker: string, emotion: TimedLine["emotion"], extra: Partial<TimedLine> = {}) => {
     const t = text(key);
-    const ws = wordsOf(t);
+    // Shown words keep their punctuation (« اقبله… » , « صح؟ »): subtitles are read, not only heard.
+    const ws = t.normalize("NFC").split(/\s+/).filter((w) => /[\p{L}\p{N}]/u.test(w));
     const m = opts.takes?.get(key);
     const len = m ? Math.max(fr(m.end - m.start), 6) : Math.max(fr(secs(t)), 12);
     const f0 = f;
@@ -77,7 +78,9 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
     });
     const track = (mouths[speaker] ??= []);
     const quiet = (at: number) => !!m && (m.envelope[at - f0] ?? 0) < QUIET;
-    for (const wd of words) {
+    // Said to oneself: the mouth stays closed (a thought is not spoken to the person next to you).
+    if (extra.inner) words.length && track.push({ f: f0, v: "X" });
+    else for (const wd of words) {
       const vs = lettersToVisemes(wd.w);
       const step = Math.max(2, Math.floor((wd.f1 - wd.f0) / vs.length));
       vs.forEach((v, i) => { const at = wd.f0 + i * step; if (at < wd.f1) track.push({ f: at, v: quiet(at) ? "X" : v }); });

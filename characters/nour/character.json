@@ -4,5 +4,16 @@
   "role": "character",
   "kind": "biped",
   "fictional": true,
-  "names": { "ar-EG": "نور", "en": "Nour" }
+  "names": {
+    "ar-EG": "نور",
+    "en": "Nour"
+  },
+  "voices": {
+    "ar-EG": {
+      "engine": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Leda",
+      "castOn": "2026-11-22"
+    }
+  }
 }
