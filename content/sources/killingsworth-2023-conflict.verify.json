@@ -56,6 +56,16 @@
       "name": "support:happier-keep-rising",
       "result": "pass",
       "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:least-happy-20",
+      "result": "pass",
+      "detail": "full-text reading by dossier agent (money-happiness), PMC10013834, Significance statement"
+    },
+    {
+      "name": "support:levels-off-100k",
+      "result": "pass",
+      "detail": "full-text reading by dossier agent (money-happiness), PMC10013834, Results"
     }
   ],
   "found": {
