@@ -8,24 +8,28 @@
 - à l'écran : ما تفكرش في دب أبيض
 - dit : جرّب: ما تفكرش في دب أبيض… لحد آخر الفيديو.
 
-**h2 · cold-open** (muet, première image close-up) `2.0 s`
-- à l'écran : زعلان… وزعلان إنك زعلان؟
-- *كريم : head-in-hands, spiral 2, ashamed*
-- *كريم : cloud*
+**h2 · paradox** (عدسة, première image close-up) `3.6 s`
+- à l'écran : «بطّل زعل»… بترجّعه؟
+- dit : بتقول لنفسك «بطّل زعل»؟ ممكن تكون بترجّعه.
+- *كريم : fist-clench, spiral 2, annoyed*
 
-**h3 · book-promise** (عدسة, première image badge-tease) `3.6 s`
-- à l'écran : فن اللامبالاة… صح؟
-- dit : الكتاب ده بيقول: زعلان؟ وإيه يعني! صح؟
+**h3 · confession** (كريم, première image close-up) `3.1 s`
+- à l'écran : بزعل… وبعدين بزعل إني زعلت
+- dit : أنا بزعل… وبعدين بزعل إني زعلت.
+- *كريم : cloud, ashamed, regarde l'objectif*
+- *كريم : spiral 2*
 
-**h4 · question** (muet, première image close-up) `2.0 s`
-- à l'écran : زعل فوق زعل… إنت كمان؟
+**h4 · number** (عدسة, première image challenge) `4.5 s`
+- à l'écran : 31 دراسة… حصل إيه؟
+- dit : 31 دراسة طلبت من الناس يطردوا فكرة… حصل إيه؟
+- *كريم : thought-bubble white-bear, anxious*
+
+**h5 · question** (نور, première image text-over-scene) `3.1 s`
+- à l'écran : زعلان… وزعلان إنه زعلان. وإنت؟
+- dit : كريم زعلان… وزعلان إنه زعلان. وإنت؟
+- *نور : point, amused, regarde l'objectif*
 - *كريم : cloud, sad*
 - *كريم : spiral 2*
-- *نور : point, curious, regarde l'objectif*
-
-**h5 · pov** (muet, première image text-over-scene) `2.0 s`
-- à l'écran : لما تقول لنفسك: بطّل زعل!
-- *كريم : fist-clench, annoyed*
 
 ## 2. Scène s1 · office · replay-twice · se termine a-bit-better
 
@@ -59,8 +63,8 @@
 - **عدسة** *(neutral, calm, factual; a beat before « بس ده ارتباط »)* : اللي بيلوموا نفسهم على زعلهم، نفسيتهم غالبًا أوحش. بس ده ارتباط… ومش واضح مين بيجيب مين.  `7.9 s`
 - *عدسة : two-way (sur le mot 11 de l2)*
 - **عدسة** *(neutral, calm, a hint of a smile on the last words)* : و«بطّل زعل» دي؟ غالبًا ما بتقلّلش الزعل، والفكرة اللي بتطردها بترجعلك أكتر بعدين.  `6.4 s`
-- *كريم : thought-bubble white-bear (sur le mot 11 de l3 · seulement avec h1)*
-- *كريم : thought-bubble phone-rejected (sur le mot 11 de l3 · seulement avec h2, h3, h4, h5)*
+- *كريم : thought-bubble white-bear (sur le mot 11 de l3 · seulement avec h1, h4)*
+- *كريم : thought-bubble phone-rejected (sur le mot 11 de l3 · seulement avec h2, h3, h5)*
 
 ## 5. À retenir (suggestion à faible risque)
 
@@ -70,4 +74,4 @@
 
 ---
 Durée estimée : **68 s** (débit 2.1 mots/s, recalibré sur la première prise)
-Empreinte du script ar-EG : **30285f**
+Empreinte du script ar-EG : **d45295**

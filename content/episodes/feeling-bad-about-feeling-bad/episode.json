@@ -37,23 +37,49 @@
     },
     {
       "id": "h2",
-      "type": "cold-open",
-      "spokenBy": "none",
+      "type": "paradox",
+      "spokenBy": "narrator",
       "firstFrame": "close-up",
-      "emotion": "ashamed",
+      "emotion": "curious",
+      "claims": [
+        "c2"
+      ],
       "beats": [
         {
           "kind": "action",
           "id": "a1",
           "who": "karim",
-          "gesture": "head-in-hands",
+          "gesture": "fist-clench",
           "fx": {
             "id": "spiral",
             "params": {
               "size": 2
             }
           },
+          "emotion": "annoyed",
+          "look": "down",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "type": "confession",
+      "spokenBy": "karim",
+      "firstFrame": "close-up",
+      "emotion": "ashamed",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "fx": {
+            "id": "cloud",
+            "params": {}
+          },
           "emotion": "ashamed",
+          "look": "viewer",
           "seconds": 2.4
         },
         {
@@ -61,31 +87,60 @@
           "id": "a2",
           "who": "karim",
           "fx": {
-            "id": "cloud",
-            "params": {}
+            "id": "spiral",
+            "params": {
+              "size": 2
+            }
           },
           "seconds": 2.4
         }
       ]
     },
     {
-      "id": "h3",
-      "type": "book-promise",
-      "spokenBy": "narrator",
-      "firstFrame": "badge-tease",
-      "emotion": "curious",
-      "beats": []
-    },
-    {
       "id": "h4",
-      "type": "question",
-      "spokenBy": "none",
-      "firstFrame": "close-up",
+      "type": "number",
+      "spokenBy": "narrator",
+      "firstFrame": "challenge",
       "emotion": "curious",
+      "claims": [
+        "c2"
+      ],
       "beats": [
         {
           "kind": "action",
           "id": "a1",
+          "who": "karim",
+          "fx": {
+            "id": "thought-bubble",
+            "params": {
+              "image": "white-bear"
+            }
+          },
+          "emotion": "anxious",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "type": "question",
+      "spokenBy": "nour",
+      "firstFrame": "text-over-scene",
+      "emotion": "amused",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "gesture": "point",
+          "emotion": "amused",
+          "look": "viewer",
+          "seconds": 2.4
+        },
+        {
+          "kind": "action",
+          "id": "a2",
           "who": "karim",
           "fx": {
             "id": "cloud",
@@ -97,7 +152,7 @@
         },
         {
           "kind": "action",
-          "id": "a2",
+          "id": "a3",
           "who": "karim",
           "fx": {
             "id": "spiral",
@@ -105,33 +160,6 @@
               "size": 2
             }
           },
-          "seconds": 2.4
-        },
-        {
-          "kind": "action",
-          "id": "a3",
-          "who": "nour",
-          "gesture": "point",
-          "emotion": "curious",
-          "look": "viewer",
-          "seconds": 2.4
-        }
-      ]
-    },
-    {
-      "id": "h5",
-      "type": "pov",
-      "spokenBy": "none",
-      "firstFrame": "text-over-scene",
-      "emotion": "annoyed",
-      "beats": [
-        {
-          "kind": "action",
-          "id": "a1",
-          "who": "karim",
-          "gesture": "fist-clench",
-          "emotion": "annoyed",
-          "look": "down",
           "seconds": 2.4
         }
       ]
@@ -715,7 +743,8 @@
           "word": 10
         },
         "hooks": [
-          "h1"
+          "h1",
+          "h4"
         ],
         "seconds": 1.2
       },
@@ -736,7 +765,6 @@
         "hooks": [
           "h2",
           "h3",
-          "h4",
           "h5"
         ],
         "seconds": 1.2
