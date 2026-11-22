@@ -225,7 +225,7 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
   const sfx: SfxEvent[] = [];
   const firstSeen = new Set<string>();
   for (const a of actions) {
-    if ((a.prop?.state === "rejected" || a.prop?.state === "raise") && !firstSeen.has(`${a.who}:${a.prop.id}:${a.prop.state}`)) { firstSeen.add(`${a.who}:${a.prop.id}:${a.prop.state}`); sfx.push({ f: a.f0, kind: "ping" }); }
+    if (a.prop?.state === "rejected" && !firstSeen.has(`${a.who}:${a.prop.id}`)) { firstSeen.add(`${a.who}:${a.prop.id}`); sfx.push({ f: a.f0, kind: "ping" }); }
     if (a.fx?.id === "rewind") sfx.push({ f: a.f0, kind: "rewind", frames: Math.max(1, a.f1 - a.f0) });
     if (a.fx?.id === "spiral" && a.part !== "hook") sfx.push({ f: a.f0, kind: "swirl" });
     if (a.fx?.id === "thought-bubble" || a.fx?.id === "two-way") sfx.push({ f: a.f0, kind: "pop" });

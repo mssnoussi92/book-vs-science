@@ -97,7 +97,8 @@ export function presence(tl: Timeline, who: string, f: number): number {
   }
   if (part.kind !== "scene") return 1;
   const lines = tl.lines.filter((l) => l.part === "scene" && l.f0 >= part.f0 && l.f0 < part.f1);
-  if (!lines.length || lines[0]!.speaker === who) return 1;
+  // The lead lives the problem: there from the scene's first image, even while the narrator speaks over it first.
+  if (!lines.length || who === leadOf(tl)) return 1;
   const cuts = tl.actions.filter((a) => a.fx?.id === "rewind" && a.f0 >= part.f0 && a.f0 < part.f1).map((a) => a.f0);
   const bounds = [part.f0, ...cuts, part.f1];
   const i = bounds.findIndex((b, j) => f >= b && f < (bounds[j + 1] ?? Infinity));

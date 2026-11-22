@@ -30,6 +30,7 @@ import type { Timeline } from "../schema/timeline.ts";
 test("presence: the first speaker all along, the other one comes in for its line and is gone after the rewind", () => {
   const line = (speaker: string, f0: number, f1: number) => ({ key: `s1.${f0}`, part: "scene", speaker, emotion: "neutral", intensity: 0.5, f0, f1, text: "x", words: [] });
   const tl = {
+    cast: { narrator: "adasa", characters: ["karim", "nour"] },
     parts: [{ kind: "hook", scope: "hook", f0: 0, f1: 10 }, { kind: "scene", scope: "s1", f0: 10, f1: 300 }, { kind: "book", scope: "book", f0: 300, f1: 400 }],
     lines: [line("karim", 12, 40), line("nour", 100, 120), line("karim", 130, 150), line("nour", 220, 240)],
     actions: [{ id: "a4", part: "scene", scope: "s1", who: "karim", fx: { id: "rewind", params: {} }, f0: 160, f1: 180 }],
@@ -41,6 +42,18 @@ test("presence: the first speaker all along, the other one comes in for its line
   assert.equal(presence(tl, "nour", 170), 0);           // the scene played again: gone
   assert.equal(presence(tl, "nour", 230), 1);
   assert.equal(presence(tl, "nour", 350), 1);           // outside the scene, everybody
+});
+
+test("presence: the lead is at his desk while the narrator speaks over the scene first (money-happiness: hidden, his raise unseen)", () => {
+  const line = (speaker: string, f0: number, f1: number, over = false) => ({ key: `s1.${f0}`, part: "scene", speaker, emotion: "neutral", intensity: 0.5, f0, f1, text: "x", words: [], ...(over ? { over } : {}) });
+  const tl = {
+    cast: { narrator: "adasa", characters: ["karim", "nour"] },
+    parts: [{ kind: "hook", scope: "hook", f0: 0, f1: 10 }, { kind: "scene", scope: "s1", f0: 10, f1: 300 }],
+    lines: [line("adasa", 12, 40, true), line("karim", 50, 70), line("nour", 100, 120)],
+    actions: [],
+  } as unknown as Timeline;
+  assert.equal(presence(tl, "karim", 20), 1);
+  assert.equal(presence(tl, "nour", 20), 0);
 });
 
 test("a closing quote alone does not end a screen: the question stays whole", () => {
