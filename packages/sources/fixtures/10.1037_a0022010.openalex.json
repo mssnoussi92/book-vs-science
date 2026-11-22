@@ -1,0 +1,830 @@
+{
+ "id": "https://openalex.org/W2108766910",
+ "doi": "https://doi.org/10.1037/a0022010",
+ "title": "Can seeking happiness make people unhappy? Paradoxical effects of valuing happiness.",
+ "display_name": "Can seeking happiness make people unhappy? Paradoxical effects of valuing happiness.",
+ "alternate_titles": [],
+ "publication_year": 2011,
+ "publication_date": "2011-08-01",
+ "ids": {
+  "openalex": "https://openalex.org/W2108766910",
+  "doi": "https://doi.org/10.1037/a0022010",
+  "mag": "2108766910",
+  "pmid": "https://pubmed.ncbi.nlm.nih.gov/21517168",
+  "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/3160511"
+ },
+ "language": "en",
+ "primary_location": {
+  "id": "doi:10.1037/a0022010",
+  "doi": "https://doi.org/10.1037/a0022010",
+  "is_oa": false,
+  "landing_page_url": "https://doi.org/10.1037/a0022010",
+  "pdf_url": null,
+  "source": {
+   "id": "https://openalex.org/S118198609",
+   "display_name": "Emotion",
+   "issn_l": "1528-3542",
+   "issn": [
+    "1528-3542",
+    "1931-1516"
+   ],
+   "is_oa": false,
+   "is_in_doaj": false,
+   "is_core": true,
+   "listed_in": [
+    "cwts-core",
+    "dongbi-b",
+    "erih-plus",
+    "jufo-2",
+    "ki-jl-2",
+    "medline",
+    "norway-2",
+    "poland-140",
+    "russia-white-list-1",
+    "vabb-shw"
+   ],
+   "host_organization": "https://openalex.org/P4310320262",
+   "host_organization_name": "American Psychological Association",
+   "host_organization_lineage": [
+    "https://openalex.org/P4310320262"
+   ],
+   "host_organization_lineage_names": [
+    "American Psychological Association"
+   ],
+   "type": "journal"
+  },
+  "license": null,
+  "license_id": null,
+  "version": "publishedVersion",
+  "is_accepted": true,
+  "is_published": true,
+  "raw_source_name": "Emotion",
+  "raw_type": "journal-article"
+ },
+ "parent_works": [],
+ "lineage": [
+  "https://openalex.org/W2108766910"
+ ],
+ "child_works_count": 0,
+ "type": "article",
+ "is_traditional": true,
+ "indexed_in": [
+  "crossref",
+  "pubmed"
+ ],
+ "open_access": {
+  "is_oa": true,
+  "oa_status": "green",
+  "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3160511/",
+  "any_repository_has_fulltext": true
+ },
+ "authorships": [
+  {
+   "author_position": "first",
+   "author": {
+    "id": "https://openalex.org/A5025979872",
+    "display_name": "Iris B. Mauss",
+    "orcid": "https://orcid.org/0000-0002-3797-4795",
+    "observed_orcids": [
+     "https://orcid.org/0000-0002-3797-4795"
+    ]
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I131651094",
+     "display_name": "University of Denver",
+     "ror": "https://ror.org/04w7skc03",
+     "country_code": "US",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I131651094"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "contributor_roles": [],
+   "raw_author_name": "Iris B. Mauss",
+   "raw_affiliation_strings": [
+    "Department of Psychology, University of Denver, Denver, CO 80208, USA. imauss@psy.du.edu",
+    "University of Denver (Denver, CO, US)"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "Department of Psychology, University of Denver, Denver, CO 80208, USA. imauss@psy.du.edu",
+     "institution_ids": [
+      "https://openalex.org/I131651094"
+     ]
+    },
+    {
+     "raw_affiliation_string": "University of Denver (Denver, CO, US)",
+     "institution_ids": [
+      "https://openalex.org/I131651094"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": "https://openalex.org/A5088986162",
+    "display_name": "Maya Tamir",
+    "orcid": "https://orcid.org/0000-0002-2675-8042",
+    "observed_orcids": [
+     "https://orcid.org/0000-0002-2675-8042"
+    ]
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I103531236",
+     "display_name": "Boston College",
+     "ror": "https://ror.org/02n2fzt79",
+     "country_code": "US",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I103531236"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "contributor_roles": [],
+   "raw_author_name": "Maya Tamir",
+   "raw_affiliation_strings": [
+    "Boston College and Hebrew University",
+    "Boston Coll, MA, US"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "Boston College and Hebrew University",
+     "institution_ids": [
+      "https://openalex.org/I103531236"
+     ]
+    },
+    {
+     "raw_affiliation_string": "Boston Coll, MA, US",
+     "institution_ids": [
+      "https://openalex.org/I103531236"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": null,
+    "display_name": "Craig L. Anderson",
+    "orcid": null,
+    "observed_orcids": []
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I141945490",
+     "display_name": "University of British Columbia",
+     "ror": "https://ror.org/03rmrcq20",
+     "country_code": "CA",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I141945490"
+     ]
+    },
+    {
+     "id": "https://openalex.org/I95457486",
+     "display_name": "University of California, Berkeley",
+     "ror": "https://ror.org/01an7q238",
+     "country_code": "US",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I95457486"
+     ]
+    }
+   ],
+   "countries": [
+    "CA",
+    "US"
+   ],
+   "is_corresponding": false,
+   "contributor_roles": [],
+   "raw_author_name": "Craig L. Anderson",
+   "raw_affiliation_strings": [
+    "University of British Columbia, Vancouver",
+    "University of California (Berkeley, CA, US)"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "University of British Columbia, Vancouver",
+     "institution_ids": [
+      "https://openalex.org/I141945490"
+     ]
+    },
+    {
+     "raw_affiliation_string": "University of California (Berkeley, CA, US)",
+     "institution_ids": [
+      "https://openalex.org/I95457486"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "last",
+   "author": {
+    "id": "https://openalex.org/A5009472460",
+    "display_name": "Nicole S. Savino",
+    "orcid": null,
+    "observed_orcids": []
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I131651094",
+     "display_name": "University of Denver",
+     "ror": "https://ror.org/04w7skc03",
+     "country_code": "US",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I131651094"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "contributor_roles": [],
+   "raw_author_name": "Nicole S. Savino",
+   "raw_affiliation_strings": [
+    "University of Denver",
+    "University of Denver (Denver, CO, US)"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "University of Denver",
+     "institution_ids": [
+      "https://openalex.org/I131651094"
+     ]
+    },
+    {
+     "raw_affiliation_string": "University of Denver (Denver, CO, US)",
+     "institution_ids": [
+      "https://openalex.org/I131651094"
+     ]
+    }
+   ]
+  }
+ ],
+ "institutions": [],
+ "countries_distinct_count": 2,
+ "institutions_distinct_count": 4,
+ "corresponding_author_ids": [],
+ "corresponding_institution_ids": [],
+ "apc_list": null,
+ "apc_paid": null,
+ "fwci": 17.0967,
+ "has_fulltext": false,
+ "cited_by_count": 493,
+ "reviewed_by_count": 0,
+ "citation_normalized_percentile": {
+  "value": 0.99448613,
+  "is_in_top_1_percent": true,
+  "is_in_top_10_percent": true
+ },
+ "cited_by_percentile_year": {
+  "min": 99,
+  "max": 100
+ },
+ "biblio": {
+  "volume": "11",
+  "issue": "4",
+  "first_page": "807",
+  "last_page": "815"
+ },
+ "is_retracted": false,
+ "is_pulled": false,
+ "is_paratext": false,
+ "is_xpac": false,
+ "primary_topic": {
+  "id": "https://openalex.org/T10475",
+  "display_name": "Psychological Well-being and Life Satisfaction",
+  "score": 0.9994999766349792,
+  "subfield": {
+   "id": "https://openalex.org/subfields/3207",
+   "display_name": "Social Psychology"
+  },
+  "field": {
+   "id": "https://openalex.org/fields/32",
+   "display_name": "Psychology"
+  },
+  "domain": {
+   "id": "https://openalex.org/domains/2",
+   "display_name": "Social Sciences"
+  }
+ },
+ "topics": [
+  {
+   "id": "https://openalex.org/T10475",
+   "display_name": "Psychological Well-being and Life Satisfaction",
+   "score": 0.9994999766349792,
+   "subfield": {
+    "id": "https://openalex.org/subfields/3207",
+    "display_name": "Social Psychology"
+   },
+   "field": {
+    "id": "https://openalex.org/fields/32",
+    "display_name": "Psychology"
+   },
+   "domain": {
+    "id": "https://openalex.org/domains/2",
+    "display_name": "Social Sciences"
+   }
+  },
+  {
+   "id": "https://openalex.org/T12485",
+   "display_name": "Optimism, Hope, and Well-being",
+   "score": 0.00019999999494757503,
+   "subfield": {
+    "id": "https://openalex.org/subfields/3202",
+    "display_name": "Applied Psychology"
+   },
+   "field": {
+    "id": "https://openalex.org/fields/32",
+    "display_name": "Psychology"
+   },
+   "domain": {
+    "id": "https://openalex.org/domains/2",
+    "display_name": "Social Sciences"
+   }
+  },
+  {
+   "id": "https://openalex.org/T12313",
+   "display_name": "Emotions and Moral Behavior",
+   "score": 0.00009999999747378752,
+   "subfield": {
+    "id": "https://openalex.org/subfields/3207",
+    "display_name": "Social Psychology"
+   },
+   "field": {
+    "id": "https://openalex.org/fields/32",
+    "display_name": "Psychology"
+   },
+   "domain": {
+    "id": "https://openalex.org/domains/2",
+    "display_name": "Social Sciences"
+   }
+  }
+ ],
+ "keywords": [
+  {
+   "id": "https://openalex.org/keywords/happiness",
+   "display_name": "happiness",
+   "score": 0.6359999775886536
+  },
+  {
+   "id": "https://openalex.org/keywords/paradoxical-effects",
+   "display_name": "paradoxical effects",
+   "score": 0.8190000057220459
+  },
+  {
+   "id": "https://openalex.org/keywords/disappointment",
+   "display_name": "disappointment",
+   "score": 0.6650000214576721
+  },
+  {
+   "id": "https://openalex.org/keywords/well-being",
+   "display_name": "well-being",
+   "score": 0.6520000100135803
+  },
+  {
+   "id": "https://openalex.org/keywords/stressful-life-events",
+   "display_name": "life events",
+   "score": 0.8920000195503235
+  },
+  {
+   "id": "https://openalex.org/keywords/emotion-induction",
+   "display_name": "emotion induction",
+   "score": 0.8980000019073486
+  },
+  {
+   "id": "https://openalex.org/keywords/gender-differences",
+   "display_name": "gender differences",
+   "score": 0.4429999887943268
+  }
+ ],
+ "concepts": [
+  {
+   "id": "https://openalex.org/C2778999518",
+   "wikidata": "https://www.wikidata.org/wiki/Q8",
+   "display_name": "Happiness",
+   "level": 2,
+   "score": 0.9888936877250671
+  },
+  {
+   "id": "https://openalex.org/C15744967",
+   "wikidata": "https://www.wikidata.org/wiki/Q9418",
+   "display_name": "Psychology",
+   "level": 0,
+   "score": 0.7692339420318604
+  },
+  {
+   "id": "https://openalex.org/C2779628136",
+   "wikidata": "https://www.wikidata.org/wiki/Q621206",
+   "display_name": "Disappointment",
+   "level": 2,
+   "score": 0.7363863587379456
+  },
+  {
+   "id": "https://openalex.org/C77805123",
+   "wikidata": "https://www.wikidata.org/wiki/Q161272",
+   "display_name": "Social psychology",
+   "level": 1,
+   "score": 0.6916720867156982
+  },
+  {
+   "id": "https://openalex.org/C122980154",
+   "wikidata": "https://www.wikidata.org/wiki/Q205555",
+   "display_name": "Feeling",
+   "level": 2,
+   "score": 0.6158602237701416
+  },
+  {
+   "id": "https://openalex.org/C2776291640",
+   "wikidata": "https://www.wikidata.org/wiki/Q2912517",
+   "display_name": "Value (mathematics)",
+   "level": 2,
+   "score": 0.5238804221153259
+  },
+  {
+   "id": "https://openalex.org/C112570445",
+   "wikidata": "https://www.wikidata.org/wiki/Q7456400",
+   "display_name": "Subjective well-being",
+   "level": 3,
+   "score": 0.42225825786590576
+  },
+  {
+   "id": "https://openalex.org/C12505134",
+   "wikidata": "https://www.wikidata.org/wiki/Q718809",
+   "display_name": "Positive psychology",
+   "level": 2,
+   "score": 0.4103512465953827
+  },
+  {
+   "id": "https://openalex.org/C41008148",
+   "wikidata": "https://www.wikidata.org/wiki/Q21198",
+   "display_name": "Computer science",
+   "level": 0,
+   "score": 0
+  },
+  {
+   "id": "https://openalex.org/C119857082",
+   "wikidata": "https://www.wikidata.org/wiki/Q2539",
+   "display_name": "Machine learning",
+   "level": 1,
+   "score": 0
+  }
+ ],
+ "mesh": [],
+ "locations_count": 4,
+ "locations": [
+  {
+   "id": "doi:10.1037/a0022010",
+   "doi": "https://doi.org/10.1037/a0022010",
+   "is_oa": false,
+   "landing_page_url": "https://doi.org/10.1037/a0022010",
+   "pdf_url": null,
+   "source": {
+    "id": "https://openalex.org/S118198609",
+    "display_name": "Emotion",
+    "issn_l": "1528-3542",
+    "issn": [
+     "1528-3542",
+     "1931-1516"
+    ],
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": true,
+    "listed_in": [
+     "cwts-core",
+     "dongbi-b",
+     "erih-plus",
+     "jufo-2",
+     "ki-jl-2",
+     "medline",
+     "norway-2",
+     "poland-140",
+     "russia-white-list-1",
+     "vabb-shw"
+    ],
+    "host_organization": "https://openalex.org/P4310320262",
+    "host_organization_name": "American Psychological Association",
+    "host_organization_lineage": [
+     "https://openalex.org/P4310320262"
+    ],
+    "host_organization_lineage_names": [
+     "American Psychological Association"
+    ],
+    "type": "journal"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "publishedVersion",
+   "is_accepted": true,
+   "is_published": true,
+   "raw_source_name": "Emotion",
+   "raw_type": "journal-article"
+  },
+  {
+   "id": "pmid:21517168",
+   "doi": null,
+   "is_oa": false,
+   "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/21517168",
+   "pdf_url": null,
+   "source": {
+    "id": "https://openalex.org/S4306525036",
+    "display_name": "PubMed",
+    "issn_l": null,
+    "issn": null,
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": false,
+    "listed_in": [],
+    "host_organization": "https://openalex.org/I1299303238",
+    "host_organization_name": "National Institutes of Health",
+    "host_organization_lineage": [
+     "https://openalex.org/I1299303238"
+    ],
+    "host_organization_lineage_names": [],
+    "type": "repository"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "publishedVersion",
+   "is_accepted": true,
+   "is_published": true,
+   "raw_source_name": "Emotion (Washington, D.C.)",
+   "raw_type": "Journal Article"
+  },
+  {
+   "id": "pmh:oai:pubmedcentral.nih.gov:3160511",
+   "doi": null,
+   "is_oa": true,
+   "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3160511/",
+   "pdf_url": null,
+   "source": {
+    "id": "https://openalex.org/S2764455111",
+    "display_name": "PubMed Central",
+    "issn_l": null,
+    "issn": null,
+    "is_oa": true,
+    "is_in_doaj": false,
+    "is_core": false,
+    "listed_in": [],
+    "host_organization": "https://openalex.org/I1299303238",
+    "host_organization_name": "National Institutes of Health",
+    "host_organization_lineage": [
+     "https://openalex.org/I1299303238"
+    ],
+    "host_organization_lineage_names": [],
+    "type": "repository"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "acceptedVersion",
+   "is_accepted": true,
+   "is_published": false,
+   "raw_source_name": "Emotion",
+   "raw_type": "Text"
+  },
+  {
+   "id": "pmh:oai:CiteSeerX.psu:10.1.1.714.8604",
+   "doi": null,
+   "is_oa": false,
+   "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.714.8604",
+   "pdf_url": null,
+   "source": null,
+   "license": null,
+   "license_id": null,
+   "version": "submittedVersion",
+   "is_accepted": false,
+   "is_published": false,
+   "raw_source_name": "https://www2.bc.edu/%7Etamirm/download/Mauss%20et%20al_2011.pdf",
+   "raw_type": "text"
+  }
+ ],
+ "best_oa_location": {
+  "id": "pmh:oai:pubmedcentral.nih.gov:3160511",
+  "doi": null,
+  "is_oa": true,
+  "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3160511/",
+  "pdf_url": null,
+  "source": {
+   "id": "https://openalex.org/S2764455111",
+   "display_name": "PubMed Central",
+   "issn_l": null,
+   "issn": null,
+   "is_oa": true,
+   "is_in_doaj": false,
+   "is_core": false,
+   "listed_in": [],
+   "host_organization": "https://openalex.org/I1299303238",
+   "host_organization_name": "National Institutes of Health",
+   "host_organization_lineage": [
+    "https://openalex.org/I1299303238"
+   ],
+   "host_organization_lineage_names": [],
+   "type": "repository"
+  },
+  "license": null,
+  "license_id": null,
+  "version": "acceptedVersion",
+  "is_accepted": true,
+  "is_published": false,
+  "raw_source_name": "Emotion",
+  "raw_type": "Text"
+ },
+ "sustainable_development_goals": [
+  {
+   "display_name": "Good health and well-being",
+   "id": "https://metadata.un.org/sdg/3",
+   "score": 0.6240000128746033
+  }
+ ],
+ "study_designs": [],
+ "awards": [
+  {
+   "id": "https://openalex.org/G1705881414",
+   "display_name": "The impact of reappraisal ability on adjustment to stressful life events",
+   "funder_award_id": "R21AG031967",
+   "funder_id": "https://openalex.org/F4320337337",
+   "funder_display_name": "National Institute on Aging"
+  }
+ ],
+ "funders": [
+  {
+   "id": "https://openalex.org/F4320337337",
+   "display_name": "National Institute on Aging",
+   "ror": "https://ror.org/049v75w11"
+  }
+ ],
+ "has_content": {
+  "pdf": false,
+  "grobid_xml": false
+ },
+ "content_urls": null,
+ "referenced_works_count": 71,
+ "referenced_works": [
+  "https://openalex.org/W68159654",
+  "https://openalex.org/W300457468",
+  "https://openalex.org/W620318637",
+  "https://openalex.org/W1514273299",
+  "https://openalex.org/W1558731210",
+  "https://openalex.org/W1603542031",
+  "https://openalex.org/W1608712425",
+  "https://openalex.org/W1667831672",
+  "https://openalex.org/W1738371459",
+  "https://openalex.org/W1741972443",
+  "https://openalex.org/W1787833027",
+  "https://openalex.org/W1800216240",
+  "https://openalex.org/W1800685262",
+  "https://openalex.org/W1965330153",
+  "https://openalex.org/W1965514675",
+  "https://openalex.org/W1969796869",
+  "https://openalex.org/W1971440513",
+  "https://openalex.org/W1973019568",
+  "https://openalex.org/W1985773988",
+  "https://openalex.org/W1986562243",
+  "https://openalex.org/W1995031937",
+  "https://openalex.org/W2001097956",
+  "https://openalex.org/W2006010675",
+  "https://openalex.org/W2007851141",
+  "https://openalex.org/W2010707353",
+  "https://openalex.org/W2027473728",
+  "https://openalex.org/W2028143458",
+  "https://openalex.org/W2033941022",
+  "https://openalex.org/W2035627250",
+  "https://openalex.org/W2037326093",
+  "https://openalex.org/W2045826950",
+  "https://openalex.org/W2045869257",
+  "https://openalex.org/W2053133047",
+  "https://openalex.org/W2062575785",
+  "https://openalex.org/W2070808447",
+  "https://openalex.org/W2088155659",
+  "https://openalex.org/W2089349199",
+  "https://openalex.org/W2093674431",
+  "https://openalex.org/W2108577177",
+  "https://openalex.org/W2119647950",
+  "https://openalex.org/W2125750403",
+  "https://openalex.org/W2126040689",
+  "https://openalex.org/W2129541416",
+  "https://openalex.org/W2133533687",
+  "https://openalex.org/W2134419850",
+  "https://openalex.org/W2135925296",
+  "https://openalex.org/W2139983405",
+  "https://openalex.org/W2145773157",
+  "https://openalex.org/W2148905283",
+  "https://openalex.org/W2152274216",
+  "https://openalex.org/W2155144982",
+  "https://openalex.org/W2164932738",
+  "https://openalex.org/W2168031754",
+  "https://openalex.org/W2180532674",
+  "https://openalex.org/W2188155255",
+  "https://openalex.org/W2493734635",
+  "https://openalex.org/W2500021638",
+  "https://openalex.org/W2784584795",
+  "https://openalex.org/W2785736784",
+  "https://openalex.org/W2790767553",
+  "https://openalex.org/W2797247465",
+  "https://openalex.org/W2904854867",
+  "https://openalex.org/W2949392115",
+  "https://openalex.org/W3013797276",
+  "https://openalex.org/W3021376208",
+  "https://openalex.org/W3121389787",
+  "https://openalex.org/W3149261316",
+  "https://openalex.org/W4231501057",
+  "https://openalex.org/W4234193547",
+  "https://openalex.org/W4236827811",
+  "https://openalex.org/W4237516964"
+ ],
+ "related_works": [
+  "https://openalex.org/W2717355996",
+  "https://openalex.org/W3133733214",
+  "https://openalex.org/W4401729363",
+  "https://openalex.org/W2914899867",
+  "https://openalex.org/W6910957190",
+  "https://openalex.org/W3213666256",
+  "https://openalex.org/W834720793",
+  "https://openalex.org/W6887731745",
+  "https://openalex.org/W2203369666",
+  "https://openalex.org/W6958037194"
+ ],
+ "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W2108766910",
+ "counts_by_year": [
+  {
+   "year": 2026,
+   "cited_by_count": 30
+  },
+  {
+   "year": 2025,
+   "cited_by_count": 47
+  },
+  {
+   "year": 2024,
+   "cited_by_count": 34
+  },
+  {
+   "year": 2023,
+   "cited_by_count": 26
+  },
+  {
+   "year": 2022,
+   "cited_by_count": 27
+  },
+  {
+   "year": 2021,
+   "cited_by_count": 40
+  },
+  {
+   "year": 2020,
+   "cited_by_count": 33
+  },
+  {
+   "year": 2019,
+   "cited_by_count": 43
+  },
+  {
+   "year": 2018,
+   "cited_by_count": 41
+  },
+  {
+   "year": 2017,
+   "cited_by_count": 47
+  },
+  {
+   "year": 2016,
+   "cited_by_count": 28
+  },
+  {
+   "year": 2015,
+   "cited_by_count": 37
+  },
+  {
+   "year": 2014,
+   "cited_by_count": 20
+  },
+  {
+   "year": 2013,
+   "cited_by_count": 20
+  },
+  {
+   "year": 2012,
+   "cited_by_count": 18
+  }
+ ],
+ "updated_date": "2026-11-21T10:27:49.728292",
+ "created_date": "2016-06-24T00:00:00"
+}

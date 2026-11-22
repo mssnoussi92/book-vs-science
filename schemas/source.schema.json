@@ -228,12 +228,8 @@
               },
               "type": {
                 "type": "string",
-                "enum": [
-                  "correction",
-                  "erratum",
-                  "corrigendum",
-                  "addendum"
-                ]
+                "minLength": 3,
+                "maxLength": 40
               },
               "changes": {
                 "type": "string",

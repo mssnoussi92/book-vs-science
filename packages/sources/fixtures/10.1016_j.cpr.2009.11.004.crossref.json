@@ -1,0 +1,248 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     11,
+     21
+    ]
+   ],
+   "date-time": "2026-11-21T23:44:46Z",
+   "timestamp": 1795304686096,
+   "version": "4.10.3"
+  },
+  "reference-count": 264,
+  "publisher": "Elsevier BV",
+  "issue": "2",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2010,
+       3,
+       1
+      ]
+     ],
+     "date-time": "2010-03-01T00:00:00Z",
+     "timestamp": 1267401600000
+    },
+    "content-version": "tdm",
+    "delay-in-days": 0,
+    "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2010,
+       3,
+       1
+      ]
+     ],
+     "date-time": "2010-03-01T00:00:00Z",
+     "timestamp": 1267401600000
+    },
+    "content-version": "tdm",
+    "delay-in-days": 0,
+    "URL": "https://www.elsevier.com/legal/tdmrep-license"
+   }
+  ],
+  "content-domain": {
+   "domain": [
+    "elsevier.com",
+    "sciencedirect.com"
+   ],
+   "crossmark-restriction": true
+  },
+  "short-container-title": [
+   "Clinical Psychology Review"
+  ],
+  "published-print": {
+   "date-parts": [
+    [
+     2010,
+     3
+    ]
+   ]
+  },
+  "DOI": "10.1016/j.cpr.2009.11.004",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2009,
+     11,
+     21
+    ]
+   ],
+   "date-time": "2009-11-21T06:28:59Z",
+   "timestamp": 1258784939000
+  },
+  "page": "217-237",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 5648,
+  "title": [
+   "Emotion-regulation strategies across psychopathology: A meta-analytic review"
+  ],
+  "prefix": "10.1016",
+  "volume": "30",
+  "author": [
+   {
+    "given": "Amelia",
+    "family": "Aldao",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Susan",
+    "family": "Nolen-Hoeksema",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Susanne",
+    "family": "Schweizer",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "78",
+  "container-title": [
+   "Clinical Psychology Review"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "https://api.elsevier.com/content/article/PII:S0272735809001597?httpAccept=text/xml",
+    "content-type": "text/xml",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "https://api.elsevier.com/content/article/PII:S0272735809001597?httpAccept=text/plain",
+    "content-type": "text/plain",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2025,
+     10,
+     3
+    ]
+   ],
+   "date-time": "2025-10-03T04:07:11Z",
+   "timestamp": 1759464431000
+  },
+  "score": 1,
+  "resource": {
+   "primary": {
+    "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0272735809001597"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2010,
+     3
+    ]
+   ]
+  },
+  "references-count": 264,
+  "journal-issue": {
+   "issue": "2",
+   "published-print": {
+    "date-parts": [
+     [
+      2010,
+      3
+     ]
+    ]
+   }
+  },
+  "alternative-id": [
+   "S0272735809001597"
+  ],
+  "URL": "https://doi.org/10.1016/j.cpr.2009.11.004",
+  "relation": {},
+  "ISSN": [
+   "0272-7358"
+  ],
+  "issn-type": [
+   {
+    "value": "0272-7358",
+    "type": "print"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2010,
+     3
+    ]
+   ]
+  },
+  "assertion": [
+   {
+    "value": "Elsevier",
+    "name": "publisher",
+    "label": "This article is maintained by"
+   },
+   {
+    "value": "Emotion-regulation strategies across psychopathology: A meta-analytic review",
+    "name": "articletitle",
+    "label": "Article Title"
+   },
+   {
+    "value": "Clinical Psychology Review",
+    "name": "journaltitle",
+    "label": "Journal Title"
+   },
+   {
+    "value": "https://doi.org/10.1016/j.cpr.2009.11.004",
+    "name": "articlelink",
+    "label": "CrossRef DOI link to publisher maintained version"
+   },
+   {
+    "value": "article",
+    "name": "content_type",
+    "label": "Content Type"
+   },
+   {
+    "value": "Copyright © 2009 Elsevier B.V. All rights reserved.",
+    "name": "copyright",
+    "label": "Copyright"
+   }
+  ]
+ }
+}

@@ -1,0 +1,238 @@
+{
+ "version": "6.9",
+ "hitCount": 1,
+ "request": {
+  "queryString": "DOI:\"10.1016/j.brat.2010.05.004\"",
+  "resultType": "core",
+  "cursorMark": "*",
+  "pageSize": 25,
+  "sort": "",
+  "synonym": false
+ },
+ "resultList": {
+  "result": [
+   {
+    "id": "20627269",
+    "source": "MED",
+    "pmid": "20627269",
+    "doi": "10.1016/j.brat.2010.05.004",
+    "title": "A randomised worksite comparison of acceptance and commitment therapy and stress inoculation training.",
+    "authorString": "Flaxman PE, Bond FW.",
+    "authorList": {
+     "author": [
+      {
+       "fullName": "Flaxman PE",
+       "lastName": "Flaxman",
+       "firstName": "Paul E",
+       "initials": "PE",
+       "authorAffiliationDetailsList": {
+        "authorAffiliation": [
+         {
+          "affiliation": "Psychology Department, City University, Northampton Square, London EC1V 0HB, United Kingdom. paul.flaxman.1@city.ac.uk"
+         }
+        ]
+       }
+      },
+      {
+       "fullName": "Bond FW",
+       "lastName": "Bond",
+       "firstName": "Frank W",
+       "initials": "FW",
+       "authorId": {
+        "type": "ORCID",
+        "value": "0000-0003-2099-3938"
+       }
+      }
+     ]
+    },
+    "authorIdList": {
+     "authorId": [
+      {
+       "type": "ORCID",
+       "value": "0000-0003-2099-3938"
+      }
+     ]
+    },
+    "dataLinksTagsList": {
+     "dataLinkstag": [
+      "altmetrics"
+     ]
+    },
+    "journalInfo": {
+     "issue": "8",
+     "volume": "48",
+     "journalIssueId": 1752794,
+     "dateOfPublication": "2010 Aug",
+     "monthOfPublication": 8,
+     "yearOfPublication": 2010,
+     "journal": {
+      "medlineAbbreviation": "Behav Res Ther",
+      "title": "Behaviour research and therapy",
+      "essn": "1873-622X",
+      "issn": "0005-7967",
+      "nlmid": "0372477",
+      "isoabbreviation": "Behav Res Ther"
+     },
+     "printPublicationDate": "2010-08-01"
+    },
+    "pubYear": "2010",
+    "pageInfo": "816-820",
+    "affiliation": "Psychology Department, City University, Northampton Square, London EC1V 0HB, United Kingdom. paul.flaxman.1@city.ac.uk",
+    "publicationStatus": "ppublish",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+     "pubType": [
+      "Randomized Controlled Trial",
+      "Journal Article"
+     ]
+    },
+    "meshHeadingList": {
+     "meshHeading": [
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Humans"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Adaptation, Psychological"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Stress, Psychological",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "Y",
+          "abbreviation": "TH",
+          "qualifierName": "therapy"
+         }
+        ]
+       }
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Mental Health"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Cognition"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Psychotherapy",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "Y",
+          "abbreviation": "MT",
+          "qualifierName": "methods"
+         }
+        ]
+       }
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Psychotherapy, Group",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "N",
+          "abbreviation": "MT",
+          "qualifierName": "methods"
+         }
+        ]
+       }
+      },
+      {
+       "majorTopic_YN": "Y",
+       "descriptorName": "Local Government"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Adult"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Middle Aged"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Workplace",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "Y",
+          "abbreviation": "PX",
+          "qualifierName": "psychology"
+         }
+        ]
+       }
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Female"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Male"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "United Kingdom"
+      }
+     ]
+    },
+    "subsetList": {
+     "subset": [
+      {
+       "code": "IM",
+       "name": "Index Medicus"
+      }
+     ]
+    },
+    "fullTextUrlList": {
+     "fullTextUrl": [
+      {
+       "availability": "Free",
+       "availabilityCode": "F",
+       "documentStyle": "pdf",
+       "site": "Unpaywall",
+       "url": "https://openaccess.city.ac.uk/id/eprint/6318/1/Flaxman%20and%20Bond%20%282010%29%20BRAT%20.pdf"
+      },
+      {
+       "availability": "Subscription required",
+       "availabilityCode": "S",
+       "documentStyle": "doi",
+       "site": "DOI",
+       "url": "https://doi.org/10.1016/j.brat.2010.05.004"
+      }
+     ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "citedByCount": 68,
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "hasLabsLinks": "Y",
+    "hasData": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCompletion": "2010-11-24",
+    "dateOfCreation": "2010-07-15",
+    "dateOfRevision": "2026-01-27",
+    "electronicPublicationDate": "2010-05-08",
+    "firstPublicationDate": "2010-05-08",
+    "firstIndexDate": "2010-08-19",
+    "hasEvaluations": "N"
+   }
+  ]
+ }
+}

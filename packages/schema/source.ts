@@ -69,7 +69,7 @@ export const Source = z.strictObject({
   /** Corrections and errata read, and what they change. */
   acknowledged: z.array(z.strictObject({
     doi: Doi,
-    type: z.enum(["correction", "erratum", "corrigendum", "addendum"]),
+    type: z.string().min(3).max(40),            // as Crossref names it: correction, erratum, clarification, new_version…
     changes: z.string().min(5).max(200),      // « grouped erratum of 41 articles, no effect on results »
   })).default([]),
   /** Hash of the normalized abstract that was read (the abstract itself is the publisher's). */

@@ -5,6 +5,8 @@
 //   bvs status [<episode>]                   where each episode stands: gates, approvals and their short hashes
 //   bvs approve <episode> sources --words "…" [--via <url>]
 //   bvs approve <episode> script --lang ar-EG --words "…" [--via <url>]
+//   bvs sources verify [<episode>|--all] [--live] [--write]
+//                                            checks each cited DOI (Crossref, OpenAlex, Europe PMC); --write saves .verify.json
 //                                            records the OWNER's approval, only after he gave it (CLAUDE.md)
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
@@ -80,6 +82,30 @@ switch (cmd) {
     writeFileSync(path, JSON.stringify({ $schema: "../../../schemas/approvals.schema.json", ...Approvals.parse(current) }, null, 2) + "\n");
     break;
   }
+  case "sources": {
+    if (args[0] !== "verify") { console.error("usage: bvs sources verify [<episode>|--all] [--live] [--write]"); process.exit(2); }
+    const repo = loadRepo(ROOT);
+    const target = args[1] && !args[1].startsWith("--") ? args[1] : undefined;
+    const ids = target
+      ? [...new Set(repo.episodes.find((e) => e.id === target)?.episode.verdict.assessments.flatMap((a) => a.evidence.map((x) => x.source)) ?? [])]
+      : [...repo.sources.keys()];
+    if (!ids.length) { console.error(target ? `épisode inconnu ou sans source : ${target}` : "aucune source au registre"); process.exit(2); }
+    const { makeFetchJson } = await import("../sources/http.ts");
+    const { verifySource } = await import("../sources/verify.ts");
+    const { renderReport } = await import("../sources/report.ts");
+    const fetchJson = makeFetchJson(has("live") ? { cacheDir: join(ROOT, ".cache/sources"), readCache: false } : { cacheDir: join(ROOT, ".cache/sources"), offline: true });
+    const items = [];
+    for (const id of ids) {
+      const source = repo.sources.get(id);
+      if (!source) { console.error(`source inconnue : ${id}`); process.exit(2); }
+      const verification = await verifySource(source, { fetchJson });
+      items.push({ source, verification });
+      if (has("write")) writeFileSync(join(ROOT, "content/sources", `${id}.verify.json`), JSON.stringify(verification, null, 2) + "\n");
+    }
+    console.log(renderReport(items, new Date().toISOString().slice(0, 10)));
+    if (items.some((i) => i.verification.status === "fail")) process.exit(1);
+    break;
+  }
   default:
-    console.log("bvs check [--gate] | status [<episode>] | approve <episode> sources|script …");
+    console.log("bvs check [--gate] | status [<episode>] | approve <episode> sources|script … | sources verify [<episode>] [--live] [--write]");
 }

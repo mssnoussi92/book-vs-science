@@ -1,0 +1,253 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     11,
+     20
+    ]
+   ],
+   "date-time": "2026-11-20T07:56:46Z",
+   "timestamp": 1795161406822,
+   "version": "4.10.3"
+  },
+  "reference-count": 61,
+  "publisher": "Elsevier BV",
+  "issue": "4",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2012,
+       12,
+       1
+      ]
+     ],
+     "date-time": "2012-12-01T00:00:00Z",
+     "timestamp": 1354320000000
+    },
+    "content-version": "tdm",
+    "delay-in-days": 0,
+    "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2012,
+       12,
+       1
+      ]
+     ],
+     "date-time": "2012-12-01T00:00:00Z",
+     "timestamp": 1354320000000
+    },
+    "content-version": "tdm",
+    "delay-in-days": 0,
+    "URL": "https://www.elsevier.com/legal/tdmrep-license"
+   }
+  ],
+  "content-domain": {
+   "domain": [
+    "clinicalkey.com",
+    "clinicalkey.com.au",
+    "clinicalkey.es",
+    "clinicalkey.fr",
+    "clinicalkey.jp",
+    "elsevier.com",
+    "sciencedirect.com"
+   ],
+   "crossmark-restriction": true
+  },
+  "short-container-title": [
+   "Journal of Behavior Therapy and Experimental Psychiatry"
+  ],
+  "published-print": {
+   "date-parts": [
+    [
+     2012,
+     12
+    ]
+   ]
+  },
+  "DOI": "10.1016/j.jbtep.2012.03.004",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2012,
+     4,
+     11
+    ]
+   ],
+   "date-time": "2012-04-11T14:03:45Z",
+   "timestamp": 1334153025000
+  },
+  "page": "988-1001",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 101,
+  "title": [
+   "How effective are acceptance strategies? A meta-analytic review of experimental results"
+  ],
+  "prefix": "10.1016",
+  "volume": "43",
+  "author": [
+   {
+    "given": "Annika",
+    "family": "Kohl",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Winfried",
+    "family": "Rief",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Julia Anna",
+    "family": "Glombiewski",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "78",
+  "container-title": [
+   "Journal of Behavior Therapy and Experimental Psychiatry"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "https://api.elsevier.com/content/article/PII:S0005791612000237?httpAccept=text/xml",
+    "content-type": "text/xml",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "https://api.elsevier.com/content/article/PII:S0005791612000237?httpAccept=text/plain",
+    "content-type": "text/plain",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2025,
+     9,
+     13
+    ]
+   ],
+   "date-time": "2025-09-13T09:19:16Z",
+   "timestamp": 1757755156000
+  },
+  "score": 1,
+  "resource": {
+   "primary": {
+    "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0005791612000237"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2012,
+     12
+    ]
+   ]
+  },
+  "references-count": 61,
+  "journal-issue": {
+   "issue": "4",
+   "published-print": {
+    "date-parts": [
+     [
+      2012,
+      12
+     ]
+    ]
+   }
+  },
+  "alternative-id": [
+   "S0005791612000237"
+  ],
+  "URL": "https://doi.org/10.1016/j.jbtep.2012.03.004",
+  "relation": {},
+  "ISSN": [
+   "0005-7916"
+  ],
+  "issn-type": [
+   {
+    "value": "0005-7916",
+    "type": "print"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2012,
+     12
+    ]
+   ]
+  },
+  "assertion": [
+   {
+    "value": "Elsevier",
+    "name": "publisher",
+    "label": "This article is maintained by"
+   },
+   {
+    "value": "How effective are acceptance strategies? A meta-analytic review of experimental results",
+    "name": "articletitle",
+    "label": "Article Title"
+   },
+   {
+    "value": "Journal of Behavior Therapy and Experimental Psychiatry",
+    "name": "journaltitle",
+    "label": "Journal Title"
+   },
+   {
+    "value": "https://doi.org/10.1016/j.jbtep.2012.03.004",
+    "name": "articlelink",
+    "label": "CrossRef DOI link to publisher maintained version"
+   },
+   {
+    "value": "article",
+    "name": "content_type",
+    "label": "Content Type"
+   },
+   {
+    "value": "Copyright © 2012 Elsevier Ltd. All rights reserved.",
+    "name": "copyright",
+    "label": "Copyright"
+   }
+  ]
+ }
+}

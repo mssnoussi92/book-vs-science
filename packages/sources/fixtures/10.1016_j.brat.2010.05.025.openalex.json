@@ -1,0 +1,928 @@
+{
+ "id": "https://openalex.org/W2045869257",
+ "doi": "https://doi.org/10.1016/j.brat.2010.05.025",
+ "title": "Let it be: Accepting negative emotional experiences predicts decreased negative affect and depressive symptoms",
+ "display_name": "Let it be: Accepting negative emotional experiences predicts decreased negative affect and depressive symptoms",
+ "alternate_titles": [],
+ "publication_year": 2010,
+ "publication_date": "2010-06-02",
+ "ids": {
+  "openalex": "https://openalex.org/W2045869257",
+  "doi": "https://doi.org/10.1016/j.brat.2010.05.025",
+  "mag": "2045869257",
+  "pmid": "https://pubmed.ncbi.nlm.nih.gov/20566191",
+  "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/3045747"
+ },
+ "language": "en",
+ "primary_location": {
+  "id": "doi:10.1016/j.brat.2010.05.025",
+  "doi": "https://doi.org/10.1016/j.brat.2010.05.025",
+  "is_oa": false,
+  "landing_page_url": "https://doi.org/10.1016/j.brat.2010.05.025",
+  "pdf_url": null,
+  "source": {
+   "id": "https://openalex.org/S186589312",
+   "display_name": "Behaviour Research and Therapy",
+   "issn_l": "0005-7967",
+   "issn": [
+    "0005-7967",
+    "1873-622X"
+   ],
+   "is_oa": false,
+   "is_in_doaj": false,
+   "is_core": true,
+   "listed_in": [
+    "cwts-core",
+    "dongbi-b",
+    "erih-plus",
+    "jufo-3",
+    "ki-jl-2",
+    "medline",
+    "norway-2",
+    "poland-140",
+    "russia-white-list-1",
+    "vabb-shw"
+   ],
+   "host_organization": "https://openalex.org/P4310320990",
+   "host_organization_name": "Elsevier BV",
+   "host_organization_lineage": [
+    "https://openalex.org/P4310320990"
+   ],
+   "host_organization_lineage_names": [
+    "Elsevier BV"
+   ],
+   "type": "journal"
+  },
+  "license": null,
+  "license_id": null,
+  "version": "publishedVersion",
+  "is_accepted": true,
+  "is_published": true,
+  "raw_source_name": "Behaviour Research and Therapy",
+  "raw_type": "journal-article"
+ },
+ "parent_works": [],
+ "lineage": [
+  "https://openalex.org/W2045869257"
+ ],
+ "child_works_count": 0,
+ "type": "article",
+ "is_traditional": true,
+ "indexed_in": [
+  "crossref",
+  "pubmed"
+ ],
+ "open_access": {
+  "is_oa": true,
+  "oa_status": "green",
+  "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3045747/",
+  "any_repository_has_fulltext": true
+ },
+ "authorships": [
+  {
+   "author_position": "first",
+   "author": {
+    "id": "https://openalex.org/A5081488538",
+    "display_name": "Amanda J. Shallcross",
+    "orcid": "https://orcid.org/0000-0003-3166-8786",
+    "observed_orcids": [
+     "https://orcid.org/0000-0003-3166-8786"
+    ]
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I131651094",
+     "display_name": "University of Denver",
+     "ror": "https://ror.org/04w7skc03",
+     "country_code": "US",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I131651094"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": true,
+   "contributor_roles": [],
+   "raw_author_name": "Amanda J. Shallcross",
+   "raw_affiliation_strings": [
+    "Department of Psychology, University of Denver, CO 80208, USA. ashallcross@psy.du.edu",
+    "Department of Psychology, University of Denver, 2155 S. Race St., Denver, CO 80208, USA"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "Department of Psychology, University of Denver, CO 80208, USA. ashallcross@psy.du.edu",
+     "institution_ids": [
+      "https://openalex.org/I131651094"
+     ]
+    },
+    {
+     "raw_affiliation_string": "Department of Psychology, University of Denver, 2155 S. Race St., Denver, CO 80208, USA",
+     "institution_ids": [
+      "https://openalex.org/I131651094"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": "https://openalex.org/A5025295511",
+    "display_name": "Allison S. Troy",
+    "orcid": "https://orcid.org/0000-0002-5535-3597",
+    "observed_orcids": [
+     "https://orcid.org/0000-0002-5535-3597"
+    ]
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I131651094",
+     "display_name": "University of Denver",
+     "ror": "https://ror.org/04w7skc03",
+     "country_code": "US",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I131651094"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "contributor_roles": [],
+   "raw_author_name": "Allison S. Troy",
+   "raw_affiliation_strings": [
+    "Department of Psychology, University of Denver, 2155 S Race St, Denver, CO 80208, USA"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "Department of Psychology, University of Denver, 2155 S Race St, Denver, CO 80208, USA",
+     "institution_ids": [
+      "https://openalex.org/I131651094"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": "https://openalex.org/A5020932312",
+    "display_name": "Matthew Boland",
+    "orcid": "https://orcid.org/0000-0002-2110-6459",
+    "observed_orcids": [
+     "https://orcid.org/0000-0002-2110-6459"
+    ]
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I134113660",
+     "display_name": "University of Nevada, Reno",
+     "ror": "https://ror.org/01keh0577",
+     "country_code": "US",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I134113660"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "contributor_roles": [],
+   "raw_author_name": "Matthew Boland",
+   "raw_affiliation_strings": [
+    "Department of Psychology, University of Nevada, Reno, Mail Stop 296, Reno, NV 89557, USA"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "Department of Psychology, University of Nevada, Reno, Mail Stop 296, Reno, NV 89557, USA",
+     "institution_ids": [
+      "https://openalex.org/I134113660"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "last",
+   "author": {
+    "id": "https://openalex.org/A5025979872",
+    "display_name": "Iris B. Mauss",
+    "orcid": "https://orcid.org/0000-0002-3797-4795",
+    "observed_orcids": [
+     "https://orcid.org/0000-0002-3797-4795"
+    ]
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I131651094",
+     "display_name": "University of Denver",
+     "ror": "https://ror.org/04w7skc03",
+     "country_code": "US",
+     "type": "education",
+     "lineage": [
+      "https://openalex.org/I131651094"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "contributor_roles": [],
+   "raw_author_name": "Iris B. Mauss",
+   "raw_affiliation_strings": [
+    "Department of Psychology, University of Denver, 2155 S Race St, Denver, CO 80208, USA"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "Department of Psychology, University of Denver, 2155 S Race St, Denver, CO 80208, USA",
+     "institution_ids": [
+      "https://openalex.org/I131651094"
+     ]
+    }
+   ]
+  }
+ ],
+ "institutions": [],
+ "countries_distinct_count": 1,
+ "institutions_distinct_count": 2,
+ "corresponding_author_ids": [
+  "https://openalex.org/A5081488538"
+ ],
+ "corresponding_institution_ids": [
+  "https://openalex.org/I131651094"
+ ],
+ "apc_list": {
+  "value": 3580,
+  "currency": "USD",
+  "value_usd": 3580
+ },
+ "apc_paid": null,
+ "fwci": 7.0996,
+ "has_fulltext": false,
+ "cited_by_count": 222,
+ "reviewed_by_count": 0,
+ "citation_normalized_percentile": {
+  "value": 0.96956234,
+  "is_in_top_1_percent": false,
+  "is_in_top_10_percent": true
+ },
+ "cited_by_percentile_year": {
+  "min": 99,
+  "max": 100
+ },
+ "biblio": {
+  "volume": "48",
+  "issue": "9",
+  "first_page": "921",
+  "last_page": "929"
+ },
+ "is_retracted": false,
+ "is_pulled": false,
+ "is_paratext": false,
+ "is_xpac": false,
+ "primary_topic": {
+  "id": "https://openalex.org/T10708",
+  "display_name": "Mindfulness and Compassion Interventions",
+  "score": 0.9463000297546387,
+  "subfield": {
+   "id": "https://openalex.org/subfields/3203",
+   "display_name": "Clinical Psychology"
+  },
+  "field": {
+   "id": "https://openalex.org/fields/32",
+   "display_name": "Psychology"
+  },
+  "domain": {
+   "id": "https://openalex.org/domains/2",
+   "display_name": "Social Sciences"
+  }
+ },
+ "topics": [
+  {
+   "id": "https://openalex.org/T10708",
+   "display_name": "Mindfulness and Compassion Interventions",
+   "score": 0.9463000297546387,
+   "subfield": {
+    "id": "https://openalex.org/subfields/3203",
+    "display_name": "Clinical Psychology"
+   },
+   "field": {
+    "id": "https://openalex.org/fields/32",
+    "display_name": "Psychology"
+   },
+   "domain": {
+    "id": "https://openalex.org/domains/2",
+    "display_name": "Social Sciences"
+   }
+  },
+  {
+   "id": "https://openalex.org/T10853",
+   "display_name": "Anxiety, Depression, Psychometrics, Treatment, Cognitive Processes",
+   "score": 0.045099999755620956,
+   "subfield": {
+    "id": "https://openalex.org/subfields/3205",
+    "display_name": "Experimental and Cognitive Psychology"
+   },
+   "field": {
+    "id": "https://openalex.org/fields/32",
+    "display_name": "Psychology"
+   },
+   "domain": {
+    "id": "https://openalex.org/domains/2",
+    "display_name": "Social Sciences"
+   }
+  },
+  {
+   "id": "https://openalex.org/T10475",
+   "display_name": "Psychological Well-being and Life Satisfaction",
+   "score": 0.0010000000474974513,
+   "subfield": {
+    "id": "https://openalex.org/subfields/3207",
+    "display_name": "Social Psychology"
+   },
+   "field": {
+    "id": "https://openalex.org/fields/32",
+    "display_name": "Psychology"
+   },
+   "domain": {
+    "id": "https://openalex.org/domains/2",
+    "display_name": "Social Sciences"
+   }
+  }
+ ],
+ "keywords": [
+  {
+   "id": "https://openalex.org/keywords/acceptance",
+   "display_name": "acceptance",
+   "score": 0.7540000081062317
+  },
+  {
+   "id": "https://openalex.org/keywords/negative-emotional-experiences",
+   "display_name": "negative emotional experiences",
+   "score": 0.7429999709129333
+  },
+  {
+   "id": "https://openalex.org/keywords/negative-affect",
+   "display_name": "negative affect",
+   "score": 0.9829999804496765
+  },
+  {
+   "id": "https://openalex.org/keywords/depressive-symptoms",
+   "display_name": "depressive symptoms",
+   "score": 0.9990000128746033
+  },
+  {
+   "id": "https://openalex.org/keywords/stressful-life-events",
+   "display_name": "life events",
+   "score": 0.9729999899864197
+  },
+  {
+   "id": "https://openalex.org/keywords/emotion-regulation",
+   "display_name": "emotion regulation",
+   "score": 0.7979999780654907
+  },
+  {
+   "id": "https://openalex.org/keywords/emotion-induction",
+   "display_name": "emotion induction",
+   "score": 0.6269999742507935
+  },
+  {
+   "id": "https://openalex.org/keywords/buffering",
+   "display_name": "buffering",
+   "score": 0.4490000009536743
+  },
+  {
+   "id": "https://openalex.org/keywords/women",
+   "display_name": "women",
+   "score": 0.5270000100135803
+  }
+ ],
+ "concepts": [
+  {
+   "id": "https://openalex.org/C27158222",
+   "wikidata": "https://www.wikidata.org/wiki/Q5532422",
+   "display_name": "Generalizability theory",
+   "level": 2,
+   "score": 0.8451821804046631
+  },
+  {
+   "id": "https://openalex.org/C15744967",
+   "wikidata": "https://www.wikidata.org/wiki/Q9418",
+   "display_name": "Psychology",
+   "level": 0,
+   "score": 0.7949055433273315
+  },
+  {
+   "id": "https://openalex.org/C2776035688",
+   "wikidata": "https://www.wikidata.org/wiki/Q1606558",
+   "display_name": "Affect (linguistics)",
+   "level": 2,
+   "score": 0.6814829707145691
+  },
+  {
+   "id": "https://openalex.org/C2779343474",
+   "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+   "display_name": "Context (archaeology)",
+   "level": 2,
+   "score": 0.6266356706619263
+  },
+  {
+   "id": "https://openalex.org/C70410870",
+   "wikidata": "https://www.wikidata.org/wiki/Q199906",
+   "display_name": "Clinical psychology",
+   "level": 1,
+   "score": 0.5925524234771729
+  },
+  {
+   "id": "https://openalex.org/C3019858935",
+   "wikidata": "https://www.wikidata.org/wiki/Q4340209",
+   "display_name": "Depressive symptoms",
+   "level": 3,
+   "score": 0.5810391306877136
+  },
+  {
+   "id": "https://openalex.org/C138496976",
+   "wikidata": "https://www.wikidata.org/wiki/Q175002",
+   "display_name": "Developmental psychology",
+   "level": 1,
+   "score": 0.3073381185531616
+  },
+  {
+   "id": "https://openalex.org/C558461103",
+   "wikidata": "https://www.wikidata.org/wiki/Q154430",
+   "display_name": "Anxiety",
+   "level": 2,
+   "score": 0.20955559611320496
+  },
+  {
+   "id": "https://openalex.org/C118552586",
+   "wikidata": "https://www.wikidata.org/wiki/Q7867",
+   "display_name": "Psychiatry",
+   "level": 1,
+   "score": 0.2040145993232727
+  },
+  {
+   "id": "https://openalex.org/C151730666",
+   "wikidata": "https://www.wikidata.org/wiki/Q7205",
+   "display_name": "Paleontology",
+   "level": 1,
+   "score": 0
+  },
+  {
+   "id": "https://openalex.org/C46312422",
+   "wikidata": "https://www.wikidata.org/wiki/Q11024",
+   "display_name": "Communication",
+   "level": 1,
+   "score": 0
+  },
+  {
+   "id": "https://openalex.org/C86803240",
+   "wikidata": "https://www.wikidata.org/wiki/Q420",
+   "display_name": "Biology",
+   "level": 0,
+   "score": 0
+  }
+ ],
+ "mesh": [
+  {
+   "descriptor_ui": "D000223",
+   "descriptor_name": "Adaptation, Psychological",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": true
+  },
+  {
+   "descriptor_ui": "D000328",
+   "descriptor_name": "Adult",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D003863",
+   "descriptor_name": "Depression",
+   "qualifier_ui": "Q000523",
+   "qualifier_name": "psychology",
+   "is_major_topic": true
+  },
+  {
+   "descriptor_ui": "D004644",
+   "descriptor_name": "Emotions",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": true
+  },
+  {
+   "descriptor_ui": "D005260",
+   "descriptor_name": "Female",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D006801",
+   "descriptor_name": "Humans",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D007266",
+   "descriptor_name": "Inhibition, Psychological",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D008875",
+   "descriptor_name": "Middle Aged",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D008960",
+   "descriptor_name": "Models, Psychological",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D012016",
+   "descriptor_name": "Reference Values",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  },
+  {
+   "descriptor_ui": "D013315",
+   "descriptor_name": "Stress, Psychological",
+   "qualifier_ui": "Q000523",
+   "qualifier_name": "psychology",
+   "is_major_topic": true
+  },
+  {
+   "descriptor_ui": "D055500",
+   "descriptor_name": "Resilience, Psychological",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": true
+  },
+  {
+   "descriptor_ui": "D055815",
+   "descriptor_name": "Young Adult",
+   "qualifier_ui": null,
+   "qualifier_name": null,
+   "is_major_topic": false
+  }
+ ],
+ "locations_count": 3,
+ "locations": [
+  {
+   "id": "doi:10.1016/j.brat.2010.05.025",
+   "doi": "https://doi.org/10.1016/j.brat.2010.05.025",
+   "is_oa": false,
+   "landing_page_url": "https://doi.org/10.1016/j.brat.2010.05.025",
+   "pdf_url": null,
+   "source": {
+    "id": "https://openalex.org/S186589312",
+    "display_name": "Behaviour Research and Therapy",
+    "issn_l": "0005-7967",
+    "issn": [
+     "0005-7967",
+     "1873-622X"
+    ],
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": true,
+    "listed_in": [
+     "cwts-core",
+     "dongbi-b",
+     "erih-plus",
+     "jufo-3",
+     "ki-jl-2",
+     "medline",
+     "norway-2",
+     "poland-140",
+     "russia-white-list-1",
+     "vabb-shw"
+    ],
+    "host_organization": "https://openalex.org/P4310320990",
+    "host_organization_name": "Elsevier BV",
+    "host_organization_lineage": [
+     "https://openalex.org/P4310320990"
+    ],
+    "host_organization_lineage_names": [
+     "Elsevier BV"
+    ],
+    "type": "journal"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "publishedVersion",
+   "is_accepted": true,
+   "is_published": true,
+   "raw_source_name": "Behaviour Research and Therapy",
+   "raw_type": "journal-article"
+  },
+  {
+   "id": "pmid:20566191",
+   "doi": null,
+   "is_oa": false,
+   "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/20566191",
+   "pdf_url": null,
+   "source": {
+    "id": "https://openalex.org/S4306525036",
+    "display_name": "PubMed",
+    "issn_l": null,
+    "issn": null,
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": false,
+    "listed_in": [],
+    "host_organization": "https://openalex.org/I1299303238",
+    "host_organization_name": "National Institutes of Health",
+    "host_organization_lineage": [
+     "https://openalex.org/I1299303238"
+    ],
+    "host_organization_lineage_names": [],
+    "type": "repository"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "publishedVersion",
+   "is_accepted": true,
+   "is_published": true,
+   "raw_source_name": "Behaviour research and therapy",
+   "raw_type": "Journal Article"
+  },
+  {
+   "id": "pmh:oai:pubmedcentral.nih.gov:3045747",
+   "doi": null,
+   "is_oa": true,
+   "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3045747/",
+   "pdf_url": null,
+   "source": {
+    "id": "https://openalex.org/S2764455111",
+    "display_name": "PubMed Central",
+    "issn_l": null,
+    "issn": null,
+    "is_oa": true,
+    "is_in_doaj": false,
+    "is_core": false,
+    "listed_in": [],
+    "host_organization": "https://openalex.org/I1299303238",
+    "host_organization_name": "National Institutes of Health",
+    "host_organization_lineage": [
+     "https://openalex.org/I1299303238"
+    ],
+    "host_organization_lineage_names": [],
+    "type": "repository"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "acceptedVersion",
+   "is_accepted": true,
+   "is_published": false,
+   "raw_source_name": "Behav Res Ther",
+   "raw_type": "Text"
+  }
+ ],
+ "best_oa_location": {
+  "id": "pmh:oai:pubmedcentral.nih.gov:3045747",
+  "doi": null,
+  "is_oa": true,
+  "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3045747/",
+  "pdf_url": null,
+  "source": {
+   "id": "https://openalex.org/S2764455111",
+   "display_name": "PubMed Central",
+   "issn_l": null,
+   "issn": null,
+   "is_oa": true,
+   "is_in_doaj": false,
+   "is_core": false,
+   "listed_in": [],
+   "host_organization": "https://openalex.org/I1299303238",
+   "host_organization_name": "National Institutes of Health",
+   "host_organization_lineage": [
+    "https://openalex.org/I1299303238"
+   ],
+   "host_organization_lineage_names": [],
+   "type": "repository"
+  },
+  "license": null,
+  "license_id": null,
+  "version": "acceptedVersion",
+  "is_accepted": true,
+  "is_published": false,
+  "raw_source_name": "Behav Res Ther",
+  "raw_type": "Text"
+ },
+ "sustainable_development_goals": [
+  {
+   "score": 0.9391000270843506,
+   "id": "https://metadata.un.org/sdg/3",
+   "display_name": "Good health and well-being"
+  }
+ ],
+ "study_designs": [
+  {
+   "id": "https://openalex.org/study-designs/observational-study",
+   "display_name": "Observational Study"
+  }
+ ],
+ "awards": [
+  {
+   "id": "https://openalex.org/G1705881414",
+   "display_name": "The impact of reappraisal ability on adjustment to stressful life events",
+   "funder_award_id": "R21AG031967",
+   "funder_id": "https://openalex.org/F4320337337",
+   "funder_display_name": "National Institute on Aging"
+  }
+ ],
+ "funders": [
+  {
+   "id": "https://openalex.org/F4320311641",
+   "display_name": "University of Denver",
+   "ror": "https://ror.org/04w7skc03"
+  },
+  {
+   "id": "https://openalex.org/F4320337337",
+   "display_name": "National Institute on Aging",
+   "ror": "https://ror.org/049v75w11"
+  }
+ ],
+ "has_content": {
+  "grobid_xml": false,
+  "pdf": false
+ },
+ "content_urls": null,
+ "referenced_works_count": 78,
+ "referenced_works": [
+  "https://openalex.org/W220663592",
+  "https://openalex.org/W1514273299",
+  "https://openalex.org/W1607228446",
+  "https://openalex.org/W1723026158",
+  "https://openalex.org/W1738371459",
+  "https://openalex.org/W1920782445",
+  "https://openalex.org/W1964369157",
+  "https://openalex.org/W1965330153",
+  "https://openalex.org/W1965974360",
+  "https://openalex.org/W1969469729",
+  "https://openalex.org/W1970029304",
+  "https://openalex.org/W1973267098",
+  "https://openalex.org/W1975305620",
+  "https://openalex.org/W1977394642",
+  "https://openalex.org/W1978187044",
+  "https://openalex.org/W1979132077",
+  "https://openalex.org/W1979369153",
+  "https://openalex.org/W1979460778",
+  "https://openalex.org/W1983146753",
+  "https://openalex.org/W1985773988",
+  "https://openalex.org/W1989296080",
+  "https://openalex.org/W1990697028",
+  "https://openalex.org/W1992433314",
+  "https://openalex.org/W1993366964",
+  "https://openalex.org/W1994035044",
+  "https://openalex.org/W2000745518",
+  "https://openalex.org/W2000906445",
+  "https://openalex.org/W2001097956",
+  "https://openalex.org/W2003741161",
+  "https://openalex.org/W2004398848",
+  "https://openalex.org/W2004577101",
+  "https://openalex.org/W2010393674",
+  "https://openalex.org/W2015587003",
+  "https://openalex.org/W2016416593",
+  "https://openalex.org/W2019245605",
+  "https://openalex.org/W2021828018",
+  "https://openalex.org/W2024021976",
+  "https://openalex.org/W2024721544",
+  "https://openalex.org/W2030217702",
+  "https://openalex.org/W2031972330",
+  "https://openalex.org/W2032712510",
+  "https://openalex.org/W2033941022",
+  "https://openalex.org/W2037576759",
+  "https://openalex.org/W2037970998",
+  "https://openalex.org/W2041417706",
+  "https://openalex.org/W2045253569",
+  "https://openalex.org/W2045592008",
+  "https://openalex.org/W2046291297",
+  "https://openalex.org/W2046705204",
+  "https://openalex.org/W2067271431",
+  "https://openalex.org/W2073730305",
+  "https://openalex.org/W2081045115",
+  "https://openalex.org/W2088231681",
+  "https://openalex.org/W2089349199",
+  "https://openalex.org/W2091804124",
+  "https://openalex.org/W2093674431",
+  "https://openalex.org/W2097382228",
+  "https://openalex.org/W2103897634",
+  "https://openalex.org/W2108595350",
+  "https://openalex.org/W2114214919",
+  "https://openalex.org/W2115256221",
+  "https://openalex.org/W2136936100",
+  "https://openalex.org/W2147821460",
+  "https://openalex.org/W2148905283",
+  "https://openalex.org/W2149469179",
+  "https://openalex.org/W2150355913",
+  "https://openalex.org/W2154406004",
+  "https://openalex.org/W2166880045",
+  "https://openalex.org/W2180532674",
+  "https://openalex.org/W2313987504",
+  "https://openalex.org/W2319794630",
+  "https://openalex.org/W2785736784",
+  "https://openalex.org/W2898052942",
+  "https://openalex.org/W4233110100",
+  "https://openalex.org/W4235891541",
+  "https://openalex.org/W4252148491",
+  "https://openalex.org/W6748432079",
+  "https://openalex.org/W7047381192"
+ ],
+ "related_works": [
+  "https://openalex.org/W2736191584",
+  "https://openalex.org/W2538037377",
+  "https://openalex.org/W1977741281",
+  "https://openalex.org/W7138164560",
+  "https://openalex.org/W3206281278",
+  "https://openalex.org/W55228200",
+  "https://openalex.org/W2145072195",
+  "https://openalex.org/W2606028402",
+  "https://openalex.org/W4411870023",
+  "https://openalex.org/W1988989603"
+ ],
+ "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W2045869257",
+ "counts_by_year": [
+  {
+   "year": 2026,
+   "cited_by_count": 12
+  },
+  {
+   "year": 2025,
+   "cited_by_count": 17
+  },
+  {
+   "year": 2024,
+   "cited_by_count": 14
+  },
+  {
+   "year": 2023,
+   "cited_by_count": 22
+  },
+  {
+   "year": 2022,
+   "cited_by_count": 18
+  },
+  {
+   "year": 2021,
+   "cited_by_count": 12
+  },
+  {
+   "year": 2020,
+   "cited_by_count": 15
+  },
+  {
+   "year": 2019,
+   "cited_by_count": 20
+  },
+  {
+   "year": 2018,
+   "cited_by_count": 13
+  },
+  {
+   "year": 2017,
+   "cited_by_count": 12
+  },
+  {
+   "year": 2016,
+   "cited_by_count": 13
+  },
+  {
+   "year": 2015,
+   "cited_by_count": 17
+  },
+  {
+   "year": 2014,
+   "cited_by_count": 12
+  },
+  {
+   "year": 2013,
+   "cited_by_count": 9
+  },
+  {
+   "year": 2012,
+   "cited_by_count": 10
+  }
+ ],
+ "updated_date": "2026-11-21T10:27:49.728292",
+ "created_date": "2016-06-24T00:00:00"
+}

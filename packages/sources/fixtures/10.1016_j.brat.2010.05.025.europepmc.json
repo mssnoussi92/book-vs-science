@@ -1,0 +1,281 @@
+{
+ "version": "6.9",
+ "hitCount": 1,
+ "request": {
+  "queryString": "DOI:\"10.1016/j.brat.2010.05.025\"",
+  "resultType": "core",
+  "cursorMark": "*",
+  "pageSize": 25,
+  "sort": "",
+  "synonym": false
+ },
+ "resultList": {
+  "result": [
+   {
+    "id": "20566191",
+    "source": "MED",
+    "pmid": "20566191",
+    "pmcid": "PMC3045747",
+    "fullTextIdList": {
+     "fullTextId": [
+      "PMC3045747"
+     ]
+    },
+    "doi": "10.1016/j.brat.2010.05.025",
+    "title": "Let it be: Accepting negative emotional experiences predicts decreased negative affect and depressive symptoms.",
+    "authorString": "Shallcross AJ, Troy AS, Boland M, Mauss IB.",
+    "authorList": {
+     "author": [
+      {
+       "fullName": "Shallcross AJ",
+       "lastName": "Shallcross",
+       "firstName": "Amanda J",
+       "initials": "AJ",
+       "authorId": {
+        "type": "ORCID",
+        "value": "0000-0003-3166-8786"
+       },
+       "authorAffiliationDetailsList": {
+        "authorAffiliation": [
+         {
+          "affiliation": "Department of Psychology, University of Denver, CO 80208, USA. ashallcross@psy.du.edu"
+         }
+        ]
+       }
+      },
+      {
+       "fullName": "Troy AS",
+       "lastName": "Troy",
+       "firstName": "Allison S",
+       "initials": "AS"
+      },
+      {
+       "fullName": "Boland M",
+       "lastName": "Boland",
+       "firstName": "Matthew",
+       "initials": "M"
+      },
+      {
+       "fullName": "Mauss IB",
+       "lastName": "Mauss",
+       "firstName": "Iris B",
+       "initials": "IB"
+      }
+     ]
+    },
+    "authorIdList": {
+     "authorId": [
+      {
+       "type": "ORCID",
+       "value": "0000-0003-3166-8786"
+      }
+     ]
+    },
+    "dataLinksTagsList": {
+     "dataLinkstag": [
+      "altmetrics",
+      "supporting_data"
+     ]
+    },
+    "journalInfo": {
+     "issue": "9",
+     "volume": "48",
+     "journalIssueId": 1750312,
+     "dateOfPublication": "2010 Sep",
+     "monthOfPublication": 9,
+     "yearOfPublication": 2010,
+     "journal": {
+      "medlineAbbreviation": "Behav Res Ther",
+      "title": "Behaviour research and therapy",
+      "essn": "1873-622X",
+      "issn": "0005-7967",
+      "nlmid": "0372477",
+      "isoabbreviation": "Behav Res Ther"
+     },
+     "printPublicationDate": "2010-09-01"
+    },
+    "pubYear": "2010",
+    "pageInfo": "921-929",
+    "affiliation": "Department of Psychology, University of Denver, CO 80208, USA. ashallcross@psy.du.edu",
+    "publicationStatus": "ppublish",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+     "pubType": [
+      "Research Support, Non-U.S. Gov't",
+      "research-article",
+      "Journal Article",
+      "Research Support, N.I.H., Extramural"
+     ]
+    },
+    "grantsList": {
+     "grant": [
+      {
+       "agency": "NIA NIH HHS",
+       "acronym": "AG",
+       "grantId": "AG031967",
+       "orderIn": 0
+      },
+      {
+       "agency": "NIA NIH HHS",
+       "acronym": "AG",
+       "grantId": "R21 AG031967",
+       "orderIn": 0
+      }
+     ]
+    },
+    "meshHeadingList": {
+     "meshHeading": [
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Humans"
+      },
+      {
+       "majorTopic_YN": "Y",
+       "descriptorName": "Adaptation, Psychological"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Depression",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "Y",
+          "abbreviation": "PX",
+          "qualifierName": "psychology"
+         }
+        ]
+       }
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Stress, Psychological",
+       "meshQualifierList": {
+        "meshQualifier": [
+         {
+          "majorTopic_YN": "Y",
+          "abbreviation": "PX",
+          "qualifierName": "psychology"
+         }
+        ]
+       }
+      },
+      {
+       "majorTopic_YN": "Y",
+       "descriptorName": "Emotions"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Models, Psychological"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Reference Values"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Adult"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Middle Aged"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Female"
+      },
+      {
+       "majorTopic_YN": "Y",
+       "descriptorName": "Resilience, Psychological"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Young Adult"
+      },
+      {
+       "majorTopic_YN": "N",
+       "descriptorName": "Inhibition, Psychological"
+      }
+     ]
+    },
+    "subsetList": {
+     "subset": [
+      {
+       "code": "IM",
+       "name": "Index Medicus"
+      }
+     ]
+    },
+    "fullTextUrlList": {
+     "fullTextUrl": [
+      {
+       "availability": "Free",
+       "availabilityCode": "F",
+       "documentStyle": "pdf",
+       "site": "Unpaywall",
+       "url": "https://europepmc.org/articles/pmc3045747?pdf=render"
+      },
+      {
+       "availability": "Subscription required",
+       "availabilityCode": "S",
+       "documentStyle": "doi",
+       "site": "DOI",
+       "url": "https://doi.org/10.1016/j.brat.2010.05.025"
+      },
+      {
+       "availability": "Free",
+       "availabilityCode": "F",
+       "documentStyle": "html",
+       "site": "Europe_PMC",
+       "url": "https://europepmc.org/articles/PMC3045747"
+      },
+      {
+       "availability": "Free",
+       "availabilityCode": "F",
+       "documentStyle": "pdf",
+       "site": "Europe_PMC",
+       "url": "https://europepmc.org/articles/PMC3045747?pdf=render"
+      },
+      {
+       "availability": "Free",
+       "availabilityCode": "F",
+       "documentStyle": "doi",
+       "site": "DOI",
+       "url": "https://doi.org/10.1016/j.brat.2010.05.025"
+      }
+     ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "citedByCount": 82,
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "hasLabsLinks": "Y",
+    "hasData": "Y",
+    "authMan": "Y",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "Y",
+    "manuscriptId": "NIHMS258653",
+    "hasTMAccessionNumbers": "Y",
+    "tmAccessionTypeList": {
+     "accessionType": [
+      "doi"
+     ]
+    },
+    "dateOfCompletion": "2010-11-30",
+    "dateOfCreation": "2010-06-23",
+    "dateOfRevision": "2025-05-29",
+    "electronicPublicationDate": "2010-06-01",
+    "firstPublicationDate": "2010-06-01",
+    "firstIndexDate": "2010-08-11",
+    "fullTextReceivedDate": "2025-02-05",
+    "hasEvaluations": "N"
+   }
+  ]
+ }
+}

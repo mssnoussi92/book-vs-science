@@ -1,0 +1,213 @@
+{
+ "id": "https://openalex.org/W4234420047",
+ "doi": "https://doi.org/10.1016/j.jcbs.2021.03.005",
+ "title": "Erratum Regarding Previously Published Articles in Volume 15, 16, 17 and 18",
+ "display_name": "Erratum Regarding Previously Published Articles in Volume 15, 16, 17 and 18",
+ "alternate_titles": [],
+ "publication_year": 2021,
+ "publication_date": "2021-03-23",
+ "ids": {
+  "openalex": "https://openalex.org/W4234420047",
+  "doi": "https://doi.org/10.1016/j.jcbs.2021.03.005"
+ },
+ "language": "en",
+ "primary_location": {
+  "id": "doi:10.1016/j.jcbs.2021.03.005",
+  "doi": "https://doi.org/10.1016/j.jcbs.2021.03.005",
+  "is_oa": false,
+  "landing_page_url": "https://doi.org/10.1016/j.jcbs.2021.03.005",
+  "pdf_url": null,
+  "source": {
+   "id": "https://openalex.org/S2764949934",
+   "display_name": "Journal of Contextual Behavioral Science",
+   "issn_l": "2212-1447",
+   "issn": [
+    "2212-1447",
+    "2212-1455"
+   ],
+   "is_oa": false,
+   "is_in_doaj": false,
+   "is_core": true,
+   "listed_in": [
+    "cwts-core",
+    "dongbi-d",
+    "jufo-1",
+    "ki-jl-1",
+    "norway-1",
+    "poland-70",
+    "russia-white-list-1",
+    "vabb-shw"
+   ],
+   "host_organization": "https://openalex.org/P4310320990",
+   "host_organization_name": "Elsevier BV",
+   "host_organization_lineage": [
+    "https://openalex.org/P4310320990"
+   ],
+   "host_organization_lineage_names": [
+    "Elsevier BV"
+   ],
+   "type": "journal"
+  },
+  "license": null,
+  "license_id": null,
+  "version": "publishedVersion",
+  "is_accepted": true,
+  "is_published": true,
+  "raw_source_name": "Journal of Contextual Behavioral Science",
+  "raw_type": "journal-article"
+ },
+ "parent_works": [],
+ "lineage": [
+  "https://openalex.org/W4234420047"
+ ],
+ "child_works_count": 0,
+ "type": "erratum",
+ "is_traditional": true,
+ "indexed_in": [
+  "crossref"
+ ],
+ "open_access": {
+  "is_oa": false,
+  "oa_status": "closed",
+  "oa_url": null,
+  "any_repository_has_fulltext": false
+ },
+ "authorships": [],
+ "institutions": [],
+ "countries_distinct_count": 0,
+ "institutions_distinct_count": 0,
+ "corresponding_author_ids": [],
+ "corresponding_institution_ids": [],
+ "apc_list": {
+  "value": 2000,
+  "currency": "USD",
+  "value_usd": 2000
+ },
+ "apc_paid": null,
+ "fwci": null,
+ "has_fulltext": false,
+ "cited_by_count": 0,
+ "reviewed_by_count": 0,
+ "citation_normalized_percentile": null,
+ "cited_by_percentile_year": null,
+ "biblio": {
+  "volume": "21",
+  "issue": null,
+  "first_page": "223",
+  "last_page": "226"
+ },
+ "is_retracted": false,
+ "is_pulled": false,
+ "is_paratext": false,
+ "is_xpac": false,
+ "primary_topic": null,
+ "topics": [],
+ "keywords": [],
+ "concepts": [
+  {
+   "id": "https://openalex.org/C20556612",
+   "wikidata": "https://www.wikidata.org/wiki/Q4469374",
+   "display_name": "Volume (thermodynamics)",
+   "level": 2,
+   "score": 0.736805260181427
+  },
+  {
+   "id": "https://openalex.org/C15744967",
+   "wikidata": "https://www.wikidata.org/wiki/Q9418",
+   "display_name": "Psychology",
+   "level": 0,
+   "score": 0.634122371673584
+  },
+  {
+   "id": "https://openalex.org/C11171543",
+   "wikidata": "https://www.wikidata.org/wiki/Q41630",
+   "display_name": "Psychoanalysis",
+   "level": 1,
+   "score": 0.35150474309921265
+  },
+  {
+   "id": "https://openalex.org/C97355855",
+   "wikidata": "https://www.wikidata.org/wiki/Q11473",
+   "display_name": "Thermodynamics",
+   "level": 1,
+   "score": 0.06400629878044128
+  },
+  {
+   "id": "https://openalex.org/C121332964",
+   "wikidata": "https://www.wikidata.org/wiki/Q413",
+   "display_name": "Physics",
+   "level": 0,
+   "score": 0.05180582404136658
+  }
+ ],
+ "mesh": [],
+ "locations_count": 1,
+ "locations": [
+  {
+   "id": "doi:10.1016/j.jcbs.2021.03.005",
+   "doi": "https://doi.org/10.1016/j.jcbs.2021.03.005",
+   "is_oa": false,
+   "landing_page_url": "https://doi.org/10.1016/j.jcbs.2021.03.005",
+   "pdf_url": null,
+   "source": {
+    "id": "https://openalex.org/S2764949934",
+    "display_name": "Journal of Contextual Behavioral Science",
+    "issn_l": "2212-1447",
+    "issn": [
+     "2212-1447",
+     "2212-1455"
+    ],
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": true,
+    "listed_in": [
+     "cwts-core",
+     "dongbi-d",
+     "jufo-1",
+     "ki-jl-1",
+     "norway-1",
+     "poland-70",
+     "russia-white-list-1",
+     "vabb-shw"
+    ],
+    "host_organization": "https://openalex.org/P4310320990",
+    "host_organization_name": "Elsevier BV",
+    "host_organization_lineage": [
+     "https://openalex.org/P4310320990"
+    ],
+    "host_organization_lineage_names": [
+     "Elsevier BV"
+    ],
+    "type": "journal"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "publishedVersion",
+   "is_accepted": true,
+   "is_published": true,
+   "raw_source_name": "Journal of Contextual Behavioral Science",
+   "raw_type": "journal-article"
+  }
+ ],
+ "best_oa_location": null,
+ "sustainable_development_goals": [],
+ "study_designs": [],
+ "awards": [],
+ "funders": [],
+ "has_content": {
+  "pdf": false,
+  "grobid_xml": false
+ },
+ "content_urls": null,
+ "referenced_works_count": 0,
+ "referenced_works": [],
+ "related_works": [
+  "https://openalex.org/W7038884407",
+  "https://openalex.org/W4232371467",
+  "https://openalex.org/W2057541346"
+ ],
+ "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W4234420047",
+ "counts_by_year": [],
+ "updated_date": "2026-08-28T12:50:07.497085",
+ "created_date": "2022-05-12T00:00:00"
+}
