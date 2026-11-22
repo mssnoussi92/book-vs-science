@@ -41,6 +41,15 @@ Ce qui reste fragile, dit franchement. Premier jet (2026-11-22, conception) ; co
   qu'une coupe (pilote : 0,84 s contre 0,92 s), Whisper (small) vérifie que chaque morceau est bien sa réplique ; une
   réplique très courte se reconnaît mal (« بطّل زعل بقى! » à 0,48).
 
+## Écriture
+
+- **Hooks** : sur les cinq types écrits pour le pilote, le propriétaire n'en retient qu'un, le défi (« ما تفكرش في دب أبيض »),
+  qui fait faire quelque chose au spectateur ; l'ouverture à froid, la promesse du livre, la question montrée et le POV
+  « n'accrochent pas ». Les prochains épisodes gardent cinq hooks (la règle `hooks`), mais leur écrivain part du défi
+  et le contradicteur juge chaque hook contre lui.
+- **Scène** : ce qui ne se comprenait pas au pilote, c'était la mise en scène plus que les répliques (un personnage qui
+  pense, bouche qui bouge face à l'autre) : seul, un personnage pense ; avec l'autre, il parle.
+
 ## Coût et dépendances
 
 - Le vrai coût est l'**abonnement Claude** du propriétaire, partagé avec ses deux autres dépôts : mesuré au pilote.
