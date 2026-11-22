@@ -2,6 +2,7 @@
 // listed at the end of `bvs check` (« à vérifier à l'œil »).
 import { approvals } from "./approvals.ts";
 import { book } from "./book.ts";
+import { duration } from "./duration.ts";
 import { claimsSaid, outcome, sourcesExist, sourcesVerified, takeaway, verdict } from "./evidence.ts";
 import { loadRepo } from "./load.ts";
 import { customScene, folders, hooks, idsUnique } from "./structure.ts";
@@ -10,7 +11,7 @@ import type { Issue, Repo, Rule } from "./types.ts";
 
 export const RULES: Rule[] = [
   folders, idsUnique, hooks, customScene,
-  langComplete, textChars, lengths, noAuthorName, numbersFromRegistry, sensitive, causalVerbs, generalizations, applicability,
+  langComplete, textChars, lengths, duration, noAuthorName, numbersFromRegistry, sensitive, causalVerbs, generalizations, applicability,
   book,
   sourcesExist, sourcesVerified, verdict, claimsSaid, outcome, takeaway,
   approvals,
