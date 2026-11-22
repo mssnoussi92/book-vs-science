@@ -44,6 +44,33 @@
       "request": "nour",
       "voice": "nour=Leda",
       "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-22T20:20:24.432Z",
+      "day": "2026-11-22",
+      "episode": "feeling-bad-about-feeling-bad",
+      "lang": "ar-EG",
+      "request": "adasa.hooks2",
+      "voice": "adasa=Iapetus",
+      "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-22T20:21:05.356Z",
+      "day": "2026-11-22",
+      "episode": "feeling-bad-about-feeling-bad",
+      "lang": "ar-EG",
+      "request": "karim.hooks2",
+      "voice": "karim=Achird",
+      "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-22T20:21:44.660Z",
+      "day": "2026-11-22",
+      "episode": "feeling-bad-about-feeling-bad",
+      "lang": "ar-EG",
+      "request": "nour.hooks2",
+      "voice": "nour=Leda",
+      "model": "gemini-3.8-flash-tts"
     }
   ]
 }
