@@ -33,6 +33,20 @@
         "metric": "d",
         "value": -0.04
       }
+    },
+    {
+      "id": "distraction-works",
+      "text": "Distraction and reappraisal do reduce the emotion in the short term: not every way of turning away from a feeling fails",
+      "support": {
+        "sentence": "Whereas distraction was an effective way to regulate emotions (d(+) = 0.27), concentration was not (d(+) = -0.26).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.27
+      },
+      "kind": "causal"
     }
   ],
   "limits": [

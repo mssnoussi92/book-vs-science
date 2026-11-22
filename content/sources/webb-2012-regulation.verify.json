@@ -51,6 +51,11 @@
       "name": "support:suppressing-the-feeling",
       "result": "pass",
       "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:distraction-works",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
     }
   ],
   "found": {
