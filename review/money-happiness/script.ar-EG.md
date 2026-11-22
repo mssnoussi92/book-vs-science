@@ -63,7 +63,7 @@
 - **عدسة** *(skeptical, a small pause before the answer)* : والعلم؟ مش بالظبط.  `1.7 s`
 - **عدسة** *(neutral, calm, factual; fair to the book on « غالبًا صح »)* : الجزء الأول غالبًا صح: نفس الزيادة مرتبطة بفرق أكبر… مع اللي معاه أقل.  `6.4 s`
 - **عدسة** *(neutral, calm, a beat after « مش واضح »; the same weight on both sides)* : والسقف؟ مش واضح: دراسات لقته… ودراسات لأ.  `3.6 s`
-- **عدسة** *(neutral, a comparison for every Arab viewer, plain; a light stress on « أعلى »)* : حتى في أمريكا، والمرتبات أعلى: دراسات لقت اللي بيكسب أكتر، راضي أكتر.  `6.0 s`
+- **عدسة** *(neutral, a comparison for every Arab viewer, plain; a light stress on « أعلى »)* : حتى في أمريكا، والمرتبات أعلى: دراسات لقت اللي بيكسب أكتر راضي أكتر.  `6.0 s`
 
 ## 5. À retenir (suggestion à faible risque)
 
@@ -72,4 +72,4 @@
 
 ---
 Durée estimée : **59 s** (débit 2.1 mots/s, recalibré sur la première prise)
-Empreinte du script ar-EG : **36e44d**
+Empreinte du script ar-EG : **e6e5b1**
