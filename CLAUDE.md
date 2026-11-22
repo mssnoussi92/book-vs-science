@@ -73,7 +73,7 @@ texte de publication) : elle attend son « je valide » par une question à choi
 | Langue | arabe égyptien ; textes par langue (`lang/<code>.json`), anglais et français prévus |
 | Pilote | « se sentir mal de se sentir mal » (Manson), ⚖️ sur deux affirmations : se juger d'être mal aggrave ; accepter vaut mieux que lutter (pas mieux que d'autres bonnes stratégies) |
 | Narrateur | la loupe « عدسة » ; **voix Gemini au pilote, voix humaine avant la première publication** (règle YouTube « AI personas » sur la santé et le bien-être) |
-| Personnages | Nour et Karim, amis et collègues (ni couple, ni frère et sœur), rig SVG tiré des bonshommes `Stick` de quran-themes-demo |
+| Personnages | Nour et Karim, amis et collègues (ni couple, ni frère et sœur), rig SVG tiré des bonshommes `Stick` de quran-themes-demo ; **apparence des trois validée sur planche le 2026-11-22** (`npx remotion still Sheet-<qui>`), **Nour cheveux attachés** (son choix, pas le hijab) |
 | Voix | Gemini 3.8 Flash TTS, 2 requêtes par épisode (Nour + Karim, puis le narrateur), modèle épinglé, grand livre du quota ; **clé provisoire partagée avec quran-themes-demo** (3 requêtes par jour au plus), clé propre à la chaîne plus tard |
 | Styles | 3 au pilote (cartoon, typographie animée, écran partagé) ; en production **un style maison** choisi après le pilote, les autres en essais mesurés |
 | Badge | ✅ « صح » · ⚖️ « مش بالظبط » · ❌ « غلط » · ❓ « الأدلة مش كفاية » |

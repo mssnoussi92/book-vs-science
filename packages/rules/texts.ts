@@ -117,6 +117,19 @@ export const numbersFromRegistry: Rule = {
         }
       }
       for (const n of [1, 2, 3]) allowed.add(n);            // « 2 études », « 3 حاجات » : counts of what is on screen
+      // The study card shows ONE study: its figures come from that study, not from another one of the dossier.
+      const shown = repo.sources.get(ep.verdict.onScreen);
+      const own = new Set<number>([1, 2, 3]);
+      if (shown) {
+        for (const v of [shown.n, shown.k, shown.declared.year]) if (v !== undefined) own.add(v);
+        for (const f of shown.findings) { for (const v of numbersIn(f.text)) own.add(v); if (f.effect) { own.add(f.effect.value); own.add(Math.abs(f.effect.value)); } }
+        for (const [code, lang] of langs) {
+          const card = lang.texts["verdict.card"];
+          for (const n of card ? numbersIn(card) : []) if (!own.has(n)) {
+            out.push({ rule: "numbers", severity: "error", where: langWhere(dir, code, "verdict.card"), message: `${n} n'est pas un nombre de l'étude à l'écran (${shown.id})` });
+          }
+        }
+      }
       const keys = [...narratorKeys(ep), ...ep.hooks.filter((h) => h.type === "number").map((h) => `hook.${h.id}`)];
       for (const [code, lang] of langs) for (const k of keys) {
         const t = lang.texts[k];

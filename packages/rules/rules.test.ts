@@ -70,6 +70,8 @@ describe("texts", () => {
   test("lengths: a first frame too long to read in a second", () => bites("lengths", AR, (j) => { j.texts["hook.h2.frame"] = "جرب ده تلات ثواني بس وانت قاعد مكانك"; }));
   test("no-author-name: the author named in a line", () => bites("no-author-name", AR, (j) => { j.texts["book.l1"] = "جين إكزامبل بتقول إن العادة دي بتقلل التوتر."; }));
   test("numbers: a figure that no cited source holds", () => bites("numbers", AR, (j) => { j.texts["verdict.card"] = "تحليل لـ 57 دراسة"; }));
+  test("numbers: the study card shows a figure of another study than the one on screen", () =>
+    bites("numbers", AR, (j) => { j.texts["verdict.card"] = "تجربة على 120 شخص"; }));   // 120 is exp-2019's n, the card shows meta-2020
   test("sensitive: an emotions episode without its orientation line", () => bites("sensitive", EP, (j) => { j.takeaway.orientation = false; }));
   test("sensitive: a topic the texts reveal but the writer did not declare", () => bites("sensitive", EP, (j) => { j.topic.sensitive = []; }));
   test("sensitive: advice that is never given", () => bites("sensitive", AR, (j) => { j.texts["takeaway.l1"] = "طلّع اللي جواك وخلاص."; }));
