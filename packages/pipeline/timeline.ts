@@ -2,6 +2,7 @@
 // lasts the time its words take at the language's measured rate, and the mouths come from the letters (the « text »
 // engine). The draft is watermarked and never published; it shows the owner the three styles before any voice request.
 import { words as wordsOf } from "../core/text.ts";
+import { readingChunks } from "../video/state.ts";
 import type { EpisodeEntry, Repo } from "../rules/types.ts";
 import type { Action, Beat, Timeline, TimedAction, TimedLine, VisemeName } from "../schema/index.ts";
 
@@ -137,7 +138,13 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
   else speak(`hook.${hook.id}`, "hook", hook.spokenBy === "narrator" ? ep.cast.narrator : hook.spokenBy, hook.emotion);
   for (const b of hook.beats) actions.push(timed(b, `hook.${hook.id}`, "hook", h0, f));
   parts.push({ kind: "hook", scope: "hook", f0: h0, f1: f });
-  const firstFrame = { f0: h0, f1: Math.max(f, h0 + fr(SILENT_HOOK)), text: text(`hook.${hook.id}.frame`) };
+  // The first frame's text is the only text on screen while it is up (the owner's pilot review: the same words twice,
+  // in the card and in the subtitles). A silent hook keeps it for the hook; a spoken one, until its first reading
+  // screen has been said; the subtitles take the rest (« لحد آخر الفيديو. »).
+  const hookLine = lines.find((l) => l.part === "hook");
+  const firstScreen = hookLine ? readingChunks(hookLine.words)[0] : undefined;
+  const cardEnd = hookLine && firstScreen ? hookLine.words[firstScreen[1] - 1]!.f1 + fr(0.2) : f;
+  const firstFrame = { f0: h0, f1: Math.max(hookLine ? cardEnd : f, h0 + fr(SILENT_HOOK)), text: text(`hook.${hook.id}.frame`) };
 
   // 2. the scenes
   for (const s of ep.scenes) {
