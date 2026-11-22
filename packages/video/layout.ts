@@ -11,7 +11,7 @@ export const FRAMES = {
 
 export const ZONES: Record<Aspect, { firstFrame: Box; tease: Box; badge: Box; study: Box; book: Box; subtitles: Box; card: Box; draft: Box }> = {
   "9x16": {
-    firstFrame: { x: 110, y: 322, w: 800, h: 190 },
+    firstFrame: { x: 110, y: 290, w: 800, h: 260 },
     tease: { x: 290, y: 256, w: 500, h: 56 },
     badge: { x: 340, y: 270, w: 400, h: 330 },
     study: { x: 120, y: 620, w: 780, h: 280 },
