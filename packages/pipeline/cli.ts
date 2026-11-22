@@ -6,6 +6,8 @@
 //   bvs approve <episode> sources --words "…" [--via <url>]
 //   bvs approve <episode> script --lang ar-EG --words "…" [--via <url>]
 //   bvs review <episode>                     writes review/<id>/sources.md and script.<lang>.md (the owner's pages)
+//   bvs voice plan <episode> [--lang ar-EG] [--mode single|dialogue]
+//                                            the voice requests (who says what), before any is sent
 //   bvs timeline <episode> --draft [--lang ar-EG] [--hook h1]
 //                                            the timeline the styles draw (draft: estimated durations, no voice)
 //   bvs sources verify [<episode>|--all] [--live] [--write]
@@ -91,6 +93,17 @@ switch (cmd) {
     if (!e) { console.error(`épisode inconnu : ${args[0] ?? "(aucun)"}`); process.exit(2); }
     const { writeReview } = await import("./review.ts");
     for (const p of writeReview(repo, e)) console.log(p.slice(ROOT.length + 1));
+    break;
+  }
+  case "voice": {
+    // bvs voice plan <episode> [--lang ar-EG] [--mode single|dialogue] : the requests, before any is sent
+    if (args[0] !== "plan") { console.error("bvs voice plan <épisode> [--lang] [--mode single|dialogue]"); process.exit(2); }
+    const repo = loadRepo(ROOT);
+    const e = repo.episodes.find((x) => x.id === args[1]);
+    if (!e) { console.error(`épisode inconnu : ${args[1] ?? "(aucun)"}`); process.exit(2); }
+    const { planPage } = await import("./voice.ts");
+    const mode = flag("mode") === "dialogue" ? "dialogue" : "single";
+    console.log(planPage(repo, e, flag("lang") ?? e.episode.sourceLang, mode));
     break;
   }
   case "timeline": {
