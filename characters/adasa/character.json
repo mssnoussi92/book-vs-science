@@ -4,5 +4,16 @@
   "role": "narrator",
   "kind": "mascot",
   "fictional": true,
-  "names": { "ar-EG": "عدسة", "en": "Adasa" }
+  "names": {
+    "ar-EG": "عدسة",
+    "en": "Adasa"
+  },
+  "voices": {
+    "ar-EG": {
+      "engine": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Iapetus",
+      "castOn": "2026-11-22"
+    }
+  }
 }
