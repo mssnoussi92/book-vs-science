@@ -104,6 +104,76 @@
         },
         "applicabilityLine": {
           "type": "string"
+        },
+        "labels": {
+          "type": "object",
+          "properties": {
+            "badge": {
+              "type": "object",
+              "properties": {
+                "confirmed": {
+                  "type": "string"
+                },
+                "nuanced": {
+                  "type": "string"
+                },
+                "contradicted": {
+                  "type": "string"
+                },
+                "unknown": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "confirmed",
+                "nuanced",
+                "contradicted",
+                "unknown"
+              ],
+              "additionalProperties": false
+            },
+            "certainty": {
+              "type": "object",
+              "properties": {
+                "high": {
+                  "type": "string"
+                },
+                "moderate": {
+                  "type": "string"
+                },
+                "low": {
+                  "type": "string"
+                },
+                "very-low": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "high",
+                "moderate",
+                "low",
+                "very-low"
+              ],
+              "additionalProperties": false
+            },
+            "bookSays": {
+              "type": "string"
+            },
+            "scienceSays": {
+              "type": "string"
+            },
+            "draft": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "badge",
+            "certainty",
+            "bookSays",
+            "scienceSays",
+            "draft"
+          ],
+          "additionalProperties": false
         }
       },
       "required": [
@@ -113,7 +183,8 @@
         "wordsPerSecond",
         "limits",
         "lexicons",
-        "applicabilityLine"
+        "applicabilityLine",
+        "labels"
       ],
       "additionalProperties": false
     }

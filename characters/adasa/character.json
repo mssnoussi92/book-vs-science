@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/character.schema.json",
+  "id": "adasa",
+  "role": "narrator",
+  "kind": "mascot",
+  "fictional": true,
+  "names": { "ar-EG": "عدسة", "en": "Adasa" }
+}

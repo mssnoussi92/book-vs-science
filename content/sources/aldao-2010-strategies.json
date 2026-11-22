@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "aldao-2010-strategies",
+  "doi": "10.1016/j.cpr.2009.11.004",
+  "declared": {
+    "title": "Emotion-regulation strategies across psychopathology: A meta-analytic review",
+    "firstAuthor": "Aldao",
+    "authors": [
+      "Aldao",
+      "Nolen-Hoeksema",
+      "Schweizer"
+    ],
+    "year": 2010,
+    "venue": "Clinical Psychology Review",
+    "foundIn": "docs/design/review-science.md (dossier du pilote, 2026-11-22) ; titre de mémoire de la session"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "k": 114,
+  "population": "114 studies, 241 effect sizes, dispositional emotion regulation",
+  "mena": false,
+  "findings": [
+    {
+      "id": "small-to-medium",
+      "text": "Across 114 studies, acceptance goes with fewer symptoms, but less strongly than rumination or avoidance go with more",
+      "support": {
+        "sentence": "We found a large effect size for rumination, medium to large for avoidance, problem solving, and suppression, and small to medium for reappraisal and acceptance.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "dispositions, correlational"
+  ],
+  "acknowledged": []
+}

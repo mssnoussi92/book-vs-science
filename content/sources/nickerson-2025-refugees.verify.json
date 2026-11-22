@@ -1,0 +1,71 @@
+{
+  "doi": "10.1016/j.jad.2025.119490",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « The temporal relationship between non-acceptance of positive and negative emotions and psychological symptoms in refugees » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Nickerson » matches; 5/5 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2025, found 2025"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:ptsd-both-ways",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "The temporal relationship between non-acceptance of positive and negative emotions and psychological symptoms in refugees",
+    "firstAuthor": "Nickerson",
+    "years": [
+      2025
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Affective Disorders"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "bbe9d5b912d96a88036673f79cce5e2d30eae6a13ff54753e2a45b8414ae843f",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

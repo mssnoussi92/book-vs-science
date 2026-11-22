@@ -20,9 +20,14 @@ dans `LIMITES.md`.
   exactement ce qui est validé. Sans l'outil (session planifiée) : la question va dans le rapport, options numérotées.
 - **L'amélioration continue** : outils, gabarits, styles, titres évoluent d'après les mesures ; propose ce que tu vois,
   avec les chiffres ; ce qui touche une décision de lui lui est demandé, le reste se fait (PR, checks, fusion).
-- **Zéro dépense** : paliers gratuits seulement. La clé Gemini vit dans le projet Google `voice` du compte de la chaîne,
-  **qui n'a jamais de facturation** (sinon chaque requête de voix devient payante, sans alerte). Ce quota ne complète
-  jamais celui de quran-themes-demo, et inversement. Aucune clé n'est jamais tapée dans la conversation.
+- **Zéro dépense** : paliers gratuits seulement. La clé Gemini doit vivre dans un projet Google **qui n'a jamais de
+  facturation** (sinon chaque requête de voix devient payante, sans alerte). Aucune clé n'est jamais tapée dans la
+  conversation : c'est le secret `GEMINI_API_KEY` du dépôt, posé par lui.
+- **Clé de voix provisoire** (sa décision, 2026-11-22) : en attendant le compte Google de la chaîne, le secret
+  `GEMINI_API_KEY` de ce dépôt est **la même clé que quran-themes-demo**, donc le **même quota** (10 requêtes par jour,
+  non garanti) que ses vidéos en production. Tant que c'est le cas : **3 requêtes par jour au plus** pour cette chaîne,
+  jamais de casting un jour où quran-themes-demo fait sa voix. Quand il crée la clé du projet `voice` de la chaîne, il
+  remplace la valeur du secret ; rien d'autre ne change, et cette règle tombe.
 - **Les nombres s'écrivent 123, jamais ١٢٣**, à l'écran, dans les titres et les textes.
 
 ## Règles non négociables du contenu
@@ -66,10 +71,10 @@ texte de publication) : elle attend son « je valide » par une question à choi
 | Sujet | Choix |
 |---|---|
 | Langue | arabe égyptien ; textes par langue (`lang/<code>.json`), anglais et français prévus |
-| Pilote | « se sentir mal de se sentir mal » (Manson), ⚖️ sur deux affirmations : se juger d'être mal aggrave ; accepter vaut mieux que lutter (pas mieux que d'autres bonnes stratégies) |
+| Pilote | « se sentir mal de se sentir mal » (Manson), ⚖️ sur deux affirmations : se juger d'être mal aggrave ; accepter vaut mieux que lutter (pas mieux que d'autres bonnes stratégies) ; **sources (387a76) et script (ar-EG 34e847, en 2b69d5) validés le 2026-11-22**, après la relecture du contradicteur : nuance écrite « تقبل الإحساس… مش الموقف », Wang 2020 à l'écran (`reports/feeling-bad-about-feeling-bad/challenge.md`) |
 | Narrateur | la loupe « عدسة » ; **voix Gemini au pilote, voix humaine avant la première publication** (règle YouTube « AI personas » sur la santé et le bien-être) |
-| Personnages | Nour et Karim, amis et collègues (ni couple, ni frère et sœur), rig SVG tiré des bonshommes `Stick` de quran-themes-demo |
-| Voix | Gemini 3.8 Flash TTS, 2 requêtes par épisode (Nour + Karim, puis le narrateur), modèle épinglé, grand livre du quota |
+| Personnages | Nour et Karim, amis et collègues (ni couple, ni frère et sœur), rig SVG tiré des bonshommes `Stick` de quran-themes-demo ; **apparence des trois validée sur planche le 2026-11-22** (`npx remotion still Sheet-<qui>`), **Nour cheveux attachés** (son choix, pas le hijab) |
+| Voix | Gemini 3.8 Flash TTS, **une voix par requête** (une requête par personnage et une pour le narrateur, soit 3 au pilote ; son choix du 2026-11-22 : depuis le 5-6 novembre, Gemini mélange les deux voix d'une requête à deux locuteurs, forum Google sans correctif ; `bvs voice plan`, mode `dialogue` gardé pour quand ce sera réparé), une réplique dite deux fois avec les mêmes mots demandée une fois, modèle épinglé, grand livre du quota ; **clé provisoire partagée avec quran-themes-demo** (3 requêtes par jour au plus), clé propre à la chaîne plus tard |
 | Styles | 3 au pilote (cartoon, typographie animée, écran partagé) ; en production **un style maison** choisi après le pilote, les autres en essais mesurés |
 | Badge | ✅ « صح » · ⚖️ « مش بالظبط » · ❌ « غلط » · ❓ « الأدلة مش كفاية » |
 | YouTube | **vidéos longues + shorts**, chaque short relié à sa vidéo longue (« vidéo associée », à la main dans Studio : absent de l'API) ; forme de la vidéo longue décidée après le pilote |

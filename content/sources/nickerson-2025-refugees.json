@@ -1,0 +1,42 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "nickerson-2025-refugees",
+  "doi": "10.1016/j.jad.2025.119490",
+  "declared": {
+    "title": "The temporal relationship between non-acceptance of positive and negative emotions and psychological symptoms in refugees",
+    "firstAuthor": "Nickerson",
+    "authors": [
+      "Nickerson",
+      "Specker",
+      "Keegan",
+      "Argadianti",
+      "Nandyatama"
+    ],
+    "year": 2025,
+    "venue": "Journal of Affective Disorders",
+    "foundIn": "agent contre-preuve, recherche Crossref / Europe PMC du 2026-11-22 (reports/feeling-bad-about-feeling-bad/counter-evidence.md) ; titre relevé sur Crossref par l'agent : contrôle d'identité plus faible"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "n": 1235,
+  "population": "1,235 refugees in transit in Indonesia; survey in Arabic, Farsi, Dari, Somali or English (share of Arabic speakers not given)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "ptsd-both-ways",
+      "text": "Not accepting one's negative emotions goes with PTSD symptoms in both directions over time, and no link with depression is reported",
+      "support": {
+        "sentence": "Non-acceptance of negative emotions showed a bidirectional relationship with PTSD symptoms.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "brief measure of non-acceptance of negative emotions",
+    "refugee population, not representative",
+    "the only sample found that includes Arabic speakers"
+  ],
+  "acknowledged": []
+}

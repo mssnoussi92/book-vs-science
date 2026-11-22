@@ -7,8 +7,9 @@ export type Placed = { part: PartName; scope: string; beat: Beat; key: string | 
 export function beats(ep: Episode): Placed[] {
   const out: Placed[] = [];
   const add = (part: PartName, scope: string, list: readonly Beat[]) => {
-    for (const beat of list) out.push({ part, scope, beat, key: beat.kind === "line" ? `${scope}.${beat.id}` : null });
+    for (const beat of list) out.push({ part, scope, beat, key: beat.kind === "line" || beat.caption ? `${scope}.${beat.id}` : null });
   };
+  for (const h of ep.hooks) add("hook", `hook.${h.id}`, h.beats);
   for (const s of ep.scenes) add("scene", s.id, s.beats);
   add("book", "book", ep.book.beats);
   add("verdict", "verdict", ep.verdict.beats);

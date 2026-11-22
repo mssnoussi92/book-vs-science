@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "roos-2026-visitor-mindset",
+  "doi": "10.1038/s41598-026-59035-3",
+  "declared": {
+    "title": "Randomized trial of a single-session digital intervention targeting emotion-related beliefs and emotion regulation",
+    "firstAuthor": "Roos",
+    "authors": [
+      "Roos",
+      "McHugh",
+      "Vafaie",
+      "Schleider",
+      "McDanal"
+    ],
+    "year": 2026,
+    "venue": "Scientific Reports",
+    "foundIn": "agent contre-preuve, recherche Crossref / Europe PMC du 2026-11-22 (reports/feeling-bad-about-feeling-bad/counter-evidence.md) ; titre relevé sur Crossref par l'agent : contrôle d'identité plus faible"
+  },
+  "design": "rct",
+  "designSetBy": "reviewer",
+  "n": 530,
+  "population": "530 emotionally distressed adults, United States (CloudResearch)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "no-distress-change",
+      "text": "A short program teaching people to accept their negative emotions did not lower their distress more than relaxing videos",
+      "support": {
+        "sentence": "There was not a significant difference in changes in emotional distress between treatment conditions (d=0.13, p>.05).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "intervention",
+      "effect": {
+        "metric": "d",
+        "value": 0.13
+      }
+    }
+  ],
+  "limits": [
+    "a single session, several ingredients mixed",
+    "2-week follow-up",
+    "an effect on distress only in the most distressed subgroup (secondary analysis)"
+  ],
+  "acknowledged": []
+}

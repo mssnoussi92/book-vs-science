@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "zerwas-2024-concern",
+  "doi": "10.1037/emo0001381",
+  "declared": {
+    "title": "Unpacking the pursuit of happiness: Being concerned about happiness but not aspiring to happiness is linked with negative meta-emotions and worse well-being",
+    "firstAuthor": "Zerwas",
+    "authors": [
+      "Zerwas",
+      "Ford",
+      "John",
+      "Mauss"
+    ],
+    "year": 2024,
+    "venue": "Emotion",
+    "foundIn": "docs/design/review-science.md ; titre relevé par le relecteur science sur Crossref (contrôle d'identité plus faible pour cette fiche)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "n": 1815,
+  "population": "students and community adults, diverse in gender, ethnicity, age and place (N = 1,815)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "concern",
+      "text": "Judging and worrying about one's happiness, not wanting to be happy, goes with lower well-being",
+      "support": {
+        "sentence": "In Study 2, concern about happiness (but not aspiring to happiness) was associated with lower well-being cross-sectionally and longitudinally.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "meta-emotions",
+      "text": "That link runs partly through feeling bad about one's feelings during good moments",
+      "support": {
+        "sentence": "In Study 3, these links between concern about happiness and worse well-being were partially accounted for by experiencing greater negative meta-emotions during daily positive events.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "correlational",
+    "same network of authors as Ford 2018 and Mauss 2011",
+    "about judging one's happiness, not about judging one's negative emotions (blind review)"
+  ],
+  "acknowledged": []
+}

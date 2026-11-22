@@ -57,6 +57,12 @@ describe("structure", () => {
   test("ids-unique: two lines with the same id", () => bites("ids-unique", EP, (j) => { j.scenes[0].beats[2].id = "l1"; }));
   test("hooks: only four types", () => bites("hooks", EP, (j) => { j.hooks[4].type = "question"; }));
   test("hooks: a number hook without a claim", () => bites("hooks", EP, (j) => { j.hooks[4].type = "number"; }));
+  const act = (extra: Record<string, unknown>) => ({ kind: "action", id: "a9", who: "omar", seconds: 1, fx: { id: "spiral", params: {} }, ...extra });
+  test("hooks: an action kept for a hook that does not exist", () => bites("hooks", EP, (j) => { j.verdict.beats.push(act({ hooks: ["h9"] })); }));
+  test("hooks: an action kept for every hook", () => bites("hooks", EP, (j) => { j.verdict.beats.push(act({ hooks: j.hooks.map((h: { id: string }) => h.id) })); }));
+  test("hooks: a caption on a hook's action", () => bites("hooks", EP, (j) => { j.hooks[1].beats = [act({ caption: true })]; }));
+  test("folders: an action anchored on a line of another part", () => bites("folders", EP, (j) => { j.verdict.beats.push(act({ at: { line: "zz", word: 0 } })); }));
+  test("folders: holds a part with nothing to hold", () => bites("folders", EP, (j) => { j.verdict.beats.push({ kind: "action", id: "a9", who: "omar", seconds: 1, gesture: "breathe", holds: "part" }); }));
   test("custom-scene: two custom scenes", () => bites("custom-scene", EP, (j) => {
     j.scenes[0].custom = "spiral";
     j.scenes.push({ ...structuredClone(j.scenes[0]), id: "s2", beats: j.scenes[0].beats.map((b: Json) => ({ ...b, id: `${b.id}x` })) });
@@ -70,6 +76,8 @@ describe("texts", () => {
   test("lengths: a first frame too long to read in a second", () => bites("lengths", AR, (j) => { j.texts["hook.h2.frame"] = "جرب ده تلات ثواني بس وانت قاعد مكانك"; }));
   test("no-author-name: the author named in a line", () => bites("no-author-name", AR, (j) => { j.texts["book.l1"] = "جين إكزامبل بتقول إن العادة دي بتقلل التوتر."; }));
   test("numbers: a figure that no cited source holds", () => bites("numbers", AR, (j) => { j.texts["verdict.card"] = "تحليل لـ 57 دراسة"; }));
+  test("numbers: the study card shows a figure of another study than the one on screen", () =>
+    bites("numbers", AR, (j) => { j.texts["verdict.card"] = "تجربة على 120 شخص"; }));   // 120 is exp-2019's n, the card shows meta-2020
   test("sensitive: an emotions episode without its orientation line", () => bites("sensitive", EP, (j) => { j.takeaway.orientation = false; }));
   test("sensitive: a topic the texts reveal but the writer did not declare", () => bites("sensitive", EP, (j) => { j.topic.sensitive = []; }));
   test("sensitive: advice that is never given", () => bites("sensitive", AR, (j) => { j.texts["takeaway.l1"] = "طلّع اللي جواك وخلاص."; }));

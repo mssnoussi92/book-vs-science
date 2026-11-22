@@ -1,0 +1,71 @@
+{
+  "doi": "10.1016/j.cpr.2026.102786",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Randomized controlled evidence of the efficacy of acceptance and commitment therapy: A systematic review and meta-analysis » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Gower » matches; 3/3 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2026, found 2026"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:not-superior",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "Randomized controlled evidence of the efficacy of acceptance and commitment therapy: A systematic review and meta-analysis",
+    "firstAuthor": "Gower",
+    "years": [
+      2026
+    ],
+    "type": "journal-article",
+    "venue": "Clinical Psychology Review"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "1dc71583bbd21ba28a718c895bb1b36f0230c91942a81c469d824856c8503f8c",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

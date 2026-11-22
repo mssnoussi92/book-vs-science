@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "shallcross-2010-acceptance",
+  "doi": "10.1016/j.brat.2010.05.025",
+  "declared": {
+    "title": "Let it be: Accepting negative emotional experiences predicts decreased negative affect and depressive symptoms",
+    "firstAuthor": "Shallcross",
+    "authors": [
+      "Shallcross",
+      "Troy",
+      "Boland",
+      "Mauss"
+    ],
+    "year": 2010,
+    "venue": "Behaviour Research and Therapy",
+    "foundIn": "docs/design/review-science.md (dossier du pilote, 2026-11-22) ; titre de mémoire de la session"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "population": "women, community samples (2 studies)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "induction",
+      "text": "Women who accept their negative emotions feel less negative affect during a sad induction",
+      "support": {
+        "sentence": "Results indicated that acceptance was correlated with decreased negative affect during a negative emotion induction but not an affectively neutral condition (Study 1).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "after-stress",
+      "text": "Acceptance predicts fewer depressive symptoms after high life stress, not after low stress",
+      "support": {
+        "sentence": "In Study 2, acceptance interacted with life stress such that acceptance predicted lower levels of depressive symptoms after higher, but not lower, life stress.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "female samples only",
+    "correlational",
+    "acceptance alone has no significant effect in Study 2: only its interaction with high life stress (blind review, full text)",
+    "same network of authors as three other sources of this dossier (Iris Mauss): the evidence is not independent"
+  ],
+  "acknowledged": []
+}

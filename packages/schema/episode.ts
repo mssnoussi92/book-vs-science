@@ -26,6 +26,8 @@ export const Line = z.strictObject({
   look: Look.optional(),
   /** A line that states a finding names the claims (verdict assessments) it rests on. */
   claims: z.array(NodeId).default([]),
+  /** "inner": the character speaks to himself (subtitled as a thought, said under the breath). */
+  voice: z.enum(["spoken", "inner"]).default("spoken"),
   cut: Cut,
 });
 
@@ -43,6 +45,13 @@ export const Action = z.strictObject({
   seconds: z.number().min(0.3).max(4),
   /** Anchor on a word of a line (its index in the line's text), instead of after the previous beat. */
   at: z.strictObject({ line: NodeId, word: z.number().int().min(0) }).optional(),
+  /** Only in the versions that open with these hooks (an image the other hooks never introduced). */
+  hooks: z.array(NodeId).min(1).optional(),
+  /** How long the effect or prop stays: its own seconds ("beat"), until the same character's next effect ("next":
+   *  a spiral that grows until the rewind), or to the end of its part ("part": a rain cloud over the whole scene). */
+  holds: z.enum(["beat", "next", "part"]).default("beat"),
+  /** A text shown while the action plays, with no voice (text key <part>.<action id>). */
+  caption: z.boolean().default(false),
   cut: Cut,
 });
 
@@ -69,6 +78,8 @@ export const Hook = z.strictObject({
   firstFrame: z.enum(["close-up", "text-over-scene", "badge-tease", "challenge", "split"]),
   emotion: Emotion.default("neutral"),
   claims: z.array(NodeId).default([]),             // required for "number" and "paradox"
+  /** What the characters do on the first frame (all at once, from the first image: never a still picture). */
+  beats: z.array(Action).max(4).default([]),
 });
 
 export const Scene = z.strictObject({
@@ -120,6 +131,8 @@ export const Verdict = z.strictObject({
   assessments: z.array(Assessment).min(1),
   /** The one nuance said in the video (text key verdict.nuance); the others go to the episode's evidence page. */
   nuance: NodeId.optional(),
+  /** false: the nuance is written on its card only, held without voice (when the minute is full). */
+  nuanceSpoken: z.boolean().default(true),
   onScreen: Slug,                                   // the source of the study card
   /** The search protocol, written down (what was searched, where, when, and what was not found). */
   searched: z.strictObject({
@@ -184,6 +197,7 @@ export type Episode = z.infer<typeof Episode>;
 export type Beat = z.infer<typeof Beat>;
 export type Line = z.infer<typeof Line>;
 export type Hook = z.infer<typeof Hook>;
+export type Action = z.infer<typeof Action>;
 
 /** Every text key the episode needs, in reading order. A language is complete when its file has them all. */
 export function requiredKeys(ep: Episode): string[] {
@@ -193,7 +207,7 @@ export function requiredKeys(ep: Episode): string[] {
     if (h.spokenBy !== "none") keys.push(`hook.${h.id}`);
   }
   const lines = (part: string, beats: readonly Beat[]) => {
-    for (const b of beats) if (b.kind === "line") keys.push(`${part}.${b.id}`);
+    for (const b of beats) if (b.kind === "line" || b.caption) keys.push(`${part}.${b.id}`);
   };
   for (const s of ep.scenes) lines(s.id, s.beats);
   keys.push("book.card");                            // the idea on the book card (≤ 12 words)

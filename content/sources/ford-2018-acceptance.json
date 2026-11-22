@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "ford-2018-acceptance",
+  "doi": "10.1037/pspp0000157",
+  "declared": {
+    "title": "The psychological health benefits of accepting negative emotions and thoughts: Laboratory, diary, and longitudinal evidence",
+    "firstAuthor": "Ford",
+    "authors": [
+      "Ford",
+      "Lam",
+      "John",
+      "Mauss"
+    ],
+    "year": 2018,
+    "venue": "Journal of Personality and Social Psychology",
+    "foundIn": "docs/design/review-science.md (dossier du pilote, 2026-11-22) ; titre de mémoire de la session"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "n": 1381,
+  "population": "adults in 3 samples (N = 1,003, 156, 222); countries not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "health-6-months",
+      "text": "People who habitually accept their negative emotions feel less negative emotion under daily stress, which accounts for better psychological health 6 months later",
+      "support": {
+        "sentence": "Finally, in a longitudinal design (Study 3, N = 222), acceptance predicted lower negative (but not positive) emotion experienced during daily stressors that, in turn, accounted for the link between acceptance and psychological health 6 months later.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "feelings-not-situations",
+      "text": "The benefit is for accepting one's feelings and thoughts, not for accepting one's situation",
+      "support": {
+        "sentence": "This link between acceptance and psychological health was unique to accepting mental experiences and was not observed for accepting situations.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "stressor",
+      "text": "In the lab, people who habitually accept their emotions react with less negative emotion to a standard stressor",
+      "support": {
+        "sentence": "Next, in a laboratory study (Study 2, N = 156), habitual acceptance predicted lower negative (but not positive) emotional responses to a standardized stressor.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "habitual acceptance is measured, never manipulated: an association, not a cause",
+    "self-reported measures",
+    "countries of the samples not given in the abstract (to read in the full text)",
+    "psychological health measured at 6 months without its baseline level (blind review, full text)",
+    "same network of authors as three other sources of this dossier (Iris Mauss): the evidence is not independent"
+  ],
+  "acknowledged": []
+}

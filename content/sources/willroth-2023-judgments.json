@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "willroth-2023-judgments",
+  "doi": "10.1037/emo0001220",
+  "declared": {
+    "title": "Judging emotions as good or bad: Individual differences and associations with psychological health",
+    "firstAuthor": "Willroth",
+    "authors": [
+      "Willroth",
+      "Young",
+      "Tamir",
+      "Mauss"
+    ],
+    "year": 2023,
+    "venue": "Emotion",
+    "foundIn": "agent contre-preuve, recherche Crossref / Europe PMC du 2026-11-22 (reports/feeling-bad-about-feeling-bad/counter-evidence.md) ; titre relevé sur Crossref par l'agent : contrôle d'identité plus faible"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "n": 1647,
+  "population": "MTurk and undergraduate samples (5 samples, N = 1,647), United States",
+  "mena": false,
+  "findings": [
+    {
+      "id": "negative-judgments",
+      "text": "Judging one's negative emotions as bad goes with worse psychological health, now and later, beyond neuroticism and related traits",
+      "support": {
+        "sentence": "In Aim 2, positive judgments of positive emotions were uniquely associated with better psychological health and negative judgments of negative emotions were uniquely associated with worse psychological health concurrently and prospectively, above and beyond the other types of emotion judgments, and above and beyond conceptually related constructs and broader traits.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "correlational",
+    "online and student samples",
+    "same network of authors (Iris Mauss) as three other sources of this dossier"
+  ],
+  "acknowledged": []
+}

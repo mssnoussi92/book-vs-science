@@ -26,7 +26,7 @@ Ce qui reste fragile, dit franchement. Premier jet (2026-11-22, conception) ; co
 
 ## Voix et image
 
-- Le multi-locuteurs de Gemini en égyptien n'a jamais été essayé ; la limite gratuite des modèles TTS n'est pas publiée
+- Le multi-locuteurs de Gemini mélange les deux voix aux changements de locuteur depuis le 5-6 novembre 2026 (forum Google, sans correctif) : une voix par requête, ce qui coûte une requête de plus par personnage (3 au pilote, tout le budget d'un jour de la clé partagée) et perd l'enchaînement naturel d'un dialogue (les répliques sont dites séparément puis montées) ; la limite gratuite des modèles TTS n'est pas publiée
   (« not guaranteed ») ; Google change de modèle tous les quelques mois (un changement = un nouveau casting).
 - **Rhubarb Lip Sync** est mal adapté à l'arabe (mesuré sur deux prises égyptiennes : « aa » 3 % des images, lèvres
   arrondies jusqu'à 20 %) ; d'autres moteurs sont comparés à l'aveugle.

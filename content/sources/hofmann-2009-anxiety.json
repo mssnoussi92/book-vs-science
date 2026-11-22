@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "hofmann-2009-anxiety",
+  "doi": "10.1016/j.brat.2009.02.010",
+  "declared": {
+    "title": "How to handle anxiety: The effects of reappraisal, acceptance, and suppression strategies on anxious arousal",
+    "firstAuthor": "Hofmann",
+    "authors": [
+      "Hofmann",
+      "Heering",
+      "Sawyer",
+      "Asnaani"
+    ],
+    "year": 2009,
+    "venue": "Behaviour Research and Therapy",
+    "foundIn": "agent contre-preuve, recherche Crossref / Europe PMC du 2026-11-22 (reports/feeling-bad-about-feeling-bad/counter-evidence.md) ; titre relevé sur Crossref par l'agent : contrôle d'identité plus faible"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 202,
+  "population": "202 volunteers giving an impromptu speech, randomly assigned",
+  "mena": false,
+  "findings": [
+    {
+      "id": "same-felt-anxiety",
+      "text": "Accepting anxiety did not make people feel less anxious than suppressing it",
+      "support": {
+        "sentence": "However, the Acceptance and Suppression groups did not differ in their subjective anxiety response.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "reappraisal-better",
+      "text": "Rethinking the situation calmed the felt anxiety better than accepting or suppressing it",
+      "support": {
+        "sentence": "However, reappraising is more effective for moderating the subjective feeling of anxiety than attempts to suppress or accept it.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "one situation (a speech)",
+    "volunteers"
+  ],
+  "acknowledged": []
+}

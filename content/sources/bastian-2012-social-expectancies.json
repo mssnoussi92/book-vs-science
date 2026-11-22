@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "bastian-2012-social-expectancies",
+  "doi": "10.1037/a0024755",
+  "declared": {
+    "title": "Feeling bad about being sad: The role of social expectancies in amplifying negative mood",
+    "firstAuthor": "Bastian",
+    "authors": [
+      "Bastian",
+      "Kuppens",
+      "Hornsey",
+      "Park",
+      "Koval",
+      "Uchida"
+    ],
+    "year": 2012,
+    "venue": "Emotion",
+    "foundIn": "docs/design/review-science.md (dossier du pilote, 2026-11-22) ; titre de mémoire de la session"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "adults in Australia and Japan (4 studies)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "self-evaluation",
+      "text": "Believing that others expect us not to feel sad goes with more negative emotion and less well-being, through judging ourselves negatively when we feel bad",
+      "support": {
+        "sentence": "The authors show that perceived social expectancies predict these differences in emotion and well-being both more consistently than-and independently of-personal expectancies and that they do so by promoting negative self-evaluation when experiencing negative emotion.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "experiments",
+      "text": "In experiments, making people feel that others expect them not to be sad makes them feel worse after a negative event",
+      "support": {
+        "sentence": "We also find experimental evidence for the causal role of social expectancies in negative emotional responses to negative emotional events (Studies 3 and 4).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "it manipulates what others expect, not self-judgment directly: indirect for the book's claim",
+    "Australia and Japan; effects clearer in Australia"
+  ],
+  "acknowledged": []
+}

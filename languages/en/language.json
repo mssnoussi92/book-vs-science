@@ -4,17 +4,74 @@
   "name": "English",
   "dir": "ltr",
   "wordsPerSecond": 2.5,
-  "limits": { "hookFrameWords": 6, "bookCardWords": 12, "lineChars": 160 },
-  "lexicons": {
-    "causal": ["causes", "leads to", "cures", "makes you", "results in", "will make"],
-    "generalizing": ["all women", "all men", "women always", "men always", "women are", "men are"],
-    "sensitive": {
-      "mental-health": ["depression", "anxiety", "sad", "emotions", "feeling bad"],
-      "gender": ["women", "men"],
-      "money": ["money", "salary", "invest"],
-      "relationships": ["marriage", "husband", "wife"]
-    },
-    "forbiddenAdvice": ["let it all out", "vent your anger", "stop your medication", "diagnose yourself"]
+  "limits": {
+    "hookFrameWords": 6,
+    "bookCardWords": 12,
+    "lineChars": 160
   },
-  "applicabilityLine": "Most studies come from the US and Europe"
+  "lexicons": {
+    "causal": [
+      "causes",
+      "leads to",
+      "cures",
+      "makes you",
+      "results in",
+      "will make"
+    ],
+    "generalizing": [
+      "all women",
+      "all men",
+      "women always",
+      "men always",
+      "women are",
+      "men are"
+    ],
+    "sensitive": {
+      "mental-health": [
+        "depression",
+        "anxiety",
+        "sad",
+        "emotions",
+        "feeling bad"
+      ],
+      "gender": [
+        "women",
+        "men"
+      ],
+      "money": [
+        "money",
+        "salary",
+        "invest"
+      ],
+      "relationships": [
+        "marriage",
+        "husband",
+        "wife"
+      ]
+    },
+    "forbiddenAdvice": [
+      "let it all out",
+      "vent your anger",
+      "stop your medication",
+      "diagnose yourself"
+    ]
+  },
+  "applicabilityLine": "Most studies come from the US and Europe",
+  "labels": {
+    "badge": {
+      "confirmed": "True",
+      "nuanced": "Not quite",
+      "contradicted": "False",
+      "unknown": "Not enough evidence"
+    },
+    "certainty": {
+      "high": "strong evidence",
+      "moderate": "moderate evidence",
+      "low": "weak evidence",
+      "very-low": "very weak evidence"
+    },
+    "bookSays": "The book says",
+    "scienceSays": "Science says",
+    "draft": "DRAFT"
+  }
 }

@@ -1,0 +1,76 @@
+{
+  "doi": "10.1037/emo0001381",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Unpacking the pursuit of happiness: Being concerned about happiness but not aspiring to happiness is linked with negative meta-emotions and worse well-being. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Zerwas » matches; 4/4 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2024, found 2024"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:concern",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:meta-emotions",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Unpacking the pursuit of happiness: Being concerned about happiness but not aspiring to happiness is linked with negative meta-emotions and worse well-being.",
+    "firstAuthor": "Zerwas",
+    "years": [
+      2024
+    ],
+    "type": "journal-article",
+    "venue": "Emotion"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "504fe545ceb3c4f0c6288ff7598814fd0c29bed7db94f7f8cd7c28dcb076371b",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

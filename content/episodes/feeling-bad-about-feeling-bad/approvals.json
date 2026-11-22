@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/approvals.schema.json",
+  "sources": {
+    "on": "2026-11-22",
+    "words": "Je valide les sources 387a76 (Recommandé)",
+    "via": "conversation",
+    "hash": "387a767e59f18b7d697b1d6a5117eef1361eca6ca326ff572d0a17a19a467b08"
+  },
+  "script": {
+    "ar-EG": {
+      "on": "2026-11-22",
+      "words": "Je valide ar-EG 34e847 et en 2b69d5 (Recommandé)",
+      "via": "conversation",
+      "hash": "34e847c65dc41d5f354d5b7af00302f35568313b32830f3653251a7fa44ed713"
+    },
+    "en": {
+      "on": "2026-11-22",
+      "words": "Je valide ar-EG 34e847 et en 2b69d5 (Recommandé)",
+      "via": "conversation",
+      "hash": "2b69d53445d7c7cfccb7081502c48a2c6e3f9aadcbf0670bbd750221dfa4564e"
+    }
+  },
+  "voice": {},
+  "video": {}
+}

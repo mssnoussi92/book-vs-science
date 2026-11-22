@@ -1,0 +1,82 @@
+{
+  "doi": "10.1037/pspp0000157",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « The psychological health benefits of accepting negative emotions and thoughts: Laboratory, diary, and longitudinal evidence. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Ford » matches; 4/4 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2018, found 2017, 2018"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:health-6-months",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:feelings-not-situations",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:stressor",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "The psychological health benefits of accepting negative emotions and thoughts: Laboratory, diary, and longitudinal evidence.",
+    "firstAuthor": "Ford",
+    "years": [
+      2017,
+      2018
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Personality and Social Psychology"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "460b872a09cc007f2d56424d1ea5fa1667b4c4b5157305f6503b6c1f2e2ceace",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

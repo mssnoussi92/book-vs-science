@@ -5,6 +5,13 @@
 //   bvs status [<episode>]                   where each episode stands: gates, approvals and their short hashes
 //   bvs approve <episode> sources --words "…" [--via <url>]
 //   bvs approve <episode> script --lang ar-EG --words "…" [--via <url>]
+//   bvs review <episode>                     writes review/<id>/sources.md and script.<lang>.md (the owner's pages)
+//   bvs voice plan <episode> [--lang ar-EG] [--mode single|dialogue]
+//                                            the voice requests (who says what), before any is sent
+//   bvs voice take <episode> [--lang] [--only karim] [--voice karim=Achird] [--max 3] [--ledger f] [--out d] [--dry]
+//                                            sends them (workflow voice, key in the environment); --dry prints the bodies
+//   bvs timeline <episode> --draft [--lang ar-EG] [--hook h1]
+//                                            the timeline the styles draw (draft: estimated durations, no voice)
 //   bvs sources verify [<episode>|--all] [--live] [--write]
 //                                            checks each cited DOI (Crossref, OpenAlex, Europe PMC); --write saves .verify.json
 //                                            records the OWNER's approval, only after he gave it (CLAUDE.md)
@@ -80,6 +87,55 @@ switch (cmd) {
       console.log(`script ${code} de ${id} validé : ${short(hash)}`);
     }
     writeFileSync(path, JSON.stringify({ $schema: "../../../schemas/approvals.schema.json", ...Approvals.parse(current) }, null, 2) + "\n");
+    break;
+  }
+  case "review": {
+    const repo = loadRepo(ROOT);
+    const e = repo.episodes.find((x) => x.id === args[0]);
+    if (!e) { console.error(`épisode inconnu : ${args[0] ?? "(aucun)"}`); process.exit(2); }
+    const { writeReview } = await import("./review.ts");
+    for (const p of writeReview(repo, e)) console.log(p.slice(ROOT.length + 1));
+    break;
+  }
+  case "voice": {
+    // bvs voice plan <episode> [--lang ar-EG] [--mode single|dialogue] : the requests, before any is sent
+    // bvs voice take <episode> [--lang] [--only karim,nour] [--voice karim=Achird,...] [--max 3] [--ledger f] [--out d] [--dry]
+    if (args[0] !== "plan" && args[0] !== "take") { console.error("bvs voice plan|take <épisode> [--lang] [--mode single|dialogue] …"); process.exit(2); }
+    const repo = loadRepo(ROOT);
+    const e = repo.episodes.find((x) => x.id === args[1]);
+    if (!e) { console.error(`épisode inconnu : ${args[1] ?? "(aucun)"}`); process.exit(2); }
+    const mode = flag("mode") === "dialogue" ? "dialogue" : "single";
+    const lang = flag("lang") ?? e.episode.sourceLang;
+    if (args[0] === "plan") {
+      const { planPage } = await import("./voice.ts");
+      console.log(planPage(repo, e, lang, mode));
+      break;
+    }
+    const { takeVoice } = await import("./take.ts");
+    const list = (v?: string) => (v ? v.split(",").map((x) => x.trim()).filter(Boolean) : undefined);
+    const voices = list(flag("voice"))?.map((x) => x.split("=") as [string, string]);
+    if (voices?.some(([s, v]) => !s || !/^[A-Z][a-z]+$/.test(v ?? ""))) { console.error("--voice veut personnage=Voix, séparés par des virgules"); process.exit(2); }
+    process.exit(await takeVoice(repo, e, {
+      lang, mode, only: list(flag("only")), voices: voices ? Object.fromEntries(voices) : undefined,
+      model: flag("model") ?? "gemini-3.8-flash-tts", max: Number(flag("max") ?? 3),
+      ledger: flag("ledger") ?? join(ROOT, "build", "voice-ledger.json"), out: flag("out") ?? join(ROOT, "build", "takes"), dry: has("dry"),
+    }));
+  }
+  case "timeline": {
+    // bvs timeline <episode> [--lang ar-EG] [--hook h1] --draft : estimated durations, no voice (a watermarked draft)
+    const repo = loadRepo(ROOT);
+    const e = repo.episodes.find((x) => x.id === args[0]);
+    if (!e) { console.error(`épisode inconnu : ${args[0] ?? "(aucun)"}`); process.exit(2); }
+    if (!has("draft")) { console.error("sans prise de voix, seul --draft est possible pour l'instant"); process.exit(2); }
+    const { buildTimeline } = await import("./timeline.ts");
+    const { Timeline } = await import("../schema/index.ts");
+    const code = flag("lang") ?? e.episode.sourceLang;
+    const tl = Timeline.parse(buildTimeline(repo, e, { lang: code, hook: flag("hook"), style: flag("style") ?? "cartoon", draft: true }));
+    const { mkdirSync } = await import("node:fs");
+    const dir = join(ROOT, "assets/ep", e.id, code);
+    mkdirSync(dir, { recursive: true });
+    writeFileSync(join(dir, `timeline-${tl.hook}.json`), JSON.stringify(tl) + "\n");
+    console.log(`assets/ep/${e.id}/${code}/timeline-${tl.hook}.json : ${(tl.frames / tl.fps).toFixed(1)} s, hook ${tl.hook}, ${tl.lines.length} répliques (brouillon)`);
     break;
   }
   case "sources": {

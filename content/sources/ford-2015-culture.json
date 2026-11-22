@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "ford-2015-culture",
+  "doi": "10.1037/xge0000108",
+  "declared": {
+    "title": "Culture shapes whether the pursuit of happiness predicts higher or lower well-being",
+    "firstAuthor": "Ford",
+    "authors": [
+      "Ford",
+      "Dmitrieva",
+      "Heller",
+      "Chentsova-Dutton",
+      "Grossmann",
+      "Tamir",
+      "Uchida",
+      "Koopmann-Holm"
+    ],
+    "year": 2015,
+    "venue": "Journal of Experimental Psychology: General",
+    "foundIn": "docs/design/review-science.md (dossier du pilote, 2026-11-22) ; titre de mémoire de la session"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "population": "adults in the United States, Germany, Russia and East Asia",
+  "mena": false,
+  "findings": [
+    {
+      "id": "depends-on-culture",
+      "text": "Wanting to be happy goes with lower well-being in the US, with nothing in Germany, and with higher well-being in Russia and East Asia",
+      "support": {
+        "sentence": "Motivation to pursue happiness predicted lower well-being in the United States, did not predict well-being in Germany, and predicted higher well-being in Russia and in East Asia.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "correlational",
+    "no Arab country"
+  ],
+  "acknowledged": []
+}

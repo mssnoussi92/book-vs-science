@@ -4,7 +4,7 @@ out/
 .cache/
 node_modules/
 .remotion/
-public/ep/
+assets/ep/
 
 # Python
 __pycache__/

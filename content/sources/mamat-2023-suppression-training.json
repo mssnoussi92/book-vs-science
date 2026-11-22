@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "mamat-2023-suppression-training",
+  "doi": "10.1126/sciadv.adh5292",
+  "declared": {
+    "title": "Improving mental health by training the suppression of unwanted thoughts",
+    "firstAuthor": "Mamat",
+    "authors": [
+      "Mamat",
+      "Anderson"
+    ],
+    "year": 2023,
+    "venue": "Science Advances",
+    "foundIn": "agent contre-preuve, recherche Crossref / Europe PMC du 2026-11-22 (reports/feeling-bad-about-feeling-bad/counter-evidence.md) ; titre relevé sur Crossref par l'agent : contrôle d'identité plus faible"
+  },
+  "design": "rct",
+  "designSetBy": "reviewer",
+  "n": 120,
+  "population": "120 adults from 16 countries, online training",
+  "mena": false,
+  "findings": [
+    {
+      "id": "less-anxiety",
+      "text": "Three days of training to suppress fearful thoughts lowered anxiety and depression, without any rebound",
+      "support": {
+        "sentence": "After training, participants reported less anxiety, negative affect, and depression with the latter benefit persisting at 3 months.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "one lab, no independent replication among 35 citing articles",
+    "the paradigm it rests on failed a preregistered replication (Wiechert et al. 2023, 10.1080/09658211.2023.2208791)",
+    "small sample"
+  ],
+  "allegiance": "the lab that created the think/no-think paradigm",
+  "acknowledged": []
+}

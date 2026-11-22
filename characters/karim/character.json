@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/character.schema.json",
+  "id": "karim",
+  "role": "character",
+  "kind": "biped",
+  "fictional": true,
+  "names": { "ar-EG": "كريم", "en": "Karim" }
+}

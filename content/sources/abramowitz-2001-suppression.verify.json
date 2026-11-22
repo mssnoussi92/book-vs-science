@@ -1,0 +1,72 @@
+{
+  "doi": "10.1016/S0272-7358(00)00057-X",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Paradoxical effects of thought suppression: a meta-analysis of controlled studies » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Abramowitz » matches; 3/3 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2001, found 2001, 2002"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:rebound",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: method/result"
+    }
+  ],
+  "found": {
+    "title": "Paradoxical effects of thought suppression: a meta-analysis of controlled studies",
+    "firstAuthor": "Abramowitz",
+    "years": [
+      2001,
+      2002
+    ],
+    "type": "journal-article",
+    "venue": "Clinical Psychology Review"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "860cc899502544ca010e75e2af87244614a30241878914352eadd73526eff724",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

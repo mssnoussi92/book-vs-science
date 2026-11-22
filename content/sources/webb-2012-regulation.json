@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "webb-2012-regulation",
+  "doi": "10.1037/a0027600",
+  "declared": {
+    "title": "Dealing with feeling: A meta-analysis of the effectiveness of strategies derived from the process model of emotion regulation",
+    "firstAuthor": "Webb",
+    "authors": [
+      "Webb",
+      "Miles",
+      "Sheeran"
+    ],
+    "year": 2012,
+    "venue": "Psychological Bulletin",
+    "foundIn": "docs/design/review-science.md (dossier du pilote, 2026-11-22) ; titre de mémoire de la session"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "k": 306,
+  "population": "306 experimental comparisons of emotion regulation strategies",
+  "mena": false,
+  "findings": [
+    {
+      "id": "suppressing-the-feeling",
+      "text": "In experiments, suppressing the feeling itself or the thoughts about the event does not reduce the emotion",
+      "support": {
+        "sentence": "Similarly, suppressing the expression of emotion proved effective (d(+) = 0.32), but suppressing the experience of emotion or suppressing thoughts of the emotion-eliciting event did not (d(+) = -0.04 and -0.12, respectively).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal",
+      "effect": {
+        "metric": "d",
+        "value": -0.04
+      }
+    },
+    {
+      "id": "distraction-works",
+      "text": "Distraction and reappraisal do reduce the emotion in the short term: not every way of turning away from a feeling fails",
+      "support": {
+        "sentence": "Whereas distraction was an effective way to regulate emotions (d(+) = 0.27), concentration was not (d(+) = -0.26).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.27
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "laboratory, short term",
+    "acceptance is not one of its categories"
+  ],
+  "acknowledged": []
+}
