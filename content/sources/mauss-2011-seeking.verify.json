@@ -1,0 +1,86 @@
+{
+  "doi": "10.1037/a0022010",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (main title) against « Can seeking happiness make people unhappy? Paradoxical effects of valuing happiness. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Mauss » matches; 4/4 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2011, found 2011"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "1 notice(s), all acknowledged: 10.1037/a0024986"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:low-stress-only",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:induced",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:disappointment",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Can seeking happiness make people unhappy? Paradoxical effects of valuing happiness.",
+    "firstAuthor": "Mauss",
+    "years": [
+      2011
+    ],
+    "type": "journal-article",
+    "venue": "Emotion"
+  },
+  "notices": [
+    {
+      "type": "correction",
+      "doi": "10.1037/a0024986"
+    }
+  ],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "651a0bb84e16c55ef6dcb2d17b10f330cd5dc70512786956f3498db9fe973d94",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

@@ -1,0 +1,76 @@
+{
+  "doi": "10.1177/0956797618761660",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Successfully Striving for Happiness: Socially Engaged Pursuits Predict Increases in Life Satisfaction » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Rohrer » matches; 5/5 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2018, found 2018"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:per-se-neutral",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:social-pursuits",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Successfully Striving for Happiness: Socially Engaged Pursuits Predict Increases in Life Satisfaction",
+    "firstAuthor": "Rohrer",
+    "years": [
+      2018
+    ],
+    "type": "journal-article",
+    "venue": "Psychological Science"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "e08e2dcdcd68d7ddd29822bb2fab659ad7c25ba6dacea1e856b3fe3467d8591b",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

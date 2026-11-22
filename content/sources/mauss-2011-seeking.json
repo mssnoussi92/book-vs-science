@@ -18,7 +18,7 @@
   "design": "experiment",
   "designSetBy": "reviewer",
   "n": 128,
-  "population": "US women: 59 adults of the Denver community (Study 1), 69 students (Study 2)",
+  "population": "US women: 59 adults of the Denver community (Study 1), 69 young women, mean age 21 (Study 2)",
   "mena": false,
   "findings": [
     {

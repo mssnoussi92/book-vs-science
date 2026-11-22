@@ -1,0 +1,76 @@
+{
+  "doi": "10.1521/jscp.2014.33.10.890",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Desperately Seeking Happiness: Valuing Happiness is Associated With Symptoms and Diagnosis of Depression » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Ford » matches; 5/5 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2014, found 2014"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:depressive-symptoms",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:remitted-vs-healthy",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Desperately Seeking Happiness: Valuing Happiness is Associated With Symptoms and Diagnosis of Depression",
+    "firstAuthor": "Ford",
+    "years": [
+      2014
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Social and Clinical Psychology"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "77e943c91db05f35c9121e2c0cea9fd1e5881d94652df6f5f179c16825562576",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

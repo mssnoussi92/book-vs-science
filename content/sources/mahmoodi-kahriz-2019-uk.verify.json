@@ -1,0 +1,77 @@
+{
+  "doi": "10.1007/s10902-019-00193-9",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Wanting to Be Happy but Not Knowing How: Poor Attentional Control and Emotion-Regulation Abilities Mediate the Association Between Valuing Happiness and Depression » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Mahmoodi Kahriz » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2019, found 2019, 2020"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from crossref"
+    },
+    {
+      "name": "support:replicated-uk",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:strongest-british",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Wanting to Be Happy but Not Knowing How: Poor Attentional Control and Emotion-Regulation Abilities Mediate the Association Between Valuing Happiness and Depression",
+    "firstAuthor": "Mahmoodi Kahriz",
+    "years": [
+      2019,
+      2020
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Happiness Studies"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "crossref",
+  "abstractSha256": "38080fc2430f5f48e3f2d41cd0b6b74f23e8b10def391e216cbea0db0ce5775e",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

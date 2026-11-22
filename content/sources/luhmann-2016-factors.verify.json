@@ -1,0 +1,77 @@
+{
+  "doi": "10.1016/j.jrp.2015.11.003",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Is valuing happiness associated with lower well-being? A factor-level analysis using the Valuing Happiness Scale » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Luhmann » matches; 4/4 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2016, found 2015, 2016"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:one-factor-of-three",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:not-necessarily-bad",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: conclusion"
+    }
+  ],
+  "found": {
+    "title": "Is valuing happiness associated with lower well-being? A factor-level analysis using the Valuing Happiness Scale",
+    "firstAuthor": "Luhmann",
+    "years": [
+      2015,
+      2016
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Research in Personality"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "e1f83be88550785d72509860635e4abced3158110cc33e8c180786779c769586",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}
