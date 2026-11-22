@@ -1,0 +1,76 @@
+{
+  "doi": "10.1016/j.brat.2009.02.010",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « How to handle anxiety: The effects of reappraisal, acceptance, and suppression strategies on anxious arousal » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Hofmann » matches; 4/4 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2009, found 2009"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:same-felt-anxiety",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:reappraisal-better",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "How to handle anxiety: The effects of reappraisal, acceptance, and suppression strategies on anxious arousal",
+    "firstAuthor": "Hofmann",
+    "years": [
+      2009
+    ],
+    "type": "journal-article",
+    "venue": "Behaviour Research and Therapy"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "ace7f7ec5d07cb691637def46c16439a5b6ddd4cc74bd57dbbd352824e85dccd",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

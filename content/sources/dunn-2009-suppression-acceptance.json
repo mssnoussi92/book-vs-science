@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "dunn-2009-suppression-acceptance",
+  "doi": "10.1016/j.brat.2009.05.007",
+  "declared": {
+    "title": "The consequences of effortful emotion regulation when processing distressing material: A comparison of suppression and acceptance",
+    "firstAuthor": "Dunn",
+    "authors": [
+      "Dunn",
+      "Billotti",
+      "Murphy",
+      "Dalgleish"
+    ],
+    "year": 2009,
+    "venue": "Behaviour Research and Therapy",
+    "foundIn": "agent contre-preuve, recherche Crossref / Europe PMC du 2026-11-22 (reports/feeling-bad-about-feeling-bad/counter-evidence.md) ; titre relevé sur Crossref par l'agent : contrôle d'identité plus faible"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 89,
+  "population": "89 healthy adults, United Kingdom, a distressing video",
+  "mena": false,
+  "findings": [
+    {
+      "id": "suppression-lowered-fear",
+      "text": "Suppressing the feeling lowered the fear felt during a distressing video",
+      "support": {
+        "sentence": "Suppression (relative to control) led to reduced subjective experience of fear when viewing the video, but did not alter electrodermal (EDA) or heart rate (HR) response.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "acceptance-later",
+      "text": "Accepting did not help during the video and went with more negative affect a week later",
+      "support": {
+        "sentence": "These findings suggest, contrary to the current clinical zeitgeist, that emotion suppression can successfully lead to an ongoing down-regulation of emotion and memory, whereas acceptance may elevate subsequent emotionality.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "one experiment, about 30 people per group",
+    "healthy volunteers"
+  ],
+  "acknowledged": []
+}

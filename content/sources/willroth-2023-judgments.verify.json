@@ -1,0 +1,71 @@
+{
+  "doi": "10.1037/emo0001220",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Judging emotions as good or bad: Individual differences and associations with psychological health. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Willroth » matches; 4/4 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2023, found 2023"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:negative-judgments",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Judging emotions as good or bad: Individual differences and associations with psychological health.",
+    "firstAuthor": "Willroth",
+    "years": [
+      2023
+    ],
+    "type": "journal-article",
+    "venue": "Emotion"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "34b050350134e071f5181b21044ac6a037e4841d6a1f5ed03190a44cb6cc55b3",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "wang-2020-ironic",
+  "doi": "10.1177/1745691619898795",
+  "declared": {
+    "title": "Ironic effects of thought suppression: A meta-analysis",
+    "firstAuthor": "Wang",
+    "authors": [
+      "Wang",
+      "Hagger",
+      "Chatzisarantis"
+    ],
+    "year": 2020,
+    "venue": "Perspectives on Psychological Science",
+    "foundIn": "agent contre-preuve, recherche Crossref / Europe PMC du 2026-11-22 (reports/feeling-bad-about-feeling-bad/counter-evidence.md) ; titre relevé sur Crossref par l'agent : contrôle d'identité plus faible"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "k": 31,
+  "population": "31 studies of Wegner's thought-suppression paradigm",
+  "mena": false,
+  "findings": [
+    {
+      "id": "rebound",
+      "text": "A thought one tries to push away comes back more afterwards; during the effort it grows only under mental load",
+      "support": {
+        "sentence": "Consistent with our predictions, rebound effects were observed regardless of cognitive load, whereas immediate enhancement effects were observed only in the presence of cognitive load.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "laboratory, minutes",
+    "about thoughts, not feelings directly"
+  ],
+  "acknowledged": []
+}

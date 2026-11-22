@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "gower-2026-act",
+  "doi": "10.1016/j.cpr.2026.102786",
+  "declared": {
+    "title": "Randomized controlled evidence of the efficacy of acceptance and commitment therapy: A systematic review and meta-analysis",
+    "firstAuthor": "Gower",
+    "authors": [
+      "Gower",
+      "Styler",
+      "Litz"
+    ],
+    "year": 2026,
+    "venue": "Clinical Psychology Review",
+    "foundIn": "agent contre-preuve, recherche Crossref / Europe PMC du 2026-11-22 (reports/feeling-bad-about-feeling-bad/counter-evidence.md) ; titre relevé sur Crossref par l'agent : contrôle d'identité plus faible"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "k": 34,
+  "population": "34 randomized trials of full ACT against established psychotherapies",
+  "mena": false,
+  "findings": [
+    {
+      "id": "not-superior",
+      "text": "A full acceptance-based therapy (ACT) does no better than other established psychotherapies",
+      "support": {
+        "sentence": "Random-effects three-level meta-analyses indicated that full-model ACT was not superior to bona fide psychotherapies on mental and behavioral health outcomes (g = -0.01, p = .86).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "intervention",
+      "effect": {
+        "metric": "g",
+        "value": -0.01
+      }
+    }
+  ],
+  "limits": [
+    "ACT is a whole therapy, not acceptance alone",
+    "the trials' methods are often weak (no preregistration, low power)"
+  ],
+  "acknowledged": []
+}
