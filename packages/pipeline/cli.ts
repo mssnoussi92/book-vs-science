@@ -138,10 +138,18 @@ switch (cmd) {
     const takeDir = takesDir ? join(resolve(takesDir), e.id, code) : "";
     if (takesDir) {
       takes = new Map();
-      for (const name of readdirSync(takeDir).filter((n) => n.endsWith(".split.json"))) {
+      // The tightened clips (py/bvs_audio/clips.py) when there are, else the pieces of the take as split.
+      const files = readdirSync(takeDir);
+      for (const name of files.filter((n) => n.endsWith(".split.json"))) {
+        const req = name.replace(/\.split\.json$/, "");
         const sp = JSON.parse(readFileSync(join(takeDir, name), "utf8"));
         if (!sp.ok) { console.error(`${name} : découpe refusée (${sp.why}) : à écouter avant d'aller plus loin`); process.exit(1); }
-        for (const l of sp.lines) for (const k of l.keys) takes.set(k, { take: sp.take, start: l.start, end: l.end, envelope: l.envelope });
+        if (files.includes(`${req}.clips.json`)) {
+          const cl = JSON.parse(readFileSync(join(takeDir, `${req}.clips.json`), "utf8"));
+          for (const l of cl.lines) for (const k of l.keys) takes.set(k, { take: l.file, start: 0, end: l.seconds, envelope: l.envelope });
+        } else {
+          for (const l of sp.lines) for (const k of l.keys) takes.set(k, { take: sp.take, start: l.start, end: l.end, envelope: l.envelope });
+        }
       }
     }
     const approvals = existsSync(join(ROOT, e.dir, "approvals.json")) ? Approvals.parse(JSON.parse(readFileSync(join(ROOT, e.dir, "approvals.json"), "utf8"))) : undefined;

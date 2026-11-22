@@ -6,7 +6,7 @@ import type { EpisodeEntry, Repo } from "../rules/types.ts";
 import type { Action, Beat, Timeline, TimedAction, TimedLine, VisemeName } from "../schema/index.ts";
 
 const FPS = 30;
-const PAUSE = 0.3;            // seconds between two lines
+const PAUSE = 0.2;            // seconds between two lines (the takes' own breaths are kept inside each line)
 const SILENT_HOOK = 2.4;      // a hook without voice: the time to read its first frame
 const BADGE_DELAY = 0.6;
 const SHARE = 2.2;

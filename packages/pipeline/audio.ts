@@ -2,7 +2,7 @@
 // brought to -16 LUFS integrated (the level of the owner's other channels) by ffmpeg's loudnorm, true peak -1.5 dBTP.
 // Takes are 24 kHz mono 16-bit WAV (Gemini); the track keeps that format.
 import { execFileSync } from "node:child_process";
-import { readFileSync, renameSync, writeFileSync } from "node:fs";
+import { readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import { toWav } from "./gemini.ts";
 import type { Measured } from "./timeline.ts";
@@ -39,6 +39,7 @@ export function assemble(takeDir: string, placed: { key: string; f0: number; m: 
   writeFileSync(raw, toWav(Buffer.from(track.buffer)));
   try {
     execFileSync("ffmpeg", ["-v", "error", "-y", "-i", raw, "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ar", String(RATE), "-ac", "1", "-c:a", "pcm_s16le", out]);
+    rmSync(raw);
   } catch {
     console.error("ffmpeg introuvable : piste gardée sans mise à niveau (-16 LUFS à faire)");
     renameSync(raw, out);

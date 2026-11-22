@@ -3,7 +3,7 @@
   "code": "ar-EG",
   "name": "العربية المصرية",
   "dir": "rtl",
-  "wordsPerSecond": 2.6,
+  "wordsPerSecond": 2.1,
   "limits": {
     "hookFrameWords": 6,
     "bookCardWords": 12,
