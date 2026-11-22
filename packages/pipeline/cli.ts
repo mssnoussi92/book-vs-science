@@ -119,6 +119,7 @@ switch (cmd) {
       lang, mode, only: list(flag("only")), voices: voices ? Object.fromEntries(voices) : undefined,
       model: flag("model") ?? "gemini-3.8-flash-tts", max: Number(flag("max") ?? 3),
       ledger: flag("ledger") ?? join(ROOT, "build", "voice-ledger.json"), out: flag("out") ?? join(ROOT, "build", "takes"), dry: has("dry"),
+      cap: flag("cap") ? Number(flag("cap")) : undefined,
     }));
   }
   case "timeline": {
