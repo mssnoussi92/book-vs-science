@@ -45,6 +45,26 @@ export const ThoughtBubble: React.FC<{ x: number; y: number; k: number; image?: 
   );
 };
 
+/** A phone notification, big, above the one who receives it (the phone in a hand is too small to read): the bank, a
+ *  green arrow up and a « + », never a number (the rule numbers: none would come from a source). It drops in, then
+ *  stays still. */
+export const Notification: React.FC<{ x: number; y: number; k: number; kind?: string }> = ({ x, y, k }) => {
+  const d = Math.min(1, k * 5);
+  return (
+    <g transform={`translate(${x} ${y - 40 * (1 - d)})`} opacity={d}>
+      <rect x={-170} y={-62} width={340} height={124} rx={28} fill="#ffffff" stroke={INK} strokeWidth={6} />
+      {/* the bank: a pediment on three columns */}
+      <g transform="translate(-105 0)" stroke={INK} strokeWidth={5} strokeLinejoin="round" strokeLinecap="round">
+        <circle r={44} fill="#e3f6e6" />
+        <path d="M -26 -10 L 0 -28 L 26 -10 Z" fill="#ffffff" />
+        <path d="M -16 -6 L -16 18 M 0 -6 L 0 18 M 16 -6 L 16 18 M -26 22 L 26 22" fill="none" />
+      </g>
+      <path d="M 0 34 L 0 -30 M -26 -6 L 0 -32 L 26 -6" stroke="#2e9e5b" strokeWidth={13} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M 70 0 L 130 0 M 100 -30 L 100 30" stroke="#2e9e5b" strokeWidth={13} strokeLinecap="round" />
+    </g>
+  );
+};
+
 /** The rewind between the two takes of a replayed scene: the frame goes grey, two triangles, lines running back. */
 export const Rewind: React.FC<{ k: number; w: number; h: number; f: number }> = ({ k, w, h, f }) => {
   const o = Math.sin(Math.min(1, k) * Math.PI);

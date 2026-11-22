@@ -3,7 +3,7 @@
 // (text on a flat ground retained the least in the owner's own figures).
 import type React from "react";
 import { Easing, interpolate } from "remotion";
-import { RainCloud, Rewind, Spiral, ThoughtBubble, TwoWay } from "../../packages/rig/fx.tsx";
+import { RainCloud, Rewind, Spiral, ThoughtBubble, TwoWay, Notification } from "../../packages/rig/fx.tsx";
 import { INK } from "../../packages/rig/Rig.tsx";
 import type { PartProps, StyleModule } from "../../packages/video/contract.ts";
 import { FONT } from "../../packages/video/fonts.ts";
@@ -74,6 +74,7 @@ const Stage: React.FC<PartProps> = (p) => {
         if (id === "spiral") return <Spiral key={e.id} x={600} y={top} size={Number(e.fx!.params.size ?? 1) + 1} f={p.f} />;
         if (id === "cloud") return <RainCloud key={e.id} x={430} y={top - 10} f={p.f} />;
         if (id === "thought-bubble") return <ThoughtBubble key={e.id} x={830} y={MED.cy - 40} k={e.k} image={String(e.fx!.params.image ?? "")} />;
+        if (id === "notification") return <Notification key={e.id} x={540} y={top - 40} k={e.k} />;
         if (id === "rewind") return <Rewind key={e.id} k={e.k} w={p.w} h={p.h} f={p.f} />;
         if (id === "two-way" && p.f < e.f1) return <TwoWay key={e.id} x={540} y={735} k={e.k} f={p.f} />;
         return null;
