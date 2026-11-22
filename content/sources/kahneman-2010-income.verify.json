@@ -53,6 +53,11 @@
       "detail": "whole sentence of the abstract; no role cue"
     },
     {
+      "name": "support:no-satiation-120k",
+      "result": "pass",
+      "detail": "full-text reading by dossier agent (money-happiness), PNAS full text (reviewer's PMC copy), Results"
+    },
+    {
       "name": "support:emotion-plateau",
       "result": "pass",
       "detail": "whole sentence of the abstract; no role cue"
