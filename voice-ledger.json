@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {
+      "at": "2026-11-22T17:54:41.418Z",
+      "day": "2026-11-22",
+      "episode": "feeling-bad-about-feeling-bad",
+      "lang": "ar-EG",
+      "request": "adasa",
+      "voice": "adasa=Iapetus",
+      "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-22T17:55:28.926Z",
+      "day": "2026-11-22",
+      "episode": "feeling-bad-about-feeling-bad",
+      "lang": "ar-EG",
+      "request": "karim",
+      "voice": "karim=Achird",
+      "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-22T17:56:13.190Z",
+      "day": "2026-11-22",
+      "episode": "feeling-bad-about-feeling-bad",
+      "lang": "ar-EG",
+      "request": "nour",
+      "voice": "nour=Leda",
+      "model": "gemini-3.8-flash-tts"
+    }
+  ]
+}
