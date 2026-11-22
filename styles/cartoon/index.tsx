@@ -96,6 +96,15 @@ const RewindLayer: React.FC<PartProps> = ({ tl, f, w, h }) => (
   <>{effectsAt(tl, f).filter((e) => e.fx!.id === "rewind").map((e) => <Rewind key={e.id} k={e.k} w={w} h={h} f={f} />)}</>
 );
 
+/** The light of a take: cool for the first (he blames himself), warm for the second (he accepts): the same scene,
+ *  told apart at a glance (the owner's pilot review). */
+const TakeTint: React.FC<PartProps> = ({ tl, f, w, h }) => {
+  const t = tl.cards.takes?.find((x) => f >= x.f0 && f < x.f1);
+  if (!t) return null;
+  const o = interpolate(f, [t.f0, t.f0 + 10, t.f1 - 6, t.f1], [0, 1, 1, 0], CLAMP);
+  return <rect x={0} y={0} width={w} height={h} fill={t.n === 1 ? "#3d5f9a" : "#ffb347"} opacity={0.13 * o} style={{ mixBlendMode: "multiply" }} />;
+};
+
 /** Effects of the verdict that are not about one character: the two-way link. */
 const VerdictFx: React.FC<PartProps> = ({ tl, f }) => (
   <>{effectsAt(tl, f).filter((e) => e.fx!.id === "two-way" && f < e.f1).map((e) => <TwoWay key={e.id} x={540} y={735} k={e.k} f={f} />)}</>
@@ -116,7 +125,7 @@ export const style: StyleModule = {
       const l = lineAt(p.tl, p.f);
       return l?.speaker === p.tl.cast.narrator ? <><Cast {...p} dim={0.4} /><Narrator {...p} y={1000} s={0.95} /></> : <Cast {...p} close />;
     },
-    scene: (p) => <><Cast {...p} close={lineAt(p.tl, p.f) !== undefined} /><RewindLayer {...p} /></>,
+    scene: (p) => <><Cast {...p} close={lineAt(p.tl, p.f) !== undefined && !lineAt(p.tl, p.f)?.over} /><TakeTint {...p} /><RewindLayer {...p} /></>,
     book: (p) => <><Cast {...p} dim={0.35} /><Narrator {...p} y={1020} s={0.9} /></>,
     verdict: (p) => nuanceHeld(p) ? <Cast {...p} /> : <><Cast {...p} dim={0.25} /><Narrator {...p} y={1030} s={0.72} /><VerdictFx {...p} /></>,
     takeaway: (p) => <><Cast {...p} /><Narrator {...p} x={900} y={480} s={0.42} /></>,

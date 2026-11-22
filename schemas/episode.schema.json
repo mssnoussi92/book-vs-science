@@ -445,7 +445,8 @@
                           "type": "string",
                           "enum": [
                             "spoken",
-                            "inner"
+                            "inner",
+                            "over"
                           ]
                         },
                         "cut": {
@@ -780,7 +781,8 @@
                         "type": "string",
                         "enum": [
                           "spoken",
-                          "inner"
+                          "inner",
+                          "over"
                         ]
                       },
                       "cut": {
@@ -1250,7 +1252,8 @@
                         "type": "string",
                         "enum": [
                           "spoken",
-                          "inner"
+                          "inner",
+                          "over"
                         ]
                       },
                       "cut": {
@@ -1540,7 +1543,8 @@
                         "type": "string",
                         "enum": [
                           "spoken",
-                          "inner"
+                          "inner",
+                          "over"
                         ]
                       },
                       "cut": {

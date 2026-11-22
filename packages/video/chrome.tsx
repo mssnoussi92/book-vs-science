@@ -147,6 +147,26 @@ export const Tease: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme 
   );
 };
 
+/** Which take of a replayed scene is playing (« المرة الأولى », « المرة التانية »), under the book pill, while it plays:
+ *  the owner's pilot review, the second take with other thoughts was not understood as the same scene played again. */
+export const TakeLabel: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme }> = ({ tl, aspect, theme }) => {
+  const f = useCurrentFrame();
+  const t = tl.cards.takes?.find((x) => f >= x.f0 && f < x.f1);
+  if (!t) return null;
+  const z = ZONES[aspect].tease;
+  const k = interpolate(f, [t.f0, t.f0 + 8], [0.6, 1], { ...CLAMP, easing: Easing.out(Easing.back(2)) });
+  return (
+    <foreignObject x={z.x} y={z.y + z.h + 10} width={z.w} height={70} opacity={fade(f, t.f0, t.f1, 6)}>
+      <div dir={tl.dir} style={{ display: "flex", justifyContent: "center", height: "100%" }}>
+        <div style={{ transform: `scale(${k})`, display: "flex", alignItems: "center", gap: 12, background: t.n === 1 ? "#3f5a8a" : "#c9822b", color: "#ffffff", borderRadius: 30, padding: "4px 24px", fontFamily: FONT, fontSize: 34, fontWeight: 900, border: `4px solid ${theme.ink}` }}>
+          <span style={{ background: "#ffffff", color: theme.ink, borderRadius: 20, minWidth: 34, textAlign: "center", fontSize: 28 }}>{t.n}</span>
+          {t.label}
+        </div>
+      </div>
+    </foreignObject>
+  );
+};
+
 /** One card of text (the nuance, the orientation line, the share call), in the card zone. */
 const TextCard: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme; card?: { f0: number; f1: number; text: string }; icon: "heart" | "send" | "scale" }> = ({ tl, aspect, theme, card, icon }) => {
   const f = useCurrentFrame();
@@ -244,6 +264,7 @@ export const Chrome: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme
   <svg width={aspect === "9x16" ? 1080 : 1920} height={aspect === "9x16" ? 1920 : 1080} style={{ position: "absolute", inset: 0 }}>
     <FirstFrame tl={tl} aspect={aspect} theme={theme} />
     <Tease tl={tl} aspect={aspect} theme={theme} />
+    <TakeLabel tl={tl} aspect={aspect} theme={theme} />
     <BookCard tl={tl} aspect={aspect} theme={theme} label={labels.bookSays} />
     <Badge tl={tl} aspect={aspect} theme={theme} until={tl.frames} />
     <StudyCard tl={tl} aspect={aspect} theme={theme} />

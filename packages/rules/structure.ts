@@ -35,7 +35,16 @@ export const folders: Rule = {
           err(`${p.scope}.${p.beat.id}.holds`, `« holds: ${p.beat.holds} » garde un effet ou un objet : cette action n'en a pas`);
         }
         if (p.part === "scene" && p.beat.kind === "line" && p.beat.speaker === ep.cast.narrator) {
-          err(`${p.scope}.${p.beat.id}`, "le narrateur ne parle pas dans une scène : les personnages la jouent");
+          // Only over the scene (voice « over »), where it turns: before its first character line, or right after a rewind.
+          const scene = ep.scenes.find((s) => s.id === p.scope)!;
+          const i = scene.beats.indexOf(p.beat);
+          const before = scene.beats.slice(0, i);
+          const atStart = !before.some((b) => b.kind === "line" && b.speaker !== ep.cast.narrator);
+          const prev = before.at(-1);
+          const afterRewind = prev?.kind === "action" && prev.fx?.id === "rewind";
+          if (p.beat.voice !== "over" || !(atStart || afterRewind)) {
+            err(`${p.scope}.${p.beat.id}`, "le narrateur ne parle dans une scène que par-dessus (voice: over), avant la première prise ou juste après un retour en arrière");
+          }
         }
       }
       if (ep.variation.pin.style && !repo.styles.has(ep.variation.pin.style)) err("variation.pin.style", `styles/${ep.variation.pin.style}/ n'existe pas`);

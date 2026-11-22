@@ -5,5 +5,12 @@
   "fictional": true,
   "names": {
     "ar-EG": "عدسة"
+  },
+  "voices": {
+    "ar-EG": {
+      "engine": "gemini",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Iapetus"
+    }
   }
 }

@@ -33,6 +33,7 @@
 
 ## 2. Scène s1 · office · replay-twice · se termine a-bit-better
 
+- **عدسة** *(neutral, setting the scene, calm, a little suspense on « والرد لسه واصل »)* : ده كريم. قدّم اقتراح في الشغل… والرد لسه واصل.  `4.5 s`
 - *كريم : phone rejected, cloud, sad (0.8 s · jusqu'à la fin de la partie)*
 - **كريم** *(sad, to himself, deflated, reading the message on his phone)* : المدير رفض الاقتراح…  `1.7 s`
 - **كريم** *(annoyed, to himself, scolding himself under his breath)* : إنت زعلان على حاجة تافهة زي دي؟  `3.6 s`
@@ -42,7 +43,7 @@
 - **نور** *(curious, light, friendly, passing by his desk)* : كريم؟ مالك؟  `1.2 s`
 - **كريم** *(ashamed, too fast, a forced smile, hiding it)* : ولا حاجة… تمام.  `1.7 s`
 - *كريم : phone rejected, rewind (2.2 s)*
-  - à l'écran, sans voix : الكتاب بيقول: اقبله من غير لوم… نعيدها؟
+- **عدسة** *(warm, announcing the replay, light, a small stress on « مش هيلوم نفسه »)* : نعيدها… بس المرة دي كريم مش هيلوم نفسه.  `4.1 s`
 - **كريم** *(sad, to himself, slow, honest, no drama; a small breath before « تعبت فيه »)* : آه زعلان… وطبيعي أزعل. تعبت فيه.  `3.1 s`
 - *كريم : breathe, sad (1 s)*
 - **نور** *(curious, light, friendly, same as before)* : كريم؟ مالك؟  `1.2 s`
@@ -73,5 +74,5 @@
 - *orientation* : لو الإحساس ده مكمّل أسابيع ومأثّر على حياتك، كلّم أخصائي نفسي.
 
 ---
-Durée estimée : **68 s** (débit 2.1 mots/s, recalibré sur la première prise)
-Empreinte du script ar-EG : **d45295**
+Durée estimée : **76 s** (débit 2.1 mots/s, recalibré sur la première prise)
+Empreinte du script ar-EG : **ab200c**

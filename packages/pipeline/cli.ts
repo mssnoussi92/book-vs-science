@@ -164,10 +164,12 @@ switch (cmd) {
     const dir = join(ROOT, "assets/ep", e.id, code);
     mkdirSync(dir, { recursive: true });
     if (takes) {
+      // --allow-missing: a preview while a line waits for its take (estimated, silent, subtitled; always a draft)
       const missing = timeline.lines.filter((l) => !takes!.has(l.key)).map((l) => l.key);
-      if (missing.length) { console.error(`répliques sans prise : ${missing.join(", ")}`); process.exit(1); }
+      if (missing.length && !has("allow-missing")) { console.error(`répliques sans prise : ${missing.join(", ")}`); process.exit(1); }
+      if (missing.length) { timeline.draft = true; console.log(`aperçu : ${missing.join(", ")} sans prise (muettes, durée estimée)`); }
       const { assemble } = await import("./audio.ts");
-      timeline.audio = assemble(takeDir, placed, timeline.frames, join(dir, `voice-${timeline.hook}.wav`));
+      timeline.audio = assemble(takeDir, placed, timeline.frames, join(dir, `voice-${timeline.hook}.wav`), timeline.sfx);
     }
     const tl = Timeline.parse(timeline);
     writeFileSync(join(dir, `timeline-${tl.hook}.json`), JSON.stringify(tl) + "\n");

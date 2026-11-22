@@ -36,6 +36,8 @@ export const LanguagePack = z.strictObject({
     bookSays: z.string(),
     scienceSays: z.string(),
     draft: z.string(),
+    /** The takes of a replayed scene, in order (« المرة الأولى », « المرة التانية »). */
+    takes: z.array(z.string()).min(2).default(["1", "2"]),
   }),
 }).meta({ id: "LanguagePack" });
 

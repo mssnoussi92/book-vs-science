@@ -54,6 +54,10 @@ describe("the fixture", () => {
 describe("structure", () => {
   test("folders: a speaker outside the cast", () => bites("folders", EP, (j) => { j.scenes[0].beats[0].speaker = "ghost"; }));
   test("folders: the narrator speaks inside a scene", () => bites("folders", EP, (j) => { j.scenes[0].beats[0].speaker = "lens"; }));
+  test("folders: the narrator over a scene, but in the middle of it", () => bites("folders", EP, (j) => {
+    const b = j.scenes[0].beats;
+    b.splice(2, 0, { kind: "line", id: "n9", speaker: "lens", emotion: "neutral", voice: "over" });
+  }, { also: ["lang-complete"] }));
   test("ids-unique: two lines with the same id", () => bites("ids-unique", EP, (j) => { j.scenes[0].beats[2].id = "l1"; }));
   test("hooks: only four types", () => bites("hooks", EP, (j) => { j.hooks[4].type = "question"; }));
   test("hooks: a number hook without a claim", () => bites("hooks", EP, (j) => { j.hooks[4].type = "number"; }));
@@ -74,6 +78,12 @@ describe("texts", () => {
   test("text-chars: Arabic-Indic digits (123, never ١٢٣)", () => bites("text-chars", AR, (j) => { j.texts["verdict.card"] = "تحليل لـ ٤٠ دراسة"; }));
   test("text-chars: an invisible mark typed by a phone", () => bites("text-chars", AR, (j) => { j.texts["s1.l1"] += "‏"; }));
   test("duration: a version longer than 90 s at the measured rate", () => bites("duration", "languages/ar-EG/language.json", (j) => { j.wordsPerSecond = 0.5; }));
+  test("duration: a language nobody voices yet is only warned about", () => {
+    const root = copy();
+    edit(root, "languages/ar-EG/language.json", (j) => { j.wordsPerSecond = 0.5; });
+    edit(root, "characters/omar/character.json", (j) => { delete j.voices; });
+    assert.deepEqual(errors(check(root)).filter((i) => i.rule === "duration"), []);
+  });
   test("lengths: a first frame too long to read in a second", () => bites("lengths", AR, (j) => { j.texts["hook.h2.frame"] = "جرب ده تلات ثواني بس وانت قاعد مكانك"; }));
   test("no-author-name: the author named in a line", () => bites("no-author-name", AR, (j) => { j.texts["book.l1"] = "جين إكزامبل بتقول إن العادة دي بتقلل التوتر."; }));
   test("numbers: a figure that no cited source holds", () => bites("numbers", AR, (j) => { j.texts["verdict.card"] = "تحليل لـ 57 دراسة"; }));
