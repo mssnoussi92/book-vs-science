@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "gardner-2006-lottery",
+  "doi": "10.1016/j.jhealeco.2006.08.004",
+  "declared": {
+    "title": "Money and mental wellbeing: A longitudinal study of medium-sized lottery wins",
+    "firstAuthor": "Gardner",
+    "year": 2006,
+    "foundIn": "OpenAlex search « lottery wins mental wellbeing longitudinal » (2026-11-22)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "population": "British Household Panel Survey: Britons with medium lottery wins (1,000 to 120,000 pounds) vs non-winners and small winners",
+  "mena": false,
+  "findings": [
+    {
+      "id": "better-mental-health",
+      "text": "People who win a medium-sized lottery prize end up with better psychological health than non-winners and small winners",
+      "support": {
+        "sentence": "When compared to two control groups -- one with no wins and the other with small wins -- these individuals go on eventually to exhibit significantly better psychological health.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "two-years",
+      "text": "Two years after the win, mental wellbeing is better by 1.4 points of the GHQ questionnaire",
+      "support": {
+        "sentence": "Two years after a lottery win, the average measured improvement in mental wellbeing is 1.4 GHQ points.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "playing the lottery is not random: only the size of a win among players is; one control group did not win at all",
+    "mental wellbeing (GHQ, psychological distress), not life satisfaction nor happiness",
+    "UK panel; number of winners not given in the abstract (full text not read)"
+  ],
+  "acknowledged": []
+}

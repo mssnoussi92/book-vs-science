@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "kahneman-2010-income",
+  "doi": "10.1073/pnas.1011492107",
+  "declared": {
+    "title": "High income improves evaluation of life but not emotional well-being",
+    "firstAuthor": "Kahneman",
+    "authors": [
+      "Kahneman",
+      "Deaton"
+    ],
+    "year": 2010,
+    "venue": "Proceedings of the National Academy of Sciences",
+    "foundIn": "Crossref search « high income improves evaluation of life but not emotional well-being » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "n": 450000,
+  "population": "US residents, more than 450,000 responses to the Gallup-Healthways daily poll (1,000 people a day)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "life-evaluation-rises",
+      "text": "Judgement of one's life keeps rising with income, by the same step for each doubling, with no plateau in sight",
+      "support": {
+        "sentence": "When plotted against log income, life evaluation rises steadily.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "emotion-plateau",
+      "text": "Day-to-day emotional well-being rises with income too, but stops improving above about $75,000 a year",
+      "support": {
+        "sentence": "Emotional well-being also rises with log income, but there is no further progress beyond an annual income of ~$75,000.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "buys-satisfaction",
+      "text": "The authors conclude that high income buys life satisfaction but not day-to-day happiness, and that low income goes with both being low",
+      "support": {
+        "sentence": "We conclude that high income buys life satisfaction but not happiness, and that low income is associated both with low life evaluation and low emotional well-being.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "cross-sectional: an association between income and well-being, not an effect of money",
+    "emotions measured by yes/no questions about yesterday: a ceiling effect, admitted by Kahneman himself in Killingsworth 2023",
+    "US only (2008-2009); nominal dollars, not adjusted for local cost of living",
+    "the $75,000 plateau was later revised: it holds only for the least happy people (Killingsworth, Kahneman & Mellers 2023)"
+  ],
+  "acknowledged": []
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "killingsworth-2023-conflict",
+  "doi": "10.1073/pnas.2208661120",
+  "declared": {
+    "title": "Income and emotional well-being: A conflict resolved",
+    "firstAuthor": "Killingsworth",
+    "authors": [
+      "Killingsworth",
+      "Kahneman",
+      "Mellers"
+    ],
+    "year": 2023,
+    "venue": "Proceedings of the National Academy of Sciences",
+    "foundIn": "Crossref search « income and emotional well-being a conflict resolved adversarial collaboration » (2026-11-22)"
+  },
+  "design": "experience-sampling",
+  "designSetBy": "reviewer",
+  "n": 33391,
+  "population": "reanalysis of Killingsworth 2021's experience-sampling data: employed US adults",
+  "mena": false,
+  "findings": [
+    {
+      "id": "least-happy-plateau",
+      "text": "The plateau of day-to-day happiness exists, but only for the least happy people",
+      "support": {
+        "sentence": "A reanalysis of Killingsworth's experienced sampling data confirmed the flattening pattern only for the least happy people.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "happier-keep-rising",
+      "text": "For everyone else, day-to-day happiness keeps rising with income, and rises even faster for the happiest",
+      "support": {
+        "sentence": "Happiness increases steadily with log(income) among happier people, and even accelerates in the happiest group.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "an adversarial collaboration between the two opposing authors: a strength, but a reanalysis of one existing dataset, not new data",
+    "an association: income is not manipulated",
+    "the abstract gives neither the income of the plateau nor the share of « least happy » people: no such number may be quoted from this sheet",
+    "employed US adults using a smartphone app: not representative"
+  ],
+  "acknowledged": []
+}

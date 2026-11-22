@@ -1,0 +1,72 @@
+{
+  "doi": "10.1037/0022-3514.36.8.917",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Lottery winners and accident victims: Is happiness relative? » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Brickman » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 1978, found 1978, 2006"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:not-happier",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "Lottery winners and accident victims: Is happiness relative?",
+    "firstAuthor": "Brickman",
+    "years": [
+      1978,
+      2006
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Personality and Social Psychology"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "50d2fc4b06a104b5db421bbaf7f66b30d649dbb0714031aff19b307f61d5a9fa",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

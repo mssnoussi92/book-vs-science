@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "jebb-2018-satiation",
+  "doi": "10.1038/s41562-017-0277-0",
+  "declared": {
+    "title": "Happiness, income satiation and turning points around the world",
+    "firstAuthor": "Jebb",
+    "year": 2018,
+    "venue": "Nature Human Behaviour",
+    "foundIn": "OpenAlex search « happiness income satiation turning points around the world » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "n": 1709734,
+  "population": "Gallup World Poll 2005-2016, representative samples of 164 countries; Middle East/North Africa region: 246,998 people (supplementary table 1)",
+  "mena": true,
+  "findings": [
+    {
+      "id": "satiation-points",
+      "text": "Worldwide, a satiation point is found: about $95,000 a year for life evaluation, $60,000 to $75,000 for day-to-day emotions",
+      "support": {
+        "sentence": "Globally, we find that satiation occurs at $95,000 for life evaluation and $60,000 to $75,000 for emotional well-being.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "regions-vary",
+      "text": "The satiation point varies a lot between world regions, and comes later in richer regions",
+      "support": {
+        "sentence": "However, there is substantial variation across world regions, with satiation occurring later in wealthier regions.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "turning-points",
+      "text": "In some parts of the world, incomes beyond the satiation point go with lower life evaluations",
+      "support": {
+        "sentence": "We also find that in certain parts of the world, incomes beyond satiation are associated with lower life evaluations.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "cross-sectional: an association, not an effect of money",
+    "satiation points come from spline models; other analyses of the same poll find no satiation (Stevenson & Wolfers 2013)",
+    "very few respondents above the satiation points: the flat part rests on thin data",
+    "MENA region included in the sample (supplementary tables read by the dossier agent); no figure for Egypt alone"
+  ],
+  "acknowledged": []
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "dwyer-2022-cash",
+  "doi": "10.1073/pnas.2211123119",
+  "declared": {
+    "title": "Wealth redistribution promotes happiness.",
+    "firstAuthor": "Dwyer",
+    "authors": [
+      "Dwyer",
+      "Dunn"
+    ],
+    "year": 2022,
+    "venue": "Proc Natl Acad Sci U S A",
+    "foundIn": "Europe PMC search « (lottery OR windfall OR \"cash transfer\") AND (happiness OR \"life satisfaction\" OR \"well-being\") AND (replication OR preregistered OR \"meta-analysis\") » (2026-11-22)"
+  },
+  "design": "rct",
+  "designSetBy": "reviewer",
+  "n": 300,
+  "population": "adults in Brazil, Indonesia, Kenya, US, UK, Canada, Australia recruited online; 200 randomly given $10,000, 100 controls",
+  "mena": false,
+  "findings": [
+    {
+      "id": "cash-raises",
+      "text": "Receiving $10,000 raises well-being, in poorer and richer countries alike",
+      "support": {
+        "sentence": "Our preregistered analyses offer causal evidence that cash transfers substantially increase happiness among economically diverse individuals around the world.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "three-times",
+      "text": "The same gift brings about three times more well-being in lower-income countries than in higher-income ones",
+      "support": {
+        "sentence": "Recipients in lower-income countries exhibited happiness gains three times larger than those in higher-income countries.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "up-to-123k",
+      "text": "The gift still raised well-being for households earning up to $123,000 a year",
+      "support": {
+        "sentence": "Still, the cash provided detectable benefits for people with household incomes up to $123,000.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "small sample (300) recruited through Twitter, well educated: not representative",
+    "well-being measured over 3 months (6 months exploratory): says nothing about years",
+    "« happiness » is an index of life satisfaction, positive and negative feelings combined",
+    "the benefit at $123,000 is at the edge of significance (p = 0.05, full text)"
+  ],
+  "acknowledged": []
+}

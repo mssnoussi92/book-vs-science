@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "stevenson-2013-satiation",
+  "doi": "10.1257/aer.103.3.598",
+  "declared": {
+    "title": "Subjective Well-Being and Income: Is There Any Evidence of Satiation?",
+    "firstAuthor": "Stevenson",
+    "authors": [
+      "Stevenson",
+      "Wolfers"
+    ],
+    "year": 2013,
+    "venue": "American Economic Review",
+    "foundIn": "OpenAlex search « subjective well-being and income is there any evidence of satiation » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "population": "people and countries in several surveys: Gallup World Poll 2008-2012 (155 countries, Egypt among them), World Values Survey, Pew, ISSP, US Gallup",
+  "mena": true,
+  "findings": [
+    {
+      "id": "no-satiation",
+      "text": "Testing the claim that income stops mattering once basic needs are met, across rich and poor countries and people, finds no support for it",
+      "support": {
+        "sentence": "Analyzing multiple datasets, multiple definitions of \"basic needs\" and multiple questions about well-being, we find no support for this claim.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "log-linear",
+      "text": "Well-being rises by the same step for each doubling of income, and that step does not shrink among the rich",
+      "support": {
+        "sentence": "The relationship between well-being and income is roughly log-linear and does not diminish as incomes rise.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "cross-sectional: an association, not an effect of money",
+    "a short paper (AER Papers & Proceedings); Egypt's presence read on the country labels of figure 1 of the NBER version (w18992)",
+    "mostly life evaluation (ladder, satisfaction); day-to-day emotions are analysed less",
+    "« log-linear » means each extra dollar still adds less: it contradicts a plateau, not diminishing returns"
+  ],
+  "acknowledged": []
+}

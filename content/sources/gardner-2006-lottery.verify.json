@@ -1,0 +1,77 @@
+{
+  "doi": "10.1016/j.jhealeco.2006.08.004",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Money and mental wellbeing: A longitudinal study of medium-sized lottery wins » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Gardner » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2006, found 2006, 2007"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:better-mental-health",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:two-years",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Money and mental wellbeing: A longitudinal study of medium-sized lottery wins",
+    "firstAuthor": "Gardner",
+    "years": [
+      2006,
+      2007
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Health Economics"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "bfa0c699af52512074fcac03481a808c29ad6433866f1fa9ab622bf6906043fa",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "lindqvist-2020-lottery",
+  "doi": "10.1093/restud/rdaa006",
+  "declared": {
+    "title": "Long-Run Effects of Lottery Wealth on Psychological Well-Being",
+    "firstAuthor": "Lindqvist",
+    "authors": [
+      "Lindqvist",
+      "Östling",
+      "Cesarini"
+    ],
+    "year": 2020,
+    "venue": "Review of Economic Studies",
+    "foundIn": "OpenAlex search « long-run effects of lottery wealth on psychological well-being » (2026-11-22)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 3362,
+  "population": "Swedish lottery players surveyed 5 to 22 years after a win; prize amounts random within groups of players",
+  "mena": false,
+  "findings": [
+    {
+      "id": "life-satisfaction",
+      "text": "Winning a large prize raises satisfaction with life for more than a decade, with no sign of fading",
+      "support": {
+        "sentence": "Relative to matched controls, large-prize winners experience sustained increases in overall life satisfaction that persist for over a decade and show no evidence of dissipating over time.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "happiness-smaller",
+      "text": "The effects on happiness and on mental health are significantly smaller than on life satisfaction",
+      "support": {
+        "sentence": "The estimated treatment effects on happiness and mental health are significantly smaller.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "a windfall of wealth, not a higher income; lottery players only; Sweden",
+    "the effect is small per amount won: 0.037 SD of life satisfaction per $100,000 after tax (NBER w24667 version, introduction)",
+    "n = 3,362 players is given by the NBER working-paper version (w24667), read by the dossier agent",
+    "a natural experiment, preregistered: prize amounts are random only within groups of players"
+  ],
+  "acknowledged": []
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "silver-2016-egypt",
+  "doi": "10.1111/ecot.12116",
+  "declared": {
+    "title": "Human capital and life satisfaction in economic transition: Econometric evidence from pre- and post-Arab Spring Egypt",
+    "firstAuthor": "Silver",
+    "year": 2016,
+    "foundIn": "OpenAlex search « income life satisfaction happiness Egypt » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "population": "Egyptian adults surveyed before and after the 2011 Arab Spring",
+  "mena": true,
+  "findings": [
+    {
+      "id": "perceived-income",
+      "text": "In Egypt, before and after 2011, people who see their income as high are more satisfied with their lives",
+      "support": {
+        "sentence": "Ordered logit results point to positive and significant relationships between life satisfaction and both perceived high incomes and the human capital variable, good health, for the pre- and post-Arab Spring periods in Egypt, thus confirming prior studies of transition economies.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "perceived income, not measured income: says nothing of a threshold or a plateau",
+    "cross-sectional: an association, not an effect of money",
+    "full text not read: survey, sample size and income bands not checked"
+  ],
+  "acknowledged": []
+}

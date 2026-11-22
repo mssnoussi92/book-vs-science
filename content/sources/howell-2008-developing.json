@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "howell-2008-developing",
+  "doi": "10.1037/0033-2909.134.4.536",
+  "declared": {
+    "title": "The relation of economic status to subjective well-being in developing countries: A meta-analysis.",
+    "firstAuthor": "Howell",
+    "authors": [
+      "Howell",
+      "Howell"
+    ],
+    "year": 2008,
+    "venue": "Psychological Bulletin",
+    "foundIn": "OpenAlex search « income subjective well-being meta-analysis » (2026-11-22)"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "k": 111,
+  "population": "111 independent samples from 54 economically developing countries (countries not listed in the abstract)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "strongest-poorest",
+      "text": "The link between economic status and well-being is strongest in low-income developing economies and among the least educated",
+      "support": {
+        "sentence": "The average economic status-SWB effect size was strongest among low-income developing economies (r = .28) and for samples that were least educated (r = .36).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "r",
+        "value": 0.28,
+        "correctedForBias": false
+      },
+      "kind": "association"
+    },
+    {
+      "id": "weakest-richest",
+      "text": "The link is weakest in high-income developing economies and among the most educated",
+      "support": {
+        "sentence": "The relation was weakest among high-income developing economies (r = .10) and for highly educated samples (r = .13).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "r",
+        "value": 0.1,
+        "correctedForBias": false
+      },
+      "kind": "association"
+    },
+    {
+      "id": "wealth-and-satisfaction",
+      "text": "The link is strongest for wealth rather than income, and for life satisfaction rather than happiness",
+      "support": {
+        "sentence": "Moderator analyses showed the economic status-SWB relation to be strongest when (a) economic status was defined as wealth (a stock variable), instead of as income (a flow variable), and (b) SWB was measured as life satisfaction (a cognitive assessment), instead of as happiness (an emotional assessment).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "a meta-analysis of correlations: an association, not an effect of money",
+    "developing countries only, compared with each other: says nothing of rich countries",
+    "MENA countries not identifiable from the abstract (full text not read)",
+    "a correlation measures how tight the link is, not how much each extra dollar adds"
+  ],
+  "acknowledged": []
+}

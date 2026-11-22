@@ -1,0 +1,77 @@
+{
+  "doi": "10.1002/jae.70013",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Econometric Evidence for Satiation of Subjective Well‐Being With Income at the Aggregate Level in Europe » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Röck » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2025, found 2025, 2026"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from crossref"
+    },
+    {
+      "name": "support:satiation-30000",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:few-countries",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Econometric Evidence for Satiation of Subjective Well‐Being With Income at the Aggregate Level in Europe",
+    "firstAuthor": "Röck",
+    "years": [
+      2025,
+      2026
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Applied Econometrics"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "crossref",
+  "abstractSha256": "0702fe6f0ad2ece88c904bb7db9a06c2bc7eb72aa1057a3d02b7d6eec6c7efca",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

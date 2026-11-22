@@ -1,0 +1,34 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "brickman-1978-lottery",
+  "doi": "10.1037/0022-3514.36.8.917",
+  "declared": {
+    "title": "Lottery winners and accident victims: Is happiness relative?",
+    "firstAuthor": "Brickman",
+    "year": 1978,
+    "foundIn": "OpenAlex search « lottery winners and accident victims is happiness relative » (2026-11-22); cited by Manson, « How to Be Happy » (2017)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "n": 73,
+  "population": "Illinois, USA: 22 major lottery winners, 22 controls and 29 paralyzed accident victims (study 1)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "not-happier",
+      "text": "Major lottery winners were not happier than controls, and took less pleasure in ordinary events",
+      "support": {
+        "sentence": "As predicted, lottery winners were not happier than controls and took significantly less pleasure from a series of mundane events.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "22 winners: far too small to detect a moderate difference",
+    "one interview, no measure before the win: a comparison of groups, not a follow-up",
+    "the classic study behind « lottery winners are not happier », contradicted by larger, later lottery studies (Lindqvist 2020)"
+  ],
+  "acknowledged": []
+}

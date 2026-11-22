@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "rock-2025-europe",
+  "doi": "10.1002/jae.70013",
+  "declared": {
+    "title": "Econometric Evidence for Satiation of Subjective Well-Being With Income at the Aggregate Level in Europe",
+    "firstAuthor": "Röck",
+    "year": 2025,
+    "foundIn": "OpenAlex search « happiness income satiation turning points around the world » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "population": "European countries, EU-SILC survey 2013 and 2018, net equivalised household income after taxes and transfers",
+  "mena": false,
+  "findings": [
+    {
+      "id": "satiation-30000",
+      "text": "In Europe, life satisfaction and happiness stop rising above about 30,000 euros of net household income a year",
+      "support": {
+        "sentence": "At least for European countries, life satisfaction and happiness, two facets of SWB, show no further increase above 30,000 € net annual income (EDHI) both in 2013 and 2018.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "few-countries",
+      "text": "Only a few countries have crossed that threshold",
+      "support": {
+        "sentence": "Only a few countries have crossed the threshold and reached satiation.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "an aggregate-level analysis (« at the aggregate level »): about averages, not about individuals",
+    "cross-sectional: an association, not an effect of money",
+    "Europe only; kink regressions are sensitive to the threshold chosen (Lien 2016)"
+  ],
+  "acknowledged": []
+}

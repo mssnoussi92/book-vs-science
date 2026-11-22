@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "killingsworth-2021-experienced",
+  "doi": "10.1073/pnas.2016976118",
+  "declared": {
+    "title": "Experienced well-being rises with income, even above $75,000 per year",
+    "firstAuthor": "Killingsworth",
+    "authors": [
+      "Killingsworth"
+    ],
+    "year": 2021,
+    "venue": "Proceedings of the National Academy of Sciences",
+    "foundIn": "Crossref search « experienced well-being rises with income beyond 75000 » (2026-11-22)"
+  },
+  "design": "experience-sampling",
+  "designSetBy": "reviewer",
+  "n": 33391,
+  "population": "employed US adults, 1,725,994 momentary reports collected by a smartphone app (Track Your Happiness)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "linear-both",
+      "text": "Both feelings in the moment and satisfaction with life rise with each doubling of income, as steeply for high earners as for low earners",
+      "support": {
+        "sentence": "Drawing on 1,725,994 experience-sampling reports from 33,391 employed US adults, the present results show that both experienced and evaluative well-being increased linearly with log(income), with an equally steep slope for higher earners as for lower earners.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "no-plateau",
+      "text": "No plateau of day-to-day well-being above $75,000 a year",
+      "support": {
+        "sentence": "There was no evidence for an experienced well-being plateau above $75,000/y, contrary to some influential past research.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "an association: income is not manipulated",
+    "self-selected users of a happiness-tracking app, employed US adults only: not representative",
+    "the 2023 reanalysis with Kahneman finds a plateau after all in the least happy fifth of this same sample"
+  ],
+  "acknowledged": []
+}
