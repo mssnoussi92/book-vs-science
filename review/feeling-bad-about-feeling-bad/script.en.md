@@ -8,24 +8,28 @@
 - à l'écran : Don't think of a white bear
 - dit : Try it: don't think of a white bear… until the end of this video.
 
-**h2 · cold-open** (muet, première image close-up) `2.0 s`
-- à l'écran : Upset… and upset about it?
-- *Karim : head-in-hands, spiral 2, ashamed*
-- *Karim : cloud*
+**h2 · paradox** (Adasa, première image close-up) `5.0 s`
+- à l'écran : « Stop being upset »… brings it back?
+- dit : You tell yourself « stop being upset »? You may be bringing it back.
+- *Karim : fist-clench, spiral 2, annoyed*
 
-**h3 · book-promise** (Adasa, première image badge-tease) `3.0 s`
-- à l'écran : The Subtle Art… right?
-- dit : This book says: upset? So what! Right?
+**h3 · confession** (Karim, première image close-up) `5.0 s`
+- à l'écran : Upset… then upset about it
+- dit : I get upset… and then I get upset that I got upset.
+- *Karim : cloud, ashamed, regarde l'objectif*
+- *Karim : spiral 2*
 
-**h4 · question** (muet, première image close-up) `2.0 s`
-- à l'écran : Upset about upset… you too?
+**h4 · number** (Adasa, première image challenge) `4.7 s`
+- à l'écran : 31 studies… what happened?
+- dit : 31 studies asked people to push a thought away… what happened?
+- *Karim : thought-bubble white-bear, anxious*
+
+**h5 · question** (Nour, première image text-over-scene) `4.3 s`
+- à l'écran : Upset… and upset about it. You?
+- dit : Karim is upset… and upset that he's upset. And you?
+- *Nour : point, amused, regarde l'objectif*
 - *Karim : cloud, sad*
 - *Karim : spiral 2*
-- *Nour : point, curious, regarde l'objectif*
-
-**h5 · pov** (muet, première image text-over-scene) `2.0 s`
-- à l'écran : Telling yourself: stop being upset!
-- *Karim : fist-clench, annoyed*
 
 ## 2. Scène s1 · office · replay-twice · se termine a-bit-better
 
@@ -59,8 +63,8 @@
 - **Adasa** *(neutral, calm, factual; a beat before « بس ده ارتباط »)* : People who blame themselves for being upset tend to feel worse. But it's a link… and it's unclear which comes first.  `8.7 s`
 - *Adasa : two-way (sur le mot 11 de l2)*
 - **Adasa** *(neutral, calm, a hint of a smile on the last words)* : And « stop being upset »? It probably doesn't lower the feeling, and the thought you push away tends to come back more, later.  `9.1 s`
-- *Karim : thought-bubble white-bear (sur le mot 11 de l3 · seulement avec h1)*
-- *Karim : thought-bubble phone-rejected (sur le mot 11 de l3 · seulement avec h2, h3, h4, h5)*
+- *Karim : thought-bubble white-bear (sur le mot 11 de l3 · seulement avec h1, h4)*
+- *Karim : thought-bubble phone-rejected (sur le mot 11 de l3 · seulement avec h2, h3, h5)*
 
 ## 5. À retenir (suggestion à faible risque)
 
@@ -70,4 +74,4 @@
 
 ---
 Durée estimée : **80 s** (débit 2.5 mots/s, recalibré sur la première prise)
-Empreinte du script en : **2ff76a**
+Empreinte du script en : **5f06d5**

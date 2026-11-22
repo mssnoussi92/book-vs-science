@@ -15,6 +15,10 @@ export type TakeOptions = {
   lang: string;
   mode: VoiceMode;
   only?: string[];                       // request names (speaker ids) to send; default: all of the plan
+  /** Only these text keys (new hooks, a corrected line): the other lines keep their checked takes. The take is
+   *  named <speaker>.<tag> so that it never replaces the speaker's full take. */
+  keys?: string[];
+  tag?: string;
   voices?: Record<string, string>;       // casting: a candidate voice instead of the character's
   model: string;
   max: number;                           // most requests this run may send
@@ -39,7 +43,14 @@ export async function takeVoice(repo: Repo, e: EpisodeEntry, o: TakeOptions): Pr
   }
 
   // 2. the plan, the voices
-  const plan = planVoice(e, o.lang, o.mode).filter((r) => !o.only || o.only.includes(r.name));
+  const plan = planVoice(e, o.lang, o.mode)
+    .filter((r) => !o.only || o.only.includes(r.name))
+    .map((r) => {
+      if (!o.keys) return r;
+      const turns = r.turns.filter((t) => t.keys.some((k) => o.keys!.includes(k)));
+      return { ...r, name: `${r.name}.${o.tag ?? "part"}`, turns, words: turns.reduce((n, t) => n + t.text.split(/\s+/).length, 0) };
+    })
+    .filter((r) => r.turns.length > 0);
   if (!plan.length) { console.error(`aucune requête : ${o.only?.join(", ")} n'est pas dans le plan`); return 2; }
   const voices: Record<string, string> = {};
   for (const r of plan) for (const s of r.speakers) {
