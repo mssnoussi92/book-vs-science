@@ -1,0 +1,71 @@
+{
+  "doi": "10.1037/xge0000108",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Culture shapes whether the pursuit of happiness predicts higher or lower well-being. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Ford » matches; 5/5 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2015, found 2015"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:depends-on-culture",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "Culture shapes whether the pursuit of happiness predicts higher or lower well-being.",
+    "firstAuthor": "Ford",
+    "years": [
+      2015
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Experimental Psychology: General"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "ed2fdbe7376f100417bb7317ce7497c7f1235d4aa319eb105f2d76905a601b6f",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/book.schema.json",
+  "slug": "subtle-art",
+  "title": "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life",
+  "titles": {
+    "ar": "فن اللامبالاة"
+  },
+  "shortTitle": "The Subtle Art",
+  "author": "Mark Manson",
+  "authorWritten": {
+    "ar-EG": "مارك مانسون",
+    "en": "Mark Manson"
+  },
+  "year": 2016,
+  "basis": [
+    {
+      "id": "feedback-loop",
+      "kind": "author-article",
+      "url": "https://markmanson.net/feedback-loop-from-hell",
+      "locator": "ch. 1, « The Feedback Loop from Hell » (excerpt published by the author, 2016)"
+    }
+  ]
+}

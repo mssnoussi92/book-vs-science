@@ -5,6 +5,7 @@
 //   bvs status [<episode>]                   where each episode stands: gates, approvals and their short hashes
 //   bvs approve <episode> sources --words "…" [--via <url>]
 //   bvs approve <episode> script --lang ar-EG --words "…" [--via <url>]
+//   bvs review <episode>                     writes review/<id>/sources.md and script.<lang>.md (the owner's pages)
 //   bvs sources verify [<episode>|--all] [--live] [--write]
 //                                            checks each cited DOI (Crossref, OpenAlex, Europe PMC); --write saves .verify.json
 //                                            records the OWNER's approval, only after he gave it (CLAUDE.md)
@@ -80,6 +81,14 @@ switch (cmd) {
       console.log(`script ${code} de ${id} validé : ${short(hash)}`);
     }
     writeFileSync(path, JSON.stringify({ $schema: "../../../schemas/approvals.schema.json", ...Approvals.parse(current) }, null, 2) + "\n");
+    break;
+  }
+  case "review": {
+    const repo = loadRepo(ROOT);
+    const e = repo.episodes.find((x) => x.id === args[0]);
+    if (!e) { console.error(`épisode inconnu : ${args[0] ?? "(aucun)"}`); process.exit(2); }
+    const { writeReview } = await import("./review.ts");
+    for (const p of writeReview(repo, e)) console.log(p.slice(ROOT.length + 1));
     break;
   }
   case "sources": {

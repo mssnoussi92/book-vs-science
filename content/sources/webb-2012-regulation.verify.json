@@ -1,0 +1,71 @@
+{
+  "doi": "10.1037/a0027600",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Dealing with feeling: A meta-analysis of the effectiveness of strategies derived from the process model of emotion regulation. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Webb » matches; 3/3 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2012, found 2012"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:suppressing-the-feeling",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Dealing with feeling: A meta-analysis of the effectiveness of strategies derived from the process model of emotion regulation.",
+    "firstAuthor": "Webb",
+    "years": [
+      2012
+    ],
+    "type": "journal-article",
+    "venue": "Psychological Bulletin"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "6c8c48f2856b35cad2ab507ac8eb12c3132ae8ebff096abfa26a402d47cbb08f",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

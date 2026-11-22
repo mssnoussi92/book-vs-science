@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "abramowitz-2001-suppression",
+  "doi": "10.1016/S0272-7358(00)00057-X",
+  "declared": {
+    "title": "Paradoxical effects of thought suppression: A meta-analysis of controlled studies",
+    "firstAuthor": "Abramowitz",
+    "authors": [
+      "Abramowitz",
+      "Tolin",
+      "Street"
+    ],
+    "year": 2001,
+    "venue": "Clinical Psychology Review",
+    "foundIn": "docs/design/review-science.md (dossier du pilote, 2026-11-22) ; titre de mémoire de la session"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "population": "controlled laboratory studies of thought suppression",
+  "mena": false,
+  "findings": [
+    {
+      "id": "rebound",
+      "text": "Trying not to think of something makes it come back: a small to moderate rebound",
+      "support": {
+        "sentence": "Results indicated a small to moderate rebound effect of thought suppression that varied in magnitude depending on the nature of the target thought and the method by which thought frequency was measured.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "laboratory",
+    "old (2001)",
+    "few clinical samples"
+  ],
+  "acknowledged": []
+}

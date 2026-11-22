@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "atjak-2015-act",
+  "doi": "10.1159/000365764",
+  "declared": {
+    "title": "A meta-analysis of the efficacy of acceptance and commitment therapy for clinically relevant mental and physical health problems",
+    "firstAuthor": "A-Tjak",
+    "authors": [
+      "A-Tjak",
+      "Davis",
+      "Morina",
+      "Powers",
+      "Smits",
+      "Emmelkamp"
+    ],
+    "year": 2015,
+    "venue": "Psychotherapy and Psychosomatics",
+    "foundIn": "docs/design/review-science.md (dossier du pilote, 2026-11-22) ; titre de mémoire de la session"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "n": 1821,
+  "k": 39,
+  "population": "39 randomized trials, 1,821 patients",
+  "mena": false,
+  "findings": [
+    {
+      "id": "as-good-as-cbt",
+      "text": "A therapy built on acceptance (ACT) works about as well as CBT, not better",
+      "support": {
+        "sentence": "The comparison between ACT and established treatments (cognitive behavioral therapy) did not reveal any significant differences between these treatments (p = 0.140).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "vs-controls",
+      "text": "ACT works better than no treatment, placebo or usual care",
+      "support": {
+        "sentence": "ACT outperformed control conditions (Hedges' g = 0.57) at posttreatment and follow-up assessments in completer and intent-to-treat analyses for primary outcomes.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "intervention",
+      "effect": {
+        "metric": "g",
+        "value": 0.57
+      }
+    }
+  ],
+  "limits": [
+    "ACT is a whole program, not acceptance alone",
+    "patients, not the general public"
+  ],
+  "allegiance": "includes data provided by the ACBS community, the association that develops and promotes ACT",
+  "acknowledged": []
+}

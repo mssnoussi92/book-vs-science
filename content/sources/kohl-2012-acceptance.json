@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "kohl-2012-acceptance",
+  "doi": "10.1016/j.jbtep.2012.03.004",
+  "declared": {
+    "title": "How effective are acceptance strategies? A meta-analytic review of experimental results",
+    "firstAuthor": "Kohl",
+    "authors": [
+      "Kohl",
+      "Rief",
+      "Glombiewski"
+    ],
+    "year": 2012,
+    "venue": "Journal of Behavior Therapy and Experimental Psychiatry",
+    "foundIn": "docs/design/review-science.md (dossier du pilote, 2026-11-22) ; titre de mémoire de la session"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "k": 30,
+  "population": "30 experimental studies comparing acceptance with other strategies",
+  "mena": false,
+  "findings": [
+    {
+      "id": "no-better-on-negative-affect",
+      "text": "In experiments, accepting does not reduce negative feelings more than other good strategies (reappraisal, distraction)",
+      "support": {
+        "sentence": "With respect to pain intensity and negative affect, meta-analysis did not show any significant differences between acceptance and other emotion regulation strategies.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "pain-tolerance",
+      "text": "Accepting helps people tolerate pain longer than other strategies",
+      "support": {
+        "sentence": "Meta-analytic results replicate findings of primary studies for pain tolerance: A small to medium between-group ES was found favoring acceptance strategies (g = 0.43, p < 0.01, 95% CI[0.12, 0.73]).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal",
+      "effect": {
+        "metric": "g",
+        "value": 0.43,
+        "ci": [
+          0.12,
+          0.73
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "laboratory, short term",
+    "30 studies"
+  ],
+  "acknowledged": []
+}

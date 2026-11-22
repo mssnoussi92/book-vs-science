@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "bailen-2019-meta-emotions",
+  "doi": "10.1037/emo0000488",
+  "declared": {
+    "title": "Meta-emotions in daily life: Associations with emotional awareness and depression",
+    "firstAuthor": "Bailen",
+    "authors": [
+      "Bailen",
+      "Wu",
+      "Thompson"
+    ],
+    "year": 2019,
+    "venue": "Emotion",
+    "foundIn": "docs/design/review-science.md (dossier du pilote, 2026-11-22) ; titre de mémoire de la session"
+  },
+  "design": "experience-sampling",
+  "designSetBy": "reviewer",
+  "n": 79,
+  "population": "adult community sample (n = 79), 7 days of experience sampling",
+  "mena": false,
+  "findings": [
+    {
+      "id": "nn-depression",
+      "text": "Feeling bad about feeling bad is the most frequent emotion about an emotion, and goes with more depressive symptoms",
+      "support": {
+        "sentence": "Higher depressive severity was associated with higher likelihood of meta-emotional experiences and specifically negative-negative experiences.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "small sample (n = 79)",
+    "correlational"
+  ],
+  "acknowledged": []
+}
