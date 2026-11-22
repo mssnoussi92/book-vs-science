@@ -1,0 +1,71 @@
+{
+  "doi": "10.1111/j.1745-6924.2008.00078.x",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Development, Freedom, and Rising Happiness: A Global Perspective (1981–2007) » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Inglehart » matches; 4/4 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2008, found 2008"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:free-choice-happiness",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: conclusion"
+    }
+  ],
+  "found": {
+    "title": "Development, Freedom, and Rising Happiness: A Global Perspective (1981–2007)",
+    "firstAuthor": "Inglehart",
+    "years": [
+      2008
+    ],
+    "type": "journal-article",
+    "venue": "Perspectives on Psychological Science"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "2b6e3b5c8c2967fe894e359dcd35ed997052545e088eb63c2b14c66f6696e841",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

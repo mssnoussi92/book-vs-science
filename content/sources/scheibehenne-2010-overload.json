@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "scheibehenne-2010-overload",
+  "doi": "10.1086/651235",
+  "declared": {
+    "title": "Can There Ever Be Too Many Options? A Meta-Analytic Review of Choice Overload",
+    "firstAuthor": "Scheibehenne",
+    "authors": [
+      "Scheibehenne",
+      "Greifeneder",
+      "Todd"
+    ],
+    "year": 2010,
+    "venue": "Journal of Consumer Research",
+    "foundIn": "nommée dans la consigne de la session ; titre relevé sur la recherche Crossref « can there ever be too many options meta-analytic review choice overload » du 2026-11-22 : contrôle d'identité plus faible"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "n": 5036,
+  "k": 50,
+  "population": "50 published and unpublished experiments on the number of options (63 conditions); countries not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "virtually-zero",
+      "text": "Across 50 experiments, more options did not, on average, lower satisfaction with the choice or the wish to choose; the effect varied a lot between studies",
+      "support": {
+        "sentence": "In a meta-analysis of 63 conditions from 50 published and unpublished experiments (N = 5,036), we found a mean effect size of virtually zero but considerable variance between studies.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "no-sufficient-condition",
+      "text": "Some conditions seemed to make too many options harmful, but none was found that reliably produces the effect",
+      "support": {
+        "sentence": "While further analyses indicated several potentially important preconditions for choice overload, no sufficient conditions could be identified.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "mostly consumer choices in the lab and the field, not life choices",
+    "the mean effect is said in words (« virtually zero »), no number in the abstract",
+    "its first author led failed tests of the effect (scheibehenne-2009-moderators): not independent of that line",
+    "a later meta-analysis that codes moderators finds an overall effect (chernev-2015-overload)"
+  ],
+  "acknowledged": []
+}

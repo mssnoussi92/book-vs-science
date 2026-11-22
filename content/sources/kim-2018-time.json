@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "kim-2018-time",
+  "doi": "10.3758/s13423-018-1436-7",
+  "declared": {
+    "title": "Vanishing time in the pursuit of happiness",
+    "firstAuthor": "Kim",
+    "authors": [
+      "Kim",
+      "Maglio"
+    ],
+    "year": 2018,
+    "venue": "Psychonomic Bulletin & Review",
+    "foundIn": "OpenAlex search « pursuit of happiness can be lonely » (2026-11-22)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "one survey and three experiments; samples and countries not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "less-time",
+      "text": "Seeking happiness, measured or induced, made people feel they had less time",
+      "support": {
+        "sentence": "Four studies demonstrated that trait-level happiness seeking (Study 1) as well as direct manipulation of happiness seeking (Studies 2, 3, and 4) consistently reveal the same pattern: reduced feelings of time availability while pursuing happiness.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "less-happiness",
+      "text": "In one experiment, pursuing happiness lowered happiness, partly by making time feel scarce",
+      "support": {
+        "sentence": "In addition, pursuing happiness can ultimately decrease happiness, in part, by reducing perceptions of time availability (Study 4), extending theories on happiness, goal pursuit, and perceptions of time.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "the drop in happiness rests on one study (Study 4)",
+    "sample sizes and countries not given in the abstract (abstract only)",
+    "brief inductions in the lab or online, effect measured right after"
+  ],
+  "acknowledged": []
+}

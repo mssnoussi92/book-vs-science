@@ -1,0 +1,71 @@
+{
+  "doi": "10.2147/prbm.s364548",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Decision Reversibility and Satisfaction: The Mediating Role of Counterfactual Thinking and Anticipated Regret » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Li » matches; 5/5 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2022, found 2022"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:lower-satisfaction",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "Decision Reversibility and Satisfaction: The Mediating Role of Counterfactual Thinking and Anticipated Regret",
+    "firstAuthor": "Li",
+    "years": [
+      2022
+    ],
+    "type": "journal-article",
+    "venue": "Psychology Research and Behavior Management"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "e782b17421a3c1ca77ca3ad7c8ef01b56b853cc0169eadf0af9dff30c7747c71",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

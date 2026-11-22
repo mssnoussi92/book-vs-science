@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "luhmann-2016-factors",
+  "doi": "10.1016/j.jrp.2015.11.003",
+  "declared": {
+    "title": "Is Valuing Happiness Associated With Lower Well-Being? A Factor-Level Analysis using the Valuing Happiness Scale.",
+    "firstAuthor": "Luhmann",
+    "authors": [
+      "Luhmann",
+      "Necka",
+      "Schönbrodt",
+      "Hawkley"
+    ],
+    "year": 2016,
+    "venue": "J Res Pers",
+    "foundIn": "Europe PMC search « \"valuing happiness\" » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "n": 938,
+  "population": "six independent samples pooled (N = 938); countries not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "one-factor-of-three",
+      "text": "The scale used to measure valuing happiness holds three parts, and only one of them goes with lower well-being; the others go with nothing or with more",
+      "support": {
+        "sentence": "Exploratory and confirmatory factor analysis showed that the Valuing Happiness Scale is not unidimensional and that only one of its three factors correlates negatively with various indicators of well-being, whereas non-significant or positive correlations were found for the other factors.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "not-necessarily-bad",
+      "text": "Valuing happiness is not necessarily bad for well-being",
+      "support": {
+        "sentence": "These findings indicate that valuing happiness may not necessarily be bad for one's well-being, and call for a better definition, theoretical foundation, and operationalization of this construct.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "correlational",
+    "the abstract does not name which of the three factors goes with lower well-being",
+    "about a measuring tool: it weakens the studies that used the scale, it does not test the idea directly"
+  ],
+  "acknowledged": []
+}

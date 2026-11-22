@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "rohrer-2018-social",
+  "doi": "10.1177/0956797618761660",
+  "declared": {
+    "title": "Successfully Striving for Happiness: Socially Engaged Pursuits Predict Increases in Life Satisfaction.",
+    "firstAuthor": "Rohrer",
+    "authors": [
+      "Rohrer",
+      "Richter",
+      "Brümmer",
+      "Wagner",
+      "Schmukle"
+    ],
+    "year": 2018,
+    "venue": "Psychol Sci",
+    "foundIn": "Europe PMC search « (\"valuing happiness\" OR \"pursuit of happiness\" OR \"pursuing happiness\" OR \"trying to be happy\") AND (replication OR …) » (2026-11-22)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "n": 1178,
+  "population": "a representative German sample (German Socio-Economic Panel), followed one year",
+  "mena": false,
+  "findings": [
+    {
+      "id": "per-se-neutral",
+      "text": "Having active plans to become happier, in themselves, did not go with any change in life satisfaction a year later",
+      "support": {
+        "sentence": "Active pursuits per se-as opposed to statements about external circumstances or fortune-were not associated with changes in life satisfaction ( n = 1,178).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "social-pursuits",
+      "text": "People who planned to become happier through others (more time with friends and family) were more satisfied a year later, partly through more socializing",
+      "support": {
+        "sentence": "However, in line with our preregistered hypothesis, among individuals who described active pursuits ( n = 582), those who described social ideas (e.g., spending more time with friends and family) ended up being more satisfied, and this effect was partly mediated by increased socializing.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "observational: people chose their own ideas, nothing was assigned",
+    "Germany only; one year",
+    "plans written in a survey, the pursuit itself only partly measured (socializing)"
+  ],
+  "acknowledged": []
+}

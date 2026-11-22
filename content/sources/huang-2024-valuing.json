@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "huang-2024-valuing",
+  "doi": "10.1177/09567976241263784",
+  "declared": {
+    "title": "Does Valuing Happiness Lead to Well-Being?",
+    "firstAuthor": "Huang",
+    "authors": [
+      "Huang"
+    ],
+    "year": 2024,
+    "venue": "Psychol Sci",
+    "foundIn": "Europe PMC search « \"valuing happiness\" » (2026-11-22)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "n": 8331,
+  "population": "Dutch adults of a population panel (LISS), five yearly waves, 2019 to 2023",
+  "mena": false,
+  "findings": [
+    {
+      "id": "higher-well-being",
+      "text": "Adults who valued happiness more were on average more satisfied with life, with more positive and less negative feelings",
+      "support": {
+        "sentence": "Random-intercept cross-lagged panel models indicated that those who valued happiness generally exhibited higher well-being as manifested by life satisfaction, more positive affect, and less negative affect.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "r",
+        "value": 0.24
+      },
+      "kind": "association"
+    },
+    {
+      "id": "no-later-change",
+      "text": "When a person came to value happiness more, their life satisfaction a year later did not change, and they felt both more positive and more negative feelings",
+      "support": {
+        "sentence": "However, increases in valuing happiness did not result in changes in life satisfaction 1 year later and had mixed emotional consequences (i.e., increasing both positive and negative affect).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "valuing happiness is one item (happiness as a guiding value, 1 to 7): milder than wanting more happiness at all costs",
+    "observational: changes within a person, never a manipulation",
+    "the Netherlands only; small effects",
+    "r = .24 (life satisfaction, between persons) read in the author's preregistered preprint (osf.io/3vksb), not the journal version"
+  ],
+  "acknowledged": []
+}

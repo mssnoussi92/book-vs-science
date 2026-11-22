@@ -1,0 +1,72 @@
+{
+  "doi": "10.1017/s1930297500005234",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « How the number of options and perceived variety influence choice satisfaction: An experiment with prescription drug plans » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Szrek » matches; 1/1 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2017, found 2017, 2023"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from crossref"
+    },
+    {
+      "name": "support:process-not-outcome",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "How the number of options and perceived variety influence choice satisfaction: An experiment with prescription drug plans",
+    "firstAuthor": "Szrek",
+    "years": [
+      2017,
+      2023
+    ],
+    "type": "journal-article",
+    "venue": "Judgment and Decision Making"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "crossref",
+  "abstractSha256": "50041fcd3e1bb7769b0ca5c858c38ef3d8926cb7991f5e121f9c36cd7bc8de59",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

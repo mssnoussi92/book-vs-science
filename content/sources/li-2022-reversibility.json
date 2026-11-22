@@ -1,0 +1,42 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "li-2022-reversibility",
+  "doi": "10.2147/prbm.s364548",
+  "declared": {
+    "title": "Decision Reversibility and Satisfaction: The Mediating Role of Counterfactual Thinking and Anticipated Regret",
+    "firstAuthor": "Li",
+    "authors": [
+      "Li",
+      "Ye",
+      "Deng",
+      "Zhao",
+      "Shi"
+    ],
+    "year": 2022,
+    "venue": "Psychology Research and Behavior Management",
+    "foundIn": "recherche Europe PMC « (\"reversible decision\" OR \"decision reversibility\" OR \"changeable outcomes\" OR \"reversible choice\") AND (satisfaction OR replication) » du 2026-11-22 ; titre relevé sur Europe PMC : contrôle d'identité plus faible"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 130,
+  "population": "130 participants randomly assigned to a reversible or a final personnel decision (authors in China)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "lower-satisfaction",
+      "text": "People whose personnel decision could still be reversed were less satisfied with it than people whose decision was final",
+      "support": {
+        "sentence": "The results show that (1) Compared to irreversible decisions, reversible decisions have a significant negative impact on satisfaction.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "a hypothetical personnel decision",
+    "130 participants, one study",
+    "country known only from the authors' affiliations"
+  ],
+  "acknowledged": []
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "ford-2014-depression",
+  "doi": "10.1521/jscp.2014.33.10.890",
+  "declared": {
+    "title": "DESPERATELY SEEKING HAPPINESS: VALUING HAPPINESS IS ASSOCIATED WITH SYMPTOMS AND DIAGNOSIS OF DEPRESSION.",
+    "firstAuthor": "Ford",
+    "authors": [
+      "Ford",
+      "Shallcross",
+      "Mauss",
+      "Floerke",
+      "Gruber"
+    ],
+    "year": 2014,
+    "venue": "J Soc Clin Psychol",
+    "foundIn": "Europe PMC search « \"valuing happiness\" » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "population": "two US samples: community adults with remitted major depression; remitted patients vs healthy controls",
+  "mena": false,
+  "findings": [
+    {
+      "id": "depressive-symptoms",
+      "text": "Among adults who had recovered from major depression, those who valued happiness more had more depressive symptoms",
+      "support": {
+        "sentence": "As hypothesized, valuing happiness was associated with increased depressive symptoms in a community sample with remitted major depressive disorder (MDD), even when controlling for social desirability and neuroticism (Study 1).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "remitted-vs-healthy",
+      "text": "People who had recovered from major depression valued happiness more than healthy controls",
+      "support": {
+        "sentence": "Furthermore, valuing happiness was elevated in a remitted MDD sample (vs. healthy controls), even when controlling for current depressive symptoms, general affect valuation, and extreme goal pursuit (Study 2).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "correlational: depression may raise the value placed on happiness as much as the reverse",
+    "people with a past depression, not the general public; sample sizes not given in the abstract",
+    "the abstract's context sentence says valuing happiness « leads to » lower well-being: this study does not test a cause",
+    "same network of authors as Mauss 2011, Ford 2015 and Zerwas 2024: not independent evidence"
+  ],
+  "acknowledged": []
+}

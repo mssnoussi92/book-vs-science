@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "gilbert-2002-revisions",
+  "doi": "10.1037/0022-3514.82.4.503",
+  "declared": {
+    "title": "Decisions and revisions: The affective forecasting of changeable outcomes",
+    "firstAuthor": "Gilbert",
+    "authors": [
+      "Gilbert",
+      "Ebert"
+    ],
+    "year": 2002,
+    "venue": "Journal of Personality and Social Psychology",
+    "foundIn": "nommée dans la consigne de la session ; titre relevé sur la recherche Crossref « decisions and revisions affective forecasting of changeable outcomes » du 2026-11-22 : contrôle d'identité plus faible"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "photography students (study 1) and other participants (studies 2a, 2b); US; sample sizes not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "liked-less",
+      "text": "Students who could still change their mind about which print to keep liked it less than students whose choice was final",
+      "support": {
+        "sentence": "However, those who had the opportunity to change their minds liked their prints less than those who did not (Study 1).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "wanted-option",
+      "text": "Being able to change one's mind blocked the processes that usually make people like what they chose, yet most participants wanted that option",
+      "support": {
+        "sentence": "Although the opportunity to change their minds impaired the postdecisional processes that normally promote satisfaction (Study 2a), most participants wanted to have that opportunity (Study 2b).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "small laboratory studies on a choice of little importance (a photo print)",
+    "no direct replication found among 59 citing works matching « replication » (OpenAlex, 2026-11-22)",
+    "US students"
+  ],
+  "acknowledged": []
+}

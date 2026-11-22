@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "inglehart-2008-freedom",
+  "doi": "10.1111/j.1745-6924.2008.00078.x",
+  "declared": {
+    "title": "Development, Freedom, and Rising Happiness: A Global Perspective (1981–2007)",
+    "firstAuthor": "Inglehart",
+    "authors": [
+      "Inglehart",
+      "Foa",
+      "Peterson",
+      "Welzel"
+    ],
+    "year": 2008,
+    "venue": "Perspectives on Psychological Science",
+    "foundIn": "recherche Crossref « development freedom and rising happiness global perspective » du 2026-11-22 (piste « liberté de choix et bonheur entre pays ») ; titre relevé sur Crossref : contrôle d'identité plus faible"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "population": "representative national surveys, 1981-2007, 52 countries with time series (countries not listed in the abstract)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "free-choice-happiness",
+      "text": "Societies that let people choose more freely how to live have happier people; the authors read this regression link as a major effect",
+      "support": {
+        "sentence": "Regression analyses suggest that that the extent to which a society allows free choice has a major impact on happiness.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "an association between nations, not an experiment on people",
+    "perceived freedom and control over one's life, not the number of options in a choice",
+    "whether Middle East or North African countries are among the 52 is not said in the abstract"
+  ],
+  "allegiance": "the link is predicted by the authors' own human development model",
+  "acknowledged": []
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "scheibehenne-2009-moderators",
+  "doi": "10.1002/mar.20271",
+  "declared": {
+    "title": "What moderates the too-much-choice effect?",
+    "firstAuthor": "Scheibehenne",
+    "authors": [
+      "Scheibehenne",
+      "Greifeneder",
+      "Todd"
+    ],
+    "year": 2009,
+    "venue": "Psychology & Marketing",
+    "foundIn": "recherche Crossref « what moderates the too-much-choice effect » du 2026-11-22 (dossier too-many-choices, piste « réplications ratées ») ; titre relevé sur Crossref : contrôle d'identité plus faible"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 598,
+  "population": "598 participants in 3 studies (authors in Germany and the US); country of the samples not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "only-justification",
+      "text": "Of the conditions tested in three studies, only having to justify one's choice changed the effect of a large number of options, which questions how widespread the effect is",
+      "support": {
+        "sentence": "Overall, only choice justification proved to be an effective moderator, calling the extent of the too-much-choice effect into question.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "the abstract does not give the size of the main effect",
+    "same first author as the meta-analysis that pools these studies (scheibehenne-2010-overload)",
+    "low-stakes choices in the lab"
+  ],
+  "acknowledged": []
+}

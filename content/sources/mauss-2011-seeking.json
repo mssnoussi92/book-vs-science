@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "mauss-2011-seeking",
+  "doi": "10.1037/a0022010",
+  "declared": {
+    "title": "Can seeking happiness make people unhappy? [corrected] Paradoxical effects of valuing happiness.",
+    "firstAuthor": "Mauss",
+    "authors": [
+      "Mauss",
+      "Tamir",
+      "Anderson",
+      "Savino"
+    ],
+    "year": 2011,
+    "venue": "Emotion",
+    "foundIn": "Europe PMC search « \"valuing happiness\" » (2026-11-22)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 128,
+  "population": "US women: 59 adults of the Denver community (Study 1), 69 students (Study 2)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "low-stress-only",
+      "text": "Women who valued happiness more reported less happiness, but only when their life stress was low, not when it was high",
+      "support": {
+        "sentence": "In Study 1, female participants who valued happiness more (vs. less) reported lower happiness when under conditions of low, but not high, life stress.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "induced",
+      "text": "Women led to value happiness (by reading an article praising it) felt less positive than controls while watching a happy film clip, not a sad one",
+      "support": {
+        "sentence": "In Study 2, compared to a control group, female participants who were experimentally induced to value happiness reacted less positively to a happy, but not a sad, emotion induction.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "disappointment",
+      "text": "That drop went through disappointment at one's own feelings",
+      "support": {
+        "sentence": "This effect was mediated by participants' disappointment at their own feelings.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "women only, small samples: 59, then 69 split into four groups of about 17 (sizes read in the author manuscript, PMC3160511)",
+    "Study 1 is cross-sectional, and its link holds only under low life stress",
+    "the induction is one faux newspaper article, measured minutes later during a 2-minute film",
+    "no direct or multi-lab replication of Study 2 found (2026-11-22)",
+    "the Valuing Happiness Scale used here mixes several things: only 1 of its 3 factors goes with lower well-being (Luhmann 2016)",
+    "the lab that proposed the valuing-happiness paradox; 4 other sources of this dossier come from the same network (Mauss, Ford)"
+  ],
+  "acknowledged": [
+    {
+      "doi": "10.1037/a0024986",
+      "type": "correction",
+      "changes": "the title: the author manuscript (PMC3160511) reads « make people happy? », PubMed marks the title [corrected]; the notice itself is unreadable (APA, 403)"
+    }
+  ]
+}

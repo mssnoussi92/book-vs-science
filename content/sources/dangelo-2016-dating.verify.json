@@ -1,0 +1,77 @@
+{
+  "doi": "10.1080/15213269.2015.1121827",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « There Are Plenty of Fish in the Sea: The Effects of Choice Overload and Reversibility on Online Daters’ Satisfaction With Selected Partners » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « D’Angelo » matches; 2/2 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2016, found 2016, 2017"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:large-pool",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:reversibility-no-effect",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "There Are Plenty of Fish in the Sea: The Effects of Choice Overload and Reversibility on Online Daters’ Satisfaction With Selected Partners",
+    "firstAuthor": "D’Angelo",
+    "years": [
+      2016,
+      2017
+    ],
+    "type": "journal-article",
+    "venue": "Media Psychology"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "67c1a94fc4fe517362ad6be46b4d05206eb6074496056b6c37362028b9dcec49",
+  "checkedOn": "2026-11-22",
+  "tool": "bvs-sources@0.1"
+}

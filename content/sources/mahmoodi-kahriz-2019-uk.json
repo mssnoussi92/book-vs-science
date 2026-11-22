@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "mahmoodi-kahriz-2019-uk",
+  "doi": "10.1007/s10902-019-00193-9",
+  "declared": {
+    "title": "Wanting to Be Happy but Not Knowing How: Poor Attentional Control and Emotion-Regulation Abilities Mediate the Association Between Valuing Happiness and Depression",
+    "firstAuthor": "Mahmoodi Kahriz, Bahram",
+    "year": 2019,
+    "foundIn": "OpenAlex search, title and abstract « \"valuing happiness\" », sorted by citations (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "n": 450,
+  "population": "students of a UK university, British and non-British (151 and 299)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "replicated-uk",
+      "text": "An independent team found again, in two UK samples, that valuing happiness goes with more depression",
+      "support": {
+        "sentence": "In both studies, we found that valuing happiness was related to increased depression, confirming the link between valuing happiness and depression in a Western country outside of the USA.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "strongest-british",
+      "text": "The link was strongest in British participants, weaker in non-British students and those of dual nationality",
+      "support": {
+        "sentence": "Moreover, our findings indicated that the relationship between valuing happiness and depression was strongest in British, rather than non-British participants or participants of dual nationality.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "correlational, university students",
+    "the countries of the non-British students are not given in the abstract",
+    "same scale as Mauss 2011 (Valuing Happiness Scale), whose structure is questioned (Luhmann 2016)"
+  ],
+  "acknowledged": []
+}

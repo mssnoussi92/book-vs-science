@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "markus-2010-choice",
+  "doi": "10.1086/651242",
+  "declared": {
+    "title": "Does Choice Mean Freedom and Well-Being?",
+    "firstAuthor": "Markus",
+    "authors": [
+      "Markus",
+      "Schwartz"
+    ],
+    "year": 2010,
+    "venue": "Journal of Consumer Research",
+    "foundIn": "recherche Crossref « does choice mean freedom and well-being » du 2026-11-22 (piste « choix et cultures non occidentales ») ; titre relevé sur Crossref : contrôle d'identité plus faible"
+  },
+  "design": "narrative-review",
+  "designSetBy": "reviewer",
+  "population": "review of research on choice in Western, non-Western and working-class samples; no Arab sample named in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "culture",
+      "text": "Outside university-educated Westerners (non-Western cultures, working-class people), freedom and choice do not carry the same meaning or weight",
+      "support": {
+        "sentence": "However, this article reviews research that shows that in non-Western cultures and among working-class Westerners, freedom and choice do not have the meaning or importance they do for the university-educated people who have been the subjects of almost all research on this topic.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "too-much",
+      "text": "Too much choice can bring a paralysing uncertainty, depression and selfishness (claim of a narrative review, no pooled data)",
+      "support": {
+        "sentence": "Too much choice can produce a paralyzing uncertainty, depression, and selfishness.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "narrative review: no pooled numbers, no protocol",
+    "the claim about too much choice is not tied to a measured effect in the abstract"
+  ],
+  "allegiance": "co-author B. Schwartz wrote « The Paradox of Choice », the idea under test here",
+  "acknowledged": []
+}

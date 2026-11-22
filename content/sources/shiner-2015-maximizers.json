@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "shiner-2015-maximizers",
+  "doi": "10.1177/1948550615595271",
+  "declared": {
+    "title": "Maximizers, Satisficers, and Their Satisfaction With and Preferences for Reversible Versus Irreversible Decisions",
+    "firstAuthor": "Shiner",
+    "authors": [
+      "Shiner"
+    ],
+    "year": 2015,
+    "venue": "Social Psychological and Personality Science",
+    "foundIn": "recherche Crossref « reversible irreversible decisions satisfaction replication Gilbert Ebert 2002 » du 2026-11-22 (dossier too-many-choices) ; titre relevé sur Crossref : contrôle d'identité plus faible"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "participants choosing a poster, reversible or final, sorted as maximizers or satisficers (author in the US); sample size not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "maximizers-reverse",
+      "text": "After a final choice of poster, satisficers were more satisfied; maximizers, who search for the best option, were more satisfied when they could reverse it",
+      "support": {
+        "sentence": "Study 1 found that satisficers were more satisfied following an irreversible decision about a poster choice, whereas maximizers were more satisfied following a reversible decision.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "maximizing is measured, not manipulated",
+    "a poster: a choice of little importance",
+    "one author, small laboratory studies"
+  ],
+  "acknowledged": []
+}

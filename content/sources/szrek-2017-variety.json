@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "szrek-2017-variety",
+  "doi": "10.1017/s1930297500005234",
+  "declared": {
+    "title": "How the number of options and perceived variety influence choice satisfaction: An experiment with prescription drug plans",
+    "firstAuthor": "Szrek",
+    "authors": [
+      "Szrek"
+    ],
+    "year": 2017,
+    "venue": "Judgment and Decision Making",
+    "foundIn": "recherche Crossref « choice overload culture cross-cultural moderator number of options satisfaction » du 2026-11-22 (dossier too-many-choices) ; titre relevé sur Crossref : contrôle d'identité plus faible"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "consumers making hypothetical choices among prescription drug plans (US health-insurance context); sample size not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "process-not-outcome",
+      "text": "Once perceived variety is accounted for, more plans did not lower satisfaction with the plan chosen, but made choosing costlier and the process less satisfying",
+      "support": {
+        "sentence": "I find that once perceived variety is included in the model, the number of options (i) has no effect on perceived benefits and choice outcome satisfaction, (ii) increases perceived costs, and (iii) decreases choice process satisfaction.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "hypothetical choices",
+    "one study, one author",
+    "the result depends on a statistical model that includes perceived variety"
+  ],
+  "acknowledged": []
+}

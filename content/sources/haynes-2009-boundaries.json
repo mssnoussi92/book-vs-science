@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "haynes-2009-boundaries",
+  "doi": "10.1002/mar.20269",
+  "declared": {
+    "title": "Testing the boundaries of the choice overload phenomenon: The effect of number of options and time pressure on decision difficulty and satisfaction",
+    "firstAuthor": "Haynes",
+    "authors": [
+      "Haynes"
+    ],
+    "year": 2009,
+    "venue": "Psychology & Marketing",
+    "foundIn": "recherche Crossref « choice overload culture cross-cultural moderator number of options satisfaction » du 2026-11-22 (dossier too-many-choices) ; titre relevé sur Crossref : contrôle d'identité plus faible"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "participants choosing one prize for a draw among 3 or 10 descriptions, with limited or extended time; country not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "less-satisfied",
+      "text": "Choosing among 10 prizes rather than 3 left people less satisfied with their decision, but not more regretful",
+      "support": {
+        "sentence": "The larger set of alternatives led to less satisfaction, but not less regret, with people's decisions.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "time-pressure",
+      "text": "With little time, choosing among many prizes felt harder and more frustrating than in the other conditions",
+      "support": {
+        "sentence": "Participants given a limited amount of time to choose with a larger set of alternatives found their decisions to be more difficult and frustrating than did participants in the other conditions.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "a prize draw: a choice of little importance",
+    "sample size not given in the abstract",
+    "one study, one author, 3 vs 10 options only"
+  ],
+  "acknowledged": []
+}

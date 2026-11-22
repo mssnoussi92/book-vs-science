@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "ferguson-2012-trying",
+  "doi": "10.1080/17439760.2012.747000",
+  "declared": {
+    "title": "Trying to be happier really can work: Two experimental studies",
+    "firstAuthor": "Ferguson",
+    "year": 2012,
+    "venue": "The Journal of Positive Psychology",
+    "foundIn": "OpenAlex search « trying to be happier really can work experimental » (2026-11-22)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "participants of two lab experiments; sample sizes and country not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "trying-helps",
+      "text": "People told to try to lift their mood while listening to music felt more positive afterwards than people who only listened",
+      "support": {
+        "sentence": "Study 1 showed that participants assigned to try to boost their mood while listening to 12 min of music reported higher positive mood compared to participants who simply listened to music without attempting to alter mood.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "only-positive-music",
+      "text": "It worked only with cheerful music (Copland), not with unsettling music (Stravinsky)",
+      "support": {
+        "sentence": "However, this effect was qualified by the predicted interaction: the music had to be positively valenced (i.e. Copland, not Stravinsky).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "two-weeks",
+      "text": "Over five lab visits in two weeks, people instructed to try to become happier gained more happiness than people who did not try",
+      "support": {
+        "sentence": "In Study 2, participants who were instructed to intentionally try to become happier (vs. not trying) reported higher increases in subjective happiness after listening to positively valenced music during five separate lab visits over a two-week period.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "small lab samples; sizes not given in the abstract (abstract read on OpenAlex only)",
+    "trying to be happier during one pleasant activity, not valuing happiness in one's whole life",
+    "self-reported mood, right after the music"
+  ],
+  "allegiance": "Kennon Sheldon develops and promotes activities to increase happiness (the sustainable happiness model)",
+  "acknowledged": []
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "dangelo-2016-dating",
+  "doi": "10.1080/15213269.2015.1121827",
+  "declared": {
+    "title": "There Are Plenty of Fish in the Sea: The Effects of Choice Overload and Reversibility on Online Daters’ Satisfaction With Selected Partners",
+    "firstAuthor": "D'Angelo",
+    "authors": [
+      "D'Angelo",
+      "Toma"
+    ],
+    "year": 2016,
+    "venue": "Media Psychology",
+    "foundIn": "recherche OpenAlex « reversible decisions satisfaction » du 2026-11-22 (dossier too-many-choices) ; titre relevé sur OpenAlex : contrôle d'identité plus faible"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "online daters choosing a partner from 6 or 24 profiles, reversible or not, followed one week (authors in the US); sample size not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "large-pool",
+      "text": "A week after choosing from 24 profiles rather than 6, daters were less satisfied with their choice and more likely to change it",
+      "support": {
+        "sentence": "Drawing on the choice overload and decision reversibility theoretical frameworks, we show that, a week after making their selection, online daters who chose from a large set of potential partners (i.e., 24) were less satisfied with their choice than those who selected from a small set (i.e., 6), and were more likely to change their selection.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "reversibility-no-effect",
+      "text": "Being able to reverse the choice did not lower satisfaction by itself; only daters with a large pool and a reversible choice were the least satisfied",
+      "support": {
+        "sentence": "While choice reversibility did not affect daters' satisfaction, those who selected from a large pool and had the ability to reverse their choice were the least satisfied with their selected partner after one week.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "a partner chosen from profiles in a study, not a real relationship",
+    "sample size not given in the abstract",
+    "one study, US"
+  ],
+  "acknowledged": []
+}

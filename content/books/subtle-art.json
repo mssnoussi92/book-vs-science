@@ -18,6 +18,18 @@
       "kind": "author-article",
       "url": "https://markmanson.net/feedback-loop-from-hell",
       "locator": "ch. 1, « The Feedback Loop from Hell » (excerpt published by the author, 2016)"
+    },
+    {
+      "id": "backwards-law",
+      "kind": "author-article",
+      "url": "https://markmanson.net/feedback-loop-from-hell",
+      "locator": "ch. 1, the backwards law, right after « The Feedback Loop from Hell » (excerpt published by the author, 2016)"
+    },
+    {
+      "id": "freedom-through-commitment",
+      "kind": "author-article",
+      "url": "https://markmanson.net/the-3-paradoxes-of-life",
+      "locator": "ch. 8, « Freedom Through Commitment », restated by the author in « The 3 Paradoxes of Life », §2 (2019)"
     }
   ]
 }

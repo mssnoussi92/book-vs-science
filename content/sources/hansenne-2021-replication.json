@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "hansenne-2021-replication",
+  "doi": "10.5334/pb.1036",
+  "declared": {
+    "title": "Valuing Happiness is Not a Good Way of Pursuing Happiness, but Prioritizing Positivity is: A Replication Study.",
+    "firstAuthor": "Hansenne",
+    "authors": [
+      "Hansenne"
+    ],
+    "year": 2021,
+    "venue": "Psychol Belg",
+    "foundIn": "Europe PMC search « \"valuing happiness\" » (2026-11-22)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "n": 683,
+  "population": "adults, 75% women (N = 683); country not given in the abstract (a Belgian journal)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "prioritizing-positivity",
+      "text": "People who organize their days around pleasant moments (prioritizing positivity) report more happiness, life satisfaction and well-being, and less depression",
+      "support": {
+        "sentence": "Regression analyses showed that prioritizing positivity was positively associated with subjective happiness, life satisfaction and psychological well-being, but that it was negatively linked to depression.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "valuing-partly-worse",
+      "text": "Valuing happiness went partly the other way: with lower well-being on some measures",
+      "support": {
+        "sentence": "Opposite results partly emerged for valuing happiness.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "cross-sectional, one sample, 75% women",
+    "replicates correlations, not an experiment",
+    "« partly »: the abstract does not say on which of the four measures valuing happiness went with worse scores"
+  ],
+  "acknowledged": []
+}
