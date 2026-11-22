@@ -144,7 +144,15 @@ describe("evidence and verdict", () => {
     writeFileSync(join(root, "content/contested.json"), JSON.stringify([{ key: "exp-2019", why: "fixture: failed replication" }]));
     assert.ok(errors(check(root)).some((i) => i.rule === "verdict" && i.message.includes("contesté")));
   });
-  test("claims-said: a hook on a mixed claim (hook ≤ verdict)", () => bites("claims-said", EP, (j) => { j.hooks[0].claims = ["c1"]; j.verdict.assessments[0].direction = "mixed"; }));
+  test("claims-said: a hook that asserts a mixed claim (hook ≤ verdict)", () => bites("claims-said", EP, (j) => { j.hooks[2].claims = ["c1"]; j.verdict.assessments[0].direction = "mixed"; }));
+  test("claims-said: a question on a mixed claim of moderate certainty passes (docs/verdict.md §5)", () => {
+    const root = copy();
+    edit(root, EP, (j) => { j.hooks[0].claims = ["c1"]; j.verdict.assessments[0].direction = "mixed"; });
+    assert.deepEqual(errors(check(root)).filter((i) => i.rule === "claims-said"), []);
+  });
+  test("claims-said: a question on a low-certainty claim is still refused", () => bites("claims-said", EP, (j) => {
+    j.hooks[0].claims = ["c1"]; j.verdict.assessments[0].direction = "mixed"; j.verdict.assessments[0].certainty = "low";
+  }, { also: ["verdict"] }));
   test("claims-said: a line that states an out-of-scope claim", () => bites("claims-said", EP, (j) => { j.verdict.beats[0].claims = ["c2"]; }));
   test("outcome: a scene that ends in a cure on a ⚖️", () => bites("outcome", EP, (j) => { j.scenes[0].outcome = "better"; }));
   test("takeaway: 'evidence' without any causal finding on the action", () => bites("takeaway", EP, (j) => {

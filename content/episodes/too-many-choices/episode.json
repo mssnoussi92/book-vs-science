@@ -107,11 +107,13 @@
     },
     {
       "id": "h4",
-      "type": "pov",
-      "spokenBy": "none",
+      "type": "number",
+      "spokenBy": "narrator",
       "firstFrame": "text-over-scene",
-      "emotion": "tired",
-      "claims": [],
+      "emotion": "curious",
+      "claims": [
+        "c1"
+      ],
       "beats": [
         {
           "kind": "action",
@@ -135,11 +137,13 @@
     },
     {
       "id": "h5",
-      "type": "book-promise",
+      "type": "paradox",
       "spokenBy": "narrator",
       "firstFrame": "badge-tease",
       "emotion": "curious",
-      "claims": [],
+      "claims": [
+        "c1"
+      ],
       "beats": [
         {
           "kind": "action",
@@ -285,7 +289,7 @@
           "speaker": "adasa",
           "emotion": "warm",
           "intensity": 0.5,
-          "delivery": "announcing the replay, light, a small stress on « لأ »",
+          "delivery": "announcing the replay, light, a small stress on « حاجة واحدة »",
           "voice": "over"
         },
         {
@@ -1066,7 +1070,7 @@
         "emotion": "neutral",
         "at": {
           "line": "l1",
-          "word": 8
+          "word": 6
         },
         "seconds": 1.0
       },
@@ -1083,7 +1087,7 @@
         },
         "at": {
           "line": "l1",
-          "word": 8
+          "word": 6
         },
         "hooks": [
           "h1"

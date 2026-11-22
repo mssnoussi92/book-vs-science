@@ -136,7 +136,7 @@ export const claimsSaid: Rule = {
   describe: "Hook ≤ verdict : un hook ou une réplique ne s'appuie que sur une affirmation du champ, nette et au moins modérée.",
   check(repo) {
     const out: Issue[] = [];
-    for (const { dir, episode: ep } of repo.episodes) {
+    for (const { dir, episode: ep, langs } of repo.episodes) {
       const scope = new Map(ep.book.claims.map((c) => [c.id, c.inScope]));
       const assessed = new Map(ep.verdict.assessments.map((a) => [a.claim, a]));
       const check = (p: string, ids: string[], strict: boolean) => {
@@ -149,7 +149,11 @@ export const claimsSaid: Rule = {
           }
         }
       };
-      for (const h of ep.hooks) check(`hooks.${h.id}`, h.claims, true);
+      // docs/verdict.md §5: « sinon il devient une question ». A hook whose every text (said and first frame, in every
+      // language) ends in a question asks, it does not assert: it may rest on a mixed claim of at least moderate certainty.
+      const asks = (id: string) => [...langs.values()].every((l) => [`hook.${id}`, `hook.${id}.frame`].every((k) => !l.texts[k] || /[؟?]\s*$/u.test(l.texts[k]!.trim())));
+      const fair = (c: string) => { const a = assessed.get(c); return !!a && a.direction === "mixed" && CERTAINTY_RANK[a.certainty] >= CERTAINTY_RANK.moderate; };
+      for (const h of ep.hooks) check(`hooks.${h.id}`, asks(h.id) ? h.claims.filter((c) => !fair(c)) : h.claims, true);
       for (const p of beats(ep)) if (p.beat.kind === "line") check(`${p.scope}.${p.beat.id}`, p.beat.claims, false);
     }
     return out;
