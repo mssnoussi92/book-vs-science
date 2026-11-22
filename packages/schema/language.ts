@@ -13,6 +13,7 @@ export const LanguagePack = z.strictObject({
   limits: z.strictObject({
     hookFrameWords: z.number().int().min(1),   // words on the first frame of a hook
     bookCardWords: z.number().int().min(1),
+    studyCardWords: z.number().int().min(1).default(12),   // the study card's words: its box is 280 px high (the challenge of too-many-choices: 15 words overflowed and cut the applicability line)
     lineChars: z.number().int().min(20),
   }),
   /** Plain words or phrases; matched on normalized text (rules/text.ts). */

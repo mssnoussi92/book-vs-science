@@ -56,20 +56,22 @@ export const textChars: Rule = {
 
 export const lengths: Rule = {
   id: "lengths",
-  describe: "Première image d'un hook ≤ N mots, carte du livre ≤ N mots, réplique ≤ N caractères (langue).",
+  describe: "Première image d'un hook ≤ N mots, carte du livre et carte de l'étude ≤ N mots, réplique ≤ N caractères (langue).",
   check(repo) {
     const out: Issue[] = [];
     for (const { dir, episode: ep, langs } of repo.episodes) {
       for (const [code, lang] of langs) {
         const pack = repo.languages.get(code);
         if (!pack) continue;
-        const { hookFrameWords, bookCardWords, lineChars } = pack.limits;
+        const { hookFrameWords, bookCardWords, studyCardWords, lineChars } = pack.limits;
         for (const h of ep.hooks) {
           const t = lang.texts[`hook.${h.id}.frame`];
           if (t && words(t).length > hookFrameWords) out.push({ rule: "lengths", severity: "error", where: langWhere(dir, code, `hook.${h.id}.frame`), message: `${words(t).length} mots sur la première image (${hookFrameWords} au plus : lue en une seconde, son coupé)` });
         }
         const card = lang.texts["book.card"];
         if (card && words(card).length > bookCardWords) out.push({ rule: "lengths", severity: "error", where: langWhere(dir, code, "book.card"), message: `${words(card).length} mots sur la carte du livre (${bookCardWords} au plus)` });
+        const study = lang.texts["verdict.card"];
+        if (study && words(study).length > studyCardWords) out.push({ rule: "lengths", severity: "error", where: langWhere(dir, code, "verdict.card"), message: `${words(study).length} mots sur la carte de l'étude (${studyCardWords} au plus : au-delà, elle déborde de sa boîte et coupe la ligne d'applicabilité)` });
         for (const p of beats(ep)) {
           const t = p.key ? lang.texts[p.key] : undefined;
           if (t && t.length > lineChars) out.push({ rule: "lengths", severity: "warn", where: langWhere(dir, code, p.key!), message: `${t.length} caractères (${lineChars} conseillés au plus)` });

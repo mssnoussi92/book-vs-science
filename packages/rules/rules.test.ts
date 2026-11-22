@@ -92,6 +92,7 @@ describe("texts", () => {
     writeFileSync(join(root, "content/episodes/example/approvals.json"), JSON.stringify({ video: { "ar-EG": { on: "2026-11-22", words: "je valide cette version", via: "conversation", hash: "0".repeat(64) } } }));
     assert.equal(warned(root).length, 0);
   });
+  test("lengths: a study card too long for its box", () => bites("lengths", AR, (j) => { j.texts["verdict.card"] = "تحليل لـ 40 دراسة عن العادة دي والتوتر في الشغل وفي البيت عند الكبار والصغار"; }));
   test("lengths: a first frame too long to read in a second", () => bites("lengths", AR, (j) => { j.texts["hook.h2.frame"] = "جرب ده تلات ثواني بس وانت قاعد مكانك"; }));
   test("no-author-name: the author named in a line", () => bites("no-author-name", AR, (j) => { j.texts["book.l1"] = "جين إكزامبل بتقول إن العادة دي بتقلل التوتر."; }));
   test("numbers: a figure that no cited source holds", () => bites("numbers", AR, (j) => { j.texts["verdict.card"] = "تحليل لـ 57 دراسة"; }));
