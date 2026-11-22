@@ -3,13 +3,14 @@
 // engine). The draft is watermarked and never published; it shows the owner the three styles before any voice request.
 import { words as wordsOf } from "../core/text.ts";
 import type { EpisodeEntry, Repo } from "../rules/types.ts";
-import type { Beat, Timeline, TimedAction, TimedLine, VisemeName } from "../schema/index.ts";
+import type { Action, Beat, Timeline, TimedAction, TimedLine, VisemeName } from "../schema/index.ts";
 
 const FPS = 30;
 const PAUSE = 0.3;            // seconds between two lines
 const SILENT_HOOK = 2.4;      // a hook without voice: the time to read its first frame
 const BADGE_DELAY = 0.6;
 const SHARE = 2.2;
+const NUANCE_HOLD = 2.6;      // a nuance written only: the time to read its card
 
 /** Arabic letters → mouth shapes (Rhubarb's names), for the draft and the « text » engine. */
 const AR: Record<string, VisemeName> = {
@@ -63,48 +64,78 @@ export function buildTimeline(repo: Repo, e: EpisodeEntry, opts: TimelineOptions
     f = f0 + len + fr(PAUSE);
   };
 
+  const hook = ep.hooks.find((h) => h.id === (opts.hook ?? ep.hooks[0]!.id)) ?? ep.hooks[0]!;
+  const timed = (b: Action, scope: string, part: TimedLine["part"], f0: number, f1: number): TimedAction => ({
+    id: b.id, part, scope, who: b.who, gesture: b.gesture, prop: b.prop, fx: b.fx ? { id: b.fx.id, params: b.fx.params } : undefined,
+    emotion: b.emotion, look: b.look, f0, f1, ...(b.caption ? { caption: text(`${scope}.${b.id}`) } : {}),
+  });
+
+  /** Plays the beats in order; returns the actions that hold beyond their seconds, with how. */
   const play = (scope: string, part: TimedLine["part"], beats: readonly Beat[]) => {
+    const held: { a: TimedAction; how: "next" | "part" }[] = [];
     for (const b of beats) {
-      if (b.kind === "line") speak(`${scope}.${b.id}`, part, b.speaker, b.emotion, { intensity: b.intensity, gesture: b.gesture, look: b.look });
-      else {
-        const f0 = f;
-        const len = fr(b.seconds);
-        actions.push({ id: b.id, part, scope, who: b.who, gesture: b.gesture, prop: b.prop, fx: b.fx ? { id: b.fx.id, params: b.fx.params } : undefined, emotion: b.emotion, look: b.look, f0, f1: f0 + len });
-        f = f0 + len;
+      if (b.kind === "line") {
+        speak(`${scope}.${b.id}`, part, b.speaker, b.emotion, { intensity: b.intensity, gesture: b.gesture, look: b.look, ...(b.voice === "inner" ? { inner: true } : {}) });
+        continue;
       }
+      if (b.hooks && !b.hooks.includes(hook.id)) continue;        // an image only the versions with this hook have
+      if (b.at) {                                                   // anchored on a word: does not move the clock
+        const l = lines.find((x) => x.key === `${scope}.${b.at!.line}`);
+        const w = l?.words[Math.min(b.at.word, l.words.length - 1)];
+        const f0 = w?.f0 ?? f;
+        const a = timed(b, scope, part, f0, f0 + fr(b.seconds));
+        actions.push(a);
+        if (b.holds !== "beat") held.push({ a, how: b.holds });
+        continue;
+      }
+      const a = timed(b, scope, part, f, f + fr(b.seconds));
+      actions.push(a);
+      if (b.holds !== "beat") held.push({ a, how: b.holds });
+      f = a.f1;
+    }
+    return held;
+  };
+  /** "part": to the end of the part; "next": to the same character's next effect in the part (or its end). */
+  const holdTo = (held: { a: TimedAction; how: "next" | "part" }[], end: number) => {
+    for (const { a, how } of held) {
+      const next = how === "next" ? actions.find((x) => x !== a && x.scope === a.scope && x.who === a.who && x.fx && x.f0 > a.f0) : undefined;
+      a.f1 = Math.max(a.f1, next ? next.f0 : end);
     }
   };
 
-  // 1. the hook
-  const hook = ep.hooks.find((h) => h.id === (opts.hook ?? ep.hooks[0]!.id)) ?? ep.hooks[0]!;
+  // 1. the hook, its actions all from the first image
   const h0 = f;
   if (hook.spokenBy === "none") f += fr(SILENT_HOOK);
   else speak(`hook.${hook.id}`, "hook", hook.spokenBy === "narrator" ? ep.cast.narrator : hook.spokenBy, hook.emotion);
+  for (const b of hook.beats) actions.push(timed(b, `hook.${hook.id}`, "hook", h0, f));
   parts.push({ kind: "hook", scope: "hook", f0: h0, f1: f });
   const firstFrame = { f0: h0, f1: Math.max(f, h0 + fr(SILENT_HOOK)), text: text(`hook.${hook.id}.frame`) };
 
   // 2. the scenes
   for (const s of ep.scenes) {
     const s0 = f;
-    play(s.id, "scene", s.beats);
+    holdTo(play(s.id, "scene", s.beats), f);
     parts.push({ kind: "scene", scope: s.id, f0: s0, f1: f, setting: s.setting, shape: s.shape, outcome: s.outcome });
   }
 
   // 3. the book
   const b0 = f;
-  play("book", "book", ep.book.beats);
+  holdTo(play("book", "book", ep.book.beats), f);
   parts.push({ kind: "book", scope: "book", f0: b0, f1: f });
   const book = repo.books.get(ep.book.book);
+  const bookTitle = book?.titles[opts.lang.split("-")[0]!] ?? book?.titles[opts.lang] ?? book?.shortTitle ?? book?.title ?? "";
 
-  // 4. the verdict, its nuance said after it
+  // 4. the verdict, its nuance after it (said, or held on its card)
   const v0 = f;
-  play("verdict", "verdict", ep.verdict.beats);
+  const vHeld = play("verdict", "verdict", ep.verdict.beats);
   let nuance: Timeline["cards"]["nuance"];
   if (ep.verdict.nuance) {
     const n0 = f;
-    speak("verdict.nuance", "verdict", ep.cast.narrator, "neutral");
+    if (ep.verdict.nuanceSpoken) speak("verdict.nuance", "verdict", ep.cast.narrator, "neutral");
+    else f += fr(NUANCE_HOLD);
     nuance = { f0: n0, f1: f, text: text("verdict.nuance") };
   }
+  holdTo(vHeld, f);
   parts.push({ kind: "verdict", scope: "verdict", f0: v0, f1: f });
   const src = repo.sources.get(ep.verdict.onScreen);
   const ver = repo.verifications.get(ep.verdict.onScreen);
@@ -112,7 +143,7 @@ export function buildTimeline(repo: Repo, e: EpisodeEntry, opts: TimelineOptions
 
   // 5. the takeaway, the orientation line, the share card
   const t0 = f;
-  play("takeaway", "takeaway", ep.takeaway.beats);
+  const tHeld = play("takeaway", "takeaway", ep.takeaway.beats);
   let orientation: Timeline["cards"]["orientation"];
   if (ep.takeaway.orientation) {
     const o0 = f;
@@ -121,7 +152,15 @@ export function buildTimeline(repo: Repo, e: EpisodeEntry, opts: TimelineOptions
   }
   let share: Timeline["cards"]["share"];
   if (lang.texts["share"]) { share = { f0: f, f1: f + fr(SHARE), text: text("share") }; f += fr(SHARE); }
+  holdTo(tHeld, f);
   parts.push({ kind: "takeaway", scope: "takeaway", f0: t0, f1: f });
+
+  // The study card comes with the first line that rests on it (never on a claim it does not support), until the
+  // nuance card or the takeaway.
+  const onScreenFor = new Set(ep.verdict.assessments.filter((a) => a.evidence.some((x) => x.source === ep.verdict.onScreen && x.relation !== "contradicts")).map((a) => a.claim));
+  const restsOn = ep.verdict.beats.find((b) => b.kind === "line" && b.claims.some((c) => onScreenFor.has(c)));
+  const studyFrom = (restsOn && lines.find((l) => l.key === `verdict.${restsOn.id}`)?.f0) ?? v0 + fr(1.0);
+  const studyTo = nuance ? nuance.f0 : t0;
 
   for (const t of Object.values(mouths)) t.sort((a, b) => a.f - b.f);
   return {
@@ -130,8 +169,9 @@ export function buildTimeline(repo: Repo, e: EpisodeEntry, opts: TimelineOptions
     cast: { narrator: ep.cast.narrator, characters: ep.cast.characters },
     cards: {
       firstFrame,
-      book: { f0: b0, f1: v0, idea: text("book.card"), title: book?.titles[opts.lang.split("-")[0]!] ?? book?.titles[opts.lang] ?? book?.shortTitle ?? book?.title ?? "", author: book?.authorWritten[opts.lang] ?? book?.author ?? "" },
-      study: { f0: v0 + fr(1.0), f1: t0, line: text("verdict.card"), ref, design: src?.design ?? "" },
+      ...(book ? { tease: { f0: h0, f1: b0, title: bookTitle } } : {}),
+      book: { f0: b0, f1: v0, idea: text("book.card"), title: bookTitle, author: book?.authorWritten[opts.lang] ?? book?.author ?? "" },
+      study: { f0: studyFrom, f1: studyTo, line: text("verdict.card"), ref, design: src?.design ?? "" },
       badge: { f: v0 + fr(BADGE_DELAY), badge: ep.verdict.badge, label: pack.labels.badge[ep.verdict.badge], certainty: pack.labels.certainty[ep.verdict.certainty] },
       ...(nuance ? { nuance } : {}),
       ...(orientation ? { orientation } : {}),

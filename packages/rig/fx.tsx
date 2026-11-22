@@ -21,7 +21,8 @@ export const Spiral: React.FC<{ x: number; y: number; size: number; f: number; o
   );
 };
 
-/** A thought bubble; `image: white-bear` draws the bear one tries not to think of (Wegner's experiment). */
+/** A thought bubble; `image: white-bear` draws the bear one tries not to think of (Wegner's experiment),
+ *  `phone-rejected` the refusal that started it. */
 export const ThoughtBubble: React.FC<{ x: number; y: number; k: number; image?: string }> = ({ x, y, k, image }) => {
   const s = Math.min(1, k * 4);
   return (
@@ -29,6 +30,7 @@ export const ThoughtBubble: React.FC<{ x: number; y: number; k: number; image?: 
       <circle cx={-70} cy={150} r={14} fill="#fff" stroke={INK} strokeWidth={5} />
       <circle cx={-40} cy={110} r={22} fill="#fff" stroke={INK} strokeWidth={5} />
       <path d="M -120 0 C -150 -60 -80 -110 -30 -90 C 0 -140 90 -120 100 -70 C 160 -60 150 20 100 30 C 80 80 -10 80 -30 50 C -90 70 -140 40 -120 0 Z" fill="#fff" stroke={INK} strokeWidth={6} />
+      {image === "phone-rejected" ? <g transform="translate(-10 -20) scale(1.5)"><Phone state="rejected" /></g> : null}
       {image === "white-bear" ? (
         <g transform="translate(-10 -30)">
           <ellipse cx={0} cy={18} rx={58} ry={38} fill="#f4f4f0" stroke={INK} strokeWidth={5} />
@@ -65,3 +67,31 @@ export const Phone: React.FC<{ state?: string }> = ({ state }) => (
     {state === "rejected" ? <path d="M -9 -12 L 9 6 M 9 -12 L -9 6" stroke="#d2453b" strokeWidth={5} strokeLinecap="round" /> : null}
   </g>
 );
+
+/** The sadness itself: a rain cloud of constant size (accepting it does not make it smaller, review of the pilot:
+ *  only the spiral, the feeling about the feeling, goes away). It bobs and rains. */
+export const RainCloud: React.FC<{ x: number; y: number; f: number; o?: number; s?: number }> = ({ x, y, f, o = 1, s = 1 }) => (
+  <g transform={`translate(${x} ${y + Math.sin(f / 18) * 5}) scale(${s})`} opacity={o}>
+    {[-40, -10, 22, 48].map((dx, i) => (
+      <path key={i} d={`M ${dx} ${30 + ((f * 6 + i * 23) % 70)} l -4 16`} stroke="#5b7fb8" strokeWidth={6} strokeLinecap="round" opacity={0.85} />
+    ))}
+    <path d="M -80 20 C -100 -10 -70 -40 -40 -30 C -30 -65 25 -70 40 -35 C 75 -45 100 -10 80 20 Z" fill="#9aa3b5" stroke={INK} strokeWidth={6} strokeLinejoin="round" />
+  </g>
+);
+
+/** « It goes both ways »: the spiral and the cloud, an arrow each way between them (a link, not a cause). */
+export const TwoWay: React.FC<{ x: number; y: number; k: number; f: number }> = ({ x, y, k, f }) => {
+  const o = Math.min(1, k * 5);
+  const nudge = Math.sin(f / 6) * 6;
+  return (
+    <g transform={`translate(${x} ${y})`} opacity={o}>
+      <rect x={-260} y={-95} width={520} height={190} rx={30} fill="#ffffff" stroke={INK} strokeWidth={6} />
+      <Spiral x={-150} y={0} size={1} f={f} />
+      <RainCloud x={150} y={-10} f={f} s={0.8} />
+      <g stroke={INK} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" fill="none">
+        <path d={`M ${-60 + nudge} -22 L ${60 + nudge} -22 M ${40 + nudge} -40 L ${60 + nudge} -22 L ${40 + nudge} -4`} />
+        <path d={`M ${60 - nudge} 26 L ${-60 - nudge} 26 M ${-40 - nudge} 8 L ${-60 - nudge} 26 L ${-40 - nudge} 44`} />
+      </g>
+    </g>
+  );
+};

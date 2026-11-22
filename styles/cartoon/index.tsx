@@ -1,7 +1,7 @@
 // Style « cartoon »: a drawn set, the characters acting, a slow camera that never stops (no static image).
 import type React from "react";
 import { interpolate } from "remotion";
-import { Rewind, Spiral, ThoughtBubble } from "../../packages/rig/fx.tsx";
+import { RainCloud, Rewind, Spiral, ThoughtBubble, TwoWay } from "../../packages/rig/fx.tsx";
 import { INK } from "../../packages/rig/Rig.tsx";
 import type { PartProps, StyleModule } from "../../packages/video/contract.ts";
 import { Actor } from "../../packages/video/stage.tsx";
@@ -61,6 +61,7 @@ const Cast: React.FC<PartProps & { dim?: number; close?: boolean }> = ({ tl, f, 
       {fx.map((e) => {
         const who = e.who === "nour" ? 790 : 380;
         if (e.fx!.id === "spiral") return <Spiral key={e.id} x={who} y={640} size={Number(e.fx!.params.size ?? 1)} f={f} o={interpolate(f, [e.f0, e.f0 + 6, e.f1, e.f1 + 12], [0, 1, 1, 0], CLAMP)} />;
+        if (e.fx!.id === "cloud") return <RainCloud key={e.id} x={who - 10} y={520} f={f} o={interpolate(f, [e.f0, e.f0 + 8, e.f1, e.f1 + 12], [0, 1, 1, 0], CLAMP)} />;
         if (e.fx!.id === "thought-bubble") return <ThoughtBubble key={e.id} x={who + 120} y={560} k={e.k} image={String(e.fx!.params.image ?? "")} />;
         return null;
       })}
@@ -76,6 +77,17 @@ const RewindLayer: React.FC<PartProps> = ({ tl, f, w, h }) => (
   <>{effectsAt(tl, f).filter((e) => e.fx!.id === "rewind").map((e) => <Rewind key={e.id} k={e.k} w={w} h={h} f={f} />)}</>
 );
 
+/** Effects of the verdict that are not about one character: the two-way link. */
+const VerdictFx: React.FC<PartProps> = ({ tl, f }) => (
+  <>{effectsAt(tl, f).filter((e) => e.fx!.id === "two-way" && f < e.f1).map((e) => <TwoWay key={e.id} x={540} y={735} k={e.k} f={f} />)}</>
+);
+
+/** The nuance held on its card, without voice: the scene comes back (Karim at work again) under it. */
+const nuanceHeld = (p: PartProps) => {
+  const n = p.tl.cards.nuance;
+  return !!n && p.f >= n.f0 && p.f < n.f1 && !lineAt(p.tl, p.f);
+};
+
 export const style: StyleModule = {
   id: "cartoon",
   theme: { ink: INK, paper: "#f6f3ec", accent: "#e0a83a", card: "#fffaf0", cardInk: INK },
@@ -87,7 +99,7 @@ export const style: StyleModule = {
     },
     scene: (p) => <><Cast {...p} close={lineAt(p.tl, p.f) !== undefined} /><RewindLayer {...p} /></>,
     book: (p) => <><Cast {...p} dim={0.35} /><Narrator {...p} y={1020} s={0.9} /></>,
-    verdict: (p) => <><Cast {...p} dim={0.25} /><Narrator {...p} y={1030} s={0.72} /></>,
+    verdict: (p) => nuanceHeld(p) ? <Cast {...p} /> : <><Cast {...p} dim={0.25} /><Narrator {...p} y={1030} s={0.72} /><VerdictFx {...p} /></>,
     takeaway: (p) => <><Cast {...p} /><Narrator {...p} x={900} y={480} s={0.42} /></>,
   },
 };

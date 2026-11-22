@@ -1,0 +1,784 @@
+{
+  "$schema": "../../../schemas/episode.schema.json",
+  "schema": 1,
+  "id": "feeling-bad-about-feeling-bad",
+  "sourceLang": "ar-EG",
+  "languages": [
+    "ar-EG",
+    "en"
+  ],
+  "cast": {
+    "narrator": "adasa",
+    "characters": [
+      "nour",
+      "karim"
+    ]
+  },
+  "topic": {
+    "tags": [
+      "emotions",
+      "acceptance"
+    ],
+    "sensitive": [
+      "mental-health"
+    ]
+  },
+  "hooks": [
+    {
+      "id": "h1",
+      "type": "challenge",
+      "spokenBy": "narrator",
+      "firstFrame": "challenge",
+      "emotion": "amused",
+      "claims": [
+        "c2"
+      ],
+      "beats": []
+    },
+    {
+      "id": "h2",
+      "type": "cold-open",
+      "spokenBy": "none",
+      "firstFrame": "close-up",
+      "emotion": "ashamed",
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "gesture": "head-in-hands",
+          "fx": {
+            "id": "spiral",
+            "params": {
+              "size": 2
+            }
+          },
+          "emotion": "ashamed",
+          "seconds": 2.4
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "karim",
+          "fx": {
+            "id": "cloud",
+            "params": {}
+          },
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "type": "book-promise",
+      "spokenBy": "narrator",
+      "firstFrame": "badge-tease",
+      "emotion": "curious",
+      "beats": []
+    },
+    {
+      "id": "h4",
+      "type": "question",
+      "spokenBy": "none",
+      "firstFrame": "close-up",
+      "emotion": "curious",
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "fx": {
+            "id": "cloud",
+            "params": {}
+          },
+          "emotion": "sad",
+          "look": "down",
+          "seconds": 2.4
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "karim",
+          "fx": {
+            "id": "spiral",
+            "params": {
+              "size": 2
+            }
+          },
+          "seconds": 2.4
+        },
+        {
+          "kind": "action",
+          "id": "a3",
+          "who": "nour",
+          "gesture": "point",
+          "emotion": "curious",
+          "look": "viewer",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "type": "pov",
+      "spokenBy": "none",
+      "firstFrame": "text-over-scene",
+      "emotion": "annoyed",
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "gesture": "fist-clench",
+          "emotion": "annoyed",
+          "look": "down",
+          "seconds": 2.4
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "setting": "office",
+      "shape": "replay-twice",
+      "outcome": "a-bit-better",
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "prop": {
+            "id": "phone",
+            "state": "rejected"
+          },
+          "fx": {
+            "id": "cloud",
+            "params": {}
+          },
+          "holds": "part",
+          "emotion": "sad",
+          "look": "phone",
+          "seconds": 0.8
+        },
+        {
+          "kind": "line",
+          "id": "l1",
+          "speaker": "karim",
+          "emotion": "sad",
+          "intensity": 0.5,
+          "delivery": "quietly, deflated, reading his phone",
+          "look": "phone"
+        },
+        {
+          "kind": "line",
+          "id": "l2",
+          "speaker": "karim",
+          "emotion": "annoyed",
+          "intensity": 0.6,
+          "delivery": "to himself, scolding himself under his breath",
+          "gesture": "head-shake",
+          "look": "down",
+          "voice": "inner"
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "karim",
+          "fx": {
+            "id": "spiral",
+            "params": {
+              "size": 2
+            }
+          },
+          "holds": "next",
+          "emotion": "anxious",
+          "seconds": 0.8
+        },
+        {
+          "kind": "line",
+          "id": "l3",
+          "speaker": "karim",
+          "emotion": "angry",
+          "intensity": 0.7,
+          "delivery": "to himself, through his teeth, forcing it away",
+          "gesture": "fist-clench",
+          "look": "down",
+          "voice": "inner"
+        },
+        {
+          "kind": "action",
+          "id": "a3",
+          "who": "karim",
+          "gesture": "head-in-hands",
+          "fx": {
+            "id": "spiral",
+            "params": {
+              "size": 3
+            }
+          },
+          "holds": "next",
+          "emotion": "ashamed",
+          "seconds": 1
+        },
+        {
+          "kind": "line",
+          "id": "l4",
+          "speaker": "nour",
+          "emotion": "curious",
+          "intensity": 0.4,
+          "delivery": "light, friendly, passing by his desk",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l5",
+          "speaker": "karim",
+          "emotion": "ashamed",
+          "intensity": 0.5,
+          "delivery": "too fast, hiding it",
+          "look": "away"
+        },
+        {
+          "kind": "action",
+          "id": "a4",
+          "who": "karim",
+          "fx": {
+            "id": "rewind",
+            "params": {}
+          },
+          "prop": {
+            "id": "phone",
+            "state": "rejected"
+          },
+          "caption": true,
+          "seconds": 2.2
+        },
+        {
+          "kind": "line",
+          "id": "l6",
+          "speaker": "karim",
+          "emotion": "sad",
+          "intensity": 0.4,
+          "delivery": "to himself, slow, honest, no drama",
+          "gesture": "hand-on-chest",
+          "look": "down",
+          "voice": "inner"
+        },
+        {
+          "kind": "action",
+          "id": "a5",
+          "who": "karim",
+          "gesture": "breathe",
+          "emotion": "sad",
+          "seconds": 1
+        },
+        {
+          "kind": "line",
+          "id": "l7",
+          "speaker": "nour",
+          "emotion": "curious",
+          "intensity": 0.4,
+          "delivery": "light, friendly, same as before",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l8",
+          "speaker": "karim",
+          "emotion": "sad",
+          "intensity": 0.3,
+          "delivery": "a little sad but steady, already planning",
+          "look": "other"
+        }
+      ]
+    }
+  ],
+  "book": {
+    "book": "subtle-art",
+    "basis": "feedback-loop",
+    "claims": [
+      {
+        "id": "c1",
+        "statement": "People who judge themselves for feeling bad, instead of accepting the feeling, have more negative emotion and worse psychological health over time.",
+        "population": "adults",
+        "exposure": "judging one's own negative emotions",
+        "comparison": "accepting them",
+        "outcome": "negative emotion, psychological health",
+        "causal": false,
+        "inScope": true
+      },
+      {
+        "id": "c2",
+        "statement": "Pushing a negative feeling down does not lower it, and chasing away the thoughts about it makes them come back afterwards.",
+        "population": "adults",
+        "exposure": "suppressing a feeling, or chasing away its thoughts",
+        "comparison": "not suppressing",
+        "outcome": "the thought or feeling afterwards",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c3",
+        "statement": "Accepting a negative feeling, instead of fighting it, helps.",
+        "population": "adults",
+        "exposure": "accepting the feeling",
+        "comparison": "fighting it, or no strategy",
+        "outcome": "negative emotion, distress, psychological health",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c4",
+        "statement": "Wanting to be happy is itself what makes people unhappy.",
+        "population": "adults",
+        "exposure": "valuing or pursuing happiness",
+        "comparison": "not pursuing it",
+        "outcome": "well-being",
+        "causal": true,
+        "inScope": false
+      }
+    ],
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "curious",
+        "delivery": "plain, reporting what the book says; a beat before « الحل؟ »",
+        "gesture": "point",
+        "look": "card"
+      }
+    ]
+  },
+  "verdict": {
+    "badge": "nuanced",
+    "certainty": "low",
+    "assessments": [
+      {
+        "claim": "c1",
+        "direction": "supports",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "ford-2018-acceptance",
+            "finding": "health-6-months",
+            "relation": "supports"
+          },
+          {
+            "source": "willroth-2023-judgments",
+            "finding": "negative-judgments",
+            "relation": "supports"
+          },
+          {
+            "source": "bastian-2012-social-expectancies",
+            "finding": "self-evaluation",
+            "relation": "supports"
+          },
+          {
+            "source": "bailen-2019-meta-emotions",
+            "finding": "nn-depression",
+            "relation": "supports"
+          },
+          {
+            "source": "shallcross-2010-acceptance",
+            "finding": "after-stress",
+            "relation": "nuances"
+          },
+          {
+            "source": "nickerson-2025-refugees",
+            "finding": "ptsd-both-ways",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c2",
+        "direction": "supports",
+        "certainty": "moderate",
+        "evidence": [
+          {
+            "source": "wang-2020-ironic",
+            "finding": "rebound",
+            "relation": "supports"
+          },
+          {
+            "source": "abramowitz-2001-suppression",
+            "finding": "rebound",
+            "relation": "supports"
+          },
+          {
+            "source": "webb-2012-regulation",
+            "finding": "suppressing-the-feeling",
+            "relation": "supports"
+          },
+          {
+            "source": "webb-2012-regulation",
+            "finding": "distraction-works",
+            "relation": "nuances"
+          },
+          {
+            "source": "mamat-2023-suppression-training",
+            "finding": "less-anxiety",
+            "relation": "contradicts"
+          },
+          {
+            "source": "dunn-2009-suppression-acceptance",
+            "finding": "suppression-lowered-fear",
+            "relation": "contradicts"
+          }
+        ]
+      },
+      {
+        "claim": "c3",
+        "direction": "mixed",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "ford-2018-acceptance",
+            "finding": "health-6-months",
+            "relation": "supports"
+          },
+          {
+            "source": "aldao-2010-strategies",
+            "finding": "small-to-medium",
+            "relation": "supports"
+          },
+          {
+            "source": "atjak-2015-act",
+            "finding": "vs-controls",
+            "relation": "nuances"
+          },
+          {
+            "source": "ford-2018-acceptance",
+            "finding": "feelings-not-situations",
+            "relation": "nuances"
+          },
+          {
+            "source": "atjak-2015-act",
+            "finding": "as-good-as-cbt",
+            "relation": "nuances"
+          },
+          {
+            "source": "kohl-2012-acceptance",
+            "finding": "no-better-on-negative-affect",
+            "relation": "nuances"
+          },
+          {
+            "source": "gower-2026-act",
+            "finding": "not-superior",
+            "relation": "nuances"
+          },
+          {
+            "source": "hofmann-2009-anxiety",
+            "finding": "same-felt-anxiety",
+            "relation": "nuances"
+          },
+          {
+            "source": "roos-2026-visitor-mindset",
+            "finding": "no-distress-change",
+            "relation": "contradicts"
+          },
+          {
+            "source": "dunn-2009-suppression-acceptance",
+            "finding": "acceptance-later",
+            "relation": "contradicts"
+          }
+        ]
+      },
+      {
+        "claim": "c4",
+        "direction": "mixed",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "ford-2015-culture",
+            "finding": "depends-on-culture",
+            "relation": "nuances"
+          },
+          {
+            "source": "zerwas-2024-concern",
+            "finding": "concern",
+            "relation": "nuances"
+          }
+        ]
+      }
+    ],
+    "nuance": "c3",
+    "onScreen": "wang-2020-ironic",
+    "searched": {
+      "on": "2026-11-22",
+      "queries": [
+        {
+          "base": "crossref",
+          "query": "meta-analysis thought suppression rebound ironic effects",
+          "results": 20
+        },
+        {
+          "base": "europepmc",
+          "query": "\"thought suppression\" AND (meta-analysis OR replication) AND (rebound OR ironic)",
+          "results": 25
+        },
+        {
+          "base": "europepmc",
+          "query": "(Mamat AND Anderson AND suppression) OR (\"suppression training\" AND (replication OR \"intrusive thoughts\" OR anxiety))",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "suppression-induced forgetting think/no-think meta-analysis replication",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "expressive suppression culture moderator psychological functioning Asian European American",
+          "results": 20
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"emotion regulation\" OR \"expressive suppression\" OR \"emotional acceptance\") AND (culture OR cultural) AND (meta-analysis OR moderator)",
+          "results": 25
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"accepting negative emotions\" OR \"emotional acceptance\" OR \"habitual acceptance\") AND (culture OR cultural OR \"cross-cultural\" OR Asian)",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "acceptance of negative emotions cross-cultural psychological health East Asian replication",
+          "results": 20
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"emotion regulation\" OR \"experiential avoidance\" OR \"emotional acceptance\") AND (Egypt OR Egyptian OR Arab OR Arabic OR Saudi OR Jordan OR Lebanon OR \"Middle East\")",
+          "results": 25
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"expressive suppression\" OR \"AAQ-II\" OR \"emotion acceptance\") AND (Arab OR Arabic OR Egypt OR Egyptian OR Saudi) AND (depression OR \"well-being\" OR anxiety)",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "Acceptance and Action Questionnaire AAQ-II discriminant validity negative affect neuroticism",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "(acceptance OR \"non-judging\") AND (depression OR \"negative affect\") AND (\"cross-lagged\" OR bidirectional) AND longitudinal",
+          "results": 25
+        },
+        {
+          "base": "europepmc",
+          "query": "(acceptance) AND (suppression OR reappraisal) AND (\"meta-analysis\" OR \"systematic review\") AND (\"emotion regulation\") AND (experimental OR instructed)",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "efficacy of acceptance and commitment therapy updated systematic review meta-analysis researcher allegiance study quality",
+          "results": 12
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"acceptance and commitment therapy\" OR \"acceptance-based\") AND (\"publication bias\" OR \"researcher allegiance\") AND (meta-analysis)",
+          "results": 25
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"accepting negative emotions\" OR \"negative meta-emotions\" OR \"feeling bad about feeling bad\" OR \"judging emotions\") AND (replication OR preregistered OR \"failed to replicate\")",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "Arab Muslim culture emotion regulation suppression acceptance well-being depression collectivism",
+          "results": 15
+        },
+        {
+          "base": "crossref",
+          "query": "filter=updates on the 19 DOIs of the verdict (retractions, corrections, expressions of concern)",
+          "results": 0
+        }
+      ],
+      "notFound": [
+        "no meta-analysis or longitudinal study that does not find the link of c1",
+        "no direct, preregistered or independent replication of Ford et al. 2018 or Bastian et al. 2012",
+        "no independent replication of Mamat & Anderson 2023 (35 citing articles read)",
+        "no multi-lab replication of the thought-suppression rebound, only meta-analyses",
+        "no Egyptian sample, and no Arab sample in an experiment or a trial, on accepting emotions, meta-emotions or suppression"
+      ]
+    },
+    "counterEvidence": {
+      "conclusion": "The ⚖️ badge holds: nothing of equal or higher rank contradicts c1 or c2. Three corrections taken: c1 is low (no manipulation of self-judgment, one lab's line of work, a possible measurement bias), c2 is narrowed (it comes back afterwards; distraction excluded), c3 is mixed and low (Roos 2026, Dunn 2009). The takeaway stays a suggestion, and « معظم الدراسات من أمريكا وأوروبا » is said.",
+      "found": [
+        {
+          "source": "mamat-2023-suppression-training",
+          "note": "contradicts c2: three days of training to suppress thoughts lowered anxiety; one lab, no independent replication"
+        },
+        {
+          "doi": "10.1080/09658211.2023.2208791",
+          "note": "Wiechert et al. 2023: the preregistered replication of the paradigm Mamat & Anderson rely on failed (d = 0.03)"
+        },
+        {
+          "source": "dunn-2009-suppression-acceptance",
+          "note": "contradicts c2 and c3: suppressing lowered the fear felt; accepting did not help"
+        },
+        {
+          "source": "roos-2026-visitor-mindset",
+          "note": "contradicts c3: a session targeting acceptance did not lower distress (d = 0.13): the takeaway stays a suggestion"
+        },
+        {
+          "source": "gower-2026-act",
+          "note": "nuances c3: ACT does no better than other psychotherapies (g = -0.01)"
+        },
+        {
+          "source": "hofmann-2009-anxiety",
+          "note": "nuances c3: accepting did not calm felt anxiety more than suppressing; reappraisal did better"
+        },
+        {
+          "source": "wang-2020-ironic",
+          "note": "nuances c2: the rebound after is confirmed, but during the effort the thought grows only under mental load"
+        },
+        {
+          "source": "nickerson-2025-refugees",
+          "note": "nuances c1: the only sample found that includes Arabic speakers; a two-way link with PTSD only"
+        },
+        {
+          "doi": "10.1177/1073191112438743",
+          "note": "Van Dam et al. 2012: Ford 2018 measures acceptance with self-critical items (possible measurement bias), partly answered by Willroth 2023"
+        },
+        {
+          "doi": "10.2466/03.20.pr0.114k22w4",
+          "note": "Hu et al. 2014 (meta-analysis, 48 studies): hiding emotions costs less in East Asia (r = .06 vs .19); Qiu 2026, Soto 2011, Butler 2007, Schunk 2021 agree"
+        },
+        {
+          "doi": "10.3389/fpsyg.2026.1738432",
+          "note": "Alfayez 2026 (Saudi Arabia, cross-sectional): suppression goes with more distress, the Western pattern; no Egyptian study found"
+        }
+      ]
+    },
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "skeptical",
+        "delivery": "a small pause before the answer"
+      },
+      {
+        "kind": "line",
+        "id": "l2",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "calm, factual; a beat before « بس ده ارتباط »",
+        "claims": [
+          "c1"
+        ]
+      },
+      {
+        "kind": "action",
+        "id": "a1",
+        "who": "adasa",
+        "fx": {
+          "id": "two-way",
+          "params": {}
+        },
+        "at": {
+          "line": "l2",
+          "word": 10
+        },
+        "seconds": 2.4
+      },
+      {
+        "kind": "line",
+        "id": "l3",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "calm, a hint of a smile on the last words",
+        "claims": [
+          "c2"
+        ]
+      },
+      {
+        "kind": "action",
+        "id": "a2",
+        "who": "karim",
+        "fx": {
+          "id": "thought-bubble",
+          "params": {
+            "image": "white-bear"
+          }
+        },
+        "at": {
+          "line": "l3",
+          "word": 10
+        },
+        "hooks": [
+          "h1"
+        ],
+        "seconds": 1.2
+      },
+      {
+        "kind": "action",
+        "id": "a3",
+        "who": "karim",
+        "fx": {
+          "id": "thought-bubble",
+          "params": {
+            "image": "phone-rejected"
+          }
+        },
+        "at": {
+          "line": "l3",
+          "word": 10
+        },
+        "hooks": [
+          "h2",
+          "h3",
+          "h4",
+          "h5"
+        ],
+        "seconds": 1.2
+      },
+      {
+        "kind": "line",
+        "id": "l4",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "honest, matter-of-fact",
+        "look": "viewer"
+      }
+    ],
+    "nuanceSpoken": false
+  },
+  "takeaway": {
+    "claims": [
+      "c1",
+      "c3"
+    ],
+    "strength": "low-risk-suggestion",
+    "orientation": true,
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "warm",
+        "delivery": "simple, a suggestion not an order; the quote in Karim's calm tone",
+        "look": "viewer"
+      },
+      {
+        "kind": "action",
+        "id": "a1",
+        "who": "karim",
+        "gesture": "breathe",
+        "emotion": "neutral",
+        "seconds": 0.6
+      }
+    ]
+  },
+  "variation": {
+    "pin": {},
+    "avoid": []
+  }
+}

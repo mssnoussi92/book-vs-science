@@ -106,8 +106,8 @@ switch (cmd) {
     const { mkdirSync } = await import("node:fs");
     const dir = join(ROOT, "assets/ep", e.id, code);
     mkdirSync(dir, { recursive: true });
-    writeFileSync(join(dir, "timeline.json"), JSON.stringify(tl) + "\n");
-    console.log(`assets/ep/${e.id}/${code}/timeline.json : ${(tl.frames / tl.fps).toFixed(1)} s, hook ${tl.hook}, ${tl.lines.length} répliques (brouillon)`);
+    writeFileSync(join(dir, `timeline-${tl.hook}.json`), JSON.stringify(tl) + "\n");
+    console.log(`assets/ep/${e.id}/${code}/timeline-${tl.hook}.json : ${(tl.frames / tl.fps).toFixed(1)} s, hook ${tl.hook}, ${tl.lines.length} répliques (brouillon)`);
     break;
   }
   case "sources": {

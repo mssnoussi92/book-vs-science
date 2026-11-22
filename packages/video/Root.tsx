@@ -14,7 +14,7 @@ export const Root: React.FC = () => (
     {Object.keys(STYLES).map((style) => (
       <Composition key={style} id={`Episode-${style}`} component={EpisodeVideo} calculateMetadata={episodeMetadata}
         durationInFrames={30} fps={30} width={1080} height={1920}
-        defaultProps={{ episode: "feeling-bad-about-feeling-bad", lang: "ar-EG", style, aspect: "9x16" as const }} />
+        defaultProps={{ episode: "feeling-bad-about-feeling-bad", lang: "ar-EG", hook: "h1", style, aspect: "9x16" as const }} />
     ))}
   </>
 );

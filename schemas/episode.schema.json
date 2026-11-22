@@ -160,6 +160,167 @@
                   "type": "string",
                   "pattern": "^[a-z][a-z0-9]{0,11}$"
                 }
+              },
+              "beats": {
+                "default": [],
+                "maxItems": 4,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "const": "action"
+                    },
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-z][a-z0-9]{0,11}$"
+                    },
+                    "who": {
+                      "type": "string",
+                      "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                    },
+                    "gesture": {
+                      "type": "string",
+                      "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                    },
+                    "prop": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                        },
+                        "state": {
+                          "type": "string",
+                          "maxLength": 24
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "state"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "fx": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9-]{1,30}$"
+                        },
+                        "params": {
+                          "default": {},
+                          "type": "object",
+                          "propertyNames": {
+                            "type": "string"
+                          },
+                          "additionalProperties": {
+                            "type": [
+                              "string",
+                              "number",
+                              "boolean"
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "id"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "emotion": {
+                      "type": "string",
+                      "enum": [
+                        "neutral",
+                        "happy",
+                        "sad",
+                        "anxious",
+                        "annoyed",
+                        "angry",
+                        "ashamed",
+                        "surprised",
+                        "relieved",
+                        "amused",
+                        "tired",
+                        "curious",
+                        "skeptical",
+                        "warm"
+                      ]
+                    },
+                    "look": {
+                      "type": "string",
+                      "enum": [
+                        "other",
+                        "viewer",
+                        "down",
+                        "away",
+                        "phone",
+                        "card"
+                      ]
+                    },
+                    "seconds": {
+                      "type": "number",
+                      "minimum": 0.3,
+                      "maximum": 4
+                    },
+                    "at": {
+                      "type": "object",
+                      "properties": {
+                        "line": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9]{0,11}$"
+                        },
+                        "word": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        }
+                      },
+                      "required": [
+                        "line",
+                        "word"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "hooks": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]{0,11}$"
+                      }
+                    },
+                    "holds": {
+                      "default": "beat",
+                      "type": "string",
+                      "enum": [
+                        "beat",
+                        "next",
+                        "part"
+                      ]
+                    },
+                    "caption": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "cut": {
+                      "default": "all",
+                      "type": "string",
+                      "enum": [
+                        "all",
+                        "long"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "id",
+                    "who",
+                    "seconds"
+                  ],
+                  "additionalProperties": false
+                }
               }
             },
             "required": [
@@ -278,6 +439,14 @@
                             "type": "string",
                             "pattern": "^[a-z][a-z0-9]{0,11}$"
                           }
+                        },
+                        "voice": {
+                          "default": "spoken",
+                          "type": "string",
+                          "enum": [
+                            "spoken",
+                            "inner"
+                          ]
                         },
                         "cut": {
                           "default": "all",
@@ -413,6 +582,27 @@
                             "word"
                           ],
                           "additionalProperties": false
+                        },
+                        "hooks": {
+                          "minItems": 1,
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "pattern": "^[a-z][a-z0-9]{0,11}$"
+                          }
+                        },
+                        "holds": {
+                          "default": "beat",
+                          "type": "string",
+                          "enum": [
+                            "beat",
+                            "next",
+                            "part"
+                          ]
+                        },
+                        "caption": {
+                          "default": false,
+                          "type": "boolean"
                         },
                         "cut": {
                           "default": "all",
@@ -585,6 +775,14 @@
                           "pattern": "^[a-z][a-z0-9]{0,11}$"
                         }
                       },
+                      "voice": {
+                        "default": "spoken",
+                        "type": "string",
+                        "enum": [
+                          "spoken",
+                          "inner"
+                        ]
+                      },
                       "cut": {
                         "default": "all",
                         "type": "string",
@@ -720,6 +918,27 @@
                         ],
                         "additionalProperties": false
                       },
+                      "hooks": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9]{0,11}$"
+                        }
+                      },
+                      "holds": {
+                        "default": "beat",
+                        "type": "string",
+                        "enum": [
+                          "beat",
+                          "next",
+                          "part"
+                        ]
+                      },
+                      "caption": {
+                        "default": false,
+                        "type": "boolean"
+                      },
                       "cut": {
                         "default": "all",
                         "type": "string",
@@ -842,6 +1061,10 @@
             "nuance": {
               "type": "string",
               "pattern": "^[a-z][a-z0-9]{0,11}$"
+            },
+            "nuanceSpoken": {
+              "default": true,
+              "type": "boolean"
             },
             "onScreen": {
               "type": "string",
@@ -1014,6 +1237,14 @@
                           "pattern": "^[a-z][a-z0-9]{0,11}$"
                         }
                       },
+                      "voice": {
+                        "default": "spoken",
+                        "type": "string",
+                        "enum": [
+                          "spoken",
+                          "inner"
+                        ]
+                      },
                       "cut": {
                         "default": "all",
                         "type": "string",
@@ -1148,6 +1379,27 @@
                           "word"
                         ],
                         "additionalProperties": false
+                      },
+                      "hooks": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9]{0,11}$"
+                        }
+                      },
+                      "holds": {
+                        "default": "beat",
+                        "type": "string",
+                        "enum": [
+                          "beat",
+                          "next",
+                          "part"
+                        ]
+                      },
+                      "caption": {
+                        "default": false,
+                        "type": "boolean"
                       },
                       "cut": {
                         "default": "all",
@@ -1275,6 +1527,14 @@
                           "pattern": "^[a-z][a-z0-9]{0,11}$"
                         }
                       },
+                      "voice": {
+                        "default": "spoken",
+                        "type": "string",
+                        "enum": [
+                          "spoken",
+                          "inner"
+                        ]
+                      },
                       "cut": {
                         "default": "all",
                         "type": "string",
@@ -1409,6 +1669,27 @@
                           "word"
                         ],
                         "additionalProperties": false
+                      },
+                      "hooks": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9]{0,11}$"
+                        }
+                      },
+                      "holds": {
+                        "default": "beat",
+                        "type": "string",
+                        "enum": [
+                          "beat",
+                          "next",
+                          "part"
+                        ]
+                      },
+                      "caption": {
+                        "default": false,
+                        "type": "boolean"
                       },
                       "cut": {
                         "default": "all",

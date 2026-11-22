@@ -20,6 +20,8 @@ export const TimedLine = z.strictObject({
   text: z.string(),
   /** Each word with its frames (from the alignment, or spread over the line in a draft). */
   words: z.array(z.strictObject({ w: z.string(), f0: Frame, f1: Frame })),
+  /** Said to oneself: subtitled as a thought. */
+  inner: z.boolean().optional(),
 });
 
 export const TimedAction = z.strictObject({
@@ -30,6 +32,8 @@ export const TimedAction = z.strictObject({
   emotion: Emotion.optional(),
   look: Look.optional(),
   f0: Frame, f1: Frame,
+  /** A text shown during the action, with no voice. */
+  caption: z.string().optional(),
 });
 
 const Card = z.strictObject({ f0: Frame, f1: Frame, text: z.string() });
@@ -51,6 +55,8 @@ export const Timeline = z.strictObject({
   cast: z.strictObject({ narrator: FolderId, characters: z.array(FolderId) }),
   cards: z.strictObject({
     firstFrame: Card,
+    /** From the first image to the book card: the book and a hidden badge, so that a verdict is promised. */
+    tease: z.strictObject({ f0: Frame, f1: Frame, title: z.string() }).optional(),
     book: z.strictObject({ f0: Frame, f1: Frame, idea: z.string(), title: z.string(), author: z.string() }),
     study: z.strictObject({ f0: Frame, f1: Frame, line: z.string(), ref: z.string(), design: z.string() }),
     badge: z.strictObject({ f: Frame, badge: Badge, label: z.string(), certainty: z.string() }),

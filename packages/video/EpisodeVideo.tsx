@@ -1,5 +1,5 @@
 // One episode in one style: the style's background and parts, then the shell on top. The timeline is read from
-// assets/ep/<episode>/<lang>/timeline.json (bvs timeline); the duration is the timeline's.
+// assets/ep/<episode>/<lang>/timeline-<hook>.json (bvs timeline); the duration is the timeline's.
 import type React from "react";
 import { AbsoluteFill, Audio, continueRender, delayRender, staticFile, useCurrentFrame, type CalculateMetadataFunction } from "remotion";
 import { style as cartoon } from "../../styles/cartoon/index.tsx";
@@ -19,7 +19,7 @@ const LABELS: Record<string, { bookSays: string; draft: string }> = {
   en: { bookSays: "The book says", draft: "Draft" },
 };
 
-export type EpisodeProps = { episode: string; lang: string; style: string; aspect: Aspect; tl?: Timeline };
+export type EpisodeProps = { episode: string; lang: string; hook: string; style: string; aspect: Aspect; tl?: Timeline };
 
 const fonts = delayRender("fonts");
 loadFonts().then(() => continueRender(fonts));
@@ -45,6 +45,6 @@ export const EpisodeVideo: React.FC<EpisodeProps> = ({ style, aspect, tl, episod
 };
 
 export const episodeMetadata: CalculateMetadataFunction<EpisodeProps> = async ({ props }) => {
-  const tl = (await fetch(staticFile(`ep/${props.episode}/${props.lang}/timeline.json`)).then((r) => r.json())) as Timeline;
+  const tl = (await fetch(staticFile(`ep/${props.episode}/${props.lang}/timeline-${props.hook}.json`)).then((r) => r.json())) as Timeline;
   return { durationInFrames: tl.frames, fps: tl.fps, props: { ...props, tl } };
 };

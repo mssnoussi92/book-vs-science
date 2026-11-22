@@ -23,7 +23,7 @@ export function sourcesPage(repo: Repo, e: EpisodeEntry): string {
   const out: string[] = [];
   out.push(`# Sources de « ${ep.id} »`, "");
   out.push(`**Livre** : ${book?.title ?? ep.book.book} (${book?.author ?? "?"}, ${book?.year ?? "?"}) · passage : ${book?.basis.find((b) => b.id === ep.book.basis)?.locator ?? ep.book.basis}`);
-  out.push(`**Verdict** : ${BADGE[v.badge]} · certitude ${CERT[v.certainty]}${v.nuance ? ` · nuance dite : ${v.nuance}` : ""} · étude à l'écran : ${v.onScreen}`, "");
+  out.push(`**Verdict** : ${BADGE[v.badge]} · certitude ${CERT[v.certainty]}${v.nuance ? ` · nuance ${v.nuanceSpoken ? "dite" : "écrite"} : ${v.nuance}` : ""} · étude à l'écran : ${v.onScreen}`, "");
   out.push("## Les affirmations tirées du livre", "");
   for (const c of ep.book.claims) {
     const a = v.assessments.find((x) => x.claim === c.id);
@@ -75,8 +75,17 @@ export function scriptPage(repo: Repo, e: EpisodeEntry, code: string): { text: s
       total += s;
       out.push(`- **${name(b.speaker)}** *(${b.emotion}${b.delivery ? `, ${b.delivery}` : ""})* : ${t(`${scope}.${b.id}`)}  \`${s.toFixed(1)} s\``);
     } else {
-      total += b.seconds;
-      out.push(`- *${name(b.who)} : ${[b.gesture, b.prop && `${b.prop.id} ${b.prop.state}`, b.fx?.id, b.emotion].filter(Boolean).join(", ")} (${b.seconds} s)*`);
+      // An anchored action plays during its line (no time of its own); a held one stays beyond its seconds.
+      if (!b.at) total += b.seconds;
+      const fx = b.fx && [b.fx.id, ...Object.values(b.fx.params).map(String)].join(" ");
+      const what = [b.gesture, b.prop && `${b.prop.id} ${b.prop.state}`, fx, b.emotion].filter(Boolean).join(", ");
+      const when = [
+        b.at ? `sur le mot ${b.at.word + 1} de ${b.at.line}` : `${b.seconds} s`,
+        b.holds === "part" ? "jusqu'à la fin de la partie" : b.holds === "next" ? "jusqu'à son effet suivant" : "",
+        b.hooks ? `seulement avec ${b.hooks.join(", ")}` : "",
+      ].filter(Boolean).join(" · ");
+      out.push(`- *${name(b.who)} : ${what} (${when})*`);
+      if (b.caption) out.push(`  - à l'écran, sans voix : ${t(`${scope}.${b.id}`)}`);
     }
   };
   out.push(`# Script « ${ep.id} » · ${code}`, "", `**${t("title")}**`, "");
@@ -88,6 +97,11 @@ export function scriptPage(repo: Repo, e: EpisodeEntry, code: string): { text: s
     out.push(`**${h.id} · ${h.type}** (${h.spokenBy === "none" ? "muet" : name(h.spokenBy === "narrator" ? ep.cast.narrator : h.spokenBy)}, première image ${h.firstFrame}) \`${s.toFixed(1)} s\``);
     out.push(`- à l'écran : ${t(`hook.${h.id}.frame`)}`);
     if (h.spokenBy !== "none") out.push(`- dit : ${t(`hook.${h.id}`)}`);
+    for (const b of h.beats) {
+      if (b.kind !== "action") continue;
+      const fx = b.fx && [b.fx.id, ...Object.values(b.fx.params).map(String)].join(" ");
+      out.push(`- *${name(b.who)} : ${[b.gesture, fx, b.emotion, b.look === "viewer" ? "regarde l'objectif" : ""].filter(Boolean).join(", ")}*`);
+    }
     out.push("");
   }
   total += hookSecs;
@@ -99,7 +113,11 @@ export function scriptPage(repo: Repo, e: EpisodeEntry, code: string): { text: s
   out.push("## 3. Ce que dit le livre", "", `*Carte du livre* : ${t("book.card")}`, "");
   ep.book.beats.forEach((b) => beat("book", b));
   out.push("", `## 4. Le verdict : ${BADGE[ep.verdict.badge]}`, "", `*Carte d'étude* : ${t("verdict.card")}`);
-  if (ep.verdict.nuance) { out.push(`*Nuance* : ${t("verdict.nuance")}`); total += secs("verdict.nuance"); }
+  if (ep.verdict.nuance) {
+    // Written only: its card is held 2.6 s without voice (the timeline's NUANCE_HOLD).
+    out.push(`*Nuance* (${ep.verdict.nuanceSpoken ? "dite" : "écrite seulement, carte tenue 2.6 s"}) : ${t("verdict.nuance")}`);
+    total += ep.verdict.nuanceSpoken ? secs("verdict.nuance") : 2.6;
+  }
   out.push("");
   ep.verdict.beats.forEach((b) => beat("verdict", b));
   out.push("", `## 5. À retenir (${ep.takeaway.strength === "evidence" ? "appuyé sur une preuve causale" : "suggestion à faible risque"})`, "");

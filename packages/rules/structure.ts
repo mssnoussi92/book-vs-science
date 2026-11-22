@@ -26,6 +26,14 @@ export const folders: Rule = {
       for (const p of beats(ep)) {
         if (p.beat.kind === "line" && !cast.has(p.beat.speaker)) err(`${p.scope}.${p.beat.id}`, `${p.beat.speaker} n'est pas de la distribution`);
         if (p.beat.kind === "action" && !cast.has(p.beat.who)) err(`${p.scope}.${p.beat.id}`, `${p.beat.who} n'est pas de la distribution`);
+        if (p.beat.kind === "action" && p.beat.at) {
+          const at = p.beat.at;
+          const same = beats(ep).some((q) => q.scope === p.scope && q.beat.kind === "line" && q.beat.id === at.line);
+          if (!same) err(`${p.scope}.${p.beat.id}.at`, `« ${at.line} » n'est pas une réplique de ${p.scope}`);
+        }
+        if (p.beat.kind === "action" && p.beat.holds !== "beat" && !p.beat.fx && !p.beat.prop) {
+          err(`${p.scope}.${p.beat.id}.holds`, `« holds: ${p.beat.holds} » garde un effet ou un objet : cette action n'en a pas`);
+        }
         if (p.part === "scene" && p.beat.kind === "line" && p.beat.speaker === ep.cast.narrator) {
           err(`${p.scope}.${p.beat.id}`, "le narrateur ne parle pas dans une scène : les personnages la jouent");
         }
@@ -73,6 +81,17 @@ export const hooks: Rule = {
           out.push({ rule: "hooks", severity: "error", where: where(dir, `hooks.${h.id}`), message: `un hook « ${h.type} » nomme l'affirmation qui le porte` });
         }
         for (const c of h.claims) if (!claims.has(c)) out.push({ rule: "hooks", severity: "error", where: where(dir, `hooks.${h.id}`), message: `affirmation inconnue « ${c} »` });
+        for (const b of h.beats) if (b.caption || b.at || b.hooks) {
+          out.push({ rule: "hooks", severity: "error", where: where(dir, `hooks.${h.id}.${b.id}`), message: "une action du hook n'a ni légende (le texte du hook est sa première image), ni ancre, ni liste de hooks" });
+        }
+      }
+      // An action kept for some hooks names hooks that exist, and not all of them (it would be an ordinary action).
+      const ids = new Set(ep.hooks.map((h) => h.id));
+      for (const p of beats(ep)) if (p.beat.kind === "action" && p.beat.hooks) {
+        for (const h of p.beat.hooks) if (!ids.has(h)) out.push({ rule: "hooks", severity: "error", where: where(dir, `${p.scope}.${p.beat.id}`), message: `hook inconnu « ${h} »` });
+        if (ep.hooks.every((h) => p.beat.kind === "action" && p.beat.hooks!.includes(h.id))) {
+          out.push({ rule: "hooks", severity: "error", where: where(dir, `${p.scope}.${p.beat.id}`), message: "liste de hooks inutile : elle les nomme tous" });
+        }
       }
     }
     return out;

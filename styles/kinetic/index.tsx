@@ -3,7 +3,7 @@
 // (text on a flat ground retained the least in the owner's own figures).
 import type React from "react";
 import { Easing, interpolate } from "remotion";
-import { Spiral } from "../../packages/rig/fx.tsx";
+import { RainCloud, Rewind, Spiral, ThoughtBubble, TwoWay } from "../../packages/rig/fx.tsx";
 import { INK } from "../../packages/rig/Rig.tsx";
 import type { PartProps, StyleModule } from "../../packages/video/contract.ts";
 import { FONT } from "../../packages/video/fonts.ts";
@@ -40,16 +40,19 @@ const Words: React.FC<PartProps> = ({ tl, f }) => {
   const idx = Math.max(0, l.words.findIndex((w) => f >= w.f0 && f < w.f1));
   const start = l.words.length > chunk ? Math.floor(idx / chunk) * chunk : 0;
   const shown = l.words.slice(start, start + chunk);
+  // Said to oneself: the speaker's colour, paler, after the dots of a thought.
   const color = COLORS[l.speaker] ?? INK;
+  const pale = l.inner ? 0.6 : 1;
   return (
     <foreignObject x={100} y={1190} width={880} height={300}>
       <div dir={tl.dir} style={{ fontFamily: FONT, fontSize: 70, fontWeight: 900, textAlign: "center", lineHeight: 1.28, color }}>
+        {l.inner ? <span style={{ opacity: 0.6 }}>{"∘ ° "}</span> : null}
         {shown.map((w, i) => {
           const k = interpolate(f, [w.f0 - 2, w.f0 + 6], [0, 1], { ...CLAMP, easing: Easing.out(Easing.back(3)) });
           const now = f >= w.f0 && f < w.f1;
           return (
             <span key={i}>
-              <span style={{ position: "relative", top: (1 - k) * -40, opacity: Math.min(1, k * 1.5), color: now ? INK : color }}>{w.w}</span>
+              <span style={{ position: "relative", top: (1 - k) * -40, opacity: Math.min(1, k * 1.5) * (now ? 1 : pale), color: now ? INK : color }}>{w.w}</span>
               {i < shown.length - 1 ? " " : ""}
             </span>
           );
@@ -61,11 +64,20 @@ const Words: React.FC<PartProps> = ({ tl, f }) => {
 
 const Stage: React.FC<PartProps> = (p) => {
   const who = lineAt(p.tl, p.f)?.speaker ?? (p.part.kind === "scene" || p.part.kind === "hook" ? "karim" : p.tl.cast.narrator);
-  const fx = effectsAt(p.tl, p.f).filter((e) => e.fx!.id === "spiral");
+  const fx = effectsAt(p.tl, p.f);
+  const top = MED.cy - MED.r - 60;
   return (
     <>
       <Medallion {...p} who={who} />
-      {fx.map((e) => <Spiral key={e.id} x={540} y={MED.cy - MED.r - 40} size={Number(e.fx!.params.size ?? 1) + 1} f={p.f} />)}
+      {fx.map((e) => {
+        const id = e.fx!.id;
+        if (id === "spiral") return <Spiral key={e.id} x={600} y={top} size={Number(e.fx!.params.size ?? 1) + 1} f={p.f} />;
+        if (id === "cloud") return <RainCloud key={e.id} x={430} y={top - 10} f={p.f} />;
+        if (id === "thought-bubble") return <ThoughtBubble key={e.id} x={830} y={MED.cy - 40} k={e.k} image={String(e.fx!.params.image ?? "")} />;
+        if (id === "rewind") return <Rewind key={e.id} k={e.k} w={p.w} h={p.h} f={p.f} />;
+        if (id === "two-way" && p.f < e.f1) return <TwoWay key={e.id} x={540} y={735} k={e.k} f={p.f} />;
+        return null;
+      })}
       <Words {...p} />
     </>
   );

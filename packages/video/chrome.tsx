@@ -124,8 +124,27 @@ export const FirstFrame: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeT
   );
 };
 
-/** One card of text (the orientation line, the share call), in the card zone. */
-const TextCard: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme; card?: { f0: number; f1: number; text: string }; icon: "heart" | "send" }> = ({ tl, aspect, theme, card, icon }) => {
+/** From the first image to the book card: the book and a badge still hidden, so that a verdict is promised. */
+export const Tease: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme }> = ({ tl, aspect, theme }) => {
+  const f = useCurrentFrame();
+  const c = tl.cards.tease;
+  if (!c || f < c.f0 || f >= c.f1) return null;
+  const z = ZONES[aspect].tease;
+  return (
+    <foreignObject x={z.x} y={z.y} width={z.w} height={z.h} opacity={fade(f, c.f0, c.f1, 4)}>
+      <div dir={tl.dir} style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 12, height: "100%", fontFamily: FONT, fontSize: 30, fontWeight: 800, color: theme.ink }}>
+        <span style={{ display: "flex", alignItems: "center", gap: 10, background: theme.card, border: `4px solid ${theme.ink}`, borderRadius: 40, padding: "2px 18px" }}>
+          <svg width={30} height={36} viewBox="-16 -20 32 40"><rect x={-14} y={-18} width={28} height={36} rx={4} fill="#8c8f99" stroke={theme.ink} strokeWidth={3} /><rect x={-14} y={-18} width={6} height={36} fill="#6c6f78" /></svg>
+          {c.title}
+          <svg width={38} height={38} viewBox="-20 -20 40 40"><circle r={17} fill="#7d8290" stroke={theme.ink} strokeWidth={3} /><text y={8} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={24} fill="#fff">?</text></svg>
+        </span>
+      </div>
+    </foreignObject>
+  );
+};
+
+/** One card of text (the nuance, the orientation line, the share call), in the card zone. */
+const TextCard: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme; card?: { f0: number; f1: number; text: string }; icon: "heart" | "send" | "scale" }> = ({ tl, aspect, theme, card, icon }) => {
   const f = useCurrentFrame();
   if (!card || f < card.f0 || f >= card.f1) return null;
   const z = ZONES[aspect].card;
@@ -134,12 +153,32 @@ const TextCard: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme; car
       <g transform={`translate(${z.x + z.w / 2} ${z.y + 62})`}>
         {icon === "heart"
           ? <path d="M 0 22 C -40 -6 -30 -40 0 -22 C 30 -40 40 -6 0 22 Z" fill={theme.accent} stroke={theme.ink} strokeWidth={5} />
+          : icon === "scale"
+          ? <path d="M 0 -32 L 0 28 M -26 28 L 26 28 M -40 -18 L 40 -18 M -40 -18 L -54 10 L -26 10 Z M 40 -18 L 26 10 L 54 10 Z" fill={theme.accent} stroke={theme.ink} strokeWidth={5} strokeLinejoin="round" />
           : <path d="M -34 10 L 34 -24 L 12 30 L 4 10 Z" fill={theme.accent} stroke={theme.ink} strokeWidth={5} strokeLinejoin="round" />}
       </g>
       <foreignObject x={z.x + 30} y={z.y + 100} width={z.w - 60} height={z.h - 110}>
-        <div dir={tl.dir} style={{ fontFamily: FONT, fontSize: 40, fontWeight: 800, color: theme.cardInk, textAlign: "center", lineHeight: 1.3 }}>{card.text}</div>
+        {/* A short card (a nuance in four words) is read at a glance: larger. */}
+        <div dir={tl.dir} style={{ fontFamily: FONT, fontSize: card.text.length <= 32 ? 58 : 40, fontWeight: 800, color: theme.cardInk, textAlign: "center", lineHeight: 1.3 }}>{card.text}</div>
       </foreignObject>
     </Panel>
+  );
+};
+
+/** A text shown during an action, with no voice (the book's advice during the rewind): in the subtitles' zone, drawn
+ *  by the shell even when a style owns the subtitles. */
+export const Caption: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme }> = ({ tl, aspect, theme }) => {
+  const f = useCurrentFrame();
+  if (lineAt(tl, f)) return null;
+  const c = tl.actions.find((a) => a.caption && f >= a.f0 && f < a.f1);
+  if (!c) return null;
+  const z = ZONES[aspect].subtitles;
+  return (
+    <foreignObject x={z.x} y={z.y} width={z.w} height={z.h} opacity={fade(f, c.f0, c.f1, 4)}>
+      <div dir={tl.dir} style={{ fontFamily: FONT, fontSize: 48, fontWeight: 900, color: theme.ink, textAlign: "center", lineHeight: 1.35 }}>
+        <span style={{ background: theme.accent, padding: "2px 18px", borderRadius: 14, boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}>{c.caption}</span>
+      </div>
+    </foreignObject>
   );
 };
 
@@ -148,18 +187,20 @@ const TextCard: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme; car
 export const Subtitles: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme }> = ({ tl, aspect, theme }) => {
   const f = useCurrentFrame();
   const l = lineAt(tl, f);
-  if (!l) return null;
   const z = ZONES[aspect].subtitles;
+  if (!l) return null;
   const chunk = 9;
   const idx = Math.max(0, l.words.findIndex((w) => f >= w.f0 && f < w.f1));
   const start = l.words.length > chunk ? Math.floor(idx / chunk) * chunk : 0;
   const shown = l.words.slice(start, start + chunk);
   return (
     <foreignObject x={z.x} y={z.y} width={z.w} height={z.h}>
-      <div dir={tl.dir} style={{ fontFamily: FONT, fontSize: 50, fontWeight: 800, color: "#ffffff", textAlign: "center", lineHeight: 1.3, WebkitTextStroke: `9px ${theme.ink}`, paintOrder: "stroke fill" }}>
+      {/* Said to oneself: paler words, and the dots of a thought before them. */}
+      <div dir={tl.dir} style={{ fontFamily: FONT, fontSize: 50, fontWeight: 800, color: l.inner ? "#d6dbff" : "#ffffff", textAlign: "center", lineHeight: 1.3, WebkitTextStroke: `9px ${theme.ink}`, paintOrder: "stroke fill" }}>
+        {l.inner ? <span style={{ WebkitTextStroke: "0px", color: theme.ink, opacity: 0.8 }}>{"∘ ° "}</span> : null}
         {shown.map((w, i) => (
           <span key={i}>
-            <span style={{ color: start + i === idx ? theme.accent : "#ffffff" }}>{w.w}</span>
+            <span style={{ color: start + i === idx ? theme.accent : l.inner ? "#d6dbff" : "#ffffff" }}>{w.w}</span>
             {i < shown.length - 1 ? " " : ""}
           </span>
         ))}
@@ -183,12 +224,15 @@ export const Draft: React.FC<{ tl: Timeline; aspect: Aspect; label: string }> = 
 export const Chrome: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme; labels: { bookSays: string; draft: string }; subtitles?: boolean }> = ({ tl, aspect, theme, labels, subtitles = true }) => (
   <svg width={aspect === "9x16" ? 1080 : 1920} height={aspect === "9x16" ? 1920 : 1080} style={{ position: "absolute", inset: 0 }}>
     <FirstFrame tl={tl} aspect={aspect} theme={theme} />
+    <Tease tl={tl} aspect={aspect} theme={theme} />
     <BookCard tl={tl} aspect={aspect} theme={theme} label={labels.bookSays} />
     <Badge tl={tl} aspect={aspect} theme={theme} until={tl.frames} />
     <StudyCard tl={tl} aspect={aspect} theme={theme} />
+    <TextCard tl={tl} aspect={aspect} theme={theme} card={tl.cards.nuance} icon="scale" />
     <TextCard tl={tl} aspect={aspect} theme={theme} card={tl.cards.orientation} icon="heart" />
     <TextCard tl={tl} aspect={aspect} theme={theme} card={tl.cards.share} icon="send" />
     {subtitles ? <Subtitles tl={tl} aspect={aspect} theme={theme} /> : null}
+    <Caption tl={tl} aspect={aspect} theme={theme} />
     <Draft tl={tl} aspect={aspect} label={labels.draft} />
   </svg>
 );
