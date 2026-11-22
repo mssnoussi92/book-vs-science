@@ -48,3 +48,9 @@ test("a closing quote alone does not end a screen: the question stays whole", ()
   const cuts = readingChunks(words).map(([a, b]) => words.slice(a, b).map((x) => x.w).join(" "));
   assert.equal(cuts[0], "و«بطّل زعل» دي؟");
 });
+
+test("at the limit, a clause ending with the next word stays whole", () => {
+  const words = w("لو الإحساس ده مكمّل أسابيع ومأثّر على حياتك، كلّم أخصائي نفسي.");
+  const cuts = readingChunks(words).map(([a, b]) => words.slice(a, b).map((x) => x.w).join(" "));
+  assert.deepEqual(cuts, ["لو الإحساس ده مكمّل أسابيع ومأثّر على حياتك،", "كلّم أخصائي نفسي."]);
+});

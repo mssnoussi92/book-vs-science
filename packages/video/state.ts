@@ -63,7 +63,9 @@ export function readingChunks(words: readonly { w: string }[]): [number, number]
   let start = 0;
   for (let i = 0; i < words.length; i++) {
     const n = i - start + 1;
-    if ((ends(words[i]!.w) && n >= 2) || n >= MAX_WORDS) { out.push([start, i + 1]); start = i + 1; }
+    // At the limit, a clause that ends with the next word is kept whole (8 words, not « …على » then « حياتك، »).
+    const nextEnds = i + 1 < words.length && ends(words[i + 1]!.w) && n === MAX_WORDS;
+    if ((ends(words[i]!.w) && n >= 2) || (n >= MAX_WORDS && !nextEnds)) { out.push([start, i + 1]); start = i + 1; }
   }
   if (start < words.length) {
     const last = out.at(-1);

@@ -159,7 +159,7 @@ const TextCard: React.FC<{ tl: Timeline; aspect: Aspect; theme: ChromeTheme; car
       </g>
       <foreignObject x={z.x + 30} y={z.y + 100} width={z.w - 60} height={z.h - 110}>
         {/* A short card (a nuance in four words) is read at a glance: larger. */}
-        <div dir={tl.dir} style={{ fontFamily: FONT, fontSize: card.text.length <= 32 ? 58 : 40, fontWeight: 800, color: theme.cardInk, textAlign: "center", lineHeight: 1.3 }}>{card.text}</div>
+        <div dir={tl.dir} style={{ fontFamily: FONT, fontSize: card.text.length <= 32 ? 58 : 40, fontWeight: 800, color: theme.cardInk, textAlign: "center", lineHeight: 1.3, textWrap: "balance" }}>{card.text}</div>
       </foreignObject>
     </Panel>
   );
