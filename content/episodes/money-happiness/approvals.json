@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/approvals.schema.json",
+  "sources": {
+    "on": "2026-11-23",
+    "words": "Compacte 68 s, je valide (Recommandé) : sources c1d243, script ar-EG 502284, en 1c4e5b (le livre en une phrase avec son exemple, les études avec Thomson ; « رقم » une fois, puis العلاوة الجاية et الزيادة الجاية ; comparaison avec l'Amérique)",
+    "via": "conversation",
+    "hash": "c1d243a293a79e3baac875a2651c7ed14331073750d5e6c0e813de860c43b073"
+  },
+  "script": {
+    "ar-EG": {
+      "on": "2026-11-23",
+      "words": "Compacte 68 s, je valide (Recommandé) : sources c1d243, script ar-EG 502284, en 1c4e5b (le livre en une phrase avec son exemple, les études avec Thomson ; « رقم » une fois, puis العلاوة الجاية et الزيادة الجاية ; comparaison avec l'Amérique)",
+      "via": "conversation",
+      "hash": "5022843854aa76df03c524f891d8c90589b0ce56991014377ba4796dcdfa5a28"
+    },
+    "en": {
+      "on": "2026-11-23",
+      "words": "Compacte 68 s, je valide (Recommandé) : sources c1d243, script ar-EG 502284, en 1c4e5b (le livre en une phrase avec son exemple, les études avec Thomson ; « رقم » une fois, puis العلاوة الجاية et الزيادة الجاية ; comparaison avec l'Amérique)",
+      "via": "conversation",
+      "hash": "1c4e5bec0c070ec112087dae0fbdbed72efea108ba3f20b357585cd358524cf4"
+    }
+  },
+  "voice": {},
+  "video": {}
+}
