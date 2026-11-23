@@ -39,7 +39,12 @@ Ce qui reste fragile, dit franchement. Premier jet (2026-11-22, conception) ; co
   réplique changée périme sa validation). Le débit de l'égyptien est recalé et la règle `duration` avertit avant la voix.
 - **Découpe des prises** : une prise se coupe aux silences ; quand une pause voulue par le script dure presque autant
   qu'une coupe (pilote : 0,84 s contre 0,92 s), Whisper (small) vérifie que chaque morceau est bien sa réplique ; une
-  réplique très courte se reconnaît mal (« بطّل زعل بقى! » à 0,48).
+  réplique très courte se reconnaît mal (« بطّل زعل بقى! » à 0,48). Shorts 2 et 3 (2026-11-23) : **4 prises sur 6
+  refusées** par leurs silences (Gemini garde jusqu'à 1,7 s de silence dans une réplique : « والعلم؟ … مش بالظبط ») ;
+  bornes posées à la main d'après les silences et les mots horodatés de Whisper (`--bounds`), puis acceptées par Whisper
+  (0,66 à 0,99). À outiller : proposer les bornes depuis l'alignement Whisper, la personne ne faisant que vérifier.
+- **Durée mesurée** : « trop de choix » estimé à 58,5 s, 60,5 à 62,8 s avec sa voix ; « argent » estimé à 68 s, 63,4 à
+  64,7 s : l'estimation (2,1 mots/s) se trompe de ±4 s dans les deux sens.
 
 ## Écriture
 

@@ -187,8 +187,9 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
     speak("takeaway.orientation", "takeaway", ep.cast.narrator, "warm");
     orientation = { f0: o0, f1: f, text: text("takeaway.orientation") };
   }
-  // what holds in the takeaway ends where the share card begins: one card at a time (owner's pilot review)
-  holdTo(tHeld, f);
+  // what holds in the takeaway has faded out (10 frames) when the share card begins: one card at a time (owner's pilot
+  // review)
+  holdTo(tHeld, f - 10);
   let share: Timeline["cards"]["share"];
   if (lang.texts["share"]) { share = { f0: f, f1: f + fr(SHARE), text: text("share") }; f += fr(SHARE); }
   parts.push({ kind: "takeaway", scope: "takeaway", f0: t0, f1: f });
