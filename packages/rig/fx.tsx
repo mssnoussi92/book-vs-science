@@ -65,6 +65,38 @@ export const Notification: React.FC<{ x: number; y: number; k: number; kind?: st
   );
 };
 
+/** A happiness meter above the one who checks herself: a half dial from a flat face to a big smile, the needle at
+ *  `level` of 3 and never at the top, trembling (measuring never settles). No number, no word. */
+export const Meter: React.FC<{ x: number; y: number; k: number; f: number; level?: number; o?: number; size?: number }> = ({ x, y, k, f, level = 2, o = 1, size = 1 }) => {
+  const s = Math.min(1, k * 5) * size;
+  const target = Math.min(2.6, Math.max(0, level));
+  const a = Math.PI * (1 - target / 3) + Math.sin(f / 2.3) * 0.06 + Math.sin(f / 5.1) * 0.04;   // radians, π = left
+  const R = 120;
+  const arc = (from: number, to: number) => {
+    const p = (t: number) => `${(Math.cos(Math.PI * (1 - t)) * R).toFixed(1)} ${(-Math.sin(Math.PI * (1 - t)) * R).toFixed(1)}`;
+    return `M ${p(from)} A ${R} ${R} 0 0 1 ${p(to)}`;
+  };
+  const face = (cx: number, smile: number) => (
+    <g transform={`translate(${cx} 34)`}>
+      <circle r={20} fill="#ffe08a" stroke={INK} strokeWidth={4} />
+      <circle cx={-7} cy={-5} r={3} fill={INK} /><circle cx={7} cy={-5} r={3} fill={INK} />
+      <path d={`M -9 6 Q 0 ${6 + smile} 9 6`} stroke={INK} strokeWidth={4} fill="none" strokeLinecap="round" />
+    </g>
+  );
+  return (
+    <g transform={`translate(${x} ${y}) scale(${s})`} opacity={o}>
+      <rect x={-160} y={-150} width={320} height={210} rx={28} fill="#ffffff" stroke={INK} strokeWidth={6} />
+      <path d={arc(0, 1 / 3)} stroke="#d2453b" strokeWidth={24} fill="none" />
+      <path d={arc(1 / 3, 2 / 3)} stroke="#e0a83a" strokeWidth={24} fill="none" />
+      <path d={arc(2 / 3, 1)} stroke="#2e9e5b" strokeWidth={24} fill="none" />
+      <path d={`M 0 0 L ${(Math.cos(a) * (R - 18)).toFixed(1)} ${(-Math.sin(a) * (R - 18)).toFixed(1)}`} stroke={INK} strokeWidth={9} strokeLinecap="round" />
+      <circle r={12} fill={INK} />
+      {face(-110, 0)}
+      {face(110, 12)}
+    </g>
+  );
+};
+
 /** The rewind between the two takes of a replayed scene: the frame goes grey, two triangles, lines running back. */
 export const Rewind: React.FC<{ k: number; w: number; h: number; f: number }> = ({ k, w, h, f }) => {
   const o = Math.sin(Math.min(1, k) * Math.PI);

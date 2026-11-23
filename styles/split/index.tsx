@@ -2,7 +2,7 @@
 // (nothing useful below y = 1500). In 9:16 the scene plays small in the book's half, above the subtitles; the
 // narrator speaks from the science half, never under a card of the shell.
 import type React from "react";
-import { RainCloud, Rewind, Spiral, ThoughtBubble, TwoWay, Notification } from "../../packages/rig/fx.tsx";
+import { RainCloud, Rewind, Spiral, ThoughtBubble, TwoWay, Notification, Meter } from "../../packages/rig/fx.tsx";
 import { INK } from "../../packages/rig/Rig.tsx";
 import type { PartProps, StyleModule } from "../../packages/video/contract.ts";
 import { FONT } from "../../packages/video/fonts.ts";
@@ -54,6 +54,7 @@ const Book: React.FC<PartProps> = ({ tl, f, w }) => {
         {fx.filter((e) => e.fx!.id === "spiral" && X[e.who] !== undefined).map((e) => <Spiral key={e.id} x={X[e.who]!} y={BOTTOM.y + 70} size={Number(e.fx!.params.size ?? 1)} f={f} />)}
         {fx.filter((e) => e.fx!.id === "cloud" && X[e.who] !== undefined).map((e) => <RainCloud key={e.id} x={X[e.who]! - 170} y={BOTTOM.y + 90} f={f} s={0.8} />)}
         {fx.filter((e) => e.fx!.id === "thought-bubble").map((e) => <ThoughtBubble key={e.id} x={560} y={BOTTOM.y + 110} k={e.k} image={String(e.fx!.params.image ?? "")} />)}
+        {fx.filter((e) => e.fx!.id === "meter" && X[e.who] !== undefined).map((e) => <Meter key={e.id} x={Math.min(Math.max(X[e.who]!, 200), 880)} y={BOTTOM.y + 110} k={Math.min(1, (f - e.f0) / 30)} f={f} level={Number(e.fx!.params.level ?? 2)} />)}
         {fx.filter((e) => e.fx!.id === "notification" && X[e.who] !== undefined).map((e) => <Notification key={e.id} x={Math.min(Math.max(X[e.who]!, 260), 820)} y={BOTTOM.y + 100} k={e.k} />)}
         {fx.filter((e) => e.fx!.id === "rewind").map((e) => <g key={e.id} transform={`translate(0 ${BOTTOM.y}) scale(1 ${BOTTOM.h / 1920})`}><Rewind k={e.k} w={w} h={1920} f={f} /></g>)}
       </g>

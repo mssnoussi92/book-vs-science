@@ -1,7 +1,7 @@
 // Style « cartoon »: a drawn set, the characters acting, a slow camera that never stops (no static image).
 import type React from "react";
 import { interpolate } from "remotion";
-import { Choices, RainCloud, Rewind, Spiral, ThoughtBubble, TwoWay, Notification } from "../../packages/rig/fx.tsx";
+import { Choices, RainCloud, Rewind, Spiral, ThoughtBubble, TwoWay, Notification, Meter } from "../../packages/rig/fx.tsx";
 import { INK } from "../../packages/rig/Rig.tsx";
 import type { PartProps, StyleModule } from "../../packages/video/contract.ts";
 import { Actor } from "../../packages/video/stage.tsx";
@@ -86,6 +86,7 @@ const Cast: React.FC<PartProps & { dim?: number; close?: boolean }> = ({ tl, f, 
         if (e.fx!.id === "spiral") return <Spiral key={e.id} x={who} y={640} size={Number(e.fx!.params.size ?? 1)} f={f} o={interpolate(f, [e.f0, e.f0 + 6, e.f1, e.f1 + 12], [0, 1, 1, 0], CLAMP)} />;
         if (e.fx!.id === "cloud") return <RainCloud key={e.id} x={who - 10} y={520} f={f} o={interpolate(f, [e.f0, e.f0 + 8, e.f1, e.f1 + 12], [0, 1, 1, 0], CLAMP)} />;
         if (e.fx!.id === "thought-bubble") return <ThoughtBubble key={e.id} x={who + 120} y={560} k={e.k} image={String(e.fx!.params.image ?? "")} />;
+        if (e.fx!.id === "meter") return <Meter key={e.id} x={Math.min(Math.max(who, 150), 930)} y={610} size={0.62} k={Math.min(1, (f - e.f0) / 30)} f={f} level={Number(e.fx!.params.level ?? 2)} o={interpolate(f, [e.f0, e.f0 + 6, e.f1, e.f1 + 10], [0, 1, 1, 0], CLAMP)} />;
         if (e.fx!.id === "notification") return <Notification key={e.id} x={Math.min(Math.max(who, 260), 820)} y={560} k={e.k} kind={String(e.fx!.params.kind ?? "")} />;
         return null;
       })}
