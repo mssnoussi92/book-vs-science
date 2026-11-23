@@ -53,7 +53,8 @@
 
 *Carte du livre* : Each extra bit of money matters less… until it hardly matters.
 
-- **Adasa** *(curious, plain, reporting the book; a stress on « أقل », a beat before « لسقف »)* : The book says: each raise matters less… until you hit a ceiling.  `5.0 s`
+- **Adasa** *(curious, reporting the book; stress on « أقل », a beat before « تقريبًا »)* : The book says: every rise matters less… and once the basics are covered, it hardly matters.  `6.7 s`
+- **Adasa** *(warm, the book's own example, concrete; a contrast between « صغير » and « كبير »)* : For someone on a small salary, a raise changes their day… on a big salary, they might not even feel it.  `8.7 s`
 
 ## 4. Le verdict : ⚖️ مش بالظبط
 
@@ -61,7 +62,7 @@
 *Nuance* (dite) : And money is linked more to your life satisfaction… than to your daily mood.
 
 - **Adasa** *(skeptical, a small pause before the answer)* : And science? Not exactly.  `1.9 s`
-- **Adasa** *(neutral, calm, factual; fair to the book on « غالبًا صح »)* : The first part is probably right: the same raise goes with a bigger difference… for those who have less.  `7.8 s`
+- **Adasa** *(neutral, calm, factual; fair to the book on « غالبًا صح », a beat before « وبعدها »)* : The first part is probably right: the biggest difference shows for those leaving poverty… after that, the difference shrinks.  `7.8 s`
 - **Adasa** *(neutral, calm, a beat after « مش واضح »; the same weight on both sides)* : The ceiling? Unclear: some studies found it… others didn't.  `3.9 s`
 - **Adasa** *(neutral, a comparison for every Arab viewer, plain; a light stress on « أعلى »)* : Even in America, where salaries are higher: studies found those who earn more are more satisfied.  `6.7 s`
 
@@ -71,5 +72,5 @@
 - *Karim : hand-on-chest, happy (sur le mot 4 de l1)*
 
 ---
-Durée estimée : **69 s** (débit 2.5 mots/s, recalibré sur la première prise)
-Empreinte du script en : **ccfb9b**
+Durée estimée : **79 s** (débit 2.5 mots/s, recalibré sur la première prise)
+Empreinte du script en : **1c4e5b**

@@ -21,17 +21,18 @@
     "s1.l5": "Congrats! Happy?",
     "s1.l6": "Yes. It won't fix everything… but it made a difference.",
     "book.card": "Each extra bit of money matters less… until it hardly matters.",
-    "book.l1": "The book says: each raise matters less… until you hit a ceiling.",
+    "book.l1": "The book says: every rise matters less… and once the basics are covered, it hardly matters.",
     "verdict.card": "Analysis of 86 studies · leaving poverty: the biggest difference · other rises: smaller",
     "verdict.nuance": "And money is linked more to your life satisfaction… than to your daily mood.",
     "verdict.l1": "And science? Not exactly.",
-    "verdict.l2": "The first part is probably right: the same raise goes with a bigger difference… for those who have less.",
+    "verdict.l2": "The first part is probably right: the biggest difference shows for those leaving poverty… after that, the difference shrinks.",
     "verdict.l3": "The ceiling? Unclear: some studies found it… others didn't.",
     "takeaway.l1": "Try it like Karim: enjoy what you have. It may help.",
     "share": "Send this to someone always waiting for the next raise.",
     "s1.a5": "And if you got it… would you wait for the next one?",
     "verdict.l4": "Even in America, where salaries are higher: studies found those who earn more are more satisfied.",
-    "hook.h4": "86 studies asked: who does money matter most for?"
+    "hook.h4": "86 studies asked: who does money matter most for?",
+    "book.l2": "For someone on a small salary, a raise changes their day… on a big salary, they might not even feel it."
   },
   "of": {
     "title": "339e4f1c",
@@ -53,16 +54,17 @@
     "s1.l5": "36ed5f12",
     "s1.l6": "0e93f592",
     "book.card": "00550d10",
-    "book.l1": "7eed2215",
+    "book.l1": "5962fc81",
     "verdict.card": "d2a10011",
     "verdict.nuance": "1a894f79",
     "verdict.l1": "804edf6a",
-    "verdict.l2": "a58c9799",
+    "verdict.l2": "6a7136f4",
     "verdict.l3": "cd67b67e",
     "takeaway.l1": "73e09195",
     "share": "f72d3898",
     "s1.a5": "a26b071a",
     "verdict.l4": "9b574504",
-    "hook.h4": "5a12c9a9"
+    "hook.h4": "5a12c9a9",
+    "book.l2": "775203cc"
   }
 }

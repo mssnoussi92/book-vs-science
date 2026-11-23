@@ -404,9 +404,17 @@
         "id": "l1",
         "speaker": "adasa",
         "emotion": "curious",
-        "delivery": "plain, reporting the book; a stress on « أقل », a beat before « لسقف »",
+        "delivery": "reporting the book; stress on « أقل », a beat before « تقريبًا »",
         "gesture": "point",
         "look": "card"
+      },
+      {
+        "kind": "line",
+        "id": "l2",
+        "speaker": "adasa",
+        "emotion": "warm",
+        "delivery": "the book's own example, concrete; a contrast between « صغير » and « كبير »",
+        "look": "viewer"
       }
     ]
   },
@@ -1190,7 +1198,7 @@
         "id": "l2",
         "speaker": "adasa",
         "emotion": "neutral",
-        "delivery": "calm, factual; fair to the book on « غالبًا صح »",
+        "delivery": "calm, factual; fair to the book on « غالبًا صح », a beat before « وبعدها »",
         "claims": [
           "c4"
         ]

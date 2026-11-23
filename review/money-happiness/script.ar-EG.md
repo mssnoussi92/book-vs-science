@@ -53,7 +53,8 @@
 
 *Carte du livre* : كل زيادة في الفلوس بتفرق أقل… لحد ما تقريبًا ما تفرقش.
 
-- **عدسة** *(curious, plain, reporting the book; a stress on « أقل », a beat before « لسقف »)* : الكتاب بيقول: كل زيادة بتفرق أقل… لحد ما توصل لسقف.  `5.0 s`
+- **عدسة** *(curious, reporting the book; stress on « أقل », a beat before « تقريبًا »)* : الكتاب بيقول: كل زيادة بتفرق أقل… ولما الأساسيات تتغطى، تقريبًا ما بتفرقش.  `6.0 s`
+- **عدسة** *(warm, the book's own example, concrete; a contrast between « صغير » and « كبير »)* : اللي مرتبه صغير، العلاوة بتغيّر يومه… واللي مرتبه كبير، يمكن ما يحسّش بيها.  `6.4 s`
 
 ## 4. Le verdict : ⚖️ مش بالظبط
 
@@ -61,7 +62,7 @@
 *Nuance* (dite) : والفلوس مرتبطة بالرضا عن حياتك… أكتر من مزاج يومك.
 
 - **عدسة** *(skeptical, a small pause before the answer)* : والعلم؟ مش بالظبط.  `1.7 s`
-- **عدسة** *(neutral, calm, factual; fair to the book on « غالبًا صح »)* : الجزء الأول غالبًا صح: نفس الزيادة مرتبطة بفرق أكبر… مع اللي معاه أقل.  `6.4 s`
+- **عدسة** *(neutral, calm, factual; fair to the book on « غالبًا صح », a beat before « وبعدها »)* : الجزء الأول غالبًا صح: أكبر فرق بيبان مع اللي بيطلع من الفقر… وبعدها الفرق بيصغر.  `7.4 s`
 - **عدسة** *(neutral, calm, a beat after « مش واضح »; the same weight on both sides)* : والسقف؟ مش واضح: دراسات لقته… ودراسات لأ.  `3.6 s`
 - **عدسة** *(neutral, a comparison for every Arab viewer, plain; a light stress on « أعلى »)* : حتى في أمريكا، والمرتبات أعلى: دراسات لقت اللي بيكسب أكتر راضي أكتر.  `6.0 s`
 
@@ -71,5 +72,5 @@
 - *كريم : hand-on-chest, happy (sur le mot 4 de l1)*
 
 ---
-Durée estimée : **59 s** (débit 2.1 mots/s, recalibré sur la première prise)
-Empreinte du script ar-EG : **65f482**
+Durée estimée : **67 s** (débit 2.1 mots/s, recalibré sur la première prise)
+Empreinte du script ar-EG : **502284**
