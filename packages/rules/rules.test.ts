@@ -111,6 +111,18 @@ describe("texts", () => {
   });
   test("generalizations: the narrator generalizes about a group", () => bites("generalizations", AR, (j) => { j.texts["book.l1"] = "الكتاب بيقول إن الستات كلهم متوترين."; }));
   test("applicability: no Arab sample, and nobody says it", () => bites("applicability", AR, (j) => { j.texts["verdict.nuance"] = "الأثر صغير."; }));
+  test("applicability: one Arab sample elsewhere in the dossier does not lift the line", () => {
+    const root = copy();
+    edit(root, AR, (j) => { j.texts["verdict.nuance"] = "الأثر صغير."; });
+    edit(root, "content/sources/exp-2019.json", (j) => { j.mena = true; });
+    assert.ok(errors(check(root)).some((i) => i.rule === "applicability"));
+  });
+  test("applicability: the study on screen has an Arab sample, the line is not needed", () => {
+    const root = copy();
+    edit(root, AR, (j) => { j.texts["verdict.nuance"] = "الأثر صغير."; });
+    edit(root, "content/sources/meta-2020.json", (j) => { j.mena = true; });
+    assert.deepEqual(errors(check(root)).filter((i) => i.rule === "applicability"), []);
+  });
   test("applicability: written under the study card, no line needs to say it", () => {
     const root = copy();
     edit(root, AR, (j) => { j.texts["verdict.nuance"] = "الأثر صغير."; });

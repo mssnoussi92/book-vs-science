@@ -236,18 +236,20 @@ export const generalizations: Rule = {
 
 export const applicability: Rule = {
   id: "applicability",
-  describe: "Sans échantillon du Moyen-Orient ou d'Afrique du Nord, la phrase d'applicabilité est dite ou écrite.",
+  describe: "Sauf si l'étude à l'écran a un échantillon du Moyen-Orient ou d'Afrique du Nord, la phrase d'applicabilité est dite ou écrite.",
   check(repo) {
     const out: Issue[] = [];
     for (const { dir, episode: ep, langs } of repo.episodes) {
       const cited = ep.verdict.assessments.flatMap((a) => a.evidence.map((e) => repo.sources.get(e.source))).filter((s) => s !== undefined);
-      if (cited.length === 0 || cited.some((s) => s.mena)) continue;
+      // Only the study on screen lifts the line: one small Arab sample elsewhere in the dossier (66 Saudi pupils on
+      // failure-teaches) does not make the evidence apply to the region (the challenge of two dossiers, 2026-11-23).
+      if (cited.length === 0 || repo.sources.get(ep.verdict.onScreen)?.mena) continue;
       if (ep.verdict.applicability === "written") continue;     // the shell writes the pack's line under the study card
       for (const [code, lang] of langs) {
         const pack = repo.languages.get(code);
         if (!pack) continue;
         const said = Object.values(lang.texts).some((t) => containsPhrase(t, pack.applicabilityLine));
-        if (!said) out.push({ rule: "applicability", severity: "error", where: `${dir}/lang/${code}.json`, message: `aucune étude citée n'a d'échantillon arabe : dire « ${pack.applicabilityLine} »` });
+        if (!said) out.push({ rule: "applicability", severity: "error", where: `${dir}/lang/${code}.json`, message: `l'étude à l'écran n'a pas d'échantillon arabe : dire « ${pack.applicabilityLine} »` });
       }
     }
     return out;
