@@ -34,15 +34,15 @@
 - **Adasa** *(neutral, setting the scene, calm, a light smile on « لسه واخد علاوة »)* : This is Karim. He just got a raise.  `3.5 s`
 - *Karim : phone raise, surprised (sur le mot 3 de n1 · jusqu'à la fin de la partie)*
 - *Karim : notification raise (sur le mot 3 de n1)*
-- **Karim** *(happy, to himself, delighted, reading the notification)* : Finally! I made the number.  `2.3 s`
+- **Karim** *(happy, to himself, delighted, reading the notification)* : Finally! The raise came through.  `2.3 s`
 - **Nour** *(happy, warm, friendly, passing by his desk)* : Congrats! Happy?  `1.1 s`
-- **Karim** *(tired, a half-smile that fades, his mind already on the next one)* : Well… when I get to the next number.  `3.5 s`
+- **Karim** *(tired, a half-smile that fades, his mind already on the promotion)* : I mean… once I'm promoted, I'll be happy.  `3.5 s`
 - *Karim : spiral 2, anxious (sur le mot 2 de l3 · jusqu'à son effet suivant)*
 - *Karim : spiral 3, tired (sur le mot 5 de l3 · jusqu'à son effet suivant)*
 - *Karim : tired (1.2 s · seulement avec h1)*
-  - à l'écran, sans voix : And your number… would you wait for the next?
+  - à l'écran, sans voix : And if you got it… would you wait for the next one?
 - *Karim : phone raise, rewind (2.2 s)*
-- **Adasa** *(warm, announcing the replay, light, a small stress on « مش هيستنى »)* : Let's replay it… this time he won't wait for the next number.  `5.0 s`
+- **Adasa** *(warm, announcing the replay, light, a small stress on « مش هيستنى »)* : Let's play it again… this time he won't wait for the promotion.  `5.0 s`
 - *Karim : phone raise, surprised (sur le mot 2 de n2 · jusqu'à la fin de la partie)*
 - *Karim : notification raise (sur le mot 2 de n2)*
 - **Karim** *(relieved, to himself, relieved, calm, doing the sum in his head)* : Nice… the rent will be easier.  `2.6 s`
@@ -67,9 +67,9 @@
 
 ## 5. À retenir (suggestion à faible risque)
 
-- **Adasa** *(warm, simple, a suggestion not an order; « الرقم الجاي » as Karim said it)* : Try it like Karim: don't put off your joy until the next number. It may help.  `6.7 s`
-- *Karim : hand-on-chest, happy (sur le mot 6 de l1)*
+- **Adasa** *(warm, simple, a suggestion not an order; warm on « اللي في إيدك »)* : Try it like Karim: enjoy what you have now. It may help.  `5.0 s`
+- *Karim : hand-on-chest, happy (sur le mot 4 de l1)*
 
 ---
-Durée estimée : **71 s** (débit 2.5 mots/s, recalibré sur la première prise)
-Empreinte du script en : **2a7b58**
+Durée estimée : **69 s** (débit 2.5 mots/s, recalibré sur la première prise)
+Empreinte du script en : **48fcab**
