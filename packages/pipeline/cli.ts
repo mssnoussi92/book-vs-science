@@ -12,6 +12,8 @@
 //                                            sends them (workflow voice, key in the environment); --dry prints the bodies
 //   bvs timeline <episode> --draft [--lang ar-EG] [--hook h1]
 //                                            the timeline the styles draw (draft: estimated durations, no voice)
+//   bvs fit [<episode>] [--lang ar-EG]       every card, caption and subtitle screen measured in Chromium with the
+//                                            house font: refuses a text that leaves its box or takes more than its lines
 //   bvs sources verify [<episode>|--all] [--live] [--write]
 //                                            checks each cited DOI (Crossref, OpenAlex, Europe PMC); --write saves .verify.json
 //                                            records the OWNER's approval, only after he gave it (CLAUDE.md)
@@ -40,6 +42,13 @@ function print(issues: Issue[]) {
 }
 
 switch (cmd) {
+  case "fit": {
+    const { fit } = await import("./fit.ts");
+    const misfits = await fit(loadRepo(ROOT), ROOT, args[0] && !args[0].startsWith("--") ? args[0] : undefined, flag("lang"));
+    for (const m of misfits) console.log(`  ${m.episode} ${m.lang} ${m.hook}  ${m.what}: ${m.lines} lignes (${m.max} au plus)${m.overflow ? ", sort de sa boîte" : ""}\n      ${m.text}`);
+    console.log(misfits.length ? `${misfits.length} texte(s) qui ne tiennent pas` : "tout tient");
+    process.exit(misfits.length ? 1 : 0);
+  }
   case "check": {
     const { blocking, gates } = print(runRules(loadRepo(ROOT)));
     if (blocking.length || (has("gate") && gates.length)) process.exit(1);

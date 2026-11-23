@@ -43,6 +43,11 @@ Ce qui reste fragile, dit franchement. Premier jet (2026-11-22, conception) ; co
   refusées** par leurs silences (Gemini garde jusqu'à 1,7 s de silence dans une réplique : « والعلم؟ … مش بالظبط ») ;
   bornes posées à la main d'après les silences et les mots horodatés de Whisper (`--bounds`), puis acceptées par Whisper
   (0,66 à 0,99). À outiller : proposer les bornes depuis l'alignement Whisper, la personne ne faisant que vérifier.
+- **Ce qui tient à l'écran** : compter les mots ou les caractères ne suffit pas (deux textes « conformes » sortaient sur
+  trois lignes, coupés). `bvs fit` mesure chaque carte, légende et écran de sous-titres dans Chromium, police et tailles
+  réelles (9:16) ; à lancer avant de présenter un script. Il signale aujourd'hui 5 textes **anglais** trop longs (cartes
+  d'étude, une première image, un sous-titre) : à reprendre avant toute voix anglaise (les changer maintenant périmerait
+  les validations anglaises).
 - **Durée mesurée** : « trop de choix » estimé à 58,5 s, 60,5 à 62,8 s avec sa voix ; « argent » estimé à 68 s, 63,4 à
   64,7 s : l'estimation (2,1 mots/s) se trompe de ±4 s dans les deux sens.
 
