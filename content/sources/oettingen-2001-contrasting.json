@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "oettingen-2001-contrasting",
+  "doi": "10.1037/0022-3514.80.5.736",
+  "declared": {
+    "title": "Self-regulation of goal-setting: Turning free fantasies about the future into binding goals.",
+    "firstAuthor": "Oettingen",
+    "authors": [
+      "Oettingen",
+      "Pak",
+      "Schnetter"
+    ],
+    "year": 2001,
+    "venue": "Journal of Personality and Social Psychology",
+    "foundIn": "Crossref search « Oettingen Pak Schnetter self-regulation of goal setting turning free fantasies about the future into binding goals » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "4 experiments in various life domains; samples and sizes not described in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "contrast-vs-indulge",
+      "text": "Contrasting a wished-for future with present reality gave strong commitment when success was likely and weak commitment when unlikely; only fantasizing gave moderate commitment whatever the odds",
+      "support": {
+        "sentence": "Four experiments pertaining to various life domains supported these hypotheses.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "the supporting sentence refers to the hypotheses stated just before it in the abstract",
+    "commitment is the outcome (plans, attachment, effort, performance), not long-term goal attainment",
+    "with low expectations, contrasting lowers commitment: it helps let go of unlikely goals, not only pursue them",
+    "one laboratory; no sample from the Middle East or North Africa known"
+  ],
+  "allegiance": "Oettingen developed fantasy realization theory and mental contrasting (WOOP), which she also promotes"
+}

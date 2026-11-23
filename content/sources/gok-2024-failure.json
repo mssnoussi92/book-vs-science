@@ -1,0 +1,59 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "gok-2024-failure",
+  "doi": "10.1037/xge0001632",
+  "declared": {
+    "title": "Learning from failure: The roles of self-focused feedback, task expectations, and subsequent instruction.",
+    "firstAuthor": "Gok",
+    "authors": [
+      "Gok",
+      "Fyfe"
+    ],
+    "year": 2024,
+    "venue": "Journal of Experimental Psychology: General",
+    "foundIn": "Europe PMC search « (\"learning from failure\" OR \"failure feedback\" OR \"learn from failure\") AND (replication OR preregistered OR \"meta-analysis\") » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 1306,
+  "population": "adults in 6 preregistered experiments (N = 1,306) repeating and extending the task of Eskreis-Winkler & Fishbach 2019; countries not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "replicated",
+      "text": "Failure feedback again led to less learning than success feedback, whether the message said « your answer » or « the answer »",
+      "support": {
+        "sentence": "The detriments of failure feedback were replicated in Studies 1a, 1b, and 1c, which altered the focus of the feedback message to be self-focused (e.g., your answer) or task-focused (e.g., the answer).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "with-instruction",
+      "text": "When a brief explanation of the rule followed the feedback, failure no longer hurt learning, and in some conditions it taught more than success",
+      "support": {
+        "sentence": "When it was a rule-based task and brief instructions on the rule were provided after feedback, there was no evidence of a detrimental effect of failure, and failure feedback, in some conditions, resulted in even better learning than success feedback for learning new material.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "conclusion",
+      "text": "The authors conclude that tuning out after a failure disappears, and may reverse, when a chance to learn follows the feedback",
+      "support": {
+        "sentence": "We conclude that the tune-out reactions to failure during feedback disappear and may even be reversed when subsequent learning opportunities are provided.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "same task family as the original: the scoring critique of Spiller 2025 applies to the replications (Studies 1-2)",
+    "the reversal holds for a rule-based task, and only in some conditions",
+    "learning tested within the session; one laboratory, not a multi-lab replication"
+  ],
+  "acknowledged": []
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "ezzeldin-2022-saudi",
+  "doi": "10.18844/cjes.v17i2.6822",
+  "declared": {
+    "title": "The effect of productive failure in a digital inquiry environment on developing deep understanding and achievement of organic chemistry among secondary school students",
+    "firstAuthor": "Ezzeldin",
+    "year": 2022,
+    "venue": "Cypriot Journal of Educational Sciences",
+    "foundIn": "OpenAlex search « productive failure Arab students » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 66,
+  "population": "66 secondary school students in Wadi Al-Dawasir, Riyadh region, Saudi Arabia, organic chemistry",
+  "mena": true,
+  "findings": [
+    {
+      "id": "pf-saudi",
+      "text": "Saudi students taught through productive failure scored higher in deep understanding and achievement than the control group",
+      "support": {
+        "sentence": "The results revealed that there were statistically significant differences at α = 0.05 between the means of the scores of the experimental and control groups in the deep understanding level and the achievement test of organic chemistry in favour of the experimental group.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "66 students in 2 groups: probably whole classes; random assignment not stated in the abstract",
+    "no effect size in the abstract; the control group's teaching not described",
+    "a single author, a journal whose standing is unknown to us: high risk of bias",
+    "the only sample from the Arab world found for this idea, and it concerns school teaching only"
+  ],
+  "acknowledged": []
+}

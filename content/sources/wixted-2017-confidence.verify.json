@@ -1,0 +1,76 @@
+{
+  "doi": "10.1177/1529100616686966",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « The Relationship Between Eyewitness Confidence and Identification Accuracy: A New Synthesis » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Wixted » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2017, found 2017"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:pristine-accurate",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:non-pristine",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "The Relationship Between Eyewitness Confidence and Identification Accuracy: A New Synthesis",
+    "firstAuthor": "Wixted",
+    "years": [
+      2017
+    ],
+    "type": "journal-article",
+    "venue": "Psychological Science in the Public Interest"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "0048c6fedb2e017f4a8dcf5b2ddca82a22292f87e35dd91236a9b39212c1d90e",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

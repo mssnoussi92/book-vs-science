@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "oettingen-2002-fantasies",
+  "doi": "10.1037/0022-3514.83.5.1198",
+  "declared": {
+    "title": "The motivating function of thinking about the future: Expectations versus fantasies.",
+    "firstAuthor": "Oettingen",
+    "authors": [
+      "Oettingen",
+      "Mayer"
+    ],
+    "year": 2002,
+    "venue": "Journal of Personality and Social Psychology",
+    "foundIn": "scout notes on Manson's ideas (idea 3); Crossref search « Oettingen Mayer motivating function of thinking about the future expectations versus fantasies » (2026-11-23)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "population": "4 prospective samples: job-seeking graduates, students with a crush, students before an exam, hip-replacement patients",
+  "mena": false,
+  "findings": [
+    {
+      "id": "fantasies-predict-less",
+      "text": "Positive fantasies about a desired future predicted less effort and poorer performance weeks to 2 years later; positive expectations predicted the opposite",
+      "support": {
+        "sentence": "Positive expectations (judging a desired future as likely) predicted high effort and successful performance, but the reverse was true for positive fantasies (experiencing one's thoughts and mental images about a desired future positively).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "correlational: fantasies were measured, not manipulated; effort and performance followed weeks to 2 years later",
+    "one laboratory, 4 specific groups; sample sizes and countries not given in the abstract",
+    "fantasies scored by a semi-projective scenario measure, not everyday daydreams as in the book",
+    "no sample from the Middle East or North Africa"
+  ],
+  "allegiance": "Oettingen developed fantasy realization theory and mental contrasting (WOOP), which she also promotes"
+}

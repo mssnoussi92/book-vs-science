@@ -1,0 +1,71 @@
+{
+  "doi": "10.1007/s11251-020-09525-2",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « When failure fails to be productive: probing the effectiveness of productive failure for learning beyond STEM domains » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Nachtigall » matches; 3/3 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2020, found 2020"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from crossref"
+    },
+    {
+      "name": "support:no-benefit",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "When failure fails to be productive: probing the effectiveness of productive failure for learning beyond STEM domains",
+    "firstAuthor": "Nachtigall",
+    "years": [
+      2020
+    ],
+    "type": "journal-article",
+    "venue": "Instructional Science"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "crossref",
+  "abstractSha256": "98749901db7862d62046d1994ae5db120af4c17e895749457798b1bf30d0c646",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "kc-2013-surgery",
+  "doi": "10.1287/mnsc.2013.1720",
+  "declared": {
+    "title": "Learning from My Success and from Others' Failure: Evidence from Minimally Invasive Cardiac Surgery",
+    "firstAuthor": "KC",
+    "authors": [
+      "KC",
+      "Staats",
+      "Gino"
+    ],
+    "year": 2013,
+    "venue": "Management Science",
+    "foundIn": "Crossref search « learning from my success and from others failure minimally invasive cardiac surgery » (2026-11-23)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "n": 71,
+  "population": "71 cardiothoracic surgeons, 10 years of data, more than 6,500 operations with a new technology",
+  "mena": false,
+  "findings": [
+    {
+      "id": "own-success-others-failure",
+      "text": "Surgeons improved more after their own successes than after their own failures, but more after colleagues' failures than after colleagues' successes",
+      "support": {
+        "sentence": "We find that individuals learn more from their own successes than from their own failures, but they learn more from the failures of others than from others' successes.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "overcome",
+      "text": "Past successes and colleagues' failures helped surgeons get past their difficulty in learning from their own failures",
+      "support": {
+        "sentence": "We also find that individuals' prior successes and others' failures can help individuals overcome their inability to learn from their own failures.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "observational: real operations, nobody was assigned a failure; « learning » is the change in later outcomes",
+    "one specialty, one new technology, 71 surgeons",
+    "co-author Francesca Gino had other papers retracted from 2023 for data problems; this one carries no notice (checked)"
+  ],
+  "acknowledged": []
+}

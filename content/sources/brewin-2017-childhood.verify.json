@@ -1,0 +1,82 @@
+{
+  "doi": "10.1002/acp.3220",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Creating Memories for False Autobiographical Events in Childhood: A Systematic Review » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Brewin » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2017, found 2016, 2017"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « systematic-review » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:full-15",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:more-limited",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: context/conclusion"
+    },
+    {
+      "name": "support:belief-small",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Creating Memories for False Autobiographical Events in Childhood: A Systematic Review",
+    "firstAuthor": "Brewin",
+    "years": [
+      2016,
+      2017
+    ],
+    "type": "journal-article",
+    "venue": "Applied Cognitive Psychology"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "1a9f1fe6668fea00042fc5eff7c37318ea8c5945c1f284c419debe939895a0ae",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

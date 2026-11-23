@@ -1,0 +1,76 @@
+{
+  "doi": "10.1287/mnsc.2013.1720",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Learning from My Success and from Others' Failure: Evidence from Minimally Invasive Cardiac Surgery » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « KC » matches; 3/3 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2013, found 2013"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from crossref"
+    },
+    {
+      "name": "support:own-success-others-failure",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:overcome",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Learning from My Success and from Others' Failure: Evidence from Minimally Invasive Cardiac Surgery",
+    "firstAuthor": "KC",
+    "years": [
+      2013
+    ],
+    "type": "journal-article",
+    "venue": "Management Science"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "crossref",
+  "abstractSha256": "ed72384766aeec4f2d34fd6de89d884ba6f82c63ab6ed29a8a63a1842acd7a8b",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

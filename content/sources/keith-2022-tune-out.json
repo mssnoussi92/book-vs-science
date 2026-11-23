@@ -1,0 +1,61 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "keith-2022-tune-out",
+  "doi": "10.1037/xge0001170",
+  "declared": {
+    "title": "Failure to learn from failure is mitigated by loss-framing and corrective feedback: A replication and test of the boundary conditions of the tune-out effect.",
+    "firstAuthor": "Keith",
+    "authors": [
+      "Keith",
+      "Horvath",
+      "Klamar",
+      "Frese"
+    ],
+    "year": 2022,
+    "venue": "Journal of Experimental Psychology: General",
+    "foundIn": "OpenAlex search « failure to learn from failure tune-out effect replication corrective feedback loss framing » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 520,
+  "population": "adults in 2 preregistered experiments (N = 520) repeating the task of Eskreis-Winkler & Fishbach 2019; countries not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "replicated",
+      "text": "In conditions close to the original study, people again learned less after failure feedback than after success feedback",
+      "support": {
+        "sentence": "The tune-out effect fully replicated in those experimental conditions that represented close replications of the original study, underscoring the reliability of the original effect.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "loss-framing",
+      "text": "The gap disappeared when the same money at stake was framed as a loss for each wrong answer instead of a gain for each right one",
+      "support": {
+        "sentence": "However, the effect disappeared when the same monetary incentives for participation were expressed in terms of a loss (i.e., losing money for each wrong answer) rather than a gain (i.e., earning money for each correct answer; Experiment 1).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "corrective-feedback",
+      "text": "The gap also disappeared when people received additional corrective feedback after failing",
+      "support": {
+        "sentence": "The effect also disappeared when additional corrective feedback was given (Experiment 2).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "the same laboratory task as the original: the scoring critique of Spiller 2025 applies to the close replications",
+    "one laboratory, not a multi-lab replication; each boundary condition tested in a single experiment",
+    "learning tested within the session, with money incentives; not failures in life"
+  ],
+  "acknowledged": []
+}

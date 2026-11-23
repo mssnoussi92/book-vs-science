@@ -42,6 +42,30 @@
       "kind": "book",
       "url": "https://www.goodreads.com/notes/123198703-the-subtle-art-of-not-giving-a-f-ck/78346653-justin-eichenauer/02feac75-7d60-413c-a438-f23f1994a448",
       "locator": "≈ 39 % (Kindle): once basic needs are met, happiness and success « quickly approaches zero » (2 readers' highlights)"
+    },
+    {
+      "id": "choose-your-struggle",
+      "kind": "author-article",
+      "url": "https://markmanson.net/question",
+      "locator": "ch. 2, « Choose Your Struggle » (updated excerpt by the author): « I wanted the result and not the process »"
+    },
+    {
+      "id": "failure-way-forward",
+      "kind": "author-article",
+      "url": "https://markmanson.net/paradoxes-that-are-true",
+      "locator": "ch. 7 « Failure Is the Way Forward »; « 20 Paradoxes That Are True » n° 4 (2013): « improvement comes from failure »"
+    },
+    {
+      "id": "memory-imperfect",
+      "kind": "book",
+      "url": "https://www.goodreads.com/notes/123198703-the-subtle-art-of-not-giving-a-f-ck/51571651-janet/dc1262ee-287c-461f-84df-cdb2e3c8c2aa",
+      "locator": "ch. 6, ≈ 56-62 % (Kindle): « We forget things or misinterpret events quite easily » (2 readers' highlights)"
+    },
+    {
+      "id": "memory-sucks",
+      "kind": "author-article",
+      "url": "https://markmanson.net/trust",
+      "locator": "« Why You Can't Trust Yourself » (2016), §6 « Your Memory Sucks »: memories « easily altered » by new information"
     }
   ]
 }

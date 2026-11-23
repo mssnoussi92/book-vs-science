@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "kizilcec-2020-scale",
+  "doi": "10.1073/pnas.1921417117",
+  "declared": {
+    "title": "Scaling up behavioral science interventions in online education",
+    "firstAuthor": "Kizilcec",
+    "year": 2020,
+    "venue": "Proceedings of the National Academy of Sciences",
+    "foundIn": "OpenAlex search « scaling up behavioral science interventions in online education » (2026-11-23)"
+  },
+  "design": "rct",
+  "designSetBy": "reviewer",
+  "population": "about 250,000 students from nearly every country in 247 online courses (Harvard, MIT, Stanford) over 2.5 years; preregistered waves",
+  "mena": false,
+  "findings": [
+    {
+      "id": "engagement-not-completion",
+      "text": "Self-regulation interventions (plan-making, MCII) raised engagement in the first weeks but not course completion",
+      "support": {
+        "sentence": "Self-regulation interventions raised student engagement in the first few weeks but not final completion rates.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "mcii-null",
+      "text": "At scale, MCII did not improve course completion even for students in individualist countries, where it had worked before",
+      "support": {
+        "sentence": "The MCII intervention did not improve course completion for students in individualistic countries (year 2: β = 0.25 pp, 95% CI = [−0.87, 1.37], t = 0.44, P = 0.662), and the social accountability intervention did not improve completion rates for students in nonindividualistic countries (year 2: β = 0.89 pp, 95% CI = [−0.22, 1.99], t = 1.58, P = 0.115).",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "choose-your-struggle agent, 2026-11-23: PNAS PDF (eprints.qut.edu.au/232757), Results"
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "online courses with low completion rates; a light intervention embedded in a survey",
+    "results by groups of countries (individualism, development), none for the Arab world",
+    "the MCII test is the authors' own replication of their earlier result (kizilcec-2017-culture)"
+  ]
+}

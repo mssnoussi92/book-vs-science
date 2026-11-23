@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "kizilcec-2017-culture",
+  "doi": "10.1073/pnas.1611898114",
+  "declared": {
+    "title": "Eight-minute self-regulation intervention raises educational attainment at scale in individualist but not collectivist cultures",
+    "firstAuthor": "Kizilcec",
+    "authors": [
+      "Kizilcec",
+      "Cohen"
+    ],
+    "year": 2017,
+    "venue": "Proceedings of the National Academy of Sciences",
+    "foundIn": "cited by kizilcec-2020-scale (full text, ref. 14); Crossref search « Kizilcec Cohen eight-minute self-regulation intervention raises educational attainment at scale » (2026-11-23)"
+  },
+  "design": "rct",
+  "designSetBy": "reviewer",
+  "n": 17963,
+  "population": "17,963 learners in online courses, two randomized experiments; countries grouped as individualist or collectivist (e.g. India, China)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "individualist-complete",
+      "text": "In individualist cultures, learners who did MCII were more likely to complete the course than after a control activity",
+      "support": {
+        "sentence": "Learners in individualist cultures were 32% (first experiment) and 15% (second experiment) more likely to complete the course following the MCII intervention than a control activity.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "collectivist-unaffected",
+      "text": "In collectivist cultures, MCII did not change course completion",
+      "support": {
+        "sentence": "In contrast, learners in collectivist cultures were unaffected by MCII.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "countries grouped as individualist or collectivist; Arab countries not reported separately",
+    "online learners and course completion; MCII helped only with predictable, surmountable obstacles",
+    "the authors' scaled-up test (kizilcec-2020-scale) found no effect of MCII on completion"
+  ]
+}

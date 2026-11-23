@@ -1,0 +1,76 @@
+{
+  "doi": "10.1080/09658211.2025.2546919",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Error rates for high confidence eyewitness identifications » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Fitzgerald » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2025, found 2025"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:one-in-eight",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:lab-0-40",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "Error rates for high confidence eyewitness identifications",
+    "firstAuthor": "Fitzgerald",
+    "years": [
+      2025
+    ],
+    "type": "journal-article",
+    "venue": "Memory"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "50e0c87fa2ad5c572ab16deac6862ef3e8e261cedf10f7e8b537ff200fd062a0",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

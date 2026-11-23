@@ -1,0 +1,77 @@
+{
+  "doi": "10.1080/09658211.2016.1260747",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « A mega-analysis of memory reports from eight peer-reviewed false memory implantation studies » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Scoboria » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2017, found 2016, 2017"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:thirty-percent",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:up-to-46",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "A mega-analysis of memory reports from eight peer-reviewed false memory implantation studies",
+    "firstAuthor": "Scoboria",
+    "years": [
+      2016,
+      2017
+    ],
+    "type": "journal-article",
+    "venue": "Memory"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "8852627948aa9557e3235e1bd8efa417f1a8fe8683c84fb7e4198225455da9c3",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "lee-2024-surgeons",
+  "doi": "10.1002/smj.3609",
+  "declared": {
+    "title": "Giving up learning from failures? An examination of learning from one's own failures in the context of heart surgeons",
+    "firstAuthor": "Lee",
+    "authors": [
+      "Lee",
+      "Park"
+    ],
+    "year": 2024,
+    "venue": "Strategic Management Journal",
+    "foundIn": "OpenAlex search « learning from failure feedback ego threat tune out » (2026-11-23)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "n": 307,
+  "population": "307 cardiothoracic surgeons in California, bypass operations in 133 hospitals, 2003-2018",
+  "mena": false,
+  "findings": [
+    {
+      "id": "threshold",
+      "text": "Surgeons learned from their own failures only up to a point: past a threshold of accumulated failures, they stopped learning from them",
+      "support": {
+        "sentence": "Using data on 307 California-based cardiothoracic surgeons who performed coronary artery bypass graft surgeries in 133 hospitals between 2003 and 2018, we find compelling evidence that individuals reach a threshold at which they discontinue learning from their own failures.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "higher-threshold",
+      "text": "The threshold came later for surgeons who seemed better able to learn (elite training, certification, specialization)",
+      "support": {
+        "sentence": "We also find that this threshold is higher for surgeons who had higher perceived ability to learn.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "both-impacts",
+      "text": "The authors conclude that repeated failures can both help and harm learning",
+      "support": {
+        "sentence": "Our findings imply that repeated failures can have both beneficial and harmful impacts on individuals' learning processes, and therefore, both impacts must be simultaneously considered for understanding and improving individuals' performance.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "observational: operations and their outcomes, no failure assigned",
+    "one specialty in one US state; « ability to learn » inferred from training and certification",
+    "abstract read from Crossref only (not in Europe PMC)"
+  ],
+  "acknowledged": []
+}

@@ -1,0 +1,81 @@
+{
+  "doi": "10.1002/smj.3609",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Giving up learning from failures? An examination of learning from one's own failures in the context of heart surgeons » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Lee » matches; 2/2 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2024, found 2024"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from crossref"
+    },
+    {
+      "name": "support:threshold",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:higher-threshold",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:both-impacts",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Giving up learning from failures? An examination of learning from one's own failures in the context of heart surgeons",
+    "firstAuthor": "Lee",
+    "years": [
+      2024
+    ],
+    "type": "journal-article",
+    "venue": "Strategic Management Journal"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "crossref",
+  "abstractSha256": "548b27e7dbc6d564571d1919c844cf3d0b33c038e4eb24539ee088bb7bf3b559",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

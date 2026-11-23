@@ -1,0 +1,71 @@
+{
+  "doi": "10.18844/cjes.v17i2.6822",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « The effect of productive failure in a digital inquiry environment on developing deep understanding and achievement of organic chemistry among secondary school students » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Ezzeldin » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2022, found 2022"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from crossref"
+    },
+    {
+      "name": "support:pf-saudi",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "The effect of productive failure in a digital inquiry environment on developing deep understanding and achievement of organic chemistry among secondary school students",
+    "firstAuthor": "Ezzeldin",
+    "years": [
+      2022
+    ],
+    "type": "journal-article",
+    "venue": "Cypriot Journal of Educational Sciences"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "crossref",
+  "abstractSha256": "4425f8032243c9c6edaccfa39baa538494a612c95e27c572861f620d73dbc813",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

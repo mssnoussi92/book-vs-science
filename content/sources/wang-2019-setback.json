@@ -1,0 +1,59 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "wang-2019-setback",
+  "doi": "10.1038/s41467-019-12189-3",
+  "declared": {
+    "title": "Early-career setback and future career impact",
+    "firstAuthor": "Wang",
+    "authors": [
+      "Wang",
+      "Jones",
+      "Wang"
+    ],
+    "year": 2019,
+    "venue": "Nature Communications",
+    "foundIn": "Crossref search « early-career setback and future career impact near miss » (2026-11-23)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "population": "junior scientists applying for NIH R01 grants (USA): proposals just below versus just above the funding threshold",
+  "mena": false,
+  "findings": [
+    {
+      "id": "attrition",
+      "text": "A near miss made scientists more likely to leave for good: more than a 10% chance of disappearing from the NIH system",
+      "support": {
+        "sentence": "On the one hand, it significantly increases attrition, predicting more than a 10% chance of disappearing permanently from the NIH system.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "near-miss-outperform",
+      "text": "Those who narrowly missed the grant and stayed later outperformed those who narrowly won it",
+      "support": {
+        "sentence": "Yet, despite an early setback, individuals with near misses systematically outperform those with narrow wins in the longer run.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "beyond-screening",
+      "text": "The authors argue the advantage is not only that the weaker left: the setback seems to cause an improvement in those who persevere",
+      "support": {
+        "sentence": "Moreover, this performance advantage seems to go beyond a screening mechanism, suggesting early-career setback appears to cause a performance improvement among those who persevere.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "a quasi-experiment around a funding cut-off, not random assignment",
+    "the gain is measured among those who stayed, while the setback pushed others out",
+    "one select group (US biomedical scientists); outcome = later publications and citations, not learning"
+  ],
+  "acknowledged": []
+}

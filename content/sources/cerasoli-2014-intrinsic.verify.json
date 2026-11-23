@@ -1,0 +1,76 @@
+{
+  "doi": "10.1037/a0035661",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Intrinsic motivation and extrinsic incentives jointly predict performance: A 40-year meta-analysis. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Cerasoli » matches; 3/3 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2014, found 2014"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:quality",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:with-or-without-incentives",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Intrinsic motivation and extrinsic incentives jointly predict performance: A 40-year meta-analysis.",
+    "firstAuthor": "Cerasoli",
+    "years": [
+      2014
+    ],
+    "type": "journal-article",
+    "venue": "Psychological Bulletin"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "e6eb2d08ff5c1301433597d1921ef5ea54b31b01f804ba9dca3f592c36ceb773",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

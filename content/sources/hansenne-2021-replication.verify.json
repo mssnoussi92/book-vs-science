@@ -45,7 +45,7 @@
     {
       "name": "abstract",
       "result": "pass",
-      "detail": "read from europepmc"
+      "detail": "read from openalex"
     },
     {
       "name": "support:prioritizing-positivity",
@@ -69,8 +69,8 @@
   },
   "notices": [],
   "retracted": false,
-  "abstractFrom": "europepmc",
+  "abstractFrom": "openalex",
   "abstractSha256": "0809925db9de97df0adc6f356e5718cd78628d0cd82964ef326f67fcb64227c8",
-  "checkedOn": "2026-11-22",
+  "checkedOn": "2026-11-23",
   "tool": "bvs-sources@0.1"
 }

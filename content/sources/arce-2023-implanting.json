@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "arce-2023-implanting",
+  "doi": "10.1016/j.ijchp.2023.100386",
+  "declared": {
+    "title": "Implanting rich autobiographical false memories: Meta-analysis for forensic practice and judicial judgment making",
+    "firstAuthor": "Arce",
+    "year": 2023,
+    "venue": "International Journal of Clinical and Health Psychology",
+    "foundIn": "Europe PMC search « \"misinformation effect\" AND (\"meta-analysis\" OR \"meta-analytic\") » (2026-11-23)"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "k": 30,
+  "population": "children and adults in 30 studies that tried to implant rich false autobiographical memories; countries not listed in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "large-implanting",
+      "text": "Across 30 studies, implanting a rich false memory succeeded with a large and generalizable average effect",
+      "support": {
+        "sentence": "The results revealed a significant, positive, generalizable (the lower limit for the 80% credibility value was d = 1.13), and more than large mean effect size (d = 1.43[1.33, 1.53]) for the implanting of false memory.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 1.43,
+        "ci": [
+          1.33,
+          1.53
+        ],
+        "correctedForBias": false
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "adults-too",
+      "text": "The effect was similar in children and in adults",
+      "support": {
+        "sentence": "A similar effect for memory implantation was observed in both the underage (d = 1.44[1.29, 1.59]), and in adults (d = 1.36[1.22, 1.50]).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 1.36,
+        "ci": [
+          1.22,
+          1.5
+        ],
+        "correctedForBias": false
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "its d measures the probability of implanting against zero: not comparable with a usual difference between two groups; never shown as « large » on screen",
+    "pools very different procedures (false narratives, doctored photos, true events with false details)",
+    "same coding debate as Scoboria 2017: what counts as a « rich » false memory"
+  ],
+  "acknowledged": []
+}

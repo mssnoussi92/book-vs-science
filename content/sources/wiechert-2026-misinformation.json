@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "wiechert-2026-misinformation",
+  "doi": "10.1037/xlm0001529",
+  "declared": {
+    "title": "The misinformation effect: A contemporary replication and extension of Loftus et al. (1978) to investigate its underlying mechanisms.",
+    "firstAuthor": "Wiechert",
+    "year": 2026,
+    "venue": "Journal of Experimental Psychology: Learning, Memory, and Cognition",
+    "foundIn": "Europe PMC search « (\"misinformation effect\" OR \"misleading postevent information\" OR \"post-event misinformation\") AND (replication OR preregistered OR \"registered report\") » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "adults tested online (a replication of Loftus, Miller & Burns 1978, Experiment 3); countries not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "misled-less-correct",
+      "text": "People who later read misleading statements from other witnesses reported the traffic sign they had actually seen less often than controls",
+      "support": {
+        "sentence": "Misled participants reported the correct sign less often than controls.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "smaller-with-stakes",
+      "text": "With four answer options and points bet on confidence, the effect was still found but smaller: part of it is people going along, not memory changing",
+      "support": {
+        "sentence": "With an identical procedure but a four-option memory test and confidence-based point betting, we still found the effect, though smaller.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "not-only-demand",
+      "text": "Going along with the experimenter does not explain the whole effect",
+      "support": {
+        "sentence": "Hence, demand effects are not the sole driver of the misinformation effect.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "an online study with a car-accident video made in a video game: a lab event, not one's own life",
+    "sample sizes and countries are in the full text (not read)",
+    "the authors themselves find the effect partly driven by demand effects (strategic reporting)"
+  ],
+  "acknowledged": []
+}

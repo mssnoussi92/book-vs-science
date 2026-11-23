@@ -1,0 +1,72 @@
+{
+  "doi": "10.1037/0022-3514.80.5.736",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Self-regulation of goal-setting: Turning free fantasies about the future into binding goals. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Oettingen » matches; 3/3 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2001, found 2001, 2005"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:contrast-vs-indulge",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Self-regulation of goal-setting: Turning free fantasies about the future into binding goals.",
+    "firstAuthor": "Oettingen",
+    "years": [
+      2001,
+      2005
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Personality and Social Psychology"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "bfb4219dc7c3d0ab2d76e29d388ed69461302d47acd5705484a3704a6f5fca63",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

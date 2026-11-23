@@ -1,0 +1,82 @@
+{
+  "doi": "10.1037/xlm0001529",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « The misinformation effect: A contemporary replication and extension of Loftus et al. (1978) to investigate its underlying mechanisms. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Wiechert » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2026, found 2025, 2026"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:misled-less-correct",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:smaller-with-stakes",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:not-only-demand",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "The misinformation effect: A contemporary replication and extension of Loftus et al. (1978) to investigate its underlying mechanisms.",
+    "firstAuthor": "Wiechert",
+    "years": [
+      2025,
+      2026
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Experimental Psychology: Learning, Memory, and Cognition"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "c7c03cc559b3237316b73330d5ebb7b7a4712d4eb98432a0a125a89b8c8fb0ae",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

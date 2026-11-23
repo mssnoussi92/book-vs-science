@@ -1,0 +1,59 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "brewin-2017-childhood",
+  "doi": "10.1002/acp.3220",
+  "declared": {
+    "title": "Creating Memories for False Autobiographical Events in Childhood: A Systematic Review",
+    "firstAuthor": "Brewin",
+    "year": 2017,
+    "venue": "Applied Cognitive Psychology",
+    "foundIn": "the coordinator's brief (« critical reviews (Brewin & Andrews 2017) »); OpenAlex search of its title (2026-11-23)"
+  },
+  "design": "systematic-review",
+  "designSetBy": "reviewer",
+  "population": "adults in imagination-inflation, false-feedback and memory-implantation studies of suggested childhood events",
+  "mena": false,
+  "findings": [
+    {
+      "id": "full-15",
+      "text": "Implantation studies induce some recollection of the false event in 47% of people on average, but only about 15% are likely full memories",
+      "support": {
+        "sentence": "In memory implantation studies, some recollective experience for the suggested events is induced on average in 47% of participants, but only in 15% are these experiences likely to be rated as full memories.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "percent",
+        "value": 15,
+        "correctedForBias": false
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "more-limited",
+      "text": "The authors conclude that susceptibility to false childhood memories is more limited than often said",
+      "support": {
+        "sentence": "We conclude that susceptibility to false memories of childhood events appears more limited than has been suggested.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "belief-small",
+      "text": "Imagining an event or receiving false feedback raises belief that it happened only a little: people still think it unlikely",
+      "support": {
+        "sentence": "Imagination inflation and false feedback studies increase the belief that a suggested event occurred by a small amount such that events are still thought unlikely to have happened.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "the authors are on one side of a published debate: Nash, Wade, Garry, Loftus & Ost replied in the same journal (« Misrepresentations and flawed logic… »)",
+    "the 15% rests on the authors' own reading of what counts as a « full » memory",
+    "number of studies and countries are in the full text (not read)"
+  ],
+  "acknowledged": []
+}

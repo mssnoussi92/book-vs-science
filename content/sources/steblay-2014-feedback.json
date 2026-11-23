@@ -1,0 +1,35 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "steblay-2014-feedback",
+  "doi": "10.1037/law0000001",
+  "declared": {
+    "title": "The eyewitness post identification feedback effect 15 years later: Theoretical and policy implications.",
+    "firstAuthor": "Steblay",
+    "year": 2014,
+    "venue": "Psychology, Public Policy, and Law",
+    "foundIn": "OpenAlex search « eyewitness post-identification feedback effect 15 years later meta-analysis » (2026-11-23)"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "n": 7000,
+  "population": "about 7,000 participant-witnesses in lab experiments from the United States, Canada, Europe and Australia",
+  "mena": false,
+  "findings": [
+    {
+      "id": "feedback-inflates",
+      "text": "Telling witnesses « good, you picked the suspect » robustly inflates how certain they later say they were, with large effects",
+      "support": {
+        "sentence": "The results show that confirming feedback robustly inflates eyewitnesses' retrospective judgments across experimental manipulations and laboratory settings with large effect sizes.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "the number of studies and the effect sizes are in the full text (not read): « large » is the authors' word",
+    "lab experiments on lineup identification; the feedback came from the person running the lineup",
+    "no sample from the Middle East or North Africa"
+  ],
+  "acknowledged": []
+}

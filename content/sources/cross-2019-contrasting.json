@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "cross-2019-contrasting",
+  "doi": "10.1080/17437199.2019.1594332",
+  "declared": {
+    "title": "Mental contrasting for health behaviour change: a systematic review and meta-analysis of effects and moderator variables",
+    "firstAuthor": "Cross",
+    "authors": [
+      "Cross",
+      "Sheffield"
+    ],
+    "year": 2019,
+    "venue": "Health Psychology Review",
+    "foundIn": "scout notes on Manson's ideas (idea 3); Crossref search « mental contrasting health behaviour meta-analysis Cross Sheffield » (2026-11-23)"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "n": 1528,
+  "population": "health-behaviour experiments (N = 1,528) of mental contrasting, alone or with if-then plans, against control",
+  "mena": false,
+  "findings": [
+    {
+      "id": "health-effect",
+      "text": "Mental contrasting improved health behaviours up to four weeks later, with a small to moderate effect",
+      "support": {
+        "sentence": "A meta-analysis (N = 1528) using random effects modelling found a main effect of mental contrasting on health outcomes, adjusted Hedges' g = 0.28 (SE = .07), 95% CI [0.13-0.43], p < .001 at up to four weeks, and an increased effect at up to three months (k = 5), g = 0.38 (SE = 0.6), CI [0.20-0.55], p < .001.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "g",
+        "value": 0.28,
+        "ci": [
+          0.13,
+          0.43
+        ]
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "plans-add-nothing",
+      "text": "In a small subset of studies, adding if-then plans did not strengthen the effect of mental contrasting",
+      "support": {
+        "sentence": "Analysis on a small subset of studies suggested that the addition of implementation intentions (MCII) did not further strengthen the effects of mental contrasting on health behaviours, although additional studies are needed.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "few studies (5 at three months, 7 with if-then plans)",
+    "short follow-up: up to four weeks for the main effect",
+    "health behaviours only; countries not listed in the abstract",
+    "no sample from the Middle East or North Africa known"
+  ]
+}

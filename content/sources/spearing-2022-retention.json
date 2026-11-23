@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "spearing-2022-retention",
+  "doi": "10.1037/mac0000014",
+  "declared": {
+    "title": "Long retention intervals impair the confidence–accuracy relationship for eyewitness recall.",
+    "firstAuthor": "Spearing",
+    "year": 2022,
+    "venue": "Journal of Applied Research in Memory and Cognition",
+    "foundIn": "Crossref search « eyewitness confidence accuracy meta-analysis high confidence error » (preprint), then OpenAlex search of the title (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 611,
+  "population": "611 adults who watched a mock-crime video and answered recall questions at once, after 1 week or after 1 month",
+  "mena": false,
+  "findings": [
+    {
+      "id": "month-impairs",
+      "text": "After a one-month delay, memory was less accurate and confidence told less about accuracy than at once or after a week",
+      "support": {
+        "sentence": "Long (1 month) delays led to lower memory accuracy, lower confidence judgements, and impaired the confidence-accuracy relationship compared to shorter (immediate and 1 week) delays.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "very-sure-overconfident",
+      "text": "After a month, the people who felt very sure tended to be over-confident in their memories",
+      "support": {
+        "sentence": "Long-delay participants who reported very high levels of confidence tended to be over-confident in the accuracy of their memories compared to other participants.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "one mock-crime video, recall of its details: closer to everyday memory than a lineup, still not one's own life",
+    "countries not given in the abstract (full text not read)",
+    "one experiment; the delay was manipulated, confidence and accuracy were measured"
+  ],
+  "acknowledged": []
+}

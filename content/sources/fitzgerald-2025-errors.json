@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "fitzgerald-2025-errors",
+  "doi": "10.1080/09658211.2025.2546919",
+  "declared": {
+    "title": "Error rates for high confidence eyewitness identifications",
+    "firstAuthor": "Fitzgerald",
+    "year": 2025,
+    "venue": "Memory",
+    "foundIn": "OpenAlex search « confidence-accuracy characteristic analysis eyewitness high confidence identifications accurate meta-analysis » (2026-11-23)"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "population": "eyewitnesses in actual criminal investigations tested by blind lineup administrators (field data), plus lab studies",
+  "mena": false,
+  "findings": [
+    {
+      "id": "one-in-eight",
+      "text": "In real police lineups run blind, about 1 in 8 high-confidence identifications were known errors (an innocent filler picked)",
+      "support": {
+        "sentence": "This analysis shows that when eyewitnesses were tested in the field by a blind lineup administrator, 1/8 of the high confidence identifications were known errors, i.e., mistaken identifications of lineup fillers.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "lab-0-40",
+      "text": "In lab studies, error rates of high-confidence identifications range from 0 to 40% depending on how biased the lineup is against the suspect",
+      "support": {
+        "sentence": "Our claim is also supported by lab data, which show that error rates for high-confidence identifications of the suspect can range from 0 to 40%, depending on the level of bias against the suspect.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "filler picks are the only errors that can be known in the field: the true error rate is unknown, and most high-confidence picks were not known errors",
+    "the number of studies and countries are in the full text (not read)",
+    "about recognizing a stranger's face, not about remembering events of one's own life"
+  ],
+  "acknowledged": []
+}

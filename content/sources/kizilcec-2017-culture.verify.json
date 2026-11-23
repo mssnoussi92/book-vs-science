@@ -1,0 +1,76 @@
+{
+  "doi": "10.1073/pnas.1611898114",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Eight-minute self-regulation intervention raises educational attainment at scale in individualist but not collectivist cultures » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Kizilcec » matches; 2/2 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2017, found 2017"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:individualist-complete",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:collectivist-unaffected",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Eight-minute self-regulation intervention raises educational attainment at scale in individualist but not collectivist cultures",
+    "firstAuthor": "Kizilcec",
+    "years": [
+      2017
+    ],
+    "type": "journal-article",
+    "venue": "Proceedings of the National Academy of Sciences"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "54e77622f81a6674a6b0309f5067c6fc4e173a9f880264ca057843f72467eb4d",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

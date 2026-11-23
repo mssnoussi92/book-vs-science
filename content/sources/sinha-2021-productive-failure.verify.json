@@ -1,0 +1,76 @@
+{
+  "doi": "10.3102/00346543211019105",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « When Problem Solving Followed by Instruction Works: Evidence for Productive Failure » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Sinha » matches; 2/2 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2021, found 2021"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from crossref"
+    },
+    {
+      "name": "support:ps-i-better",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:young-and-general",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "When Problem Solving Followed by Instruction Works: Evidence for Productive Failure",
+    "firstAuthor": "Sinha",
+    "years": [
+      2021
+    ],
+    "type": "journal-article",
+    "venue": "Review of Educational Research"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "crossref",
+  "abstractSha256": "63afe746bf53a58098073d3af3ad3688a2e1feb1f7f05950851515c1d899923d",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

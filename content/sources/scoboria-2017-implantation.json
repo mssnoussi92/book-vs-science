@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "scoboria-2017-implantation",
+  "doi": "10.1080/09658211.2016.1260747",
+  "declared": {
+    "title": "A mega-analysis of memory reports from eight peer-reviewed false memory implantation studies",
+    "firstAuthor": "Scoboria",
+    "year": 2017,
+    "venue": "Memory",
+    "foundIn": "the coordinator's brief (« Scoboria et al. 2017 mega-analysis », Memory); OpenAlex search of its title (2026-11-23)"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "n": 423,
+  "k": 8,
+  "population": "adults from 8 published memory implantation studies, told about a childhood event that never happened; countries not listed in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "thirty-percent",
+      "text": "Coded with one common scheme, about 30% of people developed a false memory of the suggested childhood event, and another 23% accepted it to some degree",
+      "support": {
+        "sentence": "Using this scheme, 30.4% of cases were classified as false memories and another 23% were classified as having accepted the event to some degree.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "percent",
+        "value": 30.4,
+        "correctedForBias": false
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "up-to-46",
+      "text": "With self-relevant details and an imagination exercise (and no photo), the rate reached about 46%",
+      "support": {
+        "sentence": "When the suggestion included self-relevant information, an imagination procedure, and was not accompanied by a photo depicting the event, the memory formation rate was 46.1%.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "percent",
+        "value": 46.1,
+        "correctedForBias": false
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "a mega-analysis (individual reports recoded), not a classic meta-analysis: 8 studies, several by its own authors (Wade, Lindsay, Strange, Ost, Hyman)",
+    "« false memory » is the coders' judgement of transcripts, not the participants' own rating (Brewin & Andrews 2017)",
+    "the pooled studies include some negative events; this episode keeps to harmless everyday events",
+    "countries of the 8 studies not given in the abstract (full text not read); no sample from the Middle East or North Africa is known"
+  ],
+  "acknowledged": []
+}

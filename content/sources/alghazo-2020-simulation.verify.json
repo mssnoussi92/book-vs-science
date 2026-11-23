@@ -1,0 +1,76 @@
+{
+  "doi": "10.23947/2334-8496-2020-8-si-37-47",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Mental Simulation Effects on Performance: Benefits of Outcome Versus Process Simulations in Online Courses » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Alghazo » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2020, found 2020"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from crossref"
+    },
+    {
+      "name": "support:no-test-difference",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:assignments-timing",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Mental Simulation Effects on Performance: Benefits of Outcome Versus Process Simulations in Online Courses",
+    "firstAuthor": "Alghazo",
+    "years": [
+      2020
+    ],
+    "type": "journal-article",
+    "venue": "International Journal of Cognitive Research in Science Engineering and Education"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "crossref",
+  "abstractSha256": "7e2a9d16b880dfcf78986bc6f64a3a86507018638e5a09961c0bbd650fa317bb",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

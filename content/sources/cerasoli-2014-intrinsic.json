@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "cerasoli-2014-intrinsic",
+  "doi": "10.1037/a0035661",
+  "declared": {
+    "title": "Intrinsic motivation and extrinsic incentives jointly predict performance: A 40-year meta-analysis.",
+    "firstAuthor": "Cerasoli",
+    "authors": [
+      "Cerasoli",
+      "Nicklin",
+      "Ford"
+    ],
+    "year": 2014,
+    "venue": "Psychological Bulletin",
+    "foundIn": "OpenAlex search « intrinsic motivation performance meta-analysis » (2026-11-23)"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "n": 212468,
+  "k": 183,
+  "population": "183 samples (212,468 people) at school, at work and in physical activities",
+  "mena": false,
+  "findings": [
+    {
+      "id": "quality",
+      "text": "Doing a task for its own interest predicted the quality of performance better than incentives did",
+      "support": {
+        "sentence": "Considered simultaneously through meta-analytic regression, intrinsic motivation predicted more unique variance in quality of performance, whereas incentives were a better predictor of quantity of performance.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "with-or-without-incentives",
+      "text": "Intrinsic motivation stayed important to performance whether or not incentives were offered",
+      "support": {
+        "sentence": "The importance of intrinsic motivation to performance remained in place whether incentives were presented.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "associations: motivation and performance mostly measured together, so performance may also raise interest",
+    "intrinsic motivation is interest and enjoyment, not the acceptance of pain the book speaks of",
+    "countries not listed in the abstract; no sample from the Middle East or North Africa known"
+  ]
+}

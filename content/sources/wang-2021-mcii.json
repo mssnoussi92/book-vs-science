@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "wang-2021-mcii",
+  "doi": "10.3389/fpsyg.2021.565202",
+  "declared": {
+    "title": "A Meta-Analysis of the Effects of Mental Contrasting With Implementation Intentions on Goal Attainment",
+    "firstAuthor": "Wang",
+    "authors": [
+      "Wang",
+      "Wang",
+      "Gai"
+    ],
+    "year": 2021,
+    "venue": "Frontiers in Psychology",
+    "foundIn": "scout notes on Manson's ideas (idea 3); Crossref search « mental contrasting implementation intentions meta-analysis » (2026-11-23)"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "n": 15907,
+  "k": 21,
+  "population": "21 studies (24 effect sizes, 15,907 participants) of MCII against control conditions",
+  "mena": false,
+  "findings": [
+    {
+      "id": "small-to-medium",
+      "text": "Contrasting the goal with its obstacles and making if-then plans (MCII) helped people reach their goals more than control conditions",
+      "support": {
+        "sentence": "Results showed that MCII to be effective for goal attainment with a small to medium effect size (g = 0.336).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "g",
+        "value": 0.336
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "publication-bias",
+      "text": "Some publication bias was found: the real effect of MCII may be smaller",
+      "support": {
+        "sentence": "The results revealed that MCII is a brief and effective strategy for goal attainment with a small to moderate effect; however, because of some publication bias, the actual effect sizes may be smaller.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "with-a-person",
+      "text": "MCII guided by an experimenter worked better than MCII delivered on paper or screen",
+      "support": {
+        "sentence": "Specifically, studies with interventions based on interactions between participants and experimenters (g = 0.465) had stronger effects than studies with interventions based on interactions between participants and documents (g = 0.277).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "g",
+        "value": 0.277
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "publication bias acknowledged by the authors: the pooled effect is probably an overestimate",
+    "only 21 studies; moderators uncertain (the authors call for more studies)",
+    "control conditions vary; few compare MCII with only dreaming about the goal",
+    "countries of the studies not listed in the abstract; no sample from the Middle East or North Africa known"
+  ]
+}

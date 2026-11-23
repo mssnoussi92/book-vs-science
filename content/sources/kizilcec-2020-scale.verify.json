@@ -1,0 +1,76 @@
+{
+  "doi": "10.1073/pnas.1921417117",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Scaling up behavioral science interventions in online education » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Kizilcec » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2020, found 2020"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:engagement-not-completion",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:mcii-null",
+      "result": "pass",
+      "detail": "full-text reading by choose-your-struggle agent, 2026-11-23: PNAS PDF (eprints.qut.edu.au/232757), Results"
+    }
+  ],
+  "found": {
+    "title": "Scaling up behavioral science interventions in online education",
+    "firstAuthor": "Kizilcec",
+    "years": [
+      2020
+    ],
+    "type": "journal-article",
+    "venue": "Proceedings of the National Academy of Sciences"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "3362a2aefbee0406715a6910dfc82e405965e5488ae1d38807861fb8d1af3765",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

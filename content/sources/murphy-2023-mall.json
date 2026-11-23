@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "murphy-2023-mall",
+  "doi": "10.1080/09658211.2023.2198327",
+  "declared": {
+    "title": "Lost in the mall again: a preregistered replication and extension of Loftus & Pickrell (1995)",
+    "firstAuthor": "Murphy",
+    "year": 2023,
+    "venue": "Memory",
+    "foundIn": "OpenAlex search « Lost in the mall again: a preregistered replication and extension of Loftus and Pickrell » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 123,
+  "population": "adults (Ireland, per Andrews & Brewin 2024) interviewed twice about true childhood events and one fabricated event, from a relative's information",
+  "mena": false,
+  "findings": [
+    {
+      "id": "thirty-five",
+      "text": "A preregistered replication coded 35% of people as reporting a false memory of getting lost in a mall as a child (25% in the original study)",
+      "support": {
+        "sentence": "We replicated the findings of the original study, coding 35% of participants as reporting a false memory for getting lost in a mall in childhood (compared to 25% in the original study).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "percent",
+        "value": 35,
+        "correctedForBias": false
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "self-reported",
+      "text": "Participants themselves also reported high rates of memories and beliefs for the made-up event",
+      "support": {
+        "sentence": "In an extension, we found that participants self-reported high rates of memories and beliefs for the fabricated event.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "a reanalysis of the same transcripts (Andrews & Brewin 2024) finds that few suggested details were recalled and that many reports may be real memories",
+    "one country, 123 people; getting lost is a mild childhood fright, not a harmless everyday event",
+    "a duplicate copy of this article was published by error and withdrawn (notice read, see acknowledged)"
+  ],
+  "acknowledged": [
+    {
+      "doi": "10.1080/09658211.2023.2226567",
+      "type": "correction",
+      "changes": "notice of duplicate publication: a second copy (10.1080/09658211.2023.2198263) was withdrawn; this version of record and its results are unchanged"
+    }
+  ]
+}

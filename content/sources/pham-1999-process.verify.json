@@ -1,0 +1,72 @@
+{
+  "doi": "10.1177/0146167299025002010",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « From Thought to Action: Effects of Process-Versus Outcome-Based Mental Simulations on Performance » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Pham » matches; 2/2 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 1999, found 1999, 2007"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from crossref"
+    },
+    {
+      "name": "support:process-improves",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "From Thought to Action: Effects of Process-Versus Outcome-Based Mental Simulations on Performance",
+    "firstAuthor": "Pham",
+    "years": [
+      1999,
+      2007
+    ],
+    "type": "journal-article",
+    "venue": "Personality and Social Psychology Bulletin"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "crossref",
+  "abstractSha256": "b75e52c0542d64499456b2c790e1852cb10a1b852eafb538a05bddb97b70b1b2",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

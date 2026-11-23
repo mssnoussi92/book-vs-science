@@ -1,0 +1,81 @@
+{
+  "doi": "10.3758/s13423-021-01880-6",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Synthesizing the effects of mental simulation on behavior change: Systematic review and multilevel meta-analysis » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Cole » matches; 5/5 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2021, found 2021"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:overall",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:positive-outcome-helps",
+      "result": "pass",
+      "detail": "full-text reading by choose-your-struggle agent, 2026-11-23: published PDF, ray.yorksj.ac.uk/4802, Discussion and Table 3"
+    },
+    {
+      "name": "support:process-uncertain",
+      "result": "pass",
+      "detail": "full-text reading by choose-your-struggle agent, 2026-11-23: published PDF, ray.yorksj.ac.uk/4802, Discussion and Table 3"
+    }
+  ],
+  "found": {
+    "title": "Synthesizing the effects of mental simulation on behavior change: Systematic review and multilevel meta-analysis",
+    "firstAuthor": "Cole",
+    "years": [
+      2021
+    ],
+    "type": "journal-article",
+    "venue": "Psychonomic Bulletin &amp; Review"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "27cc24c17e65becb61508f3e96db0673b3afe88371594b47d62096f9445bc07b",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

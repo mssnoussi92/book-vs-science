@@ -1,0 +1,59 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "sinha-2021-productive-failure",
+  "doi": "10.3102/00346543211019105",
+  "declared": {
+    "title": "When Problem Solving Followed by Instruction Works: Evidence for Productive Failure",
+    "firstAuthor": "Sinha",
+    "authors": [
+      "Sinha",
+      "Kapur"
+    ],
+    "year": 2021,
+    "venue": "Review of Educational Research",
+    "foundIn": "Crossref search « when problem solving followed by instruction works evidence for productive failure » (2026-11-23); line of research named in the idea scout's notes"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "k": 53,
+  "population": "53 studies (166 comparisons) of students, comparing problem solving before instruction with instruction first",
+  "mena": false,
+  "findings": [
+    {
+      "id": "ps-i-better",
+      "text": "Trying to solve a problem before being taught (and usually failing) led to better learning than being taught first",
+      "support": {
+        "sentence": "Our results showed a significant, moderate effect in favor of PS-I (Hedge's g 0.36 [95% confidence interval 0.20; 0.51]).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "g",
+        "value": 0.36,
+        "ci": [
+          0.2,
+          0.51
+        ],
+        "correctedForBias": false
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "young-and-general",
+      "text": "For young pupils (grades 2 to 5) and for general skills, being taught first did better",
+      "support": {
+        "sentence": "Contrasting trends were, however, observed for younger age learners (second to fifth graders) and for the learning of domain-general skills, for which effect sizes favored I-PS.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "school learning, mostly mathematics and science; the failure is planned and always followed by teaching",
+    "quasi-experiments included; the bias-adjusted estimate (g 0.87) is larger than the raw one, unusual: not used",
+    "countries not given in the abstract (full text not read)"
+  ],
+  "allegiance": "Kapur created productive failure and promotes it",
+  "acknowledged": []
+}

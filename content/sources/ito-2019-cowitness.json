@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "ito-2019-cowitness",
+  "doi": "10.1037/h0101833",
+  "declared": {
+    "title": "Eyewitness Memory Distortion Following Co-Witness Discussion: A Replication of Garry, French, Kinzett, and Mori (2008) in Ten Countries",
+    "firstAuthor": "Ito",
+    "year": 2019,
+    "venue": "Journal of Applied Research in Memory and Cognition",
+    "foundIn": "OpenAlex search « multi-lab registered replication misinformation memory eyewitness » (preprint), then Crossref search « co-witness discussion memory conformity MORI technique replication countries » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 486,
+  "population": "pairs of adults in 10 countries (Brazil, Canada, Colombia, India, Japan, Malaysia, Poland, Portugal, Turkey, United Kingdom)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "adopted-partner",
+      "text": "In each of the 10 countries, after discussing a film with a partner who had seen a different version, people often reported details they never saw but their partner had mentioned",
+      "support": {
+        "sentence": "Each of the 10 samples replicated the Garry et al. finding: Participants often reported on the final test a non-witnessed answer that their co-witness had stated during the collaboration phase.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "undisputed",
+      "text": "Such errors were especially likely when the person had not disputed the partner's account during the discussion",
+      "support": {
+        "sentence": "Such co-witness suggestibility errors were especially likely when the witness had not disputed the co-witness's report during the collaboration phase.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "generalizable",
+      "text": "The authors conclude the co-witness effect replicates and generalizes across countries",
+      "support": {
+        "sentence": "The results demonstrate the replicability and generalizability of the co-witness suggestibility effect.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "a replication with samples from 10 countries, not described as preregistered in the abstract: classed as an experiment, not a registered multi-lab replication",
+    "a film watched in the lab and a recognition test the same day: not a memory of one's own life weeks later",
+    "Turkey and Malaysia are in the sample, no Arab country: not counted as MENA",
+    "rates per country are in the full text (not read); the abstract says « often », without a figure"
+  ],
+  "acknowledged": []
+}

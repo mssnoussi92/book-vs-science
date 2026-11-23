@@ -1,0 +1,81 @@
+{
+  "doi": "10.1080/09658211.2023.2198327",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Lost in the mall again: a preregistered replication and extension of Loftus &amp; Pickrell (1995) » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Murphy » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2023, found 2023"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "1 notice(s), all acknowledged: 10.1080/09658211.2023.2226567"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:thirty-five",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:self-reported",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "Lost in the mall again: a preregistered replication and extension of Loftus &amp; Pickrell (1995)",
+    "firstAuthor": "Murphy",
+    "years": [
+      2023
+    ],
+    "type": "journal-article",
+    "venue": "Memory"
+  },
+  "notices": [
+    {
+      "type": "correction",
+      "doi": "10.1080/09658211.2023.2226567"
+    }
+  ],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "2ea1077c7ab490d1d184a4f4d458c95b0195a2bcd695aade9fbc404cf7db6d40",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

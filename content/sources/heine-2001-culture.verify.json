@@ -1,0 +1,82 @@
+{
+  "doi": "10.1037/0022-3514.81.4.599",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Divergent consequences of success and failure in Japan and North America: An investigation of self-improving motivations and malleable selves. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Heine » matches; 5/5 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2001, found 2001, 2005"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:na-persist-less",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:japan-persist-more",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:effort-beliefs",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Divergent consequences of success and failure in Japan and North America: An investigation of self-improving motivations and malleable selves.",
+    "firstAuthor": "Heine",
+    "years": [
+      2001,
+      2005
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Personality and Social Psychology"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "c742a60da47a4878660f27e976bcc2fc3d11b592fcfe60a12ea16dad57b25f5e",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

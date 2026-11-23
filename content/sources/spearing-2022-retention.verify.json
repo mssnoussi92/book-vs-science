@@ -1,0 +1,76 @@
+{
+  "doi": "10.1037/mac0000014",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Long retention intervals impair the confidence–accuracy relationship for eyewitness recall. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Spearing » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2022, found 2022"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:month-impairs",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:very-sure-overconfident",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Long retention intervals impair the confidence–accuracy relationship for eyewitness recall.",
+    "firstAuthor": "Spearing",
+    "years": [
+      2022
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Applied Research in Memory and Cognition"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "20f102a624459a1f24243ec297c10e6fb017b357ddf56bfe247bc0502439abac",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

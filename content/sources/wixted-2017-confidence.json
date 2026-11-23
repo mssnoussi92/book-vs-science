@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "wixted-2017-confidence",
+  "doi": "10.1177/1529100616686966",
+  "declared": {
+    "title": "The Relationship Between Eyewitness Confidence and Identification Accuracy: A New Synthesis",
+    "firstAuthor": "Wixted",
+    "year": 2017,
+    "venue": "Psychological Science in the Public Interest",
+    "foundIn": "the coordinator's brief (« Wixted & Wells 2017 (Psychological Science in the Public Interest) »); OpenAlex search of its title (2026-11-23)"
+  },
+  "design": "narrative-review",
+  "designSetBy": "reviewer",
+  "population": "adult eyewitnesses in mock-crime lab studies and police field studies (the abstract speaks of the U.S. legal system)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "pristine-accurate",
+      "text": "When memory is tested first and without contamination (fair lineup, blind administrator, confidence noted at once), confidence and accuracy are strongly related and high-confidence identifications are remarkably accurate",
+      "support": {
+        "sentence": "Under those conditions, mock-crime studies and police department field studies have consistently shown that, for adults, (a) confidence and accuracy are strongly related and (b) high-confidence suspect identifications are remarkably accurate.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "non-pristine",
+      "text": "When testing conditions are not pristine (an unfair lineup, for example), even a high-confidence identification is seriously compromised",
+      "support": {
+        "sentence": "However, when certain non-pristine testing conditions prevail (e.g., when unfair lineups are used), the accuracy of even a high-confidence suspect ID is seriously compromised.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "a synthesis by two leading researchers, without a systematic search: classed as a narrative review",
+    "about recognizing a face in a lineup, not about remembering who said what in a meeting",
+    "contested: Berkowitz et al. 2020 and Fitzgerald et al. 2025 show conditions where high initial confidence is wrong in real cases"
+  ],
+  "acknowledged": []
+}

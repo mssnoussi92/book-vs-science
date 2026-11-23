@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "anakwah-2024-culture",
+  "doi": "10.1002/acp.4243",
+  "declared": {
+    "title": "A Cross-Cultural and Intra-Cultural Investigation of the Misinformation Effect in Eyewitness Memory Reports",
+    "firstAuthor": "Anakwah",
+    "year": 2024,
+    "venue": "Applied Cognitive Psychology",
+    "foundIn": "OpenAlex search « cross-cultural differences susceptibility misinformation effect false memory culture » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 127,
+  "population": "adults in Ghana (n = 65, a collectivistic culture) and the United Kingdom (n = 62, an individualistic culture)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "collectivistic-more",
+      "text": "On a recognition test, people from the collectivistic culture (Ghana) accepted more misleading details than people from the individualistic culture (UK)",
+      "support": {
+        "sentence": "However, participants from the collectivistic culture endorsed more misleading items in the recognition task than those from the individualistic culture.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "free-recall-same",
+      "text": "In free recall, the two cultures did not differ in how many misleading details they reported",
+      "support": {
+        "sentence": "Cultural differences in misinformation endorsement were not observed in free recall.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "two small samples (127 people), one country per culture: the authors call their findings preliminary",
+    "culture was not assigned at random: a difference between two groups, not a cause",
+    "Ghana and the UK, no Arab sample; Arab societies are often described as collectivistic, but that was not tested"
+  ],
+  "acknowledged": []
+}

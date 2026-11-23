@@ -1,0 +1,77 @@
+{
+  "doi": "10.1037/h0101798",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « How to protect eyewitness memory against the misinformation effect: A meta-analysis of post-warning studies. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Blank » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2014, found 2014, 2022"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:warning-halves",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:no-cost-control",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "How to protect eyewitness memory against the misinformation effect: A meta-analysis of post-warning studies.",
+    "firstAuthor": "Blank",
+    "years": [
+      2014,
+      2022
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Applied Research in Memory and Cognition"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "79eb4b0d74aa4b8757ef7082c41858db5f7e18f33ff1efa9bddd16f1bd832996",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

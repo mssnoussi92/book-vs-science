@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "pham-1999-process",
+  "doi": "10.1177/0146167299025002010",
+  "declared": {
+    "title": "From Thought to Action: Effects of Process-Versus Outcome-Based Mental Simulations on Performance",
+    "firstAuthor": "Pham",
+    "authors": [
+      "Pham",
+      "Taylor"
+    ],
+    "year": 1999,
+    "venue": "Personality and Social Psychology Bulletin",
+    "foundIn": "scout notes on Manson's ideas (idea 3); Crossref search « Pham Taylor from thought to action process versus outcome based mental simulations » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "first-year college students before a midterm exam (US): process, outcome, both, or self-monitoring control for 5 to 7 days",
+  "mena": false,
+  "findings": [
+    {
+      "id": "process-improves",
+      "text": "Rehearsing the steps of studying for 5 to 7 days before an exam increased studying and improved grades, through better planning and less anxiety",
+      "support": {
+        "sentence": "Results indicated that process simulation enhanced studying and improved grades; the latter effect was mediated by enhanced planning and reduced anxiety.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "a single study of first-year students at one university",
+    "Cole 2021 (full text) codes its grade effect against the control group as not significant (p < .09)",
+    "the abstract does not say how outcome simulation compared with the control group",
+    "no sample from the Middle East or North Africa"
+  ]
+}

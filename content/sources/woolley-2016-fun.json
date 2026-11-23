@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "woolley-2016-fun",
+  "doi": "10.1093/jcr/ucv098",
+  "declared": {
+    "title": "For the Fun of It: Harnessing Immediate Rewards to Increase Persistence in Long-Term Goals",
+    "firstAuthor": "Woolley",
+    "authors": [
+      "Woolley",
+      "Fishbach"
+    ],
+    "year": 2016,
+    "venue": "Journal of Consumer Research",
+    "foundIn": "Crossref search « Woolley Fishbach for the fun of it harnessing immediate rewards to increase persistence » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "experiments on health and study activities (e.g. choosing an exercise, music in a high-school classroom); samples not detailed in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "immediate-over-delayed",
+      "text": "Paying attention to what is enjoyable in an activity now increased persistence more than paying attention to its later benefits",
+      "support": {
+        "sentence": "With regard to health and academic goals, we find that attending to the immediate rewards of health and academic activities increases persistence in these activities to a greater extent than attending to delayed rewards, even though these activities are selected for the delayed rewards they provide.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "enjoyable-choice",
+      "text": "Choosing the most enjoyable rather than the most useful exercise increased persistence",
+      "support": {
+        "sentence": "Specifically, bringing immediate rewards into activity choice—for example, having participants choose the most enjoyable rather than the most useful exercise or the tastier rather than healthier bag of carrots—increases persistence and consumption.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "persistence measured in short sessions (one workout, one task), not long-term attainment",
+    "one laboratory; sample sizes and countries not given in the abstract",
+    "enjoyment of the activity, not acceptance of pain: the book speaks of choosing one's struggle",
+    "no sample from the Middle East or North Africa known"
+  ]
+}

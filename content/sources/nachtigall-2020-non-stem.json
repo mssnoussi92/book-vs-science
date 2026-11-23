@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "nachtigall-2020-non-stem",
+  "doi": "10.1007/s11251-020-09525-2",
+  "declared": {
+    "title": "When failure fails to be productive: probing the effectiveness of productive failure for learning beyond STEM domains",
+    "firstAuthor": "Nachtigall",
+    "authors": [
+      "Nachtigall",
+      "Serova",
+      "Rummel"
+    ],
+    "year": 2020,
+    "venue": "Instructional Science",
+    "foundIn": "OpenAlex search « productive failure meta-analysis » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 364,
+  "population": "10th graders in 2 quasi-experimental studies (212 and 152 students) learning social science research methods",
+  "mena": false,
+  "findings": [
+    {
+      "id": "no-benefit",
+      "text": "Students who tried a problem before instruction did not learn social science methods better than students taught first",
+      "support": {
+        "sentence": "Thus, the findings did not replicate the PF effect on learning in a non-STEM domain.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "quasi-experimental: classes, not individuals, were probably assigned",
+    "one domain (research methods), one age group; country not given in the abstract",
+    "a null result in 2 studies does not show the method harms"
+  ],
+  "acknowledged": []
+}

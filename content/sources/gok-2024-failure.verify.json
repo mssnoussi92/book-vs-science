@@ -1,0 +1,81 @@
+{
+  "doi": "10.1037/xge0001632",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Learning from failure: The roles of self-focused feedback, task expectations, and subsequent instruction. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Gok » matches; 2/2 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2024, found 2024"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:replicated",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:with-instruction",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:conclusion",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: conclusion"
+    }
+  ],
+  "found": {
+    "title": "Learning from failure: The roles of self-focused feedback, task expectations, and subsequent instruction.",
+    "firstAuthor": "Gok",
+    "years": [
+      2024
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Experimental Psychology: General"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "00da9b3e343f709719920cfee0103bea133519e17694ed6d31ce82836095313c",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

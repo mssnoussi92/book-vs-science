@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "eskreis-winkler-2019-failure",
+  "doi": "10.1177/0956797619881133",
+  "declared": {
+    "title": "Not Learning From Failure—the Greatest Failure of All",
+    "firstAuthor": "Eskreis-Winkler",
+    "authors": [
+      "Eskreis-Winkler",
+      "Fishbach"
+    ],
+    "year": 2019,
+    "venue": "Psychological Science",
+    "foundIn": "Crossref search « Not learning from failure the greatest failure of all » (2026-11-23); line of research named in the idea scout's notes"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 1674,
+  "population": "adults in 5 experiments (total N = 1,674), binary-choice questions in professional, linguistic and social domains; countries not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "own-failure-less",
+      "text": "People told they had answered wrong learned less, on a follow-up test, than people told they had answered right, although both kinds of feedback gave away the correct answer",
+      "support": {
+        "sentence": "However, on a follow-up test, participants learned less from failure feedback than from success feedback.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "ego-tune-out",
+      "text": "The authors explain the gap by ego threat: a personal failure makes people tune out",
+      "support": {
+        "sentence": "Failure is ego threatening, which causes people to tune out.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "others-failure-equal",
+      "text": "People learned less from their own failure than from their own success, but as much from other people's failures as from others' successes",
+      "support": {
+        "sentence": "Participants learned less from personal failure than from personal success, yet they learned just as much from other people's failure as from others' success.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "laboratory: binary-choice questions, learning tested minutes later; not failures in life",
+    "Spiller 2025 (Psychological Science commentary) argues the core task's scoring can produce this gap with equal learning; no reply found",
+    "the result on others' failures is one part of the paper, its size not given in the abstract",
+    "samples and countries not given in the abstract (full text not read)"
+  ],
+  "acknowledged": []
+}

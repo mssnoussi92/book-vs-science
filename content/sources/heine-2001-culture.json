@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "heine-2001-culture",
+  "doi": "10.1037/0022-3514.81.4.599",
+  "declared": {
+    "title": "Divergent consequences of success and failure in Japan and North America: An investigation of self-improving motivations and malleable selves.",
+    "firstAuthor": "Heine",
+    "authors": [
+      "Heine",
+      "Kitayama",
+      "Lehman",
+      "Takata",
+      "Ide",
+      "Leung",
+      "Matsumoto"
+    ],
+    "year": 2001,
+    "venue": "Journal of Personality and Social Psychology",
+    "foundIn": "Crossref search « divergent consequences of success and failure in Japan and North America self-improving motivations » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "Japanese and North American participants in 4 studies; sizes not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "na-persist-less",
+      "text": "North Americans who were told they failed persisted less on a follow-up task than those told they succeeded",
+      "support": {
+        "sentence": "Replicating past research, North Americans who failed on a task persisted less on a follow-up task than those who succeeded.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "japan-persist-more",
+      "text": "Japanese who were told they failed persisted more than those told they succeeded",
+      "support": {
+        "sentence": "In contrast, Japanese who failed persisted more than those who succeeded.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "effort-beliefs",
+      "text": "The cultural difference came at least partly from different beliefs about whether effort pays",
+      "support": {
+        "sentence": "Study 3 unpackaged the cultural differences by demonstrating that they are due, at least in part, to divergent lay theories regarding the utility of effort.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "persistence on the next task, not learning nor later success",
+    "2 cultures only, no Arab sample; culture itself is not assigned",
+    "2001: an old study of 2 cultures; no later test with an Arab sample found"
+  ],
+  "acknowledged": []
+}

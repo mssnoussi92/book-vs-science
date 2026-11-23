@@ -72,6 +72,6 @@
   "retracted": false,
   "abstractFrom": "openalex",
   "abstractSha256": "4ce35ea127a7ba6de02372d11a0ff0609e1f6d71e100d13be39810150748393a",
-  "checkedOn": "2026-11-22",
+  "checkedOn": "2026-11-23",
   "tool": "bvs-sources@0.1"
 }

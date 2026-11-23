@@ -1,0 +1,86 @@
+{
+  "doi": "10.1037/0021-9010.93.1.59",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Effectiveness of error management training: A meta-analysis. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Keith » matches; 2/2 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2008, found 2008"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:overall",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:transfer",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:adaptive-transfer",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:conclusion",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: method/result/conclusion"
+    }
+  ],
+  "found": {
+    "title": "Effectiveness of error management training: A meta-analysis.",
+    "firstAuthor": "Keith",
+    "years": [
+      2008
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Applied Psychology"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "f507006bb15832779368ae3935d7cec231e5766eceafe07dae86b992f4c102f2",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

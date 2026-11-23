@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "alghazo-2020-simulation",
+  "doi": "10.23947/2334-8496-2020-8-si-37-47",
+  "declared": {
+    "title": "Mental Simulation Effects on Performance: Benefits of Outcome Versus Process Simulations in Online Courses",
+    "firstAuthor": "Alghazo",
+    "year": 2020,
+    "venue": "International Journal of Cognitive Research in Science, Engineering and Education",
+    "foundIn": "Crossref search « Pham Taylor from thought to action process versus outcome based mental simulations » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "college students from the Middle East in online classes during COVID-19 (authors at a university in Saudi Arabia)",
+  "mena": true,
+  "findings": [
+    {
+      "id": "no-test-difference",
+      "text": "Rehearsing the steps rather than the good grade made no difference to engagement, midterm test scores or predictions of performance",
+      "support": {
+        "sentence": "It did not influence behavioral engagement, midterm test performance, or predictions of performance before or after the test.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "assignments-timing",
+      "text": "The type of simulation changed assignment scores, in a way that depended on when the assignment was assessed",
+      "support": {
+        "sentence": "Type of simulation impacted students’ performance on assignments, but differently depending on the timing of the assessment.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "sample size and how students were assigned are not in the abstract; full text not reachable (site behind a bot check)",
+    "no control group without simulation: process against outcome only",
+    "small open-access journal; online classes during the pandemic",
+    "the only sample from the Middle East in this dossier"
+  ]
+}

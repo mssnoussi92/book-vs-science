@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "blank-2014-postwarning",
+  "doi": "10.1037/h0101798",
+  "declared": {
+    "title": "How to protect eyewitness memory against the misinformation effect: A meta-analysis of post-warning studies",
+    "firstAuthor": "Blank",
+    "year": 2014,
+    "venue": "Journal of Applied Research in Memory and Cognition",
+    "foundIn": "OpenAlex search « misinformation effect meta-analysis » (2026-11-23)"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "k": 25,
+  "population": "participants of 25 misinformation experiments with a later warning (155 effect sizes); countries not listed in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "warning-halves",
+      "text": "Telling people afterwards that some of what they heard was false cuts the misinformation effect to less than half its size on average",
+      "support": {
+        "sentence": "Key findings were that (1) post-warnings are surprisingly effective, reducing the misinformation effect to less than half of its size on average.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "no-cost-control",
+      "text": "The warning helps misled answers without harming the accuracy of answers that were not misled",
+      "support": {
+        "sentence": "(3) The post-warning reduction in the misinformation effect reflects a specific increase in misled performance (relative to no warning), at negligible cost for control performance.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "the sentences describe the warning's effect: that misinformation biases reports is assumed by every study pooled, not estimated in the abstract",
+    "25 lab studies, mostly with videos or slide shows of staged events"
+  ],
+  "acknowledged": []
+}

@@ -1,0 +1,76 @@
+{
+  "doi": "10.1002/acp.4243",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « A Cross‐Cultural and Intra‐Cultural Investigation of the Misinformation Effect in Eyewitness Memory Reports » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Anakwah » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2024, found 2024"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from crossref"
+    },
+    {
+      "name": "support:collectivistic-more",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:free-recall-same",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "A Cross‐Cultural and Intra‐Cultural Investigation of the Misinformation Effect in Eyewitness Memory Reports",
+    "firstAuthor": "Anakwah",
+    "years": [
+      2024
+    ],
+    "type": "journal-article",
+    "venue": "Applied Cognitive Psychology"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "crossref",
+  "abstractSha256": "b4c3fdd1ce2cec9882577592046839c123ae97173b0e2a44aaedff281276a2cd",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

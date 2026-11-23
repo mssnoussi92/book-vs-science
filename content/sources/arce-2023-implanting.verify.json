@@ -1,0 +1,76 @@
+{
+  "doi": "10.1016/j.ijchp.2023.100386",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Implanting rich autobiographical false memories: Meta–analysis for forensic practice and judicial judgment making » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Arce » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2023, found 2023"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:large-implanting",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:adults-too",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "Implanting rich autobiographical false memories: Meta–analysis for forensic practice and judicial judgment making",
+    "firstAuthor": "Arce",
+    "years": [
+      2023
+    ],
+    "type": "journal-article",
+    "venue": "International Journal of Clinical and Health Psychology"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "cc6819e6711e8199f7d1609e056448681bf4547b9150f053efa66e9b9e19dc0b",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}

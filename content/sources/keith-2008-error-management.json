@@ -1,0 +1,87 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "keith-2008-error-management",
+  "doi": "10.1037/0021-9010.93.1.59",
+  "declared": {
+    "title": "Effectiveness of error management training: A meta-analysis.",
+    "firstAuthor": "Keith",
+    "authors": [
+      "Keith",
+      "Frese"
+    ],
+    "year": 2008,
+    "venue": "Journal of Applied Psychology",
+    "foundIn": "Crossref search « effectiveness of error management training a meta-analysis » (2026-11-23); line of research named in the idea scout's notes"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "n": 2183,
+  "k": 24,
+  "population": "24 training studies (N = 2,183) comparing error management training with error-avoidant or exploratory training",
+  "mena": false,
+  "findings": [
+    {
+      "id": "overall",
+      "text": "Across 24 studies, training that encourages making errors and learning from them did better on average than the other trainings",
+      "support": {
+        "sentence": "Although the mean effect of EMT across all 24 identified studies (N = 2,183) was positive and significant (Cohen's d = 0.44), there were several moderators.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.44,
+        "correctedForBias": false
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "transfer",
+      "text": "The gain was larger after training, when the skill had to be used on new tasks, than during training",
+      "support": {
+        "sentence": "Moderator analyses showed effect sizes to be larger (a) for posttraining transfer (d = 0.56) than for within-training performance and (b) for performance tasks that were structurally distinct (adaptive transfer; d = 0.80) than for tasks that were similar to training (analogical transfer).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.56,
+        "correctedForBias": false
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "adaptive-transfer",
+      "text": "The gain was largest on tasks unlike those of the training",
+      "support": {
+        "sentence": "Moderator analyses showed effect sizes to be larger (a) for posttraining transfer (d = 0.56) than for within-training performance and (b) for performance tasks that were structurally distinct (adaptive transfer; d = 0.80) than for tasks that were similar to training (analogical transfer).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.8,
+        "correctedForBias": false
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "conclusion",
+      "text": "The authors conclude that error management training may suit transfer to new tasks better than error-avoidant training",
+      "support": {
+        "sentence": "Results suggest that EMT may be better suited than error-avoidant training methods for promotion of transfer to novel tasks.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "errors made on purpose in a training, with guidance: not failures in life",
+    "24 studies with wide variation in effects; no confidence interval nor bias correction in the abstract",
+    "2008: no later meta-analysis of error management training found",
+    "tasks and countries not given in the abstract (full text not read)"
+  ],
+  "allegiance": "Frese developed error management training and both authors promote it",
+  "acknowledged": []
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "madsen-2010-launch",
+  "doi": "10.5465/amj.2010.51467631",
+  "declared": {
+    "title": "Failing to Learn? The Effects of Failure and Success on Organizational Learning in the Global Orbital Launch Vehicle Industry",
+    "firstAuthor": "Madsen",
+    "authors": [
+      "Madsen",
+      "Desai"
+    ],
+    "year": 2010,
+    "venue": "Academy of Management Journal",
+    "foundIn": "Crossref search « failing to learn effects of failure and success on organizational learning orbital launch vehicle » (2026-11-23)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "population": "organizations launching orbital vehicles worldwide (launch histories); number not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "orgs-learn-more-from-failure",
+      "text": "Launch organizations improved more after failed launches than after successful ones, and what a failure taught faded more slowly",
+      "support": {
+        "sentence": "We find that organizations learn more effectively from failures than successes, that knowledge from failure depreciates more slowly than knowledge from success, and that prior stocks of experience and the magnitude of failure influence how effectively organizations can learn from various forms of experience.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "organizations, not individuals: a launch failure is investigated formally, which is not how a person meets a failure",
+    "observational: launch records, no failure assigned",
+    "one high-stakes industry; abstract read from OpenAlex only"
+  ],
+  "acknowledged": []
+}

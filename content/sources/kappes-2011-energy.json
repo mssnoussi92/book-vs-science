@@ -1,0 +1,53 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "kappes-2011-energy",
+  "doi": "10.1016/j.jesp.2011.02.003",
+  "declared": {
+    "title": "Positive fantasies about idealized futures sap energy",
+    "firstAuthor": "Kappes",
+    "authors": [
+      "Kappes",
+      "Oettingen"
+    ],
+    "year": 2011,
+    "venue": "Journal of Experimental Social Psychology",
+    "foundIn": "OpenAlex search « positive fantasies future motivation achievement » (2026-11-23)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 334,
+  "population": "4 experiments with American undergraduates (n = 164, 50, 40, 80; Study 1 women only)",
+  "mena": false,
+  "findings": [
+    {
+      "id": "less-energy",
+      "text": "Experimentally induced positive fantasies about a desired future left people less energized than questioning, negative or neutral fantasies",
+      "support": {
+        "sentence": "Induced positive fantasies resulted in less energy than fantasies that questioned the desired future (Study 1), negative fantasies (Study 2), or neutral fantasies (Study 3).",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "choose-your-struggle agent, 2026-11-23: abstract of the LSE accepted manuscript (eprints.lse.ac.uk/46284)"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "less-accomplishment",
+      "text": "In Study 3 (40 students), positive fantasies about the coming week went with lower self-reported accomplishment one week later",
+      "support": {
+        "sentence": "Indeed, accomplishment as reported a week later was lower in the positive fantasy than in the control condition, t(38)=2.00, p=.05, η2=.10 (Mpos=5.74, SD=1.36 versus Mcon=6.57, SD=1.26).",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "choose-your-struggle agent, 2026-11-23: LSE accepted manuscript (eprints.lse.ac.uk/46284), Study 3, Results"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "small samples of American undergraduates; energy measured right after the induction (blood pressure, self-report)",
+    "achievement measured once, self-reported after one week, in a single study of 40 (p = .05)",
+    "one laboratory; no independent replication found",
+    "no abstract in Europe PMC, Crossref or OpenAlex: read in the authors' accepted manuscript",
+    "no sample from the Middle East or North Africa"
+  ],
+  "allegiance": "Oettingen developed fantasy realization theory and mental contrasting (WOOP), which she also promotes"
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "cole-2021-simulation",
+  "doi": "10.3758/s13423-021-01880-6",
+  "declared": {
+    "title": "Synthesizing the effects of mental simulation on behavior change: Systematic review and multilevel meta-analysis",
+    "firstAuthor": "Cole",
+    "authors": [
+      "Cole",
+      "Smith",
+      "Ragan",
+      "Suurmond",
+      "Armitage"
+    ],
+    "year": 2021,
+    "venue": "Psychonomic Bulletin & Review",
+    "foundIn": "OpenAlex search « mental simulation process outcome meta-analysis » (2026-11-23)"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "n": 5685,
+  "k": 94,
+  "population": "94 experiments (123 effect sizes, N = 5,685) comparing mental simulation with a control group; mostly young students",
+  "mena": false,
+  "findings": [
+    {
+      "id": "overall",
+      "text": "Mentally simulating a future behaviour improved that behaviour compared with control conditions",
+      "support": {
+        "sentence": "After applying a multilevel random effects model, a statistically-reliable positive effect of Hedges' g = 0.49, 95% CI [0.37; 0.62] was found, which was significantly different than zero.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "g",
+        "value": 0.49,
+        "ci": [
+          0.37,
+          0.62
+        ]
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "positive-outcome-helps",
+      "text": "Imagining a desired, successful outcome improved later behaviour a little compared with control (15 effect sizes)",
+      "support": {
+        "sentence": "Thus, it is apparent here that simulation of superior outcomes (and positive simulations in general) is among several beneficial mental simulation subtypes which can be used as behavior change techniques.",
+        "role": "conclusion",
+        "where": "fulltext",
+        "readBy": "choose-your-struggle agent, 2026-11-23: published PDF, ray.yorksj.ac.uk/4802, Discussion and Table 3"
+      },
+      "effect": {
+        "metric": "g",
+        "value": 0.23,
+        "ci": [
+          0.13,
+          0.34
+        ]
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "process-uncertain",
+      "text": "Simulating the steps alone (5 effect sizes) had no reliable effect compared with control; the authors warn against strong claims for it",
+      "support": {
+        "sentence": "However, results from this meta-analysis show that caution is needed in making any strong assumptions about process simulations, at least until further empirical research conclusively replicates positive effects following process simulations.",
+        "role": "conclusion",
+        "where": "fulltext",
+        "readBy": "choose-your-struggle agent, 2026-11-23: published PDF, ray.yorksj.ac.uk/4802, Discussion and Table 3"
+      },
+      "effect": {
+        "metric": "g",
+        "value": 0.17,
+        "ci": [
+          -0.09,
+          0.43
+        ]
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "the omnibus test of subtypes was not significant: subtype estimates are exploratory, some on very few studies (process: 5)",
+    "each subtype is compared with control groups, never process against outcome head to head",
+    "almost all participants were young students; behaviour mostly measured within a day of the simulation",
+    "countries not listed; no sample from the Middle East or North Africa known"
+  ]
+}

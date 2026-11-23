@@ -1,0 +1,71 @@
+{
+  "doi": "10.1037/law0000001",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « The eyewitness post identification feedback effect 15 years later: Theoretical and policy implications. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Steblay » matches"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2014, found 2014"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:feedback-inflates",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "The eyewitness post identification feedback effect 15 years later: Theoretical and policy implications.",
+    "firstAuthor": "Steblay",
+    "years": [
+      2014
+    ],
+    "type": "journal-article",
+    "venue": "Psychology, Public Policy, and Law"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "e66e80dbb28ec67f4ac59f0963c837e791da3870b4ea18e1bfafdba4615c1cc4",
+  "checkedOn": "2026-11-23",
+  "tool": "bvs-sources@0.1"
+}
