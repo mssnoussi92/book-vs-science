@@ -36,7 +36,9 @@ publicitaires au milieu (après l'entrée au Programme Partenaire).
 - La voix : les répliques nouvelles seulement (le reste est déjà enregistré) : 1 à 2 requêtes par film.
 - Les règles : chaque épisode du film validé (sources, script, vidéo) avant le film ; le tableau égal aux badges.
 
-## Questions pour le propriétaire (au moment de le produire)
+## Ses décisions (2026-11-23)
 
-1. Le film attend-il que toutes les idées du livre soient faites, ou sort-il dès trois ?
-2. Les shorts sortent-ils avant le film (le film les rassemble) ou après (les shorts renvoient au film) ?
+1. **Le film attend 4 à 5 idées** (9 à 11 min), pas trois : après le pilote, « trop de choix » et « argent », viennent
+   « courir après le bonheur » et une cinquième idée du livre.
+2. **Les shorts d'abord, le film ensuite** : les shorts mesurent l'intérêt ; le film les rassemble, puis chaque short
+   est relié au film (« vidéo associée », à la main dans Studio).
