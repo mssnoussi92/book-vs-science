@@ -21,5 +21,12 @@
     }
   },
   "voice": {},
-  "video": {}
+  "video": {
+    "ar-EG": {
+      "on": "2026-11-23",
+      "words": "Je valide 27c8f2 (Recommandé) : « trop de choix » avec ses voix, hook h1, 60,8 s (narrateur Gemini, à remplacer par une voix humaine avant publication)",
+      "via": "conversation",
+      "hash": "27c8f2b7051ffb22dd3a827cd1932cf2325f3f4975ae3d9cc4e1f2f0d61cda74"
+    }
+  }
 }

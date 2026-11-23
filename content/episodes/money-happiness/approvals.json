@@ -21,5 +21,12 @@
     }
   },
   "voice": {},
-  "video": {}
+  "video": {
+    "ar-EG": {
+      "on": "2026-11-23",
+      "words": "Je valide 9fa404 (Recommandé) : « argent » avec ses voix, hook h1, 64,7 s (narrateur Gemini, à remplacer par une voix humaine avant publication)",
+      "via": "conversation",
+      "hash": "9fa404e7f5e0d496aab2c6224651b7596df843a9378b32ae1a0f6f9631bbcd45"
+    }
+  }
 }
