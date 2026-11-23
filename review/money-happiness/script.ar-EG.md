@@ -36,13 +36,13 @@
 - *كريم : notification raise (sur le mot 3 de n1)*
 - **كريم** *(happy, to himself, delighted, reading the notification)* : أخيرًا! العلاوة نزلت.  `1.7 s`
 - **نور** *(happy, warm, friendly, passing by his desk)* : مبروك! مبسوط؟  `1.2 s`
-- **كريم** *(tired, a half-smile that fades, his mind already on the promotion)* : يعني… لما أترقّى هبقى مبسوط.  `2.6 s`
+- **كريم** *(tired, a half-smile that fades on « بس », his mind already on the next one)* : آه… بس مش الرقم اللي مستنيه.  `3.1 s`
 - *كريم : spiral 2, anxious (sur le mot 2 de l3 · jusqu'à son effet suivant)*
-- *كريم : spiral 3, tired (sur le mot 5 de l3 · jusqu'à son effet suivant)*
+- *كريم : spiral 3, tired (sur le mot 6 de l3 · jusqu'à son effet suivant)*
 - *كريم : tired (1.2 s · seulement avec h1)*
   - à l'écran, sans voix : ولو وصلتله… هتستنى اللي بعده؟
 - *كريم : phone raise, rewind (2.2 s)*
-- **عدسة** *(warm, announcing the replay, light, a small stress on « مش هيستنى »)* : نعيدها… المرة دي مش هيستنى الترقية.  `3.1 s`
+- **عدسة** *(warm, announcing the replay, light, a small stress on « من غير ما يستنى »)* : نعيدها… من غير ما يستنى العلاوة الجاية.  `3.6 s`
 - *كريم : phone raise, surprised (sur le mot 2 de n2 · jusqu'à la fin de la partie)*
 - *كريم : notification raise (sur le mot 2 de n2)*
 - **كريم** *(relieved, to himself, relieved, calm, doing the sum in his head)* : حلو… الإيجار هيبقى أسهل.  `2.2 s`
@@ -67,9 +67,9 @@
 
 ## 5. À retenir (suggestion à faible risque)
 
-- **عدسة** *(warm, simple, a suggestion not an order; warm on « اللي في إيدك »)* : جرّب زي كريم: افرح باللي في إيدك دلوقتي. ممكن يساعد.  `5.0 s`
+- **عدسة** *(warm, simple, a suggestion not an order; warm on « اللي في إيدك »)* : جرّب زي كريم: افرح باللي في إيدك. ممكن يساعد.  `4.5 s`
 - *كريم : hand-on-chest, happy (sur le mot 4 de l1)*
 
 ---
-Durée estimée : **58 s** (débit 2.1 mots/s, recalibré sur la première prise)
-Empreinte du script ar-EG : **61fd36**
+Durée estimée : **59 s** (débit 2.1 mots/s, recalibré sur la première prise)
+Empreinte du script ar-EG : **65f482**

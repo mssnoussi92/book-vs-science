@@ -213,7 +213,7 @@
           "speaker": "karim",
           "emotion": "tired",
           "intensity": 0.5,
-          "delivery": "a half-smile that fades, his mind already on the promotion",
+          "delivery": "a half-smile that fades on « بس », his mind already on the next one",
           "gesture": "shrug",
           "look": "away"
         },
@@ -248,7 +248,7 @@
           "emotion": "tired",
           "at": {
             "line": "l3",
-            "word": 4
+            "word": 5
           },
           "holds": "next",
           "seconds": 1.0
@@ -285,7 +285,7 @@
           "speaker": "adasa",
           "emotion": "warm",
           "intensity": 0.5,
-          "delivery": "announcing the replay, light, a small stress on « مش هيستنى »",
+          "delivery": "announcing the replay, light, a small stress on « من غير ما يستنى »",
           "voice": "over"
         },
         {
