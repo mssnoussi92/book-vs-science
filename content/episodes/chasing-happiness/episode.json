@@ -1,0 +1,984 @@
+{
+  "$schema": "../../../schemas/episode.schema.json",
+  "schema": 1,
+  "id": "chasing-happiness",
+  "sourceLang": "ar-EG",
+  "languages": [
+    "ar-EG",
+    "en"
+  ],
+  "cast": {
+    "narrator": "adasa",
+    "characters": [
+      "nour",
+      "karim"
+    ]
+  },
+  "topic": {
+    "tags": [
+      "happiness",
+      "well-being",
+      "expectations"
+    ],
+    "sensitive": [
+      "mental-health"
+    ]
+  },
+  "hooks": [
+    {
+      "id": "h1",
+      "type": "challenge",
+      "spokenBy": "narrator",
+      "firstFrame": "challenge",
+      "emotion": "amused",
+      "claims": [],
+      "beats": []
+    },
+    {
+      "id": "h2",
+      "type": "paradox",
+      "spokenBy": "narrator",
+      "firstFrame": "close-up",
+      "emotion": "curious",
+      "claims": [
+        "c2"
+      ],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "fx": {
+            "id": "meter",
+            "params": {
+              "level": 2
+            }
+          },
+          "emotion": "anxious",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "type": "confession",
+      "spokenBy": "nour",
+      "firstFrame": "close-up",
+      "emotion": "amused",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "gesture": "shrug",
+          "fx": {
+            "id": "meter",
+            "params": {
+              "level": 2
+            }
+          },
+          "emotion": "amused",
+          "look": "viewer",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "type": "number",
+      "spokenBy": "narrator",
+      "firstFrame": "text-over-scene",
+      "emotion": "curious",
+      "claims": [
+        "c1"
+      ],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "fx": {
+            "id": "meter",
+            "params": {
+              "level": 2
+            }
+          },
+          "emotion": "neutral",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "type": "question",
+      "spokenBy": "karim",
+      "firstFrame": "text-over-scene",
+      "emotion": "amused",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "gesture": "point",
+          "emotion": "amused",
+          "look": "viewer",
+          "seconds": 2.4
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "nour",
+          "fx": {
+            "id": "meter",
+            "params": {
+              "level": 2
+            }
+          },
+          "emotion": "anxious",
+          "seconds": 2.4
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "setting": "beach",
+      "shape": "replay-twice",
+      "outcome": "a-bit-better",
+      "beats": [
+        {
+          "kind": "line",
+          "id": "n1",
+          "speaker": "adasa",
+          "emotion": "neutral",
+          "intensity": 0.4,
+          "delivery": "setting the scene, light; a small smile on « للبحر »",
+          "voice": "over"
+        },
+        {
+          "kind": "line",
+          "id": "l1",
+          "speaker": "nour",
+          "emotion": "happy",
+          "intensity": 0.6,
+          "delivery": "to herself, excited but tense, a push on « لازم »",
+          "look": "away",
+          "voice": "inner"
+        },
+        {
+          "kind": "line",
+          "id": "l2",
+          "speaker": "nour",
+          "emotion": "anxious",
+          "intensity": 0.5,
+          "delivery": "to herself, checking, a little let down on « المفروض أكتر »",
+          "voice": "inner"
+        },
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "fx": {
+            "id": "meter",
+            "params": {
+              "level": 2
+            }
+          },
+          "emotion": "anxious",
+          "at": {
+            "line": "l2",
+            "word": 0
+          },
+          "holds": "next",
+          "seconds": 1.0
+        },
+        {
+          "kind": "line",
+          "id": "l3",
+          "speaker": "karim",
+          "emotion": "happy",
+          "intensity": 0.4,
+          "delivery": "light, friendly, coming up to her on the sand",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l4",
+          "speaker": "nour",
+          "emotion": "tired",
+          "intensity": 0.5,
+          "delivery": "honest, a little lost, not a complaint; the smile fades on « بس »",
+          "gesture": "shrug",
+          "look": "away"
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "nour",
+          "emotion": "tired",
+          "look": "viewer",
+          "hooks": [
+            "h1"
+          ],
+          "caption": true,
+          "seconds": 1.2
+        },
+        {
+          "kind": "action",
+          "id": "a3",
+          "who": "nour",
+          "fx": {
+            "id": "rewind",
+            "params": {}
+          },
+          "seconds": 2.2
+        },
+        {
+          "kind": "line",
+          "id": "n2",
+          "speaker": "adasa",
+          "emotion": "warm",
+          "intensity": 0.5,
+          "delivery": "announcing the replay, light; a small stress on « من غير عدّاد »",
+          "voice": "over"
+        },
+        {
+          "kind": "action",
+          "id": "a4",
+          "who": "nour",
+          "gesture": "breathe",
+          "emotion": "relieved",
+          "look": "away",
+          "at": {
+            "line": "n2",
+            "word": 3
+          },
+          "seconds": 1.0
+        },
+        {
+          "kind": "line",
+          "id": "l5",
+          "speaker": "karim",
+          "emotion": "happy",
+          "intensity": 0.4,
+          "delivery": "light, friendly, same as before",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l6",
+          "speaker": "nour",
+          "emotion": "happy",
+          "intensity": 0.4,
+          "delivery": "content, not thrilled; pointing to the others further along the beach",
+          "gesture": "point",
+          "look": "other"
+        }
+      ]
+    }
+  ],
+  "book": {
+    "book": "subtle-art",
+    "basis": "backwards-law",
+    "claims": [
+      {
+        "id": "c1",
+        "statement": "People who value happiness highly, or want it badly, are less happy, more depressed and ruminate more than people who value it less.",
+        "population": "adults",
+        "exposure": "valuing happiness highly (a lasting trait)",
+        "comparison": "valuing it less",
+        "outcome": "happiness, life satisfaction, depressive symptoms, rumination",
+        "causal": false,
+        "inScope": true
+      },
+      {
+        "id": "c2",
+        "statement": "Setting out to be happy, or being led to value happiness more, makes people feel worse afterwards: less happy, or lonelier, or more ruminative.",
+        "population": "adults",
+        "exposure": "being led to value or pursue happiness, or trying to feel happier (manipulated)",
+        "comparison": "no such instruction",
+        "outcome": "happiness felt afterwards; loneliness, rumination (other negative experiences)",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c3",
+        "statement": "The wish for more happiness is itself a negative experience, even without worrying about one's happiness: whatever form it takes, it lowers well-being.",
+        "population": "adults",
+        "exposure": "aspiring to, prioritizing or actively pursuing happiness, without worry",
+        "comparison": "worrying about one's happiness, or not pursuing it",
+        "outcome": "well-being, happiness",
+        "causal": false,
+        "inScope": true
+      },
+      {
+        "id": "c4",
+        "statement": "Accepting one's negative experience is itself a positive experience.",
+        "population": "adults",
+        "exposure": "accepting negative emotions",
+        "comparison": "fighting them",
+        "outcome": "psychological health",
+        "causal": true,
+        "inScope": false
+      }
+    ],
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "curious",
+        "delivery": "plain, reporting what the book says; stress on « أقل »",
+        "gesture": "point",
+        "look": "card"
+      },
+      {
+        "kind": "line",
+        "id": "l2",
+        "speaker": "adasa",
+        "emotion": "warm",
+        "delivery": "the book's reason made concrete; « أنا مبسوط؟ » as a little question to oneself",
+        "look": "viewer"
+      }
+    ]
+  },
+  "verdict": {
+    "badge": "nuanced",
+    "certainty": "low",
+    "assessments": [
+      {
+        "claim": "c1",
+        "direction": "mixed",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "mauss-2011-seeking",
+            "finding": "low-stress-only",
+            "relation": "supports"
+          },
+          {
+            "source": "ford-2014-depression",
+            "finding": "depressive-symptoms",
+            "relation": "supports"
+          },
+          {
+            "source": "mahmoodi-kahriz-2019-uk",
+            "finding": "replicated-uk",
+            "relation": "supports"
+          },
+          {
+            "source": "hansenne-2021-replication",
+            "finding": "valuing-partly-worse",
+            "relation": "supports"
+          },
+          {
+            "source": "takai-2023-japan",
+            "finding": "rumination",
+            "relation": "supports"
+          },
+          {
+            "source": "huang-2024-valuing",
+            "finding": "higher-well-being",
+            "relation": "contradicts"
+          },
+          {
+            "source": "pavani-2025-goals",
+            "finding": "between-people",
+            "relation": "contradicts"
+          },
+          {
+            "source": "ford-2015-culture",
+            "finding": "depends-on-culture",
+            "relation": "nuances"
+          },
+          {
+            "source": "takai-2023-japan",
+            "finding": "interdependence-once",
+            "relation": "nuances"
+          },
+          {
+            "source": "mahmoodi-kahriz-2019-uk",
+            "finding": "strongest-british",
+            "relation": "nuances"
+          },
+          {
+            "source": "luhmann-2016-factors",
+            "finding": "one-factor-of-three",
+            "relation": "nuances"
+          },
+          {
+            "source": "zerwas-2024-concern",
+            "finding": "concern",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c2",
+        "direction": "mixed",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "mauss-2011-seeking",
+            "finding": "induced",
+            "relation": "supports"
+          },
+          {
+            "source": "kim-2018-time",
+            "finding": "less-happiness",
+            "relation": "supports"
+          },
+          {
+            "source": "mauss-2012-lonely",
+            "finding": "induced-loneliness",
+            "relation": "supports"
+          },
+          {
+            "source": "mcguirk-2018-rumination",
+            "finding": "rumination-after-failure",
+            "relation": "supports"
+          },
+          {
+            "source": "ferguson-2012-trying",
+            "finding": "trying-helps",
+            "relation": "contradicts"
+          },
+          {
+            "source": "ferguson-2012-trying",
+            "finding": "two-weeks",
+            "relation": "contradicts"
+          },
+          {
+            "source": "wegner-1993-mood",
+            "finding": "works-without-load",
+            "relation": "contradicts"
+          },
+          {
+            "source": "lyubomirsky-2011-will",
+            "finding": "will-helps",
+            "relation": "contradicts"
+          },
+          {
+            "source": "pavani-2025-goals",
+            "finding": "next-day",
+            "relation": "contradicts"
+          },
+          {
+            "source": "wegner-1993-mood",
+            "finding": "backfires-under-load",
+            "relation": "nuances"
+          },
+          {
+            "source": "ferguson-2012-trying",
+            "finding": "only-positive-music",
+            "relation": "nuances"
+          },
+          {
+            "source": "huang-2024-valuing",
+            "finding": "no-later-change",
+            "relation": "nuances"
+          },
+          {
+            "source": "rohrer-2018-social",
+            "finding": "per-se-neutral",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c3",
+        "direction": "contradicts",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "zerwas-2024-concern",
+            "finding": "concern",
+            "relation": "contradicts"
+          },
+          {
+            "source": "luhmann-2016-factors",
+            "finding": "one-factor-of-three",
+            "relation": "contradicts"
+          },
+          {
+            "source": "huang-2024-valuing",
+            "finding": "higher-well-being",
+            "relation": "contradicts"
+          },
+          {
+            "source": "pavani-2025-goals",
+            "finding": "next-day",
+            "relation": "contradicts"
+          },
+          {
+            "source": "rohrer-2018-social",
+            "finding": "social-pursuits",
+            "relation": "contradicts"
+          },
+          {
+            "source": "hansenne-2021-replication",
+            "finding": "prioritizing-positivity",
+            "relation": "contradicts"
+          },
+          {
+            "source": "sahdra-2025-striving",
+            "finding": "worry-dampens",
+            "relation": "nuances"
+          },
+          {
+            "source": "sahdra-2025-striving",
+            "finding": "striving-two-groups",
+            "relation": "nuances"
+          },
+          {
+            "source": "huang-2024-valuing",
+            "finding": "no-later-change",
+            "relation": "nuances"
+          },
+          {
+            "source": "mauss-2011-seeking",
+            "finding": "disappointment",
+            "relation": "nuances"
+          },
+          {
+            "source": "kim-2018-time",
+            "finding": "less-happiness",
+            "relation": "nuances"
+          },
+          {
+            "source": "mauss-2012-lonely",
+            "finding": "induced-loneliness",
+            "relation": "nuances"
+          },
+          {
+            "source": "mcguirk-2018-rumination",
+            "finding": "rumination-after-failure",
+            "relation": "nuances"
+          }
+        ]
+      }
+    ],
+    "nuance": "c3",
+    "onScreen": "huang-2024-valuing",
+    "searched": {
+      "on": "2026-11-22",
+      "queries": [
+        {
+          "base": "europepmc",
+          "query": "\"valuing happiness\"",
+          "results": 51
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"valuing happiness\" OR \"pursuit of happiness\" OR \"pursuing happiness\" OR \"seeking happiness\") AND (meta-analysis OR \"systematic review\")",
+          "results": 183
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"valuing happiness\" OR \"pursuit of happiness\" OR \"pursuing happiness\" OR \"seeking happiness\" OR \"trying to be happy\") AND (replication OR replicate OR preregistered OR \"registered report\")",
+          "results": 122
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"value happiness\" OR \"valuing happiness\" OR \"happiness goal\" OR \"pursue happiness\" OR \"try to feel happy\" OR \"trying to feel happy\") AND (experiment OR experimental OR induced OR induction OR manipulation)",
+          "results": 135
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"valuing happiness\" OR \"pursuit of happiness\" OR \"pursuing happiness\" OR \"trying to be happy\") AND (culture OR cultural OR \"cross-cultural\" OR moderator OR interdependent)",
+          "results": 649
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"valuing happiness\" OR \"pursuit of happiness\" OR \"pursuing happiness\" OR \"happiness seeking\" OR \"ideal affect\" OR \"prioritizing positivity\") AND (Egypt OR Egyptian OR Arab OR Arabic OR Saudi OR Jordan OR Lebanon OR Turkey OR Turkish OR Iran OR Iranian OR \"Middle East\" OR Muslim)",
+          "results": 207
+        },
+        {
+          "base": "crossref",
+          "query": "meta-analysis valuing happiness pursuit of happiness well-being (first 20 read)",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "replication valuing happiness paradoxical effects Mauss experiment (first 20 read)",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "cross-cultural valuing happiness moderator interdependent well-being (first 20 read)",
+          "results": 20
+        },
+        {
+          "base": "openalex",
+          "query": "valuing happiness meta-analysis (first 20 read)",
+          "results": 20
+        },
+        {
+          "base": "openalex",
+          "query": "title_and_abstract.search:\"valuing happiness\", sorted by citations",
+          "results": 164
+        },
+        {
+          "base": "openalex",
+          "query": "title_and_abstract.search:\"pursuit of happiness\" paradox well-being",
+          "results": 42
+        },
+        {
+          "base": "openalex",
+          "query": "title_and_abstract.search:\"pursuing happiness\" well-being",
+          "results": 150
+        },
+        {
+          "base": "openalex",
+          "query": "replication valuing happiness induction Mauss paradoxical effects (first 15 read)",
+          "results": 15
+        },
+        {
+          "base": "openalex",
+          "query": "seeking happiness experiment induced value happiness disappointment replication (first 15 read)",
+          "results": 15
+        },
+        {
+          "base": "openalex",
+          "query": "trying to be happier really can work experimental (first 10 read)",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "valuing happiness Arab Egypt Muslim well-being (first 15 read)",
+          "results": 15
+        },
+        {
+          "base": "openalex",
+          "query": "works citing Mauss et al. 2011 published 2023-2026",
+          "results": 125
+        },
+        {
+          "base": "openalex",
+          "query": "works citing Mauss et al. 2011 whose title or abstract says meta-analysis, replication or preregistered",
+          "results": 23
+        },
+        {
+          "base": "openalex",
+          "query": "works citing Huang 2024",
+          "results": 16
+        },
+        {
+          "base": "crossref",
+          "query": "filter=updates on the 11 DOIs of the verdict (retractions, corrections, expressions of concern)",
+          "results": 1
+        },
+        {
+          "base": "europepmc",
+          "query": "TITLE:\"ironic processes in the mental control of mood\"",
+          "results": 1
+        },
+        {
+          "base": "crossref",
+          "query": "happiness goals savoring intense happiness daily diary Pavani (first 8 read)",
+          "results": 8
+        },
+        {
+          "base": "openalex",
+          "query": "One Size Does Not Make All Happy idionomic striving positive states experience sampling (first 3 read)",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) replication paradoxical effects of valuing happiness preregistered (first 20 read)",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) Ironic processes in the mental control of mood and mood-related thought (by title)",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) pursuit and assessment of happiness can be self-defeating (by title)",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) ironic effects trying to be happy mood control cognitive load paradoxical",
+          "results": 15
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) systematic review strength of evidence most commonly recommended happiness strategies",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) valuing happiness culture interdependence well-being cross-cultural",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) Becoming happier takes both a will and a proper way experimental longitudinal intervention boost well-being (by title)",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) Meta-analyses of positive psychology interventions the effects are much smaller than previously reported (by title)",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) Effectiveness of positive psychology interventions systematic review and meta-analysis",
+          "results": 8
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) aversion to happiness across cultures review",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) cross-cultural validation fear of happiness scale across 14 national groups",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) valuing happiness Arab Egypt Muslim well-being depression",
+          "results": 15
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) character strengths intervention happiness depression Saudi Arabia replication Seligman 2005",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) Prioritizing positivity: an effective approach to pursuing happiness (by title)",
+          "results": 3
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) experimentally induced to value happiness reacted less positively happy film",
+          "results": 10
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent) (\"valuing happiness\" OR \"value happiness\" OR \"pursuit of happiness\" OR \"pursuing happiness\" OR \"happiness seeking\" OR \"seeking happiness\") AND (\"meta-analysis\" OR \"meta-analytic\" OR \"systematic review\" OR \"multi-lab\" OR \"many labs\" OR \"registered report\")",
+          "results": 159
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent) (\"valuing happiness\" OR \"happiness values\" OR \"motivation to pursue happiness\") AND (replication OR replicate OR \"failed to replicate\" OR \"did not replicate\" OR preregistered OR \"pre-registered\")",
+          "results": 23
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent) (\"ironic process\" OR \"ironic processes\" OR \"ironic effect\" OR \"ironic effects\") AND (mood OR happiness OR happy OR \"positive affect\") AND (replication OR \"meta-analysis\" OR \"cognitive load\")",
+          "results": 51
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent) (\"valuing happiness\" OR \"pursuit of happiness\" OR \"pursuing happiness\" OR \"happiness goal\" OR \"fear of happiness\" OR \"aversion to happiness\" OR \"ideal affect\" OR \"prioritizing positivity\" OR \"happiness beliefs\" OR \"lay beliefs about happiness\" OR \"interdependent happiness\") AND (Egypt OR Egyptian OR Arab OR Arabic OR Saudi OR Emirati OR Kuwait OR Qatar OR Jordan OR Lebanon OR Tunisia OR Morocco OR Algeria OR Muslim OR Islam OR Iran OR Turkey)",
+          "results": 391
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent) (\"positive psychology intervention\" OR \"positive psychology interventions\" OR \"happiness intervention\" OR \"gratitude intervention\" OR \"well-being intervention\") AND (Egypt OR Egyptian OR Arab OR Saudi OR Emirati OR Jordan OR Lebanon OR Kuwait OR Qatar OR Oman OR Tunisia OR Morocco OR Algeria) AND (randomized OR randomised OR controlled OR experiment OR \"meta-analysis\")",
+          "results": 173
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent) (\"pursuit of happiness\" OR \"pursuing happiness\" OR \"seeking happiness\" OR \"happiness seeking\" OR \"valuing happiness\" OR \"trying to be happy\" OR \"try to be happy\" OR \"trying to feel happy\" OR \"happiness goal\" OR \"happiness goals\") AND (\"randomly assigned\" OR randomized OR experiment OR experimental OR manipulation OR manipulated) AND PUB_YEAR:[2012 TO 2026]",
+          "results": 377
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) works citing Mauss 2011 + title_and_abstract.search: replication|replicate|preregistered|pre-registered|registered report|failed to replicate",
+          "results": 22
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) works citing Mauss 2011 + experiment|experimentally|induced|induction|manipulated|randomly assigned",
+          "results": 76
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) works citing Wegner 1993 + replication|replicate|failed to replicate|preregistered|meta-analysis",
+          "results": 20
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) \"valuing happiness\"|\"value happiness\"|\"pursuit of happiness\"|\"pursuing happiness\"|\"happiness seeking\"|\"motivation to pursue happiness\" + meta-analysis|meta-analytic|systematic review|scoping review",
+          "results": 60
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) works citing Mauss 2011 published since 2024-06-01",
+          "results": 93
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) title replication|replicating|replicate|registered report + title happiness|happy",
+          "results": 73
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) \"induced to value happiness\"|\"valuing happiness manipulation\"|\"manipulation of valuing happiness\"|\"value happiness\" experiment|\"emphasizing the importance of happiness\"",
+          "results": 7
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) works citing Huang 2024",
+          "results": 16
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) filter=updates on the 11 DOIs of the first draft and on each counter-evidence DOI",
+          "results": 4
+        }
+      ],
+      "notFound": [
+        "no meta-analysis or systematic review of valuing or pursuing happiness and well-being (both agents, three bases)",
+        "no direct, preregistered or multi-lab replication of Mauss et al. 2011 Study 2: only an undergraduate thesis of 19 people, another task, null (Coles 2015, no DOI); Hansenne 2021 and Mahmoodi Kahriz 2019 replicate correlations only",
+        "no replication of Wegner et al. 1993 on mood",
+        "no Egyptian, Arab or Middle Eastern / North African sample on valuing or pursuing happiness: a few Middle Eastern and Mauritanian students pooled, never analysed apart, in Mahmoodi Kahriz 2019; only happiness-program trials in Arab countries",
+        "the text of Mauss 2011's correction (APA 403) and the journal version of Huang 2024 (figures checked only against the preprint)",
+        "not kept, no abstract anywhere: Gentzler 2019, Wong 2019, Liang 2026 (interdependence as moderator), the Nature Reviews Psychology 2025 review; Ludwigs 2017 (abstract ambiguous)",
+        "not kept: Schooler et al. 2003 (chapter, no result in its abstract); Kim 2025 (rests on ego depletion, a contested effect)"
+      ]
+    },
+    "counterEvidence": {
+      "found": [
+        {
+          "source": "wegner-1993-mood",
+          "note": "contradicts c2: trying to make one's mood better works with a free mind; only under mental load does mood move the opposite way. A condition, not a law; no replication on mood found"
+        },
+        {
+          "source": "lyubomirsky-2011-will",
+          "note": "contradicts c2: students who wanted to become happier, and kept the effort, gained more from happiness activities (will not randomized; small effects; the authors design these activities)"
+        },
+        {
+          "source": "pavani-2025-goals",
+          "note": "contradicts c1, c2 and c3: in 100 French women, wanting more happiness for tomorrow went with more intense happiness the next day, through savoring (diary, association; abstract read on HAL)"
+        },
+        {
+          "source": "mauss-2012-lonely",
+          "note": "supports c2 in the book's sense (« a negative experience »): induced valuing of happiness raised loneliness; same lab as Mauss 2011, no replication"
+        },
+        {
+          "source": "mcguirk-2018-rumination",
+          "note": "supports c2: stressing the importance of happiness raised rumination after a failure; independent lab, no replication"
+        },
+        {
+          "source": "takai-2023-japan",
+          "note": "against a cultural switch: in Japan valuing happiness goes with more rumination, once more strongly among the most interdependent. Ford 2015 cannot become « in Asia it is the reverse »"
+        },
+        {
+          "source": "sahdra-2025-striving",
+          "note": "offered against « c3 contradicted »; not taken: its « experiential attachment » items are worry items (« I worried about my positive emotions fading », full text). Kept as a nuance: doing one's best to stay happy helped one group, harmed the other only through worry"
+        },
+        {
+          "source": "huang-2024-valuing",
+          "note": "the card: r = .24 was a random-intercept correlation from the preprint (dropped); the plain wish is followed by a little more negative affect as well as positive (exploratory); one item near its ceiling (mean 6.1 of 7)"
+        },
+        {
+          "source": "mauss-2011-seeking",
+          "note": "fragile main support of c2: about 17 women per cell, effects at p = .02 to .05; its correction unread (APA 403), three concordant clues point to the title; Study 2 figures from the author manuscript"
+        },
+        {
+          "doi": "10.1016/j.tics.2026.03.001",
+          "note": "Mauss & Ford 2026, narrative review by the same lab: the consequences depend on how people pursue happiness (five aspects, not only worry): backs the nuance « it is how you chase it »"
+        },
+        {
+          "doi": "10.1080/17439760.2026.2651079",
+          "note": "Catalino, Tov & Hoorn 2026: five preregistered studies, prioritizing positivity goes with more well-being and more hypomania; not added (Hansenne 2021 already carries it)"
+        },
+        {
+          "doi": "10.1177/1948550611419677",
+          "note": "Conner & Reid 2011: rating one's happiness often does not lower it on average, but does among the more depressed: no takeaway that says « watch your happiness »"
+        },
+        {
+          "doi": "10.1371/journal.pone.0216588",
+          "note": "White, Uttl & Holder 2019: programs to become happier help a little once small-sample bias is corrected (r ≈ .10): indirect against c2"
+        },
+        {
+          "doi": "10.1007/s12144-021-02080-0",
+          "note": "Lambert et al. 2021: the only Arab trial found (120 Emirati students): a 6-week happiness program raised positive emotion, nothing else, no backfire; indirect"
+        },
+        {
+          "doi": "10.1111/aphw.12391",
+          "note": "Basurrah et al. 2022: positive psychology programs in 10 Arab countries appear effective, with risk of bias (systematic review): applicability, indirect"
+        },
+        {
+          "doi": "10.1007/s11482-025-10462-w",
+          "note": "Lou et al. 2025, 43 countries: more religious cultures idealize happiness less; the premise « always wanting more » may fit an Egyptian audience less"
+        },
+        {
+          "doi": "10.3389/fpsyg.2022.949615",
+          "note": "Valdivia-Salas et al. 2022, 168 Spanish women, cross-sectional: valuing happiness goes with more negative affect; weak support for c1, not added"
+        }
+      ],
+      "conclusion": "⚖️ low holds; nothing reaches moderate. Taken: c2 rebalanced (Wegner, Lyubomirsky, Pavani against; Mauss 2012, McGuirk for), still mixed; culture is no switch (Takai); card line corrected. Not taken: c3 « mixed »: Sahdra's attachment items are worry items, Huang's cost is tiny and exploratory. c3 stays contradicted, low; the nuance becomes « it is how you chase it »."
+    },
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "skeptical",
+        "delivery": "a small pause before the answer"
+      },
+      {
+        "kind": "line",
+        "id": "l2",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "calm, factual; the same weight on « مرة » and « ومرة »",
+        "claims": [
+          "c1",
+          "c2"
+        ]
+      }
+    ],
+    "nuanceSpoken": true,
+    "applicability": "written"
+  },
+  "takeaway": {
+    "claims": [
+      "c3"
+    ],
+    "strength": "low-risk-suggestion",
+    "orientation": true,
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "warm",
+        "delivery": "simple, a suggestion not an order; warm on « شاركها »",
+        "look": "viewer"
+      },
+      {
+        "kind": "action",
+        "id": "a1",
+        "who": "nour",
+        "gesture": "point",
+        "emotion": "happy",
+        "at": {
+          "line": "l1",
+          "word": 5
+        },
+        "seconds": 1.0
+      }
+    ]
+  },
+  "variation": {
+    "pin": {},
+    "avoid": [
+      "a romantic beach: Nour and Karim are colleagues on a work trip, other colleagues around, daylight, never a sunset for two",
+      "Nour as fussy or « never satisfied » (a gender cliché): she is excited and tries too hard",
+      "selfies, photos or social-media comparison: the meter is her checking her own happiness",
+      "swimwear or bodies on show: dressed, sitting on the sand"
+    ]
+  }
+}
