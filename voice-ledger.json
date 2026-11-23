@@ -107,6 +107,33 @@
       "request": "karim",
       "voice": "karim=Achird",
       "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-23T08:53:51.682Z",
+      "day": "2026-11-23",
+      "episode": "money-happiness",
+      "lang": "ar-EG",
+      "request": "adasa",
+      "voice": "adasa=Iapetus",
+      "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-23T08:54:42.302Z",
+      "day": "2026-11-23",
+      "episode": "money-happiness",
+      "lang": "ar-EG",
+      "request": "karim",
+      "voice": "karim=Achird",
+      "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-23T08:55:25.892Z",
+      "day": "2026-11-23",
+      "episode": "money-happiness",
+      "lang": "ar-EG",
+      "request": "nour",
+      "voice": "nour=Leda",
+      "model": "gemini-3.8-flash-tts"
     }
   ]
 }
