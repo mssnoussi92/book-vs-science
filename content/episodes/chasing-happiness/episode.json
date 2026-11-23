@@ -155,7 +155,7 @@
           "speaker": "adasa",
           "emotion": "neutral",
           "intensity": 0.4,
-          "delivery": "setting the scene, light; a small smile on « للبحر »",
+          "delivery": "setting the scene, light; a small smile on « رحلة الشركة »",
           "voice": "over"
         },
         {
@@ -224,7 +224,7 @@
             "h1"
           ],
           "caption": true,
-          "seconds": 1.2
+          "seconds": 1.8
         },
         {
           "kind": "action",
@@ -273,7 +273,7 @@
           "speaker": "nour",
           "emotion": "happy",
           "intensity": 0.4,
-          "delivery": "content, not thrilled; pointing to the others further along the beach",
+          "delivery": "content, not thrilled; « حلو » without « بس »; points to the colleagues",
           "gesture": "point",
           "look": "other"
         }
@@ -955,7 +955,7 @@
         "id": "l1",
         "speaker": "adasa",
         "emotion": "warm",
-        "delivery": "simple, a suggestion not an order; warm on « شاركها »",
+        "delivery": "simple, a suggestion not an order; « زي نور » light, warm on « واقعد مع الناس »",
         "look": "viewer"
       },
       {
@@ -978,7 +978,8 @@
       "a romantic beach: Nour and Karim are colleagues on a work trip, other colleagues around, daylight, never a sunset for two",
       "Nour as fussy or « never satisfied » (a gender cliché): she is excited and tries too hard",
       "selfies, photos or social-media comparison: the meter is her checking her own happiness",
-      "swimwear or bodies on show: dressed, sitting on the sand"
+      "swimwear or bodies on show: dressed, sitting on the sand",
+      "Nour and Karim alone on the sand: the colleagues are always in the frame (a group under an umbrella, on the right, where Nour points)"
     ]
   }
 }

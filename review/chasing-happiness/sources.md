@@ -256,7 +256,7 @@ Le 2026-11-22 :
 - **Type** : journal-article · Psychologica Belgica
 - **Avis** : aucun
 - **Rétractation** : non
-- **Résumé lu chez** : europepmc (empreinte 0809925db9de…)
+- **Résumé lu chez** : openalex (empreinte 0809925db9de…)
 
 - ✓ **exists** : known by Crossref and OpenAlex
 - ✓ **not-a-notice** : not a correction, comment or other notice
@@ -266,7 +266,7 @@ Le 2026-11-22 :
 - ✓ **type** : Crossref type « journal-article »
 - ✓ **retraction** : no retraction, withdrawal, removal or expression of concern
 - ✓ **corrections** : no correction or erratum
-- ✓ **abstract** : read from europepmc
+- ✓ **abstract** : read from openalex
 - ✓ **support:prioritizing-positivity** : whole sentence of the abstract; no role cue
 - ✓ **support:valuing-partly-worse** : whole sentence of the abstract; cues: result
 

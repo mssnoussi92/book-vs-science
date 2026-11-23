@@ -44,6 +44,57 @@ const Office: React.FC<{ f: number; w: number; h: number; p: number }> = ({ f, w
   );
 };
 
+/** A colleague in the background: an anonymous person sitting on the mat, dressed, drawn small and soft (never a
+ *  character of the cast, never a face to read). */
+const Sitter: React.FC<{ x: number; y: number; shirt: string; f: number; i: number }> = ({ x, y, shirt, f, i }) => {
+  const nod = Math.sin(f / (17 + i * 3) + i) * 3;
+  return (
+    <g transform={`translate(${x} ${y})`} stroke={INK} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round">
+      <path d="M -26 0 C -26 -40 26 -40 26 0 Z" fill={shirt} />
+      <path d="M -30 0 L -48 12 M 30 0 L 48 12" fill="none" />
+      <circle cx={0} cy={-54 + nod} r={20} fill="#c98f5f" />
+      <path d={`M -20 ${-60 + nod} C -14 ${-80 + nod} 14 ${-80 + nod} 20 ${-60 + nod}`} fill={i % 2 ? "#2b2420" : "#4a3428"} />
+    </g>
+  );
+};
+
+/** The beach of a company trip: full daylight, the sea's horizon, the sand, a big umbrella and the colleagues sitting on
+ *  a mat further back, between Nour and Karim, where she points (chasing-happiness: never Nour and Karim alone on the sand, never a sunset, no
+ *  swimwear). */
+const Beach: React.FC<{ f: number; w: number; h: number }> = ({ f, w, h }) => {
+  const HORIZON = 860;
+  const wave = (k: number) => Array.from({ length: 12 }, (_, i) => `${i === 0 ? "M" : "L"} ${i * 100 - 40 + ((f * (0.8 + k * 0.3)) % 100)} ${HORIZON + 40 + k * 70 + Math.sin(i + f / 20) * 6}`).join(" ");
+  return (
+    <g>
+      <rect x={0} y={0} width={w} height={HORIZON} fill="#bfe3f2" />
+      <circle cx={860} cy={240} r={70} fill="#ffe08a" stroke={INK} strokeWidth={6} />
+      {[0, 1].map((k) => { const x = ((f * (0.4 + k * 0.2) + k * 500) % (w + 300)) - 150; return <g key={k}><ellipse cx={x} cy={170 + k * 120} rx={80} ry={28} fill="#fff" opacity={0.9} /><ellipse cx={x + 55} cy={152 + k * 120} rx={52} ry={24} fill="#fff" opacity={0.9} /></g>; })}
+      <rect x={0} y={HORIZON} width={w} height={FLOOR - HORIZON + 60} fill="#4f9fc4" />
+      <path d={wave(0)} stroke="#ffffff" strokeWidth={6} fill="none" opacity={0.8} />
+      <path d={wave(1)} stroke="#ffffff" strokeWidth={6} fill="none" opacity={0.6} />
+      <path d={`M 0 ${FLOOR - 300} C 300 ${FLOOR - 330} 700 ${FLOOR - 280} ${w} ${FLOOR - 320} L ${w} ${h} L 0 ${h} Z`} fill="#ecd3a2" />
+      <rect x={0} y={FLOOR - 8} width={w} height={14} fill={INK} opacity={0.25} />
+      {/* the colleagues' mat under the umbrella, further back between Nour and Karim (where she points), a cooler, a ball */}
+      <g transform={`translate(830 ${FLOOR - 250}) scale(0.72)`}>
+        <path d="M 0 -330 L 0 40" stroke={INK} strokeWidth={9} />
+        <path d="M -190 -300 Q 0 -420 190 -300 Z" fill="#e07a3a" stroke={INK} strokeWidth={7} strokeLinejoin="round" />
+        <path d="M -63 -337 L 0 -300 M 63 -337 L 0 -300" stroke={INK} strokeWidth={5} />
+        <path d="M -200 20 L 200 20 L 180 60 L -220 60 Z" fill="#2f8f8a" stroke={INK} strokeWidth={6} strokeLinejoin="round" />
+        <Sitter x={-140} y={20} shirt="#8f6bb3" f={f} i={0} />
+        <Sitter x={-60} y={22} shirt="#d9a441" f={f} i={1} />
+        <Sitter x={30} y={20} shirt="#5f9e5a" f={f} i={2} />
+        <Sitter x={115} y={22} shirt="#c4544b" f={f} i={3} />
+        <rect x={150} y={-10} width={60} height={42} rx={6} fill="#ffffff" stroke={INK} strokeWidth={5} />
+        <circle cx={-230} cy={40} r={22} fill="#ffffff" stroke={INK} strokeWidth={5} />
+        <path d="M -252 40 Q -230 30 -208 40" stroke="#c4544b" strokeWidth={5} fill="none" />
+      </g>
+    </g>
+  );
+};
+
+/** The set of the episode: the place of its scene, for the whole video (the narrator speaks from the same world). */
+const SETS: Record<string, React.FC<{ f: number; w: number; h: number; p: number }>> = { office: Office, beach: Beach };
+
 /** The camera: a slow push that never stops, a closer frame on the one who speaks in a scene. */
 const camera = (f: number, frames: number, focusX: number, close: boolean) => {
   const k = 1.02 + 0.06 * (f / frames) + (close ? 0.18 : 0);
@@ -133,10 +184,15 @@ const nuanceHeld = (p: PartProps) => {
   return !!n && p.f >= n.f0 && p.f < n.f1 && !lineAt(p.tl, p.f);
 };
 
+const Set: React.FC<{ tl: PartProps["tl"]; f: number; w: number; h: number }> = ({ tl, f, w, h }) => {
+  const S = SETS[tl.parts.find((x) => x.kind === "scene")?.setting ?? "office"] ?? Office;
+  return <S f={f} w={w} h={h} p={tl.variation.palette} />;
+};
+
 export const style: StyleModule = {
   id: "cartoon",
   theme: { ink: INK, paper: "#f6f3ec", accent: "#e0a83a", card: "#fffaf0", cardInk: INK },
-  Background: ({ tl, f, w, h }) => <g transform={`translate(${540 - 540 * (1 + 0.03 * f / tl.frames)} ${960 - 960 * (1 + 0.03 * f / tl.frames)}) scale(${1 + 0.03 * f / tl.frames})`}><Office f={f} w={w} h={h} p={tl.variation.palette} /></g>,
+  Background: ({ tl, f, w, h }) => <g transform={`translate(${540 - 540 * (1 + 0.03 * f / tl.frames)} ${960 - 960 * (1 + 0.03 * f / tl.frames)}) scale(${1 + 0.03 * f / tl.frames})`}><Set tl={tl} f={f} w={w} h={h} /></g>,
   parts: {
     hook: (p) => {
       const l = lineAt(p.tl, p.f);
