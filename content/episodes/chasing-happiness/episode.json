@@ -64,7 +64,7 @@
       "type": "confession",
       "spokenBy": "nour",
       "firstFrame": "close-up",
-      "emotion": "amused",
+      "emotion": "tired",
       "claims": [],
       "beats": [
         {
@@ -78,7 +78,7 @@
               "level": 2
             }
           },
-          "emotion": "amused",
+          "emotion": "tired",
           "look": "viewer",
           "seconds": 2.4
         }
@@ -242,7 +242,7 @@
           "speaker": "adasa",
           "emotion": "warm",
           "intensity": 0.5,
-          "delivery": "announcing the replay, light; a small stress on « من غير عدّاد »",
+          "delivery": "announcing the replay, light; a small stress on « مش هتقيس »",
           "voice": "over"
         },
         {
@@ -340,7 +340,7 @@
         "id": "l2",
         "speaker": "adasa",
         "emotion": "warm",
-        "delivery": "the book's reason made concrete; « أنا مبسوط؟ » as a little question to oneself",
+        "delivery": "the book's own example, warm on « بيحس بالوحدة »",
         "look": "viewer"
       }
     ]
@@ -933,9 +933,18 @@
         "id": "l2",
         "speaker": "adasa",
         "emotion": "neutral",
-        "delivery": "calm, factual; the same weight on « مرة » and « ومرة »",
+        "delivery": "calm, factual; the big panel first, « في المتوسط » plain",
         "claims": [
-          "c1",
+          "c1"
+        ]
+      },
+      {
+        "kind": "line",
+        "id": "l3",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "« بس » turns it; the experiment told simply, a light stress on « أقل »",
+        "claims": [
           "c2"
         ]
       }
@@ -955,7 +964,7 @@
         "id": "l1",
         "speaker": "adasa",
         "emotion": "warm",
-        "delivery": "simple, a suggestion not an order; « زي نور » light, warm on « واقعد مع الناس »",
+        "delivery": "simple, a suggestion not an order; « زي نور » light, warm on « اللي بتحبهم »",
         "look": "viewer"
       },
       {
@@ -966,7 +975,7 @@
         "emotion": "happy",
         "at": {
           "line": "l1",
-          "word": 5
+          "word": 6
         },
         "seconds": 1.0
       }
