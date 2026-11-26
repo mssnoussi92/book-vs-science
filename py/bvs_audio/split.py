@@ -99,7 +99,8 @@ def main() -> None:
     turns = take["turns"]
     x, rate = read(a.wav)
     if a.bounds:
-        pairs = [tuple(float(v) for v in b.split("-")) for b in a.bounds.split(",")]
+        # a bound past the end of the take is the end of the take
+        pairs = [(float(s0), min(float(e0), len(x) / rate - 0.01)) for s0, e0 in (b.split("-") for b in a.bounds.split(","))]
         if len(pairs) != len(turns):
             raise SystemExit(f"{len(pairs)} bounds for {len(turns)} lines")
         auto = split(x, rate, len(turns))
