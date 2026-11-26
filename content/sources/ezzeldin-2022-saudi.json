@@ -12,7 +12,7 @@
   "design": "experiment",
   "designSetBy": "reviewer",
   "n": 66,
-  "population": "66 secondary school students in Wadi Al-Dawasir, Riyadh region, Saudi Arabia, organic chemistry",
+  "population": "66 final-year secondary students (32 vs 34, one school each), Wadi Al-Dawasir, Riyadh region, Saudi Arabia; organic chemistry on Microsoft Teams, 2020-2021",
   "mena": true,
   "findings": [
     {
@@ -27,10 +27,11 @@
     }
   ],
   "limits": [
-    "66 students in 2 groups: probably whole classes; random assignment not stated in the abstract",
-    "no effect size in the abstract; the control group's teaching not described",
-    "a single author, a journal whose standing is unknown to us: high risk of bias",
-    "the only sample from the Arab world found for this idea, and it concerns school teaching only"
+    "quasi-experiment (the author's « semi-experimental » design): one school per group, schools drawn, not students; condition, school and teacher are confounded",
+    "pretest results not reported; the control group's teaching not described; productive failure mixed with a digital inquiry environment",
+    "eta squared about 0.8 (full text), roughly d = 3.7: ten times the mean of the meta-analysis, implausible for a school intervention",
+    "text and tables disagree on which sub-scores are significant; one author, no preregistration, no cluster analysis",
+    "the only Arab sample found for this idea, but too weak to carry « it works in the Arab world »: at most « a small Saudi study points the same way »"
   ],
   "acknowledged": []
 }

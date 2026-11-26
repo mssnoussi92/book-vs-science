@@ -61,6 +61,16 @@
       "name": "support:generalizable",
       "result": "pass",
       "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:eight-in-ten",
+      "result": "pass",
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-26: accepted manuscript (WRAP 108300), Results, meta-analysis paragraph"
+    },
+    {
+      "name": "support:disputed-rare",
+      "result": "pass",
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-26: accepted manuscript (WRAP 108300), Results, disputed vs non-disputed answers"
     }
   ],
   "found": {
@@ -78,6 +88,6 @@
   "retracted": false,
   "abstractFrom": "openalex",
   "abstractSha256": "86f247349ac1844cee5679e0d9435a6af3667de501d0aea8b501d83cb76af240",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

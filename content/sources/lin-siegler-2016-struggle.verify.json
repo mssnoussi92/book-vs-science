@@ -1,0 +1,76 @@
+{
+  "doi": "10.1037/edu0000092",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Even Einstein struggled: Effects of learning about great scientists’ struggles on high school students’ motivation to learn science. » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Lin-Siegler » matches; 4/4 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2016, found 2016"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:struggle-stories",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:low-performers",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Even Einstein struggled: Effects of learning about great scientists’ struggles on high school students’ motivation to learn science.",
+    "firstAuthor": "Lin-Siegler",
+    "years": [
+      2016
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Educational Psychology"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "730a2499929b42d4e5e421c3ff516bc61a9a7b70cb3759a25ee842705b701fd4",
+  "checkedOn": "2026-11-26",
+  "tool": "bvs-sources@0.1"
+}

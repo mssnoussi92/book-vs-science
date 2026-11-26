@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "alshammari-2026-saudi",
+  "doi": "10.1038/s41598-026-44548-8",
+  "declared": {
+    "title": "The effects of informal digital learning, intrinsic motivation, and grit on online learning effort regulation and English achievement",
+    "firstAuthor": "Alshammarı",
+    "authors": [
+      "Alshammarı",
+      "Alrashidi"
+    ],
+    "year": 2026,
+    "venue": "Scientific Reports",
+    "foundIn": "reports/choose-your-struggle/counter-evidence.md (card 20); OpenAlex search « Alshammari Alrashidi informal digital learning English intrinsic motivation grit Saudi » (2026-11-26)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "n": 218,
+  "population": "218 Saudi students of English as a foreign language at the University of Ha'il, one online questionnaire",
+  "mena": true,
+  "findings": [
+    {
+      "id": "effort",
+      "text": "Intrinsic motivation went with more regulation of effort in online learning, while grit did not",
+      "support": {
+        "sentence": "The results indicated that IDLE and intrinsic motivation had significant positive effects on OLER, while grit did not significantly influence OLER.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "achievement",
+      "text": "English achievement went with grit, not with intrinsic motivation",
+      "support": {
+        "sentence": "For English achievement, grit had a significant positive effect, while IDLE and intrinsic motivation had insignificant effects.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "one questionnaire at one time: the « effects » are paths of a structural model, not causes",
+    "one university, students of English learning online; how achievement was measured is not in the abstract (full text not read)",
+    "an Arab sample (Saudi Arabia)"
+  ]
+}

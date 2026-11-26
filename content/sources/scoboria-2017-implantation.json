@@ -13,12 +13,12 @@
   "designSetBy": "reviewer",
   "n": 423,
   "k": 8,
-  "population": "adults from 8 published memory implantation studies, told about a childhood event that never happened; countries not listed in the abstract",
+  "population": "423 students (mean age 20.7) from 8 implantation studies in Canada, New Zealand, the US and the UK, told of a childhood event that never happened",
   "mena": false,
   "findings": [
     {
       "id": "thirty-percent",
-      "text": "Coded with one common scheme, about 30% of people developed a false memory of the suggested childhood event, and another 23% accepted it to some degree",
+      "text": "Coded with one common scheme, 30.4% of cases counted as false memories, partial ones included, and another 23% accepted the event to some degree",
       "support": {
         "sentence": "Using this scheme, 30.4% of cases were classified as false memories and another 23% were classified as having accepted the event to some degree.",
         "role": "result",
@@ -28,6 +28,17 @@
         "metric": "percent",
         "value": 30.4,
         "correctedForBias": false
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "full-robust",
+      "text": "About 1 in 5 had a full or robust false memory (10.8% full, 11.1% robust); 8.5% had only a partial one",
+      "support": {
+        "sentence": "When we categorized the 423 memory reports according to the scheme described above (see Figure 1), 11.1% of the sample met the criteria for Robust memory, 10.8% met the criteria for Full memory, and 8.5% met the criteria for partial false memory, resulting in a combined false memory rate of 30.5%.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-26: accepted manuscript (WRAP 83729), Results, False memory formation across studies"
       },
       "kind": "causal"
     },
@@ -48,10 +59,11 @@
     }
   ],
   "limits": [
-    "a mega-analysis (individual reports recoded), not a classic meta-analysis: 8 studies, several by its own authors (Wade, Lindsay, Strange, Ost, Hyman)",
-    "« false memory » is the coders' judgement of transcripts, not the participants' own rating (Brewin & Andrews 2017)",
+    "a mega-analysis (individual reports recoded), not a classic meta-analysis: 8 of 12 published studies (transcripts of 4 were lost), several by its own authors",
+    "« false memory » is the coders' judgement of transcripts, partial ones included; full + robust (about 22%) match the « full » memories of earlier studies",
+    "the 46.1% rests on 3 studies and 89 people (against 26.3% in the other conditions, full text)",
     "the pooled studies include some negative events; this episode keeps to harmless everyday events",
-    "countries of the 8 studies not given in the abstract (full text not read); no sample from the Middle East or North Africa is known"
+    "university students in four Western countries; no sample from the Middle East or North Africa"
   ],
   "acknowledged": []
 }

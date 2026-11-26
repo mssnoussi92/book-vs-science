@@ -1,0 +1,59 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "woolley-2025-resolutions",
+  "doi": "10.1177/09567976251350960",
+  "declared": {
+    "title": "Adherence to Personal Resolutions Across Time, Culture, and Goal Domains",
+    "firstAuthor": "Woolley",
+    "authors": [
+      "Woolley",
+      "Giurge",
+      "Fishbach"
+    ],
+    "year": 2025,
+    "venue": "Psychological Science",
+    "foundIn": "reports/choose-your-struggle/counter-evidence.md (card 15); Crossref search « Woolley Giurge Fishbach intrinsic motivation adherence personal resolutions » (preprint), then OpenAlex search of its title (2026-11-26)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "population": "US adults followed for a year on their New Year's resolutions, adults in China, US adults' steps over 2 weeks, and a US experiment",
+  "mena": false,
+  "findings": [
+    {
+      "id": "year-long",
+      "text": "Over a year, US adults' intrinsic motivation (the pursuit felt as an end in itself) predicted adherence to their resolutions more than extrinsic motivation",
+      "support": {
+        "sentence": "In a year-long longitudinal study, U.S. adults set extrinsic New Year's resolutions, but intrinsic motivation predicted adherence to these goals more than extrinsic motivation (Study 1).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "china-and-steps",
+      "text": "The same held among adults in China, and for the steps US adults walked over 2 weeks, measured objectively",
+      "support": {
+        "sentence": "These findings emerged among adults in China (Study 2) and when measuring goal adherence objectively using the number of steps U.S. adults walked over 2 weeks (Study 3).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "raising-intrinsic",
+      "text": "Raising intrinsic rather than extrinsic motivation increased US adults' goal adherence",
+      "support": {
+        "sentence": "Indeed, increasing intrinsic (vs. extrinsic) motivation increased U.S. adults' goal adherence (Study 4).",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "one laboratory (as woolley-2016-fun and woolley-2022-discomfort); sample sizes not given in the abstract (full text not read)",
+    "intrinsic motivation is the pursuit experienced as an end in itself: enjoying the path, not accepting pain",
+    "adherence self-reported except the steps (Study 3); the length of the experiment (Study 4) is not in the abstract",
+    "no sample from the Middle East or North Africa; one sample from China"
+  ]
+}

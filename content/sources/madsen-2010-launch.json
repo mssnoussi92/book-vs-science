@@ -32,6 +32,7 @@
   "limits": [
     "organizations, not individuals: a launch failure is investigated formally, which is not how a person meets a failure",
     "observational: launch records, no failure assigned",
+    "each organization's own launches: not « other people's failures »",
     "one high-stakes industry; abstract read from OpenAlex only"
   ],
   "acknowledged": []

@@ -56,6 +56,11 @@
       "name": "support:very-sure-overconfident",
       "result": "pass",
       "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:eighty-sixty",
+      "result": "pass",
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-26: accepted manuscript (WRAP 160579), public significance statement"
     }
   ],
   "found": {
@@ -71,6 +76,6 @@
   "retracted": false,
   "abstractFrom": "openalex",
   "abstractSha256": "20f102a624459a1f24243ec297c10e6fb017b357ddf56bfe247bc0502439abac",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

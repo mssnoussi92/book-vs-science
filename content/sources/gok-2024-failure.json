@@ -16,12 +16,12 @@
   "design": "experiment",
   "designSetBy": "reviewer",
   "n": 1306,
-  "population": "adults in 6 preregistered experiments (N = 1,306) repeating and extending the task of Eskreis-Winkler & Fishbach 2019; countries not given in the abstract",
+  "population": "1,306 adults in 6 preregistered experiments: US undergraduates and MTurk workers (accepted manuscript); the task of Eskreis-Winkler & Fishbach 2019",
   "mena": false,
   "findings": [
     {
       "id": "replicated",
-      "text": "Failure feedback again led to less learning than success feedback, whether the message said « your answer » or « the answer »",
+      "text": "In the close replications (Studies 1a-1c), failure feedback again led to less learning than success feedback overall, with « your answer » or « the answer » alike; one exact comparison was weak (exact-1b-ns)",
       "support": {
         "sentence": "The detriments of failure feedback were replicated in Studies 1a, 1b, and 1c, which altered the focus of the feedback message to be self-focused (e.g., your answer) or task-focused (e.g., the answer).",
         "role": "result",
@@ -31,29 +31,58 @@
     },
     {
       "id": "with-instruction",
-      "text": "When a brief explanation of the rule followed the feedback, failure no longer hurt learning, and in some conditions it taught more than success",
+      "text": "With a rule-based task and a brief explanation of the rule after feedback, those who got failure feedback learned as well, and in some conditions better on a new rule; feedback followed each person's real score, it was not assigned",
       "support": {
         "sentence": "When it was a rule-based task and brief instructions on the rule were provided after feedback, there was no evidence of a detrimental effect of failure, and failure feedback, in some conditions, resulted in even better learning than success feedback for learning new material.",
         "role": "result",
         "where": "abstract"
       },
-      "kind": "causal"
+      "kind": "association"
     },
     {
       "id": "conclusion",
-      "text": "The authors conclude that tuning out after a failure disappears, and may reverse, when a chance to learn follows the feedback",
+      "text": "The authors conclude that tuning out after a failure disappears, and may reverse, when a chance to learn follows the feedback (resting on Study 3, where feedback was not assigned)",
       "support": {
         "sentence": "We conclude that the tune-out reactions to failure during feedback disappear and may even be reversed when subsequent learning opportunities are provided.",
         "role": "conclusion",
         "where": "abstract"
       },
+      "kind": "association"
+    },
+    {
+      "id": "exact-1b-ns",
+      "text": "On MTurk, the exact comparison of the original study (« your answer » wrong vs right) gave 69% vs 76% learning, a small difference that was not statistically significant",
+      "support": {
+        "sentence": "In this study, self-focused failure feedback led to descriptively lower learning (M = 69%, SD = 35%) than self-focused success feedback (M = 76%, SD = 38%), but this difference was not statistically significant t(158) = 1.22, p = .22, 95% CI = [.-04, .18], d = .19.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "failure-teaches writer, 2026-11-26: accepted manuscript (PsyArXiv bw42v), Study 1b results"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.19,
+        "correctedForBias": false
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "no-ego-difference",
+      "text": "Failure feedback did not raise self-reported ego threat more than success feedback: the ego explanation of the original study was not found",
+      "support": {
+        "sentence": "In contrast to EW-F, we found no evidence that ego-threat explains the detrimental effects of failure feedback.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "failure-teaches writer, 2026-11-26: accepted manuscript (PsyArXiv bw42v), Study 1b discussion"
+      },
       "kind": "causal"
     }
   ],
   "limits": [
-    "same task family as the original: the scoring critique of Spiller 2025 applies to the replications (Studies 1-2)",
-    "the reversal holds for a rule-based task, and only in some conditions",
-    "learning tested within the session; one laboratory, not a multi-lab replication"
+    "same task family as the original in Studies 1-2: the scoring critique of Spiller 2025 applies to the replications",
+    "Study 3 is not randomized on feedback: people were « post-hoc categorized » by their real first score (0-1 right: failure), so selection and regression to the mean can explain it",
+    "Study 3b: failure did better on the new rule only when the task was announced as hard; the reversal is small and not constant",
+    "all participants from the US; the authors write they have no evidence the results extend to other cultures (citing Heine 2001)",
+    "the accepted manuscript was read, not the published version: numbers may differ slightly; one laboratory, not a multi-lab replication"
   ],
   "acknowledged": []
 }

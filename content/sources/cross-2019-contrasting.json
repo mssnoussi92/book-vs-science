@@ -51,6 +51,8 @@
   "limits": [
     "few studies (5 at three months, 7 with if-then plans)",
     "short follow-up: up to four weeks for the main effect",
+    "« adjusted » g not explained in the abstract; « SE = 0.6 » at three months does not fit its interval (about 0.09)",
+    "controls not described in the abstract; probably the same MCII trials as wang-2021-mcii and cole-2021-simulation",
     "health behaviours only; countries not listed in the abstract",
     "no sample from the Middle East or North Africa known"
   ]

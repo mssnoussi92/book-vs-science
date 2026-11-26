@@ -58,6 +58,11 @@
       "detail": "whole sentence of the abstract; cues: result"
     },
     {
+      "name": "support:bias-adjusted",
+      "result": "pass",
+      "detail": "full-text reading by choose-your-struggle reviser, 2026-11-26: Europe PMC full text PMC8149892, Publication bias"
+    },
+    {
       "name": "support:with-a-person",
       "result": "pass",
       "detail": "whole sentence of the abstract; cues: result"
@@ -76,6 +81,6 @@
   "retracted": false,
   "abstractFrom": "europepmc",
   "abstractSha256": "fa0236c372ce17801e75779e36f9b1c7b95df60e11235a20810e349a6ffc51a4",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

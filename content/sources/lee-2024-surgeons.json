@@ -30,6 +30,16 @@
       "kind": "association"
     },
     {
+      "id": "inverted-u",
+      "text": "As failures accumulated, surgeons' performance first rose, then levelled off, then fell: past a point, more failures went with worse results (inverted U)",
+      "support": {
+        "sentence": "Analyzing data on 307 cardiothoracic surgeons operating coronary artery bypass graft surgeries, we find such an inverted‐U‐shaped pattern.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
       "id": "higher-threshold",
       "text": "The threshold came later for surgeons who seemed better able to learn (elite training, certification, specialization)",
       "support": {
@@ -53,7 +63,7 @@
   "limits": [
     "observational: operations and their outcomes, no failure assigned",
     "one specialty in one US state; « ability to learn » inferred from training and certification",
-    "abstract read from Crossref only (not in Europe PMC)"
+    "the inverted U is in the abstract's managerial summary; abstract read from Crossref and OpenAlex (not in Europe PMC), full text refused"
   ],
   "acknowledged": []
 }

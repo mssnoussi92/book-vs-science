@@ -1,0 +1,83 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "alfieri-2011-discovery",
+  "doi": "10.1037/a0021017",
+  "declared": {
+    "title": "Does discovery-based instruction enhance learning?",
+    "firstAuthor": "Alfieri",
+    "authors": [
+      "Alfieri",
+      "Brooks",
+      "Aldrich",
+      "Tenenbaum"
+    ],
+    "year": 2011,
+    "venue": "Journal of Educational Psychology",
+    "foundIn": "Crossref search « Does discovery-based instruction enhance learning meta-analysis » (2026-11-26); named by the counter-evidence review"
+  },
+  "design": "meta-analysis",
+  "designSetBy": "reviewer",
+  "k": 164,
+  "population": "164 studies of children, adolescents and adults: 108 compare unassisted discovery with explicit teaching, 56 compare enhanced discovery with other teaching",
+  "mena": false,
+  "findings": [
+    {
+      "id": "unassisted-worse",
+      "text": "Learners left to discover on their own, without help, learned less on average than learners taught explicitly",
+      "support": {
+        "sentence": "With the random effects analysis, the 108 studies had a mean effect size of d = -.38 (95% CI = -.50/-.25), indicating that explicit teaching was more beneficial to learning than unassisted discovery.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "failure-teaches writer, 2026-11-26: Surrey repository manuscript, Results (OpenAlex glues the abstract's sentences)"
+      },
+      "effect": {
+        "metric": "d",
+        "value": -0.38,
+        "ci": [
+          -0.5,
+          -0.25
+        ],
+        "correctedForBias": false
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "enhanced-better",
+      "text": "Discovery with support (generating answers, explaining, guided discovery) did better on average than other ways of teaching",
+      "support": {
+        "sentence": "With the random effects analysis, the 56 studies had a mean effect size of d = .30 (95% CI = .15/.44), indicating that enhanced-discovery methods led to greater learning than did comparison methods of instruction.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "failure-teaches writer, 2026-11-26: Surrey repository manuscript, Results (OpenAlex glues the abstract's sentences)"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.3,
+        "ci": [
+          0.15,
+          0.44
+        ],
+        "correctedForBias": false
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "conclusion",
+      "text": "The authors conclude that discovering alone does not help learners, while feedback, worked examples, scaffolding and explanations they are asked to give do",
+      "support": {
+        "sentence": "The findings suggest that unassisted discovery does not benefit learners, whereas feedback, worked examples, scaffolding, and elicited explanations do.",
+        "role": "conclusion",
+        "where": "fulltext",
+        "readBy": "failure-teaches writer, 2026-11-26: Surrey repository manuscript, abstract (OpenAlex glues its sentences)"
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "discovery learning is not the same as failing: an indirect test of « try, fail, then get the explanation »",
+    "highly heterogeneous effects; publication bias checked only by fail-safe N",
+    "« other teaching » mixes explicit teaching and unassisted discovery: the d = .30 is not against explicit teaching alone",
+    "repository manuscript read, not the published version; countries not given"
+  ],
+  "acknowledged": []
+}

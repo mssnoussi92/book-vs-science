@@ -53,6 +53,11 @@
       "detail": "whole sentence of the abstract; no role cue"
     },
     {
+      "name": "support:inverted-u",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
       "name": "support:higher-threshold",
       "result": "pass",
       "detail": "whole sentence of the abstract; no role cue"
@@ -76,6 +81,6 @@
   "retracted": false,
   "abstractFrom": "crossref",
   "abstractSha256": "548b27e7dbc6d564571d1919c844cf3d0b33c038e4eb24539ee088bb7bf3b559",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

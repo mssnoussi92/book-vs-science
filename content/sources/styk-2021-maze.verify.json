@@ -1,0 +1,71 @@
+{
+  "doi": "10.1186/s13690-021-00524-4",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Effectiveness of different types of mental simulation in the weight loss process based on a perseverance study among people with different BMI » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Styk » matches; 3/3 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2021, found 2021"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:more-perseverance",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Effectiveness of different types of mental simulation in the weight loss process based on a perseverance study among people with different BMI",
+    "firstAuthor": "Styk",
+    "years": [
+      2021
+    ],
+    "type": "journal-article",
+    "venue": "Archives of Public Health"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "561eaca7cfa027f2c88bef400146179b07b9c860cafc8a629509fe0bc463d1f3",
+  "checkedOn": "2026-11-26",
+  "tool": "bvs-sources@0.1"
+}

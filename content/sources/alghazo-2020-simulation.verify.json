@@ -56,6 +56,11 @@
       "name": "support:assignments-timing",
       "result": "pass",
       "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:outcome-first-half",
+      "result": "pass",
+      "detail": "full-text reading by choose-your-struggle reviser, 2026-11-26: publisher PDF (ijcrsee.com, article 326), Results"
     }
   ],
   "found": {
@@ -71,6 +76,6 @@
   "retracted": false,
   "abstractFrom": "crossref",
   "abstractSha256": "7e2a9d16b880dfcf78986bc6f64a3a86507018638e5a09961c0bbd650fa317bb",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

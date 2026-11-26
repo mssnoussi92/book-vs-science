@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "lin-siegler-2016-struggle",
+  "doi": "10.1037/edu0000092",
+  "declared": {
+    "title": "Even Einstein struggled: Effects of learning about great scientists’ struggles on high school students’ motivation to learn science.",
+    "firstAuthor": "Lin-Siegler",
+    "authors": [
+      "Lin-Siegler",
+      "Ahn",
+      "Chen",
+      "Fang"
+    ],
+    "year": 2016,
+    "venue": "Journal of Educational Psychology",
+    "foundIn": "Crossref search « Even Einstein struggled effects of learning about great scientists struggles on high school students motivation » (2026-11-26); named by the counter-evidence review"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 402,
+  "population": "402 9th and 10th grade students, demographically diverse; stories of scientists' struggles vs stories of their discoveries; country not given in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "struggle-stories",
+      "text": "Students who read how great scientists struggled and failed before succeeding later learned science better than students who read only about their discoveries",
+      "support": {
+        "sentence": "Results showed that participation in either of the struggle story conditions improved science learning postintervention, relative to that of students in the control condition.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "low-performers",
+      "text": "The gain was larger for low-performing students",
+      "support": {
+        "sentence": "Additionally, the effect of our intervention was more pronounced for low-performing students.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "one study by the team that designed the stories; random assignment not stated in the abstract (full text not read)",
+    "the outcome is science learning in class, through motivation: not learning the content of the failures",
+    "one of the two struggle conditions tells personal hardships, not mistakes"
+  ],
+  "acknowledged": []
+}

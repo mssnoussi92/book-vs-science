@@ -1,0 +1,42 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "lindsay-2025-consensus",
+  "doi": "10.1080/09658211.2025.2551222",
+  "declared": {
+    "title": "Eyewitness suspect identification: six claims regarding the state of the science",
+    "firstAuthor": "Lindsay",
+    "authors": [
+      "Lindsay",
+      "Wixted",
+      "Fitzgerald",
+      "Hyman",
+      "Mickes",
+      "Wade"
+    ],
+    "year": 2025,
+    "venue": "Memory",
+    "foundIn": "reports/memory-rewritten/counter-evidence.md (card 13); OpenAlex search « eyewitness confidence accuracy relationship nuanced perspective varies predictably », from 2025 (2026-11-26)"
+  },
+  "design": "narrative-review",
+  "designSetBy": "reviewer",
+  "population": "research on eyewitness suspect identification (lab and police field studies), read by six researchers from both sides of the debate",
+  "mena": false,
+  "findings": [
+    {
+      "id": "varies-predictably",
+      "text": "Researchers from both sides now agree that how much confidence tells about accuracy varies predictably: with how the suspect was chosen, how and when the test was run, and when confidence was asked",
+      "support": {
+        "sentence": "The authors of this invited Contemporary Discussion agree that current science compels a more nuanced perspective in which the relationship between eyewitnesses' confidence and their accuracy varies predictably depending on specifics of how the suspect was selected, how the identification test was designed, when and how it was administered, and when confidence was assessed.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "an invited discussion by six researchers, without a systematic search: classed as a narrative review",
+    "about identifying a suspect in a lineup, not about memories of one's own life",
+    "the authors call it an « emerging scientific consensus » and do not assert that every claim is firmly established"
+  ],
+  "acknowledged": []
+}

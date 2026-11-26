@@ -1,0 +1,71 @@
+{
+  "doi": "10.1177/10901981241310216",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « WOOP as a Brief Alcohol Intervention Led by Lay Coaches in College Settings » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Wittleder » matches; 5/5 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2025, found 2025"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:fewer-heavy-days",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: method/result"
+    }
+  ],
+  "found": {
+    "title": "WOOP as a Brief Alcohol Intervention Led by Lay Coaches in College Settings",
+    "firstAuthor": "Wittleder",
+    "years": [
+      2025
+    ],
+    "type": "journal-article",
+    "venue": "Health Education &amp; Behavior"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "9d6385ba1a2d9a6948e5daa87577cfc571e67962d76606379d7a58368f27d28e",
+  "checkedOn": "2026-11-26",
+  "tool": "bvs-sources@0.1"
+}

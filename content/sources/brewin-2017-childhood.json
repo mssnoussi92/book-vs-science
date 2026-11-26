@@ -11,12 +11,12 @@
   },
   "design": "systematic-review",
   "designSetBy": "reviewer",
-  "population": "adults in imagination-inflation, false-feedback and memory-implantation studies of suggested childhood events",
+  "population": "mostly young adults, college students, in imagination-inflation, false-feedback and implantation studies (22 implantation datasets in 20 articles)",
   "mena": false,
   "findings": [
     {
       "id": "full-15",
-      "text": "Implantation studies induce some recollection of the false event in 47% of people on average, but only about 15% are likely full memories",
+      "text": "Implantation studies induce some recollection of the false event in 47% of people on average (images and guesses included), but only about 15% are likely full memories",
       "support": {
         "sentence": "In memory implantation studies, some recollective experience for the suggested events is induced on average in 47% of participants, but only in 15% are these experiences likely to be rated as full memories.",
         "role": "result",
@@ -52,8 +52,8 @@
   ],
   "limits": [
     "the authors are on one side of a published debate: Nash, Wade, Garry, Loftus & Ost replied in the same journal (« Misrepresentations and flawed logic… »)",
-    "the 15% rests on the authors' own reading of what counts as a « full » memory",
-    "number of studies and countries are in the full text (not read)"
+    "the 15% is the strictest column (recollection and confidence), computed on the studies whose coding allows it; the authors call it an upper bound that « may be lower »",
+    "weighted means of the original measures, not a meta-analysis (by choice); 61 studies in all, nearly all with college students"
   ],
   "acknowledged": []
 }

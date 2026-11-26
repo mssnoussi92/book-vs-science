@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "oeberst-2012-undoing",
+  "doi": "10.1016/j.cognition.2012.07.009",
+  "declared": {
+    "title": "Undoing suggestive influence on memory: The reversibility of the eyewitness misinformation effect",
+    "firstAuthor": "Oeberst",
+    "authors": [
+      "Oeberst",
+      "Blank"
+    ],
+    "year": 2012,
+    "venue": "Cognition",
+    "foundIn": "reports/memory-rewritten/counter-evidence.md (card 2); OpenAlex search « suggestive influence misinformation completely undone original event details restored » (2026-11-26)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "population": "participants in three misinformation experiments (a witnessed incident, then misleading details); sample sizes and country not in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "undone",
+      "text": "In three experiments, the authors show that the influence of misleading details on memory reports can be completely undone: the original detail can come back",
+      "support": {
+        "sentence": "Based on a memory conversion theoretical framework and associated refined assessment strategy, we report three experiments to demonstrate that suggestive influence can be completely undone.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "same second author as blank-2014-postwarning (Blank): not independent of it",
+    "a special procedure (an explanation and separate questions on the detail and its source): the original detail can survive, not that it always does",
+    "full text closed, not read: sample sizes and countries unknown; in one experiment the effect was undone 5 weeks later (abstract)",
+    "the abstract's result sentence (« restored to the level of non-misled control performance ») is cut by the tool at « (Exp. 3) »: its conclusion is cited instead"
+  ],
+  "acknowledged": []
+}

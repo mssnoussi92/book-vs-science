@@ -56,6 +56,16 @@
       "name": "support:free-recall-same",
       "result": "pass",
       "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:misled-recognition",
+      "result": "pass",
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-26: submitted version (Birmingham City University repository), Results, recognition"
+    },
+    {
+      "name": "support:free-recall-18",
+      "result": "pass",
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-26: submitted version (Birmingham City University repository), Discussion"
     }
   ],
   "found": {
@@ -71,6 +81,6 @@
   "retracted": false,
   "abstractFrom": "crossref",
   "abstractSha256": "b4c3fdd1ce2cec9882577592046839c123ae97173b0e2a44aaedff281276a2cd",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

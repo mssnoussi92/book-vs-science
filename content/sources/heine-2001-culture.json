@@ -25,7 +25,7 @@
   "findings": [
     {
       "id": "na-persist-less",
-      "text": "North Americans who were told they failed persisted less on a follow-up task than those told they succeeded",
+      "text": "North Americans who failed on a task persisted less on a follow-up task than those who succeeded",
       "support": {
         "sentence": "Replicating past research, North Americans who failed on a task persisted less on a follow-up task than those who succeeded.",
         "role": "result",
@@ -35,7 +35,7 @@
     },
     {
       "id": "japan-persist-more",
-      "text": "Japanese who were told they failed persisted more than those told they succeeded",
+      "text": "Japanese who failed on a task persisted more on the follow-up task than those who succeeded",
       "support": {
         "sentence": "In contrast, Japanese who failed persisted more than those who succeeded.",
         "role": "result",
@@ -56,8 +56,9 @@
   ],
   "limits": [
     "persistence on the next task, not learning nor later success",
-    "2 cultures only, no Arab sample; culture itself is not assigned",
-    "2001: an old study of 2 cultures; no later test with an Arab sample found"
+    "2 cultures only, no Arab sample; culture itself is not assigned (the cultural difference is an association)",
+    "2001: an old study of 2 cultures; no later test with an Arab sample found",
+    "how failure was produced (real or false feedback) is not said in the abstract; full text not read"
   ],
   "acknowledged": []
 }

@@ -56,6 +56,21 @@
       "name": "support:collectivist-unaffected",
       "result": "pass",
       "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:overall-null",
+      "result": "pass",
+      "detail": "full-text reading by choose-your-struggle reviser, 2026-11-26: PMC page of PMC5410783 (Europe PMC full text answered 500), Results"
+    },
+    {
+      "name": "support:balanced-too",
+      "result": "pass",
+      "detail": "full-text reading by choose-your-struggle reviser, 2026-11-26: PMC page of PMC5410783 (Europe PMC full text answered 500), Results"
+    },
+    {
+      "name": "support:english-speaking-only",
+      "result": "pass",
+      "detail": "full-text reading by choose-your-struggle reviser, 2026-11-26: PMC page of PMC5410783, supporting analyses (religious traditions)"
     }
   ],
   "found": {
@@ -71,6 +86,6 @@
   "retracted": false,
   "abstractFrom": "europepmc",
   "abstractSha256": "54e77622f81a6674a6b0309f5067c6fc4e173a9f880264ca057843f72467eb4d",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

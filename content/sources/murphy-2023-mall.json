@@ -12,7 +12,7 @@
   "design": "experiment",
   "designSetBy": "reviewer",
   "n": 123,
-  "population": "adults (Ireland, per Andrews & Brewin 2024) interviewed twice about true childhood events and one fabricated event, from a relative's information",
+  "population": "123 adults in Ireland (18-57, recruited through students' networks), interviewed twice about true childhood events and one made up from a relative's information",
   "mena": false,
   "findings": [
     {
@@ -31,19 +31,70 @@
       "kind": "causal"
     },
     {
-      "id": "self-reported",
-      "text": "Participants themselves also reported high rates of memories and beliefs for the made-up event",
+      "id": "full-8",
+      "text": "Most of these were partial memories (27%); only 8% were full memories of the made-up event",
       "support": {
-        "sentence": "In an extension, we found that participants self-reported high rates of memories and beliefs for the fabricated event.",
+        "sentence": "Though the breakdown of full vs. partial memories was not included in the original paper, most of the false memories reported at the end of the current study were partial memories (27%) and a smaller portion were full memories (8%).",
         "role": "result",
-        "where": "abstract"
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-26: accepted version, PsyArXiv nh3zq, Discussion"
+      },
+      "effect": {
+        "metric": "percent",
+        "value": 8,
+        "correctedForBias": false
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "rises",
+      "text": "The coded rate rose with each round of suggestion: 15% after the written booklet, 19% after the first interview, 35% after the second",
+      "support": {
+        "sentence": "In the second interview, the false memory rate further increased to 35% (33 partial memories, 10 full memories).",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-26: PsyArXiv nh3zq, Results (15%, 19%, 35% in 3 sentences)"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "self-14",
+      "text": "Asked themselves at the end, 14% said they remembered the made-up event (against 35% coded by the researchers)",
+      "support": {
+        "sentence": "When asked whether they remembered the fake lost in the mall story, 14% of participants reported that they did (this compares to an interview 2 coded false memory rate of 35%).",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-26: accepted version, PsyArXiv nh3zq, Results, self-report"
+      },
+      "effect": {
+        "metric": "percent",
+        "value": 14,
+        "correctedForBias": false
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "believed-52",
+      "text": "A further 52% did not remember the made-up event but believed it had happened",
+      "support": {
+        "sentence": "A further 52% reported that though they did not remember the fake event, they believed it had occurred.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-26: accepted version, PsyArXiv nh3zq, Results, self-report"
+      },
+      "effect": {
+        "metric": "percent",
+        "value": 52,
+        "correctedForBias": false
       },
       "kind": "causal"
     }
   ],
   "limits": [
-    "a reanalysis of the same transcripts (Andrews & Brewin 2024) finds that few suggested details were recalled and that many reports may be real memories",
+    "a reanalysis of the transcripts (andrews-2024-mall) finds few suggested details recalled and many reports that may be real memories; the authors replied in 2025",
+    "the coders' 35% and the participants' own 14% differ; the authors: the false memory rate « may be closer to 14% »",
     "one country, 123 people; getting lost is a mild childhood fright, not a harmless everyday event",
+    "3 people may have had a true memory of being lost; without them, 33% (full text)",
     "a duplicate copy of this article was published by error and withdrawn (notice read, see acknowledged)"
   ],
   "acknowledged": [

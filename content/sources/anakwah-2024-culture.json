@@ -12,7 +12,7 @@
   "design": "experiment",
   "designSetBy": "reviewer",
   "n": 127,
-  "population": "adults in Ghana (n = 65, a collectivistic culture) and the United Kingdom (n = 62, an individualistic culture)",
+  "population": "127 adults in Ghana (n = 65) and the UK (n = 62), taken as a collectivistic and an individualistic culture by Hofstede's country index",
   "mena": false,
   "findings": [
     {
@@ -34,11 +34,40 @@
         "where": "abstract"
       },
       "kind": "association"
+    },
+    {
+      "id": "misled-recognition",
+      "text": "In recognition, people picked the misleading version of central details more often than for control details: the misinformation was manipulated within each person",
+      "support": {
+        "sentence": "There was also a significant main effect of misinformation on the endorsement of misleading items about central details F(1,25) = 41.87, p < .001, ηp2 = .25.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-26: submitted version (Birmingham City University repository), Results, recognition"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "free-recall-18",
+      "text": "In free recall, in their own words, only 18% of people reported at least one misleading detail (Ghana 20%, UK 16%)",
+      "support": {
+        "sentence": "Overall, 18% of the sample reported at least one item of misinformation in the free recall (Ghana = 20%; UK = 16%).",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-26: submitted version (Birmingham City University repository), Discussion"
+      },
+      "effect": {
+        "metric": "percent",
+        "value": 18,
+        "correctedForBias": false
+      },
+      "kind": "causal"
     }
   ],
   "limits": [
     "two small samples (127 people), one country per culture: the authors call their findings preliminary",
-    "culture was not assigned at random: a difference between two groups, not a cause",
+    "culture was not assigned, and the self-construal scale found no difference between the groups (d = .21 and .01): « collectivistic » rests on the country index",
+    "the culture × misinformation interaction was significant for background details, not for central ones (p = .074)",
+    "only the misinformation effect is experimental; the culture findings compare groups (association)",
     "Ghana and the UK, no Arab sample; Arab societies are often described as collectivistic, but that was not tested"
   ],
   "acknowledged": []

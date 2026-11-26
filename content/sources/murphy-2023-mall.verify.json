@@ -53,9 +53,24 @@
       "detail": "whole sentence of the abstract; cues: result"
     },
     {
-      "name": "support:self-reported",
+      "name": "support:full-8",
       "result": "pass",
-      "detail": "whole sentence of the abstract; cues: result"
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-26: accepted version, PsyArXiv nh3zq, Discussion"
+    },
+    {
+      "name": "support:rises",
+      "result": "pass",
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-26: PsyArXiv nh3zq, Results (15%, 19%, 35% in 3 sentences)"
+    },
+    {
+      "name": "support:self-14",
+      "result": "pass",
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-26: accepted version, PsyArXiv nh3zq, Results, self-report"
+    },
+    {
+      "name": "support:believed-52",
+      "result": "pass",
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-26: accepted version, PsyArXiv nh3zq, Results, self-report"
     }
   ],
   "found": {
@@ -76,6 +91,6 @@
   "retracted": false,
   "abstractFrom": "europepmc",
   "abstractSha256": "2ea1077c7ab490d1d184a4f4d458c95b0195a2bcd695aade9fbc404cf7db6d40",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

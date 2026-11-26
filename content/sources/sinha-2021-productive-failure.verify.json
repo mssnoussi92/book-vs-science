@@ -56,6 +56,11 @@
       "name": "support:young-and-general",
       "result": "pass",
       "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:procedural-none",
+      "result": "pass",
+      "detail": "full-text reading by failure-teaches writer, 2026-11-26: published version (ETH Zurich repository), Results"
     }
   ],
   "found": {
@@ -71,6 +76,6 @@
   "retracted": false,
   "abstractFrom": "crossref",
   "abstractSha256": "63afe746bf53a58098073d3af3ad3688a2e1feb1f7f05950851515c1d899923d",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

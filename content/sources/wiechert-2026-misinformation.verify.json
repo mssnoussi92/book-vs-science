@@ -45,7 +45,7 @@
     {
       "name": "abstract",
       "result": "pass",
-      "detail": "read from openalex"
+      "detail": "read from europepmc"
     },
     {
       "name": "support:misled-less-correct",
@@ -59,6 +59,11 @@
     },
     {
       "name": "support:not-only-demand",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:partly-demand",
       "result": "pass",
       "detail": "whole sentence of the abstract; no role cue"
     }
@@ -75,8 +80,8 @@
   },
   "notices": [],
   "retracted": false,
-  "abstractFrom": "openalex",
-  "abstractSha256": "c7c03cc559b3237316b73330d5ebb7b7a4712d4eb98432a0a125a89b8c8fb0ae",
-  "checkedOn": "2026-11-23",
+  "abstractFrom": "europepmc",
+  "abstractSha256": "c4619c68c5580cd96892fdb0d0b06282da586128e761de178f53bfa87f5153fc",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

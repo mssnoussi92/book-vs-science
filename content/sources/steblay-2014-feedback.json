@@ -17,7 +17,7 @@
   "findings": [
     {
       "id": "feedback-inflates",
-      "text": "Telling witnesses « good, you picked the suspect » robustly inflates how certain they later say they were, with large effects",
+      "text": "Telling witnesses « good, you picked the suspect » robustly inflates what they later report: their certainty, how well they saw, their attention…, with large effects overall",
       "support": {
         "sentence": "The results show that confirming feedback robustly inflates eyewitnesses' retrospective judgments across experimental manipulations and laboratory settings with large effect sizes.",
         "role": "result",
@@ -27,7 +27,7 @@
     }
   ],
   "limits": [
-    "the number of studies and the effect sizes are in the full text (not read): « large » is the authors' word",
+    "the number of studies and the effect sizes are in the full text (not read): « large » is the authors' word, said of all the judgements together, not of certainty alone",
     "lab experiments on lineup identification; the feedback came from the person running the lineup",
     "no sample from the Middle East or North Africa"
   ],

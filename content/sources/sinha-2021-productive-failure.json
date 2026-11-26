@@ -16,12 +16,12 @@
   "design": "meta-analysis",
   "designSetBy": "reviewer",
   "k": 53,
-  "population": "53 studies (166 comparisons) of students, comparing problem solving before instruction with instruction first",
+  "population": "53 studies (166 comparisons) of students, grade 2 to university, mostly math and science; North America 43%, Asia 28% (incl. Saudi Arabia), Europe 26%",
   "mena": false,
   "findings": [
     {
       "id": "ps-i-better",
-      "text": "Trying to solve a problem before being taught (and usually failing) led to better learning than being taught first",
+      "text": "Trying to solve a problem before being taught (and usually failing), then being taught, led to better conceptual understanding and transfer than being taught first",
       "support": {
         "sentence": "Our results showed a significant, moderate effect in favor of PS-I (Hedge's g 0.36 [95% confidence interval 0.20; 0.51]).",
         "role": "result",
@@ -47,12 +47,34 @@
         "where": "abstract"
       },
       "kind": "intervention"
+    },
+    {
+      "id": "procedural-none",
+      "text": "For procedural knowledge (applying a learned procedure), trying first gave no gain over being taught first",
+      "support": {
+        "sentence": "For the n = 51/166 comparisons assessing procedural knowledge, results suggested the pooled effect size for procedural knowledge to be Hedge’s g = −0.03, p = .7384, 95% CI [−0.20, 0.15].",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "failure-teaches writer, 2026-11-26: published version (ETH Zurich repository), Results"
+      },
+      "effect": {
+        "metric": "g",
+        "value": -0.03,
+        "ci": [
+          -0.2,
+          0.15
+        ],
+        "correctedForBias": false
+      },
+      "kind": "intervention"
     }
   ],
   "limits": [
     "school learning, mostly mathematics and science; the failure is planned and always followed by teaching",
-    "quasi-experiments included; the bias-adjusted estimate (g 0.87) is larger than the raw one, unusual: not used",
-    "countries not given in the abstract (full text not read)"
+    "81 experimental and 85 quasi-experimental comparisons; experimental only g = 0.25 (full text, Table 5)",
+    "the « bias-adjusted » g 0.87 is a p-curve estimate on significant results; Egger's test was not significant: never quoted",
+    "Saudi comparisons are pooled in « Asia » with no separate estimate: no Arab result as such",
+    "moderate heterogeneity; no gain for procedural knowledge; younger pupils and general skills did better taught first"
   ],
   "allegiance": "Kapur created productive failure and promotes it",
   "acknowledged": []

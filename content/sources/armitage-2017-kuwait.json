@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "armitage-2017-kuwait",
+  "doi": "10.1007/s11121-017-0807-z",
+  "declared": {
+    "title": "Randomized Controlled Trial of a Volitional Help Sheet to Encourage Weight Loss in the Middle East",
+    "firstAuthor": "Armitage",
+    "authors": [
+      "Armitage",
+      "Alganem",
+      "Norman"
+    ],
+    "year": 2017,
+    "venue": "Prevention Science",
+    "foundIn": "reports/choose-your-struggle/counter-evidence.md (card 18); Crossref search « Armitage Alganem Norman implementation intentions weight loss Kuwait randomized » (2026-11-26)"
+  },
+  "design": "rct",
+  "designSetBy": "reviewer",
+  "n": 216,
+  "population": "216 overweight or obese adults enrolling in a weight-loss program in Kuwait",
+  "mena": true,
+  "findings": [
+    {
+      "id": "weight-loss",
+      "text": "Forming if-then plans with a help sheet led to more weight lost at 6 months than thinking about the same situations without forming plans",
+      "support": {
+        "sentence": "Participants in the intervention condition lost significantly more weight (6.15 kg; -6.58% initial body weight) than those in the control condition (3.66 kg; -4.04% initial body weight), M diff = 2.55% initial body weight, SE diff = .92, t(214) = 2.76, p = .006, 95%CI = .73, 4.36, d = .38.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.38
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "if-then plans alone, without mental contrasting: one half of WOOP",
+    "an active control (thinking about critical situations and responses without plans); weight measured at 6 months",
+    "one weight-loss program in Kuwait",
+    "an Arab sample (Kuwait)"
+  ],
+  "allegiance": "Armitage introduced the volitional help sheet (Health Psychology, 2008) and has tested it several times since"
+}

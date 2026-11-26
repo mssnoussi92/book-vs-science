@@ -18,7 +18,7 @@
   "design": "experiment",
   "designSetBy": "reviewer",
   "n": 520,
-  "population": "adults in 2 preregistered experiments (N = 520) repeating the task of Eskreis-Winkler & Fishbach 2019; countries not given in the abstract",
+  "population": "adults in 2 preregistered experiments (N = 520) repeating the task of Eskreis-Winkler & Fishbach 2019; countries not given in the abstract (authors in Germany)",
   "mena": false,
   "findings": [
     {
@@ -54,8 +54,10 @@
   ],
   "limits": [
     "the same laboratory task as the original: the scoring critique of Spiller 2025 applies to the close replications",
+    "the gap vanishing with corrective feedback or loss framing is also what the consistency artefact predicts when learning rises: it does not separate the two readings",
     "one laboratory, not a multi-lab replication; each boundary condition tested in a single experiment",
-    "learning tested within the session, with money incentives; not failures in life"
+    "learning tested within the session, with money incentives; not failures in life",
+    "Keith and Frese developed error management training (keith-2008): they replicated an effect against their own view that errors teach, which adds to its credibility"
   ],
   "acknowledged": []
 }

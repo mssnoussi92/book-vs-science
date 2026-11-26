@@ -55,12 +55,17 @@
     {
       "name": "support:positive-outcome-helps",
       "result": "pass",
-      "detail": "full-text reading by choose-your-struggle agent, 2026-11-23: published PDF, ray.yorksj.ac.uk/4802, Discussion and Table 3"
+      "detail": "full-text reading by choose-your-struggle reviser, 2026-11-26: Europe PMC full text PMC8500882, Table 3, Discussion; data file ESM 2"
     },
     {
       "name": "support:process-uncertain",
       "result": "pass",
-      "detail": "full-text reading by choose-your-struggle agent, 2026-11-23: published PDF, ray.yorksj.ac.uk/4802, Discussion and Table 3"
+      "detail": "full-text reading by choose-your-struggle reviser, 2026-11-26: Europe PMC full text PMC8500882, Discussion (footnote mark 6 left out)"
+    },
+    {
+      "name": "support:subtypes-not-different",
+      "result": "pass",
+      "detail": "full-text reading by choose-your-struggle reviser, 2026-11-26: Europe PMC full text PMC8500882, Results"
     }
   ],
   "found": {
@@ -76,6 +81,6 @@
   "retracted": false,
   "abstractFrom": "europepmc",
   "abstractSha256": "27cc24c17e65becb61508f3e96db0673b3afe88371594b47d62096f9445bc07b",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

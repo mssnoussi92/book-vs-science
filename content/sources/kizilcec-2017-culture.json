@@ -16,7 +16,7 @@
   "design": "rct",
   "designSetBy": "reviewer",
   "n": 17963,
-  "population": "17,963 learners in online courses, two randomized experiments; countries grouped as individualist or collectivist (e.g. India, China)",
+  "population": "17,963 online learners in two randomized trials in MOOCs; countries grouped by Hofstede's individualism index",
   "mena": false,
   "findings": [
     {
@@ -38,11 +38,46 @@
         "where": "abstract"
       },
       "kind": "intervention"
+    },
+    {
+      "id": "overall-null",
+      "text": "Across all countries together, MCII did not significantly raise course completion in either trial (a positive trend)",
+      "support": {
+        "sentence": "Across all cultural contexts, MCII did not significantly increase course completion relative to the control condition in either experiment, although there was a positive trend (experiment 1: b = 0.008, z = 1.66, P = 0.097; experiment 2: b = 0.021, z = 1.54, P = 0.122).",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "choose-your-struggle reviser, 2026-11-26: PMC page of PMC5410783 (Europe PMC full text answered 500), Results"
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "balanced-too",
+      "text": "MCII did not raise course completion in collectivist countries, nor in culturally balanced ones",
+      "support": {
+        "sentence": "In contrast, MCII did not raise course completion in collectivist and culturally balanced countries (experiment 1: |bs| < 0.004, |zs| < 0.38, Ps > 0.70; experiment 2: |bs| < 0.023, |zs| < 0.67, Ps > 0.51).",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "choose-your-struggle reviser, 2026-11-26: PMC page of PMC5410783 (Europe PMC full text answered 500), Results"
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "english-speaking-only",
+      "text": "Grouped by the cultural clusters of the World Values Survey (one of them African-Islamic), MCII had a significant effect only in the English-speaking cluster",
+      "support": {
+        "sentence": "The only cluster that yielded a significant effect of MCII was the English-Speaking cluster, which included Australia, Canada, Ireland, New Zealand, the United Kingdom, and the United States.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "choose-your-struggle reviser, 2026-11-26: PMC page of PMC5410783, supporting analyses (religious traditions)"
+      },
+      "kind": "intervention"
     }
   ],
   "limits": [
-    "countries grouped as individualist or collectivist; Arab countries not reported separately",
+    "countries grouped by individualism; no Arab country named, Arab countries not reported separately",
+    "32% and 15% are relative gains: in points, b = 0.018 and 0.039 (+1.8 and +3.9); wang-2021-mcii codes the trials g = 0.09 and 0.06",
     "online learners and course completion; MCII helped only with predictable, surmountable obstacles",
-    "the authors' scaled-up test (kizilcec-2020-scale) found no effect of MCII on completion"
+    "MC alone and II alone did not raise completion in the second trial (full text)",
+    "the authors' scaled-up, preregistered test (kizilcec-2020-scale) found no effect of MCII on completion"
   ]
 }

@@ -1,0 +1,82 @@
+{
+  "doi": "10.1037/a0021017",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Does discovery-based instruction enhance learning? » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Alfieri » matches; 4/4 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2011, found 2010, 2011"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »; design « meta-analysis » corroborated by the title or the abstract"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from openalex"
+    },
+    {
+      "name": "support:unassisted-worse",
+      "result": "pass",
+      "detail": "full-text reading by failure-teaches writer, 2026-11-26: Surrey repository manuscript, Results (OpenAlex glues the abstract's sentences)"
+    },
+    {
+      "name": "support:enhanced-better",
+      "result": "pass",
+      "detail": "full-text reading by failure-teaches writer, 2026-11-26: Surrey repository manuscript, Results (OpenAlex glues the abstract's sentences)"
+    },
+    {
+      "name": "support:conclusion",
+      "result": "pass",
+      "detail": "full-text reading by failure-teaches writer, 2026-11-26: Surrey repository manuscript, abstract (OpenAlex glues its sentences)"
+    }
+  ],
+  "found": {
+    "title": "Does discovery-based instruction enhance learning?",
+    "firstAuthor": "Alfieri",
+    "years": [
+      2010,
+      2011
+    ],
+    "type": "journal-article",
+    "venue": "Journal of Educational Psychology"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "openalex",
+  "abstractSha256": "d19696d774a02e29709535346b5e85e711982a53873fc7d16e67ff64f64e3aac",
+  "checkedOn": "2026-11-26",
+  "tool": "bvs-sources@0.1"
+}

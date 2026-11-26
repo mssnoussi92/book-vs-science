@@ -20,7 +20,7 @@
   "findings": [
     {
       "id": "process-improves",
-      "text": "Rehearsing the steps of studying for 5 to 7 days before an exam increased studying and improved grades, through better planning and less anxiety",
+      "text": "Rehearsing the steps of studying for 5 to 7 days before an exam increased studying and improved grades, through better planning and less anxiety (the abstract does not say compared with which group)",
       "support": {
         "sentence": "Results indicated that process simulation enhanced studying and improved grades; the latter effect was mediated by enhanced planning and reduced anxiety.",
         "role": "result",
@@ -31,8 +31,8 @@
   ],
   "limits": [
     "a single study of first-year students at one university",
-    "Cole 2021 (full text) codes its grade effect against the control group as not significant (p < .09)",
-    "the abstract does not say how outcome simulation compared with the control group",
+    "Cole 2021 (full text and data) codes both its process and its outcome arms at g = 0 against control (exam: p < .09 for process)",
+    "the abstract does not say how outcome simulation compared with the control group or with process simulation",
     "no sample from the Middle East or North Africa"
   ]
 }

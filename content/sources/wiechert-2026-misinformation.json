@@ -11,7 +11,7 @@
   },
   "design": "experiment",
   "designSetBy": "reviewer",
-  "population": "adults tested online (a replication of Loftus, Miller & Burns 1978, Experiment 3); countries not given in the abstract",
+  "population": "adults tested online in three experiments (a car-accident video, then co-witness statements); sample sizes and country not in the abstract",
   "mena": false,
   "findings": [
     {
@@ -26,7 +26,7 @@
     },
     {
       "id": "smaller-with-stakes",
-      "text": "With four answer options and points bet on confidence, the effect was still found but smaller: part of it is people going along, not memory changing",
+      "text": "With a four-option test and points bet on confidence, the effect was still found, though smaller; two things changed at once (the test format and the stakes)",
       "support": {
         "sentence": "With an identical procedure but a four-option memory test and confidence-based point betting, we still found the effect, though smaller.",
         "role": "result",
@@ -43,12 +43,22 @@
         "where": "abstract"
       },
       "kind": "causal"
+    },
+    {
+      "id": "partly-demand",
+      "text": "The authors conclude the effect is robust, partly driven by answering as one thinks is expected, and largely, not definitively, explained by the original being replaced or blocked",
+      "support": {
+        "sentence": "In conclusion, our studies confirmed memory's susceptibility to misinformation, showing a robust effect partly driven by demand effects and largely, though not definitively, explained by single-trace or blocking mechanisms.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "causal"
     }
   ],
   "limits": [
     "an online study with a car-accident video made in a video game: a lab event, not one's own life",
-    "sample sizes and countries are in the full text (not read)",
-    "the authors themselves find the effect partly driven by demand effects (strategic reporting)"
+    "full text closed, not read: sample sizes and country unknown; authors in the Netherlands, Belgium, Israel and the US (an Israeli sample would not be Arab)",
+    "the smaller effect with four options and betting changes the test format and the stakes together: how much is « going along » is not isolated"
   ],
   "acknowledged": []
 }

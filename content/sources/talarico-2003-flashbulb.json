@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "talarico-2003-flashbulb",
+  "doi": "10.1111/1467-9280.02453",
+  "declared": {
+    "title": "Confidence, Not Consistency, Characterizes Flashbulb Memories",
+    "firstAuthor": "Talarico",
+    "authors": [
+      "Talarico",
+      "Rubin"
+    ],
+    "year": 2003,
+    "venue": "Psychological Science",
+    "foundIn": "reports/memory-rewritten/counter-evidence.md (card 16); OpenAlex search « flashbulb memories everyday memories consistency confidence vividness belief accuracy », to 2004 (2026-11-26)"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "n": 54,
+  "population": "54 US students who wrote, the next day, how they heard shocking national news (2001) and a recent everyday event; retested 1, 6 or 32 weeks later",
+  "mena": false,
+  "findings": [
+    {
+      "id": "both-change",
+      "text": "Both memories changed over time: agreement with one's own first account declined as much for the emotional memory as for the everyday one",
+      "support": {
+        "sentence": "Consistency for the flashbulb and everyday memories did not differ, in both cases declining over time.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "belief-stays",
+      "text": "Vividness, recollection and belief in the memory's accuracy declined only for the everyday memory: for the emotional one, people stayed sure while it changed",
+      "support": {
+        "sentence": "However, ratings of vividness, recollection, and belief in the accuracy of memory declined only for everyday memories.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "perceived-accuracy",
+      "text": "The authors conclude that emotional « flashbulb » memories are special not in their accuracy but only in how accurate they feel",
+      "support": {
+        "sentence": "Flashbulb memories are not special in their accuracy, as previously claimed, but only in their perceived accuracy.",
+        "role": "conclusion",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "54 students at one US university: a small sample",
+    "the emotional event is a national tragedy: on the evidence page only, never staged in the scene",
+    "accuracy is agreement with one's own first account, not checked against what happened",
+    "for the everyday memory, belief in its accuracy fell along with its consistency: there, feeling sure did follow the memory"
+  ],
+  "acknowledged": []
+}

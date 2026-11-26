@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "bol-2018-matthew",
+  "doi": "10.1073/pnas.1719557115",
+  "declared": {
+    "title": "The Matthew effect in science funding",
+    "firstAuthor": "Bol",
+    "authors": [
+      "Bol",
+      "de Vaan",
+      "van de Rijt"
+    ],
+    "year": 2018,
+    "venue": "Proceedings of the National Academy of Sciences",
+    "foundIn": "Crossref search « The Matthew effect in science funding Bol de Vaan van de Rijt » (2026-11-26); named by the counter-evidence review"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "population": "recent PhDs applying to a €2 billion grant programme: proposals just above vs just below the funding threshold, followed 8 years; country not in the abstract",
+  "mena": false,
+  "findings": [
+    {
+      "id": "rift",
+      "text": "Those who narrowly missed an early grant gathered less than half the research funding of narrow winners over the next eight years",
+      "support": {
+        "sentence": "Analyses of review scores reveal that early funding success introduces a growing rift, with winners just above the funding threshold accumulating more than twice as much research funding (€180,000) during the following eight years as nonwinners just below it.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "apply-less",
+      "text": "Part of the gap came from those who narrowly failed: they applied for another grant less often",
+      "support": {
+        "sentence": "Surprisingly, however, the emergent funding gap is partly created by applicants, who, after failing to win one grant, apply for another grant less often.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "quasi-experiment (comparison around the funding threshold), not random assignment",
+    "the outcome is later funding, partly a gatekeeping effect of the first grant itself, not what the failure taught",
+    "one programme, early-career researchers; numbers of applicants not given in the abstract"
+  ],
+  "acknowledged": []
+}

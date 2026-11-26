@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "woolley-2022-discomfort",
+  "doi": "10.1177/09567976211044685",
+  "declared": {
+    "title": "Motivating Personal Growth by Seeking Discomfort",
+    "firstAuthor": "Woolley",
+    "authors": [
+      "Woolley",
+      "Fishbach"
+    ],
+    "year": 2022,
+    "venue": "Psychological Science",
+    "foundIn": "reports/choose-your-struggle/counter-evidence.md (card 13); Crossref search « Woolley Fishbach motivating personal growth by seeking discomfort » (2026-11-26)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 2163,
+  "population": "5 experiments with 2,163 adults: improvisation classes, expressive writing, news on COVID-19, opposing political views, gun violence",
+  "mena": false,
+  "findings": [
+    {
+      "id": "seeking-discomfort",
+      "text": "Told to seek discomfort as a sign of growth, people engaged more in personal-growth activities and felt they reached their goal more than with standard instructions",
+      "support": {
+        "sentence": "Across these areas of personal development, seeking discomfort as a signal of self-growth motivated engagement and increased perceived goal achievement relative to standard instructions.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "only-uncomfortable-areas",
+      "text": "The effect appeared only in areas of personal growth that cause immediate discomfort",
+      "support": {
+        "sentence": "Consistent with our theorizing, results showed that these effects occurred only in areas of personal growth that cause immediate discomfort.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "one laboratory (as woolley-2016-fun and woolley-2025-resolutions); no independent replication found (counter-evidence search, 2026-11-23)",
+    "goal achievement is perceived (self-reported), not observed; follow-up length not given in the abstract (full text not read)",
+    "an instruction to seek discomfort, compared with standard instructions: not the choice of a long-term struggle",
+    "countries not given in the abstract; no sample from the Middle East or North Africa known"
+  ]
+}

@@ -26,7 +26,7 @@
     },
     {
       "id": "lab-0-40",
-      "text": "In lab studies, error rates of high-confidence identifications range from 0 to 40% depending on how biased the lineup is against the suspect",
+      "text": "In lab studies, error rates of high-confidence identifications of the suspect range from 0 to 40%, depending on how biased the lineup is against the suspect",
       "support": {
         "sentence": "Our claim is also supported by lab data, which show that error rates for high-confidence identifications of the suspect can range from 0 to 40%, depending on the level of bias against the suspect.",
         "role": "result",
@@ -38,7 +38,8 @@
   "limits": [
     "filler picks are the only errors that can be known in the field: the true error rate is unknown, and most high-confidence picks were not known errors",
     "the number of studies and countries are in the full text (not read)",
-    "about recognizing a stranger's face, not about remembering events of one's own life"
+    "about recognizing a stranger's face, not about remembering events of one's own life",
+    "a synthesis: the field part is a new meta-analysis (observational data), the lab part a non-systematic review"
   ],
   "acknowledged": []
 }

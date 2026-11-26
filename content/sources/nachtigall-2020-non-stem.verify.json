@@ -51,6 +51,11 @@
       "name": "support:no-benefit",
       "result": "pass",
       "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:study1-worse",
+      "result": "pass",
+      "detail": "full-text reading by failure-teaches writer, 2026-11-26: published version (Ruhr-Universität Bochum repository), Study 1 results"
     }
   ],
   "found": {
@@ -66,6 +71,6 @@
   "retracted": false,
   "abstractFrom": "crossref",
   "abstractSha256": "98749901db7862d62046d1994ae5db120af4c17e895749457798b1bf30d0c646",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

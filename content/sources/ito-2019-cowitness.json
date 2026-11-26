@@ -12,7 +12,7 @@
   "design": "experiment",
   "designSetBy": "reviewer",
   "n": 486,
-  "population": "pairs of adults in 10 countries (Brazil, Canada, Colombia, India, Japan, Malaysia, Poland, Portugal, Turkey, United Kingdom)",
+  "population": "486 university students tested in pairs in 10 countries (Brazil, Canada, Colombia, India, Japan, Malaysia, Poland, Portugal, Turkey, UK)",
   "mena": false,
   "findings": [
     {
@@ -44,13 +44,46 @@
         "where": "abstract"
       },
       "kind": "causal"
+    },
+    {
+      "id": "eight-in-ten",
+      "text": "About 8 in 10 of the details a partner had stated (and the person had not seen) were later picked the partner's way on a two-choice test: the authors' translation of the pooled effect",
+      "support": {
+        "sentence": "These two effect sizes translate to 80.2% (and 81.5%) of the items in which the participant was exposed to misleading information from the co-witness being answered incorrectly.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-26: accepted manuscript (WRAP 108300), Results, meta-analysis paragraph"
+      },
+      "effect": {
+        "metric": "percent",
+        "value": 80.2,
+        "correctedForBias": false
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "disputed-rare",
+      "text": "When the person had stated their own version too (a disputed detail), only 1 case in 58 was later reported the partner's way: an unplanned analysis",
+      "support": {
+        "sentence": "In contrast, across the 58 cases of disputed co-witness answers, only in one case (1.8%) did the witness err on the final test by reporting the co-witness's detail.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-26: accepted manuscript (WRAP 108300), Results, disputed vs non-disputed answers"
+      },
+      "effect": {
+        "metric": "percent",
+        "value": 1.8,
+        "correctedForBias": false
+      },
+      "kind": "association"
     }
   ],
   "limits": [
-    "a replication with samples from 10 countries, not described as preregistered in the abstract: classed as an experiment, not a registered multi-lab replication",
-    "a film watched in the lab and a recognition test the same day: not a memory of one's own life weeks later",
-    "Turkey and Malaysia are in the sample, no Arab country: not counted as MENA",
-    "rates per country are in the full text (not read); the abstract says « often », without a figure"
+    "half preregistered, late: the 2nd wave (5 samples) was set out on OSF in advance, but its formal registration was completed after collection (July 2018)",
+    "a lab film, peripheral details (a picture on a wall, a cap's colour), about 1.6 per person, and a two-choice test the same day: not a memory of one's own life",
+    "about 415 of 486 analysed (people exposed to no partner detail were left out); the effect ranged from 34% (Colombia) to 64% (Japan)",
+    "the authors link country differences to how often pairs disputed, and note they do not fit a larger effect in collectivist cultures",
+    "Turkey and Malaysia (Chinese-Malaysian students) are in the sample, no Arab country: not counted as MENA"
   ],
   "acknowledged": []
 }

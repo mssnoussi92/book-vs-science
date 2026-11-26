@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "kedra-2026-online",
+  "doi": "10.5114/cipp/225999",
+  "declared": {
+    "title": "Does mental contrasting with implementation intentions (MCII) help to increase physical activity?",
+    "firstAuthor": "Kędra",
+    "authors": [
+      "Kędra",
+      "Łaguna"
+    ],
+    "year": 2026,
+    "venue": "Current Issues in Personality Psychology",
+    "foundIn": "reports/choose-your-struggle/counter-evidence.md (card 11); Crossref search « Kędra Łaguna MCII online intervention randomized Current Issues in Personality Psychology » (2026-11-26)"
+  },
+  "design": "rct",
+  "designSetBy": "reviewer",
+  "n": 171,
+  "population": "two online trials with physically active people: 59 students aiming to walk more, 112 gym-goers aiming at more aerobic training",
+  "mena": false,
+  "findings": [
+    {
+      "id": "no-effect",
+      "text": "An online MCII exercise did not change physical activity, self-efficacy or engagement over two weeks, in either trial",
+      "support": {
+        "sentence": "No statistically significant effects of the MCII online intervention were observed in either Study 1 or Study 2.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "small samples (59 and 112), two weeks of follow-up",
+    "people already active: little room to improve",
+    "the control group's task and the country are not given in the abstract",
+    "no sample from the Middle East or North Africa known"
+  ]
+}

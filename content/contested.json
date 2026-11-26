@@ -2,5 +2,9 @@
   {
     "key": "iyengar-2000-demotivating",
     "why": "choice overload (the jam study): mean effect virtually zero across 50 experiments (scheibehenne-2010-overload), failed tests (scheibehenne-2009-moderators), preregistered null (lindkvist-2022-donation); no multi-lab replication found (2026-11-22)"
+  },
+  {
+    "key": "eskreis-winkler-2019-failure",
+    "why": "« people learn less from their own failures »: the three published tests share one task whose scoring makes the gap without any feedback (Spiller 2025, a comment refused by the verifier as an editorial, read for failure-teaches); no multi-lab replication found (2026-11-26)"
   }
 ]

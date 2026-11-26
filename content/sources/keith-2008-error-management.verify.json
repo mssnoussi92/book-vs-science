@@ -45,7 +45,7 @@
     {
       "name": "abstract",
       "result": "pass",
-      "detail": "read from openalex"
+      "detail": "read from europepmc"
     },
     {
       "name": "support:overall",
@@ -79,8 +79,8 @@
   },
   "notices": [],
   "retracted": false,
-  "abstractFrom": "openalex",
+  "abstractFrom": "europepmc",
   "abstractSha256": "f507006bb15832779368ae3935d7cec231e5766eceafe07dae86b992f4c102f2",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

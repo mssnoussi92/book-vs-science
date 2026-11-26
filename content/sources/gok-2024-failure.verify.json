@@ -61,6 +61,16 @@
       "name": "support:conclusion",
       "result": "pass",
       "detail": "whole sentence of the abstract; cues: conclusion"
+    },
+    {
+      "name": "support:exact-1b-ns",
+      "result": "pass",
+      "detail": "full-text reading by failure-teaches writer, 2026-11-26: accepted manuscript (PsyArXiv bw42v), Study 1b results"
+    },
+    {
+      "name": "support:no-ego-difference",
+      "result": "pass",
+      "detail": "full-text reading by failure-teaches writer, 2026-11-26: accepted manuscript (PsyArXiv bw42v), Study 1b discussion"
     }
   ],
   "found": {
@@ -76,6 +86,6 @@
   "retracted": false,
   "abstractFrom": "europepmc",
   "abstractSha256": "00da9b3e343f709719920cfee0103bea133519e17694ed6d31ce82836095313c",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

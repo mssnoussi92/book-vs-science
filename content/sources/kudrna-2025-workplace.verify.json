@@ -1,0 +1,76 @@
+{
+  "doi": "10.3390/ijerph22030398",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « A Mixed-Methods Cluster Randomised Waitlist-Controlled Trial of a Goal-Based Behaviour Change Intervention Implemented in Workplaces » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Kudrna » matches; 5/5 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2025, found 2025"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:no-progress",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:anxiety-up",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "A Mixed-Methods Cluster Randomised Waitlist-Controlled Trial of a Goal-Based Behaviour Change Intervention Implemented in Workplaces",
+    "firstAuthor": "Kudrna",
+    "years": [
+      2025
+    ],
+    "type": "journal-article",
+    "venue": "International Journal of Environmental Research and Public Health"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "3fd8e9a0a208bd50c5cbd769f9339b9f6276fdbc315d18d9a49712dd7c02e01e",
+  "checkedOn": "2026-11-26",
+  "tool": "bvs-sources@0.1"
+}

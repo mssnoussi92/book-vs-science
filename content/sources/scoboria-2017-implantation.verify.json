@@ -53,6 +53,11 @@
       "detail": "whole sentence of the abstract; cues: result"
     },
     {
+      "name": "support:full-robust",
+      "result": "pass",
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-26: accepted manuscript (WRAP 83729), Results, False memory formation across studies"
+    },
+    {
       "name": "support:up-to-46",
       "result": "pass",
       "detail": "whole sentence of the abstract; cues: result"
@@ -72,6 +77,6 @@
   "retracted": false,
   "abstractFrom": "europepmc",
   "abstractSha256": "8852627948aa9557e3235e1bd8efa417f1a8fe8683c84fb7e4198225455da9c3",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

@@ -48,9 +48,14 @@
       "detail": "read from europepmc"
     },
     {
-      "name": "support:large-implanting",
+      "name": "support:above-zero",
       "result": "pass",
       "detail": "whole sentence of the abstract; cues: result"
+    },
+    {
+      "name": "support:about-half",
+      "result": "pass",
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-26: PMC10126919, Results (success against failure, p–q)"
     },
     {
       "name": "support:adults-too",
@@ -71,6 +76,6 @@
   "retracted": false,
   "abstractFrom": "europepmc",
   "abstractSha256": "cc6819e6711e8199f7d1609e056448681bf4547b9150f053efa66e9b9e19dc0b",
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-26",
   "tool": "bvs-sources@0.1"
 }

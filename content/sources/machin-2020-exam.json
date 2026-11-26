@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "machin-2020-exam",
+  "doi": "10.1016/j.jpubeco.2020.104224",
+  "declared": {
+    "title": "Entry through the narrow door: The costs of just failing high stakes exams",
+    "firstAuthor": "Machin",
+    "authors": [
+      "Machin",
+      "McNally",
+      "Ruiz-Valenzuela"
+    ],
+    "year": 2020,
+    "venue": "Journal of Public Economics",
+    "foundIn": "Crossref search « Machin McNally Ruiz-Valenzuela entry through the narrow door English exam threshold » (2026-11-26); named by the counter-evidence review"
+  },
+  "design": "longitudinal",
+  "designSetBy": "reviewer",
+  "population": "students in England sitting a high-stakes national exam at the end of compulsory schooling: just below vs just above the pass mark, followed to age 18-19",
+  "mena": false,
+  "findings": [
+    {
+      "id": "lower-track",
+      "text": "Three years later, students who just failed the exam were less likely to enter a high-level academic or vocational track and to start higher education",
+      "support": {
+        "sentence": "Three years later, students who just fail to achieve the required threshold have a lower probability of entering an upper-secondary high-level academic or vocational track and of starting tertiary education.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "dropout",
+      "text": "Students who just failed were also more likely to have left education by 18 without a job",
+      "support": {
+        "sentence": "Those who fail to pass the threshold are also more likely to drop out of education by age 18, without some form of employment.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "quasi-experiment around a pass mark (regression discontinuity, regraded marks), not random assignment",
+    "the pass mark opens doors (tracks, courses): the cost of failing is partly closed doors, not what failing taught",
+    "one exam in England; sample size not given in the abstract (administrative data); abstract read from OpenAlex only"
+  ],
+  "acknowledged": []
+}

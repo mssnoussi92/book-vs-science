@@ -23,7 +23,7 @@
   "findings": [
     {
       "id": "quality",
-      "text": "Doing a task for its own interest predicted the quality of performance better than incentives did",
+      "text": "Weighed together with incentives, intrinsic motivation predicted the quality of performance better, while incentives better predicted its quantity",
       "support": {
         "sentence": "Considered simultaneously through meta-analytic regression, intrinsic motivation predicted more unique variance in quality of performance, whereas incentives were a better predictor of quantity of performance.",
         "role": "result",
@@ -44,6 +44,7 @@
   ],
   "limits": [
     "associations: motivation and performance mostly measured together, so performance may also raise interest",
+    "compared with extrinsic incentives, not with people who value only the result; the outcome is performance, not persistence",
     "intrinsic motivation is interest and enjoyment, not the acceptance of pain the book speaks of",
     "countries not listed in the abstract; no sample from the Middle East or North Africa known"
   ]

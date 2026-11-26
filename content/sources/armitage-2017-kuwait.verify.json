@@ -1,0 +1,71 @@
+{
+  "doi": "10.1007/s11121-017-0807-z",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Randomized Controlled Trial of a Volitional Help Sheet to Encourage Weight Loss in the Middle East » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Armitage » matches; 3/3 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2017, found 2017"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:weight-loss",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; cues: result"
+    }
+  ],
+  "found": {
+    "title": "Randomized Controlled Trial of a Volitional Help Sheet to Encourage Weight Loss in the Middle East",
+    "firstAuthor": "Armitage",
+    "years": [
+      2017
+    ],
+    "type": "journal-article",
+    "venue": "Prevention Science"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "1639000df8be20032f899e53da30e170500122778203f22aff71c28c4f2983e9",
+  "checkedOn": "2026-11-26",
+  "tool": "bvs-sources@0.1"
+}

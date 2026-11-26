@@ -20,7 +20,7 @@
   "designSetBy": "reviewer",
   "n": 5685,
   "k": 94,
-  "population": "94 experiments (123 effect sizes, N = 5,685) comparing mental simulation with a control group; mostly young students",
+  "population": "123 effect sizes from 94 studies (N = 5,685) of mental simulation against control; mean age 25, students in 78% of studies",
   "mena": false,
   "findings": [
     {
@@ -43,12 +43,12 @@
     },
     {
       "id": "positive-outcome-helps",
-      "text": "Imagining a desired, successful outcome improved later behaviour a little compared with control (15 effect sizes)",
+      "text": "Picturing a successful outcome improved later behaviour a little compared with no simulation (15 effect sizes; 12 of them measured 1 to 19 weeks later)",
       "support": {
-        "sentence": "Thus, it is apparent here that simulation of superior outcomes (and positive simulations in general) is among several beneficial mental simulation subtypes which can be used as behavior change techniques.",
-        "role": "conclusion",
+        "sentence": "However, it is important to state that the effect of superior outcome simulations (Hedges’s g = .23) was smaller than effects found for other subtypes—possibly because the effect of positive simulations are moderated by factors such as personality type and imagery content (Vasque & Buehler, 2007 ) or because these simulations are by nature less effective.",
+        "role": "result",
         "where": "fulltext",
-        "readBy": "choose-your-struggle agent, 2026-11-23: published PDF, ray.yorksj.ac.uk/4802, Discussion and Table 3"
+        "readBy": "choose-your-struggle reviser, 2026-11-26: Europe PMC full text PMC8500882, Table 3, Discussion; data file ESM 2"
       },
       "effect": {
         "metric": "g",
@@ -62,12 +62,12 @@
     },
     {
       "id": "process-uncertain",
-      "text": "Simulating the steps alone (5 effect sizes) had no reliable effect compared with control; the authors warn against strong claims for it",
+      "text": "Rehearsing the steps alone (5 effect sizes) had a small effect compared with control that was not statistically significant",
       "support": {
-        "sentence": "However, results from this meta-analysis show that caution is needed in making any strong assumptions about process simulations, at least until further empirical research conclusively replicates positive effects following process simulations.",
-        "role": "conclusion",
+        "sentence": "In the present meta-analysis, when participants focused upon instrumental plans toward one’s goal, rather than goal outcomes—the means rather than the end—there was a small positive effect that did not reach statistical significance within our multilevel moderation model.",
+        "role": "result",
         "where": "fulltext",
-        "readBy": "choose-your-struggle agent, 2026-11-23: published PDF, ray.yorksj.ac.uk/4802, Discussion and Table 3"
+        "readBy": "choose-your-struggle reviser, 2026-11-26: Europe PMC full text PMC8500882, Discussion (footnote mark 6 left out)"
       },
       "effect": {
         "metric": "g",
@@ -78,12 +78,26 @@
         ]
       },
       "kind": "causal"
+    },
+    {
+      "id": "subtypes-not-different",
+      "text": "The effects of the different kinds of simulation (process, outcome, performance, combined) did not differ significantly from one another",
+      "support": {
+        "sentence": "While some subtypes appear to have different effects than others, an omnibus test of moderators shows that the effects are not statistically significantly different between subtypes of mental simulation, QM( df = 7) = 10.47, p = .1636.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "choose-your-struggle reviser, 2026-11-26: Europe PMC full text PMC8500882, Results"
+      },
+      "kind": "association"
     }
   ],
   "limits": [
-    "the omnibus test of subtypes was not significant: subtype estimates are exploratory, some on very few studies (process: 5)",
-    "each subtype is compared with control groups, never process against outcome head to head",
-    "almost all participants were young students; behaviour mostly measured within a day of the simulation",
+    "the omnibus test of subtypes was not significant (p = .16): subtype estimates are exploratory, some on very few studies (process: 5)",
+    "each subtype is compared with control, never process against outcome head to head; in the 4 studies with both arms, process did no better (ESM 2)",
+    "the 15 outcome effects: 12 in health, 10 with incentives, none from Oettingen's paradigm (idealized against questioning fantasies)",
+    "Pham 1999 is coded g = 0 for both its process and its outcome arm against control (exam, p < .09)",
+    "the Results text lists process among significant subtypes, against Table 3 (p = .20) and the Discussion: Table 3 is followed",
+    "students in 78% of studies; 59% of comparisons measured the same day; protocol not preregistered",
     "countries not listed; no sample from the Middle East or North Africa known"
   ]
 }

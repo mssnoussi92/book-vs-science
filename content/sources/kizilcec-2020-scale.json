@@ -11,7 +11,8 @@
   },
   "design": "rct",
   "designSetBy": "reviewer",
-  "population": "about 250,000 students from nearly every country in 247 online courses (Harvard, MIT, Stanford) over 2.5 years; preregistered waves",
+  "n": 269169,
+  "population": "269,169 students from nearly every country in 247 online courses (Harvard, MIT, Stanford), 2016-2019; MCII tested in year 2",
   "mena": false,
   "findings": [
     {
@@ -26,7 +27,7 @@
     },
     {
       "id": "mcii-null",
-      "text": "At scale, MCII did not improve course completion even for students in individualist countries, where it had worked before",
+      "text": "At scale, MCII did not improve course completion for the 12,879 students of individualist countries, where it had raised it from 5.5% to 7.3% and from 26% to 30% before",
       "support": {
         "sentence": "The MCII intervention did not improve course completion for students in individualistic countries (year 2: β = 0.25 pp, 95% CI = [−0.87, 1.37], t = 0.44, P = 0.662), and the social accountability intervention did not improve completion rates for students in nonindividualistic countries (year 2: β = 0.89 pp, 95% CI = [−0.22, 1.99], t = 1.58, P = 0.115).",
         "role": "result",
@@ -39,6 +40,8 @@
   "limits": [
     "online courses with low completion rates; a light intervention embedded in a survey",
     "results by groups of countries (individualism, development), none for the Arab world",
-    "the MCII test is the authors' own replication of their earlier result (kizilcec-2017-culture)"
+    "the MCII result is in the full text; the abstract does not name MCII",
+    "the authors' own replication of kizilcec-2017-culture: preregistered waves, hypotheses refined between waves, one team (not multi-lab)",
+    "its interval (−0.87 to 1.37 points) excludes the earlier gains (+1.8 and +3.9 points)"
   ]
 }

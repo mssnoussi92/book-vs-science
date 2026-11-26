@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "marszal-wisniewska-2014-weight",
+  "doi": "10.1080/00223980.2014.987102",
+  "declared": {
+    "title": "Role of Mental Simulations in the Weight Loss Process",
+    "firstAuthor": "Marszał-Wiśniewska",
+    "authors": [
+      "Marszał-Wiśniewska",
+      "Jarczewska-Gerc"
+    ],
+    "year": 2014,
+    "venue": "The Journal of Psychology",
+    "foundIn": "reports/choose-your-struggle/counter-evidence.md (card 5); Crossref search « Marszał-Wiśniewska Jarczewska-Gerc role of mental simulation in the weight loss process » (2026-11-26)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 146,
+  "population": "women eager to lose weight: 40 students (study 1) and 106 women aged 19-45 (study 2), randomly given kinds of mental simulation",
+  "mena": false,
+  "findings": [
+    {
+      "id": "process-weight",
+      "text": "In study 1, women who rehearsed the process (alone or before a negative outcome) lost more weight over five weeks than those who pictured a positive outcome or did nothing",
+      "support": {
+        "sentence": "Students from the mixed and process simulation groups lost significantly more weight after five weeks than participants from the outcome simulation and control groups.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "combined-best",
+      "text": "In study 2, the process followed by a positive outcome gave the most persistence, the process followed by a negative outcome the most weight lost",
+      "support": {
+        "sentence": "Results showed that process followed by positive outcome simulations lead to the highest persistence in the weight loss process, while process followed by negative outcome simulations induced the greatest reduction in weight.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "study 1: 40 women in four groups, about 10 per group",
+    "cole-2021-simulation codes the process and positive-outcome arms of study 2 at g = 0 against control (its data file ESM 2)",
+    "women only; country not given in the abstract; online 2014, in an issue of 2016",
+    "no sample from the Middle East or North Africa known"
+  ]
+}

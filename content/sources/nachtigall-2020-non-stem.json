@@ -17,24 +17,35 @@
   "design": "experiment",
   "designSetBy": "reviewer",
   "n": 364,
-  "population": "10th graders in 2 quasi-experimental studies (212 and 152 students) learning social science research methods",
+  "population": "10th graders from 8 schools in North Rhine-Westphalia, Germany (212 and 152 students), in a university lab, learning social science research methods",
   "mena": false,
   "findings": [
     {
       "id": "no-benefit",
-      "text": "Students who tried a problem before instruction did not learn social science methods better than students taught first",
+      "text": "Students who tried a problem before instruction did not learn social science methods better than students taught first, in either study",
       "support": {
         "sentence": "Thus, the findings did not replicate the PF effect on learning in a non-STEM domain.",
         "role": "conclusion",
         "where": "abstract"
       },
       "kind": "intervention"
+    },
+    {
+      "id": "study1-worse",
+      "text": "In Study 1, students who tried first scored lower than students taught first on application and transfer items (a medium-sized difference)",
+      "support": {
+        "sentence": "Contrary to our expectations, PF students achieved a significantly lower score than DI students (see Table 9).",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "failure-teaches writer, 2026-11-26: published version (Ruhr-Universität Bochum repository), Study 1 results"
+      },
+      "kind": "intervention"
     }
   ],
   "limits": [
-    "quasi-experimental: classes, not individuals, were probably assigned",
-    "one domain (research methods), one age group; country not given in the abstract",
-    "a null result in 2 studies does not show the method harms"
+    "quasi-experimental: whole classes assigned to a condition (Study 1: 6 classes vs 5), analysed per student",
+    "one domain (research methods), one age group, one out-of-school lab in Germany",
+    "Study 1 favoured instruction first (partial eta squared 0.12 on total learning, 0.13 on transfer); Study 2 found no significant difference"
   ],
   "acknowledged": []
 }

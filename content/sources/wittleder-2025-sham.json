@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "wittleder-2025-sham",
+  "doi": "10.1177/10901981241310216",
+  "declared": {
+    "title": "WOOP as a Brief Alcohol Intervention Led by Lay Coaches in College Settings",
+    "firstAuthor": "Wittleder",
+    "authors": [
+      "Wittleder",
+      "Bhoopsingh",
+      "Gollwitzer",
+      "Jay",
+      "Mutter",
+      "Valshtein"
+    ],
+    "year": 2025,
+    "venue": "Health Education & Behavior",
+    "foundIn": "reports/choose-your-struggle/counter-evidence.md (card 12); OpenAlex search « Wittleder WOOP sham heavy drinking » (2026-11-26)"
+  },
+  "design": "rct",
+  "designSetBy": "reviewer",
+  "population": "adults recruited on a college campus, taught WOOP or a format-matched Sham WOOP by student lay coaches in one session",
+  "mena": false,
+  "findings": [
+    {
+      "id": "fewer-heavy-days",
+      "text": "Compared with a sham version that pictures the outcome twice instead of the obstacle, WOOP led to fewer self-reported heavy drinking days 1 and 2 months later",
+      "support": {
+        "sentence": "We found that the WOOP intervention group reported fewer heavy drinking days (≥ 5 drinks for men or ≥ 4 drinks for women, measured using the Alcohol Timeline Follow-Back Method) compared to the Sham group at the 1-month and 2-month follow-ups.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "intervention"
+    }
+  ],
+  "limits": [
+    "a feasibility trial: sample size and effect size not in the abstract (full text closed)",
+    "self-reported drinking (timeline follow-back)",
+    "the sham pictures wish and outcome, then the outcome again: the closest test of WOOP against only dreaming",
+    "no sample from the Middle East or North Africa known"
+  ],
+  "allegiance": "co-authored by Gollwitzer and Oettingen, who created WOOP and promote it"
+}

@@ -11,12 +11,13 @@
   },
   "design": "experiment",
   "designSetBy": "reviewer",
-  "population": "college students from the Middle East in online classes during COVID-19 (authors at a university in Saudi Arabia)",
+  "n": 269,
+  "population": "269 Saudi female undergraduates (Arabic first language) in online classes, randomly given process (139) or outcome (130) simulation",
   "mena": true,
   "findings": [
     {
       "id": "no-test-difference",
-      "text": "Rehearsing the steps rather than the good grade made no difference to engagement, midterm test scores or predictions of performance",
+      "text": "Compared with picturing the good grade, rehearsing the steps made no difference to engagement, midterm test scores or predictions of performance",
       "support": {
         "sentence": "It did not influence behavioral engagement, midterm test performance, or predictions of performance before or after the test.",
         "role": "result",
@@ -33,12 +34,25 @@
         "where": "abstract"
       },
       "kind": "causal"
+    },
+    {
+      "id": "outcome-first-half",
+      "text": "Assignments of the first half of the semester were better after picturing the good grade than after rehearsing the steps",
+      "support": {
+        "sentence": "Performance on assignments completed during the 1st half of the semester was higher for students who carried out the outcome simulation exercise, t(267) = 2.74, p = .006.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "choose-your-struggle reviser, 2026-11-26: publisher PDF (ijcrsee.com, article 326), Results"
+      },
+      "kind": "causal"
     }
   ],
   "limits": [
-    "sample size and how students were assigned are not in the abstract; full text not reachable (site behind a bot check)",
-    "no control group without simulation: process against outcome only",
-    "small open-access journal; online classes during the pandemic",
-    "the only sample from the Middle East in this dossier"
+    "women only, one private university in Al Khobar; two short written exercises (5 questions), at the start of the semester and before the midterm",
+    "only process against outcome was randomized; the baseline is an earlier cohort matched on credits and grades, not randomized",
+    "several outcomes: the assignment effects go in opposite directions by half of the semester (outcome first, process second)",
+    "the outcome group imagined 5 actions after learning of a high mark: an outcome simulation, not an idealized fantasy as in Oettingen's work",
+    "small open-access journal (cited twice); online classes during the COVID-19 pandemic, summer 2020",
+    "an Arab sample (Saudi Arabia): the only one in this dossier on mental simulation"
   ]
 }

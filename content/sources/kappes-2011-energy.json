@@ -32,7 +32,7 @@
     },
     {
       "id": "less-accomplishment",
-      "text": "In Study 3 (40 students), positive fantasies about the coming week went with lower self-reported accomplishment one week later",
+      "text": "In Study 3 (40 students analysed), accomplishment reported a week later (how well the week went) was lower after a positive fantasy than after a neutral one",
       "support": {
         "sentence": "Indeed, accomplishment as reported a week later was lower in the positive fantasy than in the control condition, t(38)=2.00, p=.05, η2=.10 (Mpos=5.74, SD=1.36 versus Mcon=6.57, SD=1.26).",
         "role": "result",
@@ -44,8 +44,10 @@
   ],
   "limits": [
     "small samples of American undergraduates; energy measured right after the induction (blood pressure, self-report)",
-    "achievement measured once, self-reported after one week, in a single study of 40 (p = .05)",
-    "one laboratory; no independent replication found",
+    "achievement tested once (Study 3): self-reported a week later (« how well did the past week go »), 40 of 49 analysed, p = .05",
+    "Study 1 effect very small (η² = .024): 164 women imagining wearing high-heeled shoes",
+    "in Study 3, 44% of the positive-fantasy group still mentioned obstacles (manipulation check)",
+    "one laboratory; no independent replication found (both reviews, 2026-11-23)",
     "no abstract in Europe PMC, Crossref or OpenAlex: read in the authors' accepted manuscript",
     "no sample from the Middle East or North Africa"
   ],

@@ -12,51 +12,45 @@
   "design": "meta-analysis",
   "designSetBy": "reviewer",
   "k": 30,
-  "population": "children and adults in 30 studies that tried to implant rich false autobiographical memories; countries not listed in the abstract",
+  "population": "children and adults in 30 lab studies (simulation designs) that tried to implant rich false autobiographical memories; countries not listed",
   "mena": false,
   "findings": [
     {
-      "id": "large-implanting",
-      "text": "Across 30 studies, implanting a rich false memory succeeded with a large and generalizable average effect",
+      "id": "above-zero",
+      "text": "Across 30 studies, rich false memories were implanted in more than a trivial share of people; the authors' d compares that rate with zero, not two groups",
       "support": {
         "sentence": "The results revealed a significant, positive, generalizable (the lower limit for the 80% credibility value was d = 1.13), and more than large mean effect size (d = 1.43[1.33, 1.53]) for the implanting of false memory.",
         "role": "result",
         "where": "abstract"
       },
-      "effect": {
-        "metric": "d",
-        "value": 1.43,
-        "ci": [
-          1.33,
-          1.53
-        ],
-        "correctedForBias": false
+      "kind": "causal"
+    },
+    {
+      "id": "about-half",
+      "text": "Compared with not implanting, the average chance of implanting a rich false memory was about even, as each study coded it, and it varied widely between studies",
+      "support": {
+        "sentence": "In short, the probability of implanting false memories was 50% i.e., a common effect.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-26: PMC10126919, Results (success against failure, p–q)"
       },
       "kind": "causal"
     },
     {
       "id": "adults-too",
-      "text": "The effect was similar in children and in adults",
+      "text": "Rates were similar in minors and in adults (groups compared: age was not manipulated)",
       "support": {
         "sentence": "A similar effect for memory implantation was observed in both the underage (d = 1.44[1.29, 1.59]), and in adults (d = 1.36[1.22, 1.50]).",
         "role": "result",
         "where": "abstract"
       },
-      "effect": {
-        "metric": "d",
-        "value": 1.36,
-        "ci": [
-          1.22,
-          1.5
-        ],
-        "correctedForBias": false
-      },
-      "kind": "causal"
+      "kind": "association"
     }
   ],
   "limits": [
-    "its d measures the probability of implanting against zero: not comparable with a usual difference between two groups; never shown as « large » on screen",
-    "pools very different procedures (false narratives, doctored photos, true events with false details)",
+    "its d is a Cohen's h of the rate against a constant (zero), not a difference between two groups: never shown as « large »",
+    "the authors: effect sizes « so extraordinarily high that it was highly probable they had been overestimated »; no design separated a memory from going along",
+    "pools very different procedures (false narratives, doctored photos, true events with false details), all lab simulations",
     "same coding debate as Scoboria 2017: what counts as a « rich » false memory"
   ],
   "acknowledged": []

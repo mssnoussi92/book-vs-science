@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "bilgin-2024-central",
+  "doi": "10.1080/09658211.2024.2323935",
+  "declared": {
+    "title": "The mnemonic effect of central and peripheral misinformation on social media",
+    "firstAuthor": "Bilgin",
+    "authors": [
+      "Bilgin",
+      "Wang"
+    ],
+    "year": 2024,
+    "venue": "Memory",
+    "foundIn": "reports/memory-rewritten/counter-evidence.md (card 6); Crossref search « susceptibility peripheral central false information tweets memory culture », from 2023 (2026-11-26)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 425,
+  "population": "425 European American and Asian or Asian American college students (US), two online studies: GIFs of daily-life events, then tweets about them",
+  "mena": false,
+  "findings": [
+    {
+      "id": "tweeted-more",
+      "text": "In both studies and both cultural groups, people falsely recognized more of the false details they had read in tweets than false details they had not read",
+      "support": {
+        "sentence": "Regardless of cultural background, participants in both studies demonstrated the misinformation effect, whereby they falsely recognised more and resisted less tweeted than untweeted false information.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "central-less",
+      "text": "People were more easily misled about peripheral details of an event than about its central details",
+      "support": {
+        "sentence": "Furthermore, they showed higher susceptibility to peripheral than central false information exposed via tweets.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "daily-life clips and tweets from strangers, a true/false test: not a talk with a colleague, not one's own life",
+    "in Study 2, Asian participants were less influenced than European Americans (abstract): no sign of a larger effect in « collectivist » groups",
+    "US college students; no sample from the Middle East or North Africa",
+    "the abstract gives no rates: how much less for central details is in the full text (closed, not read)"
+  ],
+  "acknowledged": []
+}

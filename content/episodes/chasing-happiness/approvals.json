@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/approvals.schema.json",
+  "sources": {
+    "on": "2026-11-26",
+    "words": "Je valide e085ea, 0c2f95, 01ac6a (Recommandé) : sources et script de « courir après le bonheur » retravaillé (le livre avec son exemple, deux études racontées, nouvelles accroches, fin plus chaleureuse ; 68,8 s)",
+    "via": "conversation",
+    "hash": "e085ead188eb579df3c38111ad285ab4dcfbebfd5ed864e15852c0c6904aa486"
+  },
+  "script": {
+    "ar-EG": {
+      "on": "2026-11-26",
+      "words": "Je valide e085ea, 0c2f95, 01ac6a (Recommandé) : sources et script de « courir après le bonheur » retravaillé (le livre avec son exemple, deux études racontées, nouvelles accroches, fin plus chaleureuse ; 68,8 s)",
+      "via": "conversation",
+      "hash": "0c2f953b391fa8d470c17fc9a7b53596203b43325d62cb524b0be2de28224757"
+    },
+    "en": {
+      "on": "2026-11-26",
+      "words": "Je valide e085ea, 0c2f95, 01ac6a (Recommandé) : sources et script de « courir après le bonheur » retravaillé (le livre avec son exemple, deux études racontées, nouvelles accroches, fin plus chaleureuse ; 68,8 s)",
+      "via": "conversation",
+      "hash": "01ac6ae554d25bc60ad5aef23f4ff6ee55ee4200969ea1167c9082d0ff9d30ac"
+    }
+  },
+  "voice": {},
+  "video": {}
+}

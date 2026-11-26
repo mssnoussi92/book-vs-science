@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "andrews-2024-mall",
+  "doi": "10.1002/acp.70012",
+  "declared": {
+    "title": "Lost in the Mall? Interrogating Judgements of False Memory",
+    "firstAuthor": "Andrews",
+    "authors": [
+      "Andrews",
+      "Brewin"
+    ],
+    "year": 2024,
+    "venue": "Applied Cognitive Psychology",
+    "foundIn": "dossier draft memory-rewritten (keptOut) and reports/memory-rewritten/counter-evidence.md (card 9); OpenAlex search « lost in the mall reanalysis transcripts false memories investigator judgements participants », from 2024 (2026-11-26)"
+  },
+  "design": "cross-sectional",
+  "designSetBy": "reviewer",
+  "population": "transcripts of the Irish participants of murphy-2023-mall whom the researchers had judged to have a false memory",
+  "mena": false,
+  "findings": [
+    {
+      "id": "coders-more",
+      "text": "In that replication, the researchers' judgements counted many more false memories than the participants themselves reported",
+      "support": {
+        "sentence": "In this new study standard investigator judgements indicated many more false memories than did participants themselves, consistent with similar studies.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "few-details",
+      "text": "Of six suggested core details, fewer than two were recalled on average; 20% of « full » and 58% of « partial » false memories did not include being lost",
+      "support": {
+        "sentence": "On average, fewer than two details in the fake event were explicitly recalled; 20% with full and 58% with partial false memories did not recall being lost.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "possibly-true",
+      "text": "Half the participants described experiences that may be true, distinct from the made-up event",
+      "support": {
+        "sentence": "Half the participants described potentially true experiences, distinguishable from the fake event; this group recalled more suggested details but tended to remember them differently.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "association"
+    }
+  ],
+  "limits": [
+    "by the authors of brewin-2017-childhood, one side of a published debate; Murphy & Greene replied in 2025 (10.1002/acp.70044): even 4% would matter",
+    "a new coding of one study's transcripts (123 people, Ireland), not new data: classed as cross-sectional"
+  ],
+  "acknowledged": []
+}

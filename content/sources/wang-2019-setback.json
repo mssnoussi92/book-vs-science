@@ -16,12 +16,12 @@
   },
   "design": "longitudinal",
   "designSetBy": "reviewer",
-  "population": "junior scientists applying for NIH R01 grants (USA): proposals just below versus just above the funding threshold",
+  "population": "561 narrow winners and 623 near misses among junior applicants for NIH R01 grants (USA, 1990-2005), proposals just above or below the funding threshold",
   "mena": false,
   "findings": [
     {
       "id": "attrition",
-      "text": "A near miss made scientists more likely to leave for good: more than a 10% chance of disappearing from the NIH system",
+      "text": "A near miss made junior scientists more likely to leave for good: more than a 10% higher chance of disappearing from the NIH system (12.6% over ten years, full text)",
       "support": {
         "sentence": "On the one hand, it significantly increases attrition, predicting more than a 10% chance of disappearing permanently from the NIH system.",
         "role": "result",
@@ -31,29 +31,33 @@
     },
     {
       "id": "near-miss-outperform",
-      "text": "Those who narrowly missed the grant and stayed later outperformed those who narrowly won it",
+      "text": "Among those who stayed active, near misses later published more highly cited work than narrow winners (measured after the setback had pushed others out)",
       "support": {
         "sentence": "Yet, despite an early setback, individuals with near misses systematically outperform those with narrow wins in the longer run.",
         "role": "result",
         "where": "abstract"
       },
-      "kind": "causal"
+      "kind": "association"
     },
     {
       "id": "beyond-screening",
-      "text": "The authors argue the advantage is not only that the weaker left: the setback seems to cause an improvement in those who persevere",
+      "text": "The authors argue the advantage is not only that the weaker left: the setback « seems » to cause an improvement in those who persevere",
       "support": {
         "sentence": "Moreover, this performance advantage seems to go beyond a screening mechanism, suggesting early-career setback appears to cause a performance improvement among those who persevere.",
         "role": "conclusion",
         "where": "abstract"
       },
-      "kind": "causal"
+      "kind": "association"
     }
   ],
   "limits": [
-    "a quasi-experiment around a funding cut-off, not random assignment",
-    "the gain is measured among those who stayed, while the setback pushed others out",
+    "quasi-experiment (fuzzy regression discontinuity at the funding cut-off): causal for leaving, not for performance",
+    "performance is compared « conditional on remaining active in the NIH system » (full text), after a selection the setback itself causes",
+    "small gain: after matching, citations 30.8 vs 27.7, Cohen's d = 0.05 (full text)",
+    "Traag et al. 2025 (eLife reviewed preprint, 14 programmes, 6 funders): the setback effect « is not robust » and is likely a selection effect",
+    "the authors: their results « do not imply that one should strategically put roadblocks in the way of junior scientists »",
     "one select group (US biomedical scientists); outcome = later publications and citations, not learning"
   ],
-  "acknowledged": []
+  "acknowledged": [],
+  "n": 1184
 }

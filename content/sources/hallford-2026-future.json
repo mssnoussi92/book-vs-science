@@ -1,0 +1,50 @@
+{
+  "$schema": "../../schemas/source.schema.json",
+  "id": "hallford-2026-future",
+  "doi": "10.1080/00049530.2026.2762616",
+  "declared": {
+    "title": "Outcome versus process focused future thinking: results from a randomised experiment",
+    "firstAuthor": "Hallford",
+    "authors": [
+      "Hallford",
+      "Thomas",
+      "Simpson",
+      "Matsumoto"
+    ],
+    "year": 2026,
+    "venue": "Australian Journal of Psychology",
+    "foundIn": "reports/choose-your-struggle/counter-evidence.md (cards 2 and 6); Crossref search « Hallford outcome-focused process-focused thinking anticipatory pleasure motivation preregistered » (2026-11-26)"
+  },
+  "design": "experiment",
+  "designSetBy": "reviewer",
+  "n": 134,
+  "population": "134 adults online (mean age 35) who imagined personally relevant future events, randomly told to focus on outcomes or on steps",
+  "mena": false,
+  "findings": [
+    {
+      "id": "outcome-motivates",
+      "text": "Thinking about the outcome of a future event raised anticipatory pleasure, motivation and personal significance",
+      "support": {
+        "sentence": "Outcome-focused thinking increased anticipatory pleasure, motivation and personal significance.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    },
+    {
+      "id": "process-less-control",
+      "text": "Thinking about the steps lowered perceived control and went with less anticipated and anticipatory pleasure",
+      "support": {
+        "sentence": "In contrast, process-focused thinking reduced perceived control and was associated with reductions in both anticipated and anticipatory pleasure.",
+        "role": "result",
+        "where": "abstract"
+      },
+      "kind": "causal"
+    }
+  ],
+  "limits": [
+    "self-reported feelings right after the task: no effort, behaviour or result measured",
+    "imagined events, not a goal pursued afterwards; preregistered, one online sample",
+    "country not given in the abstract; no sample from the Middle East or North Africa known"
+  ]
+}

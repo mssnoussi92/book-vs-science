@@ -1,0 +1,71 @@
+{
+  "doi": "10.1016/j.cognition.2012.07.009",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "exists",
+      "result": "pass",
+      "detail": "known by Crossref and OpenAlex"
+    },
+    {
+      "name": "not-a-notice",
+      "result": "pass",
+      "detail": "not a correction, comment or other notice"
+    },
+    {
+      "name": "title",
+      "result": "pass",
+      "detail": "score 1.00 (whole title) against « Undoing suggestive influence on memory: The reversibility of the eyewitness misinformation effect » (Crossref)"
+    },
+    {
+      "name": "first-author",
+      "result": "pass",
+      "detail": "first author « Oeberst » matches; 2/2 declared authors present"
+    },
+    {
+      "name": "year",
+      "result": "pass",
+      "detail": "declared 2012, found 2012"
+    },
+    {
+      "name": "type",
+      "result": "pass",
+      "detail": "Crossref type « journal-article »"
+    },
+    {
+      "name": "retraction",
+      "result": "pass",
+      "detail": "no retraction, withdrawal, removal or expression of concern"
+    },
+    {
+      "name": "corrections",
+      "result": "pass",
+      "detail": "no correction or erratum"
+    },
+    {
+      "name": "abstract",
+      "result": "pass",
+      "detail": "read from europepmc"
+    },
+    {
+      "name": "support:undone",
+      "result": "pass",
+      "detail": "whole sentence of the abstract; no role cue"
+    }
+  ],
+  "found": {
+    "title": "Undoing suggestive influence on memory: The reversibility of the eyewitness misinformation effect",
+    "firstAuthor": "Oeberst",
+    "years": [
+      2012
+    ],
+    "type": "journal-article",
+    "venue": "Cognition"
+  },
+  "notices": [],
+  "retracted": false,
+  "abstractFrom": "europepmc",
+  "abstractSha256": "6fd12771fdba3298abc98cf48b8dbe5418b1d499eaccfaf226407e01637065f2",
+  "checkedOn": "2026-11-26",
+  "tool": "bvs-sources@0.1"
+}

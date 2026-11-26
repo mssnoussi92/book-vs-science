@@ -16,7 +16,7 @@
   "design": "experiment",
   "designSetBy": "reviewer",
   "n": 1674,
-  "population": "adults in 5 experiments (total N = 1,674), binary-choice questions in professional, linguistic and social domains; countries not given in the abstract",
+  "population": "adults in 5 experiments (total N = 1,674), binary-choice questions; online samples (MTurk according to Gok & Fyfe 2024); countries not given in the abstract",
   "mena": false,
   "findings": [
     {
@@ -31,7 +31,7 @@
     },
     {
       "id": "ego-tune-out",
-      "text": "The authors explain the gap by ego threat: a personal failure makes people tune out",
+      "text": "The authors explain the gap by ego threat: a personal failure makes people tune out (their interpretation; Gok & Fyfe 2024 did not find the ego-threat difference)",
       "support": {
         "sentence": "Failure is ego threatening, which causes people to tune out.",
         "role": "conclusion",
@@ -41,7 +41,7 @@
     },
     {
       "id": "others-failure-equal",
-      "text": "People learned less from their own failure than from their own success, but as much from other people's failures as from others' successes",
+      "text": "People learned less from their own failure than from their own success, but showed no reliable difference between learning from others' failures and from others' successes (a non-significant difference, not an equivalence test)",
       "support": {
         "sentence": "Participants learned less from personal failure than from personal success, yet they learned just as much from other people's failure as from others' success.",
         "role": "result",
@@ -51,10 +51,12 @@
     }
   ],
   "limits": [
-    "laboratory: binary-choice questions, learning tested minutes later; not failures in life",
-    "Spiller 2025 (Psychological Science commentary) argues the core task's scoring can produce this gap with equal learning; no reply found",
-    "the result on others' failures is one part of the paper, its size not given in the abstract",
-    "samples and countries not given in the abstract (full text not read)"
+    "laboratory: binary-choice questions about an unknown script, learning tested minutes later; not failures in life",
+    "Spiller 2025 (Psychological Science): the task's scoring marks consistent answers right after success, wrong after failure; a preregistered study without feedback reproduced the gap",
+    "the authors replied in 2025 (Psychological Science) that consistency does not explain their original paradigm, without new data in the abstract: the debate is open",
+    "the ego-threat explanation was not found by Gok & Fyfe 2024 (no ego-threat difference; task-focused feedback did not shrink the gap)",
+    "« just as much » (others' failures) is a non-significant difference, not an equivalence test; Spiller also explains it by the absence of the consistency bias",
+    "full text not read; the replications (Keith 2022, Gok 2024) use the same task, so they do not escape its scoring problem"
   ],
   "acknowledged": []
 }
