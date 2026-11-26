@@ -194,16 +194,21 @@ export function build(repo: Repo, e: EpisodeEntry, opts: TimelineOptions): { tim
   if (lang.texts["share"]) { share = { f0: f, f1: f + fr(SHARE), text: text("share") }; f += fr(SHARE); }
   parts.push({ kind: "takeaway", scope: "takeaway", f0: t0, f1: f });
 
-  // The study card comes with the first line that rests on it (never on a claim it does not support), until the
-  // nuance card or the takeaway.
-  const onScreenFor = new Set(ep.verdict.assessments.filter((a) => a.evidence.some((x) => x.source === ep.verdict.onScreen && x.relation !== "contradicts")).map((a) => a.claim));
-  const restsOn = ep.verdict.beats.find((b) => b.kind === "line" && b.claims.some((c) => onScreenFor.has(c)));
-  const studyFrom = (restsOn && lines.find((l) => l.key === `verdict.${restsOn.id}`)?.f0) ?? v0 + fr(1.0);
-  // It leaves at the first later line that rests only on claims it does not support: its reference would sign another
-  // study's figure (money-happiness: Thomson's card under « في مصر » and the ceiling, which it does not test).
+  // The study card comes with the first line that cites the study on screen (`cites`) and leaves at the first later line
+  // that cites only others: its reference would sign another study's figure. Lines that cite nothing fall back on their
+  // claims: the first line resting on a claim the study supports, until a line resting only on claims it does not
+  // (money-happiness: Thomson's card under « في مصر » and the ceiling, which it does not test). Then the nuance card or
+  // the takeaway ends it.
   const vLines = ep.verdict.beats.flatMap((b) => (b.kind === "line" ? [b] : []));
-  const from = restsOn ? vLines.findIndex((b) => b.id === restsOn.id) : -1;
-  const off = from >= 0 ? vLines.slice(from + 1).find((b) => b.claims.length > 0 && !b.claims.some((c) => onScreenFor.has(c))) : undefined;
+  const shown = ep.verdict.onScreen;
+  const byCites = vLines.some((b) => b.cites?.length);
+  const onScreenFor = new Set(ep.verdict.assessments.filter((a) => a.evidence.some((x) => x.source === shown && x.relation !== "contradicts")).map((a) => a.claim));
+  const rests = (b: (typeof vLines)[number]) => (byCites ? !!b.cites?.includes(shown) : b.claims.some((c) => onScreenFor.has(c)));
+  const leaves = (b: (typeof vLines)[number]) => (byCites ? !!b.cites?.length && !b.cites.includes(shown) : b.claims.length > 0 && !b.claims.some((c) => onScreenFor.has(c)));
+  const from = vLines.findIndex(rests);
+  const restsOn = from >= 0 ? vLines[from] : undefined;
+  const studyFrom = (restsOn && lines.find((l) => l.key === `verdict.${restsOn.id}`)?.f0) ?? v0 + fr(1.0);
+  const off = from >= 0 ? vLines.slice(from + 1).find(leaves) : undefined;
   const offAt = off ? lines.find((l) => l.key === `verdict.${off.id}`)?.f0 : undefined;
   const studyTo = offAt ?? (nuance ? nuance.f0 : t0);
 

@@ -35,6 +35,10 @@ export const folders: Rule = {
           // challenge of money-happiness): the line must come before it.
           else if (line > all.findIndex((q) => q.beat === p.beat)) err(`${p.scope}.${p.beat.id}.at`, `« ${at.line} » vient après cette action : la placer après sa réplique`);
         }
+        if (p.beat.kind === "line" && p.beat.cites) {
+          const dossier = new Set(ep.verdict.assessments.flatMap((a) => a.evidence.map((x) => x.source)));
+          for (const c of p.beat.cites) if (!dossier.has(c)) err(`${p.scope}.${p.beat.id}.cites`, `« ${c} » n'est pas au dossier du verdict : une réplique ne cite qu'une étude évaluée`);
+        }
         if (p.beat.kind === "action" && p.beat.holds !== "beat" && !p.beat.fx && !p.beat.prop) {
           err(`${p.scope}.${p.beat.id}.holds`, `« holds: ${p.beat.holds} » garde un effet ou un objet : cette action n'en a pas`);
         }

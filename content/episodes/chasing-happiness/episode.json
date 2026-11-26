@@ -936,6 +936,9 @@
         "delivery": "calm, factual; the big panel first, « في المتوسط » plain",
         "claims": [
           "c1"
+        ],
+        "cites": [
+          "huang-2024-valuing"
         ]
       },
       {
@@ -946,6 +949,9 @@
         "delivery": "« بس » turns it; the experiment told simply, a light stress on « أقل »",
         "claims": [
           "c2"
+        ],
+        "cites": [
+          "mauss-2011-seeking"
         ]
       }
     ],

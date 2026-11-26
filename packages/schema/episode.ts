@@ -26,6 +26,10 @@ export const Line = z.strictObject({
   look: Look.optional(),
   /** A line that states a finding names the claims (verdict assessments) it rests on. */
   claims: z.array(NodeId).default([]),
+  /** The studies a verdict line reports (their sheet ids). The study card comes with the first line that cites the study
+   *  on screen and leaves at the first later line that cites only others: the claims alone could not tell (Huang 2024
+   *  contradicts the book, and the card came under the line of another study, chasing-happiness). */
+  cites: z.array(Slug).optional(),
   /** "inner": the character speaks to himself (subtitled as a thought, said under the breath). "over": the narrator
    *  over a scene, only where the scene turns (before its first take, at a rewind): the owner's pilot review, the scene
    *  was hard to follow with no voice to set it and to announce the second take. */

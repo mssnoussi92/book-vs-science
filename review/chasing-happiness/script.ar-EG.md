@@ -69,4 +69,4 @@
 
 ---
 Durée estimée : **69 s** (débit 2.1 mots/s, recalibré sur la première prise)
-Empreinte du script ar-EG : **10d64a**
+Empreinte du script ar-EG : **0c2f95**

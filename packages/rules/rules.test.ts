@@ -67,6 +67,7 @@ describe("structure", () => {
   test("hooks: a caption on a hook's action", () => bites("hooks", EP, (j) => { j.hooks[1].beats = [act({ caption: true })]; }));
   test("folders: an action anchored on a line of another part", () => bites("folders", EP, (j) => { j.verdict.beats.push(act({ at: { line: "zz", word: 0 } })); }));
   test("folders: an action anchored on a line that comes after it", () => bites("folders", EP, (j) => { j.scenes[0].beats.splice(1, 0, act({ who: j.scenes[0].beats[0].speaker, at: { line: "l2", word: 0 } })); }));
+  test("folders: a line that cites a study outside the dossier", () => bites("folders", EP, (j) => { j.verdict.beats[0].cites = ["nobody-2020"]; }));
   test("folders: holds a part with nothing to hold", () => bites("folders", EP, (j) => { j.verdict.beats.push({ kind: "action", id: "a9", who: "omar", seconds: 1, gesture: "breathe", holds: "part" }); }));
   test("custom-scene: two custom scenes", () => bites("custom-scene", EP, (j) => {
     j.scenes[0].custom = "spiral";

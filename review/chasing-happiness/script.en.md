@@ -69,4 +69,4 @@
 
 ---
 Durée estimée : **78 s** (débit 2.5 mots/s, recalibré sur la première prise)
-Empreinte du script en : **1093e7**
+Empreinte du script en : **01ac6a**
