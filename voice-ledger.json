@@ -134,6 +134,33 @@
       "request": "nour",
       "voice": "nour=Leda",
       "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-26T22:01:57.935Z",
+      "day": "2026-11-26",
+      "episode": "chasing-happiness",
+      "lang": "ar-EG",
+      "request": "adasa",
+      "voice": "adasa=Iapetus",
+      "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-26T22:02:47.093Z",
+      "day": "2026-11-26",
+      "episode": "chasing-happiness",
+      "lang": "ar-EG",
+      "request": "nour",
+      "voice": "nour=Leda",
+      "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-26T22:03:30.475Z",
+      "day": "2026-11-26",
+      "episode": "chasing-happiness",
+      "lang": "ar-EG",
+      "request": "karim",
+      "voice": "karim=Achird",
+      "model": "gemini-3.8-flash-tts"
     }
   ]
 }
