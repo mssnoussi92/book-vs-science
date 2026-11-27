@@ -3,6 +3,7 @@
 import { Composition } from "remotion";
 import { EpisodeVideo, episodeMetadata, STYLES } from "./EpisodeVideo.tsx";
 import { CharacterSheet, type SheetProps } from "./Sheet.tsx";
+import { PropsSheet } from "./PropsSheet.tsx";
 
 const WHO: SheetProps["who"][] = ["nour", "nour-hijab", "karim", "adasa"];
 
@@ -11,6 +12,7 @@ export const Root: React.FC = () => (
     {WHO.map((who) => (
       <Composition key={who} id={`Sheet-${who}`} component={CharacterSheet} durationInFrames={1} fps={30} width={1080} height={1920} defaultProps={{ who }} />
     ))}
+    <Composition id="Sheet-props" component={PropsSheet} durationInFrames={1} fps={30} width={1080} height={1920} />
     {Object.keys(STYLES).map((style) => (
       <Composition key={style} id={`Episode-${style}`} component={EpisodeVideo} calculateMetadata={episodeMetadata}
         durationInFrames={30} fps={30} width={1080} height={1920}

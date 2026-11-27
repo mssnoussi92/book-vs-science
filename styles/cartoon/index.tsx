@@ -1,11 +1,11 @@
 // Style « cartoon »: a drawn set, the characters acting, a slow camera that never stops (no static image).
 import type React from "react";
 import { interpolate } from "remotion";
-import { Choices, RainCloud, Rewind, Spiral, ThoughtBubble, TwoWay, Notification, Meter } from "../../packages/rig/fx.tsx";
+import { Board, Choices, Meter, Notification, NotebookOpen, RainCloud, Rewind, Spiral, ThoughtBubble, TwoWay } from "../../packages/rig/fx.tsx";
 import { INK } from "../../packages/rig/Rig.tsx";
 import type { PartProps, StyleModule } from "../../packages/video/contract.ts";
 import { Actor } from "../../packages/video/stage.tsx";
-import { effectsAt, leadOf, lineAt, presence } from "../../packages/video/state.ts";
+import { effectsAt, leadOf, lineAt, presence, propAt } from "../../packages/video/state.ts";
 
 const CLAMP = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const PALETTES = [
@@ -15,7 +15,7 @@ const PALETTES = [
 const FLOOR = 1330;
 
 /** The office: a wall, a window with a passing cloud, a desk with a lamp and a plant. */
-const Office: React.FC<{ f: number; w: number; h: number; p: number }> = ({ f, w, h, p }) => {
+const Office: React.FC<{ f: number; w: number; h: number; p: number; board?: string }> = ({ f, w, h, p, board }) => {
   const c = PALETTES[p % PALETTES.length]!;
   const cloud = ((f * 0.6) % 520) - 120;
   return (
@@ -23,7 +23,8 @@ const Office: React.FC<{ f: number; w: number; h: number; p: number }> = ({ f, w
       <rect x={0} y={0} width={w} height={h} fill={c.wall} />
       <rect x={0} y={FLOOR} width={w} height={h - FLOOR} fill={c.floor} />
       <rect x={0} y={FLOOR - 8} width={w} height={14} fill={INK} opacity={0.75} />
-      <g transform="translate(600 430)">
+      {board ? <g transform="translate(600 430)"><Board state={board} /></g> : null}
+      <g transform="translate(600 430)" opacity={board ? 0 : 1}>
         <rect x={0} y={0} width={360} height={300} rx={10} fill={c.window} stroke={INK} strokeWidth={8} />
         <clipPath id="window"><rect x={0} y={0} width={360} height={300} /></clipPath>
         <g clipPath="url(#window)"><ellipse cx={cloud} cy={110} rx={70} ry={26} fill="#fff" opacity={0.9} /><ellipse cx={cloud + 50} cy={96} rx={46} ry={22} fill="#fff" opacity={0.9} /></g>
@@ -93,7 +94,7 @@ const Beach: React.FC<{ f: number; w: number; h: number }> = ({ f, w, h }) => {
 };
 
 /** The set of the episode: the place of its scene, for the whole video (the narrator speaks from the same world). */
-const SETS: Record<string, React.FC<{ f: number; w: number; h: number; p: number }>> = { office: Office, beach: Beach };
+const SETS: Record<string, React.FC<{ f: number; w: number; h: number; p: number; board?: string }>> = { office: Office, beach: Beach };
 
 /** The camera: a slow push that never stops, a closer frame on the one who speaks in a scene. */
 const camera = (f: number, frames: number, focusX: number, close: boolean) => {
@@ -130,6 +131,11 @@ const Cast: React.FC<PartProps & { dim?: number; close?: boolean }> = ({ tl, f, 
       {thinker ? [0, 1, 2].map((i) => (
         <circle key={i} cx={thinker.x + 95 + i * 30} cy={700 - i * 42 + Math.sin(f / 8 + i) * 4} r={8 + i * 5} fill="#ffffff" stroke={INK} strokeWidth={5} />
       )) : null}
+      {Object.entries(pos).map(([who, p]) => {
+        const pr = propAt(tl, who, f);
+        if (!pr || pr.id !== "notebook" || !pr.state.startsWith("open-") || p.k === 0) return null;
+        return <NotebookOpen key={`nb-${who}`} x={Math.min(Math.max(p.x + 60, 230), 850)} y={600} day={pr.state.slice(5)} k={1} />;
+      })}
       {fx.map((e) => {
         const p = pos[e.who];
         if (!p || p.k === 0) return null;
@@ -186,7 +192,10 @@ const nuanceHeld = (p: PartProps) => {
 
 const Set: React.FC<{ tl: PartProps["tl"]; f: number; w: number; h: number }> = ({ tl, f, w, h }) => {
   const S = SETS[tl.parts.find((x) => x.kind === "scene")?.setting ?? "office"] ?? Office;
-  return <S f={f} w={w} h={h} p={tl.variation.palette} />;
+  // a slide someone presents, or the file a laptop opened, is shown big on the room's screen (a prop in a hand is tiny)
+  const shown = tl.cast.characters.map((c) => propAt(tl, c, f)).find((pr) => pr && (pr.id === "slide" || (pr.id === "laptop" && pr.state !== "closed")));
+  const board = !shown ? undefined : shown.id === "laptop" ? "first" : shown.state;
+  return <S f={f} w={w} h={h} p={tl.variation.palette} board={board} />;
 };
 
 export const style: StyleModule = {

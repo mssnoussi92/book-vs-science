@@ -31,6 +31,23 @@ export const ThoughtBubble: React.FC<{ x: number; y: number; k: number; image?: 
       <circle cx={-40} cy={110} r={22} fill="#fff" stroke={INK} strokeWidth={5} />
       <path d="M -120 0 C -150 -60 -80 -110 -30 -90 C 0 -140 90 -120 100 -70 C 160 -60 150 20 100 30 C 80 80 -10 80 -30 50 C -90 70 -140 40 -120 0 Z" fill="#fff" stroke={INK} strokeWidth={6} />
       {image === "phone-rejected" ? <g transform="translate(-10 -20) scale(1.5)"><Phone state="rejected" /></g> : null}
+      {image === "trophy" ? (
+        <g transform="translate(-10 -20)" stroke={INK} strokeWidth={5} strokeLinejoin="round" strokeLinecap="round">
+          <path d="M -30 -40 L 30 -40 L 24 0 Q 0 20 -24 0 Z" fill="#f2c14e" />
+          <path d="M -30 -32 Q -52 -30 -44 -8 Q -38 4 -24 -2 M 30 -32 Q 52 -30 44 -8 Q 38 4 24 -2" fill="none" />
+          <path d="M 0 14 L 0 32 M -20 36 L 20 36" fill="none" />
+          {[-70, 70].map((x) => <g key={x} transform={`translate(${x} 10) rotate(${x > 0 ? 18 : -18})`}><path d="M -10 -12 Q 0 -26 10 -12 L 8 14 L -8 14 Z" fill="#c98f5f" /><path d={`M ${x > 0 ? -16 : 16} -20 l ${x > 0 ? -8 : 8} -6 M ${x > 0 ? -18 : 18} -8 l ${x > 0 ? -10 : 10} 0`} fill="none" /></g>)}
+        </g>
+      ) : null}
+      {image === "obstacle" ? (
+        <g transform="translate(-10 -16)" stroke={INK} strokeWidth={5} strokeLinejoin="round">
+          <rect x={-60} y={-24} width={120} height={30} rx={4} fill="#ffffff" />
+          {[-48, -20, 8, 36].map((x) => <path key={x} d={`M ${x} -24 L ${x + 16} -24 L ${x + 2} 6 L ${x - 14} 6 Z`} fill="#d2453b" stroke="none" />)}
+          <rect x={-60} y={-24} width={120} height={30} rx={4} fill="none" />
+          <path d="M -48 6 L -48 40 M 48 6 L 48 40" fill="none" />
+        </g>
+      ) : null}
+      {image === "day-thu" || image === "day-sun" ? <g transform="translate(-10 -22) scale(0.9)"><CalendarPage day={image === "day-thu" ? "thu" : "sun"} /></g> : null}
       {image === "white-bear" ? (
         <g transform="translate(-10 -30)">
           <ellipse cx={0} cy={18} rx={58} ry={38} fill="#f4f4f0" stroke={INK} strokeWidth={5} />
@@ -96,6 +113,75 @@ export const Meter: React.FC<{ x: number; y: number; k: number; f: number; level
     </g>
   );
 };
+
+const DAYS: Record<string, string> = { thu: "الخميس", sun: "الأحد" };
+
+/** A calendar page with one day written large and circled in red (the day someone is sure of). */
+export const CalendarPage: React.FC<{ day: string }> = ({ day }) => (
+  <g>
+    <rect x={-72} y={-62} width={144} height={124} rx={10} fill="#ffffff" stroke={INK} strokeWidth={5} />
+    <path d="M -72 -34 L 72 -34 L 72 -52 Q 72 -62 62 -62 L -62 -62 Q -72 -62 -72 -52 Z" fill="#d2453b" stroke={INK} strokeWidth={5} strokeLinejoin="round" />
+    {[-40, 0, 40].map((x) => <rect key={x} x={x - 4} y={-72} width={8} height={18} rx={3} fill="#8a93a6" stroke={INK} strokeWidth={3} />)}
+    <text y={12} textAnchor="middle" fontFamily="Cairo, sans-serif" fontWeight={900} fontSize={(DAYS[day] ?? day).length > 5 ? 26 : 32} fill={INK}>{DAYS[day] ?? day}</text>
+    <ellipse cx={0} cy={2} rx={58} ry={26} fill="none" stroke="#d2453b" strokeWidth={5} transform="rotate(-6)" />
+  </g>
+);
+
+/** A presentation slide, small in a hand. « rejected »: crowded with tiny figures, a red cross; « clear »: one big chart. */
+export const Slide: React.FC<{ state?: string }> = ({ state }) => (
+  <g transform="rotate(-8)">
+    <rect x={-34} y={-26} width={68} height={50} rx={5} fill="#ffffff" stroke={INK} strokeWidth={4} />
+    {state === "clear"
+      ? <g>{[0, 1, 2].map((i) => <rect key={i} x={-20 + i * 15} y={10 - (i + 1) * 9} width={10} height={(i + 1) * 9} fill="#2e9e5b" />)}</g>
+      : <g>{Array.from({ length: 12 }, (_, i) => <rect key={i} x={-28 + (i % 4) * 14} y={-20 + Math.floor(i / 4) * 12} width={10} height={4} fill="#8a93a6" />)}</g>}
+    {state === "rejected" ? <path d="M -26 -18 L 26 16 M 26 -18 L -26 16" stroke="#d2453b" strokeWidth={6} strokeLinecap="round" /> : null}
+  </g>
+);
+
+/** The same slide, big, on the meeting room's screen (where the office window is): what everybody sees. « first »: a
+ *  file just opened on its first slide (a title, empty lines). */
+export const Board: React.FC<{ state?: string; o?: number }> = ({ state, o = 1 }) => (
+  <g opacity={o}>
+    <rect x={0} y={0} width={360} height={300} rx={10} fill="#ffffff" stroke={INK} strokeWidth={8} />
+    {state === "first" ? (
+      <g>
+        <rect x={40} y={40} width={280} height={44} rx={6} fill="#2f8f8a" />
+        {[120, 160, 200].map((y) => <rect key={y} x={60} y={y} width={y === 200 ? 140 : 240} height={14} rx={5} fill="#c7d3d8" />)}
+      </g>
+    ) : state === "clear" ? (
+      <g>
+        {[0, 1, 2, 3].map((i) => <rect key={i} x={70 + i * 60} y={240 - (i + 1) * 45} width={40} height={(i + 1) * 45} rx={4} fill={i === 3 ? "#2e9e5b" : "#9fc9a9"} stroke={INK} strokeWidth={4} />)}
+        <path d="M 50 242 L 320 242" stroke={INK} strokeWidth={5} strokeLinecap="round" />
+      </g>
+    ) : (
+      <g>
+        {Array.from({ length: 36 }, (_, i) => <rect key={i} x={30 + (i % 6) * 52} y={30 + Math.floor(i / 6) * 42} width={38} height={8} rx={3} fill="#8a93a6" />)}
+        {Array.from({ length: 12 }, (_, i) => <circle key={i} cx={40 + (i % 6) * 52} cy={52 + Math.floor(i / 6) * 120} r={6} fill="#c4544b" opacity={0.6} />)}
+      </g>
+    )}
+    {state === "rejected" ? <path d="M 40 40 L 320 260 M 320 40 L 40 260" stroke="#d2453b" strokeWidth={16} strokeLinecap="round" opacity={0.9} /> : null}
+  </g>
+);
+
+/** A notebook, small in a hand: « writing », the pen moving on it; « open » or « open-<day> », lines written. */
+export const Notebook: React.FC<{ state?: string; f?: number }> = ({ state, f = 0 }) => (
+  <g transform="rotate(-10)">
+    <rect x={-26} y={-32} width={52} height={64} rx={5} fill="#f5e6b8" stroke={INK} strokeWidth={4} />
+    {[-16, -4, 8, 20].map((y) => <path key={y} d={`M -18 ${y} L 18 ${y}`} stroke="#8a93a6" strokeWidth={2} />)}
+    {state === "writing" ? <path d={`M ${-14 + ((f * 2) % 28)} -18 l 16 -26`} stroke={INK} strokeWidth={5} strokeLinecap="round" /> : null}
+  </g>
+);
+
+/** The notebook open, big, beside the one who reads it: the day written down before talking (« open-thu »). */
+export const NotebookOpen: React.FC<{ x: number; y: number; day: string; k: number }> = ({ x, y, day, k }) => (
+  <g transform={`translate(${x} ${y}) scale(${Math.min(1, k * 5)})`}>
+    <rect x={-150} y={-90} width={300} height={180} rx={14} fill="#f5e6b8" stroke={INK} strokeWidth={6} />
+    <path d="M 0 -90 L 0 90" stroke={INK} strokeWidth={5} />
+    {[-50, -20, 10, 40, 70].map((y) => <path key={y} d={`M -132 ${y} L -18 ${y} M 18 ${y} L 132 ${y}`} stroke="#c9b98a" strokeWidth={3} />)}
+    <text x={-75} y={12} textAnchor="middle" fontFamily="Cairo, sans-serif" fontWeight={800} fontSize={(DAYS[day] ?? day).length > 5 ? 30 : 36} fill="#2b3a8a">{DAYS[day] ?? day}</text>
+    <path d="M -128 26 Q -75 40 -22 24" stroke="#2b3a8a" strokeWidth={4} fill="none" strokeLinecap="round" />
+  </g>
+);
 
 /** The rewind between the two takes of a replayed scene: the frame goes grey, two triangles, lines running back. */
 export const Rewind: React.FC<{ k: number; w: number; h: number; f: number }> = ({ k, w, h, f }) => {

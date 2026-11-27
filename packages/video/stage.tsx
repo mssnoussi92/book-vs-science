@@ -4,7 +4,7 @@ import type React from "react";
 import { look as karim } from "../../characters/karim/look.ts";
 import { look as nour } from "../../characters/nour/look.ts";
 import { EMOTIONS, VISEMES, blinkAt } from "../rig/face.ts";
-import { Phone } from "../rig/fx.tsx";
+import { Notebook, Phone, Slide } from "../rig/fx.tsx";
 import { Adasa, Rig, type Look } from "../rig/Rig.tsx";
 import { POSES, walk, type Pose } from "../rig/skeleton.ts";
 import type { Timeline } from "../schema/timeline.ts";
@@ -19,6 +19,15 @@ export type ActorProps = {
   base?: keyof typeof POSES; opacity?: number;
   /** Walking: the phase of the step (the walk replaces the base pose). */
   walking?: number;
+};
+
+/** The prop in the front hand, unless the hands are busy (on the head, on the chest). */
+const held = (prop: { id: string; state: string } | undefined, handsTo: unknown, f: number) => {
+  if (!prop || handsTo) return undefined;
+  if (prop.id === "phone") return <Phone state={prop.state} f={f} />;
+  if (prop.id === "slide") return <Slide state={prop.state} />;
+  if (prop.id === "notebook") return <Notebook state={prop.state} f={f} />;
+  return undefined;
 };
 
 export const Actor: React.FC<ActorProps> = ({ tl, f, who, x, y, s, facing = 1, base = "stand", opacity = 1, walking }) => {
@@ -42,7 +51,7 @@ export const Actor: React.FC<ActorProps> = ({ tl, f, who, x, y, s, facing = 1, b
   return (
     <g opacity={opacity}>
       <Rig look={look} x={x} y={y + breath} s={s} facing={facing} pose={pose} face={EMOTIONS[emotion]} mouth={mouth} blink={blink}
-        handsTo={handsTo} heldF={prop?.id === "phone" && !handsTo ? <Phone state={prop.state} f={f} /> : undefined} />
+        handsTo={handsTo} heldF={held(prop, handsTo, f)} />
     </g>
   );
 };
