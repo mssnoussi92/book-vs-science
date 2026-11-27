@@ -1,0 +1,1138 @@
+{
+  "$schema": "../../../schemas/episode.schema.json",
+  "schema": 1,
+  "id": "choose-your-struggle",
+  "sourceLang": "ar-EG",
+  "languages": [
+    "ar-EG",
+    "en"
+  ],
+  "cast": {
+    "narrator": "adasa",
+    "characters": [
+      "karim",
+      "nour"
+    ]
+  },
+  "topic": {
+    "tags": [
+      "goals",
+      "motivation",
+      "effort"
+    ],
+    "sensitive": []
+  },
+  "hooks": [
+    {
+      "id": "h1",
+      "type": "challenge",
+      "spokenBy": "narrator",
+      "firstFrame": "challenge",
+      "emotion": "amused",
+      "claims": [],
+      "beats": []
+    },
+    {
+      "id": "h2",
+      "type": "paradox",
+      "spokenBy": "narrator",
+      "firstFrame": "close-up",
+      "emotion": "curious",
+      "claims": [
+        "c4"
+      ],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "gesture": "fist-clench",
+          "prop": {
+            "id": "laptop",
+            "state": "closed"
+          },
+          "emotion": "tired",
+          "look": "down",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "type": "confession",
+      "spokenBy": "karim",
+      "firstFrame": "close-up",
+      "emotion": "ashamed",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "gesture": "shrug",
+          "fx": {
+            "id": "thought-bubble",
+            "params": {
+              "image": "trophy"
+            }
+          },
+          "emotion": "ashamed",
+          "look": "viewer",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "type": "number",
+      "spokenBy": "narrator",
+      "firstFrame": "text-over-scene",
+      "emotion": "curious",
+      "claims": [
+        "c3"
+      ],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "fx": {
+            "id": "thought-bubble",
+            "params": {
+              "image": "trophy"
+            }
+          },
+          "prop": {
+            "id": "laptop",
+            "state": "closed"
+          },
+          "emotion": "happy",
+          "look": "away",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "type": "question",
+      "spokenBy": "nour",
+      "firstFrame": "text-over-scene",
+      "emotion": "amused",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "gesture": "point",
+          "emotion": "amused",
+          "look": "viewer",
+          "seconds": 2.4
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "karim",
+          "fx": {
+            "id": "thought-bubble",
+            "params": {
+              "image": "trophy"
+            }
+          },
+          "emotion": "happy",
+          "look": "away",
+          "seconds": 2.4
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "setting": "office",
+      "shape": "replay-twice",
+      "outcome": "a-bit-better",
+      "beats": [
+        {
+          "kind": "line",
+          "id": "n1",
+          "speaker": "adasa",
+          "emotion": "neutral",
+          "intensity": 0.4,
+          "delivery": "setting the scene, calm, a light smile on « عرض بكرة »",
+          "voice": "over"
+        },
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "prop": {
+            "id": "laptop",
+            "state": "closed"
+          },
+          "emotion": "happy",
+          "look": "away",
+          "at": {
+            "line": "n1",
+            "word": 2
+          },
+          "holds": "part",
+          "seconds": 0.8
+        },
+        {
+          "kind": "line",
+          "id": "l1",
+          "speaker": "karim",
+          "emotion": "happy",
+          "intensity": 0.7,
+          "delivery": "to himself, dreamy and delighted; a big smile on « موظف الشهر »",
+          "look": "away",
+          "voice": "inner"
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "karim",
+          "fx": {
+            "id": "thought-bubble",
+            "params": {
+              "image": "trophy"
+            }
+          },
+          "emotion": "happy",
+          "look": "away",
+          "at": {
+            "line": "l1",
+            "word": 0
+          },
+          "holds": "next",
+          "seconds": 1.0
+        },
+        {
+          "kind": "line",
+          "id": "l2",
+          "speaker": "nour",
+          "emotion": "curious",
+          "intensity": 0.4,
+          "delivery": "light, friendly, passing by his desk",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l3",
+          "speaker": "karim",
+          "emotion": "happy",
+          "intensity": 0.5,
+          "delivery": "still in his dream, waving it off; sure of himself on « تحفة »",
+          "gesture": "shrug",
+          "look": "away"
+        },
+        {
+          "kind": "action",
+          "id": "a3",
+          "who": "karim",
+          "emotion": "neutral",
+          "look": "viewer",
+          "hooks": [
+            "h1"
+          ],
+          "caption": true,
+          "seconds": 1.8
+        },
+        {
+          "kind": "action",
+          "id": "a4",
+          "who": "karim",
+          "fx": {
+            "id": "rewind",
+            "params": {}
+          },
+          "prop": {
+            "id": "laptop",
+            "state": "closed"
+          },
+          "seconds": 2.2
+        },
+        {
+          "kind": "line",
+          "id": "n2",
+          "speaker": "adasa",
+          "emotion": "warm",
+          "intensity": 0.5,
+          "delivery": "announcing the replay, light; a small stress on « هيبص للعقبة »",
+          "voice": "over"
+        },
+        {
+          "kind": "action",
+          "id": "a5",
+          "who": "karim",
+          "fx": {
+            "id": "thought-bubble",
+            "params": {
+              "image": "trophy"
+            }
+          },
+          "emotion": "happy",
+          "look": "away",
+          "at": {
+            "line": "n2",
+            "word": 3
+          },
+          "holds": "next",
+          "seconds": 0.8
+        },
+        {
+          "kind": "line",
+          "id": "l4",
+          "speaker": "karim",
+          "emotion": "neutral",
+          "intensity": 0.5,
+          "delivery": "to himself, calm, deciding; a short pause after « أأجّل »",
+          "look": "down",
+          "voice": "inner"
+        },
+        {
+          "kind": "action",
+          "id": "a6",
+          "who": "karim",
+          "fx": {
+            "id": "thought-bubble",
+            "params": {
+              "image": "obstacle"
+            }
+          },
+          "emotion": "neutral",
+          "look": "away",
+          "at": {
+            "line": "l4",
+            "word": 0
+          },
+          "seconds": 1.4
+        },
+        {
+          "kind": "action",
+          "id": "a7",
+          "who": "karim",
+          "prop": {
+            "id": "laptop",
+            "state": "first-slide"
+          },
+          "emotion": "neutral",
+          "look": "down",
+          "at": {
+            "line": "l4",
+            "word": 3
+          },
+          "holds": "part",
+          "seconds": 0.8
+        },
+        {
+          "kind": "line",
+          "id": "l5",
+          "speaker": "nour",
+          "emotion": "curious",
+          "intensity": 0.4,
+          "delivery": "light, friendly, same as before",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l6",
+          "speaker": "karim",
+          "emotion": "happy",
+          "intensity": 0.4,
+          "delivery": "content, not thrilled; a small pause before « بس بدأت »",
+          "gesture": "point",
+          "look": "other"
+        }
+      ]
+    }
+  ],
+  "book": {
+    "book": "subtle-art",
+    "basis": "choose-your-struggle",
+    "claims": [
+      {
+        "id": "c1",
+        "statement": "Indulging in idealized positive fantasies about a desired result (living it as already achieved, without obstacles) lowers the energy, effort and achievement that follow, compared with questioning, negative or neutral thoughts.",
+        "population": "adults and students pursuing a personal goal",
+        "exposure": "idealized positive fantasies about the desired result, indulged as if already achieved",
+        "comparison": "fantasies that question that future, negative or neutral thoughts about it",
+        "outcome": "energy, effort, later achievement",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c2",
+        "statement": "Mentally rehearsing the steps toward a goal (process simulation) improves effort and performance more than picturing the desired result (outcome simulation).",
+        "population": "students and adults preparing a task, an exam or a health goal",
+        "exposure": "mental rehearsal of the steps toward the goal (process simulation)",
+        "comparison": "picturing the desired result (outcome simulation)",
+        "outcome": "effort, persistence and performance (study, grades, weight, tasks)",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c3",
+        "statement": "Contrasting the wished-for result with the obstacles in the way, then planning if-then responses (MCII, WOOP), helps people reach their goals more than only dreaming of the result or doing nothing.",
+        "population": "adults and students with a personal goal",
+        "exposure": "mental contrasting with if-then plans (MCII, WOOP)",
+        "comparison": "only dreaming of the result (wishes, sham WOOP), or a control activity",
+        "outcome": "goal attainment, behaviour change",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c4",
+        "statement": "Embracing the path itself, by enjoying it or by reading its discomfort as a sign of progress, makes people engage and persist more at their goals than focusing only on the later result.",
+        "population": "adults and students pursuing health, study or personal-growth goals",
+        "exposure": "enjoyment of the activity, intrinsic motivation, or seeking discomfort as a sign of growth",
+        "comparison": "focus on later rewards, extrinsic motivation or incentives, standard instructions",
+        "outcome": "engagement, persistence, goal adherence; performance",
+        "causal": true,
+        "inScope": true
+      }
+    ],
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "curious",
+        "delivery": "plain, reporting what the book says; a beat before « اللي بيقبل التعب »",
+        "gesture": "point",
+        "look": "card"
+      },
+      {
+        "kind": "line",
+        "id": "l2",
+        "speaker": "adasa",
+        "emotion": "warm",
+        "delivery": "the book's own example, a light smile on « نجم روك », weight on « سنين »",
+        "look": "viewer"
+      }
+    ]
+  },
+  "verdict": {
+    "badge": "nuanced",
+    "certainty": "very-low",
+    "assessments": [
+      {
+        "claim": "c1",
+        "direction": "supports",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "kappes-2011-energy",
+            "finding": "less-energy",
+            "relation": "supports"
+          },
+          {
+            "source": "kappes-2011-energy",
+            "finding": "less-accomplishment",
+            "relation": "supports"
+          },
+          {
+            "source": "oettingen-2002-fantasies",
+            "finding": "fantasies-predict-less",
+            "relation": "supports"
+          },
+          {
+            "source": "cole-2021-simulation",
+            "finding": "positive-outcome-helps",
+            "relation": "nuances"
+          },
+          {
+            "source": "hallford-2026-future",
+            "finding": "outcome-motivates",
+            "relation": "nuances"
+          },
+          {
+            "source": "marszal-wisniewska-2014-weight",
+            "finding": "process-weight",
+            "relation": "nuances"
+          },
+          {
+            "source": "alghazo-2020-simulation",
+            "finding": "outcome-first-half",
+            "relation": "nuances"
+          },
+          {
+            "source": "oettingen-2001-contrasting",
+            "finding": "contrast-vs-indulge",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c2",
+        "direction": "mixed",
+        "certainty": "very-low",
+        "evidence": [
+          {
+            "source": "pham-1999-process",
+            "finding": "process-improves",
+            "relation": "supports"
+          },
+          {
+            "source": "marszal-wisniewska-2014-weight",
+            "finding": "process-weight",
+            "relation": "supports"
+          },
+          {
+            "source": "styk-2021-maze",
+            "finding": "more-perseverance",
+            "relation": "supports"
+          },
+          {
+            "source": "alghazo-2020-simulation",
+            "finding": "no-test-difference",
+            "relation": "contradicts"
+          },
+          {
+            "source": "hallford-2026-future",
+            "finding": "outcome-motivates",
+            "relation": "nuances"
+          },
+          {
+            "source": "hallford-2026-future",
+            "finding": "process-less-control",
+            "relation": "nuances"
+          },
+          {
+            "source": "alghazo-2020-simulation",
+            "finding": "assignments-timing",
+            "relation": "nuances"
+          },
+          {
+            "source": "marszal-wisniewska-2014-weight",
+            "finding": "combined-best",
+            "relation": "nuances"
+          },
+          {
+            "source": "cole-2021-simulation",
+            "finding": "process-uncertain",
+            "relation": "nuances"
+          },
+          {
+            "source": "cole-2021-simulation",
+            "finding": "subtypes-not-different",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c3",
+        "direction": "mixed",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "wang-2021-mcii",
+            "finding": "small-to-medium",
+            "relation": "supports"
+          },
+          {
+            "source": "cross-2019-contrasting",
+            "finding": "health-effect",
+            "relation": "supports"
+          },
+          {
+            "source": "wittleder-2025-sham",
+            "finding": "fewer-heavy-days",
+            "relation": "supports"
+          },
+          {
+            "source": "kizilcec-2020-scale",
+            "finding": "mcii-null",
+            "relation": "contradicts"
+          },
+          {
+            "source": "kudrna-2025-workplace",
+            "finding": "no-progress",
+            "relation": "contradicts"
+          },
+          {
+            "source": "kedra-2026-online",
+            "finding": "no-effect",
+            "relation": "contradicts"
+          },
+          {
+            "source": "wang-2021-mcii",
+            "finding": "publication-bias",
+            "relation": "nuances"
+          },
+          {
+            "source": "wang-2021-mcii",
+            "finding": "bias-adjusted",
+            "relation": "nuances"
+          },
+          {
+            "source": "wang-2021-mcii",
+            "finding": "with-a-person",
+            "relation": "nuances"
+          },
+          {
+            "source": "kizilcec-2017-culture",
+            "finding": "overall-null",
+            "relation": "nuances"
+          },
+          {
+            "source": "kizilcec-2017-culture",
+            "finding": "individualist-complete",
+            "relation": "nuances"
+          },
+          {
+            "source": "kizilcec-2017-culture",
+            "finding": "balanced-too",
+            "relation": "nuances"
+          },
+          {
+            "source": "kizilcec-2017-culture",
+            "finding": "english-speaking-only",
+            "relation": "nuances"
+          },
+          {
+            "source": "kizilcec-2020-scale",
+            "finding": "engagement-not-completion",
+            "relation": "nuances"
+          },
+          {
+            "source": "cross-2019-contrasting",
+            "finding": "plans-add-nothing",
+            "relation": "nuances"
+          },
+          {
+            "source": "oettingen-2001-contrasting",
+            "finding": "contrast-vs-indulge",
+            "relation": "nuances"
+          },
+          {
+            "source": "armitage-2017-kuwait",
+            "finding": "weight-loss",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c4",
+        "direction": "supports",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "woolley-2022-discomfort",
+            "finding": "seeking-discomfort",
+            "relation": "supports"
+          },
+          {
+            "source": "woolley-2025-resolutions",
+            "finding": "year-long",
+            "relation": "supports"
+          },
+          {
+            "source": "woolley-2025-resolutions",
+            "finding": "china-and-steps",
+            "relation": "supports"
+          },
+          {
+            "source": "woolley-2025-resolutions",
+            "finding": "raising-intrinsic",
+            "relation": "supports"
+          },
+          {
+            "source": "woolley-2016-fun",
+            "finding": "immediate-over-delayed",
+            "relation": "supports"
+          },
+          {
+            "source": "cerasoli-2014-intrinsic",
+            "finding": "with-or-without-incentives",
+            "relation": "supports"
+          },
+          {
+            "source": "alshammari-2026-saudi",
+            "finding": "effort",
+            "relation": "nuances"
+          },
+          {
+            "source": "woolley-2022-discomfort",
+            "finding": "only-uncomfortable-areas",
+            "relation": "nuances"
+          },
+          {
+            "source": "woolley-2016-fun",
+            "finding": "enjoyable-choice",
+            "relation": "nuances"
+          },
+          {
+            "source": "cerasoli-2014-intrinsic",
+            "finding": "quality",
+            "relation": "nuances"
+          },
+          {
+            "source": "alshammari-2026-saudi",
+            "finding": "achievement",
+            "relation": "nuances"
+          }
+        ]
+      }
+    ],
+    "nuance": "c3",
+    "nuanceSpoken": true,
+    "applicability": "written",
+    "onScreen": "wang-2021-mcii",
+    "searched": {
+      "on": "2026-11-23",
+      "queries": [
+        {
+          "base": "openalex",
+          "query": "positive fantasies future motivation achievement",
+          "results": 41049
+        },
+        {
+          "base": "crossref",
+          "query": "Oettingen Mayer motivating function of thinking about the future expectations versus fantasies",
+          "results": 55338
+        },
+        {
+          "base": "crossref",
+          "query": "Pham Taylor from thought to action process versus outcome based mental simulations",
+          "results": 849349
+        },
+        {
+          "base": "crossref",
+          "query": "mental contrasting implementation intentions meta-analysis",
+          "results": 8069162
+        },
+        {
+          "base": "crossref",
+          "query": "mental contrasting health behaviour meta-analysis Cross Sheffield",
+          "results": 13047173
+        },
+        {
+          "base": "europepmc",
+          "query": "\"mental contrasting\" AND (replication OR preregistered)",
+          "results": 48
+        },
+        {
+          "base": "openalex",
+          "query": "implementation intentions publication bias small study effects meta-analysis",
+          "results": 71109
+        },
+        {
+          "base": "openalex",
+          "query": "mental contrasting implementation intentions randomized trial null effect",
+          "results": 6864
+        },
+        {
+          "base": "openalex",
+          "query": "registered report implementation intentions replication",
+          "results": 52455
+        },
+        {
+          "base": "openalex",
+          "query": "mental simulation process outcome meta-analysis",
+          "results": 148483
+        },
+        {
+          "base": "openalex",
+          "query": "process simulation outcome simulation students exam performance",
+          "results": 63010
+        },
+        {
+          "base": "europepmc",
+          "query": "\"positive fantasies\"",
+          "results": 38
+        },
+        {
+          "base": "europepmc",
+          "query": "\"positive fantasies\" AND (replication OR meta-analysis)",
+          "results": 14
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"mental contrasting\" OR WOOP) AND (Saudi OR Egypt OR Jordan OR Arab OR Iran OR Lebanon OR Emirates OR Morocco OR Tunisia OR Qatar OR Kuwait OR Oman OR Iraq)",
+          "results": 42
+        },
+        {
+          "base": "europepmc",
+          "query": "\"implementation intentions\" AND (Saudi OR Egypt OR Jordan OR Arab OR Lebanon OR Emirates OR Morocco OR Tunisia OR Qatar OR Kuwait)",
+          "results": 103
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"process simulation\" OR \"outcome simulation\" OR \"mental simulation\") AND (Saudi OR Egypt OR Jordan OR Arab OR Iran OR Lebanon)",
+          "results": 469
+        },
+        {
+          "base": "openalex",
+          "query": "mental contrasting culture moderator collectivist",
+          "results": 6106
+        },
+        {
+          "base": "openalex",
+          "query": "scaling up behavioral science interventions in online education",
+          "results": 607177
+        },
+        {
+          "base": "openalex",
+          "query": "intrinsic motivation performance meta-analysis",
+          "results": 243170
+        },
+        {
+          "base": "openalex",
+          "query": "immediate rewards persistence long-term goals replication",
+          "results": 14226
+        },
+        {
+          "base": "crossref",
+          "query": "Woolley Fishbach motivating personal growth by seeking discomfort",
+          "results": 1877996
+        },
+        {
+          "base": "crossref",
+          "query": "Woolley Giurge Fishbach intrinsic motivation adherence personal resolutions",
+          "results": 622851
+        },
+        {
+          "base": "openalex",
+          "query": "Adherence to Personal Resolutions Across Time, Culture, and Goal Domains",
+          "results": 35393
+        },
+        {
+          "base": "openalex",
+          "query": "Kudrna mental contrasting implementation intentions workplace cluster randomised trial",
+          "results": 6
+        },
+        {
+          "base": "openalex",
+          "query": "Wittleder WOOP sham heavy drinking",
+          "results": 1
+        },
+        {
+          "base": "crossref",
+          "query": "Armitage Alganem Norman implementation intentions weight loss Kuwait randomized",
+          "results": 1907458
+        },
+        {
+          "base": "crossref",
+          "query": "Armitage volitional help sheet forming implementation intentions 2008",
+          "results": 4379526
+        },
+        {
+          "base": "crossref",
+          "query": "Hallford outcome-focused process-focused thinking anticipatory pleasure motivation preregistered",
+          "results": 115151
+        },
+        {
+          "base": "openalex",
+          "query": "Styk Zmorzyński Klinkosz process simulation outcome simulation",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "Marszał-Wiśniewska Jarczewska-Gerc mental simulation weight loss process outcome",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "Marszał-Wiśniewska Jarczewska-Gerc role of mental simulation in the weight loss process",
+          "results": 135837
+        },
+        {
+          "base": "openalex",
+          "query": "Prokopowicz Byrka mental simulation cesarean mobilization",
+          "results": 9
+        },
+        {
+          "base": "openalex",
+          "query": "Kędra Łaguna mental contrasting implementation intentions online intervention",
+          "results": 3
+        },
+        {
+          "base": "crossref",
+          "query": "Kędra Łaguna MCII online intervention randomized Current Issues in Personality Psychology",
+          "results": 213156
+        },
+        {
+          "base": "openalex",
+          "query": "Alshammari Alrashidi informal digital learning English intrinsic motivation grit Saudi",
+          "results": 3
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent) \"positive fantasies\" OR \"positive fantasy\" OR \"idealized fantasies\"",
+          "results": 63
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) positive fantasies replication",
+          "results": 48620
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) works citing Kappes 2011 + replication OR replicate OR preregistered OR registered",
+          "results": 30
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) works citing Oettingen & Mayer 2002 + replication OR replicate OR preregistered OR failed",
+          "results": 182
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent) (\"mental contrasting\" OR WOOP) AND (randomized OR randomised OR trial) AND PUB_YEAR:[2017 TO 2026]",
+          "results": 159
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent) (\"mental contrasting\" OR \"WOOP\" OR \"fantasy realization\") AND (\"meta-analysis\" OR \"systematic review\")",
+          "results": 142
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) title.search:implementation intentions meta-analysis (2007-2026)",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent) (\"implementation intention*\" OR \"mental contrasting\" OR \"process simulation\" OR \"positive fantas*\") AND (\"registered report\" OR \"preregistered replication\" OR \"pre-registered replication\" OR \"replication attempt\" OR \"failed to replicate\" OR \"Many Labs\")",
+          "results": 22
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent) (\"process simulation\" OR \"process-based simulation\" OR \"process-focused\" OR \"process focus\") AND (\"outcome simulation\" OR \"outcome focus\" OR \"outcome-based\")",
+          "results": 109
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) works citing Woolley & Fishbach 2022 + replication OR replicate OR preregistered OR discomfort",
+          "results": 39
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent) \"implementation intentions\" AND (Iran OR Iranian OR Saudi OR Egypt OR Jordan OR Lebanon OR Kuwait OR Qatar OR Oman OR Tunisia OR Morocco)",
+          "results": 148
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent) \"intrinsic motivation\" AND (\"academic achievement\" OR \"academic performance\" OR persistence OR adherence) AND (Saudi OR Egypt OR Egyptian OR Jordan OR Jordanian OR Lebanon OR Emirati OR Kuwait OR Qatar OR Oman OR Arab) AND PUB_YEAR:[2010 TO 2026]",
+          "results": 1423
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) Pilotti mental simulation outcome process students (other work of the team of Alghazo 2020)",
+          "results": 66
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent) Hofstede individualism score Arab countries Egypt Saudi collectivist (culture moderator)",
+          "results": 337
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent) filter=updates on the 12 DOIs of the draft and on the 33 counter-evidence DOIs",
+          "results": 0
+        }
+      ],
+      "notFound": [
+        "no independent replication (outside Oettingen's laboratory) of the effect of positive fantasies on energy or achievement, and no meta-analysis of positive fantasies against expectations (both agents, three bases)",
+        "no head-to-head meta-analysis of process against outcome simulation: Cole 2021 compares each with control; in its 4 studies with both arms, process does no better (its data file, read by the reviser)",
+        "no replication of Pham & Taylor 1999, nor of Woolley & Fishbach 2022 (seeking discomfort); no multi-lab replication of MCII/WOOP; no MCII meta-analysis after 2021",
+        "no Egyptian sample for anything in this episode; Arab samples: Alghazo 2020 (269 Saudi women students, c2), Armitage 2017 (216 adults in Kuwait, questionnaires in Arabic, nationality not reported; if-then plans alone, c3), Alshammari 2026 (218 Saudi students of Ha'il, 56% men, cross-sectional, c4); none for positive fantasies, the MCII package or an experiment on c4",
+        "Hofstede scores of Arab countries not read; Kizilcec 2017 found an effect only in the English-speaking cluster (an African-Islamic cluster was tested)",
+        "Lambert 2022 (expatriate pupils in Dubai): a multi-component wellbeing program that includes mental contrasting, no goal outcome, no control group in the abstract: not kept",
+        "not kept, plans alone rather than the MCII package (they would nuance c3 as Armitage 2017 does): Gollwitzer & Sheeran 2006 (no abstract), Sheeran, Listrom & Gollwitzer 2024, Breitwieser & Reinelt 2026, Cooke 2022, Pakpour 2016 (Iran), Melum 2026, Silva 2018",
+        "not kept: Prokopowicz & Byrka 2021 (process against outcome not tested as such in the abstract, overall p = .073); Riddell 2023 (MCII null for 111 cyclists, same direction as Kudrna and Kędra); Sezer 2025 (no control group)",
+        "not kept: Al-Hoorie 2018 and Kim 2026 (the L2 ideal self: correlations, a measure confounded with self-confidence, i.e. expectations); Frikha 2025 (Saudi, enjoyment and physical activity, cross-sectional); David 2024 (effort feels aversive: the book's premise, not a tested claim); Houser-Marko 2008, Freund 2015 (indirect)",
+        "found and not kept by the writer: Meslot 2016 (two RCTs, null), Vasquez & Buehler 2007, Renner 2019, Kappes, Oettingen & Mayer 2011 EJSP (same laboratory)",
+        "full texts not read: Woolley 2022 (closed; its OSF protocols and preregistrations read by the second blind review), Marszał-Wiśniewska 2014 (closed), Oettingen 2001 and 2002, Pham 1999, Cross 2019, Cerasoli 2014; Woolley 2025 and Wittleder 2025 (KOPS) were read by the second blind review",
+        "Europe PMC answered 503 to two queries on 2026-11-23 (culture or moderator; publication bias): run again on OpenAlex; its full text of Kizilcec 2017 answered 500 (read on the PMC page)",
+        "no independent replication of the experiments on c4 (Woolley 2016, 2022, 2025 study 4: one laboratory, one session or 24 h); no trial of MCII against only dreaming outside the creators' laboratory (second blind review, 2026-11-26)"
+      ]
+    },
+    "counterEvidence": {
+      "found": [
+        {
+          "source": "cole-2021-simulation",
+          "note": "offered against c1 and c2: g = .23 for imagined success is a subgroup of an omnibus test that is not significant (p = .16), against no simulation, not against questioning thoughts: a nuance of both, not a contradiction"
+        },
+        {
+          "source": "hallford-2026-future",
+          "note": "preregistered, 134 adults in Australia: thinking of the outcome raised reported motivation right after, the steps lowered perceived control; no effort or performance measured and the process arm did not take (dz = 0.07): a nuance of c1 and c2"
+        },
+        {
+          "doi": "10.14746/ssllt.2018.8.4.2",
+          "note": "Al-Hoorie 2018 (and Kim 2026, 10.3390/educsci16060892): the ideal L2 self goes with more intended effort; correlations, the measure confounded with self-confidence, i.e. the expectations c1 sets apart from fantasies: not taken"
+        },
+        {
+          "note": "no independent replication of positive fantasies (Kappes 2011, Oettingen 2002) in the works citing them: every retest comes from the same laboratory; c1 stays low and supports only its narrow reading"
+        },
+        {
+          "source": "marszal-wisniewska-2014-weight",
+          "note": "for c2: the process group lost more weight at five weeks, study 1 only (about 10 women per group, weight measure not described); study 2 shows no process advantage: added, c2 stays mixed"
+        },
+        {
+          "source": "styk-2021-maze",
+          "note": "for c2: more perseverance after process simulation, on easy mazes one leaves at will, alternating assignment, skewed data: added with a downgrade for risk of bias"
+        },
+        {
+          "doi": "10.1038/s41598-021-02036-1",
+          "note": "Prokopowicz & Byrka 2021: process against outcome not tested as such in the abstract, overall p = .073: not taken"
+        },
+        {
+          "source": "alghazo-2020-simulation",
+          "note": "the largest randomized head-to-head (269 Saudi women students): no difference at the midterm or in engagement; outcome ahead early in the term, process later: contradicts c2, which becomes very low after the second review"
+        },
+        {
+          "source": "wang-2021-mcii",
+          "note": "the card: 87% of its 15,907 participants are in one online study whose effect held only in English-speaking countries; 13 of 21 articles by MCII's creators; Egger t = 5.46, 0.242 after trim-and-fill: no participant count on the card"
+        },
+        {
+          "source": "kizilcec-2020-scale",
+          "note": "preregistered, 12,879 students of individualist countries: MCII did not raise course completion, its interval excludes the original gains: c3 mixed, and the nuance said"
+        },
+        {
+          "source": "kizilcec-2017-culture",
+          "note": "no effect in collectivist or « balanced » countries, an effect only in the English-speaking cluster; MC and II alone changed nothing"
+        },
+        {
+          "source": "kudrna-2025-workplace",
+          "note": "independent preregistered cluster trial, 225 employees whose control states a wish: no added progress at four weeks; imprecise (28 of 60 workplaces, 29% lost)"
+        },
+        {
+          "source": "kedra-2026-online",
+          "note": "two small online trials in Poland, both null, powered for a medium effect only"
+        },
+        {
+          "doi": "10.1080/00224545.2022.2163610",
+          "note": "Riddell 2023: MCII did not support goal attainment for 111 cyclists; same direction as Kudrna and Kędra, not added"
+        },
+        {
+          "doi": "10.1111/dar.13553",
+          "note": "Cooke 2022: if-then plans on alcohol, null at university and online; plans alone, not the MCII package: not added"
+        },
+        {
+          "source": "wittleder-2025-sham",
+          "note": "for c3, the exact comparator: WOOP against a sham WOOP that dreams twice, fewer heavy drinking days at 1 and 2 months; a feasibility pilot (86 randomized, unequal loss), creators co-authors"
+        },
+        {
+          "source": "armitage-2017-kuwait",
+          "note": "if-then plans alone in Kuwait (216 adults, questionnaires in Arabic, nationality not reported): more weight lost at 6 months, d = .38; no mental contrasting: a nuance of c3, refused for the screen"
+        },
+        {
+          "source": "woolley-2022-discomfort",
+          "note": "the direct test of the book's idea: seeking discomfort as a sign of growth raised engagement, in the same session, one laboratory: c4 rewritten to test it"
+        },
+        {
+          "source": "woolley-2025-resolutions",
+          "note": "intrinsic motivation predicts adherence over a year (U.S.) and a month (China), associations; study 4 causal over 24 h, d = .21: c4 stays low, never « for years »"
+        },
+        {
+          "source": "alshammari-2026-saudi",
+          "note": "218 Saudi students: intrinsic motivation goes with reported effort (r = .88), not with grades, cross-sectional: a nuance of c4, not support"
+        },
+        {
+          "doi": "10.1037/bul0000443",
+          "note": "David 2024: mental effort goes with negative affect in 29 countries: the book's premise (effort costs), not a tested claim: not added"
+        },
+        {
+          "doi": "10.1007/s12160-015-9767-3",
+          "note": "Pakpour 2016, Iran: if-then plans raised toothbrushing in adolescents; plans alone, not MCII: not added"
+        }
+      ],
+      "conclusion": "⚖️ holds, ✅ and ❌ excluded. Taken: c1 narrowed to the idealized dream (Cole, Hallford: nuances); c3 mixed (Kizilcec 2020, Kudrna, Kędra against; bias and allegiance in Wang); c4 rewritten on Woolley 2022; c2 very low, so the verdict is very low; the participant count left the card; the nuance said moved from c1 to c3. Not taken: splitting c3, a fifth claim."
+    },
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "skeptical",
+        "delivery": "a small pause before the answer"
+      },
+      {
+        "kind": "line",
+        "id": "l2",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "calm, factual; « كأنه حصل » plain, a light stress on « قلّت »",
+        "claims": [
+          "c1"
+        ],
+        "cites": [
+          "kappes-2011-energy"
+        ]
+      },
+      {
+        "kind": "line",
+        "id": "l3",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "fair to the book, a little warmer; « ساعتها » said plainly",
+        "claims": [
+          "c4"
+        ],
+        "cites": [
+          "woolley-2022-discomfort"
+        ]
+      },
+      {
+        "kind": "line",
+        "id": "l4",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "calm; the three verbs in a row, « أكتر شوية » small",
+        "claims": [
+          "c3"
+        ],
+        "cites": [
+          "wang-2021-mcii"
+        ]
+      }
+    ]
+  },
+  "takeaway": {
+    "claims": [
+      "c3"
+    ],
+    "strength": "low-risk-suggestion",
+    "orientation": false,
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "warm",
+        "delivery": "simple, a suggestion not an order; a beat before « وأول خطوة »",
+        "look": "viewer"
+      },
+      {
+        "kind": "action",
+        "id": "a1",
+        "who": "karim",
+        "gesture": "point",
+        "prop": {
+          "id": "laptop",
+          "state": "first-slide"
+        },
+        "emotion": "happy",
+        "look": "viewer",
+        "at": {
+          "line": "l1",
+          "word": 6
+        },
+        "seconds": 1.0
+      }
+    ]
+  },
+  "variation": {
+    "pin": {},
+    "avoid": [
+      "Karim as lazy or mocked: he is excited and dreams big, he is not a slacker; take 2 is not a lecture",
+      "Nour as the one who nags or knows better: she asks once, lightly, like a colleague passing by",
+      "a romance between Karim and Nour: two colleagues at work, nothing more",
+      "real brands, a real company name or logo on the trophy, the laptop or the slides",
+      "luxury or success clichés (money, cars, a crown): the dream is a small office trophy and colleagues clapping"
+    ]
+  }
+}
