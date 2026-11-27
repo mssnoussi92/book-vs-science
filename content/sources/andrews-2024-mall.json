@@ -15,16 +15,18 @@
   },
   "design": "cross-sectional",
   "designSetBy": "reviewer",
-  "population": "transcripts of the Irish participants of murphy-2023-mall whom the researchers had judged to have a false memory",
+  "n": 123,
+  "population": "transcripts of the 123 Irish participants of murphy-2023-mall; suggested details coded for the 43 the researchers had judged to have a false memory",
   "mena": false,
   "findings": [
     {
-      "id": "coders-more",
-      "text": "In that replication, the researchers' judgements counted many more false memories than the participants themselves reported",
+      "id": "self-17-of-43",
+      "text": "Of the 43 people the researchers had judged to have a false memory, 17 (40%) said themselves that they remembered the made-up event; 26 (60%) said they did not",
       "support": {
-        "sentence": "In this new study standard investigator judgements indicated many more false memories than did participants themselves, consistent with similar studies.",
+        "sentence": "In terms of numbers, 17 (40%) of the 43 with judged false memories self-reported they remembered it (9 partial, 8 full) and 26 (60%) self-reported they did not remember it (24 partial, 2 full).",
         "role": "result",
-        "where": "abstract"
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-27: published version (UCL Discovery), Results 3.1.1"
       },
       "kind": "association"
     },
@@ -40,18 +42,39 @@
     },
     {
       "id": "possibly-true",
-      "text": "Half the participants described experiences that may be true, distinct from the made-up event",
+      "text": "About half of those the researchers had judged to have a false memory (5 of 10 « full », 17 of 33 « partial ») described experiences that may be true, which they told apart from the made-up event",
       "support": {
-        "sentence": "Half the participants described potentially true experiences, distinguishable from the fake event; this group recalled more suggested details but tended to remember them differently.",
+        "sentence": "Substantial proportions of those judged as having full false memories (5/10, 50.0%) or partial false memories (17/33, 51.5%) described such potentially true past experiences in their transcripts.",
         "role": "result",
-        "where": "abstract"
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-27: published version (UCL Discovery), Results 3.2"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "strictest-4",
+      "text": "Removing step by step the possibly true experiences (35% to 17%), those with no recall of being lost (11%) and those who did not say they remembered, the authors' strictest rate is 4%",
+      "support": {
+        "sentence": "Finally, for the sake of legal relevance, it is essential that participants acknowledge a memory of the fake event: If from the remainder the nine with no memory of the fake event on the self-report measure are subtracted, the rate is 4%.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-27: UCL Discovery, Discussion (35%, 17%, 11%, 4% in 3 sentences)"
+      },
+      "effect": {
+        "metric": "percent",
+        "value": 4,
+        "correctedForBias": false
       },
       "kind": "association"
     }
   ],
   "limits": [
     "by the authors of brewin-2017-childhood, one side of a published debate; Murphy & Greene replied in 2025 (10.1002/acp.70044): even 4% would matter",
-    "a new coding of one study's transcripts (123 people, Ireland), not new data: classed as cross-sectional"
+    "a new coding of one study's transcripts (123 people, Ireland), not new data: classed as cross-sectional",
+    "details coded by the two authors together until full agreement; one blind rater second-coded 55 transcripts (kappa 0.49 to 0.91 by detail)",
+    "the abstract's « Half the participants » is half of the 43 judged false memories (22 of 43), not half of all 123 people",
+    "17%, 11% and 4% rest on the authors' own criteria, argued in the Discussion; the replication's authors call this reanalysis narrow"
   ],
+  "allegiance": "Brewin & Andrews argued in 2017 that implantation studies overstate false memories (brewin-2017-childhood), and coded these transcripts themselves",
   "acknowledged": []
 }

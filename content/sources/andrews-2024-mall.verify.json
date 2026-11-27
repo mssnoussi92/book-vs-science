@@ -48,9 +48,9 @@
       "detail": "read from crossref"
     },
     {
-      "name": "support:coders-more",
+      "name": "support:self-17-of-43",
       "result": "pass",
-      "detail": "whole sentence of the abstract; no role cue"
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-27: published version (UCL Discovery), Results 3.1.1"
     },
     {
       "name": "support:few-details",
@@ -60,7 +60,12 @@
     {
       "name": "support:possibly-true",
       "result": "pass",
-      "detail": "whole sentence of the abstract; no role cue"
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-27: published version (UCL Discovery), Results 3.2"
+    },
+    {
+      "name": "support:strictest-4",
+      "result": "pass",
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-27: UCL Discovery, Discussion (35%, 17%, 11%, 4% in 3 sentences)"
     }
   ],
   "found": {
@@ -76,6 +81,6 @@
   "retracted": false,
   "abstractFrom": "crossref",
   "abstractSha256": "0fba08a6aa55d03e9aadcc1dc797859d6efd6f03df011d4442de5447e990d0ce",
-  "checkedOn": "2026-11-26",
+  "checkedOn": "2026-11-27",
   "tool": "bvs-sources@0.1"
 }

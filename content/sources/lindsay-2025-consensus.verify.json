@@ -51,6 +51,16 @@
       "name": "support:varies-predictably",
       "result": "pass",
       "detail": "whole sentence of the abstract; no role cue"
+    },
+    {
+      "name": "support:first-test-confident",
+      "result": "pass",
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-27: published version (WRAP, Warwick), claim 4, citations left out"
+    },
+    {
+      "name": "support:lookalike-confident",
+      "result": "pass",
+      "detail": "full-text reading by memory-rewritten reviser, 2026-11-27: published version (WRAP, Warwick), claim 3"
     }
   ],
   "found": {
@@ -66,6 +76,6 @@
   "retracted": false,
   "abstractFrom": "europepmc",
   "abstractSha256": "b6636c8342cfd5262f8efe122491f235e23d5e04ab1977e5c20aa8267fedbb8b",
-  "checkedOn": "2026-11-26",
+  "checkedOn": "2026-11-27",
   "tool": "bvs-sources@0.1"
 }

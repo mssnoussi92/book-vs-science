@@ -24,19 +24,43 @@
   "findings": [
     {
       "id": "varies-predictably",
-      "text": "Researchers from both sides now agree that how much confidence tells about accuracy varies predictably: with how the suspect was chosen, how and when the test was run, and when confidence was asked",
+      "text": "Six researchers from both sides of the debate agree that how much confidence tells about accuracy varies predictably: with how the suspect was chosen, how and when the test was run, and when confidence was asked",
       "support": {
         "sentence": "The authors of this invited Contemporary Discussion agree that current science compels a more nuanced perspective in which the relationship between eyewitnesses' confidence and their accuracy varies predictably depending on specifics of how the suspect was selected, how the identification test was designed, when and how it was administered, and when confidence was assessed.",
         "role": "conclusion",
         "where": "abstract"
       },
       "kind": "association"
+    },
+    {
+      "id": "first-test-confident",
+      "text": "Their claim 4: on a first test under favourable conditions, suspect identifications made with high confidence are more likely to be right than those made with low confidence",
+      "support": {
+        "sentence": "On first tests under favourable conditions, suspect IDs made with high confidence are more likely to be accurate than suspect IDs made with low confidence.",
+        "role": "conclusion",
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-27: published version (WRAP, Warwick), claim 4, citations left out"
+      },
+      "kind": "association"
+    },
+    {
+      "id": "lookalike-confident",
+      "text": "Their claim 3: a suspect found only by facial resemblance can closely match the witness's memory, which can lead to a high-confidence misidentification of an innocent person",
+      "support": {
+        "sentence": "That innocent person will closely resemble the witness's memory of the perpetrator, potentially leading to a high-confidence misidentification.",
+        "role": "conclusion",
+        "where": "fulltext",
+        "readBy": "memory-rewritten reviser, 2026-11-27: published version (WRAP, Warwick), claim 3"
+      },
+      "kind": "association"
     }
   ],
   "limits": [
-    "an invited discussion by six researchers, without a systematic search: classed as a narrative review",
+    "an invited discussion by six researchers, without a systematic search: classed as a narrative review; claims argued with illustrative studies, not data",
     "about identifying a suspect in a lineup, not about memories of one's own life",
-    "the authors call it an « emerging scientific consensus » and do not assert that every claim is firmly established"
+    "the authors call it an « emerging scientific consensus » and do not assert that every claim is firmly established",
+    "« both sides » is from the full text (« Some of us… Others of us have championed evidence of eyewitness reliability »), not the abstract",
+    "co-signed by Wixted (wixted-2017-confidence) and by Fitzgerald, Hyman and Wade (fitzgerald-2025-errors); Wade and Lindsay also co-signed ito and scoboria: an agreement, not new data"
   ],
   "acknowledged": []
 }

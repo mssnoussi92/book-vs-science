@@ -20,7 +20,7 @@
   "findings": [
     {
       "id": "undone",
-      "text": "In three experiments, the authors show that the influence of misleading details on memory reports can be completely undone: the original detail can come back",
+      "text": "With a special procedure (telling people there may be two conflicting answers, and testing the detail and its source separately), three experiments completely undid the influence of misleading details on reports",
       "support": {
         "sentence": "Based on a memory conversion theoretical framework and associated refined assessment strategy, we report three experiments to demonstrate that suggestive influence can be completely undone.",
         "role": "conclusion",
@@ -31,9 +31,9 @@
   ],
   "limits": [
     "same second author as blank-2014-postwarning (Blank): not independent of it",
-    "a special procedure (an explanation and separate questions on the detail and its source): the original detail can survive, not that it always does",
+    "the effect was there first (« initially established »), then undone by the procedure, not on its own: the original detail can survive, not that it always does",
     "full text closed, not read: sample sizes and countries unknown; in one experiment the effect was undone 5 weeks later (abstract)",
-    "the abstract's result sentence (« restored to the level of non-misled control performance ») is cut by the tool at « (Exp. 3) »: its conclusion is cited instead"
+    "the abstract's two result sentences (« eliminated », « restored to the level of non-misled control ») are cut by the tool at « (Exp. 3) »: its aim-and-conclusion sentence is cited"
   ],
   "acknowledged": []
 }
