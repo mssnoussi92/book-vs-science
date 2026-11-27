@@ -105,7 +105,12 @@ export function presence(tl: Timeline, who: string, f: number): number {
   const [s, e] = [bounds[i]!, bounds[i + 1]!];
   const mine = lines.find((l) => l.speaker === who && l.f0 >= s && l.f0 < e);
   if (!mine) return 0;
-  return Math.max(0, Math.min(1, (f - (mine.f0 - ENTER)) / WALK));
+  const come = Math.max(0, Math.min(1, (f - (mine.f0 - ENTER)) / WALK));
+  // Alone, a character thinks; with the other, speaks (the owner's pilot review): when the lead thinks after the
+  // other's last line of the take, the other walks out first (the challenge of memory-rewritten).
+  const last = lines.filter((l) => l.speaker === who && l.f0 >= s && l.f0 < e).at(-1)!;
+  const thought = lines.find((l) => l.speaker === leadOf(tl) && l.inner && l.f0 > last.f1 && l.f0 < e);
+  return thought ? Math.min(come, Math.max(0, Math.min(1, (thought.f0 - f) / WALK))) : come;
 }
 
 /** Who lives the problem: the first character to speak in a scene (not the narrator over it); the first of the cast

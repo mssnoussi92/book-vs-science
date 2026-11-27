@@ -124,7 +124,6 @@
           "kind": "action",
           "id": "a1",
           "who": "nour",
-          "gesture": "point",
           "emotion": "amused",
           "look": "viewer",
           "seconds": 2.4
@@ -276,7 +275,7 @@
           "look": "away",
           "at": {
             "line": "n2",
-            "word": 3
+            "word": 1
           },
           "holds": "next",
           "seconds": 0.8
@@ -287,7 +286,7 @@
           "speaker": "karim",
           "emotion": "neutral",
           "intensity": 0.5,
-          "delivery": "to himself, calm, deciding; a short pause after « أأجّل »",
+          "delivery": "to himself, calm, deciding; a short pause after « بأجّل »",
           "look": "down",
           "voice": "inner"
         },
@@ -304,10 +303,10 @@
           "emotion": "neutral",
           "look": "away",
           "at": {
-            "line": "l4",
-            "word": 0
+            "line": "n2",
+            "word": 5
           },
-          "seconds": 1.4
+          "seconds": 2.0
         },
         {
           "kind": "action",
@@ -399,7 +398,7 @@
         "id": "l1",
         "speaker": "adasa",
         "emotion": "curious",
-        "delivery": "plain, reporting what the book says; a beat before « اللي بيقبل التعب »",
+        "delivery": "plain, reporting what the book says; a beat before « هو اللي بيحب الطلوع »",
         "gesture": "point",
         "look": "card"
       },
@@ -1055,19 +1054,6 @@
         "id": "l2",
         "speaker": "adasa",
         "emotion": "neutral",
-        "delivery": "calm, factual; « كأنه حصل » plain, a light stress on « قلّت »",
-        "claims": [
-          "c1"
-        ],
-        "cites": [
-          "kappes-2011-energy"
-        ]
-      },
-      {
-        "kind": "line",
-        "id": "l3",
-        "speaker": "adasa",
-        "emotion": "neutral",
         "delivery": "fair to the book, a little warmer; « ساعتها » said plainly",
         "claims": [
           "c4"
@@ -1078,10 +1064,23 @@
       },
       {
         "kind": "line",
+        "id": "l3",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "calm, factual; « كأنه حصل » plain, a light stress on « قلّت »",
+        "claims": [
+          "c1"
+        ],
+        "cites": [
+          "kappes-2011-energy"
+        ]
+      },
+      {
+        "kind": "line",
         "id": "l4",
         "speaker": "adasa",
         "emotion": "neutral",
-        "delivery": "calm; the three verbs in a row, « أكتر شوية » small",
+        "delivery": "calm; « بص للعقبة وخطّط » in one breath, « أكتر شوية » small",
         "claims": [
           "c3"
         ],
@@ -1103,14 +1102,14 @@
         "id": "l1",
         "speaker": "adasa",
         "emotion": "warm",
-        "delivery": "simple, a suggestion not an order; a beat before « وأول خطوة »",
+        "delivery": "a suggestion, not an order; « زي كريم » light; a beat before « وأول خطوة »",
         "look": "viewer"
       },
       {
         "kind": "action",
         "id": "a1",
         "who": "karim",
-        "gesture": "point",
+        "gesture": "hand-on-chest",
         "prop": {
           "id": "laptop",
           "state": "first-slide"

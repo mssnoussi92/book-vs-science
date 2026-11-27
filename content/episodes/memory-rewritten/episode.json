@@ -123,7 +123,7 @@
           "kind": "action",
           "id": "a1",
           "who": "nour",
-          "gesture": "point",
+          "gesture": "shrug",
           "emotion": "amused",
           "look": "viewer",
           "seconds": 2.4
@@ -157,7 +157,7 @@
           "speaker": "adasa",
           "emotion": "neutral",
           "intensity": 0.4,
-          "delivery": "setting the scene, calm; a light stress on « المدير »",
+          "delivery": "setting the scene, calm; a light stress on « الاجتماع »",
           "voice": "over"
         },
         {
@@ -198,29 +198,26 @@
           "look": "other"
         },
         {
-          "kind": "action",
-          "id": "a2",
-          "who": "karim",
-          "prop": {
-            "id": "phone",
-            "state": "scrolling"
-          },
-          "emotion": "neutral",
-          "look": "phone",
-          "at": {
-            "line": "l2",
-            "word": 0
-          },
-          "seconds": 0.8
-        },
-        {
           "kind": "line",
           "id": "l3",
           "speaker": "karim",
           "emotion": "neutral",
           "intensity": 0.3,
-          "delivery": "absent-minded, eyes on his phone; a vague nod, not really listening",
-          "look": "phone"
+          "delivery": "a little unsure, then going along; a small shrug, no argument",
+          "look": "other"
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "karim",
+          "gesture": "shrug",
+          "emotion": "neutral",
+          "look": "other",
+          "at": {
+            "line": "l3",
+            "word": 0
+          },
+          "seconds": 0.8
         },
         {
           "kind": "line",
@@ -228,7 +225,7 @@
           "speaker": "karim",
           "emotion": "neutral",
           "intensity": 0.5,
-          "delivery": "to himself, calm and certain, as if he had always known it",
+          "delivery": "to himself, alone once Nour has gone; calm, certain, as if the boss told him",
           "look": "away",
           "voice": "inner"
         },
@@ -278,7 +275,7 @@
           "speaker": "adasa",
           "emotion": "warm",
           "intensity": 0.5,
-          "delivery": "announcing the replay, light; a small stress on « هيكتب »",
+          "delivery": "announcing the replay, light; a small stress on « أول ما يخرج »",
           "voice": "over"
         },
         {
@@ -293,7 +290,7 @@
           "look": "down",
           "at": {
             "line": "n2",
-            "word": 4
+            "word": 3
           },
           "seconds": 1.2
         },
@@ -305,6 +302,22 @@
           "intensity": 0.5,
           "delivery": "light, friendly and sure, same as before",
           "look": "other"
+        },
+        {
+          "kind": "action",
+          "id": "a8",
+          "who": "karim",
+          "prop": {
+            "id": "notebook",
+            "state": "open-thu"
+          },
+          "emotion": "neutral",
+          "look": "down",
+          "at": {
+            "line": "l6",
+            "word": 0
+          },
+          "seconds": 1.0
         },
         {
           "kind": "line",
@@ -320,7 +333,7 @@
           "id": "a7",
           "who": "nour",
           "gesture": "shrug",
-          "emotion": "amused",
+          "emotion": "curious",
           "look": "other",
           "at": {
             "line": "l7",
@@ -382,7 +395,7 @@
         "id": "l1",
         "speaker": "adasa",
         "emotion": "curious",
-        "delivery": "plain, reporting what the book says; a beat before « فما تتمسكش »",
+        "delivery": "plain, reporting what the book says; a beat before « فما تصدّقش »",
         "gesture": "point",
         "look": "card"
       },
@@ -391,7 +404,7 @@
         "id": "l2",
         "speaker": "adasa",
         "emotion": "warm",
-        "delivery": "an everyday example, warm; a small smile on « افتكرته »",
+        "delivery": "warm, the author's idea in a family story; a small smile on « ذكرى ليك »",
         "look": "viewer"
       }
     ]
@@ -1206,7 +1219,7 @@
         "id": "l2",
         "speaker": "adasa",
         "emotion": "neutral",
-        "delivery": "calm, factual; the experiment told simply, a light stress on « مش اللي شافوه »",
+        "delivery": "calm, factual; two versions, small differences; a light stress on « زميلهم »",
         "claims": [
           "c1"
         ],
@@ -1259,7 +1272,7 @@
         "emotion": "happy",
         "at": {
           "line": "l1",
-          "word": 9
+          "word": 8
         },
         "seconds": 1.0
       }
@@ -1272,7 +1285,8 @@
       "Nour or Karim as a liar, careless or slow: both are sure, the memory bends, nobody is to blame",
       "the boss drawn or shouting: the meeting is only mentioned, the scene is two colleagues in a daylight office",
       "Nour and Karim as a couple: colleagues at work, a desk between them",
-      "police lineups, courts, crime or any trauma (the studies' setting): an ordinary office, an ordinary deadline"
+      "police lineups, courts, crime or any trauma (the studies' setting): an ordinary office, an ordinary deadline",
+      "Karim on his phone while Nour speaks (careless): in the first take he hesitates and goes along with a small shrug; the two takes differ only by the notebook"
     ]
   }
 }

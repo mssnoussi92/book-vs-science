@@ -15,7 +15,7 @@ const PALETTES = [
 const FLOOR = 1330;
 
 /** The office: a wall, a window with a passing cloud, a desk with a lamp and a plant. */
-const Office: React.FC<{ f: number; w: number; h: number; p: number; board?: string }> = ({ f, w, h, p, board }) => {
+const Office: React.FC<{ f: number; w: number; h: number; p: number; board?: string; laptop?: string }> = ({ f, w, h, p, board, laptop }) => {
   const c = PALETTES[p % PALETTES.length]!;
   const cloud = ((f * 0.6) % 520) - 120;
   return (
@@ -34,8 +34,16 @@ const Office: React.FC<{ f: number; w: number; h: number; p: number; board?: str
         <rect x={0} y={0} width={420} height={34} rx={6} fill={c.desk} stroke={INK} strokeWidth={7} />
         <rect x={30} y={34} width={22} height={216} fill={c.desk} stroke={INK} strokeWidth={6} />
         <rect x={368} y={34} width={22} height={216} fill={c.desk} stroke={INK} strokeWidth={6} />
-        <rect x={240} y={-110} width={150} height={104} rx={8} fill="#2a2d36" stroke={INK} strokeWidth={7} />
-        <rect x={252} y={-98} width={126} height={78} rx={4} fill="#9fd0e3" />
+        {laptop === "closed" ? (
+          // the lid shut, flat on the desk: nothing done yet (choose-your-struggle)
+          <rect x={232} y={-16} width={166} height={14} rx={5} fill="#2a2d36" stroke={INK} strokeWidth={6} />
+        ) : (
+          <>
+            <rect x={240} y={-110} width={150} height={104} rx={8} fill="#2a2d36" stroke={INK} strokeWidth={7} />
+            <rect x={252} y={-98} width={126} height={78} rx={4} fill={laptop === "first-slide" ? "#fffaf0" : "#9fd0e3"} />
+            {laptop === "first-slide" ? <g><rect x={262} y={-90} width={106} height={16} rx={3} fill="#2f8f8a" />{[-66, -52, -38].map((y) => <rect key={y} x={268} y={y} width={y === -38 ? 52 : 92} height={6} rx={3} fill="#c7d3d8" />)}</g> : null}
+          </>
+        )}
       </g>
       <g transform={`translate(${w - 150} ${FLOOR})`}>
         <path d="M -40 0 L -30 -90 L 30 -90 L 40 0 Z" fill={c.accent} stroke={INK} strokeWidth={7} strokeLinejoin="round" />
@@ -94,7 +102,7 @@ const Beach: React.FC<{ f: number; w: number; h: number }> = ({ f, w, h }) => {
 };
 
 /** The set of the episode: the place of its scene, for the whole video (the narrator speaks from the same world). */
-const SETS: Record<string, React.FC<{ f: number; w: number; h: number; p: number; board?: string }>> = { office: Office, beach: Beach };
+const SETS: Record<string, React.FC<{ f: number; w: number; h: number; p: number; board?: string; laptop?: string }>> = { office: Office, beach: Beach };
 
 /** The camera: a slow push that never stops, a closer frame on the one who speaks in a scene. */
 const camera = (f: number, frames: number, focusX: number, close: boolean) => {
@@ -127,13 +135,14 @@ const Cast: React.FC<PartProps & { dim?: number; close?: boolean }> = ({ tl, f, 
   return (
     <g transform={camera(f, tl.frames, focus, close)} opacity={dim}>
       <Actor tl={tl} f={f} who={lead} x={pos[lead]!.x} y={FLOOR - 250} s={1.6} facing={leadFacing} />
-      {pos[other]!.k > 0 ? <Actor tl={tl} f={f} who={other} x={pos[other]!.x} y={FLOOR - 250} s={1.6} facing={-1} walking={pos[other]!.k < 1 ? f * 0.45 : undefined} /> : null}
+      {pos[other]!.k > 0 ? <Actor tl={tl} f={f} who={other} x={pos[other]!.x} y={FLOOR - 250} s={1.6} facing={presence(tl, other, f + 1) < pos[other]!.k ? 1 : -1} walking={pos[other]!.k < 1 ? f * 0.45 : undefined} /> : null}
       {thinker ? [0, 1, 2].map((i) => (
         <circle key={i} cx={thinker.x + 95 + i * 30} cy={700 - i * 42 + Math.sin(f / 8 + i) * 4} r={8 + i * 5} fill="#ffffff" stroke={INK} strokeWidth={5} />
       )) : null}
       {Object.entries(pos).map(([who, p]) => {
         const pr = propAt(tl, who, f);
-        if (!pr || pr.id !== "notebook" || !pr.state.startsWith("open-") || p.k === 0) return null;
+        // the open notebook belongs to its scene: kept after it, it sat dimmed under the book card and the badge
+        if (!pr || pr.id !== "notebook" || !pr.state.startsWith("open-") || p.k === 0 || partAt(tl, f).kind !== "scene") return null;
         return <NotebookOpen key={`nb-${who}`} x={Math.min(Math.max(p.x + 60, 230), 850)} y={600} day={pr.state.slice(5)} k={1} />;
       })}
       {fx.map((e) => {
@@ -142,7 +151,8 @@ const Cast: React.FC<PartProps & { dim?: number; close?: boolean }> = ({ tl, f, 
         const who = p.x;
         if (e.fx!.id === "spiral") return <Spiral key={e.id} x={who} y={640} size={Number(e.fx!.params.size ?? 1)} f={f} o={interpolate(f, [e.f0, e.f0 + 6, e.f1, e.f1 + 12], [0, 1, 1, 0], CLAMP)} />;
         if (e.fx!.id === "cloud") return <RainCloud key={e.id} x={who - 10} y={520} f={f} o={interpolate(f, [e.f0, e.f0 + 8, e.f1, e.f1 + 12], [0, 1, 1, 0], CLAMP)} />;
-        if (e.fx!.id === "thought-bubble") return <ThoughtBubble key={e.id} x={who + 120} y={560} k={e.k} image={String(e.fx!.params.image ?? "")} />;
+        // like the meter, the bubble waits for the first frame's card: drawn under it, only its small circles showed
+        if (e.fx!.id === "thought-bubble") return f < tl.cards.firstFrame.f1 ? null : <ThoughtBubble key={e.id} x={who + 120} y={560} k={Math.min(e.k, (f - tl.cards.firstFrame.f1) / 9)} image={String(e.fx!.params.image ?? "")} />;
         // the dial waits for the first frame's card to go: drawn under it, only the needle's tip showed (chasing-happiness)
         if (e.fx!.id === "meter") return f < tl.cards.firstFrame.f1 ? null : <Meter key={e.id} x={Math.min(Math.max(who, 150), 930)} y={610} size={0.62} k={Math.min(1, (f - Math.max(e.f0, tl.cards.firstFrame.f1)) / 30)} f={f} level={Number(e.fx!.params.level ?? 2)} o={interpolate(f, [e.f0, e.f0 + 6, e.f1, e.f1 + 10], [0, 1, 1, 0], CLAMP)} />;
         if (e.fx!.id === "notification") return <Notification key={e.id} x={Math.min(Math.max(who, 260), 820)} y={560} k={e.k} kind={String(e.fx!.params.kind ?? "")} />;
@@ -196,7 +206,8 @@ const Set: React.FC<{ tl: PartProps["tl"]; f: number; w: number; h: number }> = 
   const inScene = partAt(tl, f).kind === "scene";
   const shown = !inScene ? undefined : tl.cast.characters.map((c) => propAt(tl, c, f)).find((pr) => pr && (pr.id === "slide" || (pr.id === "laptop" && pr.state !== "closed")));
   const board = !shown ? undefined : shown.id === "laptop" ? "first" : shown.state;
-  return <S f={f} w={w} h={h} p={tl.variation.palette} board={board} />;
+  const laptop = !inScene ? undefined : tl.cast.characters.map((c) => propAt(tl, c, f)).find((pr) => pr?.id === "laptop")?.state;
+  return <S f={f} w={w} h={h} p={tl.variation.palette} board={board} laptop={laptop} />;
 };
 
 export const style: StyleModule = {
