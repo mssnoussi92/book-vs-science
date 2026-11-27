@@ -5,7 +5,7 @@ import { Board, Choices, Meter, Notification, NotebookOpen, RainCloud, Rewind, S
 import { INK } from "../../packages/rig/Rig.tsx";
 import type { PartProps, StyleModule } from "../../packages/video/contract.ts";
 import { Actor } from "../../packages/video/stage.tsx";
-import { effectsAt, leadOf, lineAt, presence, propAt } from "../../packages/video/state.ts";
+import { effectsAt, leadOf, lineAt, partAt, presence, propAt } from "../../packages/video/state.ts";
 
 const CLAMP = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const PALETTES = [
@@ -193,7 +193,8 @@ const nuanceHeld = (p: PartProps) => {
 const Set: React.FC<{ tl: PartProps["tl"]; f: number; w: number; h: number }> = ({ tl, f, w, h }) => {
   const S = SETS[tl.parts.find((x) => x.kind === "scene")?.setting ?? "office"] ?? Office;
   // a slide someone presents, or the file a laptop opened, is shown big on the room's screen (a prop in a hand is tiny)
-  const shown = tl.cast.characters.map((c) => propAt(tl, c, f)).find((pr) => pr && (pr.id === "slide" || (pr.id === "laptop" && pr.state !== "closed")));
+  const inScene = partAt(tl, f).kind === "scene";
+  const shown = !inScene ? undefined : tl.cast.characters.map((c) => propAt(tl, c, f)).find((pr) => pr && (pr.id === "slide" || (pr.id === "laptop" && pr.state !== "closed")));
   const board = !shown ? undefined : shown.id === "laptop" ? "first" : shown.state;
   return <S f={f} w={w} h={h} p={tl.variation.palette} board={board} />;
 };
