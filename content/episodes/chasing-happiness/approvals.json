@@ -21,5 +21,12 @@
     }
   },
   "voice": {},
-  "video": {}
+  "video": {
+    "ar-EG": {
+      "on": "2026-11-27",
+      "words": "Je valide ed8377 (Recommandé) : « courir après le bonheur » avec les voix, hook h1, 67,8 s (narrateur Gemini, à remplacer par une voix humaine avant publication)",
+      "via": "conversation",
+      "hash": "ed83772322f077668607cda401e64caf734bac7035e97db3c377e1f3c3072a30"
+    }
+  }
 }
