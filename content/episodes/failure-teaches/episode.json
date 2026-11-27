@@ -1,0 +1,1146 @@
+{
+  "$schema": "../../../schemas/episode.schema.json",
+  "schema": 1,
+  "id": "failure-teaches",
+  "sourceLang": "ar-EG",
+  "languages": [
+    "ar-EG",
+    "en"
+  ],
+  "cast": {
+    "narrator": "adasa",
+    "characters": [
+      "nour",
+      "karim"
+    ]
+  },
+  "topic": {
+    "tags": [
+      "failure",
+      "learning",
+      "feedback",
+      "work"
+    ],
+    "sensitive": []
+  },
+  "hooks": [
+    {
+      "id": "h1",
+      "type": "challenge",
+      "spokenBy": "narrator",
+      "firstFrame": "challenge",
+      "emotion": "amused",
+      "claims": [],
+      "beats": []
+    },
+    {
+      "id": "h2",
+      "type": "paradox",
+      "spokenBy": "narrator",
+      "firstFrame": "close-up",
+      "emotion": "curious",
+      "claims": [
+        "c2",
+        "c4"
+      ],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "prop": {
+            "id": "slide",
+            "state": "rejected"
+          },
+          "emotion": "amused",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "type": "confession",
+      "spokenBy": "nour",
+      "firstFrame": "close-up",
+      "emotion": "amused",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "gesture": "shrug",
+          "prop": {
+            "id": "slide",
+            "state": "rejected"
+          },
+          "emotion": "amused",
+          "look": "viewer",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "type": "number",
+      "spokenBy": "narrator",
+      "firstFrame": "text-over-scene",
+      "emotion": "curious",
+      "claims": [
+        "c2"
+      ],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "prop": {
+            "id": "slide",
+            "state": "rejected"
+          },
+          "emotion": "neutral",
+          "look": "down",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "type": "question",
+      "spokenBy": "karim",
+      "firstFrame": "text-over-scene",
+      "emotion": "amused",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "gesture": "point",
+          "emotion": "amused",
+          "look": "viewer",
+          "seconds": 2.4
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "nour",
+          "prop": {
+            "id": "slide",
+            "state": "rejected"
+          },
+          "emotion": "neutral",
+          "look": "down",
+          "seconds": 2.4
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "setting": "office",
+      "shape": "replay-twice",
+      "outcome": "a-bit-better",
+      "beats": [
+        {
+          "kind": "line",
+          "id": "n1",
+          "speaker": "adasa",
+          "emotion": "neutral",
+          "intensity": 0.4,
+          "delivery": "setting the scene, calm; a light drop on « ما نجحش »",
+          "voice": "over"
+        },
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "prop": {
+            "id": "slide",
+            "state": "rejected"
+          },
+          "emotion": "surprised",
+          "look": "down",
+          "at": {
+            "line": "n1",
+            "word": 3
+          },
+          "seconds": 1.0
+        },
+        {
+          "kind": "line",
+          "id": "l1",
+          "speaker": "nour",
+          "emotion": "amused",
+          "intensity": 0.5,
+          "delivery": "to herself, brushing it off with a smile, the saying said lightly",
+          "gesture": "shrug",
+          "look": "away",
+          "voice": "inner"
+        },
+        {
+          "kind": "line",
+          "id": "l2",
+          "speaker": "karim",
+          "emotion": "curious",
+          "intensity": 0.4,
+          "delivery": "light, friendly, coming to her desk; a real offer, no lesson",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l3",
+          "speaker": "nour",
+          "emotion": "happy",
+          "intensity": 0.4,
+          "delivery": "light, waving it off, sure of herself; no hurt in it",
+          "gesture": "head-shake",
+          "look": "other"
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "nour",
+          "emotion": "neutral",
+          "look": "viewer",
+          "hooks": [
+            "h1"
+          ],
+          "caption": true,
+          "seconds": 1.8
+        },
+        {
+          "kind": "action",
+          "id": "a3",
+          "who": "nour",
+          "prop": {
+            "id": "slide",
+            "state": "rejected"
+          },
+          "fx": {
+            "id": "rewind",
+            "params": {}
+          },
+          "seconds": 2.2
+        },
+        {
+          "kind": "line",
+          "id": "n2",
+          "speaker": "adasa",
+          "emotion": "warm",
+          "intensity": 0.5,
+          "delivery": "announcing the replay, light; a small stress on « هتسأل »",
+          "voice": "over"
+        },
+        {
+          "kind": "line",
+          "id": "l4",
+          "speaker": "karim",
+          "emotion": "curious",
+          "intensity": 0.4,
+          "delivery": "light, friendly, same as before",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l5",
+          "speaker": "nour",
+          "emotion": "curious",
+          "intensity": 0.5,
+          "delivery": "open, really asking; a short beat after « آه »",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l6",
+          "speaker": "karim",
+          "emotion": "neutral",
+          "intensity": 0.4,
+          "delivery": "honest and kind, about himself, not a lecture; a small laugh on « تُهت »",
+          "gesture": "shrug",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l7",
+          "speaker": "nour",
+          "emotion": "happy",
+          "intensity": 0.3,
+          "delivery": "content, not thrilled; a small pause before « بس أوضح »",
+          "gesture": "point",
+          "look": "other"
+        },
+        {
+          "kind": "action",
+          "id": "a4",
+          "who": "nour",
+          "prop": {
+            "id": "slide",
+            "state": "clear"
+          },
+          "emotion": "relieved",
+          "look": "down",
+          "at": {
+            "line": "l7",
+            "word": 0
+          },
+          "seconds": 1.0
+        }
+      ]
+    }
+  ],
+  "book": {
+    "book": "subtle-art",
+    "basis": "failure-way-forward",
+    "claims": [
+      {
+        "id": "c1",
+        "statement": "After their own failure (being told their answer was wrong), people learn as much as after a success.",
+        "population": "adults",
+        "exposure": "failure feedback on one's own answers (told « wrong »)",
+        "comparison": "success feedback on one's own answers (told « right »)",
+        "outcome": "learning: score on a later test of the same information, or later performance",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c2",
+        "statement": "Making errors while learning, when an explanation follows (trying a problem before being taught), leads to better understanding and transfer than being taught first.",
+        "population": "learners from secondary school to university",
+        "exposure": "trying a problem and making errors first, then instruction",
+        "comparison": "instruction first",
+        "outcome": "understanding and transfer to new tasks after the training (not routine procedures)",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c3",
+        "statement": "People learn from other people's failures at least as much as from other people's successes.",
+        "population": "adults and students",
+        "exposure": "other people's failures (seen or told)",
+        "comparison": "other people's successes",
+        "outcome": "learning: later test score, or later performance",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c4",
+        "statement": "The more one fails, the more likely one is to succeed: a setback leads to better results later.",
+        "population": "adults and students pursuing a goal (career, grants, exams)",
+        "exposure": "a failure or setback (a near miss)",
+        "comparison": "a narrow success",
+        "outcome": "later performance and success; staying in the pursuit",
+        "causal": true,
+        "inScope": true
+      }
+    ],
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "curious",
+        "delivery": "plain, reporting what the book says; a beat before « فدوّر عليها »",
+        "gesture": "point",
+        "look": "card"
+      },
+      {
+        "kind": "line",
+        "id": "l2",
+        "speaker": "adasa",
+        "emotion": "warm",
+        "delivery": "a concrete example, warm and light on « بتبوظ »",
+        "look": "viewer"
+      }
+    ]
+  },
+  "verdict": {
+    "badge": "nuanced",
+    "certainty": "low",
+    "assessments": [
+      {
+        "claim": "c1",
+        "direction": "insufficient",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "eskreis-winkler-2019-failure",
+            "finding": "own-failure-less",
+            "relation": "contradicts"
+          },
+          {
+            "source": "keith-2022-tune-out",
+            "finding": "replicated",
+            "relation": "contradicts"
+          },
+          {
+            "source": "gok-2024-failure",
+            "finding": "replicated",
+            "relation": "contradicts"
+          },
+          {
+            "source": "kc-2013-surgery",
+            "finding": "own-success-others-failure",
+            "relation": "contradicts"
+          },
+          {
+            "source": "madsen-2010-launch",
+            "finding": "orgs-learn-more-from-failure",
+            "relation": "supports"
+          },
+          {
+            "source": "gok-2024-failure",
+            "finding": "exact-1b-ns",
+            "relation": "nuances"
+          },
+          {
+            "source": "gok-2024-failure",
+            "finding": "no-ego-difference",
+            "relation": "nuances"
+          },
+          {
+            "source": "keith-2022-tune-out",
+            "finding": "corrective-feedback",
+            "relation": "nuances"
+          },
+          {
+            "source": "keith-2022-tune-out",
+            "finding": "loss-framing",
+            "relation": "nuances"
+          },
+          {
+            "source": "gok-2024-failure",
+            "finding": "with-instruction",
+            "relation": "nuances"
+          },
+          {
+            "source": "kc-2013-surgery",
+            "finding": "overcome",
+            "relation": "nuances"
+          },
+          {
+            "source": "heine-2001-culture",
+            "finding": "japan-persist-more",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c2",
+        "direction": "supports",
+        "certainty": "moderate",
+        "evidence": [
+          {
+            "source": "keith-2008-error-management",
+            "finding": "overall",
+            "relation": "supports"
+          },
+          {
+            "source": "keith-2008-error-management",
+            "finding": "transfer",
+            "relation": "supports"
+          },
+          {
+            "source": "keith-2008-error-management",
+            "finding": "adaptive-transfer",
+            "relation": "supports"
+          },
+          {
+            "source": "keith-2008-error-management",
+            "finding": "conclusion",
+            "relation": "supports"
+          },
+          {
+            "source": "sinha-2021-productive-failure",
+            "finding": "ps-i-better",
+            "relation": "supports"
+          },
+          {
+            "source": "alfieri-2011-discovery",
+            "finding": "vs-direct-teaching",
+            "relation": "supports"
+          },
+          {
+            "source": "ezzeldin-2022-saudi",
+            "finding": "pf-saudi",
+            "relation": "supports"
+          },
+          {
+            "source": "sinha-2021-productive-failure",
+            "finding": "young-and-general",
+            "relation": "nuances"
+          },
+          {
+            "source": "sinha-2021-productive-failure",
+            "finding": "procedural-none",
+            "relation": "nuances"
+          },
+          {
+            "source": "alfieri-2011-discovery",
+            "finding": "unassisted-worse",
+            "relation": "nuances"
+          },
+          {
+            "source": "alfieri-2011-discovery",
+            "finding": "generation-worse",
+            "relation": "nuances"
+          },
+          {
+            "source": "alfieri-2011-discovery",
+            "finding": "conclusion",
+            "relation": "nuances"
+          },
+          {
+            "source": "loh-2012-error-training",
+            "finding": "not-better-than-control",
+            "relation": "nuances"
+          },
+          {
+            "source": "loh-2012-error-training",
+            "finding": "higher-ability",
+            "relation": "nuances"
+          },
+          {
+            "source": "loh-2012-error-training",
+            "finding": "avoidance-harms",
+            "relation": "nuances"
+          },
+          {
+            "source": "gok-2024-failure",
+            "finding": "with-instruction",
+            "relation": "nuances"
+          },
+          {
+            "source": "nachtigall-2020-non-stem",
+            "finding": "no-benefit",
+            "relation": "contradicts"
+          },
+          {
+            "source": "nachtigall-2020-non-stem",
+            "finding": "study1-worse",
+            "relation": "contradicts"
+          }
+        ]
+      },
+      {
+        "claim": "c3",
+        "direction": "supports",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "eskreis-winkler-2019-failure",
+            "finding": "others-failure-equal",
+            "relation": "supports"
+          },
+          {
+            "source": "kc-2013-surgery",
+            "finding": "own-success-others-failure",
+            "relation": "supports"
+          },
+          {
+            "source": "lin-siegler-2016-struggle",
+            "finding": "struggle-stories",
+            "relation": "nuances"
+          },
+          {
+            "source": "kc-2013-surgery",
+            "finding": "overcome",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c4",
+        "direction": "contradicts",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "wang-2019-setback",
+            "finding": "attrition",
+            "relation": "contradicts"
+          },
+          {
+            "source": "bol-2018-matthew",
+            "finding": "rift",
+            "relation": "contradicts"
+          },
+          {
+            "source": "bol-2018-matthew",
+            "finding": "apply-less",
+            "relation": "contradicts"
+          },
+          {
+            "source": "machin-2020-exam",
+            "finding": "lower-track",
+            "relation": "contradicts"
+          },
+          {
+            "source": "machin-2020-exam",
+            "finding": "dropout",
+            "relation": "contradicts"
+          },
+          {
+            "source": "lee-2024-surgeons",
+            "finding": "inverted-u",
+            "relation": "contradicts"
+          },
+          {
+            "source": "kc-2013-surgery",
+            "finding": "own-success-others-failure",
+            "relation": "contradicts"
+          },
+          {
+            "source": "wang-2019-setback",
+            "finding": "near-miss-outperform",
+            "relation": "nuances"
+          },
+          {
+            "source": "wang-2019-setback",
+            "finding": "beyond-screening",
+            "relation": "nuances"
+          },
+          {
+            "source": "lee-2024-surgeons",
+            "finding": "threshold",
+            "relation": "nuances"
+          },
+          {
+            "source": "lee-2024-surgeons",
+            "finding": "higher-threshold",
+            "relation": "nuances"
+          },
+          {
+            "source": "lee-2024-surgeons",
+            "finding": "both-impacts",
+            "relation": "nuances"
+          },
+          {
+            "source": "madsen-2010-launch",
+            "finding": "orgs-learn-more-from-failure",
+            "relation": "nuances"
+          },
+          {
+            "source": "heine-2001-culture",
+            "finding": "na-persist-less",
+            "relation": "nuances"
+          },
+          {
+            "source": "heine-2001-culture",
+            "finding": "japan-persist-more",
+            "relation": "nuances"
+          },
+          {
+            "source": "heine-2001-culture",
+            "finding": "effort-beliefs",
+            "relation": "nuances"
+          }
+        ]
+      }
+    ],
+    "nuance": "c2",
+    "onScreen": "sinha-2021-productive-failure",
+    "searched": {
+      "on": "2026-11-26",
+      "queries": [
+        {
+          "base": "crossref",
+          "query": "Not learning from failure the greatest failure of all",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "learning from failure feedback ego threat tune out",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "failure to learn from failure tune-out effect replication corrective feedback loss framing",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "you think failure is hard so is learning from it",
+          "results": 5
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"learning from failure\" OR \"failure feedback\" OR \"learn from failure\") AND (replication OR preregistered OR \"meta-analysis\")",
+          "results": 20
+        },
+        {
+          "base": "openalex",
+          "query": "people learn less from failure than success feedback replication",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "learning from failure feedback tune out replication",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "effectiveness of error management training a meta-analysis",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "error management training meta-analysis replication",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "error management training replication transfer experiment",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "when problem solving followed by instruction works evidence for productive failure",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "productive failure meta-analysis",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "learning from my success and from others failure minimally invasive cardiac surgery",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "failing to learn effects of failure and success on organizational learning orbital launch vehicle",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "early-career setback and future career impact near miss",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "quantifying the dynamics of failure across science startups and security",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "unsuccessful retrieval attempts enhance subsequent learning",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "errorful learning meta-analysis generating errors feedback memory",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "learning from errors Metcalfe annual review",
+          "results": 3
+        },
+        {
+          "base": "crossref",
+          "query": "pretesting effect meta-analysis",
+          "results": 8
+        },
+        {
+          "base": "crossref",
+          "query": "divergent consequences of success and failure in Japan and North America self-improving motivations",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "culture moderator learning from failure success feedback self-improvement",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "learning from failure culture moderator",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "success failure feedback persistence culture self-improvement East Asian North American",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "error management training culture moderator cross-cultural",
+          "results": 8
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"learning from failure\" OR \"failure feedback\" OR \"error management\" OR \"productive failure\" OR \"learning from errors\" OR \"learning from mistakes\") AND (Egypt OR Egyptian OR Arab OR Saudi OR Jordan OR \"Middle East\" OR \"North Africa\" OR MENA OR Emirates OR Lebanon OR Morocco OR Tunisia OR Qatar OR Kuwait)",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "error management training Saudi Arabia",
+          "results": 8
+        },
+        {
+          "base": "openalex",
+          "query": "productive failure Arab students",
+          "results": 8
+        },
+        {
+          "base": "openalex",
+          "query": "productive failure Saudi",
+          "results": 8
+        },
+        {
+          "base": "openalex",
+          "query": "learning from mistakes students Egypt",
+          "results": 8
+        },
+        {
+          "base": "crossref",
+          "query": "updates (retraction, withdrawal, correction, expression of concern) of the 12 DOIs, read by bvs sources verify --live",
+          "results": 0
+        },
+        {
+          "base": "crossref",
+          "query": "Eskreis-Winkler Fishbach reply Spiller learning from failure consistency (from 2024) [counter-evidence, 2026-11-23]",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "learning from failure tune out (from 2023) [counter-evidence]",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "Script Task failure feedback consistency [counter-evidence]",
+          "results": 10
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"failure feedback\" OR \"learning from failure\" OR \"learn from failure\" OR \"tune-out\" OR \"tune out\") AND (learning OR memory) AND PUB_YEAR:[2019 TO 2026] AND (replication OR replicate OR \"failed to replicate\" OR commentary OR reanalysis OR preregistered) [counter-evidence]",
+          "results": 30
+        },
+        {
+          "base": "europepmc",
+          "query": "citations of Eskreis-Winkler & Fishbach 2019 (PMID 31702452) [counter-evidence]",
+          "results": 46
+        },
+        {
+          "base": "crossref",
+          "query": "The exaggerated benefits of failure Eskreis-Winkler Woolley [counter-evidence]",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "pretesting effect meta-analysis errors prequestions learning (from 2018) [counter-evidence]",
+          "results": 12
+        },
+        {
+          "base": "crossref",
+          "query": "errorful learning errorless learning meta-analysis memory [counter-evidence]",
+          "results": 12
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"errorful generation\" OR \"pretesting effect\" OR \"errorful learning\" OR \"learning from errors\") AND (meta-analysis OR review) AND PUB_YEAR:[2015 TO 2026] [counter-evidence]",
+          "results": 20
+        },
+        {
+          "base": "europepmc",
+          "query": "\"errorless learning\" AND (\"meta-analysis\" OR \"systematic review\") AND (memory OR dementia OR amnesia OR \"brain injury\") [counter-evidence]",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "problem solving before instruction meta-analysis (from 2020) [counter-evidence]",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "productive failure instruction first replication null (from 2021) [counter-evidence]",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "comment Sinha Kapur productive failure meta-analysis critique (from 2021) [counter-evidence]",
+          "results": 8
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"error management training\" OR \"error-management training\" OR \"error encouragement\" OR \"error framing\") AND PUB_YEAR:[2009 TO 2026] [counter-evidence]",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "Does discovery-based instruction enhance learning meta-analysis [counter-evidence]",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "near miss grant funding early career setback later performance (from 2019-06) [counter-evidence]",
+          "results": 15
+        },
+        {
+          "base": "crossref",
+          "query": "The Matthew effect and early-career setbacks in research funding a replication study [counter-evidence]",
+          "results": 8
+        },
+        {
+          "base": "crossref",
+          "query": "Does losing lead to winning? An empirical analysis for four sports [counter-evidence]",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "prior business failure subsequent venture performance serial entrepreneurs (from 2012) [counter-evidence]",
+          "results": 12
+        },
+        {
+          "base": "crossref",
+          "query": "barely failing exam regression discontinuity effect on later outcomes students (from 2008) [counter-evidence]",
+          "results": 10
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"learning from errors\" OR \"learning from mistakes\" OR \"error orientation\" OR \"error climate\" OR \"fear of failure\" OR \"failure feedback\" OR \"productive failure\" OR \"error management\" OR \"errorful\") AND (Egypt OR Egyptian OR Saudi OR Jordan OR Jordanian OR Lebanon OR Lebanese OR Emirates OR UAE OR Qatar OR Kuwait OR Oman OR Morocco OR Tunisia OR Algeria OR Arab OR Arabic) [counter-evidence]",
+          "results": 30
+        },
+        {
+          "base": "openalex",
+          "query": "culture persistence after failure East Asian replication self-improvement (from 2010) [counter-evidence]",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "cross-cultural differences learning from failure feedback countries (from 2015) [counter-evidence]",
+          "results": 8
+        },
+        {
+          "base": "openalex",
+          "query": "learning from others failures vicarious learning meta-analysis [counter-evidence]",
+          "results": 8
+        },
+        {
+          "base": "crossref",
+          "query": "Does discovery-based instruction enhance learning meta-analysis [revision, 2026-11-26]",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "Matthew effect in science funding early career grant threshold [revision]",
+          "results": 6
+        },
+        {
+          "base": "crossref",
+          "query": "The Matthew effect in science funding Bol de Vaan van de Rijt [revision]",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "barely failing exam threshold regression discontinuity later education outcomes (from 2008) [revision]",
+          "results": 8
+        },
+        {
+          "base": "crossref",
+          "query": "Machin McNally Ruiz-Valenzuela entry through the narrow door English exam threshold [revision]",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "just fail threshold exam regression discontinuity upper-secondary track dropout [revision]",
+          "results": 8
+        },
+        {
+          "base": "crossref",
+          "query": "Even Einstein struggled effects of learning about great scientists struggles on high school students motivation [revision]",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "error encouragement error avoidance training transfer control training Human Factors (2010-2014) [revision]",
+          "results": 6
+        },
+        {
+          "base": "crossref",
+          "query": "Eskreis-Winkler Fishbach reply Spiller learning from failure consistency (from 2024) [revision]",
+          "results": 6
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"learning from failure\" OR \"failure feedback\" OR \"error management training\" OR \"productive failure\") AND (culture OR cultural OR moderator) [revision: rerun of the query Europe PMC refused on 2026-11-23]",
+          "results": 25
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"error management training\" OR \"productive failure\" OR \"learning from errors\" OR \"errorful learning\") AND (\"meta-analysis\" OR \"systematic review\") [revision: rerun of the query Europe PMC refused on 2026-11-23]",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "updates (retraction, withdrawal, correction, expression of concern) of the 17 DOIs, read by bvs sources verify --live, one sheet at a time [revision]",
+          "results": 0
+        },
+        {
+          "base": "crossref",
+          "query": "updates (retraction, withdrawal, correction, expression of concern) of the 5 sheets corrected after the second blind review, read by bvs sources verify --live, one sheet at a time [review 2, 2026-11-27]",
+          "results": 0
+        }
+      ],
+      "notFound": [
+        "no sample from Egypt; the only Arab-world sample is one small Saudi school quasi-experiment of productive failure (ezzeldin-2022-saudi, c2 only, high risk of bias); Sinha 2021 pools Saudi comparisons in « Asia » with no separate estimate",
+        "no replication of « people learn less from their own failure » outside the Script Task of Eskreis-Winkler & Fishbach, and no multi-lab replication: both replications (Keith 2022, Gok 2024) use the same task",
+        "Spiller 2025 (10.1177/09567976251333666, Psychological Science, commentary with a preregistered experiment) and the authors' reply (10.1177/09567976251391180): both typed « editorial » by OpenAlex, so the verifier refuses them as notices; read in their abstracts, written as limits of the three sheets that use the task",
+        "Traag et al. 2025 (10.7554/elife.109042, eLife reviewed preprint, replication of Wang 2019 across 14 programmes): Crossref « posted-content », the verifier would only give « review »; written as a limit of wang-2019-setback",
+        "no meta-analysis comparing learning after one's own failure with learning after success; no meta-analysis of error management training after Keith & Frese 2008; no independent meta-analysis of productive failure (Darabi 2018 and Ashman 2019: no abstract anywhere; Chen & Kalyuga 2019: abstract without a result, per the counter-evidence review)",
+        "pretesting meta-analyses (King-Shepard 2025, Yan 2025): no abstract found by the counter-evidence review; not added",
+        "Yin et al. 2019 (Nature, dynamics of failure): its correction concerns only figure axes (read by the counter-evidence review), so the draft's reason to leave it out falls; still not added: a model tested on observational data, indirect for c4, kept for the evidence page",
+        "recent small trials named by the counter-evidence review (productive failure: Braas 2025, Loibl & Leuders 2024, Trninic 2022; error management: Davenport & Beier 2024, Meritet 2021, Aliaga 2024, Dyre 2016) not added as sheets: mixed results, none changes the direction of c2; read on the evidence page",
+        "Eskreis-Winkler et al. 2024 (people overestimate recovery after a failure) and Klein Teeselink 2023 (« losing leads to winning » not replicated in sports): not added, indirect for c4 (beliefs; sports half-time)",
+        "Taha et al. 2025 (370 Egyptian nursing students, cross-sectional: failure appraisal and helplessness): not added, it does not test learning nor later success",
+        "the book's ch. 7 itself not read (no copy; Goodreads highlight pages blocked): the basis is the author's own page « 20 Paradoxes That Are True » (2013)",
+        "Bol 2018: number of applicants near the funding threshold (SI appendix: the PMC copy answers with an anti-robot page, Europe PMC with 403; not circumvented): no n on the sheet",
+        "Lin-Siegler 2016: full text not read (PsycNet and the Columbia repository answer with an application or an anti-robot page): level of random assignment unknown, `experiment` provisional",
+        "Loh 2012: full text closed, no open repository: the contradiction of its abstract on personality is not resolved; only ability is used"
+      ]
+    },
+    "counterEvidence": {
+      "found": [
+        {
+          "doi": "10.1177/09567976251333666",
+          "note": "Spiller 2025, Psychological Science, preregistered: the Script Task's scoring makes the « less from failure » gap without any feedback; refused by the verifier (OpenAlex « editorial »): c1 becomes insufficient, never said, not even as a question"
+        },
+        {
+          "doi": "10.1177/09567976251391180",
+          "note": "Eskreis-Winkler & Fishbach 2025 reply: consistency explains the effect « in some paradigms », not in theirs; no new data in the abstract: the debate is open, written in the limits of the three sheets that use the task"
+        },
+        {
+          "source": "gok-2024-failure",
+          "note": "same task; the exact MTurk comparison (1b) is small and not significant; Study 3 not randomized (with-instruction now an association); no ego-threat difference: the ego explanation is never said"
+        },
+        {
+          "source": "keith-2022-tune-out",
+          "note": "« with corrective feedback the gap disappears » is also what the artefact predicts: it cannot carry the nuance, which moves to c2 (Sinha 2021, Alfieri 2011)"
+        },
+        {
+          "source": "alfieri-2011-discovery",
+          "note": "added: discovering alone does worse than explicit teaching (d = -0.38), supported discovery better (d = 0.26 against direct teaching): the two halves of ⚖️ and the nuance; not on screen, discovery is not failure"
+        },
+        {
+          "source": "loh-2012-error-training",
+          "note": "added: encouraging errors beat forbidding them but not a neutral training, earlier gains put on confounds: the error-training strand drops to low and leaves c2, narrowed to « try first, then the explanation »"
+        },
+        {
+          "doi": "10.1007/s11251-025-09706-x",
+          "note": "Braas 2025, with Loibl & Leuders 2024 and Trninic 2022: recent null replications of productive failure; not added, no second step down: small trials around a moderate, heterogeneous effect whose conditions are in the claim"
+        },
+        {
+          "doi": "10.1207/s15326985ep4102_1",
+          "note": "Kirschner 2006, Kessels 2003, Wong 2026: guidance first is better for novices and impaired learners; c2's population starts at secondary school; the « for whom » goes to the evidence page"
+        },
+        {
+          "doi": "10.7554/elife.109042",
+          "note": "Traag 2025, eLife reviewed preprint, 14 programmes: Wang's setback advantage is not robust and likely a selection of who reapplies; a limit of wang-2019-setback, a nuance only"
+        },
+        {
+          "source": "bol-2018-matthew",
+          "note": "added: narrow losers of an early grant gathered less than half the funding of narrow winners over eight years, partly because they applied less: c4 contradicted"
+        },
+        {
+          "source": "machin-2020-exam",
+          "note": "added: 49,231 pupils in England: just failing the grade meant fewer high tracks, less higher education, more dropout at 18: c4 contradicted, same rank as Wang"
+        },
+        {
+          "doi": "10.1037/xge0001610",
+          "note": "Eskreis-Winkler et al. 2024: people overestimate recovery after a failure (survivorship); with Klein Teeselink 2023 (« losing leads to winning » not replicated in sports): indirect for c4, not added"
+        },
+        {
+          "source": "lin-siegler-2016-struggle",
+          "note": "added for c3, then a nuance only (second blind review): stories of hardship without any failure did as well as stories of mistakes, and the outcome is learning through motivation"
+        },
+        {
+          "doi": "10.1016/j.copsyc.2025.102245",
+          "note": "Fishbach 2026, short review by the original author: failure teaches more than instruction alone; low rank, it would go with c2; not added"
+        },
+        {
+          "doi": "10.3758/s13421-024-01608-6",
+          "note": "Butowska-Buczynska 2024: the errorful-learning advantage disappears when study time is equated; with Wong 2023 (small, one lab): evidence page, not added"
+        },
+        {
+          "source": "ezzeldin-2022-saudi",
+          "note": "the only Arab sample: 66 Saudi pupils, one school per group, no pretest reported, eta² ≈ 0.8: high risk of bias, it carries nothing; the applicability line is written"
+        },
+        {
+          "doi": "10.1177/23779608251398129",
+          "note": "Taha 2025, 370 Egyptian nursing students, cross-sectional: negative failure appraisal goes with helplessness; tests neither learning nor later success: not added"
+        }
+      ],
+      "conclusion": "⚖️ low holds; ❌ is not defensible. Taken: c1 insufficient (one contested task, Spiller 2025), never said; c2 narrowed to « try first, then the explanation », moderate (Sinha, Alfieri), error training low (Loh); c3 low, a question at most; c4 contradicted, low (Bol, Machin; Wang not robust, Traag). Refused: a second step down for c2; Alfieri on screen (discovery is not failure): Sinha."
+    },
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "skeptical",
+        "delivery": "a small pause before the answer"
+      },
+      {
+        "kind": "line",
+        "id": "l2",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "calm, factual; the experiment told simply, a beat before « وبعد الشرح »",
+        "claims": [
+          "c2"
+        ],
+        "cites": [
+          "sinha-2021-productive-failure"
+        ]
+      }
+    ],
+    "nuanceSpoken": true,
+    "applicability": "written"
+  },
+  "takeaway": {
+    "claims": [
+      "c2"
+    ],
+    "strength": "low-risk-suggestion",
+    "orientation": false,
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "warm",
+        "delivery": "simple, a suggestion not an order; « إيه اللي ما نفعش؟ » in Nour's tone",
+        "look": "viewer"
+      },
+      {
+        "kind": "action",
+        "id": "a1",
+        "who": "nour",
+        "gesture": "point",
+        "prop": {
+          "id": "slide",
+          "state": "clear"
+        },
+        "emotion": "happy",
+        "at": {
+          "line": "l1",
+          "word": 5
+        },
+        "seconds": 1.0
+      }
+    ]
+  },
+  "variation": {
+    "pin": {},
+    "avoid": [
+      "Karim lecturing Nour (a man explaining to a woman): he answers her question in one honest line about himself, she finds the fix",
+      "Nour ashamed, crying or blaming herself: in take 1 she brushes the failure off with a smile, in take 2 she is curious",
+      "a manager, an audience or a meeting room drawn: the meeting is over, only the slide with its red cross shows it",
+      "a triumph at the end (applause, a green tick, a promotion): the new slide is clearer, nothing more",
+      "Nour and Karim as a couple: colleagues at their desks, daylight",
+      "famous people who failed first (Edison, Jordan, Picasso): never drawn nor named"
+    ]
+  }
+}
