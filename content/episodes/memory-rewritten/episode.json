@@ -1,0 +1,1278 @@
+{
+  "$schema": "../../../schemas/episode.schema.json",
+  "schema": 1,
+  "id": "memory-rewritten",
+  "sourceLang": "ar-EG",
+  "languages": [
+    "ar-EG",
+    "en"
+  ],
+  "cast": {
+    "narrator": "adasa",
+    "characters": [
+      "karim",
+      "nour"
+    ]
+  },
+  "topic": {
+    "tags": [
+      "memory",
+      "certainty",
+      "work"
+    ],
+    "sensitive": []
+  },
+  "hooks": [
+    {
+      "id": "h1",
+      "type": "challenge",
+      "spokenBy": "narrator",
+      "firstFrame": "challenge",
+      "emotion": "amused",
+      "claims": [],
+      "beats": []
+    },
+    {
+      "id": "h2",
+      "type": "paradox",
+      "spokenBy": "narrator",
+      "firstFrame": "close-up",
+      "emotion": "curious",
+      "claims": [
+        "c3"
+      ],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "gesture": "hand-on-chest",
+          "emotion": "happy",
+          "look": "viewer",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "type": "confession",
+      "spokenBy": "karim",
+      "firstFrame": "close-up",
+      "emotion": "amused",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "gesture": "shrug",
+          "fx": {
+            "id": "thought-bubble",
+            "params": {
+              "image": "day-sun"
+            }
+          },
+          "emotion": "amused",
+          "look": "viewer",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "type": "number",
+      "spokenBy": "narrator",
+      "firstFrame": "text-over-scene",
+      "emotion": "curious",
+      "claims": [
+        "c1"
+      ],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "fx": {
+            "id": "thought-bubble",
+            "params": {
+              "image": "day-thu"
+            }
+          },
+          "emotion": "curious",
+          "seconds": 2.4
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "nour",
+          "gesture": "point",
+          "emotion": "happy",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "type": "question",
+      "spokenBy": "nour",
+      "firstFrame": "text-over-scene",
+      "emotion": "amused",
+      "claims": [],
+      "beats": [
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "nour",
+          "gesture": "point",
+          "emotion": "amused",
+          "look": "viewer",
+          "seconds": 2.4
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "karim",
+          "fx": {
+            "id": "thought-bubble",
+            "params": {
+              "image": "day-sun"
+            }
+          },
+          "emotion": "neutral",
+          "seconds": 2.4
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "setting": "office",
+      "shape": "replay-twice",
+      "outcome": "a-bit-better",
+      "beats": [
+        {
+          "kind": "line",
+          "id": "n1",
+          "speaker": "adasa",
+          "emotion": "neutral",
+          "intensity": 0.4,
+          "delivery": "setting the scene, calm; a light stress on « المدير »",
+          "voice": "over"
+        },
+        {
+          "kind": "line",
+          "id": "l1",
+          "speaker": "karim",
+          "emotion": "neutral",
+          "intensity": 0.4,
+          "delivery": "to himself, matter-of-fact, noting the day as he walks out",
+          "look": "away",
+          "voice": "inner"
+        },
+        {
+          "kind": "action",
+          "id": "a1",
+          "who": "karim",
+          "fx": {
+            "id": "thought-bubble",
+            "params": {
+              "image": "day-thu"
+            }
+          },
+          "emotion": "neutral",
+          "at": {
+            "line": "l1",
+            "word": 2
+          },
+          "holds": "next",
+          "seconds": 1.0
+        },
+        {
+          "kind": "line",
+          "id": "l2",
+          "speaker": "nour",
+          "emotion": "happy",
+          "intensity": 0.5,
+          "delivery": "light, friendly and sure, passing by his desk; stating it, not asking",
+          "look": "other"
+        },
+        {
+          "kind": "action",
+          "id": "a2",
+          "who": "karim",
+          "prop": {
+            "id": "phone",
+            "state": "scrolling"
+          },
+          "emotion": "neutral",
+          "look": "phone",
+          "at": {
+            "line": "l2",
+            "word": 0
+          },
+          "seconds": 0.8
+        },
+        {
+          "kind": "line",
+          "id": "l3",
+          "speaker": "karim",
+          "emotion": "neutral",
+          "intensity": 0.3,
+          "delivery": "absent-minded, eyes on his phone; a vague nod, not really listening",
+          "look": "phone"
+        },
+        {
+          "kind": "line",
+          "id": "l4",
+          "speaker": "karim",
+          "emotion": "neutral",
+          "intensity": 0.5,
+          "delivery": "to himself, calm and certain, as if he had always known it",
+          "look": "away",
+          "voice": "inner"
+        },
+        {
+          "kind": "action",
+          "id": "a3",
+          "who": "karim",
+          "fx": {
+            "id": "thought-bubble",
+            "params": {
+              "image": "day-sun"
+            }
+          },
+          "emotion": "neutral",
+          "at": {
+            "line": "l4",
+            "word": 0
+          },
+          "holds": "next",
+          "seconds": 1.0
+        },
+        {
+          "kind": "action",
+          "id": "a4",
+          "who": "karim",
+          "emotion": "neutral",
+          "look": "viewer",
+          "hooks": [
+            "h1"
+          ],
+          "caption": true,
+          "seconds": 1.8
+        },
+        {
+          "kind": "action",
+          "id": "a5",
+          "who": "karim",
+          "fx": {
+            "id": "rewind",
+            "params": {}
+          },
+          "seconds": 2.2
+        },
+        {
+          "kind": "line",
+          "id": "n2",
+          "speaker": "adasa",
+          "emotion": "warm",
+          "intensity": 0.5,
+          "delivery": "announcing the replay, light; a small stress on « هيكتب »",
+          "voice": "over"
+        },
+        {
+          "kind": "action",
+          "id": "a6",
+          "who": "karim",
+          "prop": {
+            "id": "notebook",
+            "state": "writing"
+          },
+          "emotion": "neutral",
+          "look": "down",
+          "at": {
+            "line": "n2",
+            "word": 4
+          },
+          "seconds": 1.2
+        },
+        {
+          "kind": "line",
+          "id": "l6",
+          "speaker": "nour",
+          "emotion": "happy",
+          "intensity": 0.5,
+          "delivery": "light, friendly and sure, same as before",
+          "look": "other"
+        },
+        {
+          "kind": "line",
+          "id": "l7",
+          "speaker": "karim",
+          "emotion": "curious",
+          "intensity": 0.4,
+          "delivery": "calm and friendly, a glance at his notebook; a real question, no fight",
+          "look": "other"
+        },
+        {
+          "kind": "action",
+          "id": "a7",
+          "who": "nour",
+          "gesture": "shrug",
+          "emotion": "amused",
+          "look": "other",
+          "at": {
+            "line": "l7",
+            "word": 3
+          },
+          "seconds": 1.0
+        }
+      ]
+    }
+  ],
+  "book": {
+    "book": "subtle-art",
+    "basis": "memory-imperfect",
+    "claims": [
+      {
+        "id": "c1",
+        "statement": "Misleading details given by another person after an event (a co-witness's account, their statements) change what people later report remembering of it.",
+        "population": "adults",
+        "exposure": "misleading details from another person after the event (a co-witness's account or statements)",
+        "comparison": "consistent information, or none, after the event",
+        "outcome": "accuracy of later reports of the event's details",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c2",
+        "statement": "Repeated suggestion can lead some people to remember, as their own, a whole childhood event that never happened.",
+        "population": "adults",
+        "exposure": "repeated suggestion of a false childhood event (a relative's account, interviews, imagining it)",
+        "comparison": "true childhood events, or no suggestion",
+        "outcome": "reporting a memory of the false event",
+        "causal": true,
+        "inScope": true
+      },
+      {
+        "id": "c3",
+        "statement": "Even the memories we feel sure of are often wrong: feeling certain says little about being right.",
+        "population": "adults",
+        "exposure": "high confidence in a memory",
+        "comparison": "low confidence in a memory",
+        "outcome": "accuracy of that memory",
+        "causal": false,
+        "inScope": true
+      },
+      {
+        "id": "c4",
+        "statement": "So we should trust our own memory and certainty less: doubting one's memory protects against being wrong or misled.",
+        "population": "adults",
+        "exposure": "distrusting one's own memory (the book's advice, « trust yourself less »)",
+        "comparison": "trusting it",
+        "outcome": "accuracy of what one reports; being misled less",
+        "causal": true,
+        "inScope": false
+      }
+    ],
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "curious",
+        "delivery": "plain, reporting what the book says; a beat before « فما تتمسكش »",
+        "gesture": "point",
+        "look": "card"
+      },
+      {
+        "kind": "line",
+        "id": "l2",
+        "speaker": "adasa",
+        "emotion": "warm",
+        "delivery": "an everyday example, warm; a small smile on « افتكرته »",
+        "look": "viewer"
+      }
+    ]
+  },
+  "verdict": {
+    "badge": "nuanced",
+    "certainty": "low",
+    "assessments": [
+      {
+        "claim": "c1",
+        "direction": "supports",
+        "certainty": "moderate",
+        "evidence": [
+          {
+            "source": "ito-2019-cowitness",
+            "finding": "adopted-partner",
+            "relation": "supports"
+          },
+          {
+            "source": "ito-2019-cowitness",
+            "finding": "generalizable",
+            "relation": "supports"
+          },
+          {
+            "source": "ito-2019-cowitness",
+            "finding": "eight-in-ten",
+            "relation": "supports"
+          },
+          {
+            "source": "wiechert-2026-misinformation",
+            "finding": "misled-less-correct",
+            "relation": "supports"
+          },
+          {
+            "source": "wiechert-2026-misinformation",
+            "finding": "not-only-demand",
+            "relation": "supports"
+          },
+          {
+            "source": "anakwah-2024-culture",
+            "finding": "misled-recognition",
+            "relation": "supports"
+          },
+          {
+            "source": "bilgin-2024-central",
+            "finding": "tweeted-more",
+            "relation": "supports"
+          },
+          {
+            "source": "ito-2019-cowitness",
+            "finding": "undisputed",
+            "relation": "nuances"
+          },
+          {
+            "source": "ito-2019-cowitness",
+            "finding": "disputed-rare",
+            "relation": "nuances"
+          },
+          {
+            "source": "wiechert-2026-misinformation",
+            "finding": "smaller-with-stakes",
+            "relation": "nuances"
+          },
+          {
+            "source": "wiechert-2026-misinformation",
+            "finding": "partly-demand",
+            "relation": "nuances"
+          },
+          {
+            "source": "blank-2014-postwarning",
+            "finding": "warning-halves",
+            "relation": "nuances"
+          },
+          {
+            "source": "oeberst-2012-undoing",
+            "finding": "undone",
+            "relation": "nuances"
+          },
+          {
+            "source": "anakwah-2024-culture",
+            "finding": "free-recall-18",
+            "relation": "nuances"
+          },
+          {
+            "source": "bilgin-2024-central",
+            "finding": "central-less",
+            "relation": "nuances"
+          },
+          {
+            "source": "anakwah-2024-culture",
+            "finding": "collectivistic-more",
+            "relation": "nuances"
+          },
+          {
+            "source": "anakwah-2024-culture",
+            "finding": "free-recall-same",
+            "relation": "nuances"
+          },
+          {
+            "source": "steblay-2014-feedback",
+            "finding": "feedback-inflates",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c2",
+        "direction": "supports",
+        "certainty": "moderate",
+        "evidence": [
+          {
+            "source": "scoboria-2017-implantation",
+            "finding": "full-robust",
+            "relation": "supports"
+          },
+          {
+            "source": "scoboria-2017-implantation",
+            "finding": "thirty-percent",
+            "relation": "supports"
+          },
+          {
+            "source": "scoboria-2017-implantation",
+            "finding": "up-to-46",
+            "relation": "supports"
+          },
+          {
+            "source": "brewin-2017-childhood",
+            "finding": "full-15",
+            "relation": "supports"
+          },
+          {
+            "source": "murphy-2023-mall",
+            "finding": "self-14",
+            "relation": "supports"
+          },
+          {
+            "source": "murphy-2023-mall",
+            "finding": "full-8",
+            "relation": "supports"
+          },
+          {
+            "source": "murphy-2023-mall",
+            "finding": "rises",
+            "relation": "supports"
+          },
+          {
+            "source": "murphy-2023-mall",
+            "finding": "thirty-five",
+            "relation": "supports"
+          },
+          {
+            "source": "arce-2023-implanting",
+            "finding": "above-zero",
+            "relation": "supports"
+          },
+          {
+            "source": "arce-2023-implanting",
+            "finding": "about-half",
+            "relation": "supports"
+          },
+          {
+            "source": "arce-2023-implanting",
+            "finding": "adults-too",
+            "relation": "supports"
+          },
+          {
+            "source": "murphy-2023-mall",
+            "finding": "believed-52",
+            "relation": "nuances"
+          },
+          {
+            "source": "brewin-2017-childhood",
+            "finding": "more-limited",
+            "relation": "nuances"
+          },
+          {
+            "source": "brewin-2017-childhood",
+            "finding": "belief-small",
+            "relation": "nuances"
+          },
+          {
+            "source": "andrews-2024-mall",
+            "finding": "self-17-of-43",
+            "relation": "nuances"
+          },
+          {
+            "source": "andrews-2024-mall",
+            "finding": "few-details",
+            "relation": "nuances"
+          },
+          {
+            "source": "andrews-2024-mall",
+            "finding": "possibly-true",
+            "relation": "nuances"
+          },
+          {
+            "source": "andrews-2024-mall",
+            "finding": "strictest-4",
+            "relation": "nuances"
+          }
+        ]
+      },
+      {
+        "claim": "c3",
+        "direction": "mixed",
+        "certainty": "low",
+        "evidence": [
+          {
+            "source": "wixted-2017-confidence",
+            "finding": "pristine-accurate",
+            "relation": "contradicts"
+          },
+          {
+            "source": "lindsay-2025-consensus",
+            "finding": "first-test-confident",
+            "relation": "contradicts"
+          },
+          {
+            "source": "lindsay-2025-consensus",
+            "finding": "varies-predictably",
+            "relation": "nuances"
+          },
+          {
+            "source": "spearing-2022-retention",
+            "finding": "month-impairs",
+            "relation": "nuances"
+          },
+          {
+            "source": "fitzgerald-2025-errors",
+            "finding": "one-in-eight",
+            "relation": "nuances"
+          },
+          {
+            "source": "fitzgerald-2025-errors",
+            "finding": "lab-0-40",
+            "relation": "nuances"
+          },
+          {
+            "source": "talarico-2003-flashbulb",
+            "finding": "belief-stays",
+            "relation": "nuances"
+          },
+          {
+            "source": "wixted-2017-confidence",
+            "finding": "non-pristine",
+            "relation": "supports"
+          },
+          {
+            "source": "steblay-2014-feedback",
+            "finding": "feedback-inflates",
+            "relation": "supports"
+          },
+          {
+            "source": "spearing-2022-retention",
+            "finding": "very-sure-overconfident",
+            "relation": "supports"
+          },
+          {
+            "source": "spearing-2022-retention",
+            "finding": "eighty-sixty",
+            "relation": "supports"
+          },
+          {
+            "source": "lindsay-2025-consensus",
+            "finding": "lookalike-confident",
+            "relation": "supports"
+          },
+          {
+            "source": "talarico-2003-flashbulb",
+            "finding": "both-change",
+            "relation": "supports"
+          },
+          {
+            "source": "talarico-2003-flashbulb",
+            "finding": "perceived-accuracy",
+            "relation": "supports"
+          }
+        ]
+      }
+    ],
+    "nuance": "c3",
+    "onScreen": "ito-2019-cowitness",
+    "searched": {
+      "on": "2026-11-27",
+      "queries": [
+        {
+          "base": "openalex",
+          "query": "misinformation effect meta-analysis",
+          "results": 20
+        },
+        {
+          "base": "crossref",
+          "query": "misinformation effect meta-analysis",
+          "results": 20
+        },
+        {
+          "base": "openalex",
+          "query": "What Fifty Years of Research on the Misinformation Effect Can Tell Us",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "Edmar misinformation effect fifty years meta-analytic review",
+          "results": 10
+        },
+        {
+          "base": "europepmc",
+          "query": "\"misinformation effect\" AND (\"meta-analysis\" OR \"meta-analytic\")",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "misinformation effect eyewitness memory replication",
+          "results": 15
+        },
+        {
+          "base": "openalex",
+          "query": "Loftus Palmer 1974 replication leading question speed estimate",
+          "results": 10
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"misinformation effect\" OR \"misleading postevent information\" OR \"post-event misinformation\") AND (replication OR preregistered OR \"registered report\")",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "mega-analysis of memory reports from eight peer-reviewed false memory implantation studies",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "Creating memories for false autobiographical events in childhood: a systematic review",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "Lost in the mall again: a preregistered replication and extension of Loftus and Pickrell",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "relationship between eyewitness confidence and identification accuracy a new synthesis",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "misleading post-event information eyewitness suggestibility meta-analysis",
+          "results": 20
+        },
+        {
+          "base": "openalex",
+          "query": "retrieval-enhanced suggestibility meta-analysis",
+          "results": 8
+        },
+        {
+          "base": "openalex",
+          "query": "emotion and false memory context-content paradox meta-analysis",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "Retrieval-enhanced suggestibility: A retrospective and a new investigation",
+          "results": 3
+        },
+        {
+          "base": "openalex",
+          "query": "multi-lab registered replication misinformation memory eyewitness",
+          "results": 10
+        },
+        {
+          "base": "europepmc",
+          "query": "(suggestibility OR \"misinformation effect\" OR \"false memory\") AND (\"meta-analysis\" OR \"meta-analytic\") AND (eyewitness OR \"post-event\" OR postevent)",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "Eyewitness memory distortion following co-witness discussion replication ten countries",
+          "results": 8
+        },
+        {
+          "base": "crossref",
+          "query": "co-witness discussion memory conformity MORI technique replication countries",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "Choosing, confidence, and accuracy: a meta-analysis of the confidence-accuracy relation in eyewitness identification studies",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "memory distortion in eyewitnesses a meta-analysis of the post-identification feedback effect",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "eyewitness post-identification feedback effect 15 years later meta-analysis",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "confidence accuracy relationship eyewitness recall meta-analysis",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "confidence-accuracy characteristic analysis eyewitness high confidence identifications accurate meta-analysis",
+          "results": 10
+        },
+        {
+          "base": "europepmc",
+          "query": "(confidence AND accuracy) AND (eyewitness OR \"episodic memory\" OR recognition) AND (\"meta-analysis\" OR \"meta-analytic\")",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "Estimating the reliability of eyewitness identifications from police lineups",
+          "results": 3
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"misinformation effect\" OR \"false memory\" OR \"false memories\" OR suggestibility OR \"memory conformity\") AND (culture OR cultural OR \"cross-cultural\" OR moderator)",
+          "results": 25
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"false memory\" OR misinformation OR suggestibility OR \"eyewitness memory\") AND (Arab OR Arabic OR Egypt OR Saudi OR Jordan OR Lebanon OR MENA OR \"Middle East\")",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "cross-cultural differences susceptibility misinformation effect false memory culture",
+          "results": 15
+        },
+        {
+          "base": "openalex",
+          "query": "false memory Arabic speakers Arab participants",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "eyewitness memory suggestibility Saudi Arabia Egypt Jordan",
+          "results": 0
+        },
+        {
+          "base": "openalex",
+          "query": "rich false memories implantation meta-analysis",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "eyewitness confidence accuracy relationship replication pristine conditions",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "false childhood memory implantation replication preregistered",
+          "results": 15
+        },
+        {
+          "base": "crossref",
+          "query": "eyewitness confidence accuracy meta-analysis high confidence error",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "(\"false memory\" OR \"false memories\") AND (implantation OR \"rich false\" OR \"lost in the mall\" OR \"false autobiographical\") AND (\"meta-analysis\" OR \"systematic review\" OR replication)",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "Long retention intervals impair the confidence-accuracy relationship for eyewitness recall",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "Providing eyewitness confidence judgments during versus after eyewitness interviews does not affect the confidence-accuracy relationship",
+          "results": 4
+        },
+        {
+          "base": "openalex",
+          "query": "Misrepresentations and flawed logic about the prevalence of false memories",
+          "results": 3
+        },
+        {
+          "base": "other",
+          "query": "markmanson.net/trust (2016, « Why You Can't Trust Yourself », §6 « Your Memory Sucks ») and markmanson.net/wrong-about-everything (declared excerpt of ch. 6), downloaded and read",
+          "results": 2
+        },
+        {
+          "base": "other",
+          "query": "Goodreads readers' Kindle highlights of The Subtle Art (book 123198703): « memor », « imperfect », « unreliable », 14 readers' pages",
+          "results": 5
+        },
+        {
+          "base": "crossref",
+          "query": "updates (retraction, withdrawal, correction, expression of concern) of the 12 DOIs, read by bvs sources verify --live",
+          "results": 1
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) filter=updates on the 12 DOIs of the draft, works/<doi> updated-by and relation, and title + « correction erratum corrigendum »",
+          "results": 1
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) filter=updates on the 57 other DOIs cited by the counter-evidence report",
+          "results": 0
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent, 2026-11-23) commentCorrectionList of the 7 draft studies indexed in Europe PMC",
+          "results": 0
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) fifty years of research on the misinformation effect meta-analysis Edmar",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) query.author=Edmar, since 2024 (a published version of the preprint meta-analysis?)",
+          "results": 30
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent, 2026-11-23) misinformation effect meta-analysis (2015-2026)",
+          "results": 15
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) memory conformity co-witness discussion meta-analysis",
+          "results": 15
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent, 2026-11-23) (\"memory conformity\" OR \"co-witness\" OR \"social contagion of memory\" OR \"collaborative recall\") AND (\"meta-analysis\" OR \"meta-analytic\")",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) social suggestibility central and peripheral misinformation details",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent, 2026-11-23) misinformation effect central versus peripheral details susceptibility",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) titles of McCloskey & Zaragoza 1985 and Oeberst & Blank 2012 (critiques of memory « alteration »)",
+          "results": 10
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent, 2026-11-23) (\"misinformation effect\" OR \"misleading information\" OR \"post-event information\") AND (\"real-life\" OR naturalistic OR \"real event\" OR \"real-world\" OR \"field study\" OR \"ecologically valid\") AND (eyewitness OR memory)",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) Deconstructing rich false memories of committing crime Wade Garry Pezdek; rich false memory implantation coding criteria demand characteristics compliance critique (since 2010); Otgaar blind implantation false memories without interviewer",
+          "results": 25
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent, 2026-11-23) (\"flashbulb memor*\") AND (confidence) AND (consistency OR accuracy) AND (\"meta-analysis\" OR \"systematic review\" OR longitudinal OR \"follow-up\"); Crossref titles of Talarico & Rubin 2003 and Hirst et al. 2015",
+          "results": 10
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent, 2026-11-23) (confidence) AND (accuracy) AND (eyewitness OR \"episodic memory\" OR \"recognition memory\" OR \"memory reports\") AND (\"meta-analysis\" OR \"meta-analytic\") AND PUB_YEAR:[2014 TO 2026]",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) high-confidence eyewitness identification errors reply Fitzgerald error rates (since 2025); journal Memory since 2025-06, high confidence eyewitness identification initial test pristine reply commentary",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent, 2026-11-23) confidence-accuracy relationship eyewitness meta-analysis (2012-2026); calibration confidence eyewitness identification meta-analysis high confidence accuracy lineup (2010-2026)",
+          "results": 27
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) estimator variables can matter even for high-confidence eyewitness identification responses; Rethinking the reliability of eyewitness memory Wixted Mickes Fisher; Sporer 1995 title",
+          "results": 13
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent, 2026-11-23) (\"autobiographical memory\" OR \"everyday memory\" OR \"diary\") AND (confidence) AND (accuracy OR consistency) AND (adults) AND (\"high confidence\" OR \"confidence-accuracy\" OR overconfidence)",
+          "results": 25
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent, 2026-11-23) (\"false memory\" OR misinformation OR suggestibility OR \"memory conformity\" OR eyewitness OR DRM) AND (Arab OR Arabic OR Egypt OR Saudi OR Jordan OR Lebanon OR Kuwait OR Qatar OR Emirates OR Oman OR Bahrain OR Iraq OR Syria OR Palestin* OR Morocco OR Algeria OR Tunisia OR Libya OR Sudan) AND (memory)",
+          "results": 25
+        },
+        {
+          "base": "openalex",
+          "query": "(counter-evidence agent, 2026-11-23) false memory Arabic DRM paradigm; eyewitness memory misinformation Saudi Arabia; misinformation effect eyewitness Iranian participants; memory conformity Turkey Turkish participants eyewitness suggestibility (culture)",
+          "results": 41
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) query.author=Megreya + eyewitness memory identification confidence; Edelson 2011 title",
+          "results": 13
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent, 2026-11-23) (\"Self-Administered Interview\" OR \"initial recall\" OR \"immediate recall\" OR \"early recall\" OR \"written statement\") AND (misinformation OR \"post-event information\" OR suggestibility) AND (protect* OR inocula* OR reduc*)",
+          "results": 25
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) Self-Administered Interview meta-analysis eyewitness; titles of Horry 2020 and Chan 2017; retrieval-enhanced suggestibility meta-analysis Barea Vera",
+          "results": 23
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) memory distrust suggestibility acceptance of misinformation",
+          "results": 12
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) titles of French 2008, Garry et al. 2008 (the study Ito replicated), Paterson & Kemp 2006",
+          "results": 9
+        },
+        {
+          "base": "europepmc",
+          "query": "(counter-evidence agent, 2026-11-23) (\"Deese-Roediger-McDermott\" OR \"DRM\") AND (\"false memory\" OR \"false recall\" OR \"false recognition\") AND (replication OR \"multi-lab\" OR \"many labs\" OR \"registered report\")",
+          "results": 15
+        },
+        {
+          "base": "crossref",
+          "query": "(counter-evidence agent, 2026-11-23) Yuille Cutshall 1986 a case study of eyewitness memory of a crime",
+          "results": 3
+        },
+        {
+          "base": "other",
+          "query": "(counter-evidence agent, 2026-11-23) full text of Ito et al. 2019, accepted manuscript (WRAP 108300): method, results, tables 1-2, discussion",
+          "results": 1
+        },
+        {
+          "base": "other",
+          "query": "(reviser, 2026-11-26) full texts already downloaded by the blind reviewer, read again: Ito 2019, Scoboria 2017 and Spearing 2022 (WRAP accepted manuscripts), Murphy 2023 (accepted version, PsyArXiv nh3zq), Anakwah 2024 (submitted version), Brewin 2017 and Arce 2023 (PMC)",
+          "results": 7
+        },
+        {
+          "base": "openalex",
+          "query": "(reviser, 2026-11-26) eyewitness confidence accuracy relationship nuanced perspective varies predictably (from 2025)",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "(reviser, 2026-11-26) flashbulb memories everyday memories consistency confidence vividness belief accuracy (to 2004)",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "(reviser, 2026-11-26) suggestive influence misinformation completely undone original event details restored",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "(reviser, 2026-11-26) lost in the mall reanalysis transcripts false memories investigator judgements participants (from 2024)",
+          "results": 5
+        },
+        {
+          "base": "openalex",
+          "query": "(reviser, 2026-11-26) misleading suggestions central peripheral features witnessed event susceptibility (to 2008)",
+          "results": 10
+        },
+        {
+          "base": "openalex",
+          "query": "(reviser, 2026-11-26) misinformation tweets central peripheral details culture Asian European American memory (from 2023)",
+          "results": 8
+        },
+        {
+          "base": "crossref",
+          "query": "(reviser, 2026-11-26) susceptibility peripheral central false information tweets memory culture (from 2023)",
+          "results": 8
+        },
+        {
+          "base": "openalex",
+          "query": "(reviser, 2026-11-26) contemporary replication extension Loftus 1978 misinformation underlying mechanisms (a preprint or open text of Wiechert 2026)",
+          "results": 10
+        },
+        {
+          "base": "crossref",
+          "query": "(reviser, 2026-11-26) updates (retraction, withdrawal, correction, expression of concern) of the 15 revised or new DOIs, read by bvs sources verify --live, one sheet at a time",
+          "results": 1
+        },
+        {
+          "base": "crossref",
+          "query": "(blind reviewer 2, 2026-11-26) works/<doi> and filter=updates on the 5 sheets added after the first review, and on Murphy & Greene 2025 (10.1002/acp.70044)",
+          "results": 0
+        },
+        {
+          "base": "other",
+          "query": "(reviser, 2026-11-27) full texts downloaded by the second blind review, read again: Andrews & Brewin 2024 (UCL Discovery) and Lindsay et al. 2025 (WRAP), each sentence found word for word",
+          "results": 2
+        },
+        {
+          "base": "crossref",
+          "query": "(reviser, 2026-11-27) updates (retraction, withdrawal, correction, expression of concern) of the 5 revised DOIs, read by bvs sources verify --live, one sheet at a time",
+          "results": 0
+        }
+      ],
+      "notFound": [
+        "no published meta-analysis of the misinformation effect itself: the only one (Edmar, Enquist & Luke, 480 studies) is a PsyArXiv preprint (10.31234/osf.io/m68kf_v6, v6 of 2026-10-01, no published version), refused by the verifier",
+        "no preregistered multi-lab replication of the misinformation effect or of implantation done before data collection: Ito et al. 2019 registered its second wave formally only after collection",
+        "no published meta-analysis of memory conformity between co-witnesses",
+        "no sample from an Arab country on misinformation, implantation or confidence, except one weak, unread Saudi study (Hassan et al. 2018, 10.30958/ajl.4-4-3, not kept); Egypt only in a lineup study on headscarves (Megreya et al. 2011), off topic",
+        "no study of confidence and accuracy for everyday memories of conversations (who said what, who was to do what); the only evidence on one's own life is about memories of shocking news (Talarico 2003; Hirst 2015, not kept: an attack)",
+        "no direct comparison of the misinformation effect in the lab and in real events; one case study of a real robbery (Odinot 2009, 14 witnesses) not kept",
+        "Sporer et al. 1995 (confidence-accuracy meta-analysis) and Yuille & Cutshall 1986: no abstract anywhere, not kept",
+        "Wiechert 2026: full text closed and no preprint found: sample size and country unknown",
+        "Dalton & Daneman 2006 (10.1080/09658210500495073): its central-vs-peripheral result sentence is read by the verifier's role cues as a method sentence (« participants were »): not kept; Bilgin & Wang 2024 carries the point",
+        "Manson's book not read (no copy): ch. 6 located by two readers' Kindle highlights; his 2016 article read in full"
+      ]
+    },
+    "counterEvidence": {
+      "found": [
+        {
+          "source": "oeberst-2012-undoing",
+          "note": "against « rewritten »: with a particular procedure (two answers possible, detail and source asked apart) the misinformation effect was undone, even 5 weeks later: the original detail was still there. Same author as Blank 2014"
+        },
+        {
+          "doi": "10.1037/0096-3445.114.1.1",
+          "note": "McCloskey & Zaragoza 1985: with a modified test, misleading information left memory of the original event intact; old and debated, Oeberst 2012 carries the point: no « memory erased » in any line"
+        },
+        {
+          "doi": "10.31234/osf.io/m68kf_v6",
+          "note": "Edmar et al. 2026, preprint meta-analysis (480 studies, g = 0.69, CI 0.26-1.13, I² 92%): robust but partly strategic and very variable; refused by the verifier, evidence page only"
+        },
+        {
+          "source": "bilgin-2024-central",
+          "note": "against « easily »: less influence for central than for peripheral details; who should send the file (or which day) is central for the colleagues, so expect less than Ito's details (Dalton 2006 says the same, sheet dropped)"
+        },
+        {
+          "doi": "10.1007/s10979-008-9152-x",
+          "note": "Odinot et al. 2009, 14 witnesses of a real robbery: 84% correct, a TV reconstruction did not alter memories, confidence-accuracy r = 0.38; one case, not kept"
+        },
+        {
+          "source": "ito-2019-cowitness",
+          "note": "full text: details adopted in 626 of 708 undisputed cases, 1 of 58 disputed (unplanned): the scene has no dispute; card says « تفصيلة », not « رواية »; no collectivist pattern across countries"
+        },
+        {
+          "source": "andrews-2024-mall",
+          "note": "against c2's figure, not its direction: the same Murphy data give 35% or 4% depending on coding; participants credit themselves with fewer false memories than coders. Debate open in 2025 (Wade et al., Brewin & Andrews): no figure on screen"
+        },
+        {
+          "doi": "10.1177/0956797617703667",
+          "note": "Wade, Garry & Pezdek 2018: coding makes the rate (70% to 26-30%), on false memories of a crime: same point as Andrews, outside the episode's register"
+        },
+        {
+          "doi": "10.1037/mac0000028",
+          "note": "Otgaar et al. 2022: online implantation without interviewer, 9-30%; rates drop with more people and less interaction (Gewehr 2026 preprint: 8.5%): « some », never a rate"
+        },
+        {
+          "source": "lindsay-2025-consensus",
+          "note": "the key piece for c3: both camps agree confidence tells about accuracy « varies predictably »; « certainty says little » is the old view they leave. Narrative, low rank: an agreement, not one more proof"
+        },
+        {
+          "source": "talarico-2003-flashbulb",
+          "note": "for the book on c3: the only evidence on one's own life; for shocking news, belief in accuracy stayed while agreement with one's first account fell. Small (54), not transposed to a happy or everyday memory"
+        },
+        {
+          "doi": "10.1037/xge0000055",
+          "note": "Hirst et al. 2015, 10-year follow-up: confidence stayed high despite forgetting; supports c3 but about an attack: evidence page only, never in a scene"
+        },
+        {
+          "doi": "10.1080/09658211.2026.2680933",
+          "note": "Eisen & Ying 2026: confidence and accuracy correlate, yet nearly half of false identifications made at 90-100% confidence under suggestive procedures: limits « a first certainty is mostly right »"
+        },
+        {
+          "doi": "10.1037/lhb0000381",
+          "note": "Giacona et al. 2021 and Moore et al. 2025 (10.1186/s41235-025-00692-9): viewing conditions can compromise even high-confidence identifications: hence « has weight, but is no proof », never « غالبًا صح »"
+        },
+        {
+          "doi": "10.1002/acp.4179",
+          "note": "Bird et al. 2024: neither the Self-Administered Interview nor written free recall reduced susceptibility (Chan 2017 also against): the note is a trace to go back to, never « so your memory does not change »"
+        },
+        {
+          "doi": "10.1177/0093854818771721",
+          "note": "Vredeveldt et al. 2018, 86 police officers: recording one's own memories before collaborating left fewer errors in the joint report; Horry 2020 meta-analysis (10.1002/acp.3753) backs an early written account: the takeaway, as « جرّب »"
+        },
+        {
+          "doi": "10.1111/lcrp.12249",
+          "note": "Dudek & Polczyk 2023, registered report: induced memory distrust did not change suggestibility as predicted; van Bergen 2009 and Torrance 2025 point to a cost: c4 out of scope, never « ما تثقش في ذاكرتك »"
+        },
+        {
+          "doi": "10.30958/ajl.4-4-3",
+          "note": "Hassan et al. 2018, the only Arab sample found (Saudi law students): weak journal, size unknown, full text unread; would not lift the applicability line. Megreya 2011 (Egypt) is off topic"
+        }
+      ],
+      "conclusion": "⚖️ holds; ❌ cannot be argued; ✅ only on a narrower reading of c3, refused. Taken: certainty low (c3 indirect and mixed), « reported », never « rewritten », c2 « some » with no figure, the scene without dispute, Ito kept on screen with « تفصيلة », the note as a trace to go back to. Not taken: c1 lowered for applicability (10 countries, two cultural groups)."
+    },
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "skeptical",
+        "delivery": "a small pause before the answer"
+      },
+      {
+        "kind": "line",
+        "id": "l2",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "calm, factual; the experiment told simply, a light stress on « مش اللي شافوه »",
+        "claims": [
+          "c1"
+        ],
+        "cites": [
+          "ito-2019-cowitness"
+        ]
+      },
+      {
+        "kind": "line",
+        "id": "l3",
+        "speaker": "adasa",
+        "emotion": "neutral",
+        "delivery": "plain, no drama; a beat before « وما حصلش »",
+        "claims": [
+          "c2"
+        ],
+        "cites": [
+          "murphy-2023-mall"
+        ]
+      }
+    ],
+    "nuanceSpoken": true,
+    "applicability": "written"
+  },
+  "takeaway": {
+    "claims": [
+      "c1",
+      "c3"
+    ],
+    "strength": "low-risk-suggestion",
+    "orientation": false,
+    "beats": [
+      {
+        "kind": "line",
+        "id": "l1",
+        "speaker": "adasa",
+        "emotion": "warm",
+        "delivery": "simple, a suggestion not an order; « زي كريم » light, warm on « وارجعله »",
+        "look": "viewer"
+      },
+      {
+        "kind": "action",
+        "id": "a1",
+        "who": "karim",
+        "gesture": "point",
+        "prop": {
+          "id": "notebook",
+          "state": "open"
+        },
+        "emotion": "happy",
+        "at": {
+          "line": "l1",
+          "word": 9
+        },
+        "seconds": 1.0
+      }
+    ]
+  },
+  "variation": {
+    "pin": {},
+    "avoid": [
+      "a quarrel: in the first take Karim goes along without a word against her; in the second they check calmly, never raised voices",
+      "Nour or Karim as a liar, careless or slow: both are sure, the memory bends, nobody is to blame",
+      "the boss drawn or shouting: the meeting is only mentioned, the scene is two colleagues in a daylight office",
+      "Nour and Karim as a couple: colleagues at work, a desk between them",
+      "police lineups, courts, crime or any trauma (the studies' setting): an ordinary office, an ordinary deadline"
+    ]
+  }
+}
