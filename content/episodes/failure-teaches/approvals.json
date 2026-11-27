@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schemas/approvals.schema.json",
+  "sources": {
+    "on": "2026-11-27",
+    "words": "Je valide dd1f78, 2c13b1, e926a8 (Recommandé) : sources et script de « l'échec » tels que dans le brouillon (le retournement contesté jamais dit, Nour sans refus en prise 1, la phrase du livre, l'affirmation resserrée)",
+    "via": "conversation",
+    "hash": "dd1f78e4de5a3e79b5d119be96c51e5f5a5647b2ce0600423f8c16cb9d8bda1a"
+  },
+  "script": {
+    "ar-EG": {
+      "on": "2026-11-27",
+      "words": "Je valide dd1f78, 2c13b1, e926a8 (Recommandé) : sources et script de « l'échec » tels que dans le brouillon (le retournement contesté jamais dit, Nour sans refus en prise 1, la phrase du livre, l'affirmation resserrée)",
+      "via": "conversation",
+      "hash": "2c13b124cbb02733a896d5bec22b25a3615e926563168323b7b0419666f32cee"
+    },
+    "en": {
+      "on": "2026-11-27",
+      "words": "Je valide dd1f78, 2c13b1, e926a8 (Recommandé) : sources et script de « l'échec » tels que dans le brouillon (le retournement contesté jamais dit, Nour sans refus en prise 1, la phrase du livre, l'affirmation resserrée)",
+      "via": "conversation",
+      "hash": "e926a8d62b3917ab7729aacbe489bf3d07bb68ec9c8182e4a911d07f2f5b1bb0"
+    }
+  },
+  "voice": {},
+  "video": {}
+}
