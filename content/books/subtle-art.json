@@ -66,6 +66,12 @@
       "kind": "author-article",
       "url": "https://markmanson.net/trust",
       "locator": "« Why You Can't Trust Yourself » (2016), §6 « Your Memory Sucks »: memories « easily altered » by new information"
+    },
+    {
+      "id": "failure-better-than-you",
+      "kind": "book",
+      "url": "https://www.goodreads.com/quotes/8706267-improvement-at-anything-is-based-on-thousands-of-tiny-failures",
+      "locator": "ch. 7 (to confirm): « better than you… failed at it more » (Goodreads quote, reader-added)"
     }
   ]
 }

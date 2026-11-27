@@ -185,7 +185,7 @@
           "speaker": "karim",
           "emotion": "curious",
           "intensity": 0.4,
-          "delivery": "light, friendly, coming to her desk; a real offer, no lesson",
+          "delivery": "light, friendly, coming to her desk; a plain question, no advice",
           "look": "other"
         },
         {
@@ -194,8 +194,7 @@
           "speaker": "nour",
           "emotion": "happy",
           "intensity": 0.4,
-          "delivery": "light, waving it off, sure of herself; no hurt in it",
-          "gesture": "head-shake",
+          "delivery": "cheerful, sure of herself: failing is the way, she just tries again; no defiance",
           "look": "other"
         },
         {
@@ -239,7 +238,7 @@
           "speaker": "karim",
           "emotion": "curious",
           "intensity": 0.4,
-          "delivery": "light, friendly, same as before",
+          "delivery": "light, friendly, the same plain question as before",
           "look": "other"
         },
         {
@@ -248,7 +247,7 @@
           "speaker": "nour",
           "emotion": "curious",
           "intensity": 0.5,
-          "delivery": "open, really asking; a short beat after « آه »",
+          "delivery": "open, really asking; a short beat after « الأول »",
           "look": "other"
         },
         {
@@ -341,7 +340,7 @@
         "id": "l1",
         "speaker": "adasa",
         "emotion": "curious",
-        "delivery": "plain, reporting what the book says; a beat before « فدوّر عليها »",
+        "delivery": "plain, reporting what the book says; a light stress on « كتير »",
         "gesture": "point",
         "look": "card"
       },
@@ -350,7 +349,7 @@
         "id": "l2",
         "speaker": "adasa",
         "emotion": "warm",
-        "delivery": "a concrete example, warm and light on « بتبوظ »",
+        "delivery": "the book's own illustration, plain; a light stress on « أكتر منك »",
         "look": "viewer"
       }
     ]
@@ -1087,7 +1086,7 @@
         "id": "l2",
         "speaker": "adasa",
         "emotion": "neutral",
-        "delivery": "calm, factual; the experiment told simply, a beat before « وبعد الشرح »",
+        "delivery": "calm, factual; the experiment told simply; a beat before « وبعده »",
         "claims": [
           "c2"
         ],
@@ -1111,7 +1110,7 @@
         "id": "l1",
         "speaker": "adasa",
         "emotion": "warm",
-        "delivery": "simple, a suggestion not an order; « إيه اللي ما نفعش؟ » in Nour's tone",
+        "delivery": "simple, a suggestion not an order; « زي نور » light, warm on « اسأل حد »",
         "look": "viewer"
       },
       {
@@ -1126,7 +1125,7 @@
         "emotion": "happy",
         "at": {
           "line": "l1",
-          "word": 5
+          "word": 6
         },
         "seconds": 1.0
       }
@@ -1136,6 +1135,7 @@
     "pin": {},
     "avoid": [
       "Karim lecturing Nour (a man explaining to a woman): he answers her question in one honest line about himself, she finds the fix",
+      "Nour turning down Karim's help (the woman who won't hear criticism; also « tuning out » after a failure, the contested finding, never shown): in both takes Karim only asks what she will do, and only her answer changes",
       "Nour ashamed, crying or blaming herself: in take 1 she brushes the failure off with a smile, in take 2 she is curious",
       "a manager, an audience or a meeting room drawn: the meeting is over, only the slide with its red cross shows it",
       "a triumph at the end (applause, a green tick, a promotion): the new slide is clearer, nothing more",
