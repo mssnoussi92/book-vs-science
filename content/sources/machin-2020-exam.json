@@ -16,7 +16,8 @@
   },
   "design": "longitudinal",
   "designSetBy": "reviewer",
-  "population": "students in England sitting a high-stakes national exam at the end of compulsory schooling: just below vs just above the pass mark, followed to age 18-19",
+  "n": 49231,
+  "population": "49,231 students in England (AQA GCSE English Language, higher tier, June 2013, grades C or D): just below vs just above the C mark, followed to 18-19",
   "mena": false,
   "findings": [
     {
@@ -41,9 +42,10 @@
     }
   ],
   "limits": [
-    "quasi-experiment around a pass mark (regression discontinuity, regraded marks), not random assignment",
-    "the pass mark opens doors (tracks, courses): the cost of failing is partly closed doors, not what failing taught",
-    "one exam in England; sample size not given in the abstract (administrative data); abstract read from OpenAlex only"
+    "quasi-experiment: fuzzy regression discontinuity (grade C instrumented by the original mark, before re-marking), not random assignment; `longitudinal` for lack of a quasi-experiment value",
+    "the pass mark opens doors (tracks, courses, schools): the cost of failing is closed doors, not what failing taught; a psychological effect is not measurable in their data (the authors say so)",
+    "full text: entering a high-level track within 3 years −6.4 to −9 points (about 75% of D students do); dropout at 18 +4 points (national mean 12%); NEET +2 points",
+    "one exam in one country (England, 2013); 29.3% of those without a C retook it within two years, 45% of them got it"
   ],
   "acknowledged": []
 }

@@ -21,7 +21,7 @@
   "findings": [
     {
       "id": "seeking-discomfort",
-      "text": "Told to seek discomfort as a sign of growth, people engaged more in personal-growth activities and felt they reached their goal more than with standard instructions",
+      "text": "Told to seek discomfort as a sign of growth, people engaged more in personal-growth activities and felt they reached their goal more than with standard instructions, measured in the same session",
       "support": {
         "sentence": "Across these areas of personal development, seeking discomfort as a signal of self-growth motivated engagement and increased perceived goal achievement relative to standard instructions.",
         "role": "result",
@@ -42,8 +42,10 @@
   ],
   "limits": [
     "one laboratory (as woolley-2016-fun and woolley-2025-resolutions); no independent replication found (counter-evidence search, 2026-11-23)",
-    "goal achievement is perceived (self-reported), not observed; follow-up length not given in the abstract (full text not read)",
-    "an instruction to seek discomfort, compared with standard instructions: not the choice of a long-term struggle",
+    "goal achievement is perceived (self-reported), not observed; no follow-up: everything is measured in the same session (OSF protocols and preregistrations)",
+    "experiment 1 (improvisation classes) assigned by half-class, not individually, and not preregistered; experiments 2 to 5 preregistered, online",
+    "experiment 2 (expressive writing) preregistered its persistence measures (words, seconds) with the prediction « no effect »; full text closed",
+    "an instruction to seek discomfort, against standard instructions (« write », « learn », « develop skills »): not the choice of a long-term struggle",
     "countries not given in the abstract; no sample from the Middle East or North Africa known"
   ]
 }

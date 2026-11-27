@@ -23,7 +23,7 @@
   "findings": [
     {
       "id": "struggle-stories",
-      "text": "Students who read how great scientists struggled and failed before succeeding later learned science better than students who read only about their discoveries",
+      "text": "Students who read about great scientists' struggles, intellectual (their mistakes) or personal (hardship), before their success later learned science better than students who read only about their achievements",
       "support": {
         "sentence": "Results showed that participation in either of the struggle story conditions improved science learning postintervention, relative to that of students in the control condition.",
         "role": "result",
@@ -43,9 +43,11 @@
     }
   ],
   "limits": [
-    "one study by the team that designed the stories; random assignment not stated in the abstract (full text not read)",
-    "the outcome is science learning in class, through motivation: not learning the content of the failures",
-    "one of the two struggle conditions tells personal hardships, not mistakes"
+    "one study by the team that designed the stories; random assignment and its level (student or class) not stated in the abstract (full text not read)",
+    "`experiment` is provisional: if whole classes received one condition, it is a quasi-experiment",
+    "the outcome is science learning in class, through motivation, not learning the content of the failures; the measure of science learning is not given in the abstract",
+    "the personal-hardship stories, with no failure in them, had the same effect: what helps is struggle overcome or feeling close to the scientists, not failure",
+    "no effect size in the abstract; every struggle story ends in success"
   ],
   "acknowledged": []
 }

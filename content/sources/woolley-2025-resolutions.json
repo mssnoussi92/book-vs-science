@@ -16,7 +16,8 @@
   },
   "design": "longitudinal",
   "designSetBy": "reviewer",
-  "population": "US adults followed for a year on their New Year's resolutions, adults in China, US adults' steps over 2 weeks, and a US experiment",
+  "n": 3469,
+  "population": "US adults on their New Year's resolutions for a year, adults in China over a month, US adults' steps, and a US experiment over 24 h (4 studies)",
   "mena": false,
   "findings": [
     {
@@ -31,7 +32,7 @@
     },
     {
       "id": "china-and-steps",
-      "text": "The same held among adults in China, and for the steps US adults walked over 2 weeks, measured objectively",
+      "text": "The same held among adults in China over one month, and for the steps US adults copied from their phone app for the 2 weeks before the survey (cross-sectional: motivation was measured after the walking)",
       "support": {
         "sentence": "These findings emerged among adults in China (Study 2) and when measuring goal adherence objectively using the number of steps U.S. adults walked over 2 weeks (Study 3).",
         "role": "result",
@@ -41,19 +42,29 @@
     },
     {
       "id": "raising-intrinsic",
-      "text": "Raising intrinsic rather than extrinsic motivation increased US adults' goal adherence",
+      "text": "Told to have fun with a health app rather than to judge its usefulness, US adults scanned more products with it over the next 24 h (d = 0.21)",
       "support": {
         "sentence": "Indeed, increasing intrinsic (vs. extrinsic) motivation increased U.S. adults' goal adherence (Study 4).",
         "role": "result",
         "where": "abstract"
       },
+      "effect": {
+        "metric": "d",
+        "value": 0.21,
+        "ci": [
+          0.07,
+          0.36
+        ]
+      },
       "kind": "causal"
     }
   ],
   "limits": [
-    "one laboratory (as woolley-2016-fun and woolley-2022-discomfort); sample sizes not given in the abstract (full text not read)",
-    "intrinsic motivation is the pursuit experienced as an end in itself: enjoying the path, not accepting pain",
-    "adherence self-reported except the steps (Study 3); the length of the experiment (Study 4) is not in the abstract",
-    "no sample from the Middle East or North Africa; one sample from China"
+    "one laboratory (as woolley-2016-fun and woolley-2022-discomfort); studies 1 and 2 not preregistered, studies 3 and 4 preregistered",
+    "analysed: 2,000 (study 1, 577 left after a year: 71% lost, missing data by FIML), 267 of 500 in China a month later, 439, 763",
+    "adherence self-reported (1-7) in studies 1 and 2; study 3: steps of the 14 days before the survey, copied from the app, two screenshots checking part of them",
+    "the only experiment (study 4) lasts 24 h with one health app, d = 0.21; its sample was enlarged after a smaller first effect (preregistered extension)",
+    "intrinsic motivation is the pursuit felt as enjoyable: enjoying the path, not accepting pain; extrinsic = useful, important (the value of the result)",
+    "no sample from the Middle East or North Africa; one sample from China, where the extrinsic scale is unreliable (alpha .41): a weak comparison"
   ]
 }

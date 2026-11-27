@@ -33,7 +33,7 @@
     },
     {
       "id": "higher-ability",
-      "text": "Trainees of higher ability benefited more from training focused on errors than trainees of lower ability",
+      "text": "Trainees of higher ability benefited more than lower-ability ones from training with an error orientation (whether errors were encouraged or to be avoided)",
       "support": {
         "sentence": "Higher- rather than lower-ability trainees benefited from training with an error orientation (positive or negative), suggesting that learning from errors in training requires greater cognitive resources.",
         "role": "result",
@@ -43,7 +43,7 @@
     },
     {
       "id": "avoidance-harms",
-      "text": "Telling trainees to avoid errors harmed them, especially the less open, less agreeable and lower-ability ones",
+      "text": "Telling trainees to avoid errors harmed them, especially the lower-ability ones (the authors' conclusion; its part on personality contradicts the results, see limits)",
       "support": {
         "sentence": "Error-avoidance training had a detrimental effect especially for those less open to experience, lower in agreeableness, and of lower ability.",
         "role": "conclusion",
@@ -53,8 +53,10 @@
     }
   ],
   "limits": [
-    "one simulated task (air traffic control), one study; country not given in the abstract",
-    "the authors attribute earlier benefits of error encouragement to confounds (active exploration, task information), which they controlled here",
+    "one simulated task (air traffic control), one study; country not given in the abstract (authors in Australia)",
+    "the authors attribute the benefits of error encouragement reported earlier (as pooled by keith-2008-error-management) to confounds (active exploration, task information), controlled here",
+    "the abstract contradicts itself on personality: its results say the more open and agreeable did worse with error avoidance, its conclusion the less; full text closed: only ability is used",
+    "no effect size in the abstract; whether an explanation followed the errors is not said",
     "transfer measured after a short training, not real work"
   ],
   "acknowledged": []

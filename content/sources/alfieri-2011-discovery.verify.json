@@ -58,6 +58,16 @@
       "detail": "full-text reading by failure-teaches writer, 2026-11-26: Surrey repository manuscript, Results (OpenAlex glues the abstract's sentences)"
     },
     {
+      "name": "support:vs-direct-teaching",
+      "result": "pass",
+      "detail": "full-text reading by failure-teaches writer, 2026-11-27: Surrey manuscript, Results and Table 14 (direct teaching, 123 comparisons)"
+    },
+    {
+      "name": "support:generation-worse",
+      "result": "pass",
+      "detail": "full-text reading by failure-teaches writer, 2026-11-27: Surrey manuscript, Results and Table 13 (generation, 87 comparisons)"
+    },
+    {
       "name": "support:conclusion",
       "result": "pass",
       "detail": "full-text reading by failure-teaches writer, 2026-11-26: Surrey repository manuscript, abstract (OpenAlex glues its sentences)"
@@ -77,6 +87,6 @@
   "retracted": false,
   "abstractFrom": "openalex",
   "abstractSha256": "d19696d774a02e29709535346b5e85e711982a53873fc7d16e67ff64f64e3aac",
-  "checkedOn": "2026-11-26",
+  "checkedOn": "2026-11-27",
   "tool": "bvs-sources@0.1"
 }

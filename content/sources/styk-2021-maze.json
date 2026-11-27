@@ -32,9 +32,10 @@
     }
   ],
   "limits": [
-    "perseverance on an online maze task right after the simulation, not a real-life goal",
-    "assignment described both as random and as alternating (full text); small effect (η² = .03)",
-    "no group without simulation; weight and height self-reported",
+    "perseverance on easy online mazes right after a short instruction, with unlimited attempts and a quit button: not a real-life goal",
+    "assignment described both as random and as alternating (full text): quasi-random, not masked; small effect (η² = .03)",
+    "very skewed outcomes reported as normal (SD 89 for a mean of 90 tasks, 611 for 687 s); F(1) = 8.32 reported with p < .001 (about .004 with ≈ 246 df)",
+    "no group without simulation; weight and height self-reported; despite the title, no weight measured",
     "no sample from the Middle East or North Africa"
   ]
 }

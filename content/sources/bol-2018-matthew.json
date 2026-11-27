@@ -16,12 +16,12 @@
   },
   "design": "longitudinal",
   "designSetBy": "reviewer",
-  "population": "recent PhDs applying to a €2 billion grant programme: proposals just above vs just below the funding threshold, followed 8 years; country not in the abstract",
+  "population": "early-career researchers in the Netherlands (NWO « Veni » grants): applicants just above vs just below the funding threshold, followed 8 to 16 years",
   "mena": false,
   "findings": [
     {
       "id": "rift",
-      "text": "Those who narrowly missed an early grant gathered less than half the research funding of narrow winners over the next eight years",
+      "text": "Those who narrowly missed an early grant gathered less than half the research funding of narrow winners over the next eight years, not counting the early grant itself",
       "support": {
         "sentence": "Analyses of review scores reveal that early funding success introduces a growing rift, with winners just above the funding threshold accumulating more than twice as much research funding (€180,000) during the following eight years as nonwinners just below it.",
         "role": "result",
@@ -41,9 +41,12 @@
     }
   ],
   "limits": [
-    "quasi-experiment (comparison around the funding threshold), not random assignment",
-    "the outcome is later funding, partly a gatekeeping effect of the first grant itself, not what the failure taught",
-    "one programme, early-career researchers; numbers of applicants not given in the abstract"
+    "quasi-experiment (regression discontinuity around the funding threshold, mostly ranks ±1/±2), not random assignment; `longitudinal` for lack of a quasi-experiment value",
+    "the outcome is later funding and posts, partly a gatekeeping effect of the first grant (reviewers favour past winners), not what the failure taught",
+    "full text: no discontinuity at the threshold in publications, citations or h-index, before or after: the near miss left the work itself neither better nor worse",
+    "full text: the €180,000 gap excludes the €250,000 grant itself; full professor 10-16 years later 19% vs 28%; applying again 40% vs 59%, not from leaving academia or the country",
+    "one programme, one country, early-career researchers; number of applicants near the threshold in the SI appendix, not read (anti-robot page)",
+    "Traag et al. 2025 (eLife reviewed preprint, a replication) finds the Matthew effect robust across funders"
   ],
   "acknowledged": []
 }

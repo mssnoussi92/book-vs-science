@@ -16,12 +16,12 @@
   "design": "rct",
   "designSetBy": "reviewer",
   "n": 171,
-  "population": "two online trials with physically active people: 59 students aiming to walk more, 112 gym-goers aiming at more aerobic training",
+  "population": "two online trials in Poland with active people: 59 students aiming to walk more, 112 gym-goers without a coach aiming at more aerobic training",
   "mena": false,
   "findings": [
     {
       "id": "no-effect",
-      "text": "An online MCII exercise did not change physical activity, self-efficacy or engagement over two weeks, in either trial",
+      "text": "An online MCII exercise had no significant effect on physical activity, self-efficacy or engagement over two weeks, in either trial, against a short text on the value of activity (power computed for a medium effect only)",
       "support": {
         "sentence": "No statistically significant effects of the MCII online intervention were observed in either Study 1 or Study 2.",
         "role": "result",
@@ -31,9 +31,10 @@
     }
   ],
   "limits": [
-    "small samples (59 and 112), two weeks of follow-up",
-    "people already active: little room to improve",
-    "the control group's task and the country are not given in the abstract",
-    "no sample from the Middle East or North Africa known"
+    "small samples (59 and 112), two weeks of follow-up; power computed for a medium effect (f = 0.25): a small effect is not excluded; effect sizes in a supplement (not read)",
+    "activity copied by participants from a phone app (steps, study 1) or self-reported in a calendar (aerobic minutes, study 2)",
+    "control: a short text on the importance of physical activity, also read by the MCII group: close to doing nothing, no wish or image of the result",
+    "people already active: little room to improve; in study 1, 60 of 242 eligible people filled in the first questionnaire",
+    "independent of the creators of MCII; Poland, in Polish; no sample from the Middle East or North Africa"
   ]
 }

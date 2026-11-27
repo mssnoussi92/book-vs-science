@@ -20,12 +20,12 @@
   "design": "rct",
   "designSetBy": "reviewer",
   "n": 225,
-  "population": "225 staff of 28 UK workplaces; all wrote down health and wellbeing wishes, the intervention arm added obstacles and if-then plans (MCII)",
+  "population": "225 staff of 28 UK workplaces (West Midlands); all made a health and wellbeing wish, the intervention arm added outcome, obstacle and if-then plan (MCII)",
   "mena": false,
   "findings": [
     {
       "id": "no-progress",
-      "text": "Adding obstacles and if-then plans (MCII) to thinking about one's wishes did not improve self-reported progress four weeks later",
+      "text": "Adding the best outcome, the inner obstacle and an if-then plan (MCII) to making a health wish did not improve self-reported progress four weeks later",
       "support": {
         "sentence": "The results showed no substantive effect of the intervention on average self-reported progress towards what they wished to do for their health and wellbeing four weeks later (mean difference on a 1-7 scale: -0.19; 95% credible interval: -1.08-0.71).",
         "role": "result",
@@ -45,9 +45,11 @@
     }
   ],
   "limits": [
-    "small cluster trial (28 workplaces); progress self-reported on a 1-7 scale four weeks later",
-    "the control arm only wrote down wishes: the closest test of MCII against only wishing",
+    "preregistered (ISRCTN, OSF), protocol published; randomization by an outside statistician; Bayesian intention-to-treat analysis",
+    "60 workplaces planned, 28 obtained: imprecise (the credible interval reaches +0.71); 65 of 225 lost to follow-up (29%), one control workplace dropped out",
+    "progress self-reported on one 1-7 item four weeks later; anxiety is one secondary outcome among many, and the subgroup intervals (men, Asian) touch zero",
+    "control: a wish plus the workplace programme's usual care, without contrasting: the closest independent test of MCII against only wishing",
     "independent of the creators of MCII; workplace goals often blocked by outside barriers (focus groups)",
-    "no sample from the Middle East or North Africa"
+    "baseline imbalances (Asian 6% vs 18%, mean age 41 vs 36); 75% and 68% women; no sample from the Middle East or North Africa"
   ]
 }

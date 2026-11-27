@@ -43,7 +43,7 @@
     },
     {
       "id": "enhanced-better",
-      "text": "Discovery with support (generating answers, explaining, guided discovery) did better on average than other ways of teaching",
+      "text": "Discovery with support did better on average than a mix of other teaching methods: guided discovery and being asked to explain did, generating answers did not",
       "support": {
         "sentence": "With the random effects analysis, the 56 studies had a mean effect size of d = .30 (95% CI = .15/.44), indicating that enhanced-discovery methods led to greater learning than did comparison methods of instruction.",
         "role": "result",
@@ -62,8 +62,48 @@
       "kind": "intervention"
     },
     {
+      "id": "vs-direct-teaching",
+      "text": "Compared with direct teaching alone, discovery with support still did better on average (pooled comparisons, not studies); compared with worked examples, no better",
+      "support": {
+        "sentence": "As shown in Table 14, with the exception of worked examples (d = .06, n.s.), all other comparisons conditions indicated significantly superior performances in the enhanced-discovery conditions.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "failure-teaches writer, 2026-11-27: Surrey manuscript, Results and Table 14 (direct teaching, 123 comparisons)"
+      },
+      "effect": {
+        "metric": "d",
+        "value": 0.26,
+        "ci": [
+          0.15,
+          0.37
+        ],
+        "correctedForBias": false
+      },
+      "kind": "intervention"
+    },
+    {
+      "id": "generation-worse",
+      "text": "Of the three kinds of supported discovery, generating answers (rules, strategies) did worse on average than other teaching; guided discovery and explaining did better",
+      "support": {
+        "sentence": "Table 13 shows that elicited explanation (d = .36) and guided discovery (d = .50) favored enhanced discovery whereas generation (d = -.15) favored other instructional methods.",
+        "role": "result",
+        "where": "fulltext",
+        "readBy": "failure-teaches writer, 2026-11-27: Surrey manuscript, Results and Table 13 (generation, 87 comparisons)"
+      },
+      "effect": {
+        "metric": "d",
+        "value": -0.15,
+        "ci": [
+          -0.28,
+          -0.02
+        ],
+        "correctedForBias": false
+      },
+      "kind": "intervention"
+    },
+    {
       "id": "conclusion",
-      "text": "The authors conclude that discovering alone does not help learners, while feedback, worked examples, scaffolding and explanations they are asked to give do",
+      "text": "The authors conclude that discovering alone does not help learners, while feedback, worked examples, scaffolding and explanations they are asked to give do (the first two are forms of explicit teaching)",
       "support": {
         "sentence": "The findings suggest that unassisted discovery does not benefit learners, whereas feedback, worked examples, scaffolding, and elicited explanations do.",
         "role": "conclusion",
@@ -75,9 +115,11 @@
   ],
   "limits": [
     "discovery learning is not the same as failing: an indirect test of « try, fail, then get the explanation »",
-    "highly heterogeneous effects; publication bias checked only by fail-safe N",
-    "« other teaching » mixes explicit teaching and unassisted discovery: the d = .30 is not against explicit teaching alone",
-    "repository manuscript read, not the published version; countries not given"
+    "highly heterogeneous effects (Q(55) = 260); publication bias checked only by fail-safe N; unpublished studies, mostly of generation, went the other way",
+    "« other teaching » mixes explicit teaching, worked examples and unassisted discovery: the d = .30 is not against explicit teaching; against direct teaching d = .26 (Table 14, comparisons)",
+    "no separate transfer measure: post-tests, acquisition scores, time and self-ratings",
+    "in the conclusion, « feedback » and « worked examples » are explicit-teaching conditions of the first meta-analysis, not discovery",
+    "repository manuscript read, not the published version (its confidence intervals differ a little from the published abstract); countries not given"
   ],
   "acknowledged": []
 }

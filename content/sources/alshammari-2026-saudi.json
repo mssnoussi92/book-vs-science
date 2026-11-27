@@ -16,12 +16,12 @@
   "design": "cross-sectional",
   "designSetBy": "reviewer",
   "n": 218,
-  "population": "218 Saudi students of English as a foreign language at the University of Ha'il, one online questionnaire",
+  "population": "218 Saudi students of English as a foreign language at the University of Ha'il (56% men), one online questionnaire translated into Arabic",
   "mena": true,
   "findings": [
     {
       "id": "effort",
-      "text": "Intrinsic motivation went with more regulation of effort in online learning, while grit did not",
+      "text": "Intrinsic motivation went with more self-reported regulation of effort in online learning; grit had no unique path to effort once the other predictors were in the model (its simple correlation with effort is positive, r = .57)",
       "support": {
         "sentence": "The results indicated that IDLE and intrinsic motivation had significant positive effects on OLER, while grit did not significantly influence OLER.",
         "role": "result",
@@ -31,7 +31,7 @@
     },
     {
       "id": "achievement",
-      "text": "English achievement went with grit, not with intrinsic motivation",
+      "text": "English achievement went with grit; intrinsic motivation had no unique path to it once the other predictors were in the model (its simple correlation with achievement is positive, r = .34)",
       "support": {
         "sentence": "For English achievement, grit had a significant positive effect, while IDLE and intrinsic motivation had insignificant effects.",
         "role": "result",
@@ -41,8 +41,10 @@
     }
   ],
   "limits": [
-    "one questionnaire at one time: the « effects » are paths of a structural model, not causes",
-    "one university, students of English learning online; how achievement was measured is not in the abstract (full text not read)",
-    "an Arab sample (Saudi Arabia)"
+    "one questionnaire at one time: the « effects » are paths of a structural model, not causes (the authors say so)",
+    "intrinsic motivation and reported effort correlate at r = .88, above the Fornell-Larcker bound: almost one measure taken twice, the same day, by the same person (acknowledged)",
+    "achievement: course grades and a standardized English proficiency test, converted to one scale (full text, PMC13128827)",
+    "one university, convenience sample, students learning English online; 56% men, 44% women",
+    "a Saudi sample (Ha'il), instruments translated into Arabic and back-translated, piloted on 30 students; no Egyptian sample"
   ]
 }

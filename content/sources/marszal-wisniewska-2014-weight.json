@@ -42,8 +42,10 @@
   ],
   "limits": [
     "study 1: 40 women in four groups, about 10 per group",
-    "cole-2021-simulation codes the process and positive-outcome arms of study 2 at g = 0 against control (its data file ESM 2)",
-    "women only; country not given in the abstract; online 2014, in an issue of 2016",
+    "abstract only (full text closed): neither how weight was measured (weighed or reported) nor how persistence was measured is described",
+    "cole-2021-simulation codes only study 2: g = 0 against control for process alone and for positive outcome alone, a 0 imputed when no significant difference is reported",
+    "study 2 is not reported as process alone against outcome alone; only the combinations stand out (Cole: process then positive outcome, g = 0.60)",
+    "women only; country not given in the abstract (Polish authors); online 2014, in an issue of 2016",
     "no sample from the Middle East or North Africa known"
   ]
 }

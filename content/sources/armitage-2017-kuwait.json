@@ -17,12 +17,12 @@
   "design": "rct",
   "designSetBy": "reviewer",
   "n": 216,
-  "population": "216 overweight or obese adults enrolling in a weight-loss program in Kuwait",
+  "population": "216 overweight or obese adults (127 women, 61 men, 28 not stated) joining a commercial weight-loss program in Kuwait; nationality not reported",
   "mena": true,
   "findings": [
     {
       "id": "weight-loss",
-      "text": "Forming if-then plans with a help sheet led to more weight lost at 6 months than thinking about the same situations without forming plans",
+      "text": "Linking critical situations to responses as if-then plans on a help sheet led to more weight lost at 6 months (clinic records) than ticking the same situations and responses without linking them",
       "support": {
         "sentence": "Participants in the intervention condition lost significantly more weight (6.15 kg; -6.58% initial body weight) than those in the control condition (3.66 kg; -4.04% initial body weight), M diff = 2.55% initial body weight, SE diff = .92, t(214) = 2.76, p = .006, 95%CI = .73, 4.36, d = .38.",
         "role": "result",
@@ -36,10 +36,12 @@
     }
   ],
   "limits": [
-    "if-then plans alone, without mental contrasting: one half of WOOP",
-    "an active control (thinking about critical situations and responses without plans); weight measured at 6 months",
-    "one weight-loss program in Kuwait",
-    "an Arab sample (Kuwait)"
+    "if-then plans alone, without mental contrasting, wish or image of the result: one half of WOOP, against listing the same situations",
+    "unequal dropout (25 control, 14 intervention), analysed with baseline weight carried forward: a dropout counts as 0 kg lost, which favours the arm that loses fewer",
+    "no protocol or analysis plan published before; simple randomization by coin toss (119 vs 97); 23% of the people approached accepted",
+    "the 10% weight-loss result (22.7% vs 14.4%) is reported as p = .062: a one-tailed value (two-tailed about .12)",
+    "one paying commercial program (people already set on losing weight), 2010; weight from clinic records, staff blind to condition",
+    "a sample in Kuwait, questionnaires translated into Arabic and back-translated; nationality and language of the participants not reported"
   ],
-  "allegiance": "Armitage introduced the volitional help sheet (Health Psychology, 2008) and has tested it several times since"
+  "allegiance": "Armitage introduced the volitional help sheet (Health Psychology, 2008) and has tested it several times since; he is also a co-author of cole-2021-simulation"
 }
