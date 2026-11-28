@@ -161,6 +161,33 @@
       "request": "karim",
       "voice": "karim=Achird",
       "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-28T08:06:57.497Z",
+      "day": "2026-11-28",
+      "episode": "failure-teaches",
+      "lang": "ar-EG",
+      "request": "adasa",
+      "voice": "adasa=Iapetus",
+      "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-28T08:07:46.411Z",
+      "day": "2026-11-28",
+      "episode": "failure-teaches",
+      "lang": "ar-EG",
+      "request": "nour",
+      "voice": "nour=Leda",
+      "model": "gemini-3.8-flash-tts"
+    },
+    {
+      "at": "2026-11-28T08:08:29.168Z",
+      "day": "2026-11-28",
+      "episode": "failure-teaches",
+      "lang": "ar-EG",
+      "request": "karim",
+      "voice": "karim=Achird",
+      "model": "gemini-3.8-flash-tts"
     }
   ]
 }
